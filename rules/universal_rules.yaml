@@ -1,0 +1,105 @@
+version: 1.0
+
+principles:
+  - identify_target_product_first
+  - infer_commercial_intent_before_scoring
+  - action_must_reach_effect
+  - action_complete_is_not_information_complete
+  - maintain_timeline_state
+  - prefer_continuous_product_coverage
+  - maximize_information_value_not_clip_count
+  - model_decision_never_overrides_visual_evidence
+
+required_fields_per_material:
+  - literal_action
+  - commercial_intent
+  - story_role
+  - target_product_relation
+  - unique_information
+  - state_before
+  - action
+  - state_after
+  - effect_confirmed
+  - can_follow_previous
+  - causal_conflict
+
+proof_gate:
+  require_effect_confirmed: true
+  accepted_visual_success_signals:
+    - led_on
+    - led_color_change
+    - led_blink
+    - screen_on
+    - charging_animation
+    - battery_change
+    - icon_change
+    - mechanical_lock
+    - stable_lift
+  if_unconfirmed: demo_only
+
+high_fps_qc:
+  default_fps: 10
+  micro_signal_fps: 20
+  max_fps: 30
+  required_outputs:
+    - action_start
+    - action_completion_frame
+    - result_visible_frame
+    - effect_visible_frame
+    - effect_stable_frame
+    - settle_frame
+    - safe_cut_end
+    - information_completed
+    - failed_attempt
+    - retry_count
+    - hand_reposition
+    - reverse_motion
+
+state_machine:
+  reject_if:
+    - state_regression
+    - repeated_first_action
+    - unexplained_object_appearance
+    - unexplained_object_disappearance
+    - causal_conflict
+
+repetition:
+  main_action_per_function: 1
+  max_extra_proof_per_function: 1
+  allow_same_selling_point_if_incremental_information: true
+  reject_complete_semantic_duplicate: true
+
+product_showcase:
+  prefer_continuous_rotation: true
+  use_microcuts_only_for_missing_faces: true
+  core_structure_min_readability_sec: 0.8
+  microcut_sec_range: [0.3, 0.6]
+  core_identity_must_not_be_microcut_only: true
+
+editing_roles:
+  director:
+    purpose: commercial_understanding_and_macro_structure
+  reviewer:
+    purpose: independent_error_detection_and_dedup
+  visual_qc:
+    purpose: frame_level_action_and_effect_validation
+  final_editor:
+    purpose: rhythm_order_trim_breathing_and_payoff
+    input_scope: cleaned_candidates_only
+
+final_editor_metrics:
+  - transition_feel
+  - rhythm_score
+  - breathing_room
+  - impact_peak
+  - pace_variation
+  - ending_strength
+  - human_readability
+
+execution:
+  validate_timecodes_with_ffprobe: true
+  forbid_out_of_bounds_timecodes: true
+  verify_full_decode: true
+  default_video_codec: H.264
+  default_pixel_format: yuv420p
+  default_audio_codec: AAC
