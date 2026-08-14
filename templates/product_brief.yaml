@@ -1,0 +1,59 @@
+# 新产品任务模板
+product:
+  target_product: ""
+  category: ""
+  demo_props: []
+  primary_selling_point: ""
+  secondary_selling_points: []
+  misidentification_risk: ""
+
+commercial_story:
+  pain_point: ""
+  old_solution: ""
+  reject_old: ""
+  replacement_logic: ""
+  desired_payoff: ""
+
+product_coverage:
+  required_faces: []
+  required_structures: []
+  prefer_continuous_rotation: true
+  human_readability_min_duration_sec: 0.8
+
+action_rules:
+  require_effect_confirmation: true
+  default_qc_fps: 10
+  micro_signal_qc_fps: 20
+  allow_up_to_fps: 30
+  settle_tail_sec_range: [0.2, 0.5]
+
+state_machine:
+  enabled: true
+  forbid_state_regression: true
+  forbid_repeated_first_action: true
+  forbid_object_teleport: true
+
+repetition_limits:
+  main_action_per_function: 1
+  extra_proof_per_function: 1
+
+material_usage:
+  maximize_value_not_count: true
+  allow_microcuts: true
+  microcut_sec_range: [0.3, 0.6]
+  require_reason_if_unused: true
+
+editor_roles:
+  director_model: "gemini-3.1-pro-preview"
+  reviewer_model: "gemini-3.6-flash"
+  final_editor_mode: "independent_clean_candidates_only"
+
+output:
+  target_duration_sec: "adaptive"
+  codec: "H.264"
+  pixel_format: "yuv420p"
+  audio: "AAC"
+  add_subtitles: false
+  add_bgm: false
+  add_transitions: false
+  add_color_grade: false
