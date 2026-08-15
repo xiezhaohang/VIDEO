@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## v1.3 — 2026-08-15
+
+基于充电宝口播 V4、V5-Pro 与 V5-Pro-R1 的实际成片与人工/高密度复核，新增并验证：
+
+- V4 验证 Setup–Payoff 邻接规则：如果 Pain Point / Old Solution 只是为后续 Reject Old 做铺垫，setup 与 payoff 不能隔多个独立功能段；要么一次性闭环，要么删除前置 setup。
+- 验证 Pain Point 不必强行放在开头；如果不能快速完整表达，直接产品揭示优于意义模糊的旧方案镜头。
+- V4 验证方向性 CTA：`I'll leave the link below.` 优先使用真实向下/左下指向手势，明显优于普通 hero shot。
+- 新增 `action_sentiment_to_target_product`：主产品在 Hook / 核心展示阶段的动作必须是 positive 或明确 neutral；甩开、推远、离场、丢弃等 negative / ambiguous 动作禁止使用，即使与口播重音同步。
+- 新增 `readability_tail / dead_tail`：Proof 后为看清结果服务的稳定尾巴可保留；动作结束后无新信息、只是等待口播的 dead tail 必须压缩，Hook 前 3 秒尤其严格。
+- 新增视觉重复层：`visual_redundancy / same_action / same_information / same_composition / new_visual_information`。不同源素材也可能因为构图、动作、信息高度相似而让观众感到重复。
+- 验证“是否提供新视觉信息”比“是不是不同素材”更重要。
+- 结构 B-roll 保留边界：连续自然地经过厚度、接口、正面等结构信息可以保留，但不能冒充 TSA / hotel wall plug / sale 等不存在的 Proof。
+- 新增纯剪辑停止条件：当无必修语义错误、Proof 损坏、状态跳变、明显视觉重复，且剩余问题主要来自素材缺失或包装不足时，应停止继续重排素材，进入字幕、音效、BGM、CTA 包装阶段。
+- 新增案例 `cases/magnetic_power_bank/voiceover_v4_review.md` 与 `cases/magnetic_power_bank/voiceover_v5_pro_r1_review.md`。
+
 ## v1.2 — 2026-08-15
 
 基于充电宝口播驱动 V1 / V2 实际成片与人工逐帧对比审片，新增并验证：
