@@ -1,0 +1,889 @@
+{
+  "experiment": "Action State Locator Test C — Dense Temporal Grounding",
+  "phase": "evidence_frozen",
+  "generated_at": "2026-08-17T08:54:27.255Z",
+  "timebase": "native source frames; AU mother ranges half-open; predicted state intervals inclusive",
+  "evidence": [
+    {
+      "shot_id": "GT004",
+      "source_id": "0106",
+      "action_unit_id": "AU0106_01",
+      "source_file": "D:\\实拍视频文档\\实拍视频文档\\1731736890298503661-充电宝\\实拍素材\\DJI_20260801170103_0106_D.MP4",
+      "mother_span": {
+        "native_start_frame": 0,
+        "native_end_frame_exclusive": 810
+      },
+      "native_fps": "60000/1001",
+      "dimensions": {
+        "width": 1728,
+        "height": 3072
+      },
+      "proxy_file": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT004\\GT004_AU0106_01_720p_burnin.mp4",
+      "proxy_sha256": "6D2A22F44FCC398D85086C6111D5F852296785EC7033F087437B41E357D4E5AD",
+      "dense_grid_files": [
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT004\\dense_12\\dense12_001.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT004\\dense_12\\dense12_002.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT004\\dense_12\\dense12_003.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT004\\dense_12\\dense12_004.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT004\\dense_12\\dense12_005.jpg"
+      ],
+      "dense_grid_sha256": {
+        "dense12_001.jpg": "A0EFB5DBCFDC31654ACCCD7DABFB95F9F32ADB298451C98CD5437B0AB1847B4D",
+        "dense12_002.jpg": "817C9895A55E80ED35A04BF4DC527079E57FD89157177A6A277829D03AA30C50",
+        "dense12_003.jpg": "2ECB43528E479BDCB911009CA48389DF515ACEAB2EB66D679EC3D41292C1F329",
+        "dense12_004.jpg": "A58CA4BCE12CA053C653A7BF0CC2ACA1F9C060B82CCACAB30847805E4053C3AC",
+        "dense12_005.jpg": "637E80D9F8BDB78AECC0AB80E7913D5500D3FE58FBCEAD9900DEDAFB97A80C9A"
+      },
+      "dense_sample_native_frames": [
+        0,
+        12,
+        24,
+        36,
+        48,
+        60,
+        72,
+        84,
+        96,
+        108,
+        120,
+        132,
+        144,
+        156,
+        168,
+        180,
+        192,
+        204,
+        216,
+        228,
+        240,
+        252,
+        264,
+        276,
+        288,
+        300,
+        312,
+        324,
+        336,
+        348,
+        360,
+        372,
+        384,
+        396,
+        408,
+        420,
+        432,
+        444,
+        456,
+        468,
+        480,
+        492,
+        504,
+        516,
+        528,
+        540,
+        552,
+        564,
+        576,
+        588,
+        600,
+        612,
+        624,
+        636,
+        648,
+        660,
+        672,
+        684,
+        696,
+        708,
+        720,
+        732,
+        744,
+        756,
+        768,
+        780,
+        792,
+        804
+      ],
+      "motion_peaks": [
+        {
+          "proxy_frame": 39,
+          "native_frame": 39,
+          "yavg_difference": 9.94164
+        },
+        {
+          "proxy_frame": 81,
+          "native_frame": 81,
+          "yavg_difference": 4.18042
+        },
+        {
+          "proxy_frame": 228,
+          "native_frame": 228,
+          "yavg_difference": 5.41737
+        },
+        {
+          "proxy_frame": 615,
+          "native_frame": 615,
+          "yavg_difference": 8.90515
+        }
+      ],
+      "local_detail_grid_files": [
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT004\\detail_3\\detail3_01_native_18_63.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT004\\detail_3\\detail3_02_native_60_105.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT004\\detail_3\\detail3_03_native_207_252.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT004\\detail_3\\detail3_04_native_594_639.jpg"
+      ],
+      "local_detail_grid_sha256": {
+        "detail3_01_native_18_63.jpg": "6B8801F27D80469B93EDBA880CCBAE45229D9537DB71C3A928F78245180DC238",
+        "detail3_02_native_60_105.jpg": "65FAD4ED69DC8CC66C1399670C4826F8D37996D0888D2276E4DCC82CF9294D5C",
+        "detail3_03_native_207_252.jpg": "13A819BAF042FB553BA57AF3E5A77412E9B3AF72D31CC76A9D66F2DD83DD000C",
+        "detail3_04_native_594_639.jpg": "F3D0F25059DCA5B0D0F5BE44B719DA4E99EEB69F81C4F99E0A563099072DD3F5"
+      }
+    },
+    {
+      "shot_id": "GT005",
+      "source_id": "0108",
+      "action_unit_id": "AU0108_01",
+      "source_file": "D:\\实拍视频文档\\实拍视频文档\\1731736890298503661-充电宝\\实拍素材\\DJI_20260801170438_0108_D.MP4",
+      "mother_span": {
+        "native_start_frame": 681,
+        "native_end_frame_exclusive": 1098
+      },
+      "native_fps": "60000/1001",
+      "dimensions": {
+        "width": 1728,
+        "height": 3072
+      },
+      "proxy_file": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT005\\GT005_AU0108_01_720p_burnin.mp4",
+      "proxy_sha256": "9F8C1DC0AF4D3E8E51A22EA40A56FC2ECD8E37F046F98BD283A38EF49AC28E98",
+      "dense_grid_files": [
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT005\\dense_12\\dense12_001.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT005\\dense_12\\dense12_002.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT005\\dense_12\\dense12_003.jpg"
+      ],
+      "dense_grid_sha256": {
+        "dense12_001.jpg": "82467EC2F9C8482D47406EB004CE43FA42563CB13C74106B5DE125D9A8EAF843",
+        "dense12_002.jpg": "3A85379E53614E903576D06EEBC830599880681E7BFB6FA940B863B96FD1EAA0",
+        "dense12_003.jpg": "9FD219AB271ED168C6DC6E1CFBAE9405F616E5C1B0072884A8120057DC1DDCE2"
+      },
+      "dense_sample_native_frames": [
+        681,
+        693,
+        705,
+        717,
+        729,
+        741,
+        753,
+        765,
+        777,
+        789,
+        801,
+        813,
+        825,
+        837,
+        849,
+        861,
+        873,
+        885,
+        897,
+        909,
+        921,
+        933,
+        945,
+        957,
+        969,
+        981,
+        993,
+        1005,
+        1017,
+        1029,
+        1041,
+        1053,
+        1065,
+        1077,
+        1089
+      ],
+      "motion_peaks": [
+        {
+          "proxy_frame": 0,
+          "native_frame": 681,
+          "yavg_difference": 19.2298
+        },
+        {
+          "proxy_frame": 44,
+          "native_frame": 725,
+          "yavg_difference": 21.0341
+        },
+        {
+          "proxy_frame": 80,
+          "native_frame": 761,
+          "yavg_difference": 17.6979
+        },
+        {
+          "proxy_frame": 322,
+          "native_frame": 1003,
+          "yavg_difference": 15.8514
+        }
+      ],
+      "local_detail_grid_files": [
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT005\\detail_3\\detail3_01_native_681_705.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT005\\detail_3\\detail3_02_native_704_749.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT005\\detail_3\\detail3_03_native_740_785.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT005\\detail_3\\detail3_04_native_982_1027.jpg"
+      ],
+      "local_detail_grid_sha256": {
+        "detail3_01_native_681_705.jpg": "0AED0D26B0C429552F1BFE7D79BAD900EF735D43623B2FB31E4DDC57D73C570E",
+        "detail3_02_native_704_749.jpg": "6745E85DA3444D2A538363CB2B5F66B4AB50D72F3F772A8E9216236B2440F3EF",
+        "detail3_03_native_740_785.jpg": "9FD8CB94D223F5AF3E522E4FEA1307B521D45BE6FB1FB0FA421ECE1CDBECC3BE",
+        "detail3_04_native_982_1027.jpg": "553EF709BA63A31C91C593F463AEF39EF64283FD99DB7ABB8087ED979C3AF063"
+      }
+    },
+    {
+      "shot_id": "GT006",
+      "source_id": "0109",
+      "action_unit_id": "AU0109_02",
+      "source_file": "D:\\实拍视频文档\\实拍视频文档\\1731736890298503661-充电宝\\实拍素材\\DJI_20260801170541_0109_D.MP4",
+      "mother_span": {
+        "native_start_frame": 399,
+        "native_end_frame_exclusive": 630
+      },
+      "native_fps": "60000/1001",
+      "dimensions": {
+        "width": 1728,
+        "height": 3072
+      },
+      "proxy_file": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT006\\GT006_AU0109_02_720p_burnin.mp4",
+      "proxy_sha256": "0731E35799BD6C37695C780D1444DEE8109173E7EB1EBE7AE15892C039E5278D",
+      "dense_grid_files": [
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT006\\dense_12\\dense12_001.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT006\\dense_12\\dense12_002.jpg"
+      ],
+      "dense_grid_sha256": {
+        "dense12_001.jpg": "0DFF40DA04121E959853FE6C8DD2A1B94F33EB180DACC34024F5E148D82BAC64",
+        "dense12_002.jpg": "5101689B9580121CCB6147180D38DAA2AC5CB83C2060BE32C236888D8F03D06A"
+      },
+      "dense_sample_native_frames": [
+        399,
+        411,
+        423,
+        435,
+        447,
+        459,
+        471,
+        483,
+        495,
+        507,
+        519,
+        531,
+        543,
+        555,
+        567,
+        579,
+        591,
+        603,
+        615,
+        627
+      ],
+      "motion_peaks": [
+        {
+          "proxy_frame": 7,
+          "native_frame": 406,
+          "yavg_difference": 0.900039
+        },
+        {
+          "proxy_frame": 77,
+          "native_frame": 476,
+          "yavg_difference": 6.89561
+        },
+        {
+          "proxy_frame": 141,
+          "native_frame": 540,
+          "yavg_difference": 1.33491
+        },
+        {
+          "proxy_frame": 228,
+          "native_frame": 627,
+          "yavg_difference": 4.60569
+        }
+      ],
+      "local_detail_grid_files": [
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT006\\detail_3\\detail3_01_native_399_430.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT006\\detail_3\\detail3_02_native_455_500.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT006\\detail_3\\detail3_03_native_519_564.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT006\\detail_3\\detail3_04_native_606_629.jpg"
+      ],
+      "local_detail_grid_sha256": {
+        "detail3_01_native_399_430.jpg": "85175077B3F8BC91AB249BD88CF938B98477E5B966D24B62B65ABD6FDA8D20D6",
+        "detail3_02_native_455_500.jpg": "4BC3EC699F21E5D5DBC725DD56F190A5E8FB6566774CF7E3F2121605C8B3673B",
+        "detail3_03_native_519_564.jpg": "F985EBFCB69788D2352748BB7882A74DE2784ADDF4822C34FDD50F4011CC244E",
+        "detail3_04_native_606_629.jpg": "1B96C3C8D1B81E1BBA2E10326E78D6EF6FC54D111215CEF31353419CB27FCD43"
+      }
+    },
+    {
+      "shot_id": "GT007",
+      "source_id": "0112",
+      "action_unit_id": "AU0112_C01",
+      "source_file": "D:\\实拍视频文档\\实拍视频文档\\1731736890298503661-充电宝\\实拍素材\\DJI_20260801170710_0112_D.MP4",
+      "mother_span": {
+        "native_start_frame": 0,
+        "native_end_frame_exclusive": 794
+      },
+      "native_fps": "60000/1001",
+      "dimensions": {
+        "width": 1728,
+        "height": 3072
+      },
+      "proxy_file": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT007\\GT007_AU0112_C01_720p_burnin.mp4",
+      "proxy_sha256": "84B237FC8F70C6B975558FCCA474E159D773371F95858B6C94DD28949708F3EA",
+      "dense_grid_files": [
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT007\\dense_12\\dense12_001.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT007\\dense_12\\dense12_002.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT007\\dense_12\\dense12_003.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT007\\dense_12\\dense12_004.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT007\\dense_12\\dense12_005.jpg"
+      ],
+      "dense_grid_sha256": {
+        "dense12_001.jpg": "1CF641E7EC3869AB88AEF0354697B3E7CE8E011C2DB021078521E89364CEF08B",
+        "dense12_002.jpg": "6098B1B3793D7D6BCE10D336E212CD1434D5E469CF3867CE02B54B0C9F6AC519",
+        "dense12_003.jpg": "4A3381B1745CDBF2458AC1EB6EC9E3D5F9F4052F85911256D295BB4B1FBA3A27",
+        "dense12_004.jpg": "660816152B945E56A5D57719F2BA28C57612223D83DE029C857923D10BE654EE",
+        "dense12_005.jpg": "7AD49F66841FBCB9B7E9A050060C68A7BC1C8E839E4978A97692F94B45FDFA29"
+      },
+      "dense_sample_native_frames": [
+        0,
+        12,
+        24,
+        36,
+        48,
+        60,
+        72,
+        84,
+        96,
+        108,
+        120,
+        132,
+        144,
+        156,
+        168,
+        180,
+        192,
+        204,
+        216,
+        228,
+        240,
+        252,
+        264,
+        276,
+        288,
+        300,
+        312,
+        324,
+        336,
+        348,
+        360,
+        372,
+        384,
+        396,
+        408,
+        420,
+        432,
+        444,
+        456,
+        468,
+        480,
+        492,
+        504,
+        516,
+        528,
+        540,
+        552,
+        564,
+        576,
+        588,
+        600,
+        612,
+        624,
+        636,
+        648,
+        660,
+        672,
+        684,
+        696,
+        708,
+        720,
+        732,
+        744,
+        756,
+        768,
+        780,
+        792
+      ],
+      "motion_peaks": [
+        {
+          "proxy_frame": 239,
+          "native_frame": 239,
+          "yavg_difference": 15.42
+        },
+        {
+          "proxy_frame": 328,
+          "native_frame": 328,
+          "yavg_difference": 11.0116
+        },
+        {
+          "proxy_frame": 521,
+          "native_frame": 521,
+          "yavg_difference": 9.19364
+        },
+        {
+          "proxy_frame": 590,
+          "native_frame": 590,
+          "yavg_difference": 15.7202
+        }
+      ],
+      "local_detail_grid_files": [
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT007\\detail_3\\detail3_01_native_218_263.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT007\\detail_3\\detail3_02_native_307_352.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT007\\detail_3\\detail3_03_native_500_545.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT007\\detail_3\\detail3_04_native_569_614.jpg"
+      ],
+      "local_detail_grid_sha256": {
+        "detail3_01_native_218_263.jpg": "40B4CF0D7683552F36C53C2299D698AD1369EB9806BD18B10C9A480D0D1E9A16",
+        "detail3_02_native_307_352.jpg": "A2E0F02FD8125398BAEE5AA80747EF45F551D885CD894F46528B2FAD59FADF3D",
+        "detail3_03_native_500_545.jpg": "BCA37B55A1ECA13B499977EF251F24E9FFCD601FA5BA8E2655415C11F7BA86F8",
+        "detail3_04_native_569_614.jpg": "9CDEDD04BFA1ECD2F9465BD7A200B803D07B38864F5BD702FEE3304E4E3348EB"
+      }
+    },
+    {
+      "shot_id": "GT008",
+      "source_id": "0116",
+      "action_unit_id": "AU0116_01",
+      "source_file": "D:\\实拍视频文档\\实拍视频文档\\1731736890298503661-充电宝\\实拍素材\\DJI_20260801170917_0116_D.MP4",
+      "mother_span": {
+        "native_start_frame": 189,
+        "native_end_frame_exclusive": 457
+      },
+      "native_fps": "60000/1001",
+      "dimensions": {
+        "width": 1728,
+        "height": 3072
+      },
+      "proxy_file": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT008\\GT008_AU0116_01_720p_burnin.mp4",
+      "proxy_sha256": "0FC7F4120F6C68EF807E985BDF8390DF5A213FCF6301B5FA13C313CCCD39920B",
+      "dense_grid_files": [
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT008\\dense_12\\dense12_001.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT008\\dense_12\\dense12_002.jpg"
+      ],
+      "dense_grid_sha256": {
+        "dense12_001.jpg": "E5A958F44E5D6A49A184294DFCC0DD3F1A984CD6753A7DB4E3B612CE75E2D748",
+        "dense12_002.jpg": "6167D119B03364EB03B7B52037600D805A02CA0365110781F547AE8A19584373"
+      },
+      "dense_sample_native_frames": [
+        189,
+        201,
+        213,
+        225,
+        237,
+        249,
+        261,
+        273,
+        285,
+        297,
+        309,
+        321,
+        333,
+        345,
+        357,
+        369,
+        381,
+        393,
+        405,
+        417,
+        429,
+        441,
+        453
+      ],
+      "motion_peaks": [
+        {
+          "proxy_frame": 28,
+          "native_frame": 217,
+          "yavg_difference": 19.9079
+        },
+        {
+          "proxy_frame": 70,
+          "native_frame": 259,
+          "yavg_difference": 6.53666
+        },
+        {
+          "proxy_frame": 108,
+          "native_frame": 297,
+          "yavg_difference": 14.7074
+        },
+        {
+          "proxy_frame": 179,
+          "native_frame": 368,
+          "yavg_difference": 12.5488
+        }
+      ],
+      "local_detail_grid_files": [
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT008\\detail_3\\detail3_01_native_196_241.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT008\\detail_3\\detail3_02_native_238_283.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT008\\detail_3\\detail3_03_native_276_321.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT008\\detail_3\\detail3_04_native_347_392.jpg"
+      ],
+      "local_detail_grid_sha256": {
+        "detail3_01_native_196_241.jpg": "181B717ADBB4F565836C1756A856511BCEE6144E0F57FEAF54597E852711FAE2",
+        "detail3_02_native_238_283.jpg": "B1B974BF912941D41C5DA03C6CE33F00E96CC923C05857BE473FCF1114E33885",
+        "detail3_03_native_276_321.jpg": "866591A446636536F42362E26D19B30AC3FE0965D23266685946C73007F6D92A",
+        "detail3_04_native_347_392.jpg": "EC33CCFD49385A65F7D70B46266E4010006DEAEF418ACFACAC7C54C60C711D61"
+      }
+    },
+    {
+      "shot_id": "GT009",
+      "source_id": "0120",
+      "action_unit_id": "AU0120_C01",
+      "source_file": "D:\\实拍视频文档\\实拍视频文档\\1731736890298503661-充电宝\\实拍素材\\DJI_20260801171251_0120_D.MP4",
+      "mother_span": {
+        "native_start_frame": 1073,
+        "native_end_frame_exclusive": 2075
+      },
+      "native_fps": "60000/1001",
+      "dimensions": {
+        "width": 1728,
+        "height": 3072
+      },
+      "proxy_file": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT009\\GT009_AU0120_C01_720p_burnin.mp4",
+      "proxy_sha256": "13BFB0F7F41E2191511C97F9D2A6F7D3148CE67BA08E0239CEB95EC2979D918A",
+      "dense_grid_files": [
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT009\\dense_12\\dense12_001.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT009\\dense_12\\dense12_002.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT009\\dense_12\\dense12_003.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT009\\dense_12\\dense12_004.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT009\\dense_12\\dense12_005.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT009\\dense_12\\dense12_006.jpg"
+      ],
+      "dense_grid_sha256": {
+        "dense12_001.jpg": "B27AB133473EDF683927D28BEAA83A203244D4015874119C3460F979E890AC4F",
+        "dense12_002.jpg": "900704026D03DEAD97CD6B9E2BCD214F8B89946A8FC99312DC25AD76643BA6CE",
+        "dense12_003.jpg": "83657492F20555C2B23552ECF205C9F1D1018AC77422031D4B96764EEFCA4269",
+        "dense12_004.jpg": "FBE9B5FECB5979D4C5AE2A21DDE45BFA1085E5F962B7DE555395D290CB205455",
+        "dense12_005.jpg": "DFCC3717EDD4EF95CB70413613E72A2B4DC30499BB7C7545E8A618A12FE2A3E3",
+        "dense12_006.jpg": "5C8A64825F9C662D5B0194A7A34E8C297E9A8BCE013E815FA3E7ADEFB4FAE4E6"
+      },
+      "dense_sample_native_frames": [
+        1073,
+        1085,
+        1097,
+        1109,
+        1121,
+        1133,
+        1145,
+        1157,
+        1169,
+        1181,
+        1193,
+        1205,
+        1217,
+        1229,
+        1241,
+        1253,
+        1265,
+        1277,
+        1289,
+        1301,
+        1313,
+        1325,
+        1337,
+        1349,
+        1361,
+        1373,
+        1385,
+        1397,
+        1409,
+        1421,
+        1433,
+        1445,
+        1457,
+        1469,
+        1481,
+        1493,
+        1505,
+        1517,
+        1529,
+        1541,
+        1553,
+        1565,
+        1577,
+        1589,
+        1601,
+        1613,
+        1625,
+        1637,
+        1649,
+        1661,
+        1673,
+        1685,
+        1697,
+        1709,
+        1721,
+        1733,
+        1745,
+        1757,
+        1769,
+        1781,
+        1793,
+        1805,
+        1817,
+        1829,
+        1841,
+        1853,
+        1865,
+        1877,
+        1889,
+        1901,
+        1913,
+        1925,
+        1937,
+        1949,
+        1961,
+        1973,
+        1985,
+        1997,
+        2009,
+        2021,
+        2033,
+        2045,
+        2057,
+        2069
+      ],
+      "motion_peaks": [
+        {
+          "proxy_frame": 40,
+          "native_frame": 1113,
+          "yavg_difference": 7.76777
+        },
+        {
+          "proxy_frame": 156,
+          "native_frame": 1229,
+          "yavg_difference": 6.60571
+        },
+        {
+          "proxy_frame": 198,
+          "native_frame": 1271,
+          "yavg_difference": 9.28005
+        },
+        {
+          "proxy_frame": 990,
+          "native_frame": 2063,
+          "yavg_difference": 16.2659
+        }
+      ],
+      "local_detail_grid_files": [
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT009\\detail_3\\detail3_01_native_1092_1137.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT009\\detail_3\\detail3_02_native_1208_1253.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT009\\detail_3\\detail3_03_native_1250_1295.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT009\\detail_3\\detail3_04_native_2042_2074.jpg"
+      ],
+      "local_detail_grid_sha256": {
+        "detail3_01_native_1092_1137.jpg": "1A1F618F1EC040F83930034503771F81D53DE141B20EC1D3FAC02D6179B36190",
+        "detail3_02_native_1208_1253.jpg": "24C176355AFE851D3ED61323EA98D5EFD7E10B076DB885B79313397D1238C581",
+        "detail3_03_native_1250_1295.jpg": "BD96BFD9C48200289243E0CDCF2E882A157B0078E62166BBB879B4D4688ADCBE",
+        "detail3_04_native_2042_2074.jpg": "C33F56FCAD8B46B0D12428DB35986B29504AFE0CF5AD4E9C5CC81B3F7B1F7396"
+      }
+    },
+    {
+      "shot_id": "GT010",
+      "source_id": "0121",
+      "action_unit_id": "AU0121_02",
+      "source_file": "D:\\实拍视频文档\\实拍视频文档\\1731736890298503661-充电宝\\实拍素材\\DJI_20260801171336_0121_D.MP4",
+      "mother_span": {
+        "native_start_frame": 168,
+        "native_end_frame_exclusive": 444
+      },
+      "native_fps": "60000/1001",
+      "dimensions": {
+        "width": 1728,
+        "height": 3072
+      },
+      "proxy_file": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT010\\GT010_AU0121_02_720p_burnin.mp4",
+      "proxy_sha256": "6D0B302979EB806A075D27E9258338C24C516F4F707A545B0D997AF068F14010",
+      "dense_grid_files": [
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT010\\dense_12\\dense12_001.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT010\\dense_12\\dense12_002.jpg"
+      ],
+      "dense_grid_sha256": {
+        "dense12_001.jpg": "EAECA17AFB388AD7358BB0A77FA60DC2506C65D7A1A25398B520E54C4BFDAD1F",
+        "dense12_002.jpg": "D7F140952263D4ABB672637E197DB70D74B5A774B726EAD4742460A41187A8A7"
+      },
+      "dense_sample_native_frames": [
+        168,
+        180,
+        192,
+        204,
+        216,
+        228,
+        240,
+        252,
+        264,
+        276,
+        288,
+        300,
+        312,
+        324,
+        336,
+        348,
+        360,
+        372,
+        384,
+        396,
+        408,
+        420,
+        432
+      ],
+      "motion_peaks": [
+        {
+          "proxy_frame": 15,
+          "native_frame": 183,
+          "yavg_difference": 4.09575
+        },
+        {
+          "proxy_frame": 66,
+          "native_frame": 234,
+          "yavg_difference": 1.00361
+        },
+        {
+          "proxy_frame": 223,
+          "native_frame": 391,
+          "yavg_difference": 9.01779
+        },
+        {
+          "proxy_frame": 274,
+          "native_frame": 442,
+          "yavg_difference": 9.1501
+        }
+      ],
+      "local_detail_grid_files": [
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT010\\detail_3\\detail3_01_native_168_207.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT010\\detail_3\\detail3_02_native_213_258.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT010\\detail_3\\detail3_03_native_370_415.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT010\\detail_3\\detail3_04_native_421_443.jpg"
+      ],
+      "local_detail_grid_sha256": {
+        "detail3_01_native_168_207.jpg": "861A0979ABEE38A5398A8BC47E96A304CA23295B0DB7D6AAE8358EBE7F24528D",
+        "detail3_02_native_213_258.jpg": "D32D706037D7F1DA3CA10E48355F15D6A76F21C5B4557861A75F5FAD97CB4533",
+        "detail3_03_native_370_415.jpg": "F19C9E7F7DE69DCD823BDD7D1E7CEF761C3889A49F4E0B5B106D034C43E7DE73",
+        "detail3_04_native_421_443.jpg": "DFDBABC3DCDB59AA9739685522CEDD4AF290F40EB5FD83AD764E63E3E96729A8"
+      }
+    },
+    {
+      "shot_id": "GT011",
+      "source_id": "0122",
+      "action_unit_id": "AU0122_03",
+      "source_file": "D:\\实拍视频文档\\实拍视频文档\\1731736890298503661-充电宝\\实拍素材\\DJI_20260801171351_0122_D.MP4",
+      "mother_span": {
+        "native_start_frame": 1654,
+        "native_end_frame_exclusive": 2086
+      },
+      "native_fps": "60000/1001",
+      "dimensions": {
+        "width": 1728,
+        "height": 3072
+      },
+      "proxy_file": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT011\\GT011_AU0122_03_720p_burnin.mp4",
+      "proxy_sha256": "C3E81ED443ED52DEA80496A9725257481F99D66EDA836CA0AEE564F03C7A5CAD",
+      "dense_grid_files": [
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT011\\dense_12\\dense12_001.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT011\\dense_12\\dense12_002.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT011\\dense_12\\dense12_003.jpg"
+      ],
+      "dense_grid_sha256": {
+        "dense12_001.jpg": "8EB8541AB8E7DE384DBDA218A9EB5B699C4D9F62EA7F0DE968E4B97B22BA0274",
+        "dense12_002.jpg": "2007516920E654B847DD22EA4F635293573D7F399A81E1CC706B90027FF3FFAE",
+        "dense12_003.jpg": "68AAA351C70C70DF1FB7BA754794AB54F29E69D299F90BD50D094A2002A5C532"
+      },
+      "dense_sample_native_frames": [
+        1654,
+        1666,
+        1678,
+        1690,
+        1702,
+        1714,
+        1726,
+        1738,
+        1750,
+        1762,
+        1774,
+        1786,
+        1798,
+        1810,
+        1822,
+        1834,
+        1846,
+        1858,
+        1870,
+        1882,
+        1894,
+        1906,
+        1918,
+        1930,
+        1942,
+        1954,
+        1966,
+        1978,
+        1990,
+        2002,
+        2014,
+        2026,
+        2038,
+        2050,
+        2062,
+        2074
+      ],
+      "motion_peaks": [
+        {
+          "proxy_frame": 7,
+          "native_frame": 1661,
+          "yavg_difference": 11.918
+        },
+        {
+          "proxy_frame": 169,
+          "native_frame": 1823,
+          "yavg_difference": 15.1966
+        },
+        {
+          "proxy_frame": 275,
+          "native_frame": 1929,
+          "yavg_difference": 12.4033
+        },
+        {
+          "proxy_frame": 422,
+          "native_frame": 2076,
+          "yavg_difference": 15.8669
+        }
+      ],
+      "local_detail_grid_files": [
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT011\\detail_3\\detail3_01_native_1654_1685.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT011\\detail_3\\detail3_02_native_1802_1847.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT011\\detail_3\\detail3_03_native_1908_1953.jpg",
+        "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-12\\work\\action-state-locator-test-c\\local_only\\GT011\\detail_3\\detail3_04_native_2055_2085.jpg"
+      ],
+      "local_detail_grid_sha256": {
+        "detail3_01_native_1654_1685.jpg": "29E55AF99A8A02DD98E2DD5F520943B76352B51DC1B929CD684156076043D136",
+        "detail3_02_native_1802_1847.jpg": "3DBAF461F4F7CDD5244F9586666A4ABC5F8D47C7A84D6285AF4C58560F75DBA7",
+        "detail3_03_native_1908_1953.jpg": "5982BA9A26EA475DE57686F5EF730A160463D7631C3AD842F9C099EDCD9D2C81",
+        "detail3_04_native_2055_2085.jpg": "FFDF36DAE4711E2AD8F8EB772099081DE800707CE045D5C4DFB219F8A2945E89"
+      }
+    }
+  ],
+  "prohibited_inputs_not_used": [
+    "partial_ground_truth_edl_v0.9.json",
+    "rebuild_validation_metrics.json",
+    "Oracle A evaluator human frame answers",
+    "Test B evaluator human frame answers",
+    "human rebuild",
+    "side-by-side",
+    "human contact sheet",
+    "human final GT004-GT011 images",
+    "exact human in/out",
+    "GT009/GT010 mapping answers"
+  ],
+  "evidence_payload_sha256": "0C79F425C417BB90A79B7EE256B814EE2B34C25C28EEBEBA3B66A529AC8FF80F"
+}

@@ -1,0 +1,822 @@
+{
+  "experiment": "Action State Locator Test C — Dense Temporal Grounding",
+  "status": "COMPLETE",
+  "evaluation_scope": "State/event localization sufficiency for a human cut; exact cut equality is not required.",
+  "freeze_verification": {
+    "predictions_file_sha256": "E841705F5162EE0390B550D944C8C57F8BDC6B27C19B393205B5A0708A2B7FC5",
+    "evidence_index_file_sha256": "36BBDE2AFFFF54CC0D4202E2825FA43AD95BA5D6CCB2A076A7E06D09CA2196D9",
+    "prediction_payload_sha256": "94911E58B192B0143E167CCB60A32455F07D93A7C6400EF360B0B897AED1E31F",
+    "evidence_payload_sha256": "0C79F425C417BB90A79B7EE256B814EE2B34C25C28EEBEBA3B66A529AC8FF80F",
+    "ground_truth_unlocked_only_after_hash_verification": true
+  },
+  "per_shot": [
+    {
+      "shot_id": "GT004",
+      "action_unit_id": "AU0106_01",
+      "human_used_range_inclusive": [
+        501,
+        662
+      ],
+      "human_mapping_type": "monotonic_frame_selection_same_continuous_take",
+      "human_used_range_predicted_state_overlaps": [],
+      "human_in_to_predicted_relevant_state_onset": {
+        "label": null,
+        "frame": null,
+        "error_native_frames": null,
+        "status": "unresolved"
+      },
+      "human_out_to_nearest_predicted_result_or_hold_boundary": {
+        "label": null,
+        "frame": null,
+        "error_native_frames": null,
+        "status": "unresolved"
+      },
+      "event_ordering": {
+        "main": {
+          "expected_pairs": 0,
+          "correct_pairs": 0,
+          "accuracy": null,
+          "unresolved_events": []
+        },
+        "reviewer": {
+          "expected_pairs": 0,
+          "correct_pairs": 0,
+          "accuracy": null,
+          "unresolved_events": []
+        },
+        "merged": {
+          "expected_pairs": 0,
+          "correct_pairs": 0,
+          "accuracy": null,
+          "unresolved_events": []
+        }
+      },
+      "merged_state_presence": {
+        "expected_present": [
+          "idle/setup",
+          "prepare_onset",
+          "manipulation/action",
+          "result_onset",
+          "result_readable",
+          "stable_hold"
+        ],
+        "predicted_present": [],
+        "predicted_uncertain": [
+          "idle/setup",
+          "prepare_onset",
+          "approach",
+          "contact_or_attachment",
+          "manipulation/action",
+          "effect_onset",
+          "result_onset",
+          "result_readable",
+          "stable_hold",
+          "reset/retry"
+        ]
+      },
+      "model_disagreement_count": 10,
+      "state_localization_pass": false,
+      "pass_rationale": "Primary/reviewer disagree on nearly every core generic state, so no frozen action/result boundary is available.",
+      "gt009_pressure_test": null,
+      "gt010_pressure_test": null,
+      "gt011_pressure_test": null
+    },
+    {
+      "shot_id": "GT005",
+      "action_unit_id": "AU0108_01",
+      "human_used_range_inclusive": [
+        709,
+        1053
+      ],
+      "human_mapping_type": "monotonic_frame_selection_same_continuous_take",
+      "human_used_range_predicted_state_overlaps": [
+        {
+          "state": "idle/setup",
+          "predicted_range_inclusive": [
+            681,
+            818
+          ],
+          "overlap_range_inclusive": [
+            709,
+            818
+          ]
+        },
+        {
+          "state": "approach",
+          "predicted_range_inclusive": [
+            819,
+            836
+          ],
+          "overlap_range_inclusive": [
+            819,
+            836
+          ]
+        },
+        {
+          "state": "effect_onset",
+          "predicted_range_inclusive": [
+            1001,
+            1013
+          ],
+          "overlap_range_inclusive": [
+            1001,
+            1013
+          ]
+        },
+        {
+          "state": "result_readable",
+          "predicted_range_inclusive": [
+            1020,
+            1094
+          ],
+          "overlap_range_inclusive": [
+            1020,
+            1053
+          ]
+        },
+        {
+          "state": "exit",
+          "predicted_range_inclusive": [
+            1004,
+            1024
+          ],
+          "overlap_range_inclusive": [
+            1004,
+            1024
+          ]
+        }
+      ],
+      "human_in_to_predicted_relevant_state_onset": {
+        "label": "incoming_motion_onset",
+        "frame": 819,
+        "error_native_frames": 110,
+        "status": "resolved"
+      },
+      "human_out_to_nearest_predicted_result_or_hold_boundary": {
+        "label": "result_readable.start",
+        "frame": 1020,
+        "error_native_frames": -33,
+        "status": "resolved"
+      },
+      "event_ordering": {
+        "main": {
+          "expected_pairs": 2,
+          "comparable_pairs": 2,
+          "correct_pairs": 2,
+          "accuracy_on_comparable_pairs": 1,
+          "unresolved_events": []
+        },
+        "reviewer": {
+          "expected_pairs": 2,
+          "comparable_pairs": 2,
+          "correct_pairs": 2,
+          "accuracy_on_comparable_pairs": 1,
+          "unresolved_events": []
+        },
+        "merged": {
+          "expected_pairs": 2,
+          "comparable_pairs": 0,
+          "correct_pairs": 0,
+          "accuracy_on_comparable_pairs": null,
+          "unresolved_events": [
+            "formal_action_onset"
+          ]
+        }
+      },
+      "merged_state_presence": {
+        "expected_present": [
+          "idle/setup",
+          "approach",
+          "contact_or_attachment",
+          "manipulation/action",
+          "effect_onset",
+          "result_onset",
+          "result_readable",
+          "stable_hold",
+          "exit"
+        ],
+        "predicted_present": [
+          "idle/setup",
+          "approach",
+          "effect_onset",
+          "result_readable",
+          "exit"
+        ],
+        "predicted_uncertain": [
+          "prepare_onset",
+          "contact_or_attachment",
+          "manipulation/action",
+          "result_onset",
+          "stable_hold"
+        ]
+      },
+      "model_disagreement_count": 6,
+      "state_localization_pass": false,
+      "pass_rationale": "Incoming onset is late versus the human incoming range and formal action onset differs by 166 native frames.",
+      "gt009_pressure_test": null,
+      "gt010_pressure_test": null,
+      "gt011_pressure_test": null
+    },
+    {
+      "shot_id": "GT006",
+      "action_unit_id": "AU0109_02",
+      "human_used_range_inclusive": [
+        459,
+        529
+      ],
+      "human_mapping_type": "monotonic_frame_selection_same_continuous_take",
+      "human_used_range_predicted_state_overlaps": [
+        {
+          "state": "idle/setup",
+          "predicted_range_inclusive": [
+            399,
+            460
+          ],
+          "overlap_range_inclusive": [
+            459,
+            460
+          ]
+        },
+        {
+          "state": "approach",
+          "predicted_range_inclusive": [
+            463,
+            476
+          ],
+          "overlap_range_inclusive": [
+            463,
+            476
+          ]
+        },
+        {
+          "state": "manipulation/action",
+          "predicted_range_inclusive": [
+            478,
+            493
+          ],
+          "overlap_range_inclusive": [
+            478,
+            493
+          ]
+        },
+        {
+          "state": "stable_hold",
+          "predicted_range_inclusive": [
+            510,
+            630
+          ],
+          "overlap_range_inclusive": [
+            510,
+            529
+          ]
+        }
+      ],
+      "human_in_to_predicted_relevant_state_onset": {
+        "label": "approach",
+        "frame": 463,
+        "error_native_frames": 4,
+        "status": "resolved"
+      },
+      "human_out_to_nearest_predicted_result_or_hold_boundary": {
+        "label": "stable_hold.start",
+        "frame": 510,
+        "error_native_frames": -19,
+        "status": "resolved"
+      },
+      "event_ordering": {
+        "main": {
+          "expected_pairs": 0,
+          "correct_pairs": 0,
+          "accuracy": null,
+          "unresolved_events": []
+        },
+        "reviewer": {
+          "expected_pairs": 0,
+          "correct_pairs": 0,
+          "accuracy": null,
+          "unresolved_events": []
+        },
+        "merged": {
+          "expected_pairs": 0,
+          "correct_pairs": 0,
+          "accuracy": null,
+          "unresolved_events": []
+        }
+      },
+      "merged_state_presence": {
+        "expected_present": [
+          "idle/setup",
+          "approach",
+          "manipulation/action",
+          "result_onset",
+          "result_readable",
+          "stable_hold"
+        ],
+        "predicted_present": [
+          "idle/setup",
+          "approach",
+          "manipulation/action",
+          "stable_hold"
+        ],
+        "predicted_uncertain": [
+          "prepare_onset",
+          "result_onset",
+          "result_readable"
+        ]
+      },
+      "model_disagreement_count": 3,
+      "state_localization_pass": true,
+      "pass_rationale": "Pickup/action ordering is coherent; the action onset is near the human used range and a readable stable hold is present.",
+      "gt009_pressure_test": null,
+      "gt010_pressure_test": null,
+      "gt011_pressure_test": null
+    },
+    {
+      "shot_id": "GT007",
+      "action_unit_id": "AU0112_C01",
+      "human_used_range_inclusive": [
+        495,
+        690
+      ],
+      "human_mapping_type": "monotonic_frame_selection_same_continuous_take",
+      "human_used_range_predicted_state_overlaps": [
+        {
+          "state": "result_onset",
+          "predicted_range_inclusive": [
+            620,
+            748
+          ],
+          "overlap_range_inclusive": [
+            620,
+            690
+          ]
+        }
+      ],
+      "human_in_to_predicted_relevant_state_onset": {
+        "label": null,
+        "frame": null,
+        "error_native_frames": null,
+        "status": "unresolved"
+      },
+      "human_out_to_nearest_predicted_result_or_hold_boundary": {
+        "label": "result_onset.end",
+        "frame": 748,
+        "error_native_frames": 58,
+        "status": "resolved"
+      },
+      "event_ordering": {
+        "main": {
+          "expected_pairs": 2,
+          "comparable_pairs": 2,
+          "correct_pairs": 2,
+          "accuracy_on_comparable_pairs": 1,
+          "unresolved_events": []
+        },
+        "reviewer": {
+          "expected_pairs": 2,
+          "comparable_pairs": 2,
+          "correct_pairs": 2,
+          "accuracy_on_comparable_pairs": 1,
+          "unresolved_events": []
+        },
+        "merged": {
+          "expected_pairs": 2,
+          "comparable_pairs": 1,
+          "correct_pairs": 1,
+          "accuracy_on_comparable_pairs": 1,
+          "unresolved_events": [
+            "watch_contact"
+          ]
+        }
+      },
+      "merged_state_presence": {
+        "expected_present": [
+          "idle/setup",
+          "prepare_onset",
+          "approach",
+          "contact_or_attachment",
+          "manipulation/action",
+          "effect_onset",
+          "result_onset",
+          "result_readable",
+          "stable_hold",
+          "reset/retry",
+          "failed_attempt"
+        ],
+        "predicted_present": [
+          "idle/setup",
+          "result_onset",
+          "stable_hold"
+        ],
+        "predicted_uncertain": [
+          "prepare_onset",
+          "approach",
+          "contact_or_attachment",
+          "manipulation/action",
+          "effect_onset",
+          "result_readable",
+          "reset/retry",
+          "failed_attempt"
+        ]
+      },
+      "model_disagreement_count": 9,
+      "state_localization_pass": true,
+      "pass_rationale": "Both models independently locate watch charge onset at 605/608 and readable result at 756; contact timing is uncertain but the object/effect stage is correct.",
+      "gt009_pressure_test": null,
+      "gt010_pressure_test": null,
+      "gt011_pressure_test": null
+    },
+    {
+      "shot_id": "GT008",
+      "action_unit_id": "AU0116_01",
+      "human_used_range_inclusive": [
+        228,
+        415
+      ],
+      "human_mapping_type": "monotonic_frame_selection_same_continuous_take",
+      "human_used_range_predicted_state_overlaps": [],
+      "human_in_to_predicted_relevant_state_onset": {
+        "label": null,
+        "frame": null,
+        "error_native_frames": null,
+        "status": "unresolved"
+      },
+      "human_out_to_nearest_predicted_result_or_hold_boundary": {
+        "label": null,
+        "frame": null,
+        "error_native_frames": null,
+        "status": "unresolved"
+      },
+      "event_ordering": {
+        "main": {
+          "expected_pairs": 2,
+          "comparable_pairs": 2,
+          "correct_pairs": 2,
+          "accuracy_on_comparable_pairs": 1,
+          "unresolved_events": []
+        },
+        "reviewer": {
+          "expected_pairs": 2,
+          "comparable_pairs": 2,
+          "correct_pairs": 2,
+          "accuracy_on_comparable_pairs": 1,
+          "unresolved_events": []
+        },
+        "merged": {
+          "expected_pairs": 2,
+          "comparable_pairs": 0,
+          "correct_pairs": 0,
+          "accuracy_on_comparable_pairs": null,
+          "unresolved_events": [
+            "incoming_motion_onset",
+            "formal_action_onset"
+          ]
+        }
+      },
+      "merged_state_presence": {
+        "expected_present": [
+          "idle/setup",
+          "prepare_onset",
+          "approach",
+          "contact_or_attachment",
+          "manipulation/action",
+          "effect_onset",
+          "result_onset",
+          "result_readable",
+          "stable_hold"
+        ],
+        "predicted_present": [],
+        "predicted_uncertain": [
+          "idle/setup",
+          "prepare_onset",
+          "approach",
+          "contact_or_attachment",
+          "manipulation/action",
+          "effect_onset",
+          "result_onset",
+          "result_readable",
+          "stable_hold"
+        ]
+      },
+      "model_disagreement_count": 11,
+      "state_localization_pass": false,
+      "pass_rationale": "Result onset agrees, but incoming-motion onset differs by 80 native frames, so the previously missed preroll remains unresolved.",
+      "gt009_pressure_test": null,
+      "gt010_pressure_test": null,
+      "gt011_pressure_test": null
+    },
+    {
+      "shot_id": "GT009",
+      "action_unit_id": "AU0120_C01",
+      "human_used_range_inclusive": [
+        1350,
+        2075
+      ],
+      "human_mapping_type": "piecewise_nonlinear_same_continuous_take",
+      "human_used_range_predicted_state_overlaps": [],
+      "human_in_to_predicted_relevant_state_onset": {
+        "label": "contact_or_attachment",
+        "frame": 1100,
+        "error_native_frames": -250,
+        "status": "resolved"
+      },
+      "human_out_to_nearest_predicted_result_or_hold_boundary": {
+        "label": null,
+        "frame": null,
+        "error_native_frames": null,
+        "status": "unresolved"
+      },
+      "event_ordering": {
+        "main": {
+          "expected_pairs": 5,
+          "comparable_pairs": 5,
+          "correct_pairs": 5,
+          "accuracy_on_comparable_pairs": 1,
+          "unresolved_events": []
+        },
+        "reviewer": {
+          "expected_pairs": 5,
+          "comparable_pairs": 5,
+          "correct_pairs": 5,
+          "accuracy_on_comparable_pairs": 1,
+          "unresolved_events": []
+        },
+        "merged": {
+          "expected_pairs": 5,
+          "comparable_pairs": 2,
+          "correct_pairs": 2,
+          "accuracy_on_comparable_pairs": 1,
+          "unresolved_events": [
+            "phone_attachment",
+            "low_information_wait_onset",
+            "terminal_stable_result_onset"
+          ]
+        }
+      },
+      "merged_state_presence": {
+        "expected_present": [
+          "idle/setup",
+          "prepare_onset",
+          "approach",
+          "contact_or_attachment",
+          "manipulation/action",
+          "effect_onset",
+          "result_onset",
+          "result_readable",
+          "stable_hold",
+          "reset/retry",
+          "failed_attempt",
+          "exit"
+        ],
+        "predicted_present": [
+          "idle/setup",
+          "prepare_onset",
+          "contact_or_attachment",
+          "manipulation/action"
+        ],
+        "predicted_uncertain": [
+          "approach",
+          "effect_onset",
+          "result_onset",
+          "result_readable",
+          "stable_hold",
+          "reset/retry",
+          "failed_attempt",
+          "exit"
+        ]
+      },
+      "model_disagreement_count": 11,
+      "state_localization_pass": true,
+      "pass_rationale": "Both models preserve phone attach → wait → watch add/contact → watch charge → terminal result order. Retry/terminal boundary conflicts are safely uncertain, with no phone/watch hallucination.",
+      "gt009_pressure_test": {
+        "phone_vs_watch_stage_separated": true,
+        "object_stage_hallucination": false,
+        "terminal_boundary_status": "uncertain"
+      },
+      "gt010_pressure_test": null,
+      "gt011_pressure_test": null
+    },
+    {
+      "shot_id": "GT010",
+      "action_unit_id": "AU0121_02",
+      "human_used_range_inclusive": [
+        236,
+        246
+      ],
+      "human_mapping_type": "monotonic_frame_selection_same_continuous_take",
+      "human_used_range_predicted_state_overlaps": [],
+      "human_in_to_predicted_relevant_state_onset": {
+        "label": "stable_low_motion_result_onset",
+        "frame": 218,
+        "error_native_frames": -18,
+        "status": "resolved"
+      },
+      "human_out_to_nearest_predicted_result_or_hold_boundary": {
+        "label": null,
+        "frame": null,
+        "error_native_frames": null,
+        "status": "unresolved"
+      },
+      "event_ordering": {
+        "main": {
+          "expected_pairs": 4,
+          "comparable_pairs": 4,
+          "correct_pairs": 4,
+          "accuracy_on_comparable_pairs": 1,
+          "unresolved_events": []
+        },
+        "reviewer": {
+          "expected_pairs": 4,
+          "comparable_pairs": 4,
+          "correct_pairs": 4,
+          "accuracy_on_comparable_pairs": 1,
+          "unresolved_events": []
+        },
+        "merged": {
+          "expected_pairs": 4,
+          "comparable_pairs": 3,
+          "correct_pairs": 3,
+          "accuracy_on_comparable_pairs": 1,
+          "unresolved_events": [
+            "fully_static_or_repeated_frames_onset"
+          ]
+        }
+      },
+      "merged_state_presence": {
+        "expected_present": [
+          "idle/setup",
+          "prepare_onset",
+          "approach",
+          "contact_or_attachment",
+          "manipulation/action",
+          "result_onset",
+          "result_readable",
+          "stable_hold",
+          "exit"
+        ],
+        "predicted_present": [],
+        "predicted_uncertain": [
+          "idle/setup",
+          "prepare_onset",
+          "approach",
+          "contact_or_attachment",
+          "manipulation/action",
+          "result_onset",
+          "result_readable",
+          "stable_hold",
+          "exit"
+        ]
+      },
+      "model_disagreement_count": 10,
+      "state_localization_pass": true,
+      "pass_rationale": "Placement, contact, result, and low-motion hold are independently localized in the correct order; only the exact fully-static onset remains uncertain.",
+      "gt009_pressure_test": null,
+      "gt010_pressure_test": {
+        "low_motion_result_hold_recognized": true,
+        "fully_static_or_repeated_distinguished": true
+      },
+      "gt011_pressure_test": null
+    },
+    {
+      "shot_id": "GT011",
+      "action_unit_id": "AU0122_03",
+      "human_used_range_inclusive": [
+        1670,
+        1985
+      ],
+      "human_mapping_type": "monotonic_frame_selection_same_continuous_take",
+      "human_used_range_predicted_state_overlaps": [],
+      "human_in_to_predicted_relevant_state_onset": {
+        "label": "cta_hand_enters",
+        "frame": 1819,
+        "error_native_frames": 149,
+        "status": "resolved"
+      },
+      "human_out_to_nearest_predicted_result_or_hold_boundary": {
+        "label": null,
+        "frame": null,
+        "error_native_frames": null,
+        "status": "unresolved"
+      },
+      "event_ordering": {
+        "main": {
+          "expected_pairs": 4,
+          "comparable_pairs": 4,
+          "correct_pairs": 4,
+          "accuracy_on_comparable_pairs": 1,
+          "unresolved_events": []
+        },
+        "reviewer": {
+          "expected_pairs": 4,
+          "comparable_pairs": 4,
+          "correct_pairs": 4,
+          "accuracy_on_comparable_pairs": 1,
+          "unresolved_events": []
+        },
+        "merged": {
+          "expected_pairs": 4,
+          "comparable_pairs": 1,
+          "correct_pairs": 1,
+          "accuracy_on_comparable_pairs": 1,
+          "unresolved_events": [
+            "gesture_peak",
+            "gesture_release_or_settle",
+            "post_gesture_tail_onset"
+          ]
+        }
+      },
+      "merged_state_presence": {
+        "expected_present": [
+          "idle/setup",
+          "prepare_onset",
+          "approach",
+          "manipulation/action",
+          "stable_hold",
+          "exit"
+        ],
+        "predicted_present": [],
+        "predicted_uncertain": [
+          "idle/setup",
+          "prepare_onset",
+          "approach",
+          "manipulation/action",
+          "effect_onset",
+          "result_onset",
+          "result_readable",
+          "stable_hold",
+          "reset/retry",
+          "exit"
+        ]
+      },
+      "model_disagreement_count": 13,
+      "state_localization_pass": false,
+      "pass_rationale": "Gesture existence is understood, but peak/release/tail differ by 59/118/151 frames; merged output correctly refuses to label a tail as the complete gesture.",
+      "gt009_pressure_test": null,
+      "gt010_pressure_test": null,
+      "gt011_pressure_test": {
+        "complete_gesture_resolved": false,
+        "tail_mislabeled_as_complete_gesture": false,
+        "conflict_correctly_triggered_uncertainty": true
+      }
+    }
+  ],
+  "aggregate": {
+    "state_localization_passes": "4/8",
+    "pass_count": 4,
+    "fail_count": 4,
+    "state_presence_precision": 1,
+    "state_presence_recall": 0.235,
+    "state_presence_counts": {
+      "true_positive": 16,
+      "false_positive": 0,
+      "false_negative_including_uncertain": 52,
+      "true_negative_including_uncertain": 28
+    },
+    "independent_model_event_ordering_accuracy_on_comparable_pairs": 1,
+    "independent_model_event_ordering_pairs": {
+      "correct": 38,
+      "comparable": 38
+    },
+    "mean_absolute_human_in_to_resolved_relevant_onset_error_native_frames": 106.2,
+    "mean_absolute_human_out_to_resolved_result_hold_boundary_error_native_frames": 36.667,
+    "merged_unresolved_relevant_in_points": [
+      "GT004",
+      "GT007",
+      "GT008"
+    ],
+    "merged_unresolved_result_hold_boundaries": [
+      "GT004",
+      "GT008",
+      "GT009",
+      "GT010",
+      "GT011"
+    ],
+    "total_model_disagreements": 73
+  },
+  "pressure_tests": {
+    "GT009": {
+      "state_misclassification_recurrence": false,
+      "conclusion": "Phone and watch stages are correctly ordered by both models; no watch-charging claim is placed inside the phone-only phase. Phone retry and terminal stable boundary remain uncertain."
+    },
+    "GT010": {
+      "state_misclassification_recurrence": false,
+      "conclusion": "Earbuds contact/result/low-motion hold are correctly identified; exact transition to fully static remains uncertain."
+    },
+    "GT011": {
+      "state_misclassification_recurrence": false,
+      "conclusion": "The gesture is recognized and tail is not promoted to a full gesture, but the primary compresses the gesture while reviewer spans the full motion; merged output is unresolved."
+    }
+  },
+  "diagnosis": {
+    "A_primary_failure_mode": "understands_action_states_but_precise_frame_localization_and_shared_boundary_definition_are_not_reliable",
+    "A_explanation": "Task-specific objects/events and their order are mostly understood, including the GT009 phone/watch separation. Failures concentrate in exact onset/settle boundaries and primary-reviewer disagreement, especially incoming preroll and CTA gesture extent.",
+    "B_dense_temporal_grounding_significantly_improved_state_hits": true,
+    "B_basis": "State-localization pass rises from Test B natural semantic state hits 2/8 to Test C 4/8, GT009 object-stage hallucination disappears, and conflicts are surfaced as uncertainty instead of forced guesses.",
+    "C_workflow_decision": "retain_as_grounding_and_QA_layer_but_do_not_yet_use_as_authoritative_cutter_boundary_generator",
+    "C_next_step": "Improve event definitions/adjudication or change the temporal visual model. Cutter may consume only agreed state boundaries; uncertain events must not produce automatic cut candidates."
+  },
+  "reference_notes": {
+    "state_presence_reference": "Expected visible-state presence was established only after freeze from the unlocked human-used ranges, raw AU visual review, and known action-unit semantics. It is coarser than exact frame-level human state annotation.",
+    "human_ranges": "GT005 and GT008 include incoming-preroll source ranges from the unlocked Test B evaluator; the other ranges use the human source spans."
+  }
+}
