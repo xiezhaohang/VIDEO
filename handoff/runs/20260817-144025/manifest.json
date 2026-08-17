@@ -1,0 +1,62 @@
+{
+  "run_id": "20260817-144025",
+  "task_name": "human-edit-ground-truth Partial Ground Truth EDL v0.9 + Human Rebuild Validation v1",
+  "created_at": "2026-08-17T06:43:13.915Z",
+  "source_local_paths": [
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-8\\outputs\\human-edit-ground-truth-partial-v1\\partial_ground_truth_edl_v0.9.json",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-8\\outputs\\human-edit-ground-truth-partial-v1\\rebuild_validation_metrics.json",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-8\\outputs\\human-edit-ground-truth-partial-v1\\human-rebuild-partial-v1-report.html",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-8\\outputs\\human-edit-ground-truth-partial-v1\\summary.json",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-8\\outputs\\human-edit-ground-truth-partial-v1\\summary.md"
+  ],
+  "files": [
+    {
+      "repository_path": "handoff/latest/partial_ground_truth_edl_v0.9.json",
+      "archived_path": "handoff/runs/20260817-144025/partial_ground_truth_edl_v0.9.json",
+      "type": "json",
+      "purpose": "Complete text delivery for ChatGPT review",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/rebuild_validation_metrics.json",
+      "archived_path": "handoff/runs/20260817-144025/rebuild_validation_metrics.json",
+      "type": "json",
+      "purpose": "Complete text delivery for ChatGPT review",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/human-rebuild-partial-v1-report.html",
+      "archived_path": "handoff/runs/20260817-144025/human-rebuild-partial-v1-report.html",
+      "type": "html",
+      "purpose": "Complete text delivery for ChatGPT review",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/summary.json",
+      "archived_path": "handoff/runs/20260817-144025/summary.json",
+      "type": "json",
+      "purpose": "Complete text delivery for ChatGPT review",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/summary.md",
+      "archived_path": "handoff/runs/20260817-144025/summary.md",
+      "type": "md",
+      "purpose": "Run overview for reviewers",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/manifest.json",
+      "archived_path": "handoff/runs/20260817-144025/manifest.json",
+      "type": "json",
+      "purpose": "Handoff inventory, provenance, and review requirements",
+      "must_review": true
+    }
+  ],
+  "local_only_files": [
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-8\\outputs\\human-edit-ground-truth-partial-v1\\human_rebuild_partial_v1.mp4",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-8\\outputs\\human-edit-ground-truth-partial-v1\\human_rebuild_partial_v1_side_by_side.mp4",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-8\\outputs\\human-edit-ground-truth-partial-v1\\human_rebuild_partial_v1_contact_sheet.jpg"
+  ],
+  "commit_sha": "10de314ab2b1d51be5f2ef66b1b3055f68cba9af"
+}
