@@ -1,0 +1,260 @@
+{
+  "schema": "human-edit-style-profile/1.0",
+  "source_basis": [
+    "human Ground Truth final",
+    "GT004-GT011 stable Action Unit bindings",
+    "Action Units v0.2",
+    "direct frame-sequence analysis for GT009/GT010"
+  ],
+  "observation_policy": "Only directly measurable behavior is asserted; unresolved source identity is never replaced by a semantic guess.",
+  "program": {
+    "duration_seconds": 26.330998,
+    "shot_count": 11,
+    "cut_count": 10,
+    "transition_count": 2,
+    "transition_duration_seconds": 1.033333
+  },
+  "shot_duration_distribution": {
+    "count": 11,
+    "min": 0.983333,
+    "p25": 1.416667,
+    "median": 1.916666,
+    "mean": 2.299788,
+    "p75": 2.850001,
+    "max": 4.466667,
+    "stddev": 1.173061,
+    "durations_by_shot": {
+      "GT001": 1.133333,
+      "GT002": 1.6,
+      "GT003": 1.566667,
+      "GT004": 2.25,
+      "GT005": 4.466667,
+      "GT006": 0.983333,
+      "GT007": 2.733334,
+      "GT008": 1.916666,
+      "GT009": 2.966667,
+      "GT010": 1.266667,
+      "GT011": 4.414331
+    }
+  },
+  "action_unit_preservation_rate": {
+    "confirmed_stable_subset": 1.0,
+    "numerator": 8,
+    "denominator": 8,
+    "shot_ids": [
+      "GT004",
+      "GT005",
+      "GT006",
+      "GT007",
+      "GT008",
+      "GT009",
+      "GT010",
+      "GT011"
+    ],
+    "all_shots_lower_bound": 0.727273,
+    "note": "GT001-GT003 are excluded from the confirmed denominator because the required complete source actions are not present in the scanned Action Units."
+  },
+  "single_source_action_rate": {
+    "confirmed_stable_subset": 1.0,
+    "numerator": 8,
+    "denominator": 8,
+    "all_shots_lower_bound": 0.727273
+  },
+  "phase_retention": {
+    "prepare_mean_presence": 1.0,
+    "action_mean_presence": 1.0,
+    "result_mean_presence": 1.0,
+    "hold_mean_presence": 1.0,
+    "denominator_shots": [
+      "GT004",
+      "GT005",
+      "GT006",
+      "GT007",
+      "GT008",
+      "GT009",
+      "GT010",
+      "GT011"
+    ],
+    "measurement": "phase presence within the selected complete Action Unit, not exact temporal percentage",
+    "temporal_ratio_status": "deferred_until_frame-accurate Ground Truth EDL because coarse AU boundaries cannot support honest duration percentages"
+  },
+  "result_hold_duration": {
+    "directly_measured": {
+      "GT011_post_vo_visual_hold_seconds": 1.770998,
+      "GT010_tail_window_analyzed_seconds": 0.4
+    },
+    "distribution_status": "partial; exact per-shot result-onset needs frame-accurate EDL mapping"
+  },
+  "vo_lead_lag": {
+    "definition": "visual shot start minus start of its first linked VO sentence",
+    "per_shot": [
+      {
+        "shot_id": "GT001",
+        "first_linked_vo_sentence": 1,
+        "visual_start_minus_sentence_start_seconds": 0.0,
+        "interpretation": "aligned"
+      },
+      {
+        "shot_id": "GT002",
+        "first_linked_vo_sentence": 1,
+        "visual_start_minus_sentence_start_seconds": 1.133333,
+        "interpretation": "visual_lags_sentence"
+      },
+      {
+        "shot_id": "GT003",
+        "first_linked_vo_sentence": 1,
+        "visual_start_minus_sentence_start_seconds": 2.733333,
+        "interpretation": "visual_lags_sentence"
+      },
+      {
+        "shot_id": "GT004",
+        "first_linked_vo_sentence": 2,
+        "visual_start_minus_sentence_start_seconds": 0.66,
+        "interpretation": "visual_lags_sentence"
+      },
+      {
+        "shot_id": "GT005",
+        "first_linked_vo_sentence": 3,
+        "visual_start_minus_sentence_start_seconds": -0.016667,
+        "interpretation": "visual_leads_sentence"
+      },
+      {
+        "shot_id": "GT006",
+        "first_linked_vo_sentence": 4,
+        "visual_start_minus_sentence_start_seconds": 2.43,
+        "interpretation": "visual_lags_sentence"
+      },
+      {
+        "shot_id": "GT007",
+        "first_linked_vo_sentence": 5,
+        "visual_start_minus_sentence_start_seconds": 0.513333,
+        "interpretation": "visual_lags_sentence"
+      },
+      {
+        "shot_id": "GT008",
+        "first_linked_vo_sentence": 6,
+        "visual_start_minus_sentence_start_seconds": 0.666667,
+        "interpretation": "visual_lags_sentence"
+      },
+      {
+        "shot_id": "GT009",
+        "first_linked_vo_sentence": 6,
+        "visual_start_minus_sentence_start_seconds": 2.583333,
+        "interpretation": "visual_lags_sentence"
+      },
+      {
+        "shot_id": "GT010",
+        "first_linked_vo_sentence": 7,
+        "visual_start_minus_sentence_start_seconds": 1.25,
+        "interpretation": "visual_lags_sentence"
+      },
+      {
+        "shot_id": "GT011",
+        "first_linked_vo_sentence": 8,
+        "visual_start_minus_sentence_start_seconds": -0.123333,
+        "interpretation": "visual_leads_sentence"
+      }
+    ],
+    "distribution_seconds": {
+      "count": 11,
+      "min": -0.123333,
+      "p25": 0.256667,
+      "median": 0.666667,
+      "mean": 1.075454,
+      "p75": 1.84,
+      "max": 2.733333,
+      "stddev": 1.015023
+    },
+    "boundary_crossing_shot_rate": 0.454545
+  },
+  "feature_per_shot": 1.454545,
+  "shots_per_feature": 1.222222,
+  "feature_proxy": "VO sentence linkage; 9 explicit spoken feature/claim units",
+  "repeated_action_rate": {
+    "exact_physical_action_repeat_rate": 0.0,
+    "exact_repeats": 0,
+    "denominator_shots": 11,
+    "note": "Repeated device categories use different action states/compositions; no final shot simply reuses the same physical action."
+  },
+  "when_human_keeps_one_strong_shot_instead_of_word_matching": {
+    "rate": 0.454545,
+    "shot_ids": [
+      "GT003",
+      "GT005",
+      "GT006",
+      "GT009",
+      "GT011"
+    ],
+    "measurable_rule": "one visual shot crosses at least one linked VO sentence boundary",
+    "strongest_examples": [
+      "GT005 complete cable-removal action across two claims",
+      "GT009 complete multi-device build across hotel/ease claims",
+      "GT011 CTA gesture/tableau across sale/link lines plus post-speech hold"
+    ]
+  },
+  "use_of_speed_change_frame_skip_freeze_hold": {
+    "GT009": {
+      "nonlinear_piecewise_mapping": true,
+      "single_constant_speed_rejected": true,
+      "piecewise_segment_count": 5
+    },
+    "GT010": {
+      "decision": "natural_source_hold_no_additional_freeze_detected",
+      "confidence": 0.93
+    },
+    "GT011": {
+      "post_speech_hold_seconds": 1.770998
+    }
+  },
+  "cta_ending_behavior": {
+    "cta_shot_id": "GT011",
+    "cta_shot_duration_seconds": 4.414331,
+    "visual_behavior": "complete hero stack plus pointing gesture",
+    "spoken_cta_end_seconds": 24.56,
+    "program_end_seconds": 26.330998,
+    "post_speech_visual_hold_seconds": 1.770998,
+    "ends_on_strong_result_not_new_word_matched_shot": true
+  },
+  "pacing_curve": [
+    {
+      "section": "front",
+      "start": 0.0,
+      "end": 8.776999,
+      "content_shot_exposures": 5,
+      "mean_exposure_duration": 1.688733,
+      "shot_exposures_per_10_seconds": 5.696708,
+      "content_occupancy_rate": 0.962022
+    },
+    {
+      "section": "middle",
+      "start": 8.776999,
+      "end": 17.553999,
+      "content_shot_exposures": 4,
+      "mean_exposure_duration": 2.01925,
+      "shot_exposures_per_10_seconds": 4.557366,
+      "content_occupancy_rate": 0.920246
+    },
+    {
+      "section": "back",
+      "start": 17.553999,
+      "end": 26.330998,
+      "content_shot_exposures": 4,
+      "mean_exposure_duration": 2.19425,
+      "shot_exposures_per_10_seconds": 4.557366,
+      "content_occupancy_rate": 1.0
+    }
+  ],
+  "additional_human_signals": {
+    "opening_capability_triad_deadline_seconds": 4.3,
+    "opening_three_shot_mean_duration_seconds": 1.433333,
+    "middle_complete_action_anchor_GT005_seconds": 4.466667,
+    "longest_shot_is_complete_action_or_cta_hold": true,
+    "transition_intervals_are_not_counted_as_microcuts": true,
+    "semantic_word_matching_is_subordinate_to_action_completion": true
+  },
+  "core_constraints": [
+    "A physical action defaults to one source clip unless the human Ground Truth explicitly crosses sources.",
+    "Master Reel supplies same-session context; every source boundary remains a hard boundary.",
+    "Action Unit is the selection unit; frame similarity is only a locator."
+  ]
+}

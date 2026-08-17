@@ -1,0 +1,177 @@
+{
+  "schema": "human-edit-unresolved-gt-resolution/1.0",
+  "status": "minimum_manual_confirmation_still_required",
+  "GT001_GT003": {
+    "resolved": false,
+    "confidence": 0.98,
+    "finding": "The scanned 17-source session does not contain complete Action Units matching the three handheld desktop-axis capability shots.",
+    "items": [
+      {
+        "shot_id": "GT001",
+        "required_visual": "handheld phone plus attached power bank on desktop/clock background",
+        "closest_context": "0106 shares the desktop background and hands but contains only the power bank rotation; the phone-plus-bank physical action is absent",
+        "minimum_manual_confirmation": "confirm whether an unlisted source, still/composite, or alternate export supplied this shot"
+      },
+      {
+        "shot_id": "GT002",
+        "required_visual": "same handheld desktop axis with watch across the stack",
+        "closest_context": "watch Action Units exist, but on the gray sofa/tabletop setup and with incompatible geometry",
+        "minimum_manual_confirmation": "identify the missing handheld take or confirm compositing"
+      },
+      {
+        "shot_id": "GT003",
+        "required_visual": "same handheld desktop axis with earbuds placement",
+        "closest_context": "0121 supplies a complete earbuds action but is a locked top-down sofa shot, so it is rejected as the source for GT003",
+        "minimum_manual_confirmation": "identify the missing handheld earbuds take or confirm compositing"
+      }
+    ],
+    "rejected_provisional_bindings": [
+      "GT001 -> AU0106_01 as complete source",
+      "GT002 -> AU0110_02",
+      "GT003 -> AU0121_02"
+    ],
+    "reason": "They match objects or partial context, not the full physical action and camera geometry. Source boundary and Action Unit integrity override frame-similarity rank."
+  },
+  "GT009": {
+    "resolved": true,
+    "source_file": "DJI_20260801171251_0120_D.MP4",
+    "action_unit_id": "AU0120_C01",
+    "mapping_type": "piecewise_nonlinear",
+    "single_speed_value_allowed": false,
+    "piecewise_mapping": [
+      {
+        "final_start_frame": 1061,
+        "final_end_frame": 1072,
+        "source_start_frame": 1350,
+        "source_end_frame": 1350,
+        "mapping_type": "opening_hold_anchor",
+        "estimated_source_frames_per_final_frame": 0.0,
+        "confidence": 0.93
+      },
+      {
+        "final_start_frame": 1073,
+        "final_end_frame": 1118,
+        "source_start_frame": 1352,
+        "source_end_frame": 1406,
+        "mapping_type": "forward_selection",
+        "estimated_source_frames_per_final_frame": 1.2073,
+        "confidence": 0.99
+      },
+      {
+        "final_start_frame": 1119,
+        "final_end_frame": 1144,
+        "source_start_frame": 1408,
+        "source_end_frame": 1408,
+        "mapping_type": "intermediate_hold_anchor",
+        "estimated_source_frames_per_final_frame": 0.0,
+        "confidence": 0.88
+      },
+      {
+        "final_start_frame": 1145,
+        "final_end_frame": 1172,
+        "source_start_frame": 1589,
+        "source_end_frame": 1621,
+        "mapping_type": "jump_then_forward_selection",
+        "estimated_source_frames_per_final_frame": 1.1883,
+        "confidence": 0.99
+      },
+      {
+        "final_start_frame": 1173,
+        "final_end_frame": 1238,
+        "source_start_frame": 2064,
+        "source_end_frame": 2075,
+        "mapping_type": "jump_to_result_hold_range_exact_frame_indeterminate",
+        "estimated_source_frames_per_final_frame": null,
+        "confidence": 0.96,
+        "note": "Verified final anchors 1185 and 1217 both match source frame 2064 best; low-motion source frames 2064-2075 are visually near-equivalent, so the honest mapping is a bounded hold range, not a fabricated constant speed."
+      }
+    ],
+    "global_median_similarity": 0.91469,
+    "confidence": 0.95
+  },
+  "GT010": {
+    "resolved": true,
+    "source_file": "DJI_20260801171336_0121_D.MP4",
+    "action_unit_id": "AU0121_02",
+    "decision": "natural_source_hold_no_additional_freeze_detected",
+    "confidence": 0.93,
+    "piecewise_mapping": [
+      {
+        "final_start_frame": 1239,
+        "final_end_frame": 1271,
+        "source_start_frame": 232,
+        "source_end_frame": 232,
+        "mapping_type": "hold_near_source_frame",
+        "estimated_source_frames_per_final_frame": -0.0,
+        "median_similarity": 0.807455,
+        "confidence": 0.55
+      },
+      {
+        "final_start_frame": 1272,
+        "final_end_frame": 1275,
+        "source_start_frame": 236,
+        "source_end_frame": 238,
+        "mapping_type": "forward_selection",
+        "estimated_source_frames_per_final_frame": 0.6,
+        "median_similarity": 0.855411,
+        "confidence": 0.73
+      },
+      {
+        "final_start_frame": 1276,
+        "final_end_frame": 1310,
+        "source_start_frame": 240,
+        "source_end_frame": 240,
+        "mapping_type": "hold_near_source_frame",
+        "estimated_source_frames_per_final_frame": -0.0,
+        "median_similarity": 0.943583,
+        "confidence": 0.99
+      },
+      {
+        "final_start_frame": 1311,
+        "final_end_frame": 1314,
+        "source_start_frame": 246,
+        "source_end_frame": 246,
+        "mapping_type": "forward_selection",
+        "estimated_source_frames_per_final_frame": 0.0,
+        "median_similarity": 0.946485,
+        "confidence": 0.99
+      }
+    ],
+    "evidence": {
+      "final_tail_frames_analyzed": 24,
+      "final_tail_motion": {
+        "pair_count": 23,
+        "mean_abs_gray_difference": 0.367794,
+        "median_abs_gray_difference": 0.323403,
+        "max_abs_gray_difference": 0.902569,
+        "near_identical_pair_rate_below_0_05": 0.0,
+        "exact_duplicate_pair_rate": 0.0
+      },
+      "matched_source_tail_range": {
+        "start_frame": 238,
+        "end_frame": 248
+      },
+      "matched_source_tail_motion": {
+        "pair_count": 10,
+        "mean_abs_gray_difference": 0.37701,
+        "median_abs_gray_difference": 0.357986,
+        "max_abs_gray_difference": 0.569549,
+        "near_identical_pair_rate_below_0_05": 0.0,
+        "exact_duplicate_pair_rate": 0.0
+      },
+      "mapped_distinct_source_frames_in_final_tail": 2,
+      "mapped_source_span_in_final_tail": 6
+    }
+  },
+  "ready_for_ground_truth_edl": false,
+  "minimum_remaining_manual_items": [
+    "GT001 source provenance",
+    "GT002 source provenance",
+    "GT003 source provenance"
+  ],
+  "core_constraints": [
+    "A physical action defaults to one source clip unless the human Ground Truth explicitly crosses sources.",
+    "Master Reel supplies same-session context; every source boundary remains a hard boundary.",
+    "Action Unit is the selection unit; frame similarity is only a locator."
+  ]
+}
