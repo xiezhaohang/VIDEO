@@ -1,0 +1,2270 @@
+{
+  "experiment": "Boundary Refiner Test D — Semantic Window + Deterministic Frame Refinement",
+  "phase": "evidence_frozen",
+  "generated_at": "2026-08-17T09:50:09.015749+00:00",
+  "ground_truth_unlocked": false,
+  "evidence": [
+    {
+      "shot_id": "GT004",
+      "source_id": "0106",
+      "action_unit_id": "AU0106_01",
+      "proxy_sha256": "6D2A22F44FCC398D85086C6111D5F852296785EC7033F087437B41E357D4E5AD",
+      "native_fps": 59.94005994005994,
+      "frame_count": 810,
+      "raw_adaptation": {
+        "confirmation_N": 7,
+        "diff_summary": {
+          "median": 1.6375771604938272,
+          "mad": 1.1508294763086422,
+          "p25": 0.6714506172839506,
+          "p75": 3.4678240740740742,
+          "p90": 4.949483024691358
+        },
+        "flow_summary": {
+          "median": 0.1143178790807724,
+          "mad": 0.08350855584604835,
+          "p25": 0.049896370619535446,
+          "p75": 0.360608845949173,
+          "p90": 0.5448225378990175
+        },
+        "thresholds": {
+          "diff_active": 4.514650851265433,
+          "diff_stable": 1.2468653554382718,
+          "flow_active": 0.3230892686958933,
+          "flow_stable": 0.09165064854255962
+        }
+      },
+      "events": [
+        {
+          "event": "front_stable",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "front_stable",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 0,
+                "native_end_frame": 45
+              },
+              "object_evidence": "White power bank with 'DIGICRA' logo and grey circle is held steady facing the camera.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "front_stable",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 10,
+                "native_end_frame": 70
+              },
+              "object_evidence": "The DIGICRA logo and front ring are clearly visible and held steady by hand.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            0,
+            70
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 4.514651,
+              "diff_stable": 1.246865,
+              "flow_active": 0.323089,
+              "flow_stable": 0.091651
+            },
+            "method": "adaptive_roi_motion",
+            "quality": 0.0,
+            "selected_frame": null,
+            "selected_interval": null,
+            "uncertainty": "no_sustained_low_motion_run_in_semantic_window"
+          }
+        },
+        {
+          "event": "rotation_onset",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "rotation_onset",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 30,
+                "native_end_frame": 60
+              },
+              "object_evidence": "The hands begin to tilt the power bank, moving the front face away from the camera.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "rotation_onset",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 30,
+                "native_end_frame": 90
+              },
+              "object_evidence": "Hand movement begins flipping the charger unit away from the front view.",
+              "confidence": 0.9,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            30,
+            90
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 4.514651,
+              "diff_stable": 1.246865,
+              "flow_active": 0.323089,
+              "flow_stable": 0.091651
+            },
+            "method": "adaptive_roi_motion",
+            "quality": 0.79,
+            "selected_frame": 32,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "back_first_visible",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "back_first_visible",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 50,
+                "native_end_frame": 80
+              },
+              "object_evidence": "The grey back surface of the power bank comes into view as the rotation continues.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "back_first_visible",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 60,
+                "native_end_frame": 120
+              },
+              "object_evidence": "The back face featuring the magnetic alignment circle and vertical dash comes into view.",
+              "confidence": 0.92,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            50,
+            120
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 4.514651,
+              "diff_stable": 1.246865,
+              "flow_active": 0.323089,
+              "flow_stable": 0.091651
+            },
+            "method": "adaptive_roi_motion",
+            "quality": 0.79,
+            "selected_frame": 50,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "back_readable",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "back_readable",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 75,
+                "native_end_frame": 110
+              },
+              "object_evidence": "The grey back face with a circle and line design is fully facing the camera and held relatively still.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "back_readable",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 100,
+                "native_end_frame": 560
+              },
+              "object_evidence": "The back face pattern remains fully exposed while fingers interact with the surface.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            75,
+            560
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 4.514651,
+              "diff_stable": 1.246865,
+              "flow_active": 0.323089,
+              "flow_stable": 0.091651
+            },
+            "method": "adaptive_low_motion_sustained_readability",
+            "quality": 0.82,
+            "selected_frame": 122,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "rotation_back_onset",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "rotation_back_onset",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 560,
+                "native_end_frame": 610
+              },
+              "object_evidence": "The hands begin to rotate the power bank in the opposite direction, moving the back face away.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "rotation_back_onset",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 550,
+                "native_end_frame": 630
+              },
+              "object_evidence": "Hands turn the device back around to reveal the front DIGICRA face again.",
+              "confidence": 0.92,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            550,
+            630
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 4.514651,
+              "diff_stable": 1.246865,
+              "flow_active": 0.323089,
+              "flow_stable": 0.091651
+            },
+            "method": "adaptive_roi_motion",
+            "quality": 0.79,
+            "selected_frame": 555,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "front_readable_hold",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "front_readable_hold",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 640,
+                "native_end_frame": 700
+              },
+              "object_evidence": "The white front face with the 'DIGICRA' logo is again fully facing the camera and held steady.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "front_readable_hold",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 620,
+                "native_end_frame": 809
+              },
+              "object_evidence": "The front side with DIGICRA branding is stationary and clearly readable.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            620,
+            809
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 4.514651,
+              "diff_stable": 1.246865,
+              "flow_active": 0.323089,
+              "flow_stable": 0.091651
+            },
+            "method": "adaptive_low_motion_sustained_readability",
+            "quality": 0.82,
+            "selected_frame": 655,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        }
+      ],
+      "local_only_curve_file": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-13\\work\\boundary-refiner-test-d\\local_only\\GT004_raw_curves.npz"
+    },
+    {
+      "shot_id": "GT005",
+      "source_id": "0108",
+      "action_unit_id": "AU0108_01",
+      "proxy_sha256": "9F8C1DC0AF4D3E8E51A22EA40A56FC2ECD8E37F046F98BD283A38EF49AC28E98",
+      "native_fps": 59.94005994005994,
+      "frame_count": 417,
+      "raw_adaptation": {
+        "confirmation_N": 7,
+        "diff_summary": {
+          "median": 8.255690586419753,
+          "mad": 2.7256944454444443,
+          "p25": 4.575217013888889,
+          "p75": 10.128158757716049,
+          "p90": 16.8259162808642
+        },
+        "flow_summary": {
+          "median": 0.6477851867675781,
+          "mad": 0.28128215770585635,
+          "p25": 0.38208919763565063,
+          "p75": 0.9330526888370514,
+          "p90": 1.999553143978119
+        },
+        "thresholds": {
+          "diff_active": 15.069926700030864,
+          "diff_stable": 5.938064236611111,
+          "flow_active": 1.3509905810322191,
+          "flow_stable": 0.5227302764885788
+        }
+      },
+      "events": [
+        {
+          "event": "hand_motion_entry",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "hand_motion_entry",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 815,
+                "native_end_frame": 845
+              },
+              "object_evidence": "Right hand entering the frame from the right side.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "hand_motion_entry",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 800,
+                "native_end_frame": 850
+              },
+              "object_evidence": "Hand enters the frame from the upper right region towards the white cable assembly.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            800,
+            850
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 15.069927,
+              "diff_stable": 5.938064,
+              "flow_active": 1.350991,
+              "flow_stable": 0.52273
+            },
+            "method": "adaptive_roi_motion_weak_extremum_interval",
+            "quality": 0.58,
+            "selected_frame": null,
+            "selected_interval": [
+              819,
+              823
+            ],
+            "uncertainty": "persistence_not_met_exact_frame_withheld"
+          }
+        },
+        {
+          "event": "cable_grasp",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "cable_grasp",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 840,
+                "native_end_frame": 895
+              },
+              "object_evidence": "Fingers closing around the white charging cables and power adapters.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "cable_grasp",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 840,
+                "native_end_frame": 900
+              },
+              "object_evidence": "Fingers close around the coiled white charging cable and block.",
+              "confidence": 0.92,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            840,
+            900
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 15.069927,
+              "diff_stable": 5.938064,
+              "flow_active": 1.350991,
+              "flow_stable": 0.52273
+            },
+            "method": "adaptive_roi_motion",
+            "quality": 0.0,
+            "selected_frame": null,
+            "selected_interval": null,
+            "uncertainty": "contact_relation_not_resolved_beyond_semantic_window"
+          }
+        },
+        {
+          "event": "cable_lift",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "cable_lift",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 880,
+                "native_end_frame": 940
+              },
+              "object_evidence": "Hand moving upwards, pulling the grasped cables and adapters off the surface.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "cable_lift",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 870,
+                "native_end_frame": 940
+              },
+              "object_evidence": "The grasped white cable block is displaced vertically off the gray mat surface.",
+              "confidence": 0.9,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            870,
+            940
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 15.069927,
+              "diff_stable": 5.938064,
+              "flow_active": 1.350991,
+              "flow_stable": 0.52273
+            },
+            "method": "adaptive_roi_motion_weak_extremum_interval",
+            "quality": 0.58,
+            "selected_frame": null,
+            "selected_interval": [
+              929,
+              933
+            ],
+            "uncertainty": "persistence_not_met_exact_frame_withheld"
+          }
+        },
+        {
+          "event": "cable_exit",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "cable_exit",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 970,
+                "native_end_frame": 1030
+              },
+              "object_evidence": "Hand and the bundle of cables moving out of the bottom-left edge of the frame.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "cable_exit",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 980,
+                "native_end_frame": 1050
+              },
+              "object_evidence": "The hand and cable move entirely out of the left frame edge.",
+              "confidence": 0.93,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            970,
+            1050
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 15.069927,
+              "diff_stable": 5.938064,
+              "flow_active": 1.350991,
+              "flow_stable": 0.52273
+            },
+            "method": "hand_or_object_roi_exit_plus_persistence",
+            "quality": 0.8,
+            "selected_frame": 1037,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "cleared_scene_readable",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "cleared_scene_readable",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1015,
+                "native_end_frame": 1080
+              },
+              "object_evidence": "The grey surface with the iPhone, Apple Watch, and AirPods case remaining, free of the removed cables.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "cleared_scene_readable",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1040,
+                "native_end_frame": 1097
+              },
+              "object_evidence": "The remaining items (phone, smartwatch, earbud case) are unobscured and visible on the surface.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            1015,
+            1097
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 15.069927,
+              "diff_stable": 5.938064,
+              "flow_active": 1.350991,
+              "flow_stable": 0.52273
+            },
+            "method": "adaptive_low_motion_sustained_readability",
+            "quality": 0.82,
+            "selected_frame": 1047,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        }
+      ],
+      "local_only_curve_file": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-13\\work\\boundary-refiner-test-d\\local_only\\GT005_raw_curves.npz"
+    },
+    {
+      "shot_id": "GT006",
+      "source_id": "0109",
+      "action_unit_id": "AU0109_02",
+      "proxy_sha256": "0731E35799BD6C37695C780D1444DEE8109173E7EB1EBE7AE15892C039E5278D",
+      "native_fps": 59.94005994005994,
+      "frame_count": 231,
+      "raw_adaptation": {
+        "confirmation_N": 7,
+        "diff_summary": {
+          "median": 0.6011188271604938,
+          "mad": 0.31806520161728397,
+          "p25": 0.3631510416666667,
+          "p75": 1.3217013888888889,
+          "p90": 4.931415895061727
+        },
+        "flow_summary": {
+          "median": 0.021919691935181618,
+          "mad": 0.01226709184585309,
+          "p25": 0.010216396301984787,
+          "p75": 0.03763841837644577,
+          "p90": 0.12457649931311607
+        },
+        "thresholds": {
+          "diff_active": 1.3962818312037037,
+          "diff_stable": 0.5221836424753087,
+          "flow_active": 0.05258742154981434,
+          "flow_stable": 0.016349942224911332
+        }
+      },
+      "events": [
+        {
+          "event": "hand_entry",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "hand_entry",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 450,
+                "native_end_frame": 480
+              },
+              "object_evidence": "Fingers and part of a hand holding a white rectangular object appear at the bottom right edge of the frame.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "hand_entry",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 435,
+                "native_end_frame": 495
+              },
+              "object_evidence": "Hand holding the white magnetic power bank enters the frame from the right side.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            435,
+            495
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 1.396282,
+              "diff_stable": 0.522184,
+              "flow_active": 0.052587,
+              "flow_stable": 0.01635
+            },
+            "method": "adaptive_roi_motion",
+            "quality": 0.79,
+            "selected_frame": 462,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "product_motion_onset",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "product_motion_onset",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 450,
+                "native_end_frame": 480
+              },
+              "object_evidence": "The white power bank is in motion as it enters the frame held by the hand.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "product_motion_onset",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 440,
+                "native_end_frame": 500
+              },
+              "object_evidence": "The white power bank is moved into the camera's central viewing area.",
+              "confidence": 0.92,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            440,
+            500
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 1.396282,
+              "diff_stable": 0.522184,
+              "flow_active": 0.052587,
+              "flow_stable": 0.01635
+            },
+            "method": "adaptive_roi_motion",
+            "quality": 0.79,
+            "selected_frame": 462,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "product_centered",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "product_centered",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 530,
+                "native_end_frame": 570
+              },
+              "object_evidence": "The hand brings the white power bank to the center of the frame and its movement slows down significantly.",
+              "confidence": 0.9,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "product_centered",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 515,
+                "native_end_frame": 575
+              },
+              "object_evidence": "The power bank is brought into the center of the frame and held stationary.",
+              "confidence": 0.9,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            515,
+            575
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 1.396282,
+              "diff_stable": 0.522184,
+              "flow_active": 0.052587,
+              "flow_stable": 0.01635
+            },
+            "method": "adaptive_roi_motion",
+            "quality": 0.0,
+            "selected_frame": null,
+            "selected_interval": null,
+            "uncertainty": "no_sustained_low_motion_run_in_semantic_window"
+          }
+        },
+        {
+          "event": "hero_readable_hold",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "hero_readable_hold",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 540,
+                "native_end_frame": 629
+              },
+              "object_evidence": "The white power bank is held steady in the center of the frame, and the brand name 'DIGIERA' is clearly visible and in focus.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "hero_readable_hold",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 540,
+                "native_end_frame": 615
+              },
+              "object_evidence": "The DIGIGRA text on the power bank is clearly legible, upright, and stable in focus.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            540,
+            629
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 1.396282,
+              "diff_stable": 0.522184,
+              "flow_active": 0.052587,
+              "flow_stable": 0.01635
+            },
+            "method": "adaptive_roi_motion",
+            "quality": 0.0,
+            "selected_frame": null,
+            "selected_interval": null,
+            "uncertainty": "no_sustained_low_motion_run_in_semantic_window"
+          }
+        }
+      ],
+      "local_only_curve_file": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-13\\work\\boundary-refiner-test-d\\local_only\\GT006_raw_curves.npz"
+    },
+    {
+      "shot_id": "GT007",
+      "source_id": "0112",
+      "action_unit_id": "AU0112_C01",
+      "proxy_sha256": "84B237FC8F70C6B975558FCCA474E159D773371F95858B6C94DD28949708F3EA",
+      "native_fps": 59.94005994005994,
+      "frame_count": 794,
+      "raw_adaptation": {
+        "confirmation_N": 7,
+        "diff_summary": {
+          "median": 2.459008487654321,
+          "mad": 1.5319251553209874,
+          "p25": 1.1536844135802469,
+          "p75": 5.299093364197531,
+          "p90": 8.111828703703708
+        },
+        "flow_summary": {
+          "median": 0.36172351241111755,
+          "mad": 0.21432432632310486,
+          "p25": 0.1844906210899353,
+          "p75": 0.8062127828598022,
+          "p90": 1.1953575611114504
+        },
+        "thresholds": {
+          "diff_active": 6.28882137595679,
+          "diff_stable": 1.9196469912407406,
+          "flow_active": 0.8975343282188797,
+          "flow_stable": 0.2916527842514877
+        }
+      },
+      "events": [
+        {
+          "event": "watch_approach",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "watch_approach",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 510,
+                "native_end_frame": 565
+              },
+              "object_evidence": "Hand holding the white charger moves downwards towards the black watch resting on the surface.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "watch_approach",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 520,
+                "native_end_frame": 600
+              },
+              "object_evidence": "Hand holding smart watch moves towards the white magnetic charging pad.",
+              "confidence": 0.9,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            510,
+            600
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 6.288821,
+              "diff_stable": 1.919647,
+              "flow_active": 0.897534,
+              "flow_stable": 0.291653
+            },
+            "method": "adaptive_roi_motion",
+            "quality": 0.79,
+            "selected_frame": 510,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "watch_contact",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "watch_contact",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 555,
+                "native_end_frame": 585
+              },
+              "object_evidence": "The white charger makes physical contact with the back of the black watch, occluding it.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "watch_contact",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 550,
+                "native_end_frame": 630
+              },
+              "object_evidence": "Smart watch contacts the central surface of the white charger.",
+              "confidence": 0.92,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            550,
+            630
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 6.288821,
+              "diff_stable": 1.919647,
+              "flow_active": 0.897534,
+              "flow_stable": 0.291653
+            },
+            "method": "approach_motion_inflection_plus_contact_persistence",
+            "quality": 0.73,
+            "selected_frame": null,
+            "selected_interval": [
+              627,
+              629
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "lift_with_watch",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "lift_with_watch",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 575,
+                "native_end_frame": 625
+              },
+              "object_evidence": "The hand lifts the white charger upwards, and the black watch remains magnetically attached and moves with it.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "lift_with_watch",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 590,
+                "native_end_frame": 660
+              },
+              "object_evidence": "Hand elevates charger unit with attached watch together.",
+              "confidence": 0.85,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            575,
+            660
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 6.288821,
+              "diff_stable": 1.919647,
+              "flow_active": 0.897534,
+              "flow_stable": 0.291653
+            },
+            "method": "adaptive_roi_motion",
+            "quality": 0.79,
+            "selected_frame": 578,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "charging_icon_onset",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "charging_icon_onset",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 600,
+                "native_end_frame": 635
+              },
+              "object_evidence": "The screen of the black watch illuminates, displaying a green circular charging icon with a lightning bolt.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "charging_icon_onset",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 600,
+                "native_end_frame": 650
+              },
+              "object_evidence": "Green charging bolt symbol illuminates on watch display.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            600,
+            650
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 6.288821,
+              "diff_stable": 1.919647,
+              "flow_active": 0.897534,
+              "flow_stable": 0.291653
+            },
+            "method": "max_quadrant_local_change_with_persistence",
+            "quality": 0.79,
+            "selected_frame": 600,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "charging_readable_hold",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "charging_readable_hold",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 625,
+                "native_end_frame": 720
+              },
+              "object_evidence": "The green charging icon remains clearly visible and unobscured on the watch screen while held in the air.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "charging_readable_hold",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 620,
+                "native_end_frame": 710
+              },
+              "object_evidence": "Green charging display remains continuously clear and unobscured.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            620,
+            720
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 6.288821,
+              "diff_stable": 1.919647,
+              "flow_active": 0.897534,
+              "flow_stable": 0.291653
+            },
+            "method": "adaptive_low_motion_sustained_readability",
+            "quality": 0.82,
+            "selected_frame": 652,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        }
+      ],
+      "local_only_curve_file": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-13\\work\\boundary-refiner-test-d\\local_only\\GT007_raw_curves.npz"
+    },
+    {
+      "shot_id": "GT008",
+      "source_id": "0116",
+      "action_unit_id": "AU0116_01",
+      "proxy_sha256": "0FC7F4120F6C68EF807E985BDF8390DF5A213FCF6301B5FA13C313CCCD39920B",
+      "native_fps": 59.94005994005994,
+      "frame_count": 268,
+      "raw_adaptation": {
+        "confirmation_N": 7,
+        "diff_summary": {
+          "median": 4.28695987654321,
+          "mad": 2.649266976308642,
+          "p25": 2.138869598765432,
+          "p75": 7.992418981481482,
+          "p90": 10.108051697530865
+        },
+        "flow_summary": {
+          "median": 0.27415958046913147,
+          "mad": 0.13615673880441284,
+          "p25": 0.17791549861431122,
+          "p75": 0.6271922588348389,
+          "p90": 1.2381391525268555
+        },
+        "thresholds": {
+          "diff_active": 10.910127317314814,
+          "diff_stable": 3.463503086919753,
+          "flow_active": 0.6145514274801636,
+          "flow_stable": 0.24599386801651763
+        }
+      },
+      "events": [
+        {
+          "event": "hand_grip_motion_onset",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "hand_grip_motion_onset",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 310,
+                "native_end_frame": 330
+              },
+              "object_evidence": "Hand makes contact with the phone, charger, and watch stack and begins to move them together.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "hand_grip_motion_onset",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 265,
+                "native_end_frame": 315
+              },
+              "object_evidence": "Hand makes direct contact with the watch and charger stack on phone.",
+              "confidence": 0.72,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            265,
+            330
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 10.910127,
+              "diff_stable": 3.463503,
+              "flow_active": 0.614551,
+              "flow_stable": 0.245994
+            },
+            "method": "adaptive_roi_motion_weak_extremum_interval",
+            "quality": 0.58,
+            "selected_frame": null,
+            "selected_interval": [
+              296,
+              300
+            ],
+            "uncertainty": "persistence_not_met_exact_frame_withheld"
+          }
+        },
+        {
+          "event": "lift",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "lift",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 320,
+                "native_end_frame": 345
+              },
+              "object_evidence": "The entire stack of devices is displaced upwards from the gray surface.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "lift",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 295,
+                "native_end_frame": 345
+              },
+              "object_evidence": "Hand elevates the assembled stack off the fabric surface.",
+              "confidence": 0.7,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            295,
+            345
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 10.910127,
+              "diff_stable": 3.463503,
+              "flow_active": 0.614551,
+              "flow_stable": 0.245994
+            },
+            "method": "adaptive_roi_motion",
+            "quality": 0.79,
+            "selected_frame": 331,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "phone_screen_reveal",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "phone_screen_reveal",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 360,
+                "native_end_frame": 385
+              },
+              "object_evidence": "The front display of the phone comes into view as the hand rotates the stack.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "phone_screen_reveal",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 335,
+                "native_end_frame": 385
+              },
+              "object_evidence": "Phone rotates to orient display front towards the camera.",
+              "confidence": 0.73,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            335,
+            385
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 10.910127,
+              "diff_stable": 3.463503,
+              "flow_active": 0.614551,
+              "flow_stable": 0.245994
+            },
+            "method": "max_quadrant_local_change_with_persistence",
+            "quality": 0.79,
+            "selected_frame": 335,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "charging_screen_readable",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "charging_screen_readable",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 385,
+                "native_end_frame": 410
+              },
+              "object_evidence": "The phone screen is fully visible, displaying the 'Charging' status, date, and time clearly.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "charging_screen_readable",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 365,
+                "native_end_frame": 415
+              },
+              "object_evidence": "Lock screen details and charging indicator become visibly clear.",
+              "confidence": 0.74,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            365,
+            415
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 10.910127,
+              "diff_stable": 3.463503,
+              "flow_active": 0.614551,
+              "flow_stable": 0.245994
+            },
+            "method": "adaptive_low_motion_sustained_readability",
+            "quality": 0.82,
+            "selected_frame": 399,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "stable_result",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "stable_result",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 395,
+                "native_end_frame": 425
+              },
+              "object_evidence": "The hand holds the device stack steady in front of the camera with minimal motion.",
+              "confidence": 0.9,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "stable_result",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 385,
+                "native_end_frame": 445
+              },
+              "object_evidence": "Phone screen remains steady and centered in view.",
+              "confidence": 0.71,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            385,
+            445
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 10.910127,
+              "diff_stable": 3.463503,
+              "flow_active": 0.614551,
+              "flow_stable": 0.245994
+            },
+            "method": "adaptive_low_motion_sustained_readability",
+            "quality": 0.82,
+            "selected_frame": 399,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        }
+      ],
+      "local_only_curve_file": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-13\\work\\boundary-refiner-test-d\\local_only\\GT008_raw_curves.npz"
+    },
+    {
+      "shot_id": "GT009",
+      "source_id": "0120",
+      "action_unit_id": "AU0120_C01",
+      "proxy_sha256": "13BFB0F7F41E2191511C97F9D2A6F7D3148CE67BA08E0239CEB95EC2979D918A",
+      "native_fps": 59.94005994005994,
+      "frame_count": 1002,
+      "raw_adaptation": {
+        "confirmation_N": 7,
+        "diff_summary": {
+          "median": 0.07633101851851852,
+          "mad": 0.06174768618518518,
+          "p25": 0.028182870370370372,
+          "p75": 0.9434606481481481,
+          "p90": 4.038773148148148
+        },
+        "flow_summary": {
+          "median": 0.003320506773889065,
+          "mad": 0.00244265557149595,
+          "p25": 0.001368796220049262,
+          "p75": 0.009215932339429855,
+          "p90": 0.030973074957728386
+        },
+        "thresholds": {
+          "diff_active": 0.23070023398148148,
+          "diff_stable": 0.05905671346296296,
+          "flow_active": 0.009427145702628939,
+          "flow_stable": 0.002590124005797237
+        }
+      },
+      "events": [
+        {
+          "event": "phone_attach",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "phone_attach",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1073,
+                "native_end_frame": 1162
+              },
+              "object_evidence": "A hand places a white charger onto the back of a white phone.",
+              "confidence": 0.9,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "phone_attach",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1085,
+                "native_end_frame": 1175
+              },
+              "object_evidence": "Hand aligns magnetic power bank onto back of phone.",
+              "confidence": 0.72,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            1073,
+            1175
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 0.2307,
+              "diff_stable": 0.059057,
+              "flow_active": 0.009427,
+              "flow_stable": 0.00259
+            },
+            "method": "approach_motion_inflection_plus_contact_persistence",
+            "quality": 0.73,
+            "selected_frame": null,
+            "selected_interval": [
+              1154,
+              1156
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "low_information_wait",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "low_information_wait",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1402,
+                "native_end_frame": 1550
+              },
+              "object_evidence": "The white charger rests stably on the white phone with no significant motion in the frame.",
+              "confidence": 0.9,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "low_information_wait",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1420,
+                "native_end_frame": 1560
+              },
+              "object_evidence": "Attached power bank rests on phone without user interaction.",
+              "confidence": 0.68,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            1402,
+            1560
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 0.2307,
+              "diff_stable": 0.059057,
+              "flow_active": 0.009427,
+              "flow_stable": 0.00259
+            },
+            "method": "adaptive_low_motion_sustained_readability",
+            "quality": 0.82,
+            "selected_frame": 1502,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "watch_addition_onset",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "watch_addition_onset",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1550,
+                "native_end_frame": 1610
+              },
+              "object_evidence": "A black smartwatch attached to a black band enters the frame from the bottom right.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "watch_addition_onset",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1560,
+                "native_end_frame": 1630
+              },
+              "object_evidence": "Smartwatch enters frame guided toward charging ring.",
+              "confidence": 0.71,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            1550,
+            1630
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 0.2307,
+              "diff_stable": 0.059057,
+              "flow_active": 0.009427,
+              "flow_stable": 0.00259
+            },
+            "method": "adaptive_roi_motion",
+            "quality": 0.79,
+            "selected_frame": 1576,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "watch_contact",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "watch_contact",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1610,
+                "native_end_frame": 1670
+              },
+              "object_evidence": "The black smartwatch is placed directly onto the center of the white charger.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "watch_contact",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1620,
+                "native_end_frame": 1670
+              },
+              "object_evidence": "Smartwatch makes contact with power bank surface.",
+              "confidence": 0.73,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            1610,
+            1670
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 0.2307,
+              "diff_stable": 0.059057,
+              "flow_active": 0.009427,
+              "flow_stable": 0.00259
+            },
+            "method": "approach_motion_inflection_plus_contact_persistence",
+            "quality": 0.73,
+            "selected_frame": null,
+            "selected_interval": [
+              1633,
+              1635
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "charging_onset",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "charging_onset",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1670,
+                "native_end_frame": 1730
+              },
+              "object_evidence": "The smartwatch screen illuminates, displaying a green lightning bolt charging icon.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "charging_onset",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1680,
+                "native_end_frame": 1730
+              },
+              "object_evidence": "Watch screen lights up showing charging icon.",
+              "confidence": 0.74,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            1670,
+            1730
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 0.2307,
+              "diff_stable": 0.059057,
+              "flow_active": 0.009427,
+              "flow_stable": 0.00259
+            },
+            "method": "max_quadrant_local_change_with_persistence_weak_extremum_interval",
+            "quality": 0.58,
+            "selected_frame": null,
+            "selected_interval": [
+              1711,
+              1715
+            ],
+            "uncertainty": "persistence_not_met_exact_frame_withheld"
+          }
+        },
+        {
+          "event": "charging_readable",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "charging_readable",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1730,
+                "native_end_frame": 1830
+              },
+              "object_evidence": "The charging indication transitions to a green circle and then to a clear display of the time and charging status.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "charging_readable",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1740,
+                "native_end_frame": 1860
+              },
+              "object_evidence": "Watch display shows clear green battery and time digits.",
+              "confidence": 0.75,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            1730,
+            1860
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 0.2307,
+              "diff_stable": 0.059057,
+              "flow_active": 0.009427,
+              "flow_stable": 0.00259
+            },
+            "method": "adaptive_low_motion_sustained_readability",
+            "quality": 0.82,
+            "selected_frame": 1730,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "terminal_stable_result",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "terminal_stable_result",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1830,
+                "native_end_frame": 2000
+              },
+              "object_evidence": "The smartwatch rests stably on the charger, continuously displaying the time and charging icon until the screen turns off.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "terminal_stable_result",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1860,
+                "native_end_frame": 2062
+              },
+              "object_evidence": "Final resting state of smartwatch on phone charger.",
+              "confidence": 0.72,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            1830,
+            2062
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 0.2307,
+              "diff_stable": 0.059057,
+              "flow_active": 0.009427,
+              "flow_stable": 0.00259
+            },
+            "method": "adaptive_near_static_run_interval",
+            "quality": 0.78,
+            "selected_frame": null,
+            "selected_interval": [
+              1836,
+              1842
+            ],
+            "uncertainty": null
+          }
+        }
+      ],
+      "local_only_curve_file": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-13\\work\\boundary-refiner-test-d\\local_only\\GT009_raw_curves.npz"
+    },
+    {
+      "shot_id": "GT010",
+      "source_id": "0121",
+      "action_unit_id": "AU0121_02",
+      "proxy_sha256": "6D0B302979EB806A075D27E9258338C24C516F4F707A545B0D997AF068F14010",
+      "native_fps": 59.94005994005994,
+      "frame_count": 276,
+      "raw_adaptation": {
+        "confirmation_N": 7,
+        "diff_summary": {
+          "median": 0.20850694444444445,
+          "mad": 0.17706404420987656,
+          "p25": 0.0722800925925926,
+          "p75": 1.009789737654321,
+          "p90": 2.7542013888888888
+        },
+        "flow_summary": {
+          "median": 0.006854488514363766,
+          "mad": 0.004450517076758504,
+          "p25": 0.0034442032920196652,
+          "p75": 0.01601503323763609,
+          "p90": 0.043434277176856974
+        },
+        "thresholds": {
+          "diff_active": 0.6511670549691359,
+          "diff_stable": 0.16081211469753087,
+          "flow_active": 0.017980781206260024,
+          "flow_stable": 0.005669461830398917
+        }
+      },
+      "events": [
+        {
+          "event": "earbuds_placement_contact",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "earbuds_placement_contact",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 180,
+                "native_end_frame": 220
+              },
+              "object_evidence": "Earbuds case touches power bank.",
+              "confidence": 0.9,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "earbuds_placement_contact",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 180,
+                "native_end_frame": 220
+              },
+              "object_evidence": "Earbuds case touches wireless charger surface held by hand.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            180,
+            220
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 0.651167,
+              "diff_stable": 0.160812,
+              "flow_active": 0.017981,
+              "flow_stable": 0.005669
+            },
+            "method": "approach_motion_inflection_plus_contact_persistence",
+            "quality": 0.73,
+            "selected_frame": null,
+            "selected_interval": [
+              219,
+              220
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "hand_exit",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "hand_exit",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 230,
+                "native_end_frame": 270
+              },
+              "object_evidence": "Hand leaves frame right.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "hand_exit",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 215,
+                "native_end_frame": 260
+              },
+              "object_evidence": "Hand releases earbuds case and leaves camera ROI.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            215,
+            270
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 0.651167,
+              "diff_stable": 0.160812,
+              "flow_active": 0.017981,
+              "flow_stable": 0.005669
+            },
+            "method": "adaptive_roi_motion",
+            "quality": 0.0,
+            "selected_frame": null,
+            "selected_interval": null,
+            "uncertainty": "exit_not_confirmed_by_absence_and_persistence"
+          }
+        },
+        {
+          "event": "result_onset",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "result_onset",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 240,
+                "native_end_frame": 280
+              },
+              "object_evidence": "Case rests on power bank, hand absent.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "result_onset",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 230,
+                "native_end_frame": 270
+              },
+              "object_evidence": "Earbuds case rests independently on charger atop phone.",
+              "confidence": 0.9,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            230,
+            280
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 0.651167,
+              "diff_stable": 0.160812,
+              "flow_active": 0.017981,
+              "flow_stable": 0.005669
+            },
+            "method": "max_quadrant_local_change_with_persistence_weak_extremum_interval",
+            "quality": 0.58,
+            "selected_frame": null,
+            "selected_interval": [
+              233,
+              237
+            ],
+            "uncertainty": "persistence_not_met_exact_frame_withheld"
+          }
+        },
+        {
+          "event": "low_motion_result",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "low_motion_result",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 250,
+                "native_end_frame": 300
+              },
+              "object_evidence": "Objects stationary after hand exit.",
+              "confidence": 0.9,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "low_motion_result",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 250,
+                "native_end_frame": 310
+              },
+              "object_evidence": "Earbuds case remains undisturbed on charger.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            250,
+            310
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 0.651167,
+              "diff_stable": 0.160812,
+              "flow_active": 0.017981,
+              "flow_stable": 0.005669
+            },
+            "method": "adaptive_near_static_run_interval",
+            "quality": 0.78,
+            "selected_frame": null,
+            "selected_interval": [
+              252,
+              266
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "fully_static_or_near_static",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "fully_static_or_near_static",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 260,
+                "native_end_frame": 320
+              },
+              "object_evidence": "No visible pixel changes in objects.",
+              "confidence": 0.85,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "fully_static_or_near_static",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 250,
+                "native_end_frame": 300
+              },
+              "object_evidence": "Scene stabilization with minimal camera and object motion.",
+              "confidence": 0.9,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            250,
+            320
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 0.651167,
+              "diff_stable": 0.160812,
+              "flow_active": 0.017981,
+              "flow_stable": 0.005669
+            },
+            "method": "adaptive_near_static_run_interval",
+            "quality": 0.78,
+            "selected_frame": null,
+            "selected_interval": [
+              252,
+              266
+            ],
+            "uncertainty": null
+          }
+        }
+      ],
+      "local_only_curve_file": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-13\\work\\boundary-refiner-test-d\\local_only\\GT010_raw_curves.npz"
+    },
+    {
+      "shot_id": "GT011",
+      "source_id": "0122",
+      "action_unit_id": "AU0122_03",
+      "proxy_sha256": "C3E81ED443ED52DEA80496A9725257481F99D66EDA836CA0AEE564F03C7A5CAD",
+      "native_fps": 59.94005994005994,
+      "frame_count": 432,
+      "raw_adaptation": {
+        "confirmation_N": 7,
+        "diff_summary": {
+          "median": 3.4420331790123457,
+          "mad": 1.6975887355679014,
+          "p25": 2.3440875771604937,
+          "p75": 5.917563657407408,
+          "p90": 8.52110339506173
+        },
+        "flow_summary": {
+          "median": 0.1862003058195114,
+          "mad": 0.11311657826764679,
+          "p25": 0.09678145870566368,
+          "p75": 0.6121881008148193,
+          "p90": 1.3799285888671875
+        },
+        "thresholds": {
+          "diff_active": 7.686005017932099,
+          "diff_stable": 3.1928819449444443,
+          "flow_active": 0.4689917514886284,
+          "flow_stable": 0.15333974783948706
+        }
+      },
+      "events": [
+        {
+          "event": "hand_entry",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "hand_entry",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1830,
+                "native_end_frame": 1855
+              },
+              "object_evidence": "Hand appears on the right side of the frame.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "hand_entry",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1825,
+                "native_end_frame": 1875
+              },
+              "object_evidence": "Right hand enters frame from right edge.",
+              "confidence": 0.68,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            1825,
+            1875
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 7.686005,
+              "diff_stable": 3.192882,
+              "flow_active": 0.468992,
+              "flow_stable": 0.15334
+            },
+            "method": "adaptive_roi_motion",
+            "quality": 0.79,
+            "selected_frame": 1825,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "downward_point_onset",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "downward_point_onset",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1840,
+                "native_end_frame": 1865
+              },
+              "object_evidence": "Hand moves inwards with index finger extending towards the smartwatch.",
+              "confidence": 0.9,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "downward_point_onset",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1850,
+                "native_end_frame": 1905
+              },
+              "object_evidence": "Index finger extends into pointing pose.",
+              "confidence": 0.65,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            1840,
+            1905
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 7.686005,
+              "diff_stable": 3.192882,
+              "flow_active": 0.468992,
+              "flow_stable": 0.15334
+            },
+            "method": "adaptive_roi_motion_weak_extremum_interval",
+            "quality": 0.58,
+            "selected_frame": null,
+            "selected_interval": [
+              1851,
+              1855
+            ],
+            "uncertainty": "persistence_not_met_exact_frame_withheld"
+          }
+        },
+        {
+          "event": "point_peak",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "point_peak",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1855,
+                "native_end_frame": 1875
+              },
+              "object_evidence": "Index finger reaches maximum extension and closest proximity to the smartwatch.",
+              "confidence": 0.95,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "point_peak",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1910,
+                "native_end_frame": 1950
+              },
+              "object_evidence": "Fingertip reaches lowest downward extension near devices.",
+              "confidence": 0.7,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            1855,
+            1950
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 7.686005,
+              "diff_stable": 3.192882,
+              "flow_active": 0.468992,
+              "flow_stable": 0.15334
+            },
+            "method": "skin_contour_centroid_vertical_extremum",
+            "quality": 1.0,
+            "selected_frame": null,
+            "selected_interval": [
+              1935,
+              1939
+            ],
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "release",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "release",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1865,
+                "native_end_frame": 1885
+              },
+              "object_evidence": "Hand and finger begin to retract and move away from the smartwatch.",
+              "confidence": 0.9,
+              "uncertainty_reason": null
+            },
+            "gemini_3_6_flash": {
+              "event": "release",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1945,
+                "native_end_frame": 1995
+              },
+              "object_evidence": "Hand retracts away from target objects.",
+              "confidence": 0.65,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            1865,
+            1995
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 7.686005,
+              "diff_stable": 3.192882,
+              "flow_active": 0.468992,
+              "flow_stable": 0.15334
+            },
+            "method": "adaptive_roi_motion_weak_extremum_interval",
+            "quality": 0.58,
+            "selected_frame": null,
+            "selected_interval": [
+              1966,
+              1970
+            ],
+            "uncertainty": "persistence_not_met_exact_frame_withheld"
+          }
+        },
+        {
+          "event": "settle",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "settle",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1875,
+                "native_end_frame": 1900
+              },
+              "object_evidence": "Hand exits the frame and the objects on the table remain static.",
+              "confidence": 0.85,
+              "uncertainty_reason": "A second gesture follows shortly after, making the settle period brief."
+            },
+            "gemini_3_6_flash": {
+              "event": "settle",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1990,
+                "native_end_frame": 2043
+              },
+              "object_evidence": "Composition returns to low motion state.",
+              "confidence": 0.62,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            1875,
+            2043
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 7.686005,
+              "diff_stable": 3.192882,
+              "flow_active": 0.468992,
+              "flow_stable": 0.15334
+            },
+            "method": "adaptive_low_motion_sustained_readability",
+            "quality": 0.82,
+            "selected_frame": 1875,
+            "selected_interval": null,
+            "uncertainty": null
+          }
+        },
+        {
+          "event": "post_gesture_tail",
+          "semantic_models": {
+            "gemini_3_1_pro": {
+              "event": "post_gesture_tail",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1880,
+                "native_end_frame": 1905
+              },
+              "object_evidence": "The brief static period after the first gesture completes and before the second gesture begins.",
+              "confidence": 0.85,
+              "uncertainty_reason": "The tail is interrupted by a second pointing gesture."
+            },
+            "gemini_3_6_flash": {
+              "event": "post_gesture_tail",
+              "semantic_presence": "present",
+              "coarse_window": {
+                "native_start_frame": 1995,
+                "native_end_frame": 2043
+              },
+              "object_evidence": "Residual motion of hand clearing out of scene.",
+              "confidence": 0.65,
+              "uncertainty_reason": null
+            }
+          },
+          "merged_coarse_window": [
+            1880,
+            2043
+          ],
+          "deterministic": {
+            "confirmation_N": 7,
+            "thresholds": {
+              "diff_active": 7.686005,
+              "diff_stable": 3.192882,
+              "flow_active": 0.468992,
+              "flow_stable": 0.15334
+            },
+            "method": "adaptive_roi_motion_weak_extremum_interval",
+            "quality": 0.58,
+            "selected_frame": null,
+            "selected_interval": [
+              1966,
+              1970
+            ],
+            "uncertainty": "persistence_not_met_exact_frame_withheld"
+          }
+        }
+      ],
+      "local_only_curve_file": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-13\\work\\boundary-refiner-test-d\\local_only\\GT011_raw_curves.npz"
+    }
+  ],
+  "prohibited_inputs_not_used": [
+    "partial_ground_truth_edl_v0.9",
+    "rebuild_validation_metrics",
+    "Oracle/Test B/Test C evaluator human exact frames",
+    "human rebuild/side-by-side",
+    "human final image matching"
+  ]
+}
