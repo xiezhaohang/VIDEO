@@ -1,0 +1,1339 @@
+{
+  "experiment": "Human Cutter Test B — State First, Duration Second",
+  "phase": "cutter_decisions_frozen",
+  "fps": 60,
+  "output_size": "1080x1920",
+  "natural_semantic_freeze_sha256": "71A8E8E920FE3904D5452497EFF9A5A8EE513CE462C45AAD1D22A8CF769FBDAB",
+  "decisions": [
+    {
+      "shot_id": "GT004",
+      "source_id": "0106",
+      "action_unit_id": "AU0106_01",
+      "target_frames": 135,
+      "natural_semantic_cut": {
+        "shot_id": "GT004",
+        "source_id": "0106",
+        "action_unit_id": "AU0106_01",
+        "mother_span": [
+          0,
+          810
+        ],
+        "entry_state": "Hands holding the product with the front side (logo) facing the camera.",
+        "exit_state": "Hands holding the product steady with the front side facing the camera after completing a full rotation.",
+        "natural_source_in_frame": 0,
+        "natural_source_out_frame_exclusive": 360,
+        "natural_semantic_segments": [
+          {
+            "segment_type": "front_view",
+            "start_frame": 0,
+            "end_frame": 15,
+            "description": "Holding the product showing the front side."
+          },
+          {
+            "segment_type": "flip_to_back",
+            "start_frame": 15,
+            "end_frame": 35,
+            "description": "Flipping the product to reveal the back side."
+          },
+          {
+            "segment_type": "back_view_and_tap",
+            "start_frame": 35,
+            "end_frame": 270,
+            "description": "Holding the product showing the back side and tapping it."
+          },
+          {
+            "segment_type": "flip_to_front",
+            "start_frame": 270,
+            "end_frame": 300,
+            "description": "Flipping the product back to reveal the front side."
+          },
+          {
+            "segment_type": "front_view_steady",
+            "start_frame": 300,
+            "end_frame": 360,
+            "description": "Holding the product steady showing the front side again."
+          }
+        ],
+        "incoming_motion_preroll": 0,
+        "nonlinear_landmarks": [
+          {
+            "frame": 35,
+            "description": "Back side fully revealed."
+          },
+          {
+            "frame": 270,
+            "description": "Start of flip back to front."
+          },
+          {
+            "frame": 300,
+            "description": "Front side fully revealed again."
+          }
+        ],
+        "terminal_landing_state": "The product is held steady in a clear front-facing orientation.",
+        "rationale": "The selected span captures the complete action of revealing both the front and back of the product. It begins with a clear front view, shows the flip to the back, includes the tapping interaction on the back, and concludes with a flip back to the front, ending in a stable hold. This perfectly fulfills the 'front/back product orientation reveal' role."
+      },
+      "duration_fit": {
+        "reasoning": "Target is 135 frames, much shorter than the 360-frame natural cut. Used a nonlinear jump to skip the middle tapping section, keeping the initial flip to back and the final flip to front.",
+        "playback_speed": 1,
+        "jump_count": 1,
+        "repeat_count": 0,
+        "incoming_motion_preroll_output_frames": 0
+      },
+      "final_mapping_type": "nonlinear_jump",
+      "source_segments_half_open": [
+        [
+          0,
+          65
+        ],
+        [
+          260,
+          330
+        ]
+      ],
+      "output_mapping_runs": [
+        {
+          "source_range": [
+            0,
+            65
+          ],
+          "speed": 1,
+          "output_frames": 65
+        },
+        {
+          "source_range": [
+            260,
+            330
+          ],
+          "speed": 1,
+          "output_frames": 70
+        }
+      ],
+      "entry_state": "Hands holding the product with the front side (logo) facing the camera.",
+      "exit_state": "Hands holding the product steady with the front side facing the camera after completing a full rotation.",
+      "incoming_preroll": 0,
+      "speed": 1,
+      "repeats": 0,
+      "jumps": 1,
+      "terminal_landing_state": "The product is held steady in a clear front-facing orientation.",
+      "final_output_frames": 135
+    },
+    {
+      "shot_id": "GT005",
+      "source_id": "0108",
+      "action_unit_id": "AU0108_01",
+      "target_frames": 288,
+      "natural_semantic_cut": {
+        "shot_id": "GT005",
+        "source_id": "0108",
+        "action_unit_id": "AU0108_01",
+        "mother_span": [
+          681,
+          1098
+        ],
+        "entry_state": "Three coiled charging cables with adapters lie on a grey surface next to a phone, watch, and earbuds.",
+        "exit_state": "The cables have been removed, leaving only the phone, watch, and earbuds on the surface.",
+        "natural_source_in_frame": 810,
+        "natural_source_out_frame_exclusive": 950,
+        "natural_semantic_segments": [
+          {
+            "description": "hand enters and gathers cables",
+            "span": [
+              810,
+              850
+            ]
+          },
+          {
+            "description": "hand lifts and holds cables",
+            "span": [
+              850,
+              890
+            ]
+          },
+          {
+            "description": "hand removes cables from frame",
+            "span": [
+              890,
+              920
+            ]
+          },
+          {
+            "description": "clean surface shown",
+            "span": [
+              920,
+              950
+            ]
+          }
+        ],
+        "incoming_motion_preroll": 0,
+        "nonlinear_landmarks": [],
+        "terminal_landing_state": null,
+        "rationale": "The sequence captures the complete action of a hand entering the frame, gathering the three separate charging cables, lifting them, and removing them from the scene, fulfilling the role of clearing cable clutter."
+      },
+      "duration_fit": {
+        "reasoning": "Target is 288 frames, longer than the 140-frame natural cut. Maintained 1.0x speed and looped the final 30 frames (clean surface) to fill the remaining duration without synthetic freezing.",
+        "playback_speed": 1,
+        "jump_count": 0,
+        "repeat_count": 5,
+        "incoming_motion_preroll_output_frames": 0
+      },
+      "final_mapping_type": "continuous_with_repeats",
+      "source_segments_half_open": [
+        [
+          810,
+          950
+        ],
+        [
+          920,
+          950
+        ],
+        [
+          920,
+          950
+        ],
+        [
+          920,
+          950
+        ],
+        [
+          920,
+          950
+        ],
+        [
+          920,
+          948
+        ]
+      ],
+      "output_mapping_runs": [
+        {
+          "source_range": [
+            810,
+            950
+          ],
+          "speed": 1,
+          "output_frames": 140
+        },
+        {
+          "source_range": [
+            920,
+            950
+          ],
+          "speed": 1,
+          "output_frames": 30
+        },
+        {
+          "source_range": [
+            920,
+            950
+          ],
+          "speed": 1,
+          "output_frames": 30
+        },
+        {
+          "source_range": [
+            920,
+            950
+          ],
+          "speed": 1,
+          "output_frames": 30
+        },
+        {
+          "source_range": [
+            920,
+            950
+          ],
+          "speed": 1,
+          "output_frames": 30
+        },
+        {
+          "source_range": [
+            920,
+            948
+          ],
+          "speed": 1,
+          "output_frames": 28
+        }
+      ],
+      "entry_state": "Three coiled charging cables with adapters lie on a grey surface next to a phone, watch, and earbuds.",
+      "exit_state": "The cables have been removed, leaving only the phone, watch, and earbuds on the surface.",
+      "incoming_preroll": 0,
+      "speed": 1,
+      "repeats": 5,
+      "jumps": 0,
+      "terminal_landing_state": null,
+      "final_output_frames": 288
+    },
+    {
+      "shot_id": "GT006",
+      "source_id": "0109",
+      "action_unit_id": "AU0109_02",
+      "target_frames": 59,
+      "natural_semantic_cut": {
+        "shot_id": "GT006",
+        "source_id": "0109",
+        "action_unit_id": "AU0109_02",
+        "mother_span": [
+          399,
+          630
+        ],
+        "entry_state": "empty scene with background devices",
+        "exit_state": "product held steady in center frame for hero reveal",
+        "natural_source_in_frame": 445,
+        "natural_source_out_frame_exclusive": 630,
+        "natural_semantic_segments": {
+          "empty scene": [
+            399,
+            445
+          ],
+          "hand brings product into frame": [
+            445,
+            480
+          ],
+          "product held steady for reveal": [
+            480,
+            630
+          ]
+        },
+        "incoming_motion_preroll": [
+          430,
+          445
+        ],
+        "nonlinear_landmarks": {
+          "hand enters frame": 445,
+          "product reaches center": 480,
+          "hold starts": 480
+        },
+        "terminal_landing_state": "The product is held steady in the center of the frame, with the 'DIGIERA' logo and magnetic ring clearly visible.",
+        "rationale": "The action naturally begins as the hand enters the frame from the bottom right to introduce the product. The motion smoothly transitions into a steady hold in the center of the frame, providing a clear hero reveal of the compact power bank."
+      },
+      "duration_fit": {
+        "reasoning": "Target is 59 frames, shorter than the 185-frame natural cut. Truncated the final steady hold to exactly fit the target duration at 1.0x speed.",
+        "playback_speed": 1,
+        "jump_count": 0,
+        "repeat_count": 0,
+        "incoming_motion_preroll_output_frames": 15
+      },
+      "final_mapping_type": "continuous_truncated",
+      "source_segments_half_open": [
+        [
+          445,
+          504
+        ]
+      ],
+      "output_mapping_runs": [
+        {
+          "source_range": [
+            445,
+            504
+          ],
+          "speed": 1,
+          "output_frames": 59
+        }
+      ],
+      "entry_state": "empty scene with background devices",
+      "exit_state": "product held steady in center frame for hero reveal",
+      "incoming_preroll": 15,
+      "speed": 1,
+      "repeats": 0,
+      "jumps": 0,
+      "terminal_landing_state": "The product is held steady in the center of the frame, with the 'DIGIERA' logo and magnetic ring clearly visible.",
+      "final_output_frames": 59
+    },
+    {
+      "shot_id": "GT007",
+      "source_id": "0112",
+      "action_unit_id": "AU0112_C01",
+      "target_frames": 164,
+      "natural_semantic_cut": {
+        "shot_id": "GT007",
+        "source_id": "0112",
+        "action_unit_id": "AU0112_C01",
+        "mother_span": [
+          0,
+          794
+        ],
+        "entry_state": "The hand holds the power bank above the Apple Watch, preparing to attach it.",
+        "exit_state": "The watch is magnetically attached to the power bank, lifted, and its screen displays the green charging icon.",
+        "natural_source_in_frame": 500,
+        "natural_source_out_frame_exclusive": 660,
+        "natural_semantic_segments": [
+          "hand moves power bank downwards towards the watch",
+          "power bank magnetically attaches to the watch",
+          "hand lifts the power bank with the watch attached",
+          "watch screen turns on showing the green charging icon"
+        ],
+        "incoming_motion_preroll": "The hand is in motion, moving the power bank downwards towards the watch.",
+        "nonlinear_landmarks": [
+          "power bank makes contact with the watch",
+          "hand begins to lift the combined devices",
+          "watch screen illuminates with the green charging icon"
+        ],
+        "terminal_landing_state": "The watch screen clearly displaying the green charging icon while held steady in the hand.",
+        "rationale": "The second attempt in the raw footage is selected because it successfully demonstrates both the magnetic attachment of the watch to the power bank and the subsequent visible proof of charging (the green icon), fulfilling the requested commercial role."
+      },
+      "duration_fit": {
+        "reasoning": "Target is 164 frames, slightly longer than the 160-frame natural cut. Applied a slight slow-down (0.9756x) to fit the target duration perfectly.",
+        "playback_speed": 0.9756,
+        "jump_count": 0,
+        "repeat_count": 0,
+        "incoming_motion_preroll_output_frames": 0
+      },
+      "final_mapping_type": "continuous_retimed",
+      "source_segments_half_open": [
+        [
+          500,
+          660
+        ]
+      ],
+      "output_mapping_runs": [
+        {
+          "source_range": [
+            500,
+            660
+          ],
+          "speed": 0.9756,
+          "output_frames": 164
+        }
+      ],
+      "entry_state": "The hand holds the power bank above the Apple Watch, preparing to attach it.",
+      "exit_state": "The watch is magnetically attached to the power bank, lifted, and its screen displays the green charging icon.",
+      "incoming_preroll": 0,
+      "speed": 0.9756,
+      "repeats": 0,
+      "jumps": 0,
+      "terminal_landing_state": "The watch screen clearly displaying the green charging icon while held steady in the hand.",
+      "final_output_frames": 164
+    },
+    {
+      "shot_id": "GT008",
+      "source_id": "0116",
+      "action_unit_id": "AU0116_01",
+      "target_frames": 157,
+      "natural_semantic_cut": {
+        "shot_id": "GT008",
+        "source_id": "0116",
+        "action_unit_id": "AU0116_01",
+        "mother_span": [
+          189,
+          457
+        ],
+        "entry_state": "Hand grips the fully assembled stack of phone, power bank, and watch on the table.",
+        "exit_state": "Hand holds the stack up, displaying the phone's illuminated screen showing the charging status.",
+        "natural_source_in_frame": 205,
+        "natural_source_out_frame_exclusive": 457,
+        "natural_semantic_segments": [
+          [
+            205,
+            245,
+            "Lifting and turning the assembled stack"
+          ],
+          [
+            245,
+            250,
+            "Revealing the phone screen before it lights up"
+          ],
+          [
+            250,
+            457,
+            "Holding the stack with the phone screen illuminated and showing charging status"
+          ]
+        ],
+        "incoming_motion_preroll": [
+          189,
+          205
+        ],
+        "nonlinear_landmarks": [
+          [
+            210,
+            "Lift begins"
+          ],
+          [
+            245,
+            "Turn completes, screen faces camera"
+          ],
+          [
+            250,
+            "Screen illuminates"
+          ]
+        ],
+        "terminal_landing_state": "The phone screen is fully visible, illuminated, and displaying the charging indicator while held steady.",
+        "rationale": "The sequence begins as the hand secures its grip on the assembled stack, capturing the complete lifting and turning motion. It concludes with a steady hold on the illuminated phone screen, clearly demonstrating the charging result as requested by the role."
+      },
+      "duration_fit": {
+        "reasoning": "Target is 157 frames, shorter than the 252-frame natural cut. Truncated the final steady hold to exactly fit the target duration at 1.0x speed.",
+        "playback_speed": 1,
+        "jump_count": 0,
+        "repeat_count": 0,
+        "incoming_motion_preroll_output_frames": 16
+      },
+      "final_mapping_type": "continuous_truncated",
+      "source_segments_half_open": [
+        [
+          205,
+          362
+        ]
+      ],
+      "output_mapping_runs": [
+        {
+          "source_range": [
+            205,
+            362
+          ],
+          "speed": 1,
+          "output_frames": 157
+        }
+      ],
+      "entry_state": "Hand grips the fully assembled stack of phone, power bank, and watch on the table.",
+      "exit_state": "Hand holds the stack up, displaying the phone's illuminated screen showing the charging status.",
+      "incoming_preroll": 16,
+      "speed": 1,
+      "repeats": 0,
+      "jumps": 0,
+      "terminal_landing_state": "The phone screen is fully visible, illuminated, and displaying the charging indicator while held steady.",
+      "final_output_frames": 157
+    },
+    {
+      "shot_id": "GT009",
+      "source_id": "0120",
+      "action_unit_id": "AU0120_C01",
+      "target_frames": 178,
+      "natural_semantic_cut": {
+        "shot_id": "GT009",
+        "source_id": "0120",
+        "action_unit_id": "AU0120_C01",
+        "mother_span": [
+          1073,
+          2075
+        ],
+        "entry_state": "power bank is placed onto the phone",
+        "exit_state": "watch screen turns off after showing charging status",
+        "natural_source_in_frame": 1135,
+        "natural_source_out_frame_exclusive": 1175,
+        "natural_semantic_segments": {
+          "phone_bank_setup": [
+            1135,
+            1155
+          ],
+          "watch_addition": [
+            1155,
+            1160
+          ],
+          "charging_result": [
+            1160,
+            1175
+          ]
+        },
+        "incoming_motion_preroll": "hand entering frame with power bank",
+        "nonlinear_landmarks": {
+          "phone_bank_setup": [
+            1135,
+            1145
+          ],
+          "watch_addition": [
+            1155,
+            1160
+          ],
+          "charging_animation": [
+            1160,
+            1165
+          ],
+          "charging_status": [
+            1165,
+            1175
+          ]
+        },
+        "terminal_landing_state": [
+          1165,
+          1175
+        ],
+        "rationale": "The natural sequence begins with the final, clean placement of the power bank onto the phone. It then captures the addition of the Apple Watch and concludes after the watch displays its charging status and the screen turns off. Nonlinear landmarks are identified to allow for compression of the setup and addition phases, landing on the final charging result."
+      },
+      "duration_fit": {
+        "reasoning": "Target is 178 frames, longer than the 40-frame natural cut. Maintained 1.0x speed and looped the final 15 frames (charging result) to fill the remaining duration.",
+        "playback_speed": 1,
+        "jump_count": 0,
+        "repeat_count": 10,
+        "incoming_motion_preroll_output_frames": 0
+      },
+      "final_mapping_type": "continuous_with_repeats",
+      "source_segments_half_open": [
+        [
+          1135,
+          1175
+        ],
+        [
+          1160,
+          1175
+        ],
+        [
+          1160,
+          1175
+        ],
+        [
+          1160,
+          1175
+        ],
+        [
+          1160,
+          1175
+        ],
+        [
+          1160,
+          1175
+        ],
+        [
+          1160,
+          1175
+        ],
+        [
+          1160,
+          1175
+        ],
+        [
+          1160,
+          1175
+        ],
+        [
+          1160,
+          1175
+        ],
+        [
+          1160,
+          1163
+        ]
+      ],
+      "output_mapping_runs": [
+        {
+          "source_range": [
+            1135,
+            1175
+          ],
+          "speed": 1,
+          "output_frames": 40
+        },
+        {
+          "source_range": [
+            1160,
+            1175
+          ],
+          "speed": 1,
+          "output_frames": 15
+        },
+        {
+          "source_range": [
+            1160,
+            1175
+          ],
+          "speed": 1,
+          "output_frames": 15
+        },
+        {
+          "source_range": [
+            1160,
+            1175
+          ],
+          "speed": 1,
+          "output_frames": 15
+        },
+        {
+          "source_range": [
+            1160,
+            1175
+          ],
+          "speed": 1,
+          "output_frames": 15
+        },
+        {
+          "source_range": [
+            1160,
+            1175
+          ],
+          "speed": 1,
+          "output_frames": 15
+        },
+        {
+          "source_range": [
+            1160,
+            1175
+          ],
+          "speed": 1,
+          "output_frames": 15
+        },
+        {
+          "source_range": [
+            1160,
+            1175
+          ],
+          "speed": 1,
+          "output_frames": 15
+        },
+        {
+          "source_range": [
+            1160,
+            1175
+          ],
+          "speed": 1,
+          "output_frames": 15
+        },
+        {
+          "source_range": [
+            1160,
+            1175
+          ],
+          "speed": 1,
+          "output_frames": 15
+        },
+        {
+          "source_range": [
+            1160,
+            1163
+          ],
+          "speed": 1,
+          "output_frames": 3
+        }
+      ],
+      "entry_state": "power bank is placed onto the phone",
+      "exit_state": "watch screen turns off after showing charging status",
+      "incoming_preroll": 0,
+      "speed": 1,
+      "repeats": 10,
+      "jumps": 0,
+      "terminal_landing_state": "Watch screen displaying charging status.",
+      "final_output_frames": 178
+    },
+    {
+      "shot_id": "GT010",
+      "source_id": "0121",
+      "action_unit_id": "AU0121_02",
+      "target_frames": 76,
+      "natural_semantic_cut": {
+        "shot_id": "GT010",
+        "source_id": "0121",
+        "action_unit_id": "AU0121_02",
+        "mother_span": [
+          168,
+          444
+        ],
+        "entry_state": "Earbuds are resting on the magnetic charger, hand is completely out of frame.",
+        "exit_state": "Earbuds continue to rest on the charger in a stable, natural hold.",
+        "natural_source_in_frame": 215,
+        "natural_source_out_frame_exclusive": 300,
+        "natural_semantic_segments": [
+          [
+            215,
+            300
+          ]
+        ],
+        "incoming_motion_preroll": 0,
+        "nonlinear_landmarks": [],
+        "terminal_landing_state": null,
+        "rationale": "The role requires a natural low-motion hold of the earbuds on the charger as proof of result. The selected range begins after the hand has completely exited the frame and the earbuds are settled, providing a stable, natural hold without any synthetic freezing."
+      },
+      "duration_fit": {
+        "reasoning": "Target is 76 frames. Selected a 19-frame micro-range of the stable hold and repeated it 4 times to create a perfectly stable, natural hold without synthetic freezing.",
+        "playback_speed": 1,
+        "jump_count": 0,
+        "repeat_count": 3,
+        "incoming_motion_preroll_output_frames": 0
+      },
+      "final_mapping_type": "repeated_micro_range",
+      "source_segments_half_open": [
+        [
+          215,
+          234
+        ],
+        [
+          215,
+          234
+        ],
+        [
+          215,
+          234
+        ],
+        [
+          215,
+          234
+        ]
+      ],
+      "output_mapping_runs": [
+        {
+          "source_range": [
+            215,
+            234
+          ],
+          "speed": 1,
+          "output_frames": 19
+        },
+        {
+          "source_range": [
+            215,
+            234
+          ],
+          "speed": 1,
+          "output_frames": 19
+        },
+        {
+          "source_range": [
+            215,
+            234
+          ],
+          "speed": 1,
+          "output_frames": 19
+        },
+        {
+          "source_range": [
+            215,
+            234
+          ],
+          "speed": 1,
+          "output_frames": 19
+        }
+      ],
+      "entry_state": "Earbuds are resting on the magnetic charger, hand is completely out of frame.",
+      "exit_state": "Earbuds continue to rest on the charger in a stable, natural hold.",
+      "incoming_preroll": 0,
+      "speed": 1,
+      "repeats": 3,
+      "jumps": 0,
+      "terminal_landing_state": null,
+      "final_output_frames": 76
+    },
+    {
+      "shot_id": "GT011",
+      "source_id": "0122",
+      "action_unit_id": "AU0122_03",
+      "target_frames": 264,
+      "natural_semantic_cut": {
+        "shot_id": "GT011",
+        "source_id": "0122",
+        "action_unit_id": "AU0122_03",
+        "mother_span": [
+          1654,
+          2086
+        ],
+        "entry_state": "Camera settles on a wide shot of the devices.",
+        "exit_state": "Hand completes a downward pointing gesture and exits the frame.",
+        "natural_source_in_frame": 2050,
+        "natural_source_out_frame_exclusive": 2086,
+        "natural_semantic_segments": [
+          [
+            2050,
+            2086
+          ]
+        ],
+        "incoming_motion_preroll": null,
+        "nonlinear_landmarks": null,
+        "terminal_landing_state": null,
+        "rationale": "The camera settles on the full setup, providing a clear view of the products. A hand enters and performs a clear downward pointing gesture, which perfectly matches the 'link below' CTA. The shot is held until the hand exits the frame."
+      },
+      "duration_fit": {
+        "reasoning": "Target is 264 frames, much longer than the 36-frame natural cut. Maintained 1.0x speed and looped the final 6 frames (empty scene after hand exits) to fill the remaining duration.",
+        "playback_speed": 1,
+        "jump_count": 0,
+        "repeat_count": 38,
+        "incoming_motion_preroll_output_frames": 0
+      },
+      "final_mapping_type": "continuous_with_repeats",
+      "source_segments_half_open": [
+        [
+          2050,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ],
+        [
+          2080,
+          2086
+        ]
+      ],
+      "output_mapping_runs": [
+        {
+          "source_range": [
+            2050,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 36
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        },
+        {
+          "source_range": [
+            2080,
+            2086
+          ],
+          "speed": 1,
+          "output_frames": 6
+        }
+      ],
+      "entry_state": "Camera settles on a wide shot of the devices.",
+      "exit_state": "Hand completes a downward pointing gesture and exits the frame.",
+      "incoming_preroll": 0,
+      "speed": 1,
+      "repeats": 38,
+      "jumps": 0,
+      "terminal_landing_state": null,
+      "final_output_frames": 264
+    }
+  ],
+  "model": "gemini-3.1-pro-preview",
+  "generated_at": "2026-08-17T08:23:14.407Z",
+  "decision_payload_sha256": "C1AEEDC032CB002E2020F1EAED2B7DE82158987E3DAC28DC308222E192BB8DA0",
+  "integrity": {
+    "cutter_input_excluded": [
+      "partial_ground_truth_edl_v0.9",
+      "rebuild_validation_metrics",
+      "human rebuild",
+      "side-by-side",
+      "contact sheet from human final",
+      "human final GT004-GT011 frames",
+      "exact human source in/out",
+      "human temporal mapping values"
+    ],
+    "ground_truth_unlocked": false,
+    "independent_clean_model_context": true
+  },
+  "inference_seconds": {
+    "natural_semantic_cut": 409.6352273,
+    "duration_fit": 127.35421040000004
+  }
+}
