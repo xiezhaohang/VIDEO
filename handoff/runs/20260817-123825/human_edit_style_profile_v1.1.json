@@ -1,0 +1,907 @@
+{
+  "schema": "human-edit-style-profile/1.1",
+  "preserves_v1_0": true,
+  "supersedes_for_director_use": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-4\\outputs\\human-edit-master-reel-imitation\\human_edit_style_profile.json",
+  "status": "semantic_correction_complete_opening_provenance_still_unresolved",
+  "source_basis": [
+    "human Ground Truth final",
+    "GT004-GT011 stable Action Unit bindings",
+    "Action Units v0.2",
+    "direct frame-sequence analysis for GT009/GT010",
+    "Opening Provenance Resolution v1 recursive 28-media audit"
+  ],
+  "observation_policy": "Separate a complete single-take provenance mother span from the subrange/mapping actually used in the final. Descriptive statistics are not automatically Director imitation targets.",
+  "program": {
+    "duration_seconds": 26.330998,
+    "shot_count": 11,
+    "cut_count": 10,
+    "transition_count": 2,
+    "transition_duration_seconds": 1.033333
+  },
+  "shot_duration_distribution": {
+    "count": 11,
+    "min": 0.983333,
+    "p25": 1.416667,
+    "median": 1.916666,
+    "mean": 2.299788,
+    "p75": 2.850001,
+    "max": 4.466667,
+    "stddev": 1.173061,
+    "durations_by_shot": {
+      "GT001": 1.133333,
+      "GT002": 1.6,
+      "GT003": 1.566667,
+      "GT004": 2.25,
+      "GT005": 4.466667,
+      "GT006": 0.983333,
+      "GT007": 2.733334,
+      "GT008": 1.916666,
+      "GT009": 2.966667,
+      "GT010": 1.266667,
+      "GT011": 4.414331
+    }
+  },
+  "complete_action_provenance_rate": {
+    "definition": "Rate at which a final shot is evidence-backed as originating from a complete single-take Action Unit mother span; it does not mean the final plays prepare-to-hold in full.",
+    "confirmed_stable_subset": 1.0,
+    "numerator": 8,
+    "denominator": 8,
+    "shot_ids": [
+      "GT004",
+      "GT005",
+      "GT006",
+      "GT007",
+      "GT008",
+      "GT009",
+      "GT010",
+      "GT011"
+    ],
+    "all_shots_lower_bound": 0.727273,
+    "opening_exclusion": "GT001-GT003 show complete actions in the final but lack source-file/native-frame provenance, so they are excluded from the confirmed denominator."
+  },
+  "strict_single_source_integrity": {
+    "definition": "Strict pass requires all three components: same_source_file, same_continuous_take and complete_action_origin.",
+    "components": [
+      "same_source_file",
+      "same_continuous_take",
+      "complete_action_origin"
+    ],
+    "confirmed_stable_subset_pass_rate": 1.0,
+    "numerator": 8,
+    "denominator": 8,
+    "opening_status": "unresolved_not_failed"
+  },
+  "shot_provenance_and_usage": [
+    {
+      "shot_id": "GT004",
+      "final_frame_range": [
+        258,
+        393
+      ],
+      "provenance_action_unit_span": {
+        "action_unit_id": "AU0106_01",
+        "source_file": "DJI_20260801170103_0106_D.MP4",
+        "start_frame": 0,
+        "end_frame": 810,
+        "prepare_frame": 0,
+        "action_peak_frame": 57,
+        "result_frame": 636,
+        "hold_end_frame": 810,
+        "boundary_precision": "coarse_action_boundary_manual_visual_review"
+      },
+      "used_subrange": {
+        "source_frame_envelope": [
+          500,
+          658
+        ],
+        "continuous_playback": true,
+        "precision": "coarse"
+      },
+      "used_mapping": {
+        "type": "approximately_monotonic_continuous_subrange",
+        "source_start_frame": 500,
+        "source_end_frame": 658,
+        "sample_correspondences": [
+          {
+            "final_frame": 274,
+            "source_frame": 519,
+            "coarse_similarity": 0.905235
+          },
+          {
+            "final_frame": 298,
+            "source_frame": 549,
+            "coarse_similarity": 0.954209
+          },
+          {
+            "final_frame": 325,
+            "source_frame": 582,
+            "coarse_similarity": 0.938921
+          },
+          {
+            "final_frame": 352,
+            "source_frame": 615,
+            "coarse_similarity": 0.886854
+          },
+          {
+            "final_frame": 376,
+            "source_frame": 642,
+            "coarse_similarity": 0.913976
+          }
+        ],
+        "precision": "coarse_bounds_from_v0.2; not EDL-final"
+      },
+      "used_phase_coverage": {
+        "prepare": false,
+        "action": true,
+        "result": true,
+        "hold": true,
+        "notes": "Uses the late action/reveal through result and early hold; AU preparation is not shown."
+      },
+      "same_source_file": {
+        "pass": true,
+        "source_file": "DJI_20260801170103_0106_D.MP4"
+      },
+      "same_continuous_take": {
+        "pass": true,
+        "action_unit_id": "AU0106_01"
+      },
+      "complete_action_origin": {
+        "pass": true,
+        "meaning": "The selected footage is traceable to a complete single-take AU mother span; the final need not play that entire span."
+      },
+      "strict_single_source_integrity": "pass"
+    },
+    {
+      "shot_id": "GT005",
+      "final_frame_range": [
+        413,
+        681
+      ],
+      "provenance_action_unit_span": {
+        "action_unit_id": "AU0108_01",
+        "source_file": "DJI_20260801170438_0108_D.MP4",
+        "start_frame": 681,
+        "end_frame": 1098,
+        "prepare_frame": 681,
+        "action_peak_frame": 908,
+        "result_frame": 1022,
+        "hold_end_frame": 1098,
+        "boundary_precision": "coarse_action_boundary_manual_visual_review"
+      },
+      "used_subrange": {
+        "source_frame_envelope": [
+          733,
+          1044
+        ],
+        "continuous_playback": true,
+        "precision": "coarse"
+      },
+      "used_mapping": {
+        "type": "approximately_monotonic_continuous_subrange",
+        "source_start_frame": 733,
+        "source_end_frame": 1044,
+        "sample_correspondences": [
+          {
+            "final_frame": 445,
+            "source_frame": 771,
+            "coarse_similarity": 0.878751
+          },
+          {
+            "final_frame": 493,
+            "source_frame": 828,
+            "coarse_similarity": 0.867542
+          },
+          {
+            "final_frame": 547,
+            "source_frame": 894,
+            "coarse_similarity": 0.877524
+          },
+          {
+            "final_frame": 600,
+            "source_frame": 957,
+            "coarse_similarity": 0.902146
+          },
+          {
+            "final_frame": 648,
+            "source_frame": 1014,
+            "coarse_similarity": 0.908722
+          }
+        ],
+        "precision": "coarse_bounds_from_v0.2; not EDL-final"
+      },
+      "used_phase_coverage": {
+        "prepare": false,
+        "action": true,
+        "result": true,
+        "hold": true,
+        "notes": "Begins after AU start, keeps cable-gather/removal action, cleared result and short hold."
+      },
+      "same_source_file": {
+        "pass": true,
+        "source_file": "DJI_20260801170438_0108_D.MP4"
+      },
+      "same_continuous_take": {
+        "pass": true,
+        "action_unit_id": "AU0108_01"
+      },
+      "complete_action_origin": {
+        "pass": true,
+        "meaning": "The selected footage is traceable to a complete single-take AU mother span; the final need not play that entire span."
+      },
+      "strict_single_source_integrity": "pass"
+    },
+    {
+      "shot_id": "GT006",
+      "final_frame_range": [
+        681,
+        740
+      ],
+      "provenance_action_unit_span": {
+        "action_unit_id": "AU0109_02",
+        "source_file": "DJI_20260801170541_0109_D.MP4",
+        "start_frame": 399,
+        "end_frame": 630,
+        "prepare_frame": 399,
+        "action_peak_frame": 466,
+        "result_frame": 488,
+        "hold_end_frame": 630,
+        "boundary_precision": "coarse_action_boundary_manual_visual_review"
+      },
+      "used_subrange": {
+        "source_frame_envelope": [
+          460,
+          525
+        ],
+        "continuous_playback": true,
+        "precision": "coarse"
+      },
+      "used_mapping": {
+        "type": "approximately_monotonic_continuous_subrange",
+        "source_start_frame": 460,
+        "source_end_frame": 525,
+        "sample_correspondences": [
+          {
+            "final_frame": 688,
+            "source_frame": 468,
+            "coarse_similarity": 0.824431
+          },
+          {
+            "final_frame": 698,
+            "source_frame": 480,
+            "coarse_similarity": 0.810257
+          },
+          {
+            "final_frame": 710,
+            "source_frame": 495,
+            "coarse_similarity": 0.827565
+          },
+          {
+            "final_frame": 722,
+            "source_frame": 507,
+            "coarse_similarity": 0.829105
+          },
+          {
+            "final_frame": 732,
+            "source_frame": 519,
+            "coarse_similarity": 0.827851
+          }
+        ],
+        "precision": "coarse_bounds_from_v0.2; not EDL-final"
+      },
+      "used_phase_coverage": {
+        "prepare": true,
+        "action": true,
+        "result": true,
+        "hold": true,
+        "notes": "Begins shortly before the annotated peak; only a partial prepare tail is present."
+      },
+      "same_source_file": {
+        "pass": true,
+        "source_file": "DJI_20260801170541_0109_D.MP4"
+      },
+      "same_continuous_take": {
+        "pass": true,
+        "action_unit_id": "AU0109_02"
+      },
+      "complete_action_origin": {
+        "pass": true,
+        "meaning": "The selected footage is traceable to a complete single-take AU mother span; the final need not play that entire span."
+      },
+      "strict_single_source_integrity": "pass"
+    },
+    {
+      "shot_id": "GT007",
+      "final_frame_range": [
+        740,
+        904
+      ],
+      "provenance_action_unit_span": {
+        "action_unit_id": "AU0112_C01",
+        "source_file": "DJI_20260801170710_0112_D.MP4",
+        "start_frame": 0,
+        "end_frame": 794,
+        "prepare_frame": 0,
+        "action_peak_frame": 492,
+        "result_frame": 629,
+        "hold_end_frame": 794,
+        "boundary_precision": "coarse_action_boundary_manual_visual_review"
+      },
+      "used_subrange": {
+        "source_frame_envelope": [
+          496,
+          687
+        ],
+        "continuous_playback": true,
+        "precision": "coarse"
+      },
+      "used_mapping": {
+        "type": "approximately_monotonic_continuous_subrange",
+        "source_start_frame": 496,
+        "source_end_frame": 687,
+        "sample_correspondences": [
+          {
+            "final_frame": 759,
+            "source_frame": 519,
+            "coarse_similarity": 0.84753
+          },
+          {
+            "final_frame": 789,
+            "source_frame": 555,
+            "coarse_similarity": 0.837571
+          },
+          {
+            "final_frame": 822,
+            "source_frame": 594,
+            "coarse_similarity": 0.779619
+          },
+          {
+            "final_frame": 854,
+            "source_frame": 633,
+            "coarse_similarity": 0.902759
+          },
+          {
+            "final_frame": 884,
+            "source_frame": 669,
+            "coarse_similarity": 0.95516
+          }
+        ],
+        "precision": "coarse_bounds_from_v0.2; not EDL-final"
+      },
+      "used_phase_coverage": {
+        "prepare": false,
+        "action": true,
+        "result": true,
+        "hold": true,
+        "notes": "Starts just after compound-AU peak; keeps the watch-placement/proof action through result/hold."
+      },
+      "same_source_file": {
+        "pass": true,
+        "source_file": "DJI_20260801170710_0112_D.MP4"
+      },
+      "same_continuous_take": {
+        "pass": true,
+        "action_unit_id": "AU0112_C01"
+      },
+      "complete_action_origin": {
+        "pass": true,
+        "meaning": "The selected footage is traceable to a complete single-take AU mother span; the final need not play that entire span."
+      },
+      "strict_single_source_integrity": "pass"
+    },
+    {
+      "shot_id": "GT008",
+      "final_frame_range": [
+        946,
+        1061
+      ],
+      "provenance_action_unit_span": {
+        "action_unit_id": "AU0116_01",
+        "source_file": "DJI_20260801170917_0116_D.MP4",
+        "start_frame": 189,
+        "end_frame": 457,
+        "prepare_frame": 189,
+        "action_peak_frame": 236,
+        "result_frame": 330,
+        "hold_end_frame": 457,
+        "boundary_precision": "coarse_action_boundary_manual_visual_review"
+      },
+      "used_subrange": {
+        "source_frame_envelope": [
+          275,
+          427
+        ],
+        "continuous_playback": true,
+        "precision": "coarse"
+      },
+      "used_mapping": {
+        "type": "approximately_monotonic_continuous_subrange",
+        "source_start_frame": 275,
+        "source_end_frame": 427,
+        "sample_correspondences": [
+          {
+            "final_frame": 959,
+            "source_frame": 294,
+            "coarse_similarity": 0.862027
+          },
+          {
+            "final_frame": 980,
+            "source_frame": 324,
+            "coarse_similarity": 0.925212
+          },
+          {
+            "final_frame": 1003,
+            "source_frame": 348,
+            "coarse_similarity": 0.813833
+          },
+          {
+            "final_frame": 1026,
+            "source_frame": 375,
+            "coarse_similarity": 0.853209
+          },
+          {
+            "final_frame": 1047,
+            "source_frame": 420,
+            "coarse_similarity": 0.890383
+          }
+        ],
+        "precision": "coarse_bounds_from_v0.2; not EDL-final"
+      },
+      "used_phase_coverage": {
+        "prepare": false,
+        "action": true,
+        "result": true,
+        "hold": true,
+        "notes": "Starts after annotated peak; keeps late lift/reveal action, result and hold."
+      },
+      "same_source_file": {
+        "pass": true,
+        "source_file": "DJI_20260801170917_0116_D.MP4"
+      },
+      "same_continuous_take": {
+        "pass": true,
+        "action_unit_id": "AU0116_01"
+      },
+      "complete_action_origin": {
+        "pass": true,
+        "meaning": "The selected footage is traceable to a complete single-take AU mother span; the final need not play that entire span."
+      },
+      "strict_single_source_integrity": "pass"
+    },
+    {
+      "shot_id": "GT009",
+      "final_frame_range": [
+        1061,
+        1239
+      ],
+      "provenance_action_unit_span": {
+        "action_unit_id": "AU0120_C01",
+        "source_file": "DJI_20260801171251_0120_D.MP4",
+        "start_frame": 1073,
+        "end_frame": 2075,
+        "prepare_frame": 1073,
+        "action_peak_frame": 1574,
+        "result_frame": 1717,
+        "hold_end_frame": 2075,
+        "boundary_precision": "coarse_action_boundary_manual_visual_review"
+      },
+      "used_subrange": {
+        "source_frame_envelope": [
+          1350,
+          2075
+        ],
+        "continuous_playback": false,
+        "precision": "piecewise_verified_with_bounded_final_hold"
+      },
+      "used_mapping": {
+        "type": "piecewise_nonlinear_same_continuous_take",
+        "segments": [
+          {
+            "final_start_frame": 1061,
+            "final_end_frame": 1072,
+            "source_start_frame": 1350,
+            "source_end_frame": 1350,
+            "mapping_type": "opening_hold_anchor",
+            "estimated_source_frames_per_final_frame": 0.0,
+            "confidence": 0.93
+          },
+          {
+            "final_start_frame": 1073,
+            "final_end_frame": 1118,
+            "source_start_frame": 1352,
+            "source_end_frame": 1406,
+            "mapping_type": "forward_selection",
+            "estimated_source_frames_per_final_frame": 1.2073,
+            "confidence": 0.99
+          },
+          {
+            "final_start_frame": 1119,
+            "final_end_frame": 1144,
+            "source_start_frame": 1408,
+            "source_end_frame": 1408,
+            "mapping_type": "intermediate_hold_anchor",
+            "estimated_source_frames_per_final_frame": 0.0,
+            "confidence": 0.88
+          },
+          {
+            "final_start_frame": 1145,
+            "final_end_frame": 1172,
+            "source_start_frame": 1589,
+            "source_end_frame": 1621,
+            "mapping_type": "jump_then_forward_selection",
+            "estimated_source_frames_per_final_frame": 1.1883,
+            "confidence": 0.99
+          },
+          {
+            "final_start_frame": 1173,
+            "final_end_frame": 1238,
+            "source_start_frame": 2064,
+            "source_end_frame": 2075,
+            "mapping_type": "jump_to_result_hold_range_exact_frame_indeterminate",
+            "estimated_source_frames_per_final_frame": null,
+            "confidence": 0.96,
+            "note": "Verified final anchors 1185 and 1217 both match source frame 2064 best; low-motion source frames 2064-2075 are visually near-equivalent, so the honest mapping is a bounded hold range, not a fabricated constant speed."
+          }
+        ]
+      },
+      "used_phase_coverage": {
+        "prepare": false,
+        "action": true,
+        "result": true,
+        "hold": true,
+        "notes": "Nonlinear jump selection keeps selected action states and lands on the result/hold state; it does not linearly play the full AU."
+      },
+      "same_source_file": {
+        "pass": true,
+        "source_file": "DJI_20260801171251_0120_D.MP4"
+      },
+      "same_continuous_take": {
+        "pass": true,
+        "action_unit_id": "AU0120_C01"
+      },
+      "complete_action_origin": {
+        "pass": true,
+        "meaning": "The selected footage is traceable to a complete single-take AU mother span; the final need not play that entire span."
+      },
+      "strict_single_source_integrity": "pass"
+    },
+    {
+      "shot_id": "GT010",
+      "final_frame_range": [
+        1239,
+        1315
+      ],
+      "provenance_action_unit_span": {
+        "action_unit_id": "AU0121_02",
+        "source_file": "DJI_20260801171336_0121_D.MP4",
+        "start_frame": 168,
+        "end_frame": 444,
+        "prepare_frame": 168,
+        "action_peak_frame": 199,
+        "result_frame": 214,
+        "hold_end_frame": 444,
+        "boundary_precision": "coarse_action_boundary_manual_visual_review"
+      },
+      "used_subrange": {
+        "source_frame_envelope": [
+          232,
+          246
+        ],
+        "continuous_playback": false,
+        "precision": "piecewise_verified"
+      },
+      "used_mapping": {
+        "type": "piecewise_result_hold_selection_same_continuous_take",
+        "segments": [
+          {
+            "final_start_frame": 1239,
+            "final_end_frame": 1271,
+            "source_start_frame": 232,
+            "source_end_frame": 232,
+            "mapping_type": "hold_near_source_frame",
+            "estimated_source_frames_per_final_frame": -0.0,
+            "median_similarity": 0.807455,
+            "confidence": 0.55
+          },
+          {
+            "final_start_frame": 1272,
+            "final_end_frame": 1275,
+            "source_start_frame": 236,
+            "source_end_frame": 238,
+            "mapping_type": "forward_selection",
+            "estimated_source_frames_per_final_frame": 0.6,
+            "median_similarity": 0.855411,
+            "confidence": 0.73
+          },
+          {
+            "final_start_frame": 1276,
+            "final_end_frame": 1310,
+            "source_start_frame": 240,
+            "source_end_frame": 240,
+            "mapping_type": "hold_near_source_frame",
+            "estimated_source_frames_per_final_frame": -0.0,
+            "median_similarity": 0.943583,
+            "confidence": 0.99
+          },
+          {
+            "final_start_frame": 1311,
+            "final_end_frame": 1314,
+            "source_start_frame": 246,
+            "source_end_frame": 246,
+            "mapping_type": "forward_selection",
+            "estimated_source_frames_per_final_frame": 0.0,
+            "median_similarity": 0.946485,
+            "confidence": 0.99
+          }
+        ]
+      },
+      "used_phase_coverage": {
+        "prepare": false,
+        "action": false,
+        "result": true,
+        "hold": true,
+        "notes": "The decisive counterexample: complete AU0121_02 is provenance, but the final mostly uses source 232-246, a result/hold subrange."
+      },
+      "same_source_file": {
+        "pass": true,
+        "source_file": "DJI_20260801171336_0121_D.MP4"
+      },
+      "same_continuous_take": {
+        "pass": true,
+        "action_unit_id": "AU0121_02"
+      },
+      "complete_action_origin": {
+        "pass": true,
+        "meaning": "The selected footage is traceable to a complete single-take AU mother span; the final need not play that entire span."
+      },
+      "strict_single_source_integrity": "pass"
+    },
+    {
+      "shot_id": "GT011",
+      "final_frame_range": [
+        1315,
+        1580
+      ],
+      "provenance_action_unit_span": {
+        "action_unit_id": "AU0122_03",
+        "source_file": "DJI_20260801171351_0122_D.MP4",
+        "start_frame": 1654,
+        "end_frame": 2086,
+        "prepare_frame": 1654,
+        "action_peak_frame": 1870,
+        "result_frame": 1942,
+        "hold_end_frame": 2086,
+        "boundary_precision": "coarse_action_boundary_manual_visual_review"
+      },
+      "used_subrange": {
+        "source_frame_envelope": [
+          1666,
+          1985
+        ],
+        "continuous_playback": true,
+        "precision": "coarse"
+      },
+      "used_mapping": {
+        "type": "approximately_monotonic_continuous_subrange",
+        "source_start_frame": 1666,
+        "source_end_frame": 1985,
+        "sample_correspondences": [
+          {
+            "final_frame": 1346,
+            "source_frame": 1707,
+            "coarse_similarity": 0.941657
+          },
+          {
+            "final_frame": 1394,
+            "source_frame": 1764,
+            "coarse_similarity": 0.928324
+          },
+          {
+            "final_frame": 1447,
+            "source_frame": 1827,
+            "coarse_similarity": 0.793487
+          },
+          {
+            "final_frame": 1500,
+            "source_frame": 1893,
+            "coarse_similarity": 0.956353
+          },
+          {
+            "final_frame": 1548,
+            "source_frame": 1959,
+            "coarse_similarity": 0.923104
+          }
+        ],
+        "precision": "coarse_bounds_from_v0.2; not EDL-final"
+      },
+      "used_phase_coverage": {
+        "prepare": true,
+        "action": true,
+        "result": true,
+        "hold": true,
+        "notes": "Begins shortly after AU start and retains preparation/action, CTA result and hold; prepare is partial."
+      },
+      "same_source_file": {
+        "pass": true,
+        "source_file": "DJI_20260801171351_0122_D.MP4"
+      },
+      "same_continuous_take": {
+        "pass": true,
+        "action_unit_id": "AU0122_03"
+      },
+      "complete_action_origin": {
+        "pass": true,
+        "meaning": "The selected footage is traceable to a complete single-take AU mother span; the final need not play that entire span."
+      },
+      "strict_single_source_integrity": "pass"
+    }
+  ],
+  "vo_sentence_boundary_crossing_shot_rate": {
+    "rate": 0.454545,
+    "numerator": 5,
+    "denominator": 11,
+    "shot_ids": [
+      "GT003",
+      "GT005",
+      "GT006",
+      "GT009",
+      "GT011"
+    ],
+    "definition": "A visual shot crosses at least one linked VO sentence boundary.",
+    "interpretation_limit": "This does not prove that the shot is intrinsically stronger, nor does it prescribe keeping it. It only shows that VO sentence boundaries are not mandatory visual cut points."
+  },
+  "vo_lead_lag_descriptive_only": {
+    "director_imitation_value": false,
+    "reason": "Sentence starts are not claim beats. A Director target must align keyword/claim beats with action peak or result proof.",
+    "claim_beat_alignment_status": "provisional",
+    "next_measurement": "keyword_or_claim_beat_to_action_peak_and_result_proof",
+    "descriptive_statistics_preserved_from_v1_0": {
+      "definition": "visual shot start minus start of its first linked VO sentence",
+      "per_shot": [
+        {
+          "shot_id": "GT001",
+          "first_linked_vo_sentence": 1,
+          "visual_start_minus_sentence_start_seconds": 0.0,
+          "interpretation": "aligned"
+        },
+        {
+          "shot_id": "GT002",
+          "first_linked_vo_sentence": 1,
+          "visual_start_minus_sentence_start_seconds": 1.133333,
+          "interpretation": "visual_lags_sentence"
+        },
+        {
+          "shot_id": "GT003",
+          "first_linked_vo_sentence": 1,
+          "visual_start_minus_sentence_start_seconds": 2.733333,
+          "interpretation": "visual_lags_sentence"
+        },
+        {
+          "shot_id": "GT004",
+          "first_linked_vo_sentence": 2,
+          "visual_start_minus_sentence_start_seconds": 0.66,
+          "interpretation": "visual_lags_sentence"
+        },
+        {
+          "shot_id": "GT005",
+          "first_linked_vo_sentence": 3,
+          "visual_start_minus_sentence_start_seconds": -0.016667,
+          "interpretation": "visual_leads_sentence"
+        },
+        {
+          "shot_id": "GT006",
+          "first_linked_vo_sentence": 4,
+          "visual_start_minus_sentence_start_seconds": 2.43,
+          "interpretation": "visual_lags_sentence"
+        },
+        {
+          "shot_id": "GT007",
+          "first_linked_vo_sentence": 5,
+          "visual_start_minus_sentence_start_seconds": 0.513333,
+          "interpretation": "visual_lags_sentence"
+        },
+        {
+          "shot_id": "GT008",
+          "first_linked_vo_sentence": 6,
+          "visual_start_minus_sentence_start_seconds": 0.666667,
+          "interpretation": "visual_lags_sentence"
+        },
+        {
+          "shot_id": "GT009",
+          "first_linked_vo_sentence": 6,
+          "visual_start_minus_sentence_start_seconds": 2.583333,
+          "interpretation": "visual_lags_sentence"
+        },
+        {
+          "shot_id": "GT010",
+          "first_linked_vo_sentence": 7,
+          "visual_start_minus_sentence_start_seconds": 1.25,
+          "interpretation": "visual_lags_sentence"
+        },
+        {
+          "shot_id": "GT011",
+          "first_linked_vo_sentence": 8,
+          "visual_start_minus_sentence_start_seconds": -0.123333,
+          "interpretation": "visual_leads_sentence"
+        }
+      ],
+      "distribution_seconds": {
+        "count": 11,
+        "min": -0.123333,
+        "p25": 0.256667,
+        "median": 0.666667,
+        "mean": 1.075454,
+        "p75": 1.84,
+        "max": 2.733333,
+        "stddev": 1.015023
+      },
+      "boundary_crossing_shot_rate": 0.454545
+    }
+  },
+  "nonlinear_compression_policy": {
+    "allowed": "Within one continuous take, select non-adjacent subranges/holds to compress low-value process while retaining truthful physical states.",
+    "prohibited": "Do not assemble one physical action across different takes or source files.",
+    "GT009_example": {
+      "source_file": "DJI_20260801171251_0120_D.MP4",
+      "action_unit_id": "AU0120_C01",
+      "mapping_type": "piecewise_nonlinear",
+      "piecewise_segment_count": 5,
+      "single_constant_speed_rejected": true
+    }
+  },
+  "complete_action_not_full_playback_example": {
+    "shot_id": "GT010",
+    "provenance_action_unit": "AU0121_02",
+    "provenance_span_frames": [
+      168,
+      444
+    ],
+    "provenance_phase_landmarks": {
+      "prepare": 168,
+      "action_peak": 199,
+      "result": 214,
+      "hold_end": 444
+    },
+    "final_used_source_envelope_frames": [
+      232,
+      246
+    ],
+    "used_phase_coverage": {
+      "prepare": false,
+      "action": false,
+      "result": true,
+      "hold": true,
+      "notes": "The decisive counterexample: complete AU0121_02 is provenance, but the final mostly uses source 232-246, a result/hold subrange."
+    },
+    "conclusion": "The complete AU establishes authenticity and continuity, while the final primarily uses a result/hold subrange. Complete Action Unit does not mean mandatory full playback."
+  },
+  "verified_human_features": {
+    "CTA_spoken_end_post_visual_hold_seconds": 1.770998,
+    "pacing": {
+      "description": "front_fast_then_stabilizes",
+      "front_mean_exposure_duration_seconds": 1.688733,
+      "middle_mean_exposure_duration_seconds": 2.01925,
+      "back_mean_exposure_duration_seconds": 2.19425
+    },
+    "exact_physical_action_repeat_rate": 0.0,
+    "vo_sentence_boundary_is_mandatory_visual_cut": false,
+    "GT010_natural_source_hold_no_additional_freeze": {
+      "decision": true,
+      "confidence": 0.93
+    }
+  },
+  "deprecated_or_renamed_v1_0_fields": {
+    "action_unit_preservation_rate": "replaced_by complete_action_provenance_rate",
+    "single_source_action_rate": "replaced_by strict_single_source_integrity and its three components",
+    "phase_retention": "replaced_by per-shot used_phase_coverage; v1.0 measured phases in the AU mother span, not phases actually shown",
+    "when_human_keeps_one_strong_shot_instead_of_word_matching": "renamed to vo_sentence_boundary_crossing_shot_rate; the word strong was an unsupported interpretation",
+    "vo_lead_lag": "retained as descriptive-only under vo_lead_lag_descriptive_only; not a Director imitation value"
+  },
+  "director_guardrails": [
+    "Select a complete single-take Action Unit as the authenticity/provenance mother span.",
+    "Use only the commercially useful continuous or piecewise subrange from within that same take.",
+    "Do not require full prepare-action-result-hold playback when result/hold alone serves the claim.",
+    "Do not cross source files or takes to fabricate one physical action.",
+    "Treat VO sentence boundaries as descriptive timing, not compulsory cut points.",
+    "Do not imitate sentence-start lead/lag until claim-beat alignment is measured."
+  ]
+}
