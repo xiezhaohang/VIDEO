@@ -1,0 +1,2853 @@
+{
+  "schema": "human-edit-source-matcher/0.2",
+  "status": "action_unit_constrained_matching_complete_edl_not_ready",
+  "preserves_v0_1": true,
+  "v0_1_source": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-2\\outputs\\human-edit-source-matcher\\source_match_candidates.json",
+  "matching_pipeline": [
+    "Final Shot",
+    "Action Unit",
+    "Continuous Source Range"
+  ],
+  "hard_rule": "Do not assemble one commercial action from two or more source clips. Prefer a lower-similarity complete single-source action over higher-similarity fragments.",
+  "summary": {
+    "content_shots_total": 11,
+    "old_top5_candidates_reviewed": 55,
+    "old_top5_candidates_eliminated": 44,
+    "shots_converted_from_fragment_range_to_complete_single_source_action": 8,
+    "converted_shot_ids": [
+      "GT004",
+      "GT005",
+      "GT006",
+      "GT007",
+      "GT008",
+      "GT009",
+      "GT010",
+      "GT011"
+    ],
+    "stable_subset_single_source_action_integrity": "pass_8_of_8",
+    "all_shots_single_source_action_integrity": "pending_3_opening_shots",
+    "ground_truth_edl_ready": false,
+    "edl_blockers": [
+      "GT001-GT003 source identity still needs manual confirmation; v0.2 supplies action-unit-level choices but does not force truth.",
+      "GT009 needs piecewise/non-linear source-to-final frame mapping inside AU0120_C01.",
+      "GT010 needs final verification of natural source hold versus an added freeze frame.",
+      "Action-unit boundaries are coarse visual boundaries and require frame-accurate refinement before EDL export."
+    ]
+  },
+  "shots": [
+    {
+      "final_shot_id": "GT001",
+      "final_start_frame": 0,
+      "final_end_frame": 68,
+      "final_frame_rate": 60,
+      "shot_role": "hook / phone charging promise",
+      "visual_action_v0_2": "Phone and magnetic power bank are introduced together; the single-product promise is established immediately.",
+      "match_status_v0_2": "provisional_action_unit_manual_source_confirmation",
+      "selected_action_unit_id": "AU0106_01",
+      "selected_source_file": "DJI_20260801170103_0106_D.MP4",
+      "selected_source_range": {
+        "start_frame": 0,
+        "end_frame": 810
+      },
+      "selected_old_top5_rank": 1,
+      "confidence_v0_2": 0.62,
+      "single_source_action_integrity": "pending_source_identity_confirmation",
+      "rationale": "完整产品翻转单元可承载画面，但原素材没有连续复现成片中的手机+充电宝堆叠，不能升级为真值。",
+      "old_top5_review": [
+        {
+          "rank": 1,
+          "source_file": "DJI_20260801170103_0106_D.MP4",
+          "source_in_frame": 575,
+          "source_out_frame": 655,
+          "confidence": 0.62,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "The desk background and hand/product motion align best with 0106, but the raw candidate lacks the complete phone-plus-power-bank stack visible in the final; compositing, a very short unsampled setup, or a different take remains possible.",
+          "evidence": {
+            "coarse_aggregate_score": 0.645212,
+            "median_visual_similarity": 0.6297,
+            "continuity_score": 0.786348,
+            "estimated_source_frames_per_final_frame": 1.077708,
+            "fit_residual_source_frames": 7.211,
+            "sample_correspondences": [
+              {
+                "final_frame": 8,
+                "source_frame": 585,
+                "coarse_similarity": 0.593235
+              },
+              {
+                "final_frame": 20,
+                "source_frame": 603,
+                "coarse_similarity": 0.620578
+              },
+              {
+                "final_frame": 34,
+                "source_frame": 636,
+                "coarse_similarity": 0.655366
+              },
+              {
+                "final_frame": 47,
+                "source_frame": 639,
+                "coarse_similarity": 0.645366
+              },
+              {
+                "final_frame": 59,
+                "source_frame": 636,
+                "coarse_similarity": 0.6297
+              }
+            ]
+          },
+          "v0_2_gate": "retained_and_rebound_to_complete_action_unit",
+          "action_unit_options": [
+            "AU0106_01"
+          ],
+          "v0_2_reason": "绑定 AU0106_01，不再把原粗帧区间直接当作动作。"
+        },
+        {
+          "rank": 2,
+          "source_file": "DJI_20260801170824_0114_D.MP4",
+          "source_in_frame": 261,
+          "source_out_frame": 161,
+          "confidence": 0.4,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.587362,
+            "median_visual_similarity": 0.613704,
+            "continuity_score": 0.346507,
+            "estimated_source_frames_per_final_frame": -1.544679,
+            "fit_residual_source_frames": 23.165,
+            "sample_correspondences": [
+              {
+                "final_frame": 8,
+                "source_frame": 141,
+                "coarse_similarity": 0.584339
+              },
+              {
+                "final_frame": 20,
+                "source_frame": 387,
+                "coarse_similarity": 0.620605
+              },
+              {
+                "final_frame": 34,
+                "source_frame": 186,
+                "coarse_similarity": 0.603785
+              },
+              {
+                "final_frame": 47,
+                "source_frame": 186,
+                "coarse_similarity": 0.613704
+              },
+              {
+                "final_frame": 59,
+                "source_frame": 147,
+                "coarse_similarity": 0.656579
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 3,
+          "source_file": "DJI_20260801170646_0111_D.MP4",
+          "source_in_frame": 905,
+          "source_out_frame": 1015,
+          "confidence": 0.35,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.573217,
+            "median_visual_similarity": 0.622679,
+            "continuity_score": 0.153247,
+            "estimated_source_frames_per_final_frame": 1.686644,
+            "fit_residual_source_frames": 47.641,
+            "sample_correspondences": [
+              {
+                "final_frame": 8,
+                "source_frame": 831,
+                "coarse_similarity": 0.583228
+              },
+              {
+                "final_frame": 20,
+                "source_frame": 1044,
+                "coarse_similarity": 0.577099
+              },
+              {
+                "final_frame": 34,
+                "source_frame": 963,
+                "coarse_similarity": 0.622679
+              },
+              {
+                "final_frame": 47,
+                "source_frame": 1014,
+                "coarse_similarity": 0.63239
+              },
+              {
+                "final_frame": 59,
+                "source_frame": 957,
+                "coarse_similarity": 0.628023
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 4,
+          "source_file": "DJI_20260801171251_0120_D.MP4",
+          "source_in_frame": 1220,
+          "source_out_frame": 1239,
+          "confidence": 0.28,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.538197,
+            "median_visual_similarity": 0.593137,
+            "continuity_score": 0.023697,
+            "estimated_source_frames_per_final_frame": 0.300865,
+            "fit_residual_source_frames": 103.642,
+            "sample_correspondences": [
+              {
+                "final_frame": 8,
+                "source_frame": 1122,
+                "coarse_similarity": 0.573305
+              },
+              {
+                "final_frame": 20,
+                "source_frame": 1371,
+                "coarse_similarity": 0.593108
+              },
+              {
+                "final_frame": 34,
+                "source_frame": 1134,
+                "coarse_similarity": 0.593137
+              },
+              {
+                "final_frame": 47,
+                "source_frame": 1389,
+                "coarse_similarity": 0.599963
+              },
+              {
+                "final_frame": 59,
+                "source_frame": 1134,
+                "coarse_similarity": 0.661827
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_single_source_action_integrity_rerank",
+          "action_unit_options": [
+            "AU0120_01",
+            "AU0120_02",
+            "AU0120_C01"
+          ],
+          "v0_2_reason": "虽存在同类动作，但旧候选区间为碎片/倒序/相似结果帧，且完整单元对成片动作与构图的支持弱于已选单元。"
+        },
+        {
+          "rank": 5,
+          "source_file": "DJI_20260801171351_0122_D.MP4",
+          "source_in_frame": 693,
+          "source_out_frame": 1443,
+          "confidence": 0.24,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.535103,
+            "median_visual_similarity": 0.594853,
+            "continuity_score": 2.5e-05,
+            "estimated_source_frames_per_final_frame": 11.503123,
+            "fit_residual_source_frames": 313.821,
+            "sample_correspondences": [
+              {
+                "final_frame": 8,
+                "source_frame": 615,
+                "coarse_similarity": 0.572664
+              },
+              {
+                "final_frame": 20,
+                "source_frame": 1443,
+                "coarse_similarity": 0.598679
+              },
+              {
+                "final_frame": 34,
+                "source_frame": 807,
+                "coarse_similarity": 0.592698
+              },
+              {
+                "final_frame": 47,
+                "source_frame": 849,
+                "coarse_similarity": 0.594853
+              },
+              {
+                "final_frame": 59,
+                "source_frame": 1686,
+                "coarse_similarity": 0.60794
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        }
+      ]
+    },
+    {
+      "final_shot_id": "GT002",
+      "final_start_frame": 68,
+      "final_end_frame": 164,
+      "final_frame_rate": 60,
+      "shot_role": "watch charging proof",
+      "visual_action_v0_2": "The same visual axis is reused to switch the proof target to Apple Watch.",
+      "match_status_v0_2": "provisional_action_unit_manual_source_confirmation",
+      "selected_action_unit_id": "AU0110_02",
+      "selected_source_file": "DJI_20260801170622_0110_D.MP4",
+      "selected_source_range": {
+        "start_frame": 502,
+        "end_frame": 857
+      },
+      "selected_old_top5_rank": 1,
+      "confidence_v0_2": 0.55,
+      "single_source_action_integrity": "pending_source_identity_confirmation",
+      "rationale": "0110 含完整手表放置/拿起/充电结果，但开头同轴构图仍与多个 watch take 冲突。",
+      "old_top5_review": [
+        {
+          "rank": 1,
+          "source_file": "DJI_20260801170622_0110_D.MP4",
+          "source_in_frame": null,
+          "source_out_frame": null,
+          "confidence": 0.38,
+          "matching_method": "visual+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Multiple watch-on-charger takes share the same objects. No candidate reproduces the complete handheld phone/power-bank/watch composition with continuous motion across all five final samples.",
+          "evidence": {
+            "coarse_aggregate_score": 0.622798,
+            "median_visual_similarity": 0.582596,
+            "continuity_score": 1.0,
+            "estimated_source_frames_per_final_frame": -0.0,
+            "fit_residual_source_frames": 0.0,
+            "sample_correspondences": [
+              {
+                "final_frame": 79,
+                "source_frame": 855,
+                "coarse_similarity": 0.611047
+              },
+              {
+                "final_frame": 96,
+                "source_frame": 855,
+                "coarse_similarity": 0.582596
+              },
+              {
+                "final_frame": 116,
+                "source_frame": 855,
+                "coarse_similarity": 0.609687
+              },
+              {
+                "final_frame": 135,
+                "source_frame": 855,
+                "coarse_similarity": 0.528474
+              },
+              {
+                "final_frame": 152,
+                "source_frame": 855,
+                "coarse_similarity": 0.538444
+              }
+            ]
+          },
+          "v0_2_gate": "retained_and_rebound_to_complete_action_unit",
+          "action_unit_options": [
+            "AU0110_01",
+            "AU0110_02"
+          ],
+          "v0_2_reason": "绑定 AU0110_02，不再把原粗帧区间直接当作动作。"
+        },
+        {
+          "rank": 2,
+          "source_file": "DJI_20260801170646_0111_D.MP4",
+          "source_in_frame": null,
+          "source_out_frame": null,
+          "confidence": 0.34,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.52546,
+            "median_visual_similarity": 0.573915,
+            "continuity_score": 0.086387,
+            "estimated_source_frames_per_final_frame": -5.361672,
+            "fit_residual_source_frames": 64.837,
+            "sample_correspondences": [
+              {
+                "final_frame": 79,
+                "source_frame": 990,
+                "coarse_similarity": 0.621127
+              },
+              {
+                "final_frame": 96,
+                "source_frame": 993,
+                "coarse_similarity": 0.588487
+              },
+              {
+                "final_frame": 116,
+                "source_frame": 987,
+                "coarse_similarity": 0.573915
+              },
+              {
+                "final_frame": 135,
+                "source_frame": 660,
+                "coarse_similarity": 0.553225
+              },
+              {
+                "final_frame": 152,
+                "source_frame": 663,
+                "coarse_similarity": 0.541092
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_single_source_action_integrity_rerank",
+          "action_unit_options": [
+            "AU0111_01",
+            "AU0111_02"
+          ],
+          "v0_2_reason": "虽存在同类动作，但旧候选区间为碎片/倒序/相似结果帧，且完整单元对成片动作与构图的支持弱于已选单元。"
+        },
+        {
+          "rank": 3,
+          "source_file": "DJI_20260801170858_0115_D.MP4",
+          "source_in_frame": 364,
+          "source_out_frame": 346,
+          "confidence": 0.39,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.61107,
+            "median_visual_similarity": 0.602705,
+            "continuity_score": 0.681993,
+            "estimated_source_frames_per_final_frame": -0.193215,
+            "fit_residual_source_frames": 2.852,
+            "sample_correspondences": [
+              {
+                "final_frame": 79,
+                "source_frame": 363,
+                "coarse_similarity": 0.59082
+              },
+              {
+                "final_frame": 96,
+                "source_frame": 354,
+                "coarse_similarity": 0.6232
+              },
+              {
+                "final_frame": 116,
+                "source_frame": 360,
+                "coarse_similarity": 0.602705
+              },
+              {
+                "final_frame": 135,
+                "source_frame": 348,
+                "coarse_similarity": 0.623805
+              },
+              {
+                "final_frame": 152,
+                "source_frame": 348,
+                "coarse_similarity": 0.585099
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_single_source_action_integrity_rerank",
+          "action_unit_options": [
+            "AU0115_01"
+          ],
+          "v0_2_reason": "虽存在同类动作，但旧候选区间为碎片/倒序/相似结果帧，且完整单元对成片动作与构图的支持弱于已选单元。"
+        },
+        {
+          "rank": 4,
+          "source_file": "DJI_20260801171251_0120_D.MP4",
+          "source_in_frame": 1319,
+          "source_out_frame": 1430,
+          "confidence": 0.29,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.546409,
+            "median_visual_similarity": 0.589042,
+            "continuity_score": 0.151606,
+            "estimated_source_frames_per_final_frame": 1.195726,
+            "fit_residual_source_frames": 47.964,
+            "sample_correspondences": [
+              {
+                "final_frame": 79,
+                "source_frame": 1380,
+                "coarse_similarity": 0.648836
+              },
+              {
+                "final_frame": 96,
+                "source_frame": 1380,
+                "coarse_similarity": 0.612334
+              },
+              {
+                "final_frame": 116,
+                "source_frame": 1143,
+                "coarse_similarity": 0.589042
+              },
+              {
+                "final_frame": 135,
+                "source_frame": 1596,
+                "coarse_similarity": 0.572282
+              },
+              {
+                "final_frame": 152,
+                "source_frame": 1380,
+                "coarse_similarity": 0.553574
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_single_source_action_integrity_rerank",
+          "action_unit_options": [
+            "AU0120_03"
+          ],
+          "v0_2_reason": "虽存在同类动作，但旧候选区间为碎片/倒序/相似结果帧，且完整单元对成片动作与构图的支持弱于已选单元。"
+        },
+        {
+          "rank": 5,
+          "source_file": "DJI_20260801170824_0114_D.MP4",
+          "source_in_frame": 160,
+          "source_out_frame": 464,
+          "confidence": 0.27,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.568195,
+            "median_visual_similarity": 0.61569,
+            "continuity_score": 0.158077,
+            "estimated_source_frames_per_final_frame": 3.272918,
+            "fit_residual_source_frames": 51.334,
+            "sample_correspondences": [
+              {
+                "final_frame": 79,
+                "source_frame": 186,
+                "coarse_similarity": 0.642911
+              },
+              {
+                "final_frame": 96,
+                "source_frame": 183,
+                "coarse_similarity": 0.624246
+              },
+              {
+                "final_frame": 116,
+                "source_frame": 444,
+                "coarse_similarity": 0.61569
+              },
+              {
+                "final_frame": 135,
+                "source_frame": 384,
+                "coarse_similarity": 0.580934
+              },
+              {
+                "final_frame": 152,
+                "source_frame": 384,
+                "coarse_similarity": 0.566509
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_single_source_action_integrity_rerank",
+          "action_unit_options": [
+            "AU0114_01",
+            "AU0114_02",
+            "AU0114_03"
+          ],
+          "v0_2_reason": "虽存在同类动作，但旧候选区间为碎片/倒序/相似结果帧，且完整单元对成片动作与构图的支持弱于已选单元。"
+        }
+      ]
+    },
+    {
+      "final_shot_id": "GT003",
+      "final_start_frame": 164,
+      "final_end_frame": 258,
+      "final_frame_rate": 60,
+      "shot_role": "earbuds charging proof",
+      "visual_action_v0_2": "AirPods complete the three-device capability set while retaining the same product axis.",
+      "match_status_v0_2": "provisional_action_unit_promoted_from_old_rank_2",
+      "selected_action_unit_id": "AU0121_02",
+      "selected_source_file": "DJI_20260801171336_0121_D.MP4",
+      "selected_source_range": {
+        "start_frame": 168,
+        "end_frame": 444
+      },
+      "selected_old_top5_rank": 2,
+      "confidence_v0_2": 0.74,
+      "single_source_action_integrity": "pending_source_identity_confirmation",
+      "rationale": "旧 Top 1 0122 只显示耳机已在位的结果；0121 第二条 take 才包含完整耳机放置与保持。",
+      "old_top5_review": [
+        {
+          "rank": 1,
+          "source_file": "DJI_20260801171351_0122_D.MP4",
+          "source_in_frame": null,
+          "source_out_frame": null,
+          "confidence": 0.34,
+          "matching_method": "visual+feature+semantic+manual_candidate",
+          "uncertainty_reason": "AirPods semantics favor 0121/0122, while background/hand features favor 0106. None yields a continuous exact match to the handheld opening match-cut, so source frames are intentionally left unset.",
+          "evidence": {
+            "coarse_aggregate_score": 0.56191,
+            "median_visual_similarity": 0.622713,
+            "continuity_score": 1e-06,
+            "estimated_source_frames_per_final_frame": 8.984088,
+            "fit_residual_source_frames": 398.704,
+            "sample_correspondences": [
+              {
+                "final_frame": 175,
+                "source_frame": 489,
+                "coarse_similarity": 0.658805
+              },
+              {
+                "final_frame": 192,
+                "source_frame": 1527,
+                "coarse_similarity": 0.622713
+              },
+              {
+                "final_frame": 211,
+                "source_frame": 1713,
+                "coarse_similarity": 0.622177
+              },
+              {
+                "final_frame": 229,
+                "source_frame": 1374,
+                "coarse_similarity": 0.620141
+              },
+              {
+                "final_frame": 246,
+                "source_frame": 1374,
+                "coarse_similarity": 0.630513
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 2,
+          "source_file": "DJI_20260801171336_0121_D.MP4",
+          "source_in_frame": 248,
+          "source_out_frame": 260,
+          "confidence": 0.38,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.565047,
+            "median_visual_similarity": 0.556294,
+            "continuity_score": 0.630842,
+            "estimated_source_frames_per_final_frame": 0.128791,
+            "fit_residual_source_frames": 9.815,
+            "sample_correspondences": [
+              {
+                "final_frame": 175,
+                "source_frame": 240,
+                "coarse_similarity": 0.55096
+              },
+              {
+                "final_frame": 192,
+                "source_frame": 264,
+                "coarse_similarity": 0.579924
+              },
+              {
+                "final_frame": 211,
+                "source_frame": 264,
+                "coarse_similarity": 0.57968
+              },
+              {
+                "final_frame": 229,
+                "source_frame": 240,
+                "coarse_similarity": 0.556294
+              },
+              {
+                "final_frame": 246,
+                "source_frame": 264,
+                "coarse_similarity": 0.550685
+              }
+            ]
+          },
+          "v0_2_gate": "retained_and_rebound_to_complete_action_unit",
+          "action_unit_options": [
+            "AU0121_01",
+            "AU0121_02"
+          ],
+          "v0_2_reason": "绑定 AU0121_02，不再把原粗帧区间直接当作动作。"
+        },
+        {
+          "rank": 3,
+          "source_file": "DJI_20260801170103_0106_D.MP4",
+          "source_in_frame": 642,
+          "source_out_frame": 636,
+          "confidence": 0.44,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.665384,
+            "median_visual_similarity": 0.648145,
+            "continuity_score": 0.825143,
+            "estimated_source_frames_per_final_frame": -0.06739,
+            "fit_residual_source_frames": 1.76,
+            "sample_correspondences": [
+              {
+                "final_frame": 175,
+                "source_frame": 639,
+                "coarse_similarity": 0.621304
+              },
+              {
+                "final_frame": 192,
+                "source_frame": 642,
+                "coarse_similarity": 0.659064
+              },
+              {
+                "final_frame": 211,
+                "source_frame": 642,
+                "coarse_similarity": 0.648145
+              },
+              {
+                "final_frame": 229,
+                "source_frame": 636,
+                "coarse_similarity": 0.655751
+              },
+              {
+                "final_frame": 246,
+                "source_frame": 636,
+                "coarse_similarity": 0.643652
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 4,
+          "source_file": "DJI_20260801171058_0117_D.MP4",
+          "source_in_frame": 1389,
+          "source_out_frame": 1389,
+          "confidence": 0.4,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.658435,
+            "median_visual_similarity": 0.620968,
+            "continuity_score": 1.0,
+            "estimated_source_frames_per_final_frame": -0.0,
+            "fit_residual_source_frames": 0.0,
+            "sample_correspondences": [
+              {
+                "final_frame": 175,
+                "source_frame": 1389,
+                "coarse_similarity": 0.608194
+              },
+              {
+                "final_frame": 192,
+                "source_frame": 1389,
+                "coarse_similarity": 0.620968
+              },
+              {
+                "final_frame": 211,
+                "source_frame": 1389,
+                "coarse_similarity": 0.62111
+              },
+              {
+                "final_frame": 229,
+                "source_frame": 1389,
+                "coarse_similarity": 0.622263
+              },
+              {
+                "final_frame": 246,
+                "source_frame": 1389,
+                "coarse_similarity": 0.62018
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 5,
+          "source_file": "DJI_20260801171251_0120_D.MP4",
+          "source_in_frame": 1126,
+          "source_out_frame": 1129,
+          "confidence": 0.36,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.657642,
+            "median_visual_similarity": 0.624243,
+            "continuity_score": 0.96102,
+            "estimated_source_frames_per_final_frame": 0.033695,
+            "fit_residual_source_frames": 1.193,
+            "sample_correspondences": [
+              {
+                "final_frame": 175,
+                "source_frame": 1125,
+                "coarse_similarity": 0.62904
+              },
+              {
+                "final_frame": 192,
+                "source_frame": 1128,
+                "coarse_similarity": 0.63137
+              },
+              {
+                "final_frame": 211,
+                "source_frame": 1131,
+                "coarse_similarity": 0.624243
+              },
+              {
+                "final_frame": 229,
+                "source_frame": 1128,
+                "coarse_similarity": 0.61186
+              },
+              {
+                "final_frame": 246,
+                "source_frame": 1128,
+                "coarse_similarity": 0.616948
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        }
+      ]
+    },
+    {
+      "final_shot_id": "GT004",
+      "final_start_frame": 258,
+      "final_end_frame": 393,
+      "final_frame_rate": 60,
+      "shot_role": "product identity and physical readability",
+      "visual_action_v0_2": "Handheld close view shows the MagSafe face, compact form and brand side.",
+      "match_status_v0_2": "stable_complete_action_unit",
+      "selected_action_unit_id": "AU0106_01",
+      "selected_source_file": "DJI_20260801170103_0106_D.MP4",
+      "selected_source_range": {
+        "start_frame": 0,
+        "end_frame": 810
+      },
+      "selected_old_top5_rank": 1,
+      "confidence_v0_2": 0.98,
+      "single_source_action_integrity": "pass",
+      "rationale": "旧 500–658 只是翻转动作后段；v0.2 绑定完整产品翻转/正面结果单元。",
+      "old_top5_review": [
+        {
+          "rank": 1,
+          "source_file": "DJI_20260801170103_0106_D.MP4",
+          "source_in_frame": 500,
+          "source_out_frame": 658,
+          "confidence": 0.98,
+          "matching_method": "visual+pHash+dHash+feature+action_continuity+manual_review",
+          "uncertainty_reason": "Low; five interior samples form a monotonic match. Frame bounds remain coarse within approximately 3 source frames.",
+          "evidence": {
+            "coarse_aggregate_score": 0.92127,
+            "median_visual_similarity": 0.913976,
+            "continuity_score": 0.976365,
+            "estimated_source_frames_per_final_frame": 1.209459,
+            "fit_residual_source_frames": 0.718,
+            "sample_correspondences": [
+              {
+                "final_frame": 274,
+                "source_frame": 519,
+                "coarse_similarity": 0.905235
+              },
+              {
+                "final_frame": 298,
+                "source_frame": 549,
+                "coarse_similarity": 0.954209
+              },
+              {
+                "final_frame": 325,
+                "source_frame": 582,
+                "coarse_similarity": 0.938921
+              },
+              {
+                "final_frame": 352,
+                "source_frame": 615,
+                "coarse_similarity": 0.886854
+              },
+              {
+                "final_frame": 376,
+                "source_frame": 642,
+                "coarse_similarity": 0.913976
+              }
+            ]
+          },
+          "v0_2_gate": "retained_and_rebound_to_complete_action_unit",
+          "action_unit_options": [
+            "AU0106_01"
+          ],
+          "v0_2_reason": "绑定 AU0106_01，不再把原粗帧区间直接当作动作。"
+        },
+        {
+          "rank": 2,
+          "source_file": "DJI_20260801170824_0114_D.MP4",
+          "source_in_frame": 390,
+          "source_out_frame": 430,
+          "confidence": 0.44,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.633306,
+            "median_visual_similarity": 0.638759,
+            "continuity_score": 0.58653,
+            "estimated_source_frames_per_final_frame": 0.308108,
+            "fit_residual_source_frames": 12.0,
+            "sample_correspondences": [
+              {
+                "final_frame": 274,
+                "source_frame": 399,
+                "coarse_similarity": 0.631091
+              },
+              {
+                "final_frame": 298,
+                "source_frame": 399,
+                "coarse_similarity": 0.638759
+              },
+              {
+                "final_frame": 325,
+                "source_frame": 423,
+                "coarse_similarity": 0.621207
+              },
+              {
+                "final_frame": 352,
+                "source_frame": 390,
+                "coarse_similarity": 0.655166
+              },
+              {
+                "final_frame": 376,
+                "source_frame": 444,
+                "coarse_similarity": 0.641181
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 3,
+          "source_file": "DJI_20260801171336_0121_D.MP4",
+          "source_in_frame": 232,
+          "source_out_frame": 238,
+          "confidence": 0.4,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.62836,
+            "median_visual_similarity": 0.592186,
+            "continuity_score": 0.960789,
+            "estimated_source_frames_per_final_frame": 0.045946,
+            "fit_residual_source_frames": 1.2,
+            "sample_correspondences": [
+              {
+                "final_frame": 274,
+                "source_frame": 234,
+                "coarse_similarity": 0.614381
+              },
+              {
+                "final_frame": 298,
+                "source_frame": 234,
+                "coarse_similarity": 0.607679
+              },
+              {
+                "final_frame": 325,
+                "source_frame": 234,
+                "coarse_similarity": 0.581696
+              },
+              {
+                "final_frame": 352,
+                "source_frame": 234,
+                "coarse_similarity": 0.545914
+              },
+              {
+                "final_frame": 376,
+                "source_frame": 240,
+                "coarse_similarity": 0.592186
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 4,
+          "source_file": "DJI_20260801171251_0120_D.MP4",
+          "source_in_frame": 1033,
+          "source_out_frame": 1170,
+          "confidence": 0.35,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.609678,
+            "median_visual_similarity": 0.632004,
+            "continuity_score": 0.440432,
+            "estimated_source_frames_per_final_frame": 1.055405,
+            "fit_residual_source_frames": 24.6,
+            "sample_correspondences": [
+              {
+                "final_frame": 274,
+                "source_frame": 996,
+                "coarse_similarity": 0.632004
+              },
+              {
+                "final_frame": 298,
+                "source_frame": 1131,
+                "coarse_similarity": 0.638667
+              },
+              {
+                "final_frame": 325,
+                "source_frame": 1128,
+                "coarse_similarity": 0.581393
+              },
+              {
+                "final_frame": 352,
+                "source_frame": 1125,
+                "coarse_similarity": 0.572291
+              },
+              {
+                "final_frame": 376,
+                "source_frame": 1137,
+                "coarse_similarity": 0.647657
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 5,
+          "source_file": "DJI_20260801170622_0110_D.MP4",
+          "source_in_frame": 430,
+          "source_out_frame": 919,
+          "confidence": 0.31,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.606256,
+            "median_visual_similarity": 0.639379,
+            "continuity_score": 0.343426,
+            "estimated_source_frames_per_final_frame": 3.758108,
+            "fit_residual_source_frames": 32.064,
+            "sample_correspondences": [
+              {
+                "final_frame": 274,
+                "source_frame": 522,
+                "coarse_similarity": 0.639379
+              },
+              {
+                "final_frame": 298,
+                "source_frame": 534,
+                "coarse_similarity": 0.641343
+              },
+              {
+                "final_frame": 325,
+                "source_frame": 657,
+                "coarse_similarity": 0.595978
+              },
+              {
+                "final_frame": 352,
+                "source_frame": 849,
+                "coarse_similarity": 0.643209
+              },
+              {
+                "final_frame": 376,
+                "source_frame": 846,
+                "coarse_similarity": 0.578988
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        }
+      ]
+    },
+    {
+      "final_shot_id": "GT005",
+      "final_start_frame": 413,
+      "final_end_frame": 681,
+      "final_frame_rate": 60,
+      "shot_role": "problem contrast / cable clutter",
+      "visual_action_v0_2": "Overhead view presents multiple cables and adapters, then actively handles and removes the clutter.",
+      "match_status_v0_2": "stable_complete_action_unit",
+      "selected_action_unit_id": "AU0108_01",
+      "selected_source_file": "DJI_20260801170438_0108_D.MP4",
+      "selected_source_range": {
+        "start_frame": 681,
+        "end_frame": 1098
+      },
+      "selected_old_top5_rank": 1,
+      "confidence_v0_2": 0.98,
+      "single_source_action_integrity": "pass",
+      "rationale": "保留同一素材中的线材收拢、拿走与清空结果。",
+      "old_top5_review": [
+        {
+          "rank": 1,
+          "source_file": "DJI_20260801170438_0108_D.MP4",
+          "source_in_frame": 733,
+          "source_out_frame": 1044,
+          "confidence": 0.98,
+          "matching_method": "visual+pHash+dHash+feature+action_continuity+manual_review",
+          "uncertainty_reason": "Low; cable gathering and hand trajectory match continuously. Boundary estimate is coarse within approximately 3 source frames.",
+          "evidence": {
+            "coarse_aggregate_score": 0.891122,
+            "median_visual_similarity": 0.878751,
+            "continuity_score": 0.987727,
+            "estimated_source_frames_per_final_frame": 1.19892,
+            "fit_residual_source_frames": 0.37,
+            "sample_correspondences": [
+              {
+                "final_frame": 445,
+                "source_frame": 771,
+                "coarse_similarity": 0.878751
+              },
+              {
+                "final_frame": 493,
+                "source_frame": 828,
+                "coarse_similarity": 0.867542
+              },
+              {
+                "final_frame": 547,
+                "source_frame": 894,
+                "coarse_similarity": 0.877524
+              },
+              {
+                "final_frame": 600,
+                "source_frame": 957,
+                "coarse_similarity": 0.902146
+              },
+              {
+                "final_frame": 648,
+                "source_frame": 1014,
+                "coarse_similarity": 0.908722
+              }
+            ]
+          },
+          "v0_2_gate": "retained_and_rebound_to_complete_action_unit",
+          "action_unit_options": [
+            "AU0108_01"
+          ],
+          "v0_2_reason": "绑定 AU0108_01，不再把原粗帧区间直接当作动作。"
+        },
+        {
+          "rank": 2,
+          "source_file": "DJI_20260801170426_0107_D.MP4",
+          "source_in_frame": 122,
+          "source_out_frame": 190,
+          "confidence": 0.4,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.589426,
+            "median_visual_similarity": 0.64152,
+            "continuity_score": 0.120382,
+            "estimated_source_frames_per_final_frame": 0.262727,
+            "fit_residual_source_frames": 54.882,
+            "sample_correspondences": [
+              {
+                "final_frame": 445,
+                "source_frame": 126,
+                "coarse_similarity": 0.64152
+              },
+              {
+                "final_frame": 493,
+                "source_frame": 198,
+                "coarse_similarity": 0.649365
+              },
+              {
+                "final_frame": 547,
+                "source_frame": 135,
+                "coarse_similarity": 0.628346
+              },
+              {
+                "final_frame": 600,
+                "source_frame": 60,
+                "coarse_similarity": 0.584296
+              },
+              {
+                "final_frame": 648,
+                "source_frame": 267,
+                "coarse_similarity": 0.704636
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 3,
+          "source_file": "DJI_20260801171251_0120_D.MP4",
+          "source_in_frame": 1123,
+          "source_out_frame": 1007,
+          "confidence": 0.36,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.58218,
+            "median_visual_similarity": 0.63259,
+            "continuity_score": 0.160135,
+            "estimated_source_frames_per_final_frame": -0.446789,
+            "fit_residual_source_frames": 40.852,
+            "sample_correspondences": [
+              {
+                "final_frame": 445,
+                "source_frame": 1134,
+                "coarse_similarity": 0.6355
+              },
+              {
+                "final_frame": 493,
+                "source_frame": 1128,
+                "coarse_similarity": 0.634562
+              },
+              {
+                "final_frame": 547,
+                "source_frame": 900,
+                "coarse_similarity": 0.63259
+              },
+              {
+                "final_frame": 600,
+                "source_frame": 1143,
+                "coarse_similarity": 0.596256
+              },
+              {
+                "final_frame": 648,
+                "source_frame": 1011,
+                "coarse_similarity": 0.576127
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 4,
+          "source_file": "DJI_20260801171351_0122_D.MP4",
+          "source_in_frame": 1337,
+          "source_out_frame": 564,
+          "confidence": 0.31,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.57376,
+            "median_visual_similarity": 0.637484,
+            "continuity_score": 0.0,
+            "estimated_source_frames_per_final_frame": -2.980037,
+            "fit_residual_source_frames": 456.228,
+            "sample_correspondences": [
+              {
+                "final_frame": 445,
+                "source_frame": 1698,
+                "coarse_similarity": 0.669203
+              },
+              {
+                "final_frame": 493,
+                "source_frame": 54,
+                "coarse_similarity": 0.637484
+              },
+              {
+                "final_frame": 547,
+                "source_frame": 1587,
+                "coarse_similarity": 0.649222
+              },
+              {
+                "final_frame": 600,
+                "source_frame": 858,
+                "coarse_similarity": 0.614489
+              },
+              {
+                "final_frame": 648,
+                "source_frame": 498,
+                "coarse_similarity": 0.617699
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 5,
+          "source_file": "DJI_20260801170622_0110_D.MP4",
+          "source_in_frame": 547,
+          "source_out_frame": 756,
+          "confidence": 0.27,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.565554,
+            "median_visual_similarity": 0.623017,
+            "continuity_score": 0.04437,
+            "estimated_source_frames_per_final_frame": 0.805045,
+            "fit_residual_source_frames": 89.45,
+            "sample_correspondences": [
+              {
+                "final_frame": 445,
+                "source_frame": 690,
+                "coarse_similarity": 0.609667
+              },
+              {
+                "final_frame": 493,
+                "source_frame": 522,
+                "coarse_similarity": 0.614099
+              },
+              {
+                "final_frame": 547,
+                "source_frame": 546,
+                "coarse_similarity": 0.642324
+              },
+              {
+                "final_frame": 600,
+                "source_frame": 720,
+                "coarse_similarity": 0.623017
+              },
+              {
+                "final_frame": 648,
+                "source_frame": 795,
+                "coarse_similarity": 0.637145
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        }
+      ]
+    },
+    {
+      "final_shot_id": "GT006",
+      "final_start_frame": 681,
+      "final_end_frame": 740,
+      "final_frame_rate": 60,
+      "shot_role": "cleared-desk reset",
+      "visual_action_v0_2": "The cable mess is gone; phone, watch and earbuds remain as a clean problem-solved tableau.",
+      "match_status_v0_2": "stable_complete_action_unit",
+      "selected_action_unit_id": "AU0109_02",
+      "selected_source_file": "DJI_20260801170541_0109_D.MP4",
+      "selected_source_range": {
+        "start_frame": 399,
+        "end_frame": 630
+      },
+      "selected_old_top5_rank": 1,
+      "confidence_v0_2": 0.96,
+      "single_source_action_integrity": "pass",
+      "rationale": "旧 460–525 是第二条拿起展示动作的中段；扩为完整 take。",
+      "old_top5_review": [
+        {
+          "rank": 1,
+          "source_file": "DJI_20260801170541_0109_D.MP4",
+          "source_in_frame": 460,
+          "source_out_frame": 525,
+          "confidence": 0.96,
+          "matching_method": "visual+pHash+dHash+feature+action_continuity+manual_review",
+          "uncertainty_reason": "Low; the clean reset and product lift match. Short duration limits exact head/tail confidence to a few source frames.",
+          "evidence": {
+            "coarse_aggregate_score": 0.842577,
+            "median_visual_similarity": 0.827565,
+            "continuity_score": 0.984391,
+            "estimated_source_frames_per_final_frame": 1.151274,
+            "fit_residual_source_frames": 0.472,
+            "sample_correspondences": [
+              {
+                "final_frame": 688,
+                "source_frame": 468,
+                "coarse_similarity": 0.824431
+              },
+              {
+                "final_frame": 698,
+                "source_frame": 480,
+                "coarse_similarity": 0.810257
+              },
+              {
+                "final_frame": 710,
+                "source_frame": 495,
+                "coarse_similarity": 0.827565
+              },
+              {
+                "final_frame": 722,
+                "source_frame": 507,
+                "coarse_similarity": 0.829105
+              },
+              {
+                "final_frame": 732,
+                "source_frame": 519,
+                "coarse_similarity": 0.827851
+              }
+            ]
+          },
+          "v0_2_gate": "retained_and_rebound_to_complete_action_unit",
+          "action_unit_options": [
+            "AU0109_01",
+            "AU0109_02"
+          ],
+          "v0_2_reason": "绑定 AU0109_02，不再把原粗帧区间直接当作动作。"
+        },
+        {
+          "rank": 2,
+          "source_file": "DJI_20260801170917_0116_D.MP4",
+          "source_in_frame": 231,
+          "source_out_frame": 242,
+          "confidence": 0.46,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.645387,
+            "median_visual_similarity": 0.632191,
+            "continuity_score": 0.776055,
+            "estimated_source_frames_per_final_frame": 0.19586,
+            "fit_residual_source_frames": 3.6,
+            "sample_correspondences": [
+              {
+                "final_frame": 688,
+                "source_frame": 237,
+                "coarse_similarity": 0.562855
+              },
+              {
+                "final_frame": 698,
+                "source_frame": 225,
+                "coarse_similarity": 0.627333
+              },
+              {
+                "final_frame": 710,
+                "source_frame": 240,
+                "coarse_similarity": 0.648421
+              },
+              {
+                "final_frame": 722,
+                "source_frame": 240,
+                "coarse_similarity": 0.632191
+              },
+              {
+                "final_frame": 732,
+                "source_frame": 240,
+                "coarse_similarity": 0.657081
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 3,
+          "source_file": "DJI_20260801171336_0121_D.MP4",
+          "source_in_frame": 223,
+          "source_out_frame": 339,
+          "confidence": 0.4,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.628946,
+            "median_visual_similarity": 0.630047,
+            "continuity_score": 0.659418,
+            "estimated_source_frames_per_final_frame": 2.049363,
+            "fit_residual_source_frames": 8.486,
+            "sample_correspondences": [
+              {
+                "final_frame": 688,
+                "source_frame": 246,
+                "coarse_similarity": 0.52289
+              },
+              {
+                "final_frame": 698,
+                "source_frame": 261,
+                "coarse_similarity": 0.602849
+              },
+              {
+                "final_frame": 710,
+                "source_frame": 252,
+                "coarse_similarity": 0.646071
+              },
+              {
+                "final_frame": 722,
+                "source_frame": 327,
+                "coarse_similarity": 0.630047
+              },
+              {
+                "final_frame": 732,
+                "source_frame": 327,
+                "coarse_similarity": 0.636213
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 4,
+          "source_file": "DJI_20260801170710_0112_D.MP4",
+          "source_in_frame": 733,
+          "source_out_frame": 752,
+          "confidence": 0.37,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.627763,
+            "median_visual_similarity": 0.59566,
+            "continuity_score": 0.923587,
+            "estimated_source_frames_per_final_frame": 0.348726,
+            "fit_residual_source_frames": 2.385,
+            "sample_correspondences": [
+              {
+                "final_frame": 688,
+                "source_frame": 735,
+                "coarse_similarity": 0.617313
+              },
+              {
+                "final_frame": 698,
+                "source_frame": 741,
+                "coarse_similarity": 0.616418
+              },
+              {
+                "final_frame": 710,
+                "source_frame": 738,
+                "coarse_similarity": 0.59566
+              },
+              {
+                "final_frame": 722,
+                "source_frame": 750,
+                "coarse_similarity": 0.576336
+              },
+              {
+                "final_frame": 732,
+                "source_frame": 750,
+                "coarse_similarity": 0.553421
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_single_source_action_integrity_rerank",
+          "action_unit_options": [
+            "AU0112_01"
+          ],
+          "v0_2_reason": "虽存在同类动作，但旧候选区间为碎片/倒序/相似结果帧，且完整单元对成片动作与构图的支持弱于已选单元。"
+        },
+        {
+          "rank": 5,
+          "source_file": "DJI_20260801171351_0122_D.MP4",
+          "source_in_frame": null,
+          "source_out_frame": null,
+          "confidence": 0.32,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.619282,
+            "median_visual_similarity": 0.687148,
+            "continuity_score": 0.010281,
+            "estimated_source_frames_per_final_frame": 18.578025,
+            "fit_residual_source_frames": 133.317,
+            "sample_correspondences": [
+              {
+                "final_frame": 688,
+                "source_frame": 60,
+                "coarse_similarity": 0.685788
+              },
+              {
+                "final_frame": 698,
+                "source_frame": 45,
+                "coarse_similarity": 0.666993
+              },
+              {
+                "final_frame": 710,
+                "source_frame": 741,
+                "coarse_similarity": 0.699172
+              },
+              {
+                "final_frame": 722,
+                "source_frame": 741,
+                "coarse_similarity": 0.687148
+              },
+              {
+                "final_frame": 732,
+                "source_frame": 741,
+                "coarse_similarity": 0.691656
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        }
+      ]
+    },
+    {
+      "final_shot_id": "GT007",
+      "final_start_frame": 740,
+      "final_end_frame": 904,
+      "final_frame_rate": 60,
+      "shot_role": "portability / hardware detail",
+      "visual_action_v0_2": "Close handheld product view emphasizes the compact body, magnetic face and side controls/ports.",
+      "match_status_v0_2": "stable_complete_compound_action_unit",
+      "selected_action_unit_id": "AU0112_C01",
+      "selected_source_file": "DJI_20260801170710_0112_D.MP4",
+      "selected_source_range": {
+        "start_frame": 0,
+        "end_frame": 794
+      },
+      "selected_old_top5_rank": 1,
+      "confidence_v0_2": 0.97,
+      "single_source_action_integrity": "pass",
+      "rationale": "同一连续 take 内完成产品细节展示到手表放置/绿灯结果，不跨素材。",
+      "old_top5_review": [
+        {
+          "rank": 1,
+          "source_file": "DJI_20260801170710_0112_D.MP4",
+          "source_in_frame": 496,
+          "source_out_frame": 687,
+          "confidence": 0.97,
+          "matching_method": "visual+pHash+dHash+feature+action_continuity+manual_review",
+          "uncertainty_reason": "Low; product rotation, side detail and watch placement align monotonically across all samples.",
+          "evidence": {
+            "coarse_aggregate_score": 0.865435,
+            "median_visual_similarity": 0.84753,
+            "continuity_score": 0.995982,
+            "estimated_source_frames_per_final_frame": 1.199976,
+            "fit_residual_source_frames": 0.121,
+            "sample_correspondences": [
+              {
+                "final_frame": 759,
+                "source_frame": 519,
+                "coarse_similarity": 0.84753
+              },
+              {
+                "final_frame": 789,
+                "source_frame": 555,
+                "coarse_similarity": 0.837571
+              },
+              {
+                "final_frame": 822,
+                "source_frame": 594,
+                "coarse_similarity": 0.779619
+              },
+              {
+                "final_frame": 854,
+                "source_frame": 633,
+                "coarse_similarity": 0.902759
+              },
+              {
+                "final_frame": 884,
+                "source_frame": 669,
+                "coarse_similarity": 0.95516
+              }
+            ]
+          },
+          "v0_2_gate": "retained_and_rebound_to_complete_action_unit",
+          "action_unit_options": [
+            "AU0112_01",
+            "AU0112_C01"
+          ],
+          "v0_2_reason": "绑定 AU0112_C01，不再把原粗帧区间直接当作动作。"
+        },
+        {
+          "rank": 2,
+          "source_file": "DJI_20260801170646_0111_D.MP4",
+          "source_in_frame": 322,
+          "source_out_frame": 898,
+          "confidence": 0.47,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.664318,
+            "median_visual_similarity": 0.725756,
+            "continuity_score": 0.134026,
+            "estimated_source_frames_per_final_frame": 3.620058,
+            "fit_residual_source_frames": 60.292,
+            "sample_correspondences": [
+              {
+                "final_frame": 759,
+                "source_frame": 396,
+                "coarse_similarity": 0.725756
+              },
+              {
+                "final_frame": 789,
+                "source_frame": 423,
+                "coarse_similarity": 0.65112
+              },
+              {
+                "final_frame": 822,
+                "source_frame": 702,
+                "coarse_similarity": 0.737828
+              },
+              {
+                "final_frame": 854,
+                "source_frame": 783,
+                "coarse_similarity": 0.69477
+              },
+              {
+                "final_frame": 884,
+                "source_frame": 783,
+                "coarse_similarity": 0.756394
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 3,
+          "source_file": "DJI_20260801170744_0113_D.MP4",
+          "source_in_frame": 481,
+          "source_out_frame": 937,
+          "confidence": 0.4,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.620296,
+            "median_visual_similarity": 0.688009,
+            "continuity_score": 9e-06,
+            "estimated_source_frames_per_final_frame": 2.865978,
+            "fit_residual_source_frames": 343.058,
+            "sample_correspondences": [
+              {
+                "final_frame": 759,
+                "source_frame": 183,
+                "coarse_similarity": 0.68007
+              },
+              {
+                "final_frame": 789,
+                "source_frame": 816,
+                "coarse_similarity": 0.686043
+              },
+              {
+                "final_frame": 822,
+                "source_frame": 1296,
+                "coarse_similarity": 0.719659
+              },
+              {
+                "final_frame": 854,
+                "source_frame": 465,
+                "coarse_similarity": 0.688009
+              },
+              {
+                "final_frame": 884,
+                "source_frame": 816,
+                "coarse_similarity": 0.696465
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 4,
+          "source_file": "DJI_20260801171351_0122_D.MP4",
+          "source_in_frame": 612,
+          "source_out_frame": 763,
+          "confidence": 0.35,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.612678,
+            "median_visual_similarity": 0.679322,
+            "continuity_score": 0.0,
+            "estimated_source_frames_per_final_frame": 0.948072,
+            "fit_residual_source_frames": 462.051,
+            "sample_correspondences": [
+              {
+                "final_frame": 759,
+                "source_frame": 168,
+                "coarse_similarity": 0.679322
+              },
+              {
+                "final_frame": 789,
+                "source_frame": 1683,
+                "coarse_similarity": 0.676021
+              },
+              {
+                "final_frame": 822,
+                "source_frame": 24,
+                "coarse_similarity": 0.648968
+              },
+              {
+                "final_frame": 854,
+                "source_frame": 777,
+                "coarse_similarity": 0.73164
+              },
+              {
+                "final_frame": 884,
+                "source_frame": 795,
+                "coarse_similarity": 0.69643
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 5,
+          "source_file": "DJI_20260801170622_0110_D.MP4",
+          "source_in_frame": 260,
+          "source_out_frame": 802,
+          "confidence": 0.31,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.608887,
+            "median_visual_similarity": 0.667386,
+            "continuity_score": 0.108301,
+            "estimated_source_frames_per_final_frame": 3.405211,
+            "fit_residual_source_frames": 66.685,
+            "sample_correspondences": [
+              {
+                "final_frame": 759,
+                "source_frame": 192,
+                "coarse_similarity": 0.68208
+              },
+              {
+                "final_frame": 789,
+                "source_frame": 567,
+                "coarse_similarity": 0.572943
+              },
+              {
+                "final_frame": 822,
+                "source_frame": 588,
+                "coarse_similarity": 0.696101
+              },
+              {
+                "final_frame": 854,
+                "source_frame": 660,
+                "coarse_similarity": 0.646463
+              },
+              {
+                "final_frame": 884,
+                "source_frame": 684,
+                "coarse_similarity": 0.667386
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        }
+      ]
+    },
+    {
+      "final_shot_id": "GT008",
+      "final_start_frame": 946,
+      "final_end_frame": 1061,
+      "final_frame_rate": 60,
+      "shot_role": "watch charge confirmation",
+      "visual_action_v0_2": "Apple Watch is placed on the rear charging surface and its charging state is made readable.",
+      "match_status_v0_2": "stable_complete_action_unit_speed_alignment_pending",
+      "selected_action_unit_id": "AU0116_01",
+      "selected_source_file": "DJI_20260801170917_0116_D.MP4",
+      "selected_source_range": {
+        "start_frame": 189,
+        "end_frame": 457
+      },
+      "selected_old_top5_rank": 1,
+      "confidence_v0_2": 0.96,
+      "single_source_action_integrity": "pass",
+      "rationale": "从放置准备保留到拿起后的手机充电结果；精确速度仍需逐帧对齐。",
+      "old_top5_review": [
+        {
+          "rank": 1,
+          "source_file": "DJI_20260801170917_0116_D.MP4",
+          "source_in_frame": 275,
+          "source_out_frame": 427,
+          "confidence": 0.96,
+          "matching_method": "visual+pHash+dHash+feature+action_continuity+manual_review",
+          "uncertainty_reason": "Low for the source file; the phone lift and charge-state reveal match. Speed appears non-unity, so exact EDL timing still needs frame-sequence alignment.",
+          "evidence": {
+            "coarse_aggregate_score": 0.864003,
+            "median_visual_similarity": 0.862027,
+            "continuity_score": 0.869358,
+            "estimated_source_frames_per_final_frame": 1.362475,
+            "fit_residual_source_frames": 4.2,
+            "sample_correspondences": [
+              {
+                "final_frame": 959,
+                "source_frame": 294,
+                "coarse_similarity": 0.862027
+              },
+              {
+                "final_frame": 980,
+                "source_frame": 324,
+                "coarse_similarity": 0.925212
+              },
+              {
+                "final_frame": 1003,
+                "source_frame": 348,
+                "coarse_similarity": 0.813833
+              },
+              {
+                "final_frame": 1026,
+                "source_frame": 375,
+                "coarse_similarity": 0.853209
+              },
+              {
+                "final_frame": 1047,
+                "source_frame": 420,
+                "coarse_similarity": 0.890383
+              }
+            ]
+          },
+          "v0_2_gate": "retained_and_rebound_to_complete_action_unit",
+          "action_unit_options": [
+            "AU0116_01"
+          ],
+          "v0_2_reason": "绑定 AU0116_01，不再把原粗帧区间直接当作动作。"
+        },
+        {
+          "rank": 2,
+          "source_file": "DJI_20260801171058_0117_D.MP4",
+          "source_in_frame": 123,
+          "source_out_frame": 810,
+          "confidence": 0.44,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.630405,
+            "median_visual_similarity": 0.677641,
+            "continuity_score": 0.188744,
+            "estimated_source_frames_per_final_frame": 6.159432,
+            "fit_residual_source_frames": 46.015,
+            "sample_correspondences": [
+              {
+                "final_frame": 959,
+                "source_frame": 249,
+                "coarse_similarity": 0.697785
+              },
+              {
+                "final_frame": 980,
+                "source_frame": 234,
+                "coarse_similarity": 0.665708
+              },
+              {
+                "final_frame": 1003,
+                "source_frame": 522,
+                "coarse_similarity": 0.677641
+              },
+              {
+                "final_frame": 1026,
+                "source_frame": 636,
+                "coarse_similarity": 0.675045
+              },
+              {
+                "final_frame": 1047,
+                "source_frame": 729,
+                "coarse_similarity": 0.717951
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_single_source_action_integrity_rerank",
+          "action_unit_options": [
+            "AU0117_01"
+          ],
+          "v0_2_reason": "虽存在同类动作，但旧候选区间为碎片/倒序/相似结果帧，且完整单元对成片动作与构图的支持弱于已选单元。"
+        },
+        {
+          "rank": 3,
+          "source_file": "DJI_20260801170824_0114_D.MP4",
+          "source_in_frame": 822,
+          "source_out_frame": 1417,
+          "confidence": 0.4,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.620902,
+            "median_visual_similarity": 0.687455,
+            "continuity_score": 0.027179,
+            "estimated_source_frames_per_final_frame": 5.332454,
+            "fit_residual_source_frames": 104.154,
+            "sample_correspondences": [
+              {
+                "final_frame": 959,
+                "source_frame": 828,
+                "coarse_similarity": 0.687455
+              },
+              {
+                "final_frame": 980,
+                "source_frame": 1266,
+                "coarse_similarity": 0.713
+              },
+              {
+                "final_frame": 1003,
+                "source_frame": 804,
+                "coarse_similarity": 0.687478
+              },
+              {
+                "final_frame": 1026,
+                "source_frame": 1353,
+                "coarse_similarity": 0.664161
+              },
+              {
+                "final_frame": 1047,
+                "source_frame": 1380,
+                "coarse_similarity": 0.670594
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_single_source_action_integrity_rerank",
+          "action_unit_options": [
+            "AU0114_01",
+            "AU0114_02",
+            "AU0114_03"
+          ],
+          "v0_2_reason": "虽存在同类动作，但旧候选区间为碎片/倒序/相似结果帧，且完整单元对成片动作与构图的支持弱于已选单元。"
+        },
+        {
+          "rank": 4,
+          "source_file": "DJI_20260801171251_0120_D.MP4",
+          "source_in_frame": 1213,
+          "source_out_frame": 1334,
+          "confidence": 0.35,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.605303,
+            "median_visual_similarity": 0.671079,
+            "continuity_score": 0.033735,
+            "estimated_source_frames_per_final_frame": 1.089858,
+            "fit_residual_source_frames": 93.046,
+            "sample_correspondences": [
+              {
+                "final_frame": 959,
+                "source_frame": 1134,
+                "coarse_similarity": 0.671079
+              },
+              {
+                "final_frame": 980,
+                "source_frame": 1368,
+                "coarse_similarity": 0.697257
+              },
+              {
+                "final_frame": 1003,
+                "source_frame": 1362,
+                "coarse_similarity": 0.676979
+              },
+              {
+                "final_frame": 1026,
+                "source_frame": 1131,
+                "coarse_similarity": 0.627304
+              },
+              {
+                "final_frame": 1047,
+                "source_frame": 1380,
+                "coarse_similarity": 0.626055
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_single_source_action_integrity_rerank",
+          "action_unit_options": [
+            "AU0120_03"
+          ],
+          "v0_2_reason": "虽存在同类动作，但旧候选区间为碎片/倒序/相似结果帧，且完整单元对成片动作与构图的支持弱于已选单元。"
+        },
+        {
+          "rank": 5,
+          "source_file": "DJI_20260801171351_0122_D.MP4",
+          "source_in_frame": 649,
+          "source_out_frame": 577,
+          "confidence": 0.31,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.604654,
+            "median_visual_similarity": 0.668463,
+            "continuity_score": 0.029614,
+            "estimated_source_frames_per_final_frame": -0.648073,
+            "fit_residual_source_frames": 91.485,
+            "sample_correspondences": [
+              {
+                "final_frame": 959,
+                "source_frame": 732,
+                "coarse_similarity": 0.668463
+              },
+              {
+                "final_frame": 980,
+                "source_frame": 564,
+                "coarse_similarity": 0.687095
+              },
+              {
+                "final_frame": 1003,
+                "source_frame": 459,
+                "coarse_similarity": 0.675776
+              },
+              {
+                "final_frame": 1026,
+                "source_frame": 735,
+                "coarse_similarity": 0.653642
+              },
+              {
+                "final_frame": 1047,
+                "source_frame": 570,
+                "coarse_similarity": 0.659437
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        }
+      ]
+    },
+    {
+      "final_shot_id": "GT009",
+      "final_start_frame": 1061,
+      "final_end_frame": 1239,
+      "final_frame_rate": 60,
+      "shot_role": "multi-device build and confirmation",
+      "visual_action_v0_2": "Top-down sequence assembles phone, power bank and watch into a working charging setup.",
+      "match_status_v0_2": "stable_single_source_compound_non_linear_mapping",
+      "selected_action_unit_id": "AU0120_C01",
+      "selected_source_file": "DJI_20260801171251_0120_D.MP4",
+      "selected_source_range": {
+        "start_frame": 1073,
+        "end_frame": 2075
+      },
+      "selected_old_top5_rank": 1,
+      "confidence_v0_2": 0.93,
+      "single_source_action_integrity": "pass",
+      "rationale": "0120 内部本身完成手机吸附与手表放置；成片做了非线性压缩/跳选，必须分段映射。",
+      "old_top5_review": [
+        {
+          "rank": 1,
+          "source_file": "DJI_20260801171251_0120_D.MP4",
+          "source_in_frame": 1330,
+          "source_out_frame": 2067,
+          "confidence": 0.93,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_review",
+          "uncertainty_reason": "Source file is stable, but final samples map nonlinearly (roughly 1362, 1401, 1596, 2064, 2064). The shot contains time compression/jump selection or holds and cannot yet be represented by one constant-speed interval.",
+          "evidence": {
+            "coarse_aggregate_score": 0.825747,
+            "median_visual_similarity": 0.913807,
+            "continuity_score": 0.070603,
+            "estimated_source_frames_per_final_frame": 6.092116,
+            "fit_residual_source_frames": 79.521,
+            "sample_correspondences": [
+              {
+                "final_frame": 1082,
+                "source_frame": 1362,
+                "coarse_similarity": 0.941442
+              },
+              {
+                "final_frame": 1114,
+                "source_frame": 1401,
+                "coarse_similarity": 0.890803
+              },
+              {
+                "final_frame": 1150,
+                "source_frame": 1596,
+                "coarse_similarity": 0.787341
+              },
+              {
+                "final_frame": 1185,
+                "source_frame": 2064,
+                "coarse_similarity": 0.913807
+              },
+              {
+                "final_frame": 1217,
+                "source_frame": 2064,
+                "coarse_similarity": 0.931769
+              }
+            ]
+          },
+          "v0_2_gate": "retained_and_rebound_to_complete_action_unit",
+          "action_unit_options": [
+            "AU0120_C01"
+          ],
+          "v0_2_reason": "绑定 AU0120_C01，不再把原粗帧区间直接当作动作。"
+        },
+        {
+          "rank": 2,
+          "source_file": "DJI_20260801171336_0121_D.MP4",
+          "source_in_frame": 275,
+          "source_out_frame": 243,
+          "confidence": 0.6,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.788787,
+            "median_visual_similarity": 0.804802,
+            "continuity_score": 0.652679,
+            "estimated_source_frames_per_final_frame": -0.184541,
+            "fit_residual_source_frames": 4.17,
+            "sample_correspondences": [
+              {
+                "final_frame": 1082,
+                "source_frame": 270,
+                "coarse_similarity": 0.789328
+              },
+              {
+                "final_frame": 1114,
+                "source_frame": 261,
+                "coarse_similarity": 0.841401
+              },
+              {
+                "final_frame": 1150,
+                "source_frame": 270,
+                "coarse_similarity": 0.759692
+              },
+              {
+                "final_frame": 1185,
+                "source_frame": 246,
+                "coarse_similarity": 0.804802
+              },
+              {
+                "final_frame": 1217,
+                "source_frame": 246,
+                "coarse_similarity": 0.806488
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 3,
+          "source_file": "DJI_20260801170858_0115_D.MP4",
+          "source_in_frame": 108,
+          "source_out_frame": 105,
+          "confidence": 0.51,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.736236,
+            "median_visual_similarity": 0.708783,
+            "continuity_score": 0.960556,
+            "estimated_source_frames_per_final_frame": -0.018258,
+            "fit_residual_source_frames": 1.207,
+            "sample_correspondences": [
+              {
+                "final_frame": 1082,
+                "source_frame": 105,
+                "coarse_similarity": 0.713359
+              },
+              {
+                "final_frame": 1114,
+                "source_frame": 111,
+                "coarse_similarity": 0.777122
+              },
+              {
+                "final_frame": 1150,
+                "source_frame": 108,
+                "coarse_similarity": 0.706457
+              },
+              {
+                "final_frame": 1185,
+                "source_frame": 105,
+                "coarse_similarity": 0.708783
+              },
+              {
+                "final_frame": 1217,
+                "source_frame": 105,
+                "coarse_similarity": 0.701411
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 4,
+          "source_file": "DJI_20260801170744_0113_D.MP4",
+          "source_in_frame": 731,
+          "source_out_frame": 759,
+          "confidence": 0.44,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.69859,
+            "median_visual_similarity": 0.738741,
+            "continuity_score": 0.357068,
+            "estimated_source_frames_per_final_frame": 0.161125,
+            "fit_residual_source_frames": 22.264,
+            "sample_correspondences": [
+              {
+                "final_frame": 1082,
+                "source_frame": 723,
+                "coarse_similarity": 0.738741
+              },
+              {
+                "final_frame": 1114,
+                "source_frame": 756,
+                "coarse_similarity": 0.766919
+              },
+              {
+                "final_frame": 1150,
+                "source_frame": 723,
+                "coarse_similarity": 0.749117
+              },
+              {
+                "final_frame": 1185,
+                "source_frame": 792,
+                "coarse_similarity": 0.695837
+              },
+              {
+                "final_frame": 1217,
+                "source_frame": 732,
+                "coarse_similarity": 0.687982
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 5,
+          "source_file": "DJI_20260801170917_0116_D.MP4",
+          "source_in_frame": 168,
+          "source_out_frame": 177,
+          "confidence": 0.4,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.694783,
+            "median_visual_similarity": 0.681653,
+            "continuity_score": 0.808528,
+            "estimated_source_frames_per_final_frame": 0.052814,
+            "fit_residual_source_frames": 2.37,
+            "sample_correspondences": [
+              {
+                "final_frame": 1082,
+                "source_frame": 171,
+                "coarse_similarity": 0.681653
+              },
+              {
+                "final_frame": 1114,
+                "source_frame": 171,
+                "coarse_similarity": 0.72299
+              },
+              {
+                "final_frame": 1150,
+                "source_frame": 165,
+                "coarse_similarity": 0.702707
+              },
+              {
+                "final_frame": 1185,
+                "source_frame": 177,
+                "coarse_similarity": 0.647623
+              },
+              {
+                "final_frame": 1217,
+                "source_frame": 177,
+                "coarse_similarity": 0.665576
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        }
+      ]
+    },
+    {
+      "final_shot_id": "GT010",
+      "final_start_frame": 1239,
+      "final_end_frame": 1315,
+      "final_frame_rate": 60,
+      "shot_role": "phone charge / portability confirmation",
+      "visual_action_v0_2": "Earbuds case is placed onto the phone/power-bank stack and the result holds.",
+      "match_status_v0_2": "stable_complete_action_unit_hold_confirmation_pending",
+      "selected_action_unit_id": "AU0121_02",
+      "selected_source_file": "DJI_20260801171336_0121_D.MP4",
+      "selected_source_range": {
+        "start_frame": 168,
+        "end_frame": 444
+      },
+      "selected_old_top5_rank": 1,
+      "confidence_v0_2": 0.97,
+      "single_source_action_integrity": "pass",
+      "rationale": "旧 90–246 横跨两次放置 take；改用第二次完整耳机放置 168–444。源内已有自然保持，但是否另加停帧仍需确认。",
+      "old_top5_review": [
+        {
+          "rank": 1,
+          "source_file": "DJI_20260801171336_0121_D.MP4",
+          "source_in_frame": 90,
+          "source_out_frame": 246,
+          "confidence": 0.97,
+          "matching_method": "visual+pHash+dHash+feature+action_continuity+manual_review",
+          "uncertainty_reason": "Low for source identity and action; the final tail appears held near source frame 246, so a freeze/hold must be confirmed before EDL generation.",
+          "evidence": {
+            "coarse_aggregate_score": 0.858062,
+            "median_visual_similarity": 0.917832,
+            "continuity_score": 0.346782,
+            "estimated_source_frames_per_final_frame": 2.649154,
+            "fit_residual_source_frames": 27.766,
+            "sample_correspondences": [
+              {
+                "final_frame": 1248,
+                "source_frame": 123,
+                "coarse_similarity": 0.82034
+              },
+              {
+                "final_frame": 1261,
+                "source_frame": 111,
+                "coarse_similarity": 0.859314
+              },
+              {
+                "final_frame": 1277,
+                "source_frame": 129,
+                "coarse_similarity": 0.917832
+              },
+              {
+                "final_frame": 1292,
+                "source_frame": 246,
+                "coarse_similarity": 0.957105
+              },
+              {
+                "final_frame": 1305,
+                "source_frame": 246,
+                "coarse_similarity": 0.960531
+              }
+            ]
+          },
+          "v0_2_gate": "retained_and_rebound_to_complete_action_unit",
+          "action_unit_options": [
+            "AU0121_01",
+            "AU0121_02"
+          ],
+          "v0_2_reason": "绑定 AU0121_02，不再把原粗帧区间直接当作动作。"
+        },
+        {
+          "rank": 2,
+          "source_file": "DJI_20260801171251_0120_D.MP4",
+          "source_in_frame": 1271,
+          "source_out_frame": 1320,
+          "confidence": 0.62,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.809009,
+            "median_visual_similarity": 0.892137,
+            "continuity_score": 0.102414,
+            "estimated_source_frames_per_final_frame": 0.671195,
+            "fit_residual_source_frames": 59.732,
+            "sample_correspondences": [
+              {
+                "final_frame": 1248,
+                "source_frame": 1365,
+                "coarse_similarity": 0.822824
+              },
+              {
+                "final_frame": 1261,
+                "source_frame": 1131,
+                "coarse_similarity": 0.800799
+              },
+              {
+                "final_frame": 1277,
+                "source_frame": 1356,
+                "coarse_similarity": 0.892137
+              },
+              {
+                "final_frame": 1292,
+                "source_frame": 1314,
+                "coarse_similarity": 0.912566
+              },
+              {
+                "final_frame": 1305,
+                "source_frame": 1314,
+                "coarse_similarity": 0.916916
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 3,
+          "source_file": "DJI_20260801170858_0115_D.MP4",
+          "source_in_frame": 112,
+          "source_out_frame": 103,
+          "confidence": 0.54,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.760282,
+            "median_visual_similarity": 0.750014,
+            "continuity_score": 0.841317,
+            "estimated_source_frames_per_final_frame": -0.125974,
+            "fit_residual_source_frames": 1.178,
+            "sample_correspondences": [
+              {
+                "final_frame": 1248,
+                "source_frame": 111,
+                "coarse_similarity": 0.743887
+              },
+              {
+                "final_frame": 1261,
+                "source_frame": 111,
+                "coarse_similarity": 0.727278
+              },
+              {
+                "final_frame": 1277,
+                "source_frame": 105,
+                "coarse_similarity": 0.750014
+              },
+              {
+                "final_frame": 1292,
+                "source_frame": 105,
+                "coarse_similarity": 0.778956
+              },
+              {
+                "final_frame": 1305,
+                "source_frame": 105,
+                "coarse_similarity": 0.78153
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 4,
+          "source_file": "DJI_20260801170744_0113_D.MP4",
+          "source_in_frame": 750,
+          "source_out_frame": 734,
+          "confidence": 0.5,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.75553,
+            "median_visual_similarity": 0.745268,
+            "continuity_score": 0.842149,
+            "estimated_source_frames_per_final_frame": -0.227437,
+            "fit_residual_source_frames": 1.148,
+            "sample_correspondences": [
+              {
+                "final_frame": 1248,
+                "source_frame": 747,
+                "coarse_similarity": 0.745268
+              },
+              {
+                "final_frame": 1261,
+                "source_frame": 744,
+                "coarse_similarity": 0.739125
+              },
+              {
+                "final_frame": 1277,
+                "source_frame": 747,
+                "coarse_similarity": 0.737679
+              },
+              {
+                "final_frame": 1292,
+                "source_frame": 735,
+                "coarse_similarity": 0.758406
+              },
+              {
+                "final_frame": 1305,
+                "source_frame": 735,
+                "coarse_similarity": 0.761793
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 5,
+          "source_file": "DJI_20260801170824_0114_D.MP4",
+          "source_in_frame": 1101,
+          "source_out_frame": 1058,
+          "confidence": 0.46,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.751105,
+            "median_visual_similarity": 0.764254,
+            "continuity_score": 0.641307,
+            "estimated_source_frames_per_final_frame": -0.591108,
+            "fit_residual_source_frames": 4.697,
+            "sample_correspondences": [
+              {
+                "final_frame": 1248,
+                "source_frame": 1089,
+                "coarse_similarity": 0.762494
+              },
+              {
+                "final_frame": 1261,
+                "source_frame": 1101,
+                "coarse_similarity": 0.717161
+              },
+              {
+                "final_frame": 1277,
+                "source_frame": 1074,
+                "coarse_similarity": 0.764254
+              },
+              {
+                "final_frame": 1292,
+                "source_frame": 1065,
+                "coarse_similarity": 0.775164
+              },
+              {
+                "final_frame": 1305,
+                "source_frame": 1065,
+                "coarse_similarity": 0.778462
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        }
+      ]
+    },
+    {
+      "final_shot_id": "GT011",
+      "final_start_frame": 1315,
+      "final_end_frame": 1580,
+      "final_frame_rate": 60,
+      "shot_role": "final hero stack / sale CTA",
+      "visual_action_v0_2": "Power bank, watch and earbuds settle into one complete setup; a pointing gesture supplies the visual CTA and the composition holds beyond the spoken line.",
+      "match_status_v0_2": "stable_complete_action_unit",
+      "selected_action_unit_id": "AU0122_03",
+      "selected_source_file": "DJI_20260801171351_0122_D.MP4",
+      "selected_source_range": {
+        "start_frame": 1654,
+        "end_frame": 2086
+      },
+      "selected_old_top5_rank": 1,
+      "confidence_v0_2": 0.99,
+      "single_source_action_integrity": "pass",
+      "rationale": "使用第二条完整 CTA 指向手势和尾部自然保持。",
+      "old_top5_review": [
+        {
+          "rank": 1,
+          "source_file": "DJI_20260801171351_0122_D.MP4",
+          "source_in_frame": 1666,
+          "source_out_frame": 1985,
+          "confidence": 0.99,
+          "matching_method": "visual+pHash+dHash+feature+action_continuity+manual_review",
+          "uncertainty_reason": "Very low; hero stack, watch state and pointing gesture align continuously across all samples. Bounds are coarse within approximately 3 source frames.",
+          "evidence": {
+            "coarse_aggregate_score": 0.923121,
+            "median_visual_similarity": 0.928324,
+            "continuity_score": 0.911823,
+            "estimated_source_frames_per_final_frame": 1.24093,
+            "fit_residual_source_frames": 2.769,
+            "sample_correspondences": [
+              {
+                "final_frame": 1346,
+                "source_frame": 1707,
+                "coarse_similarity": 0.941657
+              },
+              {
+                "final_frame": 1394,
+                "source_frame": 1764,
+                "coarse_similarity": 0.928324
+              },
+              {
+                "final_frame": 1447,
+                "source_frame": 1827,
+                "coarse_similarity": 0.793487
+              },
+              {
+                "final_frame": 1500,
+                "source_frame": 1893,
+                "coarse_similarity": 0.956353
+              },
+              {
+                "final_frame": 1548,
+                "source_frame": 1959,
+                "coarse_similarity": 0.923104
+              }
+            ]
+          },
+          "v0_2_gate": "retained_and_rebound_to_complete_action_unit",
+          "action_unit_options": [
+            "AU0122_02",
+            "AU0122_03"
+          ],
+          "v0_2_reason": "绑定 AU0122_03，不再把原粗帧区间直接当作动作。"
+        },
+        {
+          "rank": 2,
+          "source_file": "DJI_20260801170917_0116_D.MP4",
+          "source_in_frame": 146,
+          "source_out_frame": 121,
+          "confidence": 0.46,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.646678,
+            "median_visual_similarity": 0.652565,
+            "continuity_score": 0.607723,
+            "estimated_source_frames_per_final_frame": -0.096387,
+            "fit_residual_source_frames": 10.935,
+            "sample_correspondences": [
+              {
+                "final_frame": 1346,
+                "source_frame": 132,
+                "coarse_similarity": 0.608735
+              },
+              {
+                "final_frame": 1394,
+                "source_frame": 138,
+                "coarse_similarity": 0.567269
+              },
+              {
+                "final_frame": 1447,
+                "source_frame": 138,
+                "coarse_similarity": 0.652565
+              },
+              {
+                "final_frame": 1500,
+                "source_frame": 165,
+                "coarse_similarity": 0.707338
+              },
+              {
+                "final_frame": 1548,
+                "source_frame": 93,
+                "coarse_similarity": 0.687937
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 3,
+          "source_file": "DJI_20260801171251_0120_D.MP4",
+          "source_in_frame": 1150,
+          "source_out_frame": 1092,
+          "confidence": 0.42,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.646292,
+            "median_visual_similarity": 0.660162,
+            "continuity_score": 0.53259,
+            "estimated_source_frames_per_final_frame": -0.225288,
+            "fit_residual_source_frames": 4.8,
+            "sample_correspondences": [
+              {
+                "final_frame": 1346,
+                "source_frame": 1143,
+                "coarse_similarity": 0.621849
+              },
+              {
+                "final_frame": 1394,
+                "source_frame": 1134,
+                "coarse_similarity": 0.611954
+              },
+              {
+                "final_frame": 1447,
+                "source_frame": 1125,
+                "coarse_similarity": 0.672095
+              },
+              {
+                "final_frame": 1500,
+                "source_frame": 1092,
+                "coarse_similarity": 0.703843
+              },
+              {
+                "final_frame": 1548,
+                "source_frame": 1107,
+                "coarse_similarity": 0.660162
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 4,
+          "source_file": "DJI_20260801170103_0106_D.MP4",
+          "source_in_frame": 630,
+          "source_out_frame": 645,
+          "confidence": 0.37,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.628127,
+            "median_visual_similarity": 0.590716,
+            "continuity_score": 0.941765,
+            "estimated_source_frames_per_final_frame": 0.058224,
+            "fit_residual_source_frames": 1.8,
+            "sample_correspondences": [
+              {
+                "final_frame": 1346,
+                "source_frame": 633,
+                "coarse_similarity": 0.577
+              },
+              {
+                "final_frame": 1394,
+                "source_frame": 636,
+                "coarse_similarity": 0.590716
+              },
+              {
+                "final_frame": 1447,
+                "source_frame": 636,
+                "coarse_similarity": 0.630105
+              },
+              {
+                "final_frame": 1500,
+                "source_frame": 636,
+                "coarse_similarity": 0.6385
+              },
+              {
+                "final_frame": 1548,
+                "source_frame": 648,
+                "coarse_similarity": 0.581328
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        },
+        {
+          "rank": 5,
+          "source_file": "DJI_20260801170744_0113_D.MP4",
+          "source_in_frame": 447,
+          "source_out_frame": 626,
+          "confidence": 0.33,
+          "matching_method": "visual+pHash+dHash+feature+semantic+manual_candidate",
+          "uncertainty_reason": "Alternative candidate retained because of shared objects/composition; action continuity or scene geometry is weaker than the leading candidate. Coarse frame bounds are not EDL-ready.",
+          "evidence": {
+            "coarse_aggregate_score": 0.623812,
+            "median_visual_similarity": 0.69751,
+            "continuity_score": 0.000847,
+            "estimated_source_frames_per_final_frame": 0.696042,
+            "fit_residual_source_frames": 208.2,
+            "sample_correspondences": [
+              {
+                "final_frame": 1346,
+                "source_frame": 270,
+                "coarse_similarity": 0.612522
+              },
+              {
+                "final_frame": 1394,
+                "source_frame": 750,
+                "coarse_similarity": 0.615691
+              },
+              {
+                "final_frame": 1447,
+                "source_frame": 747,
+                "coarse_similarity": 0.69751
+              },
+              {
+                "final_frame": 1500,
+                "source_frame": 177,
+                "coarse_similarity": 0.740124
+              },
+              {
+                "final_frame": 1548,
+                "source_frame": 750,
+                "coarse_similarity": 0.709722
+              }
+            ]
+          },
+          "v0_2_gate": "eliminated_by_action_semantics_or_missing_complete_unit",
+          "action_unit_options": [],
+          "v0_2_reason": "该素材没有与真人镜头目标动作一致的完整 Action Unit。"
+        }
+      ]
+    }
+  ]
+}
