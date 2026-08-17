@@ -1,0 +1,152 @@
+{
+  "status": "PARTIAL_GROUND_TRUTH_VALIDATABLE",
+  "output_dir": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-8\\outputs\\human-edit-ground-truth-partial-v1",
+  "rebuild": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-17\\referenced-chatgpt-conversation-this-is-an-8\\outputs\\human-edit-ground-truth-partial-v1\\human_rebuild_partial_v1.mp4",
+  "transitions": [
+    {
+      "id": "TR001",
+      "final_start_frame": 393,
+      "final_end_frame_exclusive": 413,
+      "length_frames": 20,
+      "type": "hard_cut_at_393_then_incoming_raw_motion_preroll",
+      "outgoing_participating_frames": {
+        "GT004": [
+          392,
+          392
+        ]
+      },
+      "incoming_participating_frames": {
+        "GT005_source_file": "DJI_20260801170438_0108_D.MP4",
+        "final_frames": [
+          393,
+          412
+        ],
+        "native_source_frames": [
+          709,
+          732
+        ]
+      },
+      "overlap_or_blend_frames": 0,
+      "effect": "none_detected",
+      "note": "The 20 frames are continuous incoming-take motion, not a standalone micro-shot or synthetic wipe."
+    },
+    {
+      "id": "TR002",
+      "final_start_frame": 904,
+      "final_end_frame_exclusive": 946,
+      "length_frames": 42,
+      "type": "hard_cut_at_904_then_incoming_raw_motion_preroll",
+      "outgoing_participating_frames": {
+        "GT007": [
+          903,
+          903
+        ]
+      },
+      "incoming_participating_frames": {
+        "GT008_source_file": "DJI_20260801170917_0116_D.MP4",
+        "final_frames": [
+          904,
+          945
+        ],
+        "native_source_frames": [
+          228,
+          277
+        ]
+      },
+      "overlap_or_blend_frames": 0,
+      "effect": "none_detected",
+      "note": "The 42 frames are continuous incoming-take motion, not zoom/blur effect frames or micro-shots."
+    }
+  ],
+  "shot_summary": [
+    {
+      "shot": "GT004",
+      "source": "DJI_20260801170103_0106_D.MP4",
+      "cut_error": {
+        "start": 0,
+        "end": 0
+      },
+      "duration_error": 0,
+      "median_psnr": 25.5341,
+      "median_corr": 0.995317
+    },
+    {
+      "shot": "GT005",
+      "source": "DJI_20260801170438_0108_D.MP4",
+      "cut_error": {
+        "start": 0,
+        "end": 0
+      },
+      "duration_error": 0,
+      "median_psnr": 21.2856,
+      "median_corr": 0.960089
+    },
+    {
+      "shot": "GT006",
+      "source": "DJI_20260801170541_0109_D.MP4",
+      "cut_error": {
+        "start": 0,
+        "end": 0
+      },
+      "duration_error": 0,
+      "median_psnr": 19.414,
+      "median_corr": 0.949024
+    },
+    {
+      "shot": "GT007",
+      "source": "DJI_20260801170710_0112_D.MP4",
+      "cut_error": {
+        "start": 0,
+        "end": 0
+      },
+      "duration_error": 0,
+      "median_psnr": 25.7897,
+      "median_corr": 0.995053
+    },
+    {
+      "shot": "GT008",
+      "source": "DJI_20260801170917_0116_D.MP4",
+      "cut_error": {
+        "start": 0,
+        "end": 0
+      },
+      "duration_error": 0,
+      "median_psnr": 24.8347,
+      "median_corr": 0.984094
+    },
+    {
+      "shot": "GT009",
+      "source": "DJI_20260801171251_0120_D.MP4",
+      "cut_error": {
+        "start": 0,
+        "end": 0
+      },
+      "duration_error": 0,
+      "median_psnr": 18.4268,
+      "median_corr": 0.929685
+    },
+    {
+      "shot": "GT010",
+      "source": "DJI_20260801171336_0121_D.MP4",
+      "cut_error": {
+        "start": 0,
+        "end": 0
+      },
+      "duration_error": 0,
+      "median_psnr": 17.9908,
+      "median_corr": 0.902402
+    },
+    {
+      "shot": "GT011",
+      "source": "DJI_20260801171351_0122_D.MP4",
+      "cut_error": {
+        "start": 0,
+        "end": 0
+      },
+      "duration_error": 0,
+      "median_psnr": 23.7287,
+      "median_corr": 0.985266
+    }
+  ],
+  "note": "GT005 and GT008 content ranges exclude their separately reported incoming-motion transition prerolls."
+}

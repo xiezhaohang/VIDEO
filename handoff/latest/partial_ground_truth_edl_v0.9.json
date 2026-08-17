@@ -1,0 +1,904 @@
+{
+  "schema": "partial-ground-truth-edl/0.9",
+  "status": "PARTIAL_GROUND_TRUTH_VALIDATABLE",
+  "master_reference": {
+    "path": "D:\\实拍视频文档\\实拍视频文档\\1731736890298503661-充电宝\\成品视频\\充电宝-1731736890298503661.mp4",
+    "width": 1080,
+    "height": 1920,
+    "frame_count": 1579,
+    "fps": 60,
+    "timebase": "1/60"
+  },
+  "source_timebase_policy": {
+    "native_fps": "60000/1001",
+    "native_timebase": "1001/60000",
+    "nominal_60_substitution_forbidden": true
+  },
+  "shots": [
+    {
+      "id": "GT001",
+      "kind": "content",
+      "final_start_frame": 0,
+      "final_end_frame_exclusive": 68,
+      "final_duration_frames": 68,
+      "final_timebase": "1/60",
+      "source": null,
+      "source_status": "external_or_missing_source",
+      "validation_mode": "reference_passthrough_for_validation_only",
+      "excluded_from_source_reconstruction_score": true
+    },
+    {
+      "id": "GT002",
+      "kind": "content",
+      "final_start_frame": 68,
+      "final_end_frame_exclusive": 164,
+      "final_duration_frames": 96,
+      "final_timebase": "1/60",
+      "source": null,
+      "source_status": "external_or_missing_source",
+      "validation_mode": "reference_passthrough_for_validation_only",
+      "excluded_from_source_reconstruction_score": true
+    },
+    {
+      "id": "GT003",
+      "kind": "content",
+      "final_start_frame": 164,
+      "final_end_frame_exclusive": 258,
+      "final_duration_frames": 94,
+      "final_timebase": "1/60",
+      "source": null,
+      "source_status": "external_or_missing_source",
+      "validation_mode": "reference_passthrough_for_validation_only",
+      "excluded_from_source_reconstruction_score": true
+    },
+    {
+      "id": "GT004",
+      "kind": "content",
+      "final_start_frame": 258,
+      "final_end_frame_exclusive": 393,
+      "final_duration_frames": 135,
+      "final_timebase": "1/60",
+      "source": {
+        "file": "DJI_20260801170103_0106_D.MP4",
+        "path": "D:\\实拍视频文档\\实拍视频文档\\1731736890298503661-充电宝\\实拍素材\\DJI_20260801170103_0106_D.MP4",
+        "native_timebase": "1001/60000",
+        "native_fps": "60000/1001",
+        "source_in_frame": 501,
+        "source_out_frame_inclusive": 662
+      },
+      "action_unit_id": "AU0106_01",
+      "same_source_file": true,
+      "same_continuous_take": true,
+      "mapping_type": "monotonic_frame_selection_same_continuous_take",
+      "mapping_segments": [
+        {
+          "final_start_frame": 258,
+          "final_end_frame_exclusive": 393,
+          "source_start_frame": 501,
+          "source_end_frame_inclusive": 662,
+          "source_frames_per_final_frame": 1.201493,
+          "hold_frame_count": 0,
+          "jump_frame_count": 0
+        }
+      ],
+      "frame_selection": {
+        "unique_source_frames": 135,
+        "repeated_final_frame_selections": 0,
+        "source_jumps_over_2_frames": 0,
+        "reverse_steps": 0
+      },
+      "transform": {
+        "crop": "none_detected_full_9x16_frame",
+        "base_scale": {
+          "x": 0.625,
+          "y": 0.625,
+          "reason": "1728x3072 to 1080x1920 exact aspect-preserving resize"
+        },
+        "sampled_affine_fits": [
+          {
+            "ecc": 0.99639,
+            "scale_x": 1.000265,
+            "scale_y": 0.999987,
+            "translation_x_final_px": -0.129,
+            "translation_y_final_px": 0.042,
+            "rotation_deg": -0.00659
+          },
+          {
+            "ecc": 0.996428,
+            "scale_x": 1.000197,
+            "scale_y": 1.000005,
+            "translation_x_final_px": -0.084,
+            "translation_y_final_px": 0.045,
+            "rotation_deg": -0.0046
+          },
+          {
+            "ecc": 0.996434,
+            "scale_x": 1.00041,
+            "scale_y": 1.000047,
+            "translation_x_final_px": -0.203,
+            "translation_y_final_px": 0.099,
+            "rotation_deg": -0.00987
+          },
+          {
+            "ecc": 0.995284,
+            "scale_x": 1.000143,
+            "scale_y": 0.999902,
+            "translation_x_final_px": -0.076,
+            "translation_y_final_px": 0.037,
+            "rotation_deg": -0.0038
+          },
+          {
+            "ecc": 0.996803,
+            "scale_x": 1.000058,
+            "scale_y": 0.999933,
+            "translation_x_final_px": -0.03,
+            "translation_y_final_px": -0.057,
+            "rotation_deg": 0.00291
+          }
+        ],
+        "translation_detected": false,
+        "rotation_detected": false,
+        "perspective_or_warp_detected": false,
+        "stabilization_detected": false,
+        "brightness_color_change": "minor_reencode_or_small_grade"
+      }
+    },
+    {
+      "id": "GT005",
+      "kind": "content",
+      "final_start_frame": 413,
+      "final_end_frame_exclusive": 681,
+      "final_duration_frames": 268,
+      "final_timebase": "1/60",
+      "source": {
+        "file": "DJI_20260801170438_0108_D.MP4",
+        "path": "D:\\实拍视频文档\\实拍视频文档\\1731736890298503661-充电宝\\实拍素材\\DJI_20260801170438_0108_D.MP4",
+        "native_timebase": "1001/60000",
+        "native_fps": "60000/1001",
+        "source_in_frame": 733,
+        "source_out_frame_inclusive": 1053
+      },
+      "action_unit_id": "AU0108_01",
+      "same_source_file": true,
+      "same_continuous_take": true,
+      "mapping_type": "monotonic_frame_selection_same_continuous_take",
+      "mapping_segments": [
+        {
+          "final_start_frame": 413,
+          "final_end_frame_exclusive": 681,
+          "source_start_frame": 733,
+          "source_end_frame_inclusive": 1053,
+          "source_frames_per_final_frame": 1.198502,
+          "mapping_type": "continuous_forward_frame_selection",
+          "hold_frame_count": 0,
+          "jump_frame_count": 0
+        }
+      ],
+      "frame_selection": {
+        "unique_source_frames": 288,
+        "repeated_final_frame_selections": 0,
+        "source_jumps_over_2_frames": 0,
+        "reverse_steps": 0
+      },
+      "transform": {
+        "crop": "none_detected_full_9x16_frame",
+        "base_scale": {
+          "x": 0.625,
+          "y": 0.625,
+          "reason": "1728x3072 to 1080x1920 exact aspect-preserving resize"
+        },
+        "sampled_affine_fits": [
+          {
+            "ecc": 0.99626,
+            "scale_x": 1.000083,
+            "scale_y": 0.999976,
+            "translation_x_final_px": -0.049,
+            "translation_y_final_px": 0.021,
+            "rotation_deg": -0.00056
+          },
+          {
+            "ecc": 0.99527,
+            "scale_x": 0.999953,
+            "scale_y": 0.999975,
+            "translation_x_final_px": -0.011,
+            "translation_y_final_px": 0.027,
+            "rotation_deg": -0.0063
+          },
+          {
+            "ecc": 0.995415,
+            "scale_x": 1.00015,
+            "scale_y": 0.999981,
+            "translation_x_final_px": -0.066,
+            "translation_y_final_px": 0.071,
+            "rotation_deg": -0.00942
+          },
+          {
+            "ecc": 0.995452,
+            "scale_x": 1.000184,
+            "scale_y": 1.000046,
+            "translation_x_final_px": -0.171,
+            "translation_y_final_px": -0.0,
+            "rotation_deg": -0.0026
+          },
+          {
+            "ecc": 0.993469,
+            "scale_x": 1.000086,
+            "scale_y": 1.000241,
+            "translation_x_final_px": -0.091,
+            "translation_y_final_px": -0.195,
+            "rotation_deg": -0.00244
+          }
+        ],
+        "translation_detected": false,
+        "rotation_detected": false,
+        "perspective_or_warp_detected": false,
+        "stabilization_detected": false,
+        "brightness_color_change": "material_change_or_mapping_residual"
+      }
+    },
+    {
+      "id": "GT006",
+      "kind": "content",
+      "final_start_frame": 681,
+      "final_end_frame_exclusive": 740,
+      "final_duration_frames": 59,
+      "final_timebase": "1/60",
+      "source": {
+        "file": "DJI_20260801170541_0109_D.MP4",
+        "path": "D:\\实拍视频文档\\实拍视频文档\\1731736890298503661-充电宝\\实拍素材\\DJI_20260801170541_0109_D.MP4",
+        "native_timebase": "1001/60000",
+        "native_fps": "60000/1001",
+        "source_in_frame": 459,
+        "source_out_frame_inclusive": 529
+      },
+      "action_unit_id": "AU0109_02",
+      "same_source_file": true,
+      "same_continuous_take": true,
+      "mapping_type": "monotonic_frame_selection_same_continuous_take",
+      "mapping_segments": [
+        {
+          "final_start_frame": 681,
+          "final_end_frame_exclusive": 740,
+          "source_start_frame": 459,
+          "source_end_frame_inclusive": 529,
+          "source_frames_per_final_frame": 1.206897,
+          "hold_frame_count": 0,
+          "jump_frame_count": 0
+        }
+      ],
+      "frame_selection": {
+        "unique_source_frames": 59,
+        "repeated_final_frame_selections": 0,
+        "source_jumps_over_2_frames": 0,
+        "reverse_steps": 0
+      },
+      "transform": {
+        "crop": "none_detected_full_9x16_frame",
+        "base_scale": {
+          "x": 0.625,
+          "y": 0.625,
+          "reason": "1728x3072 to 1080x1920 exact aspect-preserving resize"
+        },
+        "sampled_affine_fits": [
+          {
+            "ecc": 0.991909,
+            "scale_x": 0.999978,
+            "scale_y": 1.000247,
+            "translation_x_final_px": -0.078,
+            "translation_y_final_px": -0.387,
+            "rotation_deg": 0.0085
+          },
+          {
+            "ecc": 0.995681,
+            "scale_x": 0.999969,
+            "scale_y": 1.000183,
+            "translation_x_final_px": 0.115,
+            "translation_y_final_px": -0.358,
+            "rotation_deg": 0.00787
+          },
+          {
+            "ecc": 0.995442,
+            "scale_x": 0.999846,
+            "scale_y": 1.000192,
+            "translation_x_final_px": 0.218,
+            "translation_y_final_px": -0.389,
+            "rotation_deg": 0.01105
+          },
+          {
+            "ecc": 0.995575,
+            "scale_x": 0.999205,
+            "scale_y": 0.999419,
+            "translation_x_final_px": 0.565,
+            "translation_y_final_px": 0.451,
+            "rotation_deg": 0.00738
+          },
+          {
+            "ecc": 0.995825,
+            "scale_x": 1.000227,
+            "scale_y": 1.000107,
+            "translation_x_final_px": -0.032,
+            "translation_y_final_px": -0.143,
+            "rotation_deg": 0.00661
+          }
+        ],
+        "translation_detected": false,
+        "rotation_detected": false,
+        "perspective_or_warp_detected": false,
+        "stabilization_detected": false,
+        "brightness_color_change": "material_change_or_mapping_residual"
+      }
+    },
+    {
+      "id": "GT007",
+      "kind": "content",
+      "final_start_frame": 740,
+      "final_end_frame_exclusive": 904,
+      "final_duration_frames": 164,
+      "final_timebase": "1/60",
+      "source": {
+        "file": "DJI_20260801170710_0112_D.MP4",
+        "path": "D:\\实拍视频文档\\实拍视频文档\\1731736890298503661-充电宝\\实拍素材\\DJI_20260801170710_0112_D.MP4",
+        "native_timebase": "1001/60000",
+        "native_fps": "60000/1001",
+        "source_in_frame": 495,
+        "source_out_frame_inclusive": 690
+      },
+      "action_unit_id": "AU0112_C01",
+      "same_source_file": true,
+      "same_continuous_take": true,
+      "mapping_type": "monotonic_frame_selection_same_continuous_take",
+      "mapping_segments": [
+        {
+          "final_start_frame": 740,
+          "final_end_frame_exclusive": 904,
+          "source_start_frame": 495,
+          "source_end_frame_inclusive": 690,
+          "source_frames_per_final_frame": 1.196319,
+          "hold_frame_count": 0,
+          "jump_frame_count": 0
+        }
+      ],
+      "frame_selection": {
+        "unique_source_frames": 164,
+        "repeated_final_frame_selections": 0,
+        "source_jumps_over_2_frames": 0,
+        "reverse_steps": 0
+      },
+      "transform": {
+        "crop": "none_detected_full_9x16_frame",
+        "base_scale": {
+          "x": 0.625,
+          "y": 0.625,
+          "reason": "1728x3072 to 1080x1920 exact aspect-preserving resize"
+        },
+        "sampled_affine_fits": [
+          {
+            "ecc": 0.996631,
+            "scale_x": 0.999642,
+            "scale_y": 0.999886,
+            "translation_x_final_px": 0.247,
+            "translation_y_final_px": 0.025,
+            "rotation_deg": 0.00188
+          },
+          {
+            "ecc": 0.994805,
+            "scale_x": 0.999664,
+            "scale_y": 1.000038,
+            "translation_x_final_px": 0.353,
+            "translation_y_final_px": -0.124,
+            "rotation_deg": 0.00132
+          },
+          {
+            "ecc": 0.99616,
+            "scale_x": 1.000321,
+            "scale_y": 1.000205,
+            "translation_x_final_px": -0.21,
+            "translation_y_final_px": -0.137,
+            "rotation_deg": -0.0117
+          },
+          {
+            "ecc": 0.996765,
+            "scale_x": 1.000922,
+            "scale_y": 1.000214,
+            "translation_x_final_px": -0.574,
+            "translation_y_final_px": -0.271,
+            "rotation_deg": 0.00968
+          },
+          {
+            "ecc": 0.996938,
+            "scale_x": 1.000751,
+            "scale_y": 1.000156,
+            "translation_x_final_px": -0.44,
+            "translation_y_final_px": -0.187,
+            "rotation_deg": 0.00733
+          }
+        ],
+        "translation_detected": false,
+        "rotation_detected": false,
+        "perspective_or_warp_detected": false,
+        "stabilization_detected": false,
+        "brightness_color_change": "minor_reencode_or_small_grade"
+      }
+    },
+    {
+      "id": "GT008",
+      "kind": "content",
+      "final_start_frame": 946,
+      "final_end_frame_exclusive": 1061,
+      "final_duration_frames": 115,
+      "final_timebase": "1/60",
+      "source": {
+        "file": "DJI_20260801170917_0116_D.MP4",
+        "path": "D:\\实拍视频文档\\实拍视频文档\\1731736890298503661-充电宝\\实拍素材\\DJI_20260801170917_0116_D.MP4",
+        "native_timebase": "1001/60000",
+        "native_fps": "60000/1001",
+        "source_in_frame": 278,
+        "source_out_frame_inclusive": 415
+      },
+      "action_unit_id": "AU0116_01",
+      "same_source_file": true,
+      "same_continuous_take": true,
+      "mapping_type": "monotonic_frame_selection_same_continuous_take",
+      "mapping_segments": [
+        {
+          "final_start_frame": 946,
+          "final_end_frame_exclusive": 1061,
+          "source_start_frame": 278,
+          "source_end_frame_inclusive": 415,
+          "source_frames_per_final_frame": 1.201754,
+          "mapping_type": "continuous_forward_frame_selection",
+          "hold_frame_count": 0,
+          "jump_frame_count": 0
+        }
+      ],
+      "frame_selection": {
+        "unique_source_frames": 157,
+        "repeated_final_frame_selections": 0,
+        "source_jumps_over_2_frames": 0,
+        "reverse_steps": 0
+      },
+      "transform": {
+        "crop": "none_detected_full_9x16_frame",
+        "base_scale": {
+          "x": 0.625,
+          "y": 0.625,
+          "reason": "1728x3072 to 1080x1920 exact aspect-preserving resize"
+        },
+        "sampled_affine_fits": [
+          {
+            "ecc": 0.99695,
+            "scale_x": 1.000105,
+            "scale_y": 0.999919,
+            "translation_x_final_px": -0.122,
+            "translation_y_final_px": 0.179,
+            "rotation_deg": -0.01298
+          },
+          {
+            "ecc": 0.996363,
+            "scale_x": 1.00022,
+            "scale_y": 1.000029,
+            "translation_x_final_px": -0.224,
+            "translation_y_final_px": 0.089,
+            "rotation_deg": -0.00891
+          },
+          {
+            "ecc": 0.994778,
+            "scale_x": 1.000368,
+            "scale_y": 1.000017,
+            "translation_x_final_px": -0.083,
+            "translation_y_final_px": 0.076,
+            "rotation_deg": -0.01132
+          },
+          {
+            "ecc": 0.994612,
+            "scale_x": 1.000054,
+            "scale_y": 0.99999,
+            "translation_x_final_px": 0.077,
+            "translation_y_final_px": 0.165,
+            "rotation_deg": -0.01213
+          },
+          {
+            "ecc": 0.995689,
+            "scale_x": 0.999627,
+            "scale_y": 0.999968,
+            "translation_x_final_px": 0.167,
+            "translation_y_final_px": 0.072,
+            "rotation_deg": -0.00359
+          }
+        ],
+        "translation_detected": false,
+        "rotation_detected": false,
+        "perspective_or_warp_detected": false,
+        "stabilization_detected": false,
+        "brightness_color_change": "minor_reencode_or_small_grade"
+      }
+    },
+    {
+      "id": "GT009",
+      "kind": "content",
+      "final_start_frame": 1061,
+      "final_end_frame_exclusive": 1239,
+      "final_duration_frames": 178,
+      "final_timebase": "1/60",
+      "source": {
+        "file": "DJI_20260801171251_0120_D.MP4",
+        "path": "D:\\实拍视频文档\\实拍视频文档\\1731736890298503661-充电宝\\实拍素材\\DJI_20260801171251_0120_D.MP4",
+        "native_timebase": "1001/60000",
+        "native_fps": "60000/1001",
+        "source_in_frame": 1350,
+        "source_out_frame_inclusive": 2075
+      },
+      "action_unit_id": "AU0120_C01",
+      "same_source_file": true,
+      "same_continuous_take": true,
+      "mapping_type": "piecewise_nonlinear_same_continuous_take",
+      "mapping_segments": [
+        {
+          "final_start_frame": 1061,
+          "final_end_frame_exclusive": 1073,
+          "source_start_frame": 1350,
+          "source_end_frame_inclusive": 1350,
+          "allowed_source_envelope": [
+            1350,
+            1350
+          ],
+          "mapping_type": "opening_hold_anchor"
+        },
+        {
+          "final_start_frame": 1073,
+          "final_end_frame_exclusive": 1119,
+          "source_start_frame": 1352,
+          "source_end_frame_inclusive": 1405,
+          "allowed_source_envelope": [
+            1352,
+            1406
+          ],
+          "mapping_type": "forward_selection"
+        },
+        {
+          "final_start_frame": 1119,
+          "final_end_frame_exclusive": 1145,
+          "source_start_frame": 1408,
+          "source_end_frame_inclusive": 1408,
+          "allowed_source_envelope": [
+            1408,
+            1408
+          ],
+          "mapping_type": "intermediate_hold_anchor"
+        },
+        {
+          "final_start_frame": 1145,
+          "final_end_frame_exclusive": 1173,
+          "source_start_frame": 1589,
+          "source_end_frame_inclusive": 1621,
+          "allowed_source_envelope": [
+            1589,
+            1621
+          ],
+          "mapping_type": "jump_then_forward_selection"
+        },
+        {
+          "final_start_frame": 1173,
+          "final_end_frame_exclusive": 1239,
+          "source_start_frame": 2075,
+          "source_end_frame_inclusive": 2075,
+          "allowed_source_envelope": [
+            2064,
+            2075
+          ],
+          "mapping_type": "jump_to_result_hold_range"
+        }
+      ],
+      "frame_selection": {
+        "unique_source_frames": 77,
+        "repeated_final_frame_selections": 101,
+        "source_jumps_over_2_frames": 3,
+        "reverse_steps": 0
+      },
+      "transform": {
+        "crop": "none_detected_full_9x16_frame",
+        "base_scale": {
+          "x": 0.625,
+          "y": 0.625,
+          "reason": "1728x3072 to 1080x1920 exact aspect-preserving resize"
+        },
+        "sampled_affine_fits": [
+          {
+            "ecc": 0.994501,
+            "scale_x": 1.000059,
+            "scale_y": 1.000191,
+            "translation_x_final_px": -0.043,
+            "translation_y_final_px": -0.317,
+            "rotation_deg": 0.00851
+          },
+          {
+            "ecc": 0.995701,
+            "scale_x": 1.000148,
+            "scale_y": 1.000134,
+            "translation_x_final_px": 0.028,
+            "translation_y_final_px": -0.239,
+            "rotation_deg": 0.00267
+          },
+          {
+            "ecc": 0.995775,
+            "scale_x": 1.000133,
+            "scale_y": 1.000045,
+            "translation_x_final_px": 0.02,
+            "translation_y_final_px": -0.256,
+            "rotation_deg": 0.00452
+          },
+          {
+            "ecc": 0.990824,
+            "scale_x": 1.000247,
+            "scale_y": 0.999989,
+            "translation_x_final_px": -0.22,
+            "translation_y_final_px": -1.253,
+            "rotation_deg": 0.0006
+          },
+          {
+            "ecc": 0.978691,
+            "scale_x": 1.000059,
+            "scale_y": 0.999874,
+            "translation_x_final_px": -0.038,
+            "translation_y_final_px": -1.167,
+            "rotation_deg": 0.00385
+          }
+        ],
+        "translation_detected": false,
+        "rotation_detected": false,
+        "perspective_or_warp_detected": false,
+        "stabilization_detected": false,
+        "brightness_color_change": "material_change_or_mapping_residual"
+      }
+    },
+    {
+      "id": "GT010",
+      "kind": "content",
+      "final_start_frame": 1239,
+      "final_end_frame_exclusive": 1315,
+      "final_duration_frames": 76,
+      "final_timebase": "1/60",
+      "source": {
+        "file": "DJI_20260801171336_0121_D.MP4",
+        "path": "D:\\实拍视频文档\\实拍视频文档\\1731736890298503661-充电宝\\实拍素材\\DJI_20260801171336_0121_D.MP4",
+        "native_timebase": "1001/60000",
+        "native_fps": "60000/1001",
+        "source_in_frame": 236,
+        "source_out_frame_inclusive": 246
+      },
+      "action_unit_id": "AU0121_02",
+      "same_source_file": true,
+      "same_continuous_take": true,
+      "mapping_type": "monotonic_frame_selection_same_continuous_take",
+      "mapping_segments": [
+        {
+          "final_start_frame": 1239,
+          "final_end_frame_exclusive": 1315,
+          "source_start_frame": 236,
+          "source_end_frame_inclusive": 246,
+          "source_frames_per_final_frame": 0.133333,
+          "hold_frame_count": 65,
+          "jump_frame_count": 0
+        }
+      ],
+      "frame_selection": {
+        "unique_source_frames": 11,
+        "repeated_final_frame_selections": 65,
+        "source_jumps_over_2_frames": 0,
+        "reverse_steps": 0
+      },
+      "transform": {
+        "crop": "none_detected_full_9x16_frame",
+        "base_scale": {
+          "x": 0.625,
+          "y": 0.625,
+          "reason": "1728x3072 to 1080x1920 exact aspect-preserving resize"
+        },
+        "sampled_affine_fits": [
+          {
+            "ecc": 0.956795,
+            "scale_x": 1.001512,
+            "scale_y": 1.000462,
+            "translation_x_final_px": -0.242,
+            "translation_y_final_px": -0.265,
+            "rotation_deg": -0.03515
+          },
+          {
+            "ecc": 0.672996,
+            "scale_x": 1.006078,
+            "scale_y": 0.999877,
+            "translation_x_final_px": -1.416,
+            "translation_y_final_px": 0.524,
+            "rotation_deg": -0.09643
+          },
+          {
+            "ecc": 0.95402,
+            "scale_x": 1.000387,
+            "scale_y": 1.000004,
+            "translation_x_final_px": 0.125,
+            "translation_y_final_px": 0.051,
+            "rotation_deg": 0.02524
+          },
+          {
+            "ecc": 0.994055,
+            "scale_x": 1.000092,
+            "scale_y": 1.000171,
+            "translation_x_final_px": 0.1,
+            "translation_y_final_px": -0.201,
+            "rotation_deg": 0.00724
+          },
+          {
+            "ecc": 0.994515,
+            "scale_x": 1.000107,
+            "scale_y": 1.00017,
+            "translation_x_final_px": 0.04,
+            "translation_y_final_px": -0.186,
+            "rotation_deg": 0.00543
+          }
+        ],
+        "translation_detected": false,
+        "rotation_detected": false,
+        "perspective_or_warp_detected": false,
+        "stabilization_detected": false,
+        "brightness_color_change": "material_change_or_mapping_residual"
+      }
+    },
+    {
+      "id": "GT011",
+      "kind": "content",
+      "final_start_frame": 1315,
+      "final_end_frame_exclusive": 1579,
+      "final_duration_frames": 264,
+      "final_timebase": "1/60",
+      "source": {
+        "file": "DJI_20260801171351_0122_D.MP4",
+        "path": "D:\\实拍视频文档\\实拍视频文档\\1731736890298503661-充电宝\\实拍素材\\DJI_20260801171351_0122_D.MP4",
+        "native_timebase": "1001/60000",
+        "native_fps": "60000/1001",
+        "source_in_frame": 1670,
+        "source_out_frame_inclusive": 1985
+      },
+      "action_unit_id": "AU0122_03",
+      "same_source_file": true,
+      "same_continuous_take": true,
+      "mapping_type": "monotonic_frame_selection_same_continuous_take",
+      "mapping_segments": [
+        {
+          "final_start_frame": 1315,
+          "final_end_frame_exclusive": 1579,
+          "source_start_frame": 1670,
+          "source_end_frame_inclusive": 1985,
+          "source_frames_per_final_frame": 1.197719,
+          "hold_frame_count": 0,
+          "jump_frame_count": 0
+        }
+      ],
+      "frame_selection": {
+        "unique_source_frames": 264,
+        "repeated_final_frame_selections": 0,
+        "source_jumps_over_2_frames": 0,
+        "reverse_steps": 0
+      },
+      "transform": {
+        "crop": "none_detected_full_9x16_frame",
+        "base_scale": {
+          "x": 0.625,
+          "y": 0.625,
+          "reason": "1728x3072 to 1080x1920 exact aspect-preserving resize"
+        },
+        "sampled_affine_fits": [
+          {
+            "ecc": 0.995982,
+            "scale_x": 1.0001,
+            "scale_y": 1.000063,
+            "translation_x_final_px": -0.127,
+            "translation_y_final_px": 0.0,
+            "rotation_deg": 0.00361
+          },
+          {
+            "ecc": 0.995245,
+            "scale_x": 1.000067,
+            "scale_y": 0.999952,
+            "translation_x_final_px": 0.063,
+            "translation_y_final_px": 0.043,
+            "rotation_deg": -0.00027
+          },
+          {
+            "ecc": 0.99371,
+            "scale_x": 1.000051,
+            "scale_y": 1.000175,
+            "translation_x_final_px": -0.013,
+            "translation_y_final_px": -0.105,
+            "rotation_deg": 0.00228
+          },
+          {
+            "ecc": 0.994845,
+            "scale_x": 1.00003,
+            "scale_y": 1.000039,
+            "translation_x_final_px": 0.054,
+            "translation_y_final_px": -0.04,
+            "rotation_deg": -0.00073
+          },
+          {
+            "ecc": 0.995484,
+            "scale_x": 1.000064,
+            "scale_y": 1.000136,
+            "translation_x_final_px": 0.16,
+            "translation_y_final_px": -0.137,
+            "rotation_deg": 0.0014
+          }
+        ],
+        "translation_detected": false,
+        "rotation_detected": false,
+        "perspective_or_warp_detected": false,
+        "stabilization_detected": false,
+        "brightness_color_change": "minor_reencode_or_small_grade"
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "id": "TR001",
+      "final_start_frame": 393,
+      "final_end_frame_exclusive": 413,
+      "length_frames": 20,
+      "type": "hard_cut_at_393_then_incoming_raw_motion_preroll",
+      "outgoing_participating_frames": {
+        "GT004": [
+          392,
+          392
+        ],
+        "GT004_native_source_frame": 662
+      },
+      "incoming_participating_frames": {
+        "GT005_source_file": "DJI_20260801170438_0108_D.MP4",
+        "final_frames": [
+          393,
+          412
+        ],
+        "native_source_frames": [
+          709,
+          732
+        ]
+      },
+      "overlap_or_blend_frames": 0,
+      "effect": "none_detected",
+      "note": "The 20 frames are continuous incoming-take motion, not a standalone micro-shot or synthetic wipe."
+    },
+    {
+      "id": "TR002",
+      "final_start_frame": 904,
+      "final_end_frame_exclusive": 946,
+      "length_frames": 42,
+      "type": "hard_cut_at_904_then_incoming_raw_motion_preroll",
+      "outgoing_participating_frames": {
+        "GT007": [
+          903,
+          903
+        ],
+        "GT007_native_source_frame": 690
+      },
+      "incoming_participating_frames": {
+        "GT008_source_file": "DJI_20260801170917_0116_D.MP4",
+        "final_frames": [
+          904,
+          945
+        ],
+        "native_source_frames": [
+          228,
+          277
+        ]
+      },
+      "overlap_or_blend_frames": 0,
+      "effect": "none_detected",
+      "note": "The 42 frames are continuous incoming-take motion, not zoom/blur effect frames or micro-shots."
+    }
+  ],
+  "rebuild_policy": {
+    "GT001-GT003": "reference_passthrough_for_validation_only",
+    "GT004-GT011": "raw_reconstruction",
+    "audio": "direct_master_audio_reuse",
+    "GT009": "locked_five_piece_mapping",
+    "GT010": "natural_source_motion_no_extra_freeze"
+  }
+}
