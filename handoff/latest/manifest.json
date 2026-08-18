@@ -123,5 +123,27 @@
     "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-14\\outputs\\20260818-163253-slime-vo-blind-alignment-v2-1\\edit\\verify\\v2_prefix_838.framemd5",
     "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-14\\outputs\\20260818-163253-slime-vo-blind-alignment-v2-1\\edit\\visual_master_v2_1.mp4"
   ],
-  "commit_sha": "a7d8180a88628f324c9cef9c4be763f9f3be1d80"
+  "commit_sha": "a7d8180a88628f324c9cef9c4be763f9f3be1d80",
+  "publisher_record_commit_sha": "7576e065445ad035340d91d08ab520eb04af0d2e",
+  "experiment": "Slime VO Blind Alignment v2.1 — Preserve Wins + CTA Fix",
+  "status": "handed_off",
+  "quality_status": "needs_human_review",
+  "branch": "handoff",
+  "base_run_id": "20260818-160940-slime-vo-blind-alignment-v2",
+  "base_commit": "1d1bd4481a7b5cf9313bd378ebbb5e345c00caba",
+  "main_modified": false,
+  "audio_material_modified": false,
+  "human_sanity_gate": {"status": "pending_user_review", "model_preflight_hard_fail_count": 0},
+  "metrics_summary": {
+    "final_duration_s": 16.3,
+    "preserved_front_frames": 838,
+    "modified_range_s": [13.966667, 16.3],
+    "validated_constraint_regression_count": 0,
+    "directional_cta_missing_when_available": 0,
+    "preserved_anchor_regression": 0,
+    "visible_motion_loop_count": 0,
+    "repeated_motion_fill_count": 0
+  },
+  "conclusion": "Natural CTA gesture restored; v2 frames 0-837 and the complete decoded VO remain exact matches.",
+  "next_step": "User performs final Human Sanity review of v2.1."
 }

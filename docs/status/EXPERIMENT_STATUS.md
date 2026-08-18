@@ -138,3 +138,21 @@
 - Superseded by: Slime VO Blind Alignment Test v2 using the user-provided real spoken-video input.
 - Resume policy: do not resume this run, even if ElevenLabs later becomes available.
 - Contamination guard: do not copy its draft scripts, predicted bindings, Action Unit references, or conclusions into the active Blind Alignment run; its files, run_id, and latest payload remain untouched.
+
+## 20260818-163253-slime-vo-blind-alignment-v2-1
+
+- Experiment: Slime VO Blind Alignment v2.1 — Preserve Wins + CTA Fix
+- Status: `handed_off`; quality status: `needs_human_review`
+- Updated at: `2026-08-18T16:46:03+08:00`
+- Branch: `handoff`; `main` not modified; `libraries/audio_material/` not modified
+- Baseline: `20260818-160940-slime-vo-blind-alignment-v2`; no re-directing or full-timeline rebuild
+- Handoff payload commit: `a7d8180a88628f324c9cef9c4be763f9f3be1d80`
+- Publisher record commit: `7576e065445ad035340d91d08ab520eb04af0d2e`
+- Canonical archive: `handoff/runs/20260818-163253-slime-vo-blind-alignment-v2-1/`
+- CTA result: natural directional gesture restored from `DJI_20260813103012_0045_D.MP4`, Action Unit `AU45_CTA_POINT_1`, source `4.15–6.483333 s`, output `13.966667–16.3 s`
+- Preservation proof: decoded frames 0–837 exactly match v2; complete decoded VO SHA-256 exactly matches v2; no pre-CTA boundary adjustment
+- Validated constraints: count escalation A1–A5 is persisted as a hard cross-version constraint; CTA directional gesture is persisted as a conditional hard constraint
+- Model preflight: pass; `validated_constraint_regression_count=0`; `directional_cta_missing_when_available=0`; `preserved_anchor_regression=0`; visible loop/repeated motion fill `0/0`
+- Human Sanity Gate: pending user full viewing; no final human PASS is claimed
+- Local only: final MP4, intermediate segments/master, visual QA frames, and frame-hash evidence remain local under the run output directory
+- Next step: user reviews `slime_vo_blind_alignment_v2_1_final.mp4`; any later version must preserve the recorded hard constraints unless the user explicitly removes them
