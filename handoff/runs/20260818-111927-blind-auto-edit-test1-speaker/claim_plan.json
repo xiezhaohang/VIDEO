@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260818-111927-blind-auto-edit-test1-speaker",
+  "claims": [
+    {
+      "id": "C1",
+      "vo_range": [
+        0.0,
+        4.7
+      ],
+      "claim": "price/clearance hook",
+      "observable_proof": "product hero only; no price screen exists",
+      "status": "context_only",
+      "owner": "product"
+    },
+    {
+      "id": "C2",
+      "vo_range": [
+        4.7,
+        9.34
+      ],
+      "claim": "not only a phone stand; induction speaker with remote",
+      "action": "show assembled hero, phone supported, remote present",
+      "result": "phone is visibly held in front of active speaker/light",
+      "owner": "speaker/stand + remote",
+      "status": "supported"
+    },
+    {
+      "id": "C3",
+      "vo_range": [
+        9.34,
+        16.84
+      ],
+      "claim": "place phone for louder, clearer media sound",
+      "action": "AU0123-A phone placement",
+      "result": "same-take placed phone and active speaker/light hold; AU0114-A and AU0118-A upgrade media contexts",
+      "owner": "phone placed on speaker/stand",
+      "status": "visually_supported_audio_quality_not_measurable"
+    },
+    {
+      "id": "C4",
+      "vo_range": [
+        16.84,
+        23.3
+      ],
+      "claim": "remote controls videos/volume/scroll",
+      "action": "AU0120-A remote press then AU0119-A remote press",
+      "result": "music item changes, then video changes",
+      "owner": "remote → phone media",
+      "status": "partially_supported",
+      "limitation": "remote-driven volume level is not separately readable; the raw phone-volume take uses direct touch and was rejected for ownership mismatch"
+    },
+    {
+      "id": "C5",
+      "vo_range": [
+        23.3,
+        27.64
+      ],
+      "claim": "USB port can charge phone during use",
+      "action": "AU0112-B side/rear reveal",
+      "result": "USB port is visible",
+      "owner": "speaker USB port",
+      "status": "partial_proof_gap",
+      "limitation": "no cable insertion or phone charging feedback exists in raw; no charging result is invented"
+    },
+    {
+      "id": "C6",
+      "vo_range": [
+        27.64,
+        34.54
+      ],
+      "claim": "rotates up to 180° for comfortable viewing angle",
+      "action": "AU0122-C assembly tilt then AU0118-B portrait-to-landscape rotation",
+      "result": "new hardware angle and stable landscape phone orientation are readable",
+      "owner": "rotating assembly/phone support",
+      "status": "supported"
+    },
+    {
+      "id": "C7",
+      "vo_range": [
+        34.54,
+        39.236
+      ],
+      "claim": "special offer and orange-cart CTA",
+      "action": "hero composition with remote placed",
+      "result": "stable complete product family hold",
+      "owner": "product",
+      "status": "visual_cta_no_price_ui"
+    }
+  ],
+  "proof_ownership_rule": "Every selected action/result pair keeps the same trigger object and proven object; no phone action is answered by an unrelated object.",
+  "repeated_proof_policy": "AU0114-A and AU0118-A follow the closed AU0123-A placement proof only as media-context upgrades; no source interval or visible motion is reused."
+}
