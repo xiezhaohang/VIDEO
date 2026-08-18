@@ -1,0 +1,43 @@
+schema_version: "0.1"
+
+plan:
+  run_id: ""
+  material_id: ""
+  claim_id: ""
+  proof_modality: "" # visual | audio | audiovisual
+  audio_role: "" # irrelevant | ambience | action_sfx | product_proof | music_demo | speech
+
+source:
+  clip: ""
+  time_range:
+    in: ""
+    out: ""
+  original_sync_audio: null
+  continuous_take: null
+
+proof_chain:
+  claim: ""
+  action: ""
+  result: ""
+  hold: ""
+  proof_owner: ""
+
+vo_gap:
+  present: null
+  is_audio_proof_window: null
+  preserve_sync_sound: null
+  decision_reason: ""
+
+layer_separation:
+  core_product_audio: []
+  bgm: []
+  added_sfx: []
+  packaging_used_as_proof: false
+
+validation:
+  action_integrity: pending
+  proof_ownership: pending
+  source_authenticity: pending
+  fallback_to_visual_workflow: false
+  notes: ""
+

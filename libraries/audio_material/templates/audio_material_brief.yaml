@@ -1,0 +1,33 @@
+schema_version: "0.1"
+
+material:
+  id: ""
+  source_paths: []
+  product: ""
+  commercial_claims: []
+
+entry_classification:
+  result: "" # visual_only | audio_relevant
+  reason: ""
+  classifier: ""
+  classified_at: ""
+  audio_track_present: null
+  audio_value_confirmed: null
+
+audio_observations:
+  candidate_roles: [] # irrelevant | ambience | action_sfx | product_proof | music_demo | speech
+  valuable_ranges: []
+  limitations: []
+
+routing:
+  selected_workflow: "" # visual_workflow | audio_branch
+  explicit_visual_rule_references: []
+  fallback_required: null
+  fallback_reason: ""
+
+experiment:
+  run_id: ""
+  branch: handoff
+  library_root: libraries/audio_material/
+  notes: ""
+

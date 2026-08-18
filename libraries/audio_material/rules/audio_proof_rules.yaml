@@ -1,0 +1,55 @@
+schema_version: "0.1"
+library: audio_material
+status: handoff_experimental
+
+proof:
+  definition: 原素材真实声音对 claim、动作结果或产品体验提供可感知且可验证的证据
+  modalities:
+    - visual
+    - audio
+    - audiovisual
+  inherited_chain:
+    - claim
+    - action
+    - result
+    - hold
+  inherited_priorities:
+    - action_integrity
+    - proof_ownership
+
+core_audio_evidence:
+  roles:
+    - product_proof
+    - music_demo
+  requirements:
+    - source 必须是原素材真实声音
+    - 必须绑定被证明的 claim 与产品对象
+    - 涉及同步动作时优先保留同一 continuous take
+    - 不得由 BGM 或后加 SFX 冒充
+
+packaging_layer:
+  roles:
+    - bgm
+    - added_sfx
+  core_proof: false
+  separation_required: true
+
+vo_gap:
+  default_is_dead_air: false
+  decision_order:
+    - 判断是否为 audio_proof_window
+    - 验证 Proof Ownership 与来源真实性
+    - 检查 continuous take 的 sync sound 或 product audio 是否可保留
+    - 非 Audio Proof Window 才按普通节奏或包装处理
+  audio_proof_window:
+    may_preserve:
+      - sync_sound
+      - product_audio
+    must_record:
+      - source_clip
+      - time_range
+      - audio_role
+      - proof_modality
+      - claim_id
+      - continuous_take
+

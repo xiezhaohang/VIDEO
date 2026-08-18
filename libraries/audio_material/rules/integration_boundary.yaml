@@ -1,0 +1,50 @@
+schema_version: "0.1"
+library: audio_material
+status: handoff_experimental
+
+visual_workflow:
+  role: stable_baseline
+  mutation_from_audio_branch: forbidden
+
+audio_library:
+  role: pluggable_branch
+  root: libraries/audio_material/
+  may_reference_visual_workflow: explicit_only
+  may_override_visual_rules: false
+
+routing:
+  default: visual_workflow
+  classifier_required: true
+  outcomes:
+    visual_only:
+      target: visual_workflow
+    audio_relevant:
+      target: audio_branch
+      condition: 原素材声音明确承担商业信息、证明或体验价值
+  forbidden_shortcuts:
+    - 仅因视频存在音轨而进入 audio_branch
+    - 未记录 classifier 结果而隐式启用 audio_branch
+
+fallback:
+  target: visual_workflow
+  required_when:
+    - classifier_failed
+    - audio_value_not_confirmed
+    - audio_evidence_invalid
+    - proof_ownership_unresolved
+  behavior:
+    - 停止使用 Audio Branch 的实验性判断
+    - 不回写或覆盖视觉库规则
+    - 继续使用稳定 Visual Workflow
+
+compatibility:
+  inherited_explicitly:
+    - action_integrity
+    - proof_chain
+    - proof_ownership
+  local_extension_only:
+    proof_modality:
+      - visual
+      - audio
+      - audiovisual
+

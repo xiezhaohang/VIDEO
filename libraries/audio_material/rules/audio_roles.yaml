@@ -1,0 +1,36 @@
+schema_version: "0.1"
+library: audio_material
+status: handoff_experimental
+
+entry_classification:
+  allowed:
+    - visual_only
+    - audio_relevant
+  audio_relevant_definition: >-
+    原素材声音承担商业信息、证明或体验价值；仅存在音轨不足以成立。
+
+audio_roles:
+  irrelevant:
+    meaning: 声音无商业信息、证明或体验价值
+    core_proof: false
+  ambience:
+    meaning: 同期环境声，可提供场景真实感但默认不承担卖点证明
+    core_proof: false
+  action_sfx:
+    meaning: 与动作同步的真实操作声，可辅助确认动作
+    core_proof: conditional
+  product_proof:
+    meaning: 产品真实发声直接证明功能或表现
+    core_proof: true
+  music_demo:
+    meaning: 原素材中的产品音乐播放展示，用于证明听感或播放能力
+    core_proof: true
+  speech:
+    meaning: 原素材中的人物或产品语音，需另行判断其信息与 Proof Ownership
+    core_proof: conditional
+
+constraints:
+  - role 分类不替代 visual_only/audio_relevant 入口判定
+  - product_proof 与 music_demo 不得标记为 bgm
+  - 无法可靠分类时不得强行进入 Audio Branch
+
