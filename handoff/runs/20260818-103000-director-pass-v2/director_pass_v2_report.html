@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Director Pass v2 — Proof Chain & Ownership Correction</title>
+  <style>
+    body{font-family:Arial,"Microsoft YaHei",sans-serif;margin:0;background:#0d1117;color:#e6edf3;line-height:1.55}
+    main{max-width:980px;margin:0 auto;padding:32px 24px 60px}.card{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:20px;margin:16px 0}
+    h1,h2{line-height:1.2}.pass{color:#3fb950}.warn{color:#d29922}table{width:100%;border-collapse:collapse;font-size:14px}th,td{border:1px solid #30363d;padding:9px;text-align:left;vertical-align:top}th{background:#21262d}code{color:#79c0ff}ul{padding-left:22px}
+  </style>
+</head>
+<body><main>
+  <h1>Director Pass v2 — Proof Chain & Ownership Correction</h1>
+  <p class="pass"><strong>COMPLETE · Human Sanity Gate PASS · 0 hard fails · Blind Auto Edit Test GO</strong></p>
+
+  <section class="card"><h2>结论</h2>
+    <ul>
+      <li>开头已从 <code>phone action → watch proof → phone proof</code> 改为 <code>phone action → phone result → hold</code>，手机闭环在 2.333 秒完成。</li>
+      <li>v1 开头的手表插入被删除；手表在 12.333 秒后作为独立新能力第一次完整证明。</li>
+      <li>GT009 的重复手机吸附动作被删除；后续手机只作为多设备场景背景，不再重复同一功能动作。</li>
+      <li>15.067–17.683 秒 GT008 连续真人动作与源帧 <code>[270,427)</code> 原样保留，角色升级为“手表已在充电时再确认手机”。</li>
+    </ul>
+  </section>
+
+  <section class="card"><h2>Proof Chain 检查</h2>
+    <table><thead><tr><th>Chain</th><th>Claim</th><th>Action</th><th>Result</th><th>Hold</th><th>结果</th></tr></thead><tbody>
+      <tr><td>Phone core</td><td>手机磁吸充电可用</td><td>0.000–1.133 手机吸附/产品身份</td><td>1.133–2.333 手机屏幕充电状态</td><td>同段稳定保持</td><td class="pass">PASS</td></tr>
+      <tr><td>Watch expansion</td><td>同时支持手表</td><td>12.333–15.067 手表靠近/吸附</td><td>手表充电图标</td><td>可读保持</td><td class="pass">PASS</td></tr>
+      <tr><td>Multi-device</td><td>手机与手表可共同使用</td><td>15.067–17.683 保留真人连续拿取/翻转</td><td>手表已充电 + 手机充电状态</td><td>17.683–20.650 新增手表后的稳定结果</td><td class="pass">PASS</td></tr>
+      <tr><td>Earbuds expansion</td><td>同时支持耳机</td><td>20.650–21.917 耳机接触</td><td>耳机结果状态</td><td>自然低运动保持</td><td class="pass">PASS</td></tr>
+    </tbody></table>
+  </section>
+
+  <section class="card"><h2>Claim / Proof Ownership 映射</h2>
+    <table><thead><tr><th>Claim</th><th>Owner</th><th>对应 proof</th><th>首次/升级</th><th>删除是否降低理解</th></tr></thead><tbody>
+      <tr><td>手机磁吸充电</td><td>Phone</td><td>手机屏幕 charging 状态</td><td>首次</td><td>是</td></tr>
+      <tr><td>手表充电扩展</td><td>Watch</td><td>手表吸附、充电图标与保持</td><td>首次</td><td>是</td></tr>
+      <tr><td>手机+手表同时工作</td><td>Multi-device</td><td>手表已充电背景下的手机结果</td><td>升级</td><td>是</td></tr>
+      <tr><td>已连接手机时新增手表</td><td>Multi-device</td><td>手表新增动作与稳定双设备结果</td><td>升级</td><td>是</td></tr>
+      <tr><td>耳机兼容</td><td>Earbuds</td><td>耳机接触到结果保持</td><td>首次</td><td>是</td></tr>
+    </tbody></table>
+  </section>
+
+  <section class="card"><h2>与 Director Pass v1 的变化</h2>
+    <ul>
+      <li>将 v1 的 <code>HOOK_BASE [0,164)</code> 在锁定的 GT001/GT002 边界拆开，只保留手机动作 <code>[0,68)</code>；原开头手表段不再使用。</li>
+      <li>把独立手机结果 <code>GT008 [427,451)</code> 紧接手机动作，动作到结果间隔为 0 帧。</li>
+      <li>删除 GT009 手机吸附 <code>[1120,1157)</code>；将多设备稳定结果连续扩到源帧 1841。</li>
+      <li>移除的 96 帧预算分别给连续线材段与 Hero，各增加 48 帧；总帧数、音轨和 GT008/CTA 下游边界不变。</li>
+    </ul>
+  </section>
+
+  <section class="card"><h2>Human Sanity Gate</h2>
+    <table><tbody>
+      <tr><th>可见循环</th><td class="pass">0</td><th>重复源区间</th><td class="pass">0</td></tr>
+      <tr><th>重叠源区间</th><td class="pass">0</td><th>黑帧</th><td class="pass">0</td></tr>
+      <tr><th>必要事件</th><td class="pass">10/10</td><th>Proof Chain</th><td class="pass">4/4</td></tr>
+      <tr><th>CTA 完整</th><td class="pass">PASS</td><th>CTA 尾循环</th><td class="pass">False</td></tr>
+      <tr><th>原音轨</th><td class="pass">SHA-256 与 Cutter E 一致</td><th>完整解码</th><td class="pass">PASS</td></tr>
+    </tbody></table>
+  </section>
+
+  <section class="card"><h2>Blind Auto Edit Test 条件</h2>
+    <p class="pass"><strong>GO（受控 blind test，不等于无人复核的生产级全自动）</strong></p>
+    <p>理由：核心手机 proof 同时满足时间与归属；重复动作已淘汰，保留的再次证明都有明确的多设备升级；Human Sanity Gate 为 0 个硬失败。下一轮只给原始素材、VO/带时间文本与交付约束，冻结首版后再人工审片。</p>
+  </section>
+</main></body></html>
+
