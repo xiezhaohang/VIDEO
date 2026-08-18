@@ -2,10 +2,10 @@
   "schema_version": 1,
   "run_id": "20260818-111927-blind-auto-edit-test1-speaker",
   "experiment": "Blind Auto Edit Test 1 — Speaker",
-  "status": "passed_pending_handoff",
+  "status": "handed_off",
   "branch": "handoff",
   "base_handoff_commit": "b5e3880dca78709c45f86a3c578ea0a8baa95200",
-  "handoff_commit": "HANDOFF_COMMIT_PENDING",
+  "handoff_commit": "abcc39c392118009af1fa1a9de957d1c533fd63d",
   "started_at": "2026-08-18T11:19:27+08:00",
   "completed_at": "2026-08-18T11:36:26+08:00",
   "blind_test": {
@@ -51,8 +51,8 @@
     },
     {
       "path": "blind_auto_edit_test1_speaker_report.html",
-      "bytes": 2775,
-      "sha256": "11b9fd05303b08edd32b81d12f4d4314b69c494efda31f423ca2e58498df9dc1",
+      "bytes": 2792,
+      "sha256": "a59ca169e60bc8648d323ea365088e428b0988cc731e91939224d6c56cdfd5be",
       "publication": "handoff"
     },
     {
@@ -471,14 +471,14 @@
     },
     {
       "path": "run_context.json",
-      "bytes": 284,
-      "sha256": "edf8acf5269f75e2ae3761eeb89319e8658e12dbee29b8a889ed23c3fb170b6f",
+      "bytes": 394,
+      "sha256": "3f3f4cc4f8f88e9999796d25108ad7bee34a144829eec3b48001b1176a720797",
       "publication": "handoff"
     },
     {
       "path": "summary.md",
-      "bytes": 1067,
-      "sha256": "50fd1b0347779dedcfe413309528c9efa318d3d133e83638239810fcbbc50fb4",
+      "bytes": 1084,
+      "sha256": "a29a5eeaa8b7c10efe80566b6e2d6d7795f2f3d56efa674ed2386262452b286c",
       "publication": "handoff"
     },
     {
@@ -819,5 +819,6 @@
       "sha256": "6a2a619a20d06065c19167780c439b474587ff2d9b5d441d33509fe3cd341015",
       "bytes": 63600420
     }
-  ]
+  ],
+  "handed_off_at": "2026-08-18T11:44:36+08:00"
 }
