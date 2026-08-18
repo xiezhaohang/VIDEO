@@ -1,0 +1,27 @@
+{
+  "run_id": "20260818-152613-slime-vo-transition-v1",
+  "comparison_variable": "voiceover_generation_method_only",
+  "downstream_control": "The same ElevenLabs voice, model, speed, stability, transition rules, cutter, sanity gate, render settings, and no subtitle/BGM/SFX policy will be used after voice generation becomes available.",
+  "A": {
+    "method": "blind_script",
+    "word_count": 37,
+    "footage_or_action_unit_access": false,
+    "predicted_strength": "Natural general-purpose short-form product copy.",
+    "predicted_risk": "Claims and sentence lengths are not optimized for the available proof windows."
+  },
+  "B": {
+    "method": "edit_aware_script",
+    "word_count": 36,
+    "footage_or_action_unit_access": true,
+    "predicted_strength": "Every line is directly bound to existing complete visual proof.",
+    "predicted_risk": "The limited action variety may still make the final ad feel visually repetitive even when the semantics are clearer."
+  },
+  "real_duration_comparison": null,
+  "reason_real_duration_missing": "No usable ElevenLabs credential or connected submit_voice tool was available.",
+  "status": "archived_unfinished_experiment_draft",
+  "voice_generated": false,
+  "comparison_executed": false,
+  "disposition": "superseded_no_resume",
+  "superseded_by": "Slime VO Blind Alignment Test v2 (user-provided real spoken-video input)",
+  "contamination_guard": "Do not use these draft scripts, predicted bindings, or claims as hints or inputs for the blind-alignment run."
+}

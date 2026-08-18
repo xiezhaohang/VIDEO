@@ -1,0 +1,17 @@
+{
+  "run_id": "20260818-152613-slime-vo-transition-v1",
+  "variant": "A",
+  "method": "blind_script",
+  "language": "en",
+  "status": "archived_unfinished_experiment_draft",
+  "allowed_input": "A colorful squeeze toy that visibly deforms and springs back",
+  "forbidden_inputs_used": [],
+  "script": "Need a quick reset? Grab this colorful squishy toy, give it a squeeze, and watch it spring back into shape. Press, squish, and repeat for a satisfying little break. Pick your favorite color and keep it close.",
+  "word_count": 37,
+  "unsupported_claims": [],
+  "generation_boundary": "Written from the minimal category description only; no shot, action-unit, raw-footage, or prior-timeline fact appears in the copy.",
+  "voice_generated": false,
+  "disposition": "superseded_no_resume",
+  "superseded_by": "Slime VO Blind Alignment Test v2 (user-provided real spoken-video input)",
+  "reuse_for_blind_alignment_forbidden": true
+}

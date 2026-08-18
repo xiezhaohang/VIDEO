@@ -1,0 +1,44 @@
+{
+  "run_id": "20260818-152613-slime-vo-transition-v1",
+  "status": "blocked_voice_generation",
+  "provider": "elevenlabs",
+  "credentials": "not_found",
+  "credential_checks": {
+    "process_environment": false,
+    "user_environment": false,
+    "machine_environment": false,
+    "project_dotenv": false,
+    "windows_credential_target": false,
+    "connected_submit_voice_tool": false
+  },
+  "planned_shared_parameters": {
+    "voice_id": "peter",
+    "model_id": "eleven_multilingual_v2",
+    "speed": 1,
+    "stability": 0.45,
+    "style": "confident, natural short-form product narration"
+  },
+  "key_material_recorded": false,
+  "A": {
+    "audio_generated": false,
+    "actual_duration_s": null,
+    "sentence_timeline": null
+  },
+  "B": {
+    "audio_generated": false,
+    "actual_duration_s": null,
+    "sentence_timeline": null
+  },
+  "blocking_rule": "Real audio duration is required before sentence timing, shot selection, transition pairing, director planning, cutting, sanity checks, or rendering. No estimated or synthetic substitute is permitted.",
+  "final_run_status": "needs_voice_generation",
+  "disposition": "superseded_no_resume",
+  "resume_allowed": false,
+  "superseded_by": "Slime VO Blind Alignment Test v2 (user-provided real spoken-video input)",
+  "downstream_execution": {
+    "real_vo_generated": false,
+    "edit_started": false,
+    "transition_compatibility_started": false,
+    "sanity_gate_started": false,
+    "mp4_generated": false
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "run_id": "20260818-152613-slime-vo-transition-v1",
+  "variant": "B",
+  "method": "edit_aware_script",
+  "language": "en",
+  "status": "archived_unfinished_experiment_draft",
+  "script": "Start with one squeeze and watch the shape spring back. Try a fingertip press for a smaller, focused shape change. See the bright color mix up close, then finish by squeezing the whole colorful set together.",
+  "word_count": 36,
+  "sentence_bindings": [
+    {
+      "sentence": "Start with one squeeze and watch the shape spring back.",
+      "claim": "A squeeze visibly deforms the toy and it returns toward its open shape after release.",
+      "action_unit": "AU42_01",
+      "proof": "Single blue unit: prepare, squeeze/deformation, release, readable returned state.",
+      "estimated_visual_duration_s": 2.85,
+      "transition_intent": "Open on the clearest single-unit action; exit on the stable open-palm result."
+    },
+    {
+      "sentence": "Try a fingertip press for a smaller, focused shape change.",
+      "claim": "A fingertip press creates a visible local deformation.",
+      "action_unit": "AU45_06",
+      "proof": "Orange/transparent unit: repeated local fingertip presses followed by recovery and hand exit.",
+      "estimated_visual_duration_s": 2.6,
+      "transition_intent": "Move from full-hand squeeze to a closer local gesture; enter before the first press and leave after recovery."
+    },
+    {
+      "sentence": "See the bright color mix up close, then finish by squeezing the whole colorful set together.",
+      "claim": "The footage shows multiple bright colors and a complete group squeeze/release.",
+      "action_unit": [
+        "AU41_02",
+        "AU43_02"
+      ],
+      "proof": "Continuous push-in to the five-color group, followed by the complete multi-unit squeeze and release hero action.",
+      "estimated_visual_duration_s": 5.4,
+      "transition_intent": "Use the identity push-in as a neutral bridge into the wider multi-color payoff; finish on the readable released group."
+    }
+  ],
+  "total_bound_visual_duration_s": 10.85,
+  "unsupported_claims": [],
+  "voice_generated": false,
+  "disposition": "superseded_no_resume",
+  "superseded_by": "Slime VO Blind Alignment Test v2 (user-provided real spoken-video input)",
+  "reuse_for_blind_alignment_forbidden": true
+}

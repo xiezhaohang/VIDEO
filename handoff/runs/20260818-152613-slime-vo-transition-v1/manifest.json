@@ -1,0 +1,71 @@
+{
+  "run_id": "20260818-152613-slime-vo-transition-v1",
+  "task_name": "Reconcile Slime VO Transition v1 — needs_voice_generation",
+  "canonical_path": "handoff/runs/20260818-152613-slime-vo-transition-v1/",
+  "status": "needs_voice_generation",
+  "blocking_reason": "ElevenLabs credentials and a usable voice-generation interface were unavailable.",
+  "disposition": "superseded_no_resume",
+  "superseded_by": "Slime VO Blind Alignment Test v2 (user-provided real spoken-video input)",
+  "archive_scope": "text_only_unfinished_experiment_drafts",
+  "latest_updated": false,
+  "main_updated": false,
+  "visual_rules_updated": false,
+  "audio_material_updated": false,
+  "blind_alignment_files_updated": false,
+  "outputs": {
+    "real_vo_generated": false,
+    "mp4_generated": false,
+    "transition_compatibility_executed": false,
+    "sanity_gate_executed": false
+  },
+  "files": [
+    {
+      "repository_path": "handoff/runs/20260818-152613-slime-vo-transition-v1/blind_script.json",
+      "type": "json",
+      "purpose": "Canonical text-only archive for an unfinished superseded experiment"
+    },
+    {
+      "repository_path": "handoff/runs/20260818-152613-slime-vo-transition-v1/blind_script.txt",
+      "type": "txt",
+      "purpose": "Canonical text-only archive for an unfinished superseded experiment"
+    },
+    {
+      "repository_path": "handoff/runs/20260818-152613-slime-vo-transition-v1/edit_aware_script.json",
+      "type": "json",
+      "purpose": "Canonical text-only archive for an unfinished superseded experiment"
+    },
+    {
+      "repository_path": "handoff/runs/20260818-152613-slime-vo-transition-v1/edit_aware_script.txt",
+      "type": "txt",
+      "purpose": "Canonical text-only archive for an unfinished superseded experiment"
+    },
+    {
+      "repository_path": "handoff/runs/20260818-152613-slime-vo-transition-v1/elevenlabs_generation.json",
+      "type": "json",
+      "purpose": "Canonical text-only archive for an unfinished superseded experiment"
+    },
+    {
+      "repository_path": "handoff/runs/20260818-152613-slime-vo-transition-v1/manifest.json",
+      "type": "json",
+      "purpose": "Canonical text-only archive for an unfinished superseded experiment"
+    },
+    {
+      "repository_path": "handoff/runs/20260818-152613-slime-vo-transition-v1/report.html",
+      "type": "html",
+      "purpose": "Canonical text-only archive for an unfinished superseded experiment"
+    },
+    {
+      "repository_path": "handoff/runs/20260818-152613-slime-vo-transition-v1/script_comparison.json",
+      "type": "json",
+      "purpose": "Canonical text-only archive for an unfinished superseded experiment"
+    },
+    {
+      "repository_path": "handoff/runs/20260818-152613-slime-vo-transition-v1/summary.md",
+      "type": "md",
+      "purpose": "Canonical text-only archive for an unfinished superseded experiment"
+    }
+  ],
+  "contamination_guard": "This archive must not be copied into, referenced as a hint by, or used to resume Slime VO Blind Alignment Test v2.",
+  "embedded_commit_sha": null,
+  "commit_reference_policy": "Use the handoff branch history and reconciliation status entry; do not mutate this archive to self-reference its own commit."
+}
