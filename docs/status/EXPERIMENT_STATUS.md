@@ -81,3 +81,33 @@
 - Local only: MP4 与大文件保持本地，索引见 canonical archive 的 `local_only_index.json`。
 - Updated at: `2026-08-18T12:12:29+08:00`
 - Next step: 本次未启动新素材；该素材不继续执行。
+
+## 20260818-143548-no-vo-blind-test1-slime
+
+- Experiment: No-VO Blind Auto Edit Test 1 — Slime
+- Status: `handed_off`
+- Started at: `2026-08-18T14:35:48+08:00`
+- Updated at: `2026-08-18T15:01:12.2066214+08:00`
+- Owner: `Codex`
+- Branch: `handoff`
+- Base commit: `d799a8c88e4a436f443d0de8be70ef57fc7a3fe3`
+- Handoff payload commit: `ef54b3597a6a884dc6f32952903e0333dacb2f7c`
+- Inputs frozen: `yes`; manifest: `handoff/runs/20260818-143548-no-vo-blind-test1-slime/manifest.json`
+- Human Sanity Gate: `pass` (Codex human-style full-timeline and cut-boundary visual review)
+- Hard failures:
+  - visible motion loop: `false`
+  - repeated motion fill: `false`
+  - result not reached before cut: `false`
+  - reset/replay without editorial purpose: `false`
+  - unexplained state regression: `false`
+- Action Integrity: `pass`; all four selected units reach a visible result and readable hold.
+- Proof Chain / Proof Ownership: `pass`; every deformation result belongs to the operated target product.
+- Metrics summary: 10.85 s visual duration; 4 selected Action Units; 4/5 source files used; 0 hard fails.
+- Published artifacts: `handoff/latest/` and `handoff/runs/20260818-143548-no-vo-blind-test1-slime/` (JSON/MD/HTML only).
+- Local only:
+  - `D:\\解压玩具史莱姆\\edit\\no_vo_blind_test1_slime_v1.mp4` — binary video retained locally by handoff policy.
+  - `D:\\解压玩具史莱姆\\edit\\segments/` — rebuildable intermediate encodes.
+  - `D:\\解压玩具史莱姆\\edit\\verify/` — rebuildable visual QA contact sheets.
+- Report: `handoff/runs/20260818-143548-no-vo-blind-test1-slime/no_vo_blind_test1_slime_report.html`
+- Conclusion: first Visual/No-VO autonomous-timeline experiment passed; no rule promotion requested.
+- Next step: wait for user review before any follow-up experiment.
