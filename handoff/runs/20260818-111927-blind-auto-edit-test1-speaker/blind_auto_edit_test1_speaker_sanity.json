@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "run_id": "20260818-111927-blind-auto-edit-test1-speaker",
+  "status": "PASS",
+  "review_method": "dense full-timeline sequential contact sheet plus every-cut boundary inspection",
+  "reviewed_at": "2026-08-18T11:36:26+08:00",
+  "hard_fail_count": 0,
+  "hard_fail_checks": {
+    "visible_motion_loop": false,
+    "repeated_motion_segment_used_to_fill_duration": false,
+    "result_not_reached_before_cut": false,
+    "reset_or_replay_without_editorial_purpose": false,
+    "cta_or_action_tail_loop": false
+  },
+  "action_integrity": {
+    "status": "PASS",
+    "cross_take_physical_actions": 0,
+    "overlapping_or_reused_source_ranges": 0,
+    "notes": "Every physical action is contained within one verified continuous take. Stable holds are non-periodic."
+  },
+  "automatic_repairs": [
+    {
+      "repair": 1,
+      "allowed_basis": "generic Human Sanity Gate rules only",
+      "changes": [
+        "removed phone-placement reset tail",
+        "removed music-demonstration reset tail",
+        "extended tilt and orientation actions through readable result holds"
+      ],
+      "human_edit_or_reference_answer_used": false,
+      "post_repair_decision_sha256": "2c807af4f0339906cbe2b232507c62477766b635bbe77bb5c7c97368511aa3e0"
+    }
+  ],
+  "repair_count": 1,
+  "repair_limit": 2
+}
