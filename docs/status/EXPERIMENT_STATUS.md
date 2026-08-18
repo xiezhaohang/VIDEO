@@ -85,9 +85,9 @@
 
 - Experiment: No-VO Blind Auto Edit Test 1 — Slime
 - Status: `handed_off`
-- Quality verdict after user review: `failed_human_comprehension`
+- Quality verdict after user review: `failed_human_comprehension_and_transition_flow`
 - Started at: `2026-08-18T14:35:48+08:00`
-- Updated at: `2026-08-18T15:09:00+08:00`
+- Updated at: `2026-08-18T15:13:00+08:00`
 - Owner: `Codex`; final human reviewer: `user`
 - Branch: `handoff`
 - Base commit: `d799a8c88e4a436f443d0de8be70ef57fc7a3fe3`
@@ -95,6 +95,7 @@
 - Inputs frozen: `yes`; manifest: `handoff/runs/20260818-143548-no-vo-blind-test1-slime/manifest.json`
 - Machine/Codex sanity review: `pass`; this did not constitute final human acceptance.
 - Final Human Sanity / commercial comprehension review: `fail` — user reported the finished video was "完全看不明白" because the five source clips appear to perform essentially the same action, so the timeline lacks an understandable narrative/semantic logic without VO.
+- Final Human transition-flow review: `fail` — user reported that transitions between clips feel too stiff/abrupt. This is an inter-shot adjacency problem, not evidence that Action Units themselves are incomplete, and should not be papered over with decorative transition effects.
 - Hard failures:
   - visible motion loop: `false`
   - repeated motion fill: `false`
@@ -104,6 +105,7 @@
 - Action Integrity: `pass`; all four selected units reach a visible result and readable hold.
 - Proof Chain / Proof Ownership: `pass` at local action level, but this was insufficient to create an understandable full-video commercial narrative without VO.
 - Commercial narrative / semantic differentiation: `fail`; visually similar squeeze/deformation actions do not provide enough semantic separation by themselves.
+- Inter-shot transition compatibility: `fail`; cut adjacency did not sufficiently account for framing/scale change, subject position, motion direction/phase, and bridge-shot needs, resulting in visibly rigid joins.
 - Metrics summary: 10.85 s visual duration; 4 selected Action Units; 4/5 source files used; 0 technical hard fails. These metrics do not override the user human-review failure.
 - Published artifacts: `handoff/latest/` and `handoff/runs/20260818-143548-no-vo-blind-test1-slime/` (JSON/MD/HTML only).
 - Local only:
@@ -111,5 +113,5 @@
   - `D:\\解压玩具史莱姆\\edit\\segments/` — rebuildable intermediate encodes.
   - `D:\\解压玩具史莱姆\\edit\\verify/` — rebuildable visual QA contact sheets.
 - Report: `handoff/runs/20260818-143548-no-vo-blind-test1-slime/no_vo_blind_test1_slime_report.html`
-- Conclusion: No-VO autonomous timeline is retained only as a diagnostic baseline. It is not accepted as the production path for this product type. The failure is narrative comprehension, not action extraction or loop safety.
-- Next step: return to the production specification with VO. Run a controlled comparison on the same slime footage: A) blind-generated script, B) edit-aware script generated after material/Action Unit understanding; generate both through ElevenLabs first, then edit both with the same downstream workflow.
+- Conclusion: No-VO autonomous timeline is retained only as a diagnostic baseline. It is not accepted as the production path for this product type. The failures are narrative comprehension and inter-shot transition flow, not action extraction or loop safety.
+- Next step: return to the production specification with VO. Run a controlled comparison on the same slime footage: A) blind-generated script, B) edit-aware script generated after material/Action Unit understanding; generate both through ElevenLabs first, then edit both with the same downstream workflow. Both A/B should share the same experimental Transition Compatibility layer so script generation remains the only A-vs-B variable while the known rigid-cut defect is addressed consistently.
