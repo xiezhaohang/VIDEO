@@ -156,3 +156,22 @@
 - Human Sanity Gate: pending user full viewing; no final human PASS is claimed
 - Local only: final MP4, intermediate segments/master, visual QA frames, and frame-hash evidence remain local under the run output directory
 - Next step: user reviews `slime_vo_blind_alignment_v2_1_final.mp4`; any later version must preserve the recorded hard constraints unless the user explicitly removes them
+
+
+## 20260818-164844-earphone-case-visual-first-v1
+
+- Experiment: Visual-First Blind Auto Edit Test — Earphone Case v1
+- Status: `handed_off`; quality status: `needs_human_review`
+- Updated at: `2026-08-18T17:30:00+08:00`
+- Owner: `Codex`
+- Branch: `handoff`; `main` not modified; `libraries/audio_material/` not modified
+- Handoff payload commit: `8f12f165059f7c512461aba90df3d9702f942253`
+- Canonical archive: `handoff/runs/20260818-164844-earphone-case-visual-first-v1/`
+- Inputs frozen: `yes`; raw media count: `10`
+- Codex Sanity Gate: `pass`; final user human acceptance remains pending
+- Frozen visual master: local-only `D:\\耳机套\\edit\\earphone_case_visual_first_v1.mp4`
+- Frozen visual SHA-256: `B07582526EAF7218893BB897ABDEF4B5141844A18099C9401B9BE1CC670437B5`
+- Duration/spec: `17.65 s`; `1080x1920`; `60 fps`; H.264 yuv420p + AAC technical track
+- Narration: timeline-aware English script generated only after visual freeze; ElevenLabs audio not generated
+- Rule promotion: none
+- Next step: user reviews the frozen local MP4; narration must adapt to the frozen timeline

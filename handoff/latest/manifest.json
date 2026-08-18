@@ -1,45 +1,118 @@
 {
-  "schema_version":"1.0",
-  "run_id":"20260818-164844-earphone-case-visual-first-v1",
-  "experiment_name":"Visual-First Blind Auto Edit Test — Earphone Case v1",
-  "status":"passed_pending_handoff",
-  "created_at":"2026-08-18T16:48:44+08:00",
-  "branch":"handoff",
-  "base_commit":"37921e3d796e0c99b9ae41a895063d3e6f9d380c",
-  "handoff_commit":"pending",
-  "inputs_frozen":true,
-  "input_directory":"D:\\耳机套",
-  "raw_media_count":10,
-  "artifacts":[
-    {"path":"media_inventory.json","sha256":"0A4656173709BF6B09E1926B2D46001CB1269D19B1F880D18EADED772B4A8171"},
-    {"path":"action_units.json","sha256":"62402CA6765D3CD2B81DD7D121110D4E6A0E6D659F8D9FBE5CA7DE5712C16040"},
-    {"path":"commercial_understanding.json","sha256":"A8F917A5884AB48AE9DE5F264624B2EECAE7FB2DEB68497C479E807B6C7DE905"},
-    {"path":"state_graph.json","sha256":"8AE725E040AB75F11B83C2E83FAB8833E8FA778EEFCE57CC5696C232F76D98CC"},
-    {"path":"scene_role_candidates.json","sha256":"D773DF6ABE66ECF815775ED3F24F75C361290FDE7102D71356D5CE07DF5C04AF"},
-    {"path":"transition_pair_analysis.json","sha256":"964FE36DB720ED06E3EB352E15D2693B01D1BAEA8E88FB3372B4E025DC523F06"},
-    {"path":"director_plan.json","sha256":"0A3BE54B27BC6C845B0349E0CF1E302A1E23CEDC35EF9E95783FAF99ACA07F3E"},
-    {"path":"decisions.json","sha256":"811B8614999962F962185DA78018AD6D2F4DB44359DDB2D4568D533EDE46C7BA"},
-    {"path":"sanity.json","sha256":"035D3F1BE51B554C46BAF19CAC98685A78729AD58475AA6CE9E449D639D4A5AC"},
-    {"path":"metrics.json","sha256":"D94CB61E9CE5369EDE5FFCF022DE916323217C9AB973A64115DEA43DC825ED69"},
-    {"path":"frozen_timeline_hash.json","sha256":"5E039B62C24BDC1CFAE97047C20DA3D12B4CD592795C0DDAF17BBBF9019F7B35"},
-    {"path":"timeline_aware_voice_script.txt","sha256":"47EBC23C9AE276DDE1BA1ADF36CA85A6A5D8DEC001052897AE641347B7C64666"},
-    {"path":"timeline_aware_voice_script.json","sha256":"0E7AAF120FBCA1A7B65BEE210DA0BA1119D2761FD4F0F0C587C5F491D2DC33FC"},
-    {"path":"report.html","sha256":"85BA5EB7C8C5571F3F6636AEA6723B1085891627488F1CB7FAE755CD05029D9B"},
-    {"path":"summary.md","sha256":"7E3633919A96F6279B61F561EA11C5AB5C3A24207C30C3A01CC83E8AB5515BBA"},
-    {"path":"project.md","sha256":"BBAD2417729A4A461B2C8E485DE9C7E33F118384ADD430B1666A76D4949278A2"}
+  "schema_version": "1.0",
+  "run_id": "20260818-164844-earphone-case-visual-first-v1",
+  "experiment_name": "Visual-First Blind Auto Edit Test — Earphone Case v1",
+  "status": "handed_off",
+  "created_at": "2026-08-18T16:48:44+08:00",
+  "branch": "handoff",
+  "base_commit": "37921e3d796e0c99b9ae41a895063d3e6f9d380c",
+  "handoff_commit": "8f12f165059f7c512461aba90df3d9702f942253",
+  "inputs_frozen": true,
+  "input_directory": "D:\\耳机套",
+  "raw_media_count": 10,
+  "artifacts": [
+    {
+      "path": "media_inventory.json",
+      "sha256": "0A4656173709BF6B09E1926B2D46001CB1269D19B1F880D18EADED772B4A8171"
+    },
+    {
+      "path": "action_units.json",
+      "sha256": "62402CA6765D3CD2B81DD7D121110D4E6A0E6D659F8D9FBE5CA7DE5712C16040"
+    },
+    {
+      "path": "commercial_understanding.json",
+      "sha256": "A8F917A5884AB48AE9DE5F264624B2EECAE7FB2DEB68497C479E807B6C7DE905"
+    },
+    {
+      "path": "state_graph.json",
+      "sha256": "8AE725E040AB75F11B83C2E83FAB8833E8FA778EEFCE57CC5696C232F76D98CC"
+    },
+    {
+      "path": "scene_role_candidates.json",
+      "sha256": "D773DF6ABE66ECF815775ED3F24F75C361290FDE7102D71356D5CE07DF5C04AF"
+    },
+    {
+      "path": "transition_pair_analysis.json",
+      "sha256": "964FE36DB720ED06E3EB352E15D2693B01D1BAEA8E88FB3372B4E025DC523F06"
+    },
+    {
+      "path": "director_plan.json",
+      "sha256": "0A3BE54B27BC6C845B0349E0CF1E302A1E23CEDC35EF9E95783FAF99ACA07F3E"
+    },
+    {
+      "path": "decisions.json",
+      "sha256": "811B8614999962F962185DA78018AD6D2F4DB44359DDB2D4568D533EDE46C7BA"
+    },
+    {
+      "path": "sanity.json",
+      "sha256": "035D3F1BE51B554C46BAF19CAC98685A78729AD58475AA6CE9E449D639D4A5AC"
+    },
+    {
+      "path": "metrics.json",
+      "sha256": "D94CB61E9CE5369EDE5FFCF022DE916323217C9AB973A64115DEA43DC825ED69"
+    },
+    {
+      "path": "frozen_timeline_hash.json",
+      "sha256": "5E039B62C24BDC1CFAE97047C20DA3D12B4CD592795C0DDAF17BBBF9019F7B35"
+    },
+    {
+      "path": "timeline_aware_voice_script.txt",
+      "sha256": "47EBC23C9AE276DDE1BA1ADF36CA85A6A5D8DEC001052897AE641347B7C64666"
+    },
+    {
+      "path": "timeline_aware_voice_script.json",
+      "sha256": "0E7AAF120FBCA1A7B65BEE210DA0BA1119D2761FD4F0F0C587C5F491D2DC33FC"
+    },
+    {
+      "path": "report.html",
+      "sha256": "85BA5EB7C8C5571F3F6636AEA6723B1085891627488F1CB7FAE755CD05029D9B"
+    },
+    {
+      "path": "summary.md",
+      "sha256": "7E3633919A96F6279B61F561EA11C5AB5C3A24207C30C3A01CC83E8AB5515BBA"
+    },
+    {
+      "path": "project.md",
+      "sha256": "BBAD2417729A4A461B2C8E485DE9C7E33F118384ADD430B1666A76D4949278A2"
+    }
   ],
-  "local_only":[
-    {"path":"D:\\耳机套\\edit\\earphone_case_visual_first_v1.mp4","sha256":"B07582526EAF7218893BB897ABDEF4B5141844A18099C9401B9BE1CC670437B5","reason":"binary video retained locally by handoff policy"},
-    {"path":"D:\\耳机套\\edit\\segments","reason":"rebuildable intermediate encodes"},
-    {"path":"D:\\耳机套\\edit\\verify","reason":"rebuildable visual QA contact sheets"}
+  "local_only": [
+    {
+      "path": "D:\\耳机套\\edit\\earphone_case_visual_first_v1.mp4",
+      "sha256": "B07582526EAF7218893BB897ABDEF4B5141844A18099C9401B9BE1CC670437B5",
+      "reason": "binary video retained locally by handoff policy"
+    },
+    {
+      "path": "D:\\耳机套\\edit\\segments",
+      "reason": "rebuildable intermediate encodes"
+    },
+    {
+      "path": "D:\\耳机套\\edit\\verify",
+      "reason": "rebuildable visual QA contact sheets"
+    }
   ],
-  "sanity_gate":{"verdict":"pass","reviewer":"Codex full-timeline visual review; final user human acceptance pending","visible_motion_loop":false,"repeated_motion_fill":false,"result_not_reached_before_cut":false,"reset_replay_without_purpose":false,"unexplained_state_regression":false,"primary_action_chain_incomplete":false,"random_montage":false},
-  "metrics_summary":{"visual_duration_s":17.65,"timeline_segments":6,"source_files_used":5,"fps":"60/1"},
-  "narration_backfit":true,
-  "elevenlabs_generated":false,
-  "rule_promotion":false,
-  "writes_to_main":false,
-  "writes_to_audio_material":false,
-  "conclusion":"Frozen visual-first master passed Codex sanity review and is handed off for final user human acceptance; narration was generated only after visual freeze.",
-  "next_step":"User human review of the frozen MP4; do not alter the timeline for narration fit."
+  "sanity_gate": {
+    "verdict": "pass",
+    "reviewer": "Codex full-timeline visual review; final user human acceptance pending",
+    "visible_motion_loop": false,
+    "repeated_motion_fill": false,
+    "result_not_reached_before_cut": false,
+    "reset_replay_without_purpose": false,
+    "unexplained_state_regression": false,
+    "primary_action_chain_incomplete": false,
+    "random_montage": false
+  },
+  "metrics_summary": {
+    "visual_duration_s": 17.65,
+    "timeline_segments": 6,
+    "source_files_used": 5,
+    "fps": "60/1"
+  },
+  "narration_backfit": true,
+  "elevenlabs_generated": false,
+  "rule_promotion": false,
+  "writes_to_main": false,
+  "writes_to_audio_material": false,
+  "conclusion": "Frozen visual-first master passed Codex sanity review and is handed off for final user human acceptance; narration was generated only after visual freeze.",
+  "next_step": "User human review of the frozen MP4; do not alter the timeline for narration fit."
 }
