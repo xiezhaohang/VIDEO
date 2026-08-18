@@ -1,0 +1,30 @@
+{
+  "run_id": "20260818-164844-earphone-case-visual-first-v1",
+  "input_root": "D:\\耳机套",
+  "scan_scope": "root-level files only; edit directory excluded",
+  "initial_root_file_count": 10,
+  "raw_media_count": 10,
+  "preexisting_finished_edits_detected": 0,
+  "preexisting_edl_detected": 0,
+  "finished_edit_policy": "register only, never use",
+  "common_video_properties": {
+    "width": 1728,
+    "height": 3072,
+    "frame_rate": "60000/1001",
+    "video_codec": "hevc",
+    "pixel_format": "yuv420p10le",
+    "audio_codec": "aac"
+  },
+  "files": [
+    {"name":"DJI_20260811101525_0054_D.MP4","duration_s":26.793,"size_bytes":321731239,"sha256":"17CD5724FDE494A4D4E07EACA046E32D74D18E3EAD688E4B4FCF3CF5958582C8","literal_action":"Repeated two-variant hand reveal and hold","commercial_intent":"Product identity / variant hero","story_role":"Product Identity","used":false,"reason_if_unused":"Strong identity but duplicates the cleaner final two-product payoff."},
+    {"name":"DJI_20260811101629_0055_D.MP4","duration_s":20.671,"size_bytes":247525023,"sha256":"34CE7A3447C6CC4403EBB462AD03B01A803956A4458603DCFCBEF793219AF31F","literal_action":"Multiple attempts to insert a white earbud case into the lower shell","commercial_intent":"Installation demonstration","story_role":"Demo candidate","used":false,"reason_if_unused":"Multiple resets and retries; a cleaner continuous take exists."},
+    {"name":"DJI_20260811101729_0056_D.MP4","duration_s":4.888,"size_bytes":59395753,"sha256":"C337B192846113F7B3BA8D283307A61BA5C8FEA8D9BBC6AA081D86C40A06237B","literal_action":"Single clean insertion into the lower shell","commercial_intent":"Installation demonstration","story_role":"Primary Demo alternate","used":false,"reason_if_unused":"Clean, but the selected take continues into top-shell fitting and open-state proof."},
+    {"name":"DJI_20260811101759_0058_D.MP4","duration_s":11.762,"size_bytes":141392020,"sha256":"1D83992FFBDD8C0F8B365FDC5FC705C73CCFF5FA7D67EE71984FE1DC21C8E976","literal_action":"Insert earbud case, fit matching top shell, open to reveal earbuds","commercial_intent":"Complete installation and access proof","story_role":"Hook + Primary Demonstration","used":true,"selected_ranges_s":[[0.40,3.15],[4.45,8.85]]},
+    {"name":"DJI_20260811101832_0059_D.MP4","duration_s":14.448,"size_bytes":173296847,"sha256":"392A3A1D25279249602B1257CF661AA770533818BF71F3A3AA34131EACB03301","literal_action":"Repeated open/close cycles with earbuds visible","commercial_intent":"Normal-access closure confirmation","story_role":"Primary result continuation","used":true,"selected_ranges_s":[[1.55,2.65]]},
+    {"name":"DJI_20260811101855_0060_D.MP4","duration_s":9.237,"size_bytes":111560512,"sha256":"07CEDDC68118FAE7CA538C805995F64DFF19DBCF28E7285CEBC0C825AAC467D4","literal_action":"Rotate product, detach tail piece, expose bottom USB-C-shaped port","commercial_intent":"Charging-port access / structural detail","story_role":"Secondary Demonstration","used":true,"selected_ranges_s":[[4.70,7.30]]},
+    {"name":"DJI_20260811101912_0061_D.MP4","duration_s":10.177,"size_bytes":123824593,"sha256":"154269FDB6DA5E6A0334E0B4F388348A930266C393CBB7478D1C996F1F4F6D89","literal_action":"Two hand-held carabiner display takes","commercial_intent":"Portable carry payoff","story_role":"Payoff alternate","used":false,"reason_if_unused":"Alternate background/take; 0062 has cleaner subject hold and transition framing."},
+    {"name":"DJI_20260811101932_0062_D.MP4","duration_s":8.926,"size_bytes":108257023,"sha256":"F336056251C7CA0ED95A36B3CEEBEF8D5E8B2A5F205588E2E1D4FC4B0A3994B6","literal_action":"Two carabiner carry-display takes","commercial_intent":"Portable carry payoff","story_role":"Additional Value","used":true,"selected_ranges_s":[[3.65,6.15]]},
+    {"name":"DJI_20260811102040_0063_D.MP4","duration_s":6.456,"size_bytes":78700384,"sha256":"194184CE018DFEC331A5F7AB12A733908B759340F76C893C83F0CB00D4FD1B05","literal_action":"Overhead pullback from close two-product view","commercial_intent":"Two-variant hero ending","story_role":"Ending alternate","used":false,"reason_if_unused":"The 0064 take is smoother and keeps both products readable earlier."},
+    {"name":"DJI_20260811102146_0064_D.MP4","duration_s":6.440,"size_bytes":78439016,"sha256":"7B2315EEC852F2D0110BB3398D1F1F096D5634E23A120FDC45BFF06EA723FD7E","literal_action":"Smooth overhead pullback revealing two product variants","commercial_intent":"Product/variant payoff and natural ending","story_role":"Product Payoff / Ending","used":true,"selected_ranges_s":[[0.35,4.65]]}
+  ]
+}

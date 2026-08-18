@@ -1,0 +1,34 @@
+{
+  "run_id": "20260818-164844-earphone-case-visual-first-v1",
+  "method": "Blind visual scan at 1-2 fps, followed by 5-8 fps candidate verification and final cut-boundary review.",
+  "action_units": [
+    {
+      "id":"AU-01","name":"two_variant_hand_reveal","sources":["0054"],"take_count":4,
+      "state_before":"empty tabletop","action":"two finished fish-character cases move into frame in both hands","state_after":"two finished variants held side by side","effect_confirmed":true,"result_visible":true,"new_information":"product identity, human scale, visible variants","selected":false,"reason":"Final overhead pair payoff is cleaner and avoids redundant variant proof."
+    },
+    {
+      "id":"AU-02","name":"lower_shell_insertion","sources":["0055","0056","0058"],"take_count":"multiple; 0055 contains repeated attempts",
+      "state_before":"lower character shell empty; white earbud charging case separate","action":"white charging case slides into lower shell","state_after":"charging case seated in lower shell","effect_confirmed":true,"result_visible":true,"new_information":"0-to-1 installation relationship","selected":true,"selected_source":"0058","source_range_s":[0.40,3.15],"output_range_s":[0.00,2.75],"take_reason":"Clean insertion that continues into the complete assembly chain."
+    },
+    {
+      "id":"AU-03","name":"top_shell_fit_and_open","sources":["0058"],"take_count":1,
+      "state_before":"charging case seated in lower shell; matching face/top piece separate","action":"fit top piece, then open the assembled lid","state_after":"fully assembled character case open with earbuds visible","effect_confirmed":true,"result_visible":true,"new_information":"assembly completion and normal earbud access","selected":true,"source_range_s":[4.45,8.85],"output_range_s":[2.75,7.15],"readable_hold_s":1.70
+    },
+    {
+      "id":"AU-04","name":"lid_close","sources":["0059"],"take_count":2,
+      "state_before":"assembled case open; earbuds visible","action":"close the hinged lid","state_after":"assembled case closed","effect_confirmed":true,"result_visible":true,"new_information":"normal closure after access","selected":true,"source_range_s":[1.55,2.65],"output_range_s":[7.15,8.25]
+    },
+    {
+      "id":"AU-05","name":"carabiner_carry_display","sources":["0061","0062"],"take_count":4,
+      "state_before":"finished closed case off frame and already connected to carabiner","action":"bring case into frame suspended from carabiner and hold","state_after":"case hangs visibly from finger by carabiner","effect_confirmed":true,"result_visible":true,"new_information":"portable attachment/carry configuration","selected":true,"selected_source":"0062","source_range_s":[3.65,6.15],"output_range_s":[8.25,10.75],"proof_limit":"Demonstrates hanging configuration, not the clipping-on action itself."
+    },
+    {
+      "id":"AU-06","name":"tail_detach_port_reveal","sources":["0060"],"take_count":1,
+      "state_before":"finished closed case with tail piece attached","action":"rotate product and pull tail piece away","state_after":"tail piece separate; bottom USB-C-shaped port visible","effect_confirmed":true,"result_visible":true,"new_information":"charging-port access and removable structural piece","selected":true,"source_range_s":[4.70,7.30],"output_range_s":[10.75,13.35],"proof_limit":"No external cable, charging animation, or charging-success feedback is shown; classified as port-access proof only."
+    },
+    {
+      "id":"AU-07","name":"two_variant_overhead_pullback","sources":["0063","0064"],"take_count":2,
+      "state_before":"tight overhead crop on finished products","action":"camera pulls back","state_after":"two finished product variants readable together","effect_confirmed":true,"result_visible":true,"new_information":"variant summary and clean payoff composition","selected":true,"selected_source":"0064","source_range_s":[0.35,4.65],"output_range_s":[13.35,17.65],"take_reason":"Smoother pullback and earlier two-product readability."
+    }
+  ]
+}

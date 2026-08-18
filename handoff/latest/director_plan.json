@@ -1,0 +1,17 @@
+{
+  "run_id":"20260818-164844-earphone-case-visual-first-v1",
+  "experiment":"Visual-First Blind Auto Edit Test — Earphone Case v1",
+  "timeline_frozen":true,
+  "output_spec":{"width":1080,"height":1920,"fps":60,"video_codec":"H.264","pixel_format":"yuv420p","audio_codec":"AAC","audio_content":"silent technical track"},
+  "timeline":[
+    {"id":"D01","output_s":[0.00,2.75],"source":"DJI_20260811101759_0058_D.MP4","source_s":[0.40,3.15],"role":"Hook + Primary Demonstration prepare/action","action":"insert white earbud case into lower shell","state_after":"case seated"},
+    {"id":"D02","output_s":[2.75,7.15],"source":"DJI_20260811101759_0058_D.MP4","source_s":[4.45,8.85],"role":"Product Identity + Primary Demonstration result","action":"fit matching top and open","state_after":"assembled open case; earbuds readable"},
+    {"id":"D03","output_s":[7.15,8.25],"source":"DJI_20260811101832_0059_D.MP4","source_s":[1.55,2.65],"role":"Result continuation / breathing","action":"close lid","state_after":"assembled closed case"},
+    {"id":"D04","output_s":[8.25,10.75],"source":"DJI_20260811101932_0062_D.MP4","source_s":[3.65,6.15],"role":"Additional Value","action":"display case hanging by carabiner","state_after":"carry configuration readable"},
+    {"id":"D05","output_s":[10.75,13.35],"source":"DJI_20260811101855_0060_D.MP4","source_s":[4.70,7.30],"role":"Secondary Demonstration","action":"detach tail piece and reveal port","state_after":"port exposed"},
+    {"id":"D06","output_s":[13.35,17.65],"source":"DJI_20260811102146_0064_D.MP4","source_s":[0.35,4.65],"role":"Product Payoff + Ending","action":"overhead pullback reveals two variants","state_after":"two-product hero"}
+  ],
+  "total_duration_s":17.65,
+  "chapter_path":["INSTALL","ACCESS","CARRY","PORT_ACCESS","VARIANT_PAYOFF"],
+  "rule_promotion":false
+}

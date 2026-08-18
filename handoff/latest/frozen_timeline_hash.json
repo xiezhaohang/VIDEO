@@ -1,0 +1,10 @@
+{
+  "run_id":"20260818-164844-earphone-case-visual-first-v1",
+  "frozen_at":"2026-08-18T16:52:00+08:00",
+  "timeline_locked":true,
+  "visual_master_path":"D:\\耳机套\\edit\\earphone_case_visual_first_v1.mp4",
+  "visual_master_sha256":"B07582526EAF7218893BB897ABDEF4B5141844A18099C9401B9BE1CC670437B5",
+  "duration_s":17.65,
+  "timeline_segment_signature":"0058@0.40-3.15|0058@4.45-8.85|0059@1.55-2.65|0062@3.65-6.15|0060@4.70-7.30|0064@0.35-4.65",
+  "post_freeze_policy":"Narration must adapt to these windows. No shot, order, or trim changes are permitted for narration fit."
+}

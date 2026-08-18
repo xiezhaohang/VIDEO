@@ -1,0 +1,16 @@
+{
+  "run_id":"20260818-164844-earphone-case-visual-first-v1",
+  "language":"en",
+  "visual_timeline_sha256":"B07582526EAF7218893BB897ABDEF4B5141844A18099C9401B9BE1CC670437B5",
+  "visual_duration_s":17.65,
+  "audio_generation_requested":false,
+  "segments":[
+    {"output_s":[0.00,2.75],"shot_action":"white earbud case slides into lower character shell","commercial_role":"Hook / Installation","text":"Slide your earbuds case into the character shell.","claim_support":"exact visual match"},
+    {"output_s":[2.75,7.15],"shot_action":"matching top is fitted; lid opens and earbuds become visible","commercial_role":"Product identity / Assembly / Access proof","text":"Fit the matching top, then open it up—your earbuds stay fully accessible.","claim_support":"exact visual match"},
+    {"output_s":[7.15,8.25],"shot_action":"assembled case closes","commercial_role":"Result continuation / Breathing","text":null,"reason_for_silence":"1.10 s action is self-explanatory; avoids rushed narration."},
+    {"output_s":[8.25,10.75],"shot_action":"finished case enters and hangs by carabiner","commercial_role":"Additional value / Carry","text":"Clip it on and take it with you.","claim_support":"visual shows carry configuration; wording avoids claiming the clipping action is shown"},
+    {"output_s":[10.75,13.35],"shot_action":"tail piece detaches and bottom port is exposed","commercial_role":"Secondary demonstration / Port access","text":"Remove the tail for easy charging-port access.","claim_support":"exact visual match; no charging-success claim"},
+    {"output_s":[13.35,17.65],"shot_action":"camera pulls back over two finished variants","commercial_role":"Product payoff / Ending","text":"A playful little upgrade for the case you carry every day.","claim_support":"product identity and carry use are established visually"}
+  ],
+  "full_text":"Slide your earbuds case into the character shell. Fit the matching top, then open it up—your earbuds stay fully accessible. Clip it on and take it with you. Remove the tail for easy charging-port access. A playful little upgrade for the case you carry every day."
+}

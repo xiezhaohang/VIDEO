@@ -1,0 +1,25 @@
+{
+  "run_id":"20260818-164844-earphone-case-visual-first-v1",
+  "nodes":[
+    {"id":"S0","state":"lower shell empty; white charging case separate"},
+    {"id":"S1","state":"white charging case seated in lower shell"},
+    {"id":"S2","state":"top shell fitted; assembled case closed"},
+    {"id":"S3","state":"assembled case open; earbuds visible"},
+    {"id":"S4","state":"assembled case closed"},
+    {"id":"S5","state":"assembled case suspended from carabiner"},
+    {"id":"S6","state":"assembled case closed; tail piece attached"},
+    {"id":"S7","state":"tail piece detached; bottom port visible"},
+    {"id":"S8","state":"new overhead hero scene; two finished product variants"}
+  ],
+  "edges":[
+    {"from":"S0","to":"S1","action":"insert charging case","output_s":[0.00,2.75],"causal_conflict":false},
+    {"from":"S1","to":"S2","action":"fit top shell","output_s":[2.75,5.40],"causal_conflict":false},
+    {"from":"S2","to":"S3","action":"open lid","output_s":[5.40,7.15],"causal_conflict":false},
+    {"from":"S3","to":"S4","action":"close lid","output_s":[7.15,8.25],"causal_conflict":false},
+    {"from":"S4","to":"S5","action":"independent carry display with same closed product state","output_s":[8.25,10.75],"causal_conflict":false,"continuity_mode":"clear scene change"},
+    {"from":"S5","to":"S6","action":"cut to close structural view; product remains assembled and closed","output_s":[10.75,11.50],"causal_conflict":false},
+    {"from":"S6","to":"S7","action":"detach tail piece to expose port","output_s":[11.50,13.35],"causal_conflict":false},
+    {"from":"S7","to":"S8","action":"declared new overhead product-payoff scene","output_s":[13.35,17.65],"causal_conflict":false,"continuity_mode":"independent hero scene with major angle and scale change"}
+  ],
+  "checks":{"repeated_first_action":false,"unexplained_object_appearance":false,"unexplained_object_disappearance":false,"unexplained_state_regression":false,"chapter_reopen":false}
+}
