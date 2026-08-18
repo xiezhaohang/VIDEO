@@ -1,0 +1,26 @@
+{
+  "run_id": "20260818-143548-no-vo-blind-test1-slime",
+  "metrics_evaluated_after_sanity_gate": true,
+  "source_duration_s": 49.199167,
+  "final_visual_duration_s": 10.85,
+  "final_container_duration_s": 10.871354,
+  "selected_raw_duration_s": 10.85,
+  "raw_time_utilization_ratio": 0.220532,
+  "source_files_used": 4,
+  "source_file_utilization_ratio": 0.8,
+  "selected_action_units": 4,
+  "cut_count": 3,
+  "shot_durations_s": [2.85,2.35,2.60,3.05],
+  "average_shot_duration_s": 2.7125,
+  "minimum_shot_duration_s": 2.35,
+  "maximum_shot_duration_s": 3.05,
+  "commercial_beats": 4,
+  "hard_fail_count": 0,
+  "visible_motion_loop_count": 0,
+  "repeated_motion_fill_count": 0,
+  "same_source_range_reuse_count": 0,
+  "same_take_nonlinear_jump_count": 0,
+  "result_not_reached_count": 0,
+  "output": {"width":1080,"height":1920,"fps":"60/1","codec":"h264","pixel_format":"yuv420p","audio_codec":"aac","size_bytes":10559420,"sha256":"46d20fadc7ee4b2b217eef37f93dc1aac593768724e433ed8f7c4dfeb27bbd17"}
+}
+

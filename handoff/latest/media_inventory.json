@@ -1,0 +1,36 @@
+{
+  "run_id": "20260818-143548-no-vo-blind-test1-slime",
+  "input_directory": "D:\\解压玩具史莱姆",
+  "scan_scope": "five raw MP4 files only",
+  "blind_test_constraints": {
+    "human_finished_edit_used": false,
+    "historical_edl_used": false,
+    "human_source_mapping_used": false,
+    "human_duration_answer_used": false,
+    "voiceover_generated": false,
+    "audio_branch_enabled": false,
+    "on_camera_audio_role": "registered_only_not_used_for_structure_or_proof"
+  },
+  "totals": {
+    "raw_file_count": 5,
+    "duration_s": 49.199167,
+    "resolution": "1728x3072",
+    "nominal_fps": "60000/1001",
+    "on_camera_audio_present_count": 5
+  },
+  "files": [
+    {"id":"raw_0041","file":"DJI_20260813102838_0041_D.MP4","duration_s":8.5085,"video_codec":"hevc","width":1728,"height":3072,"fps":"60000/1001","audio":{"present":true,"codec":"aac","sample_rate":48000,"channels":2,"editorial_use":"none"}},
+    {"id":"raw_0042","file":"DJI_20260813102928_0042_D.MP4","duration_s":6.973633,"video_codec":"hevc","width":1728,"height":3072,"fps":"60000/1001","audio":{"present":true,"codec":"aac","sample_rate":48000,"channels":2,"editorial_use":"none"}},
+    {"id":"raw_0043","file":"DJI_20260813102942_0043_D.MP4","duration_s":10.8108,"video_codec":"hevc","width":1728,"height":3072,"fps":"60000/1001","audio":{"present":true,"codec":"aac","sample_rate":48000,"channels":2,"editorial_use":"none"}},
+    {"id":"raw_0044","file":"DJI_20260813102959_0044_D.MP4","duration_s":6.756767,"video_codec":"hevc","width":1728,"height":3072,"fps":"60000/1001","audio":{"present":true,"codec":"aac","sample_rate":48000,"channels":2,"editorial_use":"none"}},
+    {"id":"raw_0045","file":"DJI_20260813103012_0045_D.MP4","duration_s":16.149467,"video_codec":"hevc","width":1728,"height":3072,"fps":"60000/1001","audio":{"present":true,"codec":"aac","sample_rate":48000,"channels":2,"editorial_use":"none"}}
+  ],
+  "visual_entities": {
+    "target_product": "彩色透明/半透明挤压解压玩具（目录名为史莱姆；不据画面断言具体材质）",
+    "demo_props": [],
+    "supporting_visuals": ["操作手部", "人物上身与鞋", "灰色地面背景"],
+    "misidentification_risk": "low",
+    "notes": "五种颜色/透明组合均为同类目标商品；手部只承担操作与尺度参照。"
+  }
+}
+

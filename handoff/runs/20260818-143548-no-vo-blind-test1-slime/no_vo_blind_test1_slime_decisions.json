@@ -1,0 +1,21 @@
+{
+  "run_id": "20260818-143548-no-vo-blind-test1-slime",
+  "test_name": "No-VO Blind Auto Edit Test 1 — Slime",
+  "version": "v1",
+  "inputs_frozen": true,
+  "rules_sources": [
+    "PROJECT_RULES.md from handoff branch (main does not contain this draft file)",
+    "main: docs/通用商品实拍AI剪辑规则库.md",
+    "main: rules/universal_rules.yaml",
+    "main: docs/因果连续性与状态机规则.md",
+    "main: docs/功能章节与商业主线规则.md"
+  ],
+  "prohibited_answer_sources_used": [],
+  "case_specific_frame_answers_used": false,
+  "audio": {"source_audio_detected":true,"director_use":false,"proof_use":false,"output":"silent AAC technical track","bgm":false,"sfx":false,"voiceover":false},
+  "cutting": {"selected_verified_action_units":4,"retime_used":false,"visible_motion_loop":false,"repeated_source_range":false,"same_take_nonlinear_jump":false},
+  "render": {"file":"no_vo_blind_test1_slime_v1.mp4","width":1080,"height":1920,"fps":60,"video_codec":"H.264","pixel_format":"yuv420p","audio_codec":"AAC","audio_content":"silence"},
+  "repair_passes_used": 0,
+  "decision_rationale": "四段已形成单品爽点、商品身份、不同玩法和多色高潮的最小完整商业链；第五条素材只提供重复握压或未完成动作，因此不为覆盖率或时长强行加入。"
+}
+

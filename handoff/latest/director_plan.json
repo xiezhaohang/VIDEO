@@ -1,0 +1,15 @@
+{
+  "run_id": "20260818-143548-no-vo-blind-test1-slime",
+  "priority_order": ["Action Integrity","Proof Ownership","Commercial Flow","Rhythm / Visual Energy"],
+  "timeline": [
+    {"order":1,"source":"DJI_20260813102928_0042_D.MP4","source_range_s":[0.0,2.85],"output_range_s":[0.0,2.85],"action_unit":"AU42_01","beat":"Hook","state_before":"蓝色单品在手掌展开","action":"握压使透明鼓包突出后松手","state_after":"蓝色单品重新展开并稳定可读","proof_owner":"蓝色目标商品","effect_confirmed":true,"retime":1.0},
+    {"order":2,"source":"DJI_20260813102838_0041_D.MP4","source_range_s":[6.1,8.45],"output_range_s":[2.85,5.2],"action_unit":"AU41_02","beat":"Product Identity","state_before":"五色商品已排列在地面","action":"镜头连续推进","state_after":"五色商品组形成更清晰近景","proof_owner":"目标商品组","effect_confirmed":true,"retime":1.0},
+    {"order":3,"source":"DJI_20260813103012_0045_D.MP4","source_range_s":[11.75,14.35],"output_range_s":[5.2,7.8],"action_unit":"AU45_06","beat":"Secondary Information","state_before":"橙色/透明商品在掌心展开","action":"手指连续点按局部","state_after":"局部恢复，操作手退出，商品稳定可读","proof_owner":"橙色/透明目标商品","effect_confirmed":true,"retime":1.0},
+    {"order":4,"source":"DJI_20260813102942_0043_D.MP4","source_range_s":[3.7,6.75],"output_range_s":[7.8,10.85],"action_unit":"AU43_02","beat":"Payoff / Hero / Ending","state_before":"多色商品组在双手展开","action":"同时握压产生多个突出形变后松手","state_after":"多色商品组重新展开并保持可读","proof_owner":"多色目标商品组","effect_confirmed":true,"retime":1.0}
+  ],
+  "transition_policy": "各段为构图差异明确的独立演示蒙太奇；不伪装成同一连续时空。所有切点位于结果与可读尾部之后。",
+  "same_take_nonlinear_jump_count": 0,
+  "visible_motion_loop_allowed": false,
+  "repeated_motion_fill_allowed": false
+}
+
