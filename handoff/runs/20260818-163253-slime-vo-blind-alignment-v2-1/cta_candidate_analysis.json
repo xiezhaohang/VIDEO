@@ -1,0 +1,39 @@
+{
+  "run_id": "20260818-163253-slime-vo-blind-alignment-v2-1",
+  "scan_scope": "D:/解压玩具史莱姆 top-level DJI_*.MP4 only; edit outputs excluded",
+  "target_semantics": "Tap the link below to check them out.",
+  "files_scanned": [
+    "DJI_20260813102838_0041_D.MP4",
+    "DJI_20260813102928_0042_D.MP4",
+    "DJI_20260813102942_0043_D.MP4",
+    "DJI_20260813102959_0044_D.MP4",
+    "DJI_20260813103012_0045_D.MP4"
+  ],
+  "natural_directional_gesture_found": true,
+  "direction_evidence": "The pointing hand enters from screen lower-right. The extended index points screen-left with a slight downward component toward the product/lower CTA area; it is not relabeled as a pure down-right vector.",
+  "candidates": [
+    {
+      "id": "AU45_CTA_POINT_1",
+      "source": "DJI_20260813103012_0045_D.MP4",
+      "source_range_s": [4.15, 6.483333],
+      "chain": "open-palm setup -> lower-right hand entry -> directional index point -> readable peak -> release/exit -> settle",
+      "readability": "high",
+      "transition_fit": "pass with sentence-boundary product-detail cut",
+      "selected": true,
+      "reason": "Cleanest single complete gesture; peak aligns with 'link below' while preserving a readable release and tail."
+    },
+    {
+      "id": "AU45_CTA_POINT_2",
+      "source": "DJI_20260813103012_0045_D.MP4",
+      "source_range_s": [11.25, 14.05],
+      "chain": "open-palm setup -> hand entry -> longer repeated/tracing point -> exit -> settle",
+      "readability": "medium",
+      "transition_fit": "usable",
+      "selected": false,
+      "reason": "Longer and more trace-like; less economical and less singular than candidate 1."
+    }
+  ],
+  "non_candidates": [
+    {"sources": ["DJI_20260813102838_0041_D.MP4", "DJI_20260813102928_0042_D.MP4", "DJI_20260813102942_0043_D.MP4", "DJI_20260813102959_0044_D.MP4"], "reason": "No independent complete directional pointing chain."}
+  ]
+}
