@@ -47,4 +47,20 @@
 6. 报告、manifest 和产物提交到 `handoff` 后，填写 commit SHA 并设为 `handed_off`。
 7. 未达到 `handed_off`，不得启动依赖本结论的下一实验。
 
+## 架构隔离记录
 
+### Audio Material Library Bootstrap — 20260818-audio-material-bootstrap
+
+- Status: `handed_off`
+- Updated at: `2026-08-18T11:15:29+08:00`
+- Owner: `Codex`
+- Branch: `handoff`
+- Base commit: `8163df1c1d06255da5eea7baf05f73be96cdcc4e`
+- Handoff commit: `053883858dcbd8a67ddf228a02622f9975ea0634`
+- Published artifacts: `libraries/audio_material/`
+- Change type: `architecture_isolation`
+- Rule promotion: `no`；本次不是规则晋升，也未写入 `main`
+- Existing Visual Workflow: 未修改；旧无声/视觉规则库保持稳定基线
+- Blind Auto Edit Test 1 — Speaker: 未中断、未修改；本记录不改变其运行状态
+- Conclusion: 已建立完全隔离、显式进入且可回退的 Audio Branch
+- Next step: 后续 `Audio Proof v1` 默认在 `libraries/audio_material/` 内单独立项实验
