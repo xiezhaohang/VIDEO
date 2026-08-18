@@ -19,7 +19,7 @@
 3. Audio Branch 可以显式引用稳定视觉规则，但不得反向覆盖视觉库。
 4. Audio Branch 判定失败、证据不足或声音无价值时，必须回退 Visual Workflow。
 5. 有声实验与其规则、模板、报告默认写入本根目录；实验产物仍按项目 handoff 纪律归档。
-6. 当前正在运行的 `Blind Auto Edit Test 1 — Speaker` 不因本库建立而中断或改写；后续 `Audio Proof v1` 才在本库内启动。
+6. `Blind Auto Edit Test 1 — Speaker` 已因素材需要手机 UI / 界面级识别而由用户终止；其 canonical 归档仅作为高难度负样本 / 未来回归测试保留。
 
 ## 文件导航
 
@@ -29,5 +29,6 @@
 - `rules/audio_proof_rules.yaml`：Audio Proof、Proof modality 与 VO Gap
 - `rules/integration_boundary.yaml`：Visual Workflow / Audio Branch 边界与回退
 - `templates/`：有声素材 brief 与 proof plan
+- `experiments/20260818-111927-blind-auto-edit-test1-speaker/`：已终止的 Speaker 高难度负样本 canonical 归档
 - `CHANGELOG.md`：仅记录本库演进
 

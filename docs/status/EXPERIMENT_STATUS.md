@@ -71,13 +71,13 @@
 ## 20260818-111927-blind-auto-edit-test1-speaker
 
 - Experiment: Blind Auto Edit Test 1 — Speaker
-- Status: COMPLETE
-- Human Sanity Gate: PASS (0 hard fails)
-- Inputs: 13 raw clips + 1 selected voiceover
-- Output: 1 main version, 1080x1920, 60fps, 39.233s
-- Visible motion loops: 0
-- Repeated-motion duration fill: 0
-- Generic automatic repairs: 1/2
-- Handoff content commit: 4a263806d8cfa30eb4d675563a6e1f553174130f
-- Local-only main render: blind_auto_edit_test1_speaker_v1.mp4 (large rendered binary; retained locally)
-- Proof limits: USB port shown without charging-result feedback; remote switching shown without direct remote-volume proof; phone-placement proof begins at 5.1s.
+- Status: `aborted_input_complexity`
+- Termination: `cancelled_by_user_for_material_complexity` (user requested)
+- Reason: 当前素材要求手机 UI / 界面级识别，不适合作为第一轮泛化验证素材。
+- Classification: 不是 Visual Workflow 失败；不是 Audio Branch 规则失败。
+- Retention: 仅作为高难度负样本 / 未来回归测试保留。
+- Canonical archive: `libraries/audio_material/experiments/20260818-111927-blind-auto-edit-test1-speaker/`
+- General handoff: `handoff/runs/20260818-111927-blind-auto-edit-test1-speaker/` 完整 payload 已删除；`handoff/latest/` 仅保留迁移指针。
+- Local only: MP4 与大文件保持本地，索引见 canonical archive 的 `local_only_index.json`。
+- Updated at: `2026-08-18T12:12:29+08:00`
+- Next step: 本次未启动新素材；该素材不继续执行。

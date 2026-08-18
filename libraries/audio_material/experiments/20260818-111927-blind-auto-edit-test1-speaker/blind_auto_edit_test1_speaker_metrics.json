@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "run_id": "20260818-111927-blind-auto-edit-test1-speaker",
+  "status": "ABORTED_INPUT_COMPLEXITY",
+  "input": {
+    "raw_count": 13,
+    "voiceover_count": 1,
+    "voiceover_duration_seconds": 39.235875
+  },
+  "output": {
+    "duration_seconds": 39.233333,
+    "width": 1080,
+    "height": 1920,
+    "fps": 60,
+    "video_frame_count": 2354,
+    "audio": "original selected voiceover, AAC mono 44.1 kHz",
+    "subtitles": false,
+    "bgm": false,
+    "packaging": false
+  },
+  "edit": {
+    "shot_count": 10,
+    "unique_source_files_used": 8,
+    "source_range_reuse_count": 0,
+    "cross_take_action_count": 0,
+    "visible_motion_loop_count": 0,
+    "repeated_motion_fill_count": 0,
+    "hard_fail_count": 0,
+    "automatic_repair_count": 1
+  },
+  "director_qa": {
+    "product_identifiable_in_first_5_seconds": true,
+    "core_phone_placement_proof_start_seconds": 5.1,
+    "commercial_spine_present": true,
+    "unnecessary_information_repetition_count": 0,
+    "proof_gaps": [
+      "USB port is visible, but no cable insertion or charging-result feedback exists in raw footage.",
+      "Remote video/music switching is observable; remote-driven volume change has no clean readable result."
+    ]
+  },
+  "historical_pre_abort_status": "PASS",
+  "archive_status": "aborted_input_complexity",
+  "archive_note": "Metrics were generated before user cancellation and are retained only as historical diagnostics; they are not a final PASS.",
+  "termination_reason": "cancelled_by_user_for_material_complexity"
+}

@@ -1,17 +1,10 @@
-# Blind Auto Edit Test 1 — Speaker
+# Speaker Blind Test — migrated
 
 - Run ID: `20260818-111927-blind-auto-edit-test1-speaker`
-- Status: `COMPLETE — handed off`
-- Inputs: 13 raw clips, 1 selected voiceover (39.236 s)
-- Output: 1 main version, 1080×1920, 60fps, 39.233 s
-- Structure: product/remote hero → phone placement and induction use → music/video proof → remote control proof → USB-port reveal → angle adjustment → CTA hero
-- Human Sanity Gate: PASS; 0 hard fails; 0 visible loops; 0 repeated-motion duration fill
-- Automatic generic-rule repairs: 1 of 2 allowed
-- Blind discipline: no human edit, EDL, manual slot map, source map, or old product Ground Truth used
-- Handoff commit: `abcc39c392118009af1fa1a9de957d1c533fd63d`
+- Status: `aborted_input_complexity`
+- Canonical archive: `libraries/audio_material/experiments/20260818-111927-blind-auto-edit-test1-speaker/`
+- Reason: material requires phone UI / interface-level recognition and is unsuitable for the first generalization validation round.
+- Classification: high-difficulty negative sample / future regression test.
+- Not a Visual Workflow failure; not an Audio Branch rule failure.
 
-## Known proof limits
-
-1. The USB port is visible, but the raw footage does not show cable insertion or a charging-result indicator.
-2. Remote video/music switching is visible; remote volume adjustment is not directly proven.
-3. The first five seconds establish product identity and remote inclusion; the phone-placement proof begins at 5.1 seconds.
+The full audio-specific payload was removed from `handoff/latest/`; this file and the minimal manifest are pointers only.
