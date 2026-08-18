@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "run_id": "<YYYYMMDD-HHMMSS>",
+  "experiment_name": "<name>",
+  "status": "<passed_pending_handoff|blocked_handoff|handed_off|hard_fail|failed>",
+  "created_at": "<ISO-8601>",
+  "branch": "handoff",
+  "base_commit": "<full SHA>",
+  "handoff_commit": "<full SHA or pending>",
+  "inputs": [
+    {
+      "path": "<input path or stable identifier>",
+      "sha256": "<sha256>",
+      "role": "<source|audio|brief|config|code>"
+    }
+  ],
+  "human_sanity_gate": {
+    "status": "<pending|pass|hard_fail>",
+    "reviewer": "<person>",
+    "reviewed_at": "<ISO-8601>",
+    "version_reviewed": "<artifact path and hash>",
+    "hard_failures": {
+      "visible_motion_loop": false,
+      "repeated_motion_fill": false,
+      "other": []
+    },
+    "notes": "<human viewing notes>"
+  },
+  "quality_gates": {
+    "action_integrity": {
+      "status": "<pending|pass|fail>",
+      "evidence": "<evidence>"
+    },
+    "proof_chain": {
+      "status": "<pending|pass|fail>",
+      "evidence": "<claim -> action -> result -> confirmation>"
+    },
+    "proof_ownership": {
+      "status": "<pending|pass|fail>",
+      "evidence": "<trigger object -> proven object bindings>"
+    }
+  },
+  "metrics": {
+    "evaluated_after_human_sanity_gate": true,
+    "summary": {},
+    "source_path": "<metrics artifact path>"
+  },
+  "artifacts": [
+    {
+      "repository_path": "<path in handoff branch>",
+      "sha256": "<sha256>",
+      "media_type": "<mime type>",
+      "required": true
+    }
+  ],
+  "local_only": [
+    {
+      "path": "<local path>",
+      "reason": "<size|privacy_or_authorization|temporary_diagnostic|cache|rebuildable + details>",
+      "rebuild": "<command or procedure, if rebuildable>"
+    }
+  ],
+  "report_path": "<repository path to experiment report>",
+  "conclusion": "<decision and limitations>",
+  "next_step": "<next action; blocked until status is handed_off unless explicitly authorized>"
+}
+
+
