@@ -1,0 +1,408 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260818-111927-blind-auto-edit-test1-speaker",
+  "analysis_method": "all raw scanned with uniform and dense timestamped contact sheets; candidates retain complete continuous actions and explicit result holds",
+  "action_units": [
+    {
+      "id": "AU0111-A",
+      "source": "DJI_20260808173229_0111_D.MP4",
+      "range": [
+        4.6,
+        11.2
+      ],
+      "event": "remove cover → reveal speaker → short hold",
+      "continuous_take": true,
+      "selected": false,
+      "reason": "unboxing is observable but the voiceover does not claim unboxing"
+    },
+    {
+      "id": "AU0111-B",
+      "source": "DJI_20260808173229_0111_D.MP4",
+      "range": [
+        12.0,
+        18.8
+      ],
+      "event": "second cover-removal attempt → reveal",
+      "continuous_take": true,
+      "selected": false,
+      "reason": "duplicate physical action within the same raw"
+    },
+    {
+      "id": "AU0111-C",
+      "source": "DJI_20260808173229_0111_D.MP4",
+      "range": [
+        19.5,
+        25.2
+      ],
+      "event": "hand rotates product to front and holds",
+      "continuous_take": true,
+      "selected": false
+    },
+    {
+      "id": "AU0112-A",
+      "source": "DJI_20260808173306_0112_D.MP4",
+      "range": [
+        0.0,
+        6.7
+      ],
+      "event": "continuous product orbit: front → side",
+      "continuous_take": true,
+      "selected": false
+    },
+    {
+      "id": "AU0112-B",
+      "source": "DJI_20260808173306_0112_D.MP4",
+      "range": [
+        7.0,
+        11.34
+      ],
+      "event": "continuous side/rear reveal with USB port readable",
+      "continuous_take": true,
+      "selected": true,
+      "selected_range": [
+        7.0,
+        11.34
+      ]
+    },
+    {
+      "id": "AU0112-C",
+      "source": "DJI_20260808173306_0112_D.MP4",
+      "range": [
+        11.6,
+        14.4
+      ],
+      "event": "return to front product hold",
+      "continuous_take": true,
+      "selected": false
+    },
+    {
+      "id": "AU0113-A",
+      "source": "DJI_20260808173345_0113_D.MP4",
+      "range": [
+        9.8,
+        18.9
+      ],
+      "event": "press product control → RGB ring turns on → readable hold",
+      "continuous_take": true,
+      "selected": false,
+      "reason": "valid light proof, but VO contains no dedicated light claim"
+    },
+    {
+      "id": "AU0114-A",
+      "source": "DJI_20260808173431_0114_D.MP4",
+      "range": [
+        0.0,
+        4.4
+      ],
+      "event": "phone music player + active speaker light, stable playback proof",
+      "continuous_take": true,
+      "selected": true,
+      "selected_range": [
+        0.0,
+        4.0
+      ]
+    },
+    {
+      "id": "AU0114-B",
+      "source": "DJI_20260808173431_0114_D.MP4",
+      "range": [
+        24.0,
+        36.0
+      ],
+      "event": "phone music selection changes while on stand",
+      "continuous_take": true,
+      "selected": false,
+      "reason": "remote is not the clear action owner"
+    },
+    {
+      "id": "AU0115-A",
+      "source": "DJI_20260808173526_0115_D.MP4",
+      "range": [
+        0.0,
+        13.0
+      ],
+      "event": "camera push/pull around phone on stand",
+      "continuous_take": true,
+      "selected": false,
+      "reason": "focus drift and no new proof"
+    },
+    {
+      "id": "AU0117-A",
+      "source": "DJI_20260808173747_0117_D.MP4",
+      "range": [
+        15.5,
+        23.6
+      ],
+      "event": "hand adjusts on-screen volume slider → level changes",
+      "continuous_take": true,
+      "selected": false,
+      "reason": "claim assigns volume control to the remote, but this take uses the phone"
+    },
+    {
+      "id": "AU0118-A",
+      "source": "DJI_20260808173828_0118_D.MP4",
+      "range": [
+        0.0,
+        2.6
+      ],
+      "event": "vertical video visible on phone while supported",
+      "continuous_take": true,
+      "selected": true,
+      "selected_range": [
+        0.0,
+        2.6
+      ]
+    },
+    {
+      "id": "AU0118-B",
+      "source": "DJI_20260808173828_0118_D.MP4",
+      "range": [
+        3.7,
+        6.3
+      ],
+      "event": "rotate phone portrait → landscape → stable landscape result",
+      "continuous_take": true,
+      "selected": true,
+      "selected_range": [
+        2.6,
+        6.9
+      ]
+    },
+    {
+      "id": "AU0118-C",
+      "source": "DJI_20260808173828_0118_D.MP4",
+      "range": [
+        6.3,
+        8.9
+      ],
+      "event": "reset phone toward portrait",
+      "continuous_take": true,
+      "selected": false,
+      "reason": "reset/replay after the selected orientation proof"
+    },
+    {
+      "id": "AU0119-A",
+      "source": "DJI_20260808174431_0119_D.MP4",
+      "range": [
+        12.6,
+        16.06
+      ],
+      "event": "remote button press → phone video changes → result hold",
+      "continuous_take": true,
+      "selected": true,
+      "selected_range": [
+        12.6,
+        16.06
+      ]
+    },
+    {
+      "id": "AU0119-B",
+      "source": "DJI_20260808174431_0119_D.MP4",
+      "range": [
+        16.1,
+        34.3
+      ],
+      "event": "additional remote scroll/like demonstrations",
+      "continuous_take": true,
+      "selected": false,
+      "reason": "same-function repetition after proof already closes"
+    },
+    {
+      "id": "AU0120-A",
+      "source": "DJI_20260808174553_0120_D.MP4",
+      "range": [
+        0.0,
+        3.5
+      ],
+      "event": "remote button press → music item changes → result readable",
+      "continuous_take": true,
+      "selected": true,
+      "selected_range": [
+        0.0,
+        3.5
+      ]
+    },
+    {
+      "id": "AU0120-B",
+      "source": "DJI_20260808174553_0120_D.MP4",
+      "range": [
+        3.5,
+        13.8
+      ],
+      "event": "more remote-driven music changes",
+      "continuous_take": true,
+      "selected": false,
+      "reason": "duplicate same-function proof"
+    },
+    {
+      "id": "AU0121-A",
+      "source": "DJI_20260808174643_0121_D.MP4",
+      "range": [
+        0.0,
+        24.7
+      ],
+      "event": "remote used in front of camera app",
+      "continuous_take": true,
+      "selected": false,
+      "reason": "button press and shutter result are not visually unambiguous"
+    },
+    {
+      "id": "AU0122-A",
+      "source": "DJI_20260808174724_0122_D.MP4",
+      "range": [
+        0.0,
+        14.3
+      ],
+      "event": "product rotates front → rear speaker grille",
+      "continuous_take": true,
+      "selected": false
+    },
+    {
+      "id": "AU0122-B",
+      "source": "DJI_20260808174724_0122_D.MP4",
+      "range": [
+        15.0,
+        22.2
+      ],
+      "event": "second front/rear rotation",
+      "continuous_take": true,
+      "selected": false,
+      "reason": "repeat of AU0122-A"
+    },
+    {
+      "id": "AU0122-C",
+      "source": "DJI_20260808174724_0122_D.MP4",
+      "range": [
+        31.2,
+        35.5
+      ],
+      "event": "hand tilts rotating speaker/holder assembly → new angle readable",
+      "continuous_take": true,
+      "selected": true,
+      "selected_range": [
+        32.9,
+        35.5
+      ]
+    },
+    {
+      "id": "AU0123-A",
+      "source": "DJI_20260808174910_0123_D.MP4",
+      "range": [
+        3.3,
+        7.94
+      ],
+      "event": "bring playing phone to stand → place securely → speaker/light result hold",
+      "continuous_take": true,
+      "selected": true,
+      "selected_range": [
+        2.61,
+        7.25
+      ]
+    },
+    {
+      "id": "AU0123-B",
+      "source": "DJI_20260808174910_0123_D.MP4",
+      "range": [
+        17.0,
+        21.696
+      ],
+      "event": "complete hero composition: phone + box + speaker; remote enters, is placed, then stable hold",
+      "continuous_take": true,
+      "selected": true,
+      "selected_range": [
+        17.0,
+        21.696
+      ]
+    },
+    {
+      "id": "AU0124-A",
+      "source": "DJI_20260808174944_0124_D.MP4",
+      "range": [
+        22.479,
+        27.179
+      ],
+      "event": "continuous product hero sweep with box, speaker and remote visible",
+      "continuous_take": true,
+      "selected": true,
+      "selected_range": [
+        22.079,
+        27.179
+      ]
+    }
+  ],
+  "selection_rules": {
+    "cross_take_physical_action_splice": false,
+    "repeated_visible_motion_for_duration": false,
+    "same_take_nonlinear_jump": "used only between distinct, non-overlapping information units; no low-information reset is shown"
+  },
+  "automatic_repairs": [
+    {
+      "repair": 1,
+      "applied_at": "2026-08-18T11:25:29+08:00",
+      "trigger": [
+        "reset tail begins before cut in phone-placement proof",
+        "reset tail begins before cut in music-context proof",
+        "angle-adjustment result not stable before cut"
+      ],
+      "rule_basis": "generic Human Sanity Gate / Action Integrity only; no human final or external mapping consulted",
+      "changes": {
+        "1": {
+          "output": [
+            0.0,
+            5.1
+          ],
+          "source_range": [
+            22.079,
+            27.179
+          ],
+          "reason": "extend opening prepare so downstream reset tails can be removed without changing total duration"
+        },
+        "2": {
+          "output": [
+            5.1,
+            9.74
+          ],
+          "source_range": [
+            2.61,
+            7.25
+          ],
+          "reason": "start with clean prepare and stop after stable phone-placement result, before removal/reset begins"
+        },
+        "3": {
+          "output": [
+            9.74,
+            13.74
+          ],
+          "source_range": [
+            0.0,
+            4.0
+          ],
+          "reason": "stop on stable music proof before phone lift/reset begins"
+        },
+        "8": {
+          "output": [
+            27.64,
+            30.24
+          ],
+          "source_range": [
+            32.9,
+            35.5
+          ],
+          "reason": "show one complete hardware tilt and stable down-angle result"
+        },
+        "9": {
+          "output": [
+            30.24,
+            34.54
+          ],
+          "source_range": [
+            2.6,
+            6.9
+          ],
+          "reason": "retain portrait prepare, full rotation to landscape and readable result hold"
+        }
+      },
+      "total_duration_changed": false
+    }
+  ]
+}
