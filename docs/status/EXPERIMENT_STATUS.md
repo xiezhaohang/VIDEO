@@ -66,3 +66,18 @@
 - Blind Auto Edit Test 1 — Speaker: 未中断、未修改；本记录不改变其运行状态
 - Conclusion: 已建立完全隔离、显式进入且可回退的 Audio Branch
 - Next step: 后续 `Audio Proof v1` 默认在 `libraries/audio_material/` 内单独立项实验
+
+
+## 20260818-111927-blind-auto-edit-test1-speaker
+
+- Experiment: Blind Auto Edit Test 1 — Speaker
+- Status: COMPLETE
+- Human Sanity Gate: PASS (0 hard fails)
+- Inputs: 13 raw clips + 1 selected voiceover
+- Output: 1 main version, 1080x1920, 60fps, 39.233s
+- Visible motion loops: 0
+- Repeated-motion duration fill: 0
+- Generic automatic repairs: 1/2
+- Handoff content commit: 4a263806d8cfa30eb4d675563a6e1f553174130f
+- Local-only main render: blind_auto_edit_test1_speaker_v1.mp4 (large rendered binary; retained locally)
+- Proof limits: USB port shown without charging-result feedback; remote switching shown without direct remote-volume proof; phone-placement proof begins at 5.1s.
