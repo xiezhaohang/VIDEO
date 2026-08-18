@@ -6,6 +6,7 @@
 
 | run_id | experiment | status | branch | commit | artifacts | local_only | updated_at | next_step |
 |---|---|---|---|---|---|---|---|---|
+| `20260818-152613-slime-vo-transition-v1` | `Slime VO + Transition Experiment v1` | `needs_voice_generation` (superseded; do not resume) | `handoff` | `3b714cc296c395cc3c38a80b2b5abe59f1c275c5` | `handoff/runs/20260818-152613-slime-vo-transition-v1/` | `none; no audio/video generated` | `2026-08-18T16:00:00+08:00` | `No continuation; replaced by Slime VO Blind Alignment Test v2` |
 | `<YYYYMMDD-HHMMSS>` | `<name>` | `<planned/running/needs_review/hard_fail/failed/passed_pending_handoff/blocked_handoff/handed_off/promoted>` | `handoff` | `<sha or pending>` | `<paths or pending>` | `<none or paths + reasons>` | `<ISO-8601>` | `<next action>` |
 
 ## 单次实验记录模板
@@ -115,3 +116,25 @@
 - Report: `handoff/runs/20260818-143548-no-vo-blind-test1-slime/no_vo_blind_test1_slime_report.html`
 - Conclusion: No-VO autonomous timeline is retained only as a diagnostic baseline. It is not accepted as the production path for this product type. The failures are narrative comprehension and inter-shot transition flow, not action extraction or loop safety.
 - Next step: return to the production specification with VO. Run a controlled comparison on the same slime footage: A) blind-generated script, B) edit-aware script generated after material/Action Unit understanding; generate both through ElevenLabs first, then edit both with the same downstream workflow. Both A/B should share the same experimental Transition Compatibility layer so script generation remains the only A-vs-B variable while the known rigid-cut defect is addressed consistently.
+
+## 20260818-152613-slime-vo-transition-v1
+
+- Experiment: Slime VO + Transition Experiment v1
+- Final status: `needs_voice_generation` / `blocked_voice_generation`
+- Blocking reason: ElevenLabs credentials and a usable voice-generation interface were unavailable.
+- Branch: `handoff`; no write to `main`.
+- Canonical archive: `handoff/runs/20260818-152613-slime-vo-transition-v1/`
+- Archive payload commit: `3b714cc296c395cc3c38a80b2b5abe59f1c275c5`
+- Published scope: text-only A/B script drafts and failure-state metadata.
+- A/B scripts: unfinished experiment drafts only; not completed VO assets and not accepted production scripts.
+- Real VO: not generated; actual durations and sentence timelines do not exist.
+- Editing: not started.
+- Transition Compatibility: not executed.
+- Sanity Gate: not executed; no PASS/FAIL result exists.
+- MP4: not generated.
+- Rule promotion: none; old Visual rules were not changed.
+- Audio Material Library: not changed.
+- `handoff/latest`: intentionally not changed.
+- Superseded by: Slime VO Blind Alignment Test v2 using the user-provided real spoken-video input.
+- Resume policy: do not resume this run, even if ElevenLabs later becomes available.
+- Contamination guard: do not copy its draft scripts, predicted bindings, Action Unit references, or conclusions into the active Blind Alignment run; its files, run_id, and latest payload remain untouched.
