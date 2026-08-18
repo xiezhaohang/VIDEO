@@ -1,14 +1,14 @@
 # Blind Auto Edit Test 1 — Speaker
 
 - Run ID: `20260818-111927-blind-auto-edit-test1-speaker`
-- Status: `PASS — pending handoff`
+- Status: `COMPLETE — handed off`
 - Inputs: 13 raw clips, 1 selected voiceover (39.236 s)
 - Output: 1 main version, 1080×1920, 60fps, 39.233 s
 - Structure: product/remote hero → phone placement and induction use → music/video proof → remote control proof → USB-port reveal → angle adjustment → CTA hero
 - Human Sanity Gate: PASS; 0 hard fails; 0 visible loops; 0 repeated-motion duration fill
 - Automatic generic-rule repairs: 1 of 2 allowed
 - Blind discipline: no human edit, EDL, manual slot map, source map, or old product Ground Truth used
-- Handoff commit: `HANDOFF_COMMIT_PENDING`
+- Handoff commit: `abcc39c392118009af1fa1a9de957d1c533fd63d`
 
 ## Known proof limits
 
