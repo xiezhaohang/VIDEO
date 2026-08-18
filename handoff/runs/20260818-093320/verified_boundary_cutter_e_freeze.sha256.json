@@ -1,0 +1,8 @@
+{
+  "artifact": "verified_boundary_cutter_e_decisions.json",
+  "sha256": "11076CEF25595EB2B2AE7121A270A1199D019EF61D5342818487F207A7C50DEB",
+  "phase": "decision_frozen_pre_evaluator_sanity_revision_1",
+  "ground_truth_unlocked_at_freeze": false,
+  "frozen_at": "2026-08-18T01:36:00+08:00"
+}
+

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Verified-Boundary Cutter Test E</title>
+  <style>
+    body{font-family:Inter,Segoe UI,Arial,sans-serif;background:#0b1020;color:#e8edf7;margin:0;padding:32px;line-height:1.5}
+    main{max-width:1100px;margin:auto}.card{background:#141b2d;border:1px solid #29334c;border-radius:14px;padding:20px;margin:16px 0}
+    h1,h2{margin-top:0}.pass{color:#67e8a5}.warn{color:#ffd166}.bad{color:#ff7b7b}
+    table{border-collapse:collapse;width:100%}th,td{border-bottom:1px solid #2a3550;padding:9px;text-align:left}code{color:#9bdcff}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.metric{background:#0d1425;border-radius:10px;padding:14px}
+  </style>
+</head>
+<body><main>
+  <h1>Verified-Boundary Cutter Test E</h1>
+  <p>Candidate-Constrained + Human Sanity Gate · evaluator unlocked only after decision freeze.</p>
+  <section class="card">
+    <h2 class="pass">COMPLETE — Sanity PASS</h2>
+    <div class="grid">
+      <div class="metric"><strong>Hard fails</strong><br><span class="pass">0</span></div>
+      <div class="metric"><strong>Visible loops</strong><br><span class="pass">0</span></div>
+      <div class="metric"><strong>Repeated source ranges</strong><br><span class="pass">0</span></div>
+      <div class="metric"><strong>Action/result chains</strong><br><span class="pass">8/8</span></div>
+    </div>
+    <p>Output verified at 1080×1920, 60fps, 1579 frames. Freeze SHA-256: <code>11076CEF25595EB2B2AE7121A270A1199D019EF61D5342818487F207A7C50DEB</code>.</p>
+  </section>
+  <section class="card">
+    <h2>Sanity implementation and repair history</h2>
+    <p>The gate audits repeated source ranges, mandatory CTA/result events, 64-bit perceptual-hash sequences, downsampled pixel MAD, and Farneback optical-flow trajectory autocorrelation across at least three consecutive cycles. It scans the full 60fps output plus 6–12s, 17–22s, and the CTA tail.</p>
+    <p>The first content render was rejected before evaluator unlock because GT004’s half-open out excluded verified frame 655 and GT009 skipped verified charging-readable frame 1730. Revision 1 expanded only to adjacent verified results and redistributed retime within 0.85×–1.30×. The final scan returned zero hard fails. A separate implementation-only rerender corrected the input/output PTS ratio; it did not change frozen cut points.</p>
+  </section>
+  <section class="card">
+    <h2>Human imitation diagnostics</h2>
+    <table><thead><tr><th>Metric</th><th>Cutter E</th><th>Oracle A</th><th>Test B</th></tr></thead><tbody>
+      <tr><td>Median absolute source-in error</td><td>46.5</td><td>41.0</td><td>62.0</td></tr>
+      <tr><td>Median absolute source-out error</td><td>15.5</td><td>51.0</td><td>77.0</td></tr>
+      <tr><td>Median convex span IoU</td><td>0.746</td><td>0.459</td><td>0.203</td></tr>
+      <tr><td>Mapping family match</td><td>6/8</td><td>broadly 7/8</td><td>4/8 structure</td></tr>
+      <tr><td>Mapping structure match</td><td>5/8</td><td>—</td><td>4/8</td></tr>
+    </tbody></table>
+    <p class="warn">These metrics do not override viewing failures. E is not a human replica: GT004, GT009 and GT010 still differ materially in internal temporal mapping.</p>
+  </section>
+  <section class="card">
+    <h2>Human viewing diagnostics</h2>
+    <ul>
+      <li><strong>6–12s:</strong> one cable gather/remove/clear progression; no Test B loop.</li>
+      <li><strong>17–22s:</strong> phone reveal → watch charging proof → earbuds result; no 19-frame loop.</li>
+      <li><strong>CTA:</strong> one hand-entry → point onset → peak → release chain; no repeated tail.</li>
+      <li><strong>Result clarity:</strong> all eight scored shots reach a readable result or completed gesture before cut.</li>
+      <li><strong>Rhythm:</strong> materially more natural than Test B; GT005 remains conservative/long and GT009 contains purposeful same-take jumps.</li>
+    </ul>
+    <p><strong>Viewing verdict:</strong> Cutter E is more reliable than Oracle A and decisively more reliable than Test B. Oracle A remains closer on a few exact human boundaries and GT010 hold imitation.</p>
+  </section>
+  <section class="card">
+    <h2>Per-shot risks</h2>
+    <table><thead><tr><th>Shot</th><th>Viewing state</th><th>Remaining risk</th></tr></thead><tbody>
+      <tr><td>GT004</td><td class="pass">Result reached, no loop</td><td>Front-stable phase unresolved; reveal mapping differs from human.</td></tr>
+      <tr><td>GT005</td><td class="pass">Complete cable-clear sentence</td><td class="warn">Incoming onset unresolved; conservative early context.</td></tr>
+      <tr><td>GT006</td><td class="pass">Readable hero result</td><td>Centered/readable terminal boundary unresolved.</td></tr>
+      <tr><td>GT007</td><td class="pass">Watch charge proof readable</td><td>Order-violating contact anchor excluded; continuity carries contact.</td></tr>
+      <tr><td>GT008</td><td class="pass">Lift/reveal/result complete</td><td>Incoming onset candidate late; earlier continuous expansion.</td></tr>
+      <tr><td>GT009</td><td class="pass">Charging proof reached</td><td class="warn">Terminal stable boundary unresolved; human late landing not imitated.</td></tr>
+      <tr><td>GT010</td><td class="pass">Continuous loop-free result hold</td><td>Human 11-frame expanded hold mapping not imitated.</td></tr>
+      <tr><td>GT011</td><td class="pass">Complete CTA gesture</td><td class="warn">Settle/tail unresolved; exact human out differs.</td></tr>
+    </tbody></table>
+  </section>
+  <section class="card"><h2>Core decision</h2><p>The verified candidate constraint plus executable sanity gate produced a visibly safer full edit. This run does not write workflow/main. The next discussion can consider promoting only the verified modules; if the user finds a concrete viewing failure, repair that shot directly before adding architecture.</p></section>
+</main></body></html>
+
