@@ -47,6 +47,8 @@
 6. 报告、manifest 和产物提交到 `handoff` 后，填写 commit SHA 并设为 `handed_off`。
 7. 未达到 `handed_off`，不得启动依赖本结论的下一实验。
 
+
+
 ## 架构隔离记录
 
 ### Audio Material Library Bootstrap — 20260818-audio-material-bootstrap
