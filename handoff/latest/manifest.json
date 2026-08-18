@@ -1,68 +1,823 @@
 {
-  "run_id": "20260818-103000-director-pass-v2",
-  "task_name": "director-pass-v2-proof-chain-ownership-correction",
-  "created_at": "2026-08-18T10:30:00+08:00",
-  "source_local_paths": [
-    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-3\\outputs\\director-pass-v2\\edit\\director_pass_v2_decisions.json",
-    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-3\\outputs\\director-pass-v2\\edit\\director_pass_v2_metrics.json",
-    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-3\\outputs\\director-pass-v2\\edit\\director_pass_v2_report.html",
-    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-3\\outputs\\director-pass-v2\\edit\\director_pass_v2_sanity.json",
-    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-3\\outputs\\director-pass-v2\\edit\\project.md",
-    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-3\\outputs\\director-pass-v2\\edit\\summary.md"
-  ],
-  "files": [
+  "schema_version": 1,
+  "run_id": "20260818-111927-blind-auto-edit-test1-speaker",
+  "experiment": "Blind Auto Edit Test 1 — Speaker",
+  "status": "passed_pending_handoff",
+  "branch": "handoff",
+  "base_handoff_commit": "b5e3880dca78709c45f86a3c578ea0a8baa95200",
+  "handoff_commit": "HANDOFF_COMMIT_PENDING",
+  "started_at": "2026-08-18T11:19:27+08:00",
+  "completed_at": "2026-08-18T11:36:26+08:00",
+  "blind_test": {
+    "compliant": true,
+    "forbidden_reference_material_used": false
+  },
+  "gate": {
+    "status": "PASS",
+    "hard_fail_count": 0
+  },
+  "decision_hashes": {
+    "original_frozen": "42f1605105b77bc381cf1e8fa77cd6529f2c1ccd92141ea2761b2a1de722d092",
+    "post_generic_repair1": "2c807af4f0339906cbe2b232507c62477766b635bbe77bb5c7c97368511aa3e0"
+  },
+  "input_counts": {
+    "raw": 13,
+    "voiceover": 1
+  },
+  "output": {
+    "main_versions": 1,
+    "duration_seconds": 39.233333,
+    "resolution": "1080x1920",
+    "fps": 60
+  },
+  "artifacts": [
     {
-      "repository_path": "handoff/latest/director_pass_v2_decisions.json",
-      "archived_path": "handoff/runs/20260818-103000-director-pass-v2/director_pass_v2_decisions.json",
-      "type": "json",
-      "purpose": "Complete text delivery for ChatGPT review",
-      "must_review": true
+      "path": "action_units.json",
+      "bytes": 10707,
+      "sha256": "cff9df7f41ce7618db9e82c082beea33dbfe42a0a56fbd41e2906ecc1ef68abb",
+      "publication": "handoff"
     },
     {
-      "repository_path": "handoff/latest/director_pass_v2_metrics.json",
-      "archived_path": "handoff/runs/20260818-103000-director-pass-v2/director_pass_v2_metrics.json",
-      "type": "json",
-      "purpose": "Complete text delivery for ChatGPT review",
-      "must_review": true
+      "path": "blind_auto_edit_test1_speaker_decisions.json",
+      "bytes": 6833,
+      "sha256": "101761a3099a7ec188800b848bf21e8b5ee4d159162f7dec878623533b12b1bf",
+      "publication": "handoff"
     },
     {
-      "repository_path": "handoff/latest/director_pass_v2_report.html",
-      "archived_path": "handoff/runs/20260818-103000-director-pass-v2/director_pass_v2_report.html",
-      "type": "html",
-      "purpose": "Complete text delivery for ChatGPT review",
-      "must_review": true
+      "path": "blind_auto_edit_test1_speaker_metrics.json",
+      "bytes": 1257,
+      "sha256": "a74612ba0b1d3269ea0873bf10910ba323e0de528c6e3008d38f0f8f2e70cfc1",
+      "publication": "handoff"
     },
     {
-      "repository_path": "handoff/latest/director_pass_v2_sanity.json",
-      "archived_path": "handoff/runs/20260818-103000-director-pass-v2/director_pass_v2_sanity.json",
-      "type": "json",
-      "purpose": "Complete text delivery for ChatGPT review",
-      "must_review": true
+      "path": "blind_auto_edit_test1_speaker_report.html",
+      "bytes": 2775,
+      "sha256": "11b9fd05303b08edd32b81d12f4d4314b69c494efda31f423ca2e58498df9dc1",
+      "publication": "handoff"
     },
     {
-      "repository_path": "handoff/latest/project.md",
-      "archived_path": "handoff/runs/20260818-103000-director-pass-v2/project.md",
-      "type": "md",
-      "purpose": "Complete text delivery for ChatGPT review",
-      "must_review": true
+      "path": "blind_auto_edit_test1_speaker_sanity.json",
+      "bytes": 1352,
+      "sha256": "ad7410d0ee774c298ada32cb72d2d8b0aa41a4dbba32067f8c658fe01d50e6e5",
+      "publication": "handoff"
     },
     {
-      "repository_path": "handoff/latest/summary.md",
-      "archived_path": "handoff/runs/20260818-103000-director-pass-v2/summary.md",
-      "type": "md",
-      "purpose": "Run overview for reviewers",
-      "must_review": true
+      "path": "blind_auto_edit_test1_speaker_v1.mp4",
+      "bytes": 64469272,
+      "sha256": "a355ee252b0f73d3e836bad08a259dc613e0a6db649db812d2b0b16204b77ee3",
+      "publication": "local_only",
+      "reason": "large rendered binary; retained locally under the user's explicit local_only delivery requirement"
     },
     {
-      "repository_path": "handoff/latest/manifest.json",
-      "archived_path": "handoff/runs/20260818-103000-director-pass-v2/manifest.json",
-      "type": "json",
-      "purpose": "Handoff inventory, provenance, and review requirements",
-      "must_review": true
+      "path": "claim_plan.json",
+      "bytes": 3244,
+      "sha256": "9142a7526aed476d4f6a3adbe5cf069ff0e64943b67a3de9751e9f394d09e1a4",
+      "publication": "handoff"
+    },
+    {
+      "path": "diagnostics/all_raw_contact_sheet.jpg",
+      "bytes": 4544140,
+      "sha256": "7a862e85d88c193171842a0722226c0cc5c37ebd76324e748510048dbf7a166a",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808173229_0111_D.jpg",
+      "bytes": 167668,
+      "sha256": "6ee4387bc7e2732b442506251de64ed837a3f6cf920bd512731a2221ead7d44b",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808173306_0112_D.jpg",
+      "bytes": 167562,
+      "sha256": "1492ca2c74146d2f21e13573f63cbfd1f1f5e5012239cd8aab249fc20cf9286e",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808173345_0113_D.jpg",
+      "bytes": 192167,
+      "sha256": "3622577253b3c3afaadf2c946420f1bd49653920cfb3337bc0b89f3ad39e7530",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808173431_0114_D.jpg",
+      "bytes": 217820,
+      "sha256": "15bfefd705e59b18262eced08a28f1ee4ccb600f57ed5fa7f67bd1308a22e5ff",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808173526_0115_D.jpg",
+      "bytes": 214185,
+      "sha256": "99d7441dc258cfbaad1bed40cb51bd85be6a3f0ef7956d0757c2cd32aed8781e",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808173747_0117_D.jpg",
+      "bytes": 229548,
+      "sha256": "71da06ab5df3a78eee9c55c1a6e2ede47d92bf649d00ea0d3322f817a39034db",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808173828_0118_D.jpg",
+      "bytes": 230770,
+      "sha256": "27bfda5547df39a516dc8aa40f205ecc62139ada7c590b5eac5eb9687af1e682",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808174431_0119_D.jpg",
+      "bytes": 220312,
+      "sha256": "85e7e64a441535d3c4dc7d5557cb66b6c191c1df8a9a55bef2276c9322a0ef5c",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808174553_0120_D.jpg",
+      "bytes": 186688,
+      "sha256": "92ca4a1d9a2652a4606ba7bc7306b6d2479e1af915b527ff6e4a4716d9b28d3f",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808174643_0121_D.jpg",
+      "bytes": 201035,
+      "sha256": "8ac56beaceeb38187f8539400fbe734787ba90db63bffd0bf855c92ffd8fd6e3",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808174724_0122_D.jpg",
+      "bytes": 180800,
+      "sha256": "5660e83b2fd75815cfac4a0a3fe449deae0fc88c739ee00798d702e8eadf578f",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808174910_0123_D.jpg",
+      "bytes": 288472,
+      "sha256": "fff75b67a3e307346bd0e597966cb3d468d3b9fa2b839a0a5226c841bae72f1e",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808174944_0124_D.jpg",
+      "bytes": 240693,
+      "sha256": "e4850b58edec741382281b7d69af64cb77a9594683944d84e61bcf50c50351bf",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808173229_0111_D_dense.jpg",
+      "bytes": 1009434,
+      "sha256": "720ac5115681b350edddd403f42984d2cfcbdad05dfdde231e79ab8db2baaaa0",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808173306_0112_D_dense.jpg",
+      "bytes": 897197,
+      "sha256": "e852b40a7d57febe48829859a251beb312885915939453e819272724773f69c7",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808173345_0113_D_dense.jpg",
+      "bytes": 1119562,
+      "sha256": "49312f701280c445de3b0038fd5423c8853d8c70eb48c84b82e7f2cbb3971803",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808173431_0114_D_dense.jpg",
+      "bytes": 1233793,
+      "sha256": "46bacf1dda0bd4b2d09db2af35a18c741acc23845cdf01b7bbe05fdc6d5dc34a",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808173526_0115_D_dense.jpg",
+      "bytes": 1061619,
+      "sha256": "9e5c243c7da763109fdea87dbe940213f34666cd708d844e7fa04c40359532fc",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808173747_0117_D_dense.jpg",
+      "bytes": 1244247,
+      "sha256": "cd283d7ad089b7f79df2d4712ed9519e5573bfebf67a5e6f0d617a6a97823298",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808173828_0118_D_dense.jpg",
+      "bytes": 1250238,
+      "sha256": "d4d58d01d9534bd4f272043c38d0e9f6447c9ac4a2001aa68fb34723173ffc51",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808174431_0119_D_dense.jpg",
+      "bytes": 1131982,
+      "sha256": "b6f5606a90b498203dae44219693ae2e13a7fa50e1bbfde6b8a005b282a08d99",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808174553_0120_D_dense.jpg",
+      "bytes": 932470,
+      "sha256": "b825ac606d4ee0d89bd056aae1fb5e4e4c28de025d9fbb9b823079531bc4dcee",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808174643_0121_D_dense.jpg",
+      "bytes": 937801,
+      "sha256": "9bbcc1499d176e4208f1ff245a62e53ef957bd98d3e93a43227fd7d6027a236c",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808174724_0122_D_dense.jpg",
+      "bytes": 1037580,
+      "sha256": "6068400e7b4841dd011a61ce22d6c69802dafc30c258e958b8240aa21184b77b",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808174910_0123_D_dense.jpg",
+      "bytes": 1465958,
+      "sha256": "a42e1fa1e0aafec973c3a6b4cd0af0e35d35d2e16aae4484a28be29490b717ba",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808174944_0124_D_dense.jpg",
+      "bytes": 1143212,
+      "sha256": "d8f3965c28cb280e7ba495a6d560527bbbdf5b42aad4efd35ad49c884775709d",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/output_v1/blind_auto_edit_test1_speaker_v1_pre_repair1.mp4",
+      "bytes": 65881361,
+      "sha256": "0ada4acc7be0b067d6c9943e174ae03e145985df7a62109a565f43b1324075e3",
+      "publication": "local_only",
+      "reason": "superseded first render retained only as the blind-freeze/repair audit diagnostic"
+    },
+    {
+      "path": "diagnostics/output_v1/cut_boundaries_contact_sheet.jpg",
+      "bytes": 2401787,
+      "sha256": "a232a6097e329b97889e9aa1cdcf8a014264105971d083dbc8d6149d2110d639",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/output_v1/full_timeline_contact_sheet.jpg",
+      "bytes": 1815528,
+      "sha256": "88fafd370fab2f131b9187e9209d1615dc5a1271eac92615ae60f5b19c7af5f6",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/output_v1/output_probe.json",
+      "bytes": 796,
+      "sha256": "d56695075682fb48b87cd7badc7dfe873491b20bd430e78e0c556c44c5c4e8f3",
+      "publication": "handoff"
+    },
+    {
+      "path": "diagnostics/source_0122_30_40.png",
+      "bytes": 279677,
+      "sha256": "36aa7045fb59d1a223ec48af4ad8040a45304b3916151871c38ad495bc648108",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "diagnostics/source_0122_33_37.png",
+      "bytes": 433603,
+      "sha256": "719bc607ec2fd990ab435c58b0d297d70ac367e825b336c11a18a857adc1a0e4",
+      "publication": "local_only",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff"
+    },
+    {
+      "path": "director_plan.json",
+      "bytes": 6642,
+      "sha256": "a390292b5449ee123743de99481b0102cec18b9c4f55d9f74152bdb7ade7ea56",
+      "publication": "handoff"
+    },
+    {
+      "path": "media_inventory.json",
+      "bytes": 28664,
+      "sha256": "26c23126989f955849837d08f4ecd7dea281a4fe1e135625e02d61522f05d7f8",
+      "publication": "handoff"
+    },
+    {
+      "path": "render/concat.txt",
+      "bytes": 1630,
+      "sha256": "1b311173fd8ee5503382e378e4a19b4bc319c0f93f0da5d60ca7b11481e9f0f6",
+      "publication": "handoff"
+    },
+    {
+      "path": "render/segments/seg_01.mp4",
+      "bytes": 10594485,
+      "sha256": "196cd24fb3f82ff3c048bcf567f2dcae1e9607cb09ba775e5b218c19589aa856",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "render/segments/seg_01.ts",
+      "bytes": 10903624,
+      "sha256": "52d856f40756887194ff5128ce800ed62ab1177751d04ade55143572ad3bff78",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "render/segments/seg_02.mp4",
+      "bytes": 7794340,
+      "sha256": "1ed9ffd9f9f274668fb58df4bc6cb7d458804765cee4da4d9bb16ea0998d7d25",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "render/segments/seg_02.ts",
+      "bytes": 8010868,
+      "sha256": "a0548e12997d47a56d1ee22cad0a55256ee5171afe6896d011c929c67085516d",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "render/segments/seg_03.mp4",
+      "bytes": 6629357,
+      "sha256": "e23d7852b9656e6634c364bd83b2c73c6b03f60055af5393b8f7304da568ea2b",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "render/segments/seg_03.ts",
+      "bytes": 6814436,
+      "sha256": "36b50849de1fc102a236ef5f6a5a505ab9bd8fa0b34e0613aa43d601659ec533",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "render/segments/seg_04.mp4",
+      "bytes": 5150632,
+      "sha256": "0c321ee75bf257411fe94b6d61e9c6cca7f293cf5b539fcce56f29e7e5524d39",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "render/segments/seg_04.ts",
+      "bytes": 5288064,
+      "sha256": "1239b740946ae11d52db5d2fdadeb92d33af2f7a3d68ea56129efbaa708c5951",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "render/segments/seg_05.mp4",
+      "bytes": 4358876,
+      "sha256": "43a45fd14ee6e75727ff9d848544aca43c0af7cc5e64489a6cbc76608c9f50fc",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "render/segments/seg_05.ts",
+      "bytes": 4488688,
+      "sha256": "0889027be7bf83a2901d6bccce7a7fbe06806f94e0a5e7415ed3048e366d61a1",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "render/segments/seg_06.mp4",
+      "bytes": 4150117,
+      "sha256": "77fcc7afac207c68233dc3524fa2a58dfcc207c8bd3f0cf45b64d2b22bb4c261",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "render/segments/seg_06.ts",
+      "bytes": 4276812,
+      "sha256": "ce2f958e18cbad10d40ca9f9371c6dfdd0936a3c81004a2ff55ceba5686497f1",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "render/segments/seg_07.mp4",
+      "bytes": 6246689,
+      "sha256": "64b5b9a3b01d558ed63b4b03e1eb510fd5c596a75b296f26bd30b9ad8cca6211",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "render/segments/seg_07.ts",
+      "bytes": 6426780,
+      "sha256": "79df2a48321f708e0e30a438d1e760b386c1327d1c6d64870019251f5684f2c7",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "render/segments/seg_08.mp4",
+      "bytes": 3948953,
+      "sha256": "3a9409d45d7f9341e065ab1db2dc2ef617e6b7670913cb437bfd0756b47c5a69",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "render/segments/seg_08.ts",
+      "bytes": 4060800,
+      "sha256": "41737ac9d3e14e54230362ed1723b08a23b620ac8c61fb8af18b5229bf897749",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "render/segments/seg_09.mp4",
+      "bytes": 7916837,
+      "sha256": "833f320e54b7aca7104d1232bcaec4665b28db56e895634ec5718d73d75bf40a",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "render/segments/seg_09.ts",
+      "bytes": 8133068,
+      "sha256": "26312272492f16c5102b3022a9aaa104ab3b7b28857ad5fc68ccddd95043eb77",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "render/segments/seg_10.mp4",
+      "bytes": 6783157,
+      "sha256": "d455a7ac8cd3f7afb1ddc668b4f167e2da1ae2ac2617b73b1df7eece2bea2e66",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "render/segments/seg_10.ts",
+      "bytes": 6979500,
+      "sha256": "d23e6db044e2ba2e9b16f14e5a9c7b52127fa7d3a5eaf748159574c17e923b4f",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "render/video_only.mp4",
+      "bytes": 63600420,
+      "sha256": "6a2a619a20d06065c19167780c439b474587ff2d9b5d441d33509fe3cd341015",
+      "publication": "local_only",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff"
+    },
+    {
+      "path": "run_context.json",
+      "bytes": 284,
+      "sha256": "edf8acf5269f75e2ae3761eeb89319e8658e12dbee29b8a889ed23c3fb170b6f",
+      "publication": "handoff"
+    },
+    {
+      "path": "summary.md",
+      "bytes": 1067,
+      "sha256": "50fd1b0347779dedcfe413309528c9efa318d3d133e83638239810fcbbc50fb4",
+      "publication": "handoff"
+    },
+    {
+      "path": "transcripts/口播_whispercpp.json",
+      "bytes": 46167,
+      "sha256": "d2a3474f62d9238e9b74d1c8e3125dbe121b256ba3bad88c1d36f6d04b52460f",
+      "publication": "handoff"
+    },
+    {
+      "path": "vo_timeline.json",
+      "bytes": 33839,
+      "sha256": "09fd607b5bd56f011e933ef72c0c527888c461e7beb180632ef09b3df53f6549",
+      "publication": "handoff"
     }
   ],
-  "local_only_files": [
-    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-3\\outputs\\director-pass-v2\\edit\\director_pass_v2.mp4"
-  ],
-  "commit_sha": "565cb5a746435f8faddfb7bff9e4fb461b1bd22a"
+  "local_only": [
+    {
+      "path": "blind_auto_edit_test1_speaker_v1.mp4",
+      "reason": "large rendered binary; retained locally under the user's explicit local_only delivery requirement",
+      "sha256": "a355ee252b0f73d3e836bad08a259dc613e0a6db649db812d2b0b16204b77ee3",
+      "bytes": 64469272
+    },
+    {
+      "path": "diagnostics/all_raw_contact_sheet.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "7a862e85d88c193171842a0722226c0cc5c37ebd76324e748510048dbf7a166a",
+      "bytes": 4544140
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808173229_0111_D.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "6ee4387bc7e2732b442506251de64ed837a3f6cf920bd512731a2221ead7d44b",
+      "bytes": 167668
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808173306_0112_D.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "1492ca2c74146d2f21e13573f63cbfd1f1f5e5012239cd8aab249fc20cf9286e",
+      "bytes": 167562
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808173345_0113_D.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "3622577253b3c3afaadf2c946420f1bd49653920cfb3337bc0b89f3ad39e7530",
+      "bytes": 192167
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808173431_0114_D.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "15bfefd705e59b18262eced08a28f1ee4ccb600f57ed5fa7f67bd1308a22e5ff",
+      "bytes": 217820
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808173526_0115_D.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "99d7441dc258cfbaad1bed40cb51bd85be6a3f0ef7956d0757c2cd32aed8781e",
+      "bytes": 214185
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808173747_0117_D.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "71da06ab5df3a78eee9c55c1a6e2ede47d92bf649d00ea0d3322f817a39034db",
+      "bytes": 229548
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808173828_0118_D.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "27bfda5547df39a516dc8aa40f205ecc62139ada7c590b5eac5eb9687af1e682",
+      "bytes": 230770
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808174431_0119_D.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "85e7e64a441535d3c4dc7d5557cb66b6c191c1df8a9a55bef2276c9322a0ef5c",
+      "bytes": 220312
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808174553_0120_D.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "92ca4a1d9a2652a4606ba7bc7306b6d2479e1af915b527ff6e4a4716d9b28d3f",
+      "bytes": 186688
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808174643_0121_D.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "8ac56beaceeb38187f8539400fbe734787ba90db63bffd0bf855c92ffd8fd6e3",
+      "bytes": 201035
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808174724_0122_D.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "5660e83b2fd75815cfac4a0a3fe449deae0fc88c739ee00798d702e8eadf578f",
+      "bytes": 180800
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808174910_0123_D.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "fff75b67a3e307346bd0e597966cb3d468d3b9fa2b839a0a5226c841bae72f1e",
+      "bytes": 288472
+    },
+    {
+      "path": "diagnostics/contact_sheets/DJI_20260808174944_0124_D.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "e4850b58edec741382281b7d69af64cb77a9594683944d84e61bcf50c50351bf",
+      "bytes": 240693
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808173229_0111_D_dense.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "720ac5115681b350edddd403f42984d2cfcbdad05dfdde231e79ab8db2baaaa0",
+      "bytes": 1009434
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808173306_0112_D_dense.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "e852b40a7d57febe48829859a251beb312885915939453e819272724773f69c7",
+      "bytes": 897197
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808173345_0113_D_dense.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "49312f701280c445de3b0038fd5423c8853d8c70eb48c84b82e7f2cbb3971803",
+      "bytes": 1119562
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808173431_0114_D_dense.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "46bacf1dda0bd4b2d09db2af35a18c741acc23845cdf01b7bbe05fdc6d5dc34a",
+      "bytes": 1233793
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808173526_0115_D_dense.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "9e5c243c7da763109fdea87dbe940213f34666cd708d844e7fa04c40359532fc",
+      "bytes": 1061619
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808173747_0117_D_dense.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "cd283d7ad089b7f79df2d4712ed9519e5573bfebf67a5e6f0d617a6a97823298",
+      "bytes": 1244247
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808173828_0118_D_dense.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "d4d58d01d9534bd4f272043c38d0e9f6447c9ac4a2001aa68fb34723173ffc51",
+      "bytes": 1250238
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808174431_0119_D_dense.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "b6f5606a90b498203dae44219693ae2e13a7fa50e1bbfde6b8a005b282a08d99",
+      "bytes": 1131982
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808174553_0120_D_dense.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "b825ac606d4ee0d89bd056aae1fb5e4e4c28de025d9fbb9b823079531bc4dcee",
+      "bytes": 932470
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808174643_0121_D_dense.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "9bbcc1499d176e4208f1ff245a62e53ef957bd98d3e93a43227fd7d6027a236c",
+      "bytes": 937801
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808174724_0122_D_dense.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "6068400e7b4841dd011a61ce22d6c69802dafc30c258e958b8240aa21184b77b",
+      "bytes": 1037580
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808174910_0123_D_dense.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "a42e1fa1e0aafec973c3a6b4cd0af0e35d35d2e16aae4484a28be29490b717ba",
+      "bytes": 1465958
+    },
+    {
+      "path": "diagnostics/dense_sheets/DJI_20260808174944_0124_D_dense.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "d8f3965c28cb280e7ba495a6d560527bbbdf5b42aad4efd35ad49c884775709d",
+      "bytes": 1143212
+    },
+    {
+      "path": "diagnostics/output_v1/blind_auto_edit_test1_speaker_v1_pre_repair1.mp4",
+      "reason": "superseded first render retained only as the blind-freeze/repair audit diagnostic",
+      "sha256": "0ada4acc7be0b067d6c9943e174ae03e145985df7a62109a565f43b1324075e3",
+      "bytes": 65881361
+    },
+    {
+      "path": "diagnostics/output_v1/cut_boundaries_contact_sheet.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "a232a6097e329b97889e9aa1cdcf8a014264105971d083dbc8d6149d2110d639",
+      "bytes": 2401787
+    },
+    {
+      "path": "diagnostics/output_v1/full_timeline_contact_sheet.jpg",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "88fafd370fab2f131b9187e9209d1615dc5a1271eac92615ae60f5b19c7af5f6",
+      "bytes": 1815528
+    },
+    {
+      "path": "diagnostics/source_0122_30_40.png",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "36aa7045fb59d1a223ec48af4ad8040a45304b3916151871c38ad495bc648108",
+      "bytes": 279677
+    },
+    {
+      "path": "diagnostics/source_0122_33_37.png",
+      "reason": "rebuildable visual diagnostic; excluded from source-control handoff",
+      "sha256": "719bc607ec2fd990ab435c58b0d297d70ac367e825b336c11a18a857adc1a0e4",
+      "bytes": 433603
+    },
+    {
+      "path": "render/segments/seg_01.mp4",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "196cd24fb3f82ff3c048bcf567f2dcae1e9607cb09ba775e5b218c19589aa856",
+      "bytes": 10594485
+    },
+    {
+      "path": "render/segments/seg_01.ts",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "52d856f40756887194ff5128ce800ed62ab1177751d04ade55143572ad3bff78",
+      "bytes": 10903624
+    },
+    {
+      "path": "render/segments/seg_02.mp4",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "1ed9ffd9f9f274668fb58df4bc6cb7d458804765cee4da4d9bb16ea0998d7d25",
+      "bytes": 7794340
+    },
+    {
+      "path": "render/segments/seg_02.ts",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "a0548e12997d47a56d1ee22cad0a55256ee5171afe6896d011c929c67085516d",
+      "bytes": 8010868
+    },
+    {
+      "path": "render/segments/seg_03.mp4",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "e23d7852b9656e6634c364bd83b2c73c6b03f60055af5393b8f7304da568ea2b",
+      "bytes": 6629357
+    },
+    {
+      "path": "render/segments/seg_03.ts",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "36b50849de1fc102a236ef5f6a5a505ab9bd8fa0b34e0613aa43d601659ec533",
+      "bytes": 6814436
+    },
+    {
+      "path": "render/segments/seg_04.mp4",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "0c321ee75bf257411fe94b6d61e9c6cca7f293cf5b539fcce56f29e7e5524d39",
+      "bytes": 5150632
+    },
+    {
+      "path": "render/segments/seg_04.ts",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "1239b740946ae11d52db5d2fdadeb92d33af2f7a3d68ea56129efbaa708c5951",
+      "bytes": 5288064
+    },
+    {
+      "path": "render/segments/seg_05.mp4",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "43a45fd14ee6e75727ff9d848544aca43c0af7cc5e64489a6cbc76608c9f50fc",
+      "bytes": 4358876
+    },
+    {
+      "path": "render/segments/seg_05.ts",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "0889027be7bf83a2901d6bccce7a7fbe06806f94e0a5e7415ed3048e366d61a1",
+      "bytes": 4488688
+    },
+    {
+      "path": "render/segments/seg_06.mp4",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "77fcc7afac207c68233dc3524fa2a58dfcc207c8bd3f0cf45b64d2b22bb4c261",
+      "bytes": 4150117
+    },
+    {
+      "path": "render/segments/seg_06.ts",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "ce2f958e18cbad10d40ca9f9371c6dfdd0936a3c81004a2ff55ceba5686497f1",
+      "bytes": 4276812
+    },
+    {
+      "path": "render/segments/seg_07.mp4",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "64b5b9a3b01d558ed63b4b03e1eb510fd5c596a75b296f26bd30b9ad8cca6211",
+      "bytes": 6246689
+    },
+    {
+      "path": "render/segments/seg_07.ts",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "79df2a48321f708e0e30a438d1e760b386c1327d1c6d64870019251f5684f2c7",
+      "bytes": 6426780
+    },
+    {
+      "path": "render/segments/seg_08.mp4",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "3a9409d45d7f9341e065ab1db2dc2ef617e6b7670913cb437bfd0756b47c5a69",
+      "bytes": 3948953
+    },
+    {
+      "path": "render/segments/seg_08.ts",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "41737ac9d3e14e54230362ed1723b08a23b620ac8c61fb8af18b5229bf897749",
+      "bytes": 4060800
+    },
+    {
+      "path": "render/segments/seg_09.mp4",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "833f320e54b7aca7104d1232bcaec4665b28db56e895634ec5718d73d75bf40a",
+      "bytes": 7916837
+    },
+    {
+      "path": "render/segments/seg_09.ts",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "26312272492f16c5102b3022a9aaa104ab3b7b28857ad5fc68ccddd95043eb77",
+      "bytes": 8133068
+    },
+    {
+      "path": "render/segments/seg_10.mp4",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "d455a7ac8cd3f7afb1ddc668b4f167e2da1ae2ac2617b73b1df7eece2bea2e66",
+      "bytes": 6783157
+    },
+    {
+      "path": "render/segments/seg_10.ts",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "d23e6db044e2ba2e9b16f14e5a9c7b52127fa7d3a5eaf748159574c17e923b4f",
+      "bytes": 6979500
+    },
+    {
+      "path": "render/video_only.mp4",
+      "reason": "rebuildable intermediate segment or mezzanine; excluded from source-control handoff",
+      "sha256": "6a2a619a20d06065c19167780c439b474587ff2d9b5d441d33509fe3cd341015",
+      "bytes": 63600420
+    }
+  ]
 }
