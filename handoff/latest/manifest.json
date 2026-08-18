@@ -1,70 +1,68 @@
 {
-  "run_id": "20260818-093320",
-  "task_name": "Verified-Boundary Cutter Test E — Candidate-Constrained + Human Sanity Gate",
-  "created_at": "2026-08-18T09:34:18.1525891+08:00",
+  "run_id": "20260818-103000-director-pass-v2",
+  "task_name": "director-pass-v2-proof-chain-ownership-correction",
+  "created_at": "2026-08-18T10:30:00+08:00",
   "source_local_paths": [
-    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an\\outputs\\verified-boundary-cutter-e\\summary.md",
-    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an\\outputs\\verified-boundary-cutter-e\\verified_boundary_cutter_e_decisions.json",
-    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an\\outputs\\verified-boundary-cutter-e\\verified_boundary_cutter_e_freeze.sha256.json",
-    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an\\outputs\\verified-boundary-cutter-e\\verified_boundary_cutter_e_metrics.json",
-    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an\\outputs\\verified-boundary-cutter-e\\verified_boundary_cutter_e_report.html",
-    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an\\outputs\\verified-boundary-cutter-e\\verified_boundary_cutter_e_sanity.json"
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-3\\outputs\\director-pass-v2\\edit\\director_pass_v2_decisions.json",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-3\\outputs\\director-pass-v2\\edit\\director_pass_v2_metrics.json",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-3\\outputs\\director-pass-v2\\edit\\director_pass_v2_report.html",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-3\\outputs\\director-pass-v2\\edit\\director_pass_v2_sanity.json",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-3\\outputs\\director-pass-v2\\edit\\project.md",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-3\\outputs\\director-pass-v2\\edit\\summary.md"
   ],
   "files": [
     {
-      "repository_path": "handoff/latest/summary.md",
-      "archived_path": "handoff/runs/20260818-093320/summary.md",
-      "type": "md",
-      "purpose": "Run overview for reviewers",
-      "must_review": true
-    },
-    {
-      "repository_path": "handoff/latest/verified_boundary_cutter_e_decisions.json",
-      "archived_path": "handoff/runs/20260818-093320/verified_boundary_cutter_e_decisions.json",
+      "repository_path": "handoff/latest/director_pass_v2_decisions.json",
+      "archived_path": "handoff/runs/20260818-103000-director-pass-v2/director_pass_v2_decisions.json",
       "type": "json",
       "purpose": "Complete text delivery for ChatGPT review",
       "must_review": true
     },
     {
-      "repository_path": "handoff/latest/verified_boundary_cutter_e_freeze.sha256.json",
-      "archived_path": "handoff/runs/20260818-093320/verified_boundary_cutter_e_freeze.sha256.json",
+      "repository_path": "handoff/latest/director_pass_v2_metrics.json",
+      "archived_path": "handoff/runs/20260818-103000-director-pass-v2/director_pass_v2_metrics.json",
       "type": "json",
       "purpose": "Complete text delivery for ChatGPT review",
       "must_review": true
     },
     {
-      "repository_path": "handoff/latest/verified_boundary_cutter_e_metrics.json",
-      "archived_path": "handoff/runs/20260818-093320/verified_boundary_cutter_e_metrics.json",
-      "type": "json",
-      "purpose": "Complete text delivery for ChatGPT review",
-      "must_review": true
-    },
-    {
-      "repository_path": "handoff/latest/verified_boundary_cutter_e_report.html",
-      "archived_path": "handoff/runs/20260818-093320/verified_boundary_cutter_e_report.html",
+      "repository_path": "handoff/latest/director_pass_v2_report.html",
+      "archived_path": "handoff/runs/20260818-103000-director-pass-v2/director_pass_v2_report.html",
       "type": "html",
       "purpose": "Complete text delivery for ChatGPT review",
       "must_review": true
     },
     {
-      "repository_path": "handoff/latest/verified_boundary_cutter_e_sanity.json",
-      "archived_path": "handoff/runs/20260818-093320/verified_boundary_cutter_e_sanity.json",
+      "repository_path": "handoff/latest/director_pass_v2_sanity.json",
+      "archived_path": "handoff/runs/20260818-103000-director-pass-v2/director_pass_v2_sanity.json",
       "type": "json",
       "purpose": "Complete text delivery for ChatGPT review",
       "must_review": true
     },
     {
+      "repository_path": "handoff/latest/project.md",
+      "archived_path": "handoff/runs/20260818-103000-director-pass-v2/project.md",
+      "type": "md",
+      "purpose": "Complete text delivery for ChatGPT review",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/summary.md",
+      "archived_path": "handoff/runs/20260818-103000-director-pass-v2/summary.md",
+      "type": "md",
+      "purpose": "Run overview for reviewers",
+      "must_review": true
+    },
+    {
       "repository_path": "handoff/latest/manifest.json",
-      "archived_path": "handoff/runs/20260818-093320/manifest.json",
+      "archived_path": "handoff/runs/20260818-103000-director-pass-v2/manifest.json",
       "type": "json",
       "purpose": "Handoff inventory, provenance, and review requirements",
       "must_review": true
     }
   ],
   "local_only_files": [
-    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an\\outputs\\verified-boundary-cutter-e\\verified_boundary_cutter_e.mp4",
-    "verified_boundary_cutter_e.mp4"
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-3\\outputs\\director-pass-v2\\edit\\director_pass_v2.mp4"
   ],
-  "commit_sha": "84d45636271b6abd6d4e510a4913b91088d97dde"
+  "commit_sha": "565cb5a746435f8faddfb7bff9e4fb461b1bd22a"
 }
-
