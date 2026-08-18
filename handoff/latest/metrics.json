@@ -1,0 +1,23 @@
+{
+  "run_id": "20260818-160940-slime-vo-blind-alignment-v2",
+  "source_audio_duration_s": 16.253968,
+  "final_container_duration_s": 16.3,
+  "semantic_anchor_count": 10,
+  "matched_anchor_count": 9,
+  "unmatched_anchor_count": 1,
+  "action_units_catalogued": 14,
+  "selected_action_units": 10,
+  "cut_boundaries": 9,
+  "hard_cut_risk_pairs_before": 4,
+  "hard_cut_pairs_repaired": 4,
+  "remaining_incompatible_pairs": 0,
+  "sanity_hard_fail_count": 0,
+  "visible_loop_count": 0,
+  "repeated_motion_fill_count": 0,
+  "render": {
+    "resolution": "1080x1920",
+    "fps": 60,
+    "video": "H.264 yuv420p",
+    "audio": "AAC 44.1 kHz stereo"
+  }
+}

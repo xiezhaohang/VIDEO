@@ -1,0 +1,707 @@
+{
+  "run_id": "20260818-160940-slime-vo-blind-alignment-v2",
+  "source_audio": "extracted_audio.wav",
+  "language": "en",
+  "engine": "whisper.cpp",
+  "model": "ggml-small multilingual, local cached model",
+  "language_mode": "auto",
+  "offline": true,
+  "external_semantic_prompt": null,
+  "duration_s": 16.253968,
+  "text": "Not one, not two, not three, not four, but five coconut oil squishies. Why are you buying just one when you can get a whole set for such a good deal? These are real coconut oil squishies with that super slow, no rebound texture. Tap the link below to check them out.",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 5.48,
+      "text": "Not one, not two, not three, not four, but five coconut oil squishies.",
+      "words": [
+        {
+          "start": 0.22,
+          "end": 0.27,
+          "text": "Not",
+          "probability": 0.87009
+        },
+        {
+          "start": 0.27,
+          "end": 0.54,
+          "text": "one",
+          "probability": 0.750192
+        },
+        {
+          "start": 0.72,
+          "end": 0.99,
+          "text": "not",
+          "probability": 0.988632
+        },
+        {
+          "start": 0.99,
+          "end": 1.26,
+          "text": "two",
+          "probability": 0.989179
+        },
+        {
+          "start": 1.44,
+          "end": 1.67,
+          "text": "not",
+          "probability": 0.98801
+        },
+        {
+          "start": 1.88,
+          "end": 2.16,
+          "text": "three",
+          "probability": 0.9939
+        },
+        {
+          "start": 2.34,
+          "end": 2.61,
+          "text": "not",
+          "probability": 0.988847
+        },
+        {
+          "start": 2.61,
+          "end": 2.83,
+          "text": "four",
+          "probability": 0.992237
+        },
+        {
+          "start": 3.2,
+          "end": 3.32,
+          "text": "but",
+          "probability": 0.784313
+        },
+        {
+          "start": 3.49,
+          "end": 3.74,
+          "text": "five",
+          "probability": 0.946001
+        },
+        {
+          "start": 3.74,
+          "end": 4.25,
+          "text": "coconut",
+          "probability": 0.768143
+        },
+        {
+          "start": 4.32,
+          "end": 4.5,
+          "text": "oil",
+          "probability": 0.994865
+        },
+        {
+          "start": 4.5,
+          "end": 4.96,
+          "text": "squish",
+          "probability": 0.950083
+        },
+        {
+          "start": 4.96,
+          "end": 5.05,
+          "text": "ies",
+          "probability": 0.998658
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 5.48,
+      "end": 9.48,
+      "text": "Why are you buying just one when you can get a whole set for such a good deal?",
+      "words": [
+        {
+          "start": 5.66,
+          "end": 5.66,
+          "text": "Why",
+          "probability": 0.995129
+        },
+        {
+          "start": 5.7,
+          "end": 5.84,
+          "text": "are",
+          "probability": 0.993187
+        },
+        {
+          "start": 5.84,
+          "end": 6.02,
+          "text": "you",
+          "probability": 0.996307
+        },
+        {
+          "start": 6.02,
+          "end": 6.39,
+          "text": "buying",
+          "probability": 0.991665
+        },
+        {
+          "start": 6.39,
+          "end": 6.49,
+          "text": "just",
+          "probability": 0.982819
+        },
+        {
+          "start": 6.72,
+          "end": 6.84,
+          "text": "one",
+          "probability": 0.996542
+        },
+        {
+          "start": 6.84,
+          "end": 7.09,
+          "text": "when",
+          "probability": 0.942881
+        },
+        {
+          "start": 7.09,
+          "end": 7.15,
+          "text": "you",
+          "probability": 0.993619
+        },
+        {
+          "start": 7.36,
+          "end": 7.47,
+          "text": "can",
+          "probability": 0.984572
+        },
+        {
+          "start": 7.47,
+          "end": 7.66,
+          "text": "get",
+          "probability": 0.994359
+        },
+        {
+          "start": 7.66,
+          "end": 7.72,
+          "text": "a",
+          "probability": 0.992615
+        },
+        {
+          "start": 7.72,
+          "end": 8.04,
+          "text": "whole",
+          "probability": 0.989149
+        },
+        {
+          "start": 8.04,
+          "end": 8.23,
+          "text": "set",
+          "probability": 0.999237
+        },
+        {
+          "start": 8.23,
+          "end": 8.31,
+          "text": "for",
+          "probability": 0.989508
+        },
+        {
+          "start": 8.67,
+          "end": 8.67,
+          "text": "such",
+          "probability": 0.995794
+        },
+        {
+          "start": 8.68,
+          "end": 8.73,
+          "text": "a",
+          "probability": 0.995421
+        },
+        {
+          "start": 8.73,
+          "end": 8.98,
+          "text": "good",
+          "probability": 0.997272
+        },
+        {
+          "start": 8.98,
+          "end": 9.23,
+          "text": "deal",
+          "probability": 0.998445
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 9.48,
+      "end": 13.94,
+      "text": "These are real coconut oil squishies with that super slow, no rebound texture.",
+      "words": [
+        {
+          "start": 9.7,
+          "end": 9.78,
+          "text": "These",
+          "probability": 0.996976
+        },
+        {
+          "start": 9.78,
+          "end": 9.93,
+          "text": "are",
+          "probability": 0.998148
+        },
+        {
+          "start": 9.96,
+          "end": 10.2,
+          "text": "real",
+          "probability": 0.994586
+        },
+        {
+          "start": 10.2,
+          "end": 10.48,
+          "text": "coconut",
+          "probability": 0.953826
+        },
+        {
+          "start": 10.72,
+          "end": 10.79,
+          "text": "oil",
+          "probability": 0.998845
+        },
+        {
+          "start": 10.79,
+          "end": 11.14,
+          "text": "squish",
+          "probability": 0.99553
+        },
+        {
+          "start": 11.14,
+          "end": 11.15,
+          "text": "ies",
+          "probability": 0.999424
+        },
+        {
+          "start": 11.36,
+          "end": 11.55,
+          "text": "with",
+          "probability": 0.949595
+        },
+        {
+          "start": 11.55,
+          "end": 11.79,
+          "text": "that",
+          "probability": 0.994287
+        },
+        {
+          "start": 11.79,
+          "end": 12.09,
+          "text": "super",
+          "probability": 0.990847
+        },
+        {
+          "start": 12.09,
+          "end": 12.3,
+          "text": "slow",
+          "probability": 0.881128
+        },
+        {
+          "start": 12.63,
+          "end": 12.63,
+          "text": "no",
+          "probability": 0.967479
+        },
+        {
+          "start": 12.69,
+          "end": 13.16,
+          "text": "rebound",
+          "probability": 0.889581
+        },
+        {
+          "start": 13.16,
+          "end": 13.69,
+          "text": "texture",
+          "probability": 0.996166
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 13.94,
+      "end": 15.94,
+      "text": "Tap the link below to check them out.",
+      "words": [
+        {
+          "start": 14.12,
+          "end": 14.12,
+          "text": "Tap",
+          "probability": 0.991363
+        },
+        {
+          "start": 14.16,
+          "end": 14.3,
+          "text": "the",
+          "probability": 0.998525
+        },
+        {
+          "start": 14.3,
+          "end": 14.55,
+          "text": "link",
+          "probability": 0.998026
+        },
+        {
+          "start": 14.55,
+          "end": 14.86,
+          "text": "below",
+          "probability": 0.99519
+        },
+        {
+          "start": 14.86,
+          "end": 14.95,
+          "text": "to",
+          "probability": 0.997451
+        },
+        {
+          "start": 15.18,
+          "end": 15.29,
+          "text": "check",
+          "probability": 0.998986
+        },
+        {
+          "start": 15.29,
+          "end": 15.54,
+          "text": "them",
+          "probability": 0.999497
+        },
+        {
+          "start": 15.54,
+          "end": 15.61,
+          "text": "out",
+          "probability": 0.99979
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "start": 0.22,
+      "end": 0.27,
+      "text": "Not",
+      "probability": 0.87009
+    },
+    {
+      "start": 0.27,
+      "end": 0.54,
+      "text": "one",
+      "probability": 0.750192
+    },
+    {
+      "start": 0.72,
+      "end": 0.99,
+      "text": "not",
+      "probability": 0.988632
+    },
+    {
+      "start": 0.99,
+      "end": 1.26,
+      "text": "two",
+      "probability": 0.989179
+    },
+    {
+      "start": 1.44,
+      "end": 1.67,
+      "text": "not",
+      "probability": 0.98801
+    },
+    {
+      "start": 1.88,
+      "end": 2.16,
+      "text": "three",
+      "probability": 0.9939
+    },
+    {
+      "start": 2.34,
+      "end": 2.61,
+      "text": "not",
+      "probability": 0.988847
+    },
+    {
+      "start": 2.61,
+      "end": 2.83,
+      "text": "four",
+      "probability": 0.992237
+    },
+    {
+      "start": 3.2,
+      "end": 3.32,
+      "text": "but",
+      "probability": 0.784313
+    },
+    {
+      "start": 3.49,
+      "end": 3.74,
+      "text": "five",
+      "probability": 0.946001
+    },
+    {
+      "start": 3.74,
+      "end": 4.25,
+      "text": "coconut",
+      "probability": 0.768143
+    },
+    {
+      "start": 4.32,
+      "end": 4.5,
+      "text": "oil",
+      "probability": 0.994865
+    },
+    {
+      "start": 4.5,
+      "end": 4.96,
+      "text": "squish",
+      "probability": 0.950083
+    },
+    {
+      "start": 4.96,
+      "end": 5.05,
+      "text": "ies",
+      "probability": 0.998658
+    },
+    {
+      "start": 5.66,
+      "end": 5.66,
+      "text": "Why",
+      "probability": 0.995129
+    },
+    {
+      "start": 5.7,
+      "end": 5.84,
+      "text": "are",
+      "probability": 0.993187
+    },
+    {
+      "start": 5.84,
+      "end": 6.02,
+      "text": "you",
+      "probability": 0.996307
+    },
+    {
+      "start": 6.02,
+      "end": 6.39,
+      "text": "buying",
+      "probability": 0.991665
+    },
+    {
+      "start": 6.39,
+      "end": 6.49,
+      "text": "just",
+      "probability": 0.982819
+    },
+    {
+      "start": 6.72,
+      "end": 6.84,
+      "text": "one",
+      "probability": 0.996542
+    },
+    {
+      "start": 6.84,
+      "end": 7.09,
+      "text": "when",
+      "probability": 0.942881
+    },
+    {
+      "start": 7.09,
+      "end": 7.15,
+      "text": "you",
+      "probability": 0.993619
+    },
+    {
+      "start": 7.36,
+      "end": 7.47,
+      "text": "can",
+      "probability": 0.984572
+    },
+    {
+      "start": 7.47,
+      "end": 7.66,
+      "text": "get",
+      "probability": 0.994359
+    },
+    {
+      "start": 7.66,
+      "end": 7.72,
+      "text": "a",
+      "probability": 0.992615
+    },
+    {
+      "start": 7.72,
+      "end": 8.04,
+      "text": "whole",
+      "probability": 0.989149
+    },
+    {
+      "start": 8.04,
+      "end": 8.23,
+      "text": "set",
+      "probability": 0.999237
+    },
+    {
+      "start": 8.23,
+      "end": 8.31,
+      "text": "for",
+      "probability": 0.989508
+    },
+    {
+      "start": 8.67,
+      "end": 8.67,
+      "text": "such",
+      "probability": 0.995794
+    },
+    {
+      "start": 8.68,
+      "end": 8.73,
+      "text": "a",
+      "probability": 0.995421
+    },
+    {
+      "start": 8.73,
+      "end": 8.98,
+      "text": "good",
+      "probability": 0.997272
+    },
+    {
+      "start": 8.98,
+      "end": 9.23,
+      "text": "deal",
+      "probability": 0.998445
+    },
+    {
+      "start": 9.7,
+      "end": 9.78,
+      "text": "These",
+      "probability": 0.996976
+    },
+    {
+      "start": 9.78,
+      "end": 9.93,
+      "text": "are",
+      "probability": 0.998148
+    },
+    {
+      "start": 9.96,
+      "end": 10.2,
+      "text": "real",
+      "probability": 0.994586
+    },
+    {
+      "start": 10.2,
+      "end": 10.48,
+      "text": "coconut",
+      "probability": 0.953826
+    },
+    {
+      "start": 10.72,
+      "end": 10.79,
+      "text": "oil",
+      "probability": 0.998845
+    },
+    {
+      "start": 10.79,
+      "end": 11.14,
+      "text": "squish",
+      "probability": 0.99553
+    },
+    {
+      "start": 11.14,
+      "end": 11.15,
+      "text": "ies",
+      "probability": 0.999424
+    },
+    {
+      "start": 11.36,
+      "end": 11.55,
+      "text": "with",
+      "probability": 0.949595
+    },
+    {
+      "start": 11.55,
+      "end": 11.79,
+      "text": "that",
+      "probability": 0.994287
+    },
+    {
+      "start": 11.79,
+      "end": 12.09,
+      "text": "super",
+      "probability": 0.990847
+    },
+    {
+      "start": 12.09,
+      "end": 12.3,
+      "text": "slow",
+      "probability": 0.881128
+    },
+    {
+      "start": 12.63,
+      "end": 12.63,
+      "text": "no",
+      "probability": 0.967479
+    },
+    {
+      "start": 12.69,
+      "end": 13.16,
+      "text": "rebound",
+      "probability": 0.889581
+    },
+    {
+      "start": 13.16,
+      "end": 13.69,
+      "text": "texture",
+      "probability": 0.996166
+    },
+    {
+      "start": 14.12,
+      "end": 14.12,
+      "text": "Tap",
+      "probability": 0.991363
+    },
+    {
+      "start": 14.16,
+      "end": 14.3,
+      "text": "the",
+      "probability": 0.998525
+    },
+    {
+      "start": 14.3,
+      "end": 14.55,
+      "text": "link",
+      "probability": 0.998026
+    },
+    {
+      "start": 14.55,
+      "end": 14.86,
+      "text": "below",
+      "probability": 0.99519
+    },
+    {
+      "start": 14.86,
+      "end": 14.95,
+      "text": "to",
+      "probability": 0.997451
+    },
+    {
+      "start": 15.18,
+      "end": 15.29,
+      "text": "check",
+      "probability": 0.998986
+    },
+    {
+      "start": 15.29,
+      "end": 15.54,
+      "text": "them",
+      "probability": 0.999497
+    },
+    {
+      "start": 15.54,
+      "end": 15.61,
+      "text": "out",
+      "probability": 0.99979
+    }
+  ],
+  "discarded_attempts": [
+    {
+      "engine": "whisper.cpp",
+      "language_mode": "forced zh",
+      "reason": "wrong-language decode; excluded from decisions"
+    },
+    {
+      "engine": "OpenAI API",
+      "reason": "authorized but network DNS/TCP path unavailable; no successful upload"
+    }
+  ]
+}

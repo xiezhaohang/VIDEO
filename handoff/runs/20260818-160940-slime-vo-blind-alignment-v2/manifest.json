@@ -1,0 +1,167 @@
+{
+  "run_id": "20260818-160940-slime-vo-blind-alignment-v2",
+  "task_name": "Slime VO Blind Alignment Test v2",
+  "created_at": "2026-08-18T16:11:49.4747180+08:00",
+  "source_local_paths": [
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\action_units.json",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\anchor_to_action_mapping.json",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\decisions.json",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\director_plan.json",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\metrics.json",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\project.md",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\report.html",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\sanity.json",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\segments\\concat.txt",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\semantic_anchors.json",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\summary.md",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\takes_packed.md",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\transcription.json",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\transition_pair_analysis.json",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\vo_timeline.json"
+  ],
+  "files": [
+    {
+      "repository_path": "handoff/latest/action_units.json",
+      "archived_path": "handoff/runs/20260818-160940-slime-vo-blind-alignment-v2/action_units.json",
+      "type": "json",
+      "purpose": "Complete text delivery for ChatGPT review",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/anchor_to_action_mapping.json",
+      "archived_path": "handoff/runs/20260818-160940-slime-vo-blind-alignment-v2/anchor_to_action_mapping.json",
+      "type": "json",
+      "purpose": "Complete text delivery for ChatGPT review",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/decisions.json",
+      "archived_path": "handoff/runs/20260818-160940-slime-vo-blind-alignment-v2/decisions.json",
+      "type": "json",
+      "purpose": "Complete text delivery for ChatGPT review",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/director_plan.json",
+      "archived_path": "handoff/runs/20260818-160940-slime-vo-blind-alignment-v2/director_plan.json",
+      "type": "json",
+      "purpose": "Complete text delivery for ChatGPT review",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/metrics.json",
+      "archived_path": "handoff/runs/20260818-160940-slime-vo-blind-alignment-v2/metrics.json",
+      "type": "json",
+      "purpose": "Complete text delivery for ChatGPT review",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/project.md",
+      "archived_path": "handoff/runs/20260818-160940-slime-vo-blind-alignment-v2/project.md",
+      "type": "md",
+      "purpose": "Complete text delivery for ChatGPT review",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/report.html",
+      "archived_path": "handoff/runs/20260818-160940-slime-vo-blind-alignment-v2/report.html",
+      "type": "html",
+      "purpose": "Complete text delivery for ChatGPT review",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/sanity.json",
+      "archived_path": "handoff/runs/20260818-160940-slime-vo-blind-alignment-v2/sanity.json",
+      "type": "json",
+      "purpose": "Complete text delivery for ChatGPT review",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/segments/concat.txt",
+      "archived_path": "handoff/runs/20260818-160940-slime-vo-blind-alignment-v2/segments/concat.txt",
+      "type": "txt",
+      "purpose": "Complete text delivery for ChatGPT review",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/semantic_anchors.json",
+      "archived_path": "handoff/runs/20260818-160940-slime-vo-blind-alignment-v2/semantic_anchors.json",
+      "type": "json",
+      "purpose": "Complete text delivery for ChatGPT review",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/summary.md",
+      "archived_path": "handoff/runs/20260818-160940-slime-vo-blind-alignment-v2/summary.md",
+      "type": "md",
+      "purpose": "Run overview for reviewers",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/takes_packed.md",
+      "archived_path": "handoff/runs/20260818-160940-slime-vo-blind-alignment-v2/takes_packed.md",
+      "type": "md",
+      "purpose": "Complete text delivery for ChatGPT review",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/transcription.json",
+      "archived_path": "handoff/runs/20260818-160940-slime-vo-blind-alignment-v2/transcription.json",
+      "type": "json",
+      "purpose": "Complete text delivery for ChatGPT review",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/transition_pair_analysis.json",
+      "archived_path": "handoff/runs/20260818-160940-slime-vo-blind-alignment-v2/transition_pair_analysis.json",
+      "type": "json",
+      "purpose": "Complete text delivery for ChatGPT review",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/vo_timeline.json",
+      "archived_path": "handoff/runs/20260818-160940-slime-vo-blind-alignment-v2/vo_timeline.json",
+      "type": "json",
+      "purpose": "Complete text delivery for ChatGPT review",
+      "must_review": true
+    },
+    {
+      "repository_path": "handoff/latest/manifest.json",
+      "archived_path": "handoff/runs/20260818-160940-slime-vo-blind-alignment-v2/manifest.json",
+      "type": "json",
+      "purpose": "Handoff inventory, provenance, and review requirements",
+      "must_review": true
+    }
+  ],
+  "local_only_files": [
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\extracted_audio.wav",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\segments\\01_count_one.mp4",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\segments\\02_count_two.mp4",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\segments\\03_count_three.mp4",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\segments\\04_count_four.mp4",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\segments\\05_count_five.mp4",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\segments\\06_five_hold.mp4",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\segments\\07_single_complete_squeeze.mp4",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\segments\\08_whole_set_open_palm.mp4",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\segments\\09_texture_proof.mp4",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\segments\\10_cta_neutral_continuation.mp4",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\slime_vo_blind_alignment_test_v2_final.mp4",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\verify\\pass1\\cut_00650.png",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\verify\\pass1\\cut_01420.png",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\verify\\pass1\\cut_02300.png",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\verify\\pass1\\cut_03150.png",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\verify\\pass1\\cut_03950.png",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\verify\\pass1\\cut_05480.png",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\verify\\pass1\\cut_07550.png",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\verify\\pass1\\cut_09480.png",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\verify\\pass1\\cut_13940.png",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\verify\\pass1\\overview.png",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\verify\\pass2\\cut_07550.png",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\verify\\pass2\\cut_09480.png",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\verify\\pass2\\cut_13940.png",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\verify\\pass2\\overview.png",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\visual_master_pass2.mp4",
+    "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-18\\referenced-chatgpt-conversation-this-is-an-12\\outputs\\20260818-160940-slime-vo-blind-alignment-v2\\edit\\visual_master.mp4"
+  ],
+  "commit_sha": null
+}

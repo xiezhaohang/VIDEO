@@ -1,28 +1,173 @@
 {
-  "run_id": "20260818-143548-no-vo-blind-test1-slime",
-  "discovery_method": "visual-only coarse scan followed by 3-4 fps timecoded inspection and cut-boundary review",
-  "action_units": [
-    {"id":"AU41_01","source":"raw_0041","range_s":[0.0,4.25],"literal_action":"不同颜色玩具依次落到地面并累积成一组","prepare":[0.0,0.0],"core_action":[0.0,4.0],"result":[4.0,4.25],"hold":[4.25,4.25],"complete":false,"issue":"源文件从第一件物体已在空中开始，首个投放缺少准备","tags":["serial_reveal","partial_first_action"],"selected":false},
-    {"id":"AU41_02","source":"raw_0041","range_s":[6.1,8.45],"literal_action":"镜头向地面上的五色商品组推进，最终形成清晰全组展示","prepare":[6.1,6.35],"core_action":[6.35,7.85],"result":[7.85,8.2],"hold":[8.2,8.45],"complete":true,"tags":["product_identity","color_range","continuous_take"],"selected":true},
-    {"id":"AU42_01","source":"raw_0042","range_s":[0.0,2.85],"literal_action":"单只蓝色玩具由展开状态被握压，透明鼓包突出，随后松手回到展开状态","prepare":[0.0,0.35],"core_action":[0.35,1.65],"result":[1.65,2.55],"hold":[2.55,2.85],"complete":true,"tags":["squeeze","deformation","release","rebound","continuous_take"],"selected":true},
-    {"id":"AU42_02","source":"raw_0042","range_s":[2.9,4.75],"literal_action":"同一蓝色玩具再次完成握压、鼓包与松手","prepare":[2.9,3.1],"core_action":[3.1,4.0],"result":[4.0,4.6],"hold":[4.6,4.75],"complete":true,"tags":["duplicate_function","retry_not_failure"],"selected":false,"unused_reason":"与AU42_01同功能同构图且无重大新信息"},
-    {"id":"AU42_WAIT","source":"raw_0042","range_s":[4.75,6.973633],"literal_action":"展开状态长时间停留","complete":false,"tags":["wait","long_tail"],"selected":false},
-    {"id":"AU43_01","source":"raw_0043","range_s":[0.0,3.35],"literal_action":"双手同时握压多色商品组并松开呈现","complete":true,"tags":["multi_unit_squeeze","variety","release"],"selected":false,"unused_reason":"同源第二次动作形变更清楚"},
-    {"id":"AU43_02","source":"raw_0043","range_s":[3.7,6.75],"literal_action":"多色商品组从展开准备到同时握压鼓包，再松手形成完整组合彩色展示","prepare":[3.7,4.0],"core_action":[4.0,5.35],"result":[5.35,6.4],"hold":[6.4,6.75],"complete":true,"tags":["multi_unit_squeeze","deformation","release","hero","continuous_take"],"selected":true},
-    {"id":"AU43_WAIT","source":"raw_0043","range_s":[6.75,10.8108],"literal_action":"多色商品组展示后停留并小幅整理","complete":false,"tags":["wait","minor_adjustment","long_tail"],"selected":false},
-    {"id":"AU44_01","source":"raw_0044","range_s":[0.0,1.65],"literal_action":"橙色与透明组合完成一次握压鼓包并松开","complete":true,"tags":["squeeze","release"],"selected":false,"unused_reason":"功能信息已由更清楚的单只蓝色与多色组动作覆盖"},
-    {"id":"AU44_02","source":"raw_0044","range_s":[1.75,4.25],"literal_action":"橙色与透明组合再次完成握压、鼓包、松手","complete":true,"tags":["duplicate_function","squeeze","release"],"selected":false,"unused_reason":"同功能重复且没有新的操作方式"},
-    {"id":"AU44_03","source":"raw_0044","range_s":[4.45,6.756767],"literal_action":"再次握压但在源文件结束前未完整松手回到结果状态","complete":false,"tags":["incomplete_action","result_not_reached"],"selected":false},
-    {"id":"AU45_01","source":"raw_0045","range_s":[0.0,1.6],"literal_action":"橙色与透明组合完成握压和松手","complete":true,"tags":["squeeze","release"],"selected":false,"unused_reason":"同功能重复"},
-    {"id":"AU45_02","source":"raw_0045","range_s":[1.75,4.3],"literal_action":"橙色与透明组合完成第二次握压和松手","complete":true,"tags":["duplicate_function"],"selected":false,"unused_reason":"同功能重复"},
-    {"id":"AU45_03","source":"raw_0045","range_s":[4.55,6.45],"literal_action":"另一只手以手指连续按压展开状态的商品表面并观察局部形变","complete":true,"tags":["finger_press","surface_response"],"selected":false,"unused_reason":"同源后半段版本边界更完整"},
-    {"id":"AU45_04","source":"raw_0045","range_s":[6.75,9.35],"literal_action":"橙色与透明组合完成握压、鼓包与松手","complete":true,"tags":["squeeze","release"],"selected":false,"unused_reason":"同功能重复"},
-    {"id":"AU45_05","source":"raw_0045","range_s":[9.55,11.55],"literal_action":"橙色与透明组合再次完成握压与松手","complete":true,"tags":["duplicate_function"],"selected":false,"unused_reason":"同功能重复"},
-    {"id":"AU45_06","source":"raw_0045","range_s":[11.75,14.35],"literal_action":"另一只手用手指连续点按橙色/透明展开商品，局部凹陷后恢复，并在手指退出后保持可读状态","prepare":[11.75,11.95],"core_action":[11.95,13.85],"result":[13.85,14.2],"hold":[14.2,14.35],"complete":true,"tags":["finger_press","local_deformation","recovery","continuous_take"],"selected":true},
-    {"id":"AU45_07","source":"raw_0045","range_s":[14.65,16.149467],"literal_action":"开始新一轮握压但源文件结束时仍未完成松手","complete":false,"tags":["incomplete_action","result_not_reached"],"selected":false}
+  "run_id": "20260818-160940-slime-vo-blind-alignment-v2",
+  "scan_scope": {
+    "included": "D:/解压玩具史莱姆/DJI_*.MP4 at directory top level",
+    "excluded": [
+      "D:/解压玩具史莱姆/edit/**",
+      "No-VO final",
+      "old segments",
+      "paused/contaminated run outputs"
+    ]
+  },
+  "source_inventory": [
+    {
+      "file": "DJI_20260813102838_0041_D.MP4",
+      "duration_s": 8.5085,
+      "summary": "locked wide shot; five products enter sequentially, settle, then camera pushes in"
+    },
+    {
+      "file": "DJI_20260813102928_0042_D.MP4",
+      "duration_s": 6.973633,
+      "summary": "single blue/clear squishy; repeated squeeze-release demonstrations"
+    },
+    {
+      "file": "DJI_20260813102942_0043_D.MP4",
+      "duration_s": 10.8108,
+      "summary": "full set in two hands; compress, rearrange, reveal, and hold"
+    },
+    {
+      "file": "DJI_20260813102959_0044_D.MP4",
+      "duration_s": 6.756767,
+      "summary": "single yellow/clear squishy; two complete squeeze-release cycles followed by handling"
+    },
+    {
+      "file": "DJI_20260813103012_0045_D.MP4",
+      "duration_s": 16.149467,
+      "summary": "long yellow/clear squeeze, release, poke, and hold demonstrations; redundant for this runtime"
+    }
   ],
-  "failed_attempts": [],
-  "resets": [],
-  "selection_summary": {"verified_selected_units":4,"same_take_nonlinear_jumps":0,"repeated_source_ranges":0}
+  "units": [
+    {
+      "id": "AU41_1",
+      "source": "DJI_20260813102838_0041_D.MP4",
+      "start": 0.0,
+      "end": 0.65,
+      "action": "first item enters and settles",
+      "integrity": "pass",
+      "selected": true
+    },
+    {
+      "id": "AU41_2",
+      "source": "DJI_20260813102838_0041_D.MP4",
+      "start": 1.1,
+      "end": 1.87,
+      "action": "second item enters and settles while first remains",
+      "integrity": "pass",
+      "selected": true
+    },
+    {
+      "id": "AU41_3",
+      "source": "DJI_20260813102838_0041_D.MP4",
+      "start": 2.15,
+      "end": 3.03,
+      "action": "third item enters and settles",
+      "integrity": "pass",
+      "selected": true
+    },
+    {
+      "id": "AU41_4",
+      "source": "DJI_20260813102838_0041_D.MP4",
+      "start": 3.65,
+      "end": 4.5,
+      "action": "fourth item enters and settles",
+      "integrity": "pass",
+      "selected": true
+    },
+    {
+      "id": "AU41_5",
+      "source": "DJI_20260813102838_0041_D.MP4",
+      "start": 4.8,
+      "end": 5.6,
+      "action": "fifth item enters and settles",
+      "integrity": "pass",
+      "selected": true
+    },
+    {
+      "id": "AU41_HOLD",
+      "source": "DJI_20260813102838_0041_D.MP4",
+      "start": 5.6,
+      "end": 7.13,
+      "action": "all five remain visible during push-in",
+      "integrity": "pass",
+      "selected": true
+    },
+    {
+      "id": "AU42_SINGLE",
+      "source": "DJI_20260813102928_0042_D.MP4",
+      "start": 0.05,
+      "end": 2.8,
+      "action": "single item squeeze followed by complete release/open-palm result",
+      "integrity": "pass",
+      "selected": true,
+      "retime": "2.75 s source compressed uniformly to 2.07 s"
+    },
+    {
+      "id": "AU42_REPEAT",
+      "source": "DJI_20260813102928_0042_D.MP4",
+      "start": 2.8,
+      "end": 6.7,
+      "action": "additional squeeze-release repetitions",
+      "integrity": "pass",
+      "selected": false,
+      "reason": "no information upgrade"
+    },
+    {
+      "id": "AU43_EARLY",
+      "source": "DJI_20260813102942_0043_D.MP4",
+      "start": 0.0,
+      "end": 6.3,
+      "action": "full-set compression and rearrangement",
+      "integrity": "pass",
+      "selected": false,
+      "reason": "busy motion conflicts with value-comparison readability"
+    },
+    {
+      "id": "AU43_SET",
+      "source": "DJI_20260813102942_0043_D.MP4",
+      "start": 6.3,
+      "end": 8.23,
+      "action": "full set shown in open palms",
+      "integrity": "pass",
+      "selected": true
+    },
+    {
+      "id": "AU43_CTA_HOLD",
+      "source": "DJI_20260813102942_0043_D.MP4",
+      "start": 8.23,
+      "end": 10.544,
+      "action": "continuous full-set presentation hold",
+      "integrity": "pass",
+      "selected": true,
+      "semantic_role": "neutral hold only; not proof of a link"
+    },
+    {
+      "id": "AU44_TEXTURE",
+      "source": "DJI_20260813102959_0044_D.MP4",
+      "start": 0.0,
+      "end": 4.46,
+      "action": "two complete squeeze-release cycles ending open",
+      "integrity": "pass",
+      "selected": true
+    },
+    {
+      "id": "AU44_TAIL",
+      "source": "DJI_20260813102959_0044_D.MP4",
+      "start": 4.46,
+      "end": 6.56,
+      "action": "continued holding/handling",
+      "integrity": "usable",
+      "selected": false,
+      "reason": "weaker ending pose"
+    },
+    {
+      "id": "AU45_LONG",
+      "source": "DJI_20260813103012_0045_D.MP4",
+      "start": 0.0,
+      "end": 15.9,
+      "action": "multiple squeeze, release, poke and hold cycles",
+      "integrity": "pass as sub-units",
+      "selected": false,
+      "reason": "redundant repetitions and poorer transition economy for 16.25 s VO"
+    }
+  ]
 }
-

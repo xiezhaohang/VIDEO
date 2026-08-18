@@ -1,0 +1,53 @@
+{
+  "run_id": "20260818-160940-slime-vo-blind-alignment-v2",
+  "priority_order": [
+    "Action Integrity",
+    "Proof Ownership",
+    "Commercial Logic",
+    "Transition Compatibility",
+    "Rhythm"
+  ],
+  "timeline": [
+    {
+      "output_start": 0.0,
+      "output_end": 5.48,
+      "role": "count escalation/payoff",
+      "visual": "five additive arrivals in locked wide shot"
+    },
+    {
+      "output_start": 5.48,
+      "output_end": 7.55,
+      "role": "single-item premise",
+      "visual": "one complete squeeze-release"
+    },
+    {
+      "output_start": 7.55,
+      "output_end": 9.48,
+      "role": "set/value payoff",
+      "visual": "full set in open palms"
+    },
+    {
+      "output_start": 9.48,
+      "output_end": 13.94,
+      "role": "texture proof",
+      "visual": "two complete squeeze-release cycles on one product"
+    },
+    {
+      "output_start": 13.94,
+      "output_end": 16.253968,
+      "role": "CTA close",
+      "visual": "neutral set hold; link semantics explicitly unmatched"
+    }
+  ],
+  "output": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 60,
+    "video_codec": "H.264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "AAC",
+    "subtitles": false,
+    "bgm": false,
+    "extra_sfx": false
+  }
+}

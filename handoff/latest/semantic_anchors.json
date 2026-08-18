@@ -1,0 +1,124 @@
+{
+  "run_id": "20260818-160940-slime-vo-blind-alignment-v2",
+  "blind_evidence_statement": "All anchors below were independently inferred from extracted_audio.wav after automatic language detection. No paused-run transcript, synchronization hint, candidate-shot recommendation, or prior conclusion was read or used.",
+  "anchors": [
+    {
+      "id": "A1",
+      "start": 0.22,
+      "end": 0.72,
+      "text": "Not one",
+      "type": [
+        "semantic",
+        "rhythmic",
+        "repetition"
+      ],
+      "strength": "high"
+    },
+    {
+      "id": "A2",
+      "start": 0.72,
+      "end": 1.44,
+      "text": "not two",
+      "type": [
+        "semantic",
+        "rhythmic",
+        "repetition"
+      ],
+      "strength": "high"
+    },
+    {
+      "id": "A3",
+      "start": 1.44,
+      "end": 2.34,
+      "text": "not three",
+      "type": [
+        "semantic",
+        "rhythmic",
+        "repetition"
+      ],
+      "strength": "high"
+    },
+    {
+      "id": "A4",
+      "start": 2.34,
+      "end": 3.16,
+      "text": "not four",
+      "type": [
+        "semantic",
+        "rhythmic",
+        "repetition"
+      ],
+      "strength": "high"
+    },
+    {
+      "id": "A5",
+      "start": 3.2,
+      "end": 5.48,
+      "text": "but five coconut oil squishies",
+      "type": [
+        "semantic",
+        "contrast",
+        "emphasis",
+        "payoff"
+      ],
+      "strength": "high"
+    },
+    {
+      "id": "A6",
+      "start": 5.48,
+      "end": 7.55,
+      "text": "buying just one",
+      "type": [
+        "semantic",
+        "comparison"
+      ],
+      "strength": "high"
+    },
+    {
+      "id": "A7",
+      "start": 7.55,
+      "end": 9.48,
+      "text": "get a whole set for such a good deal",
+      "type": [
+        "semantic",
+        "comparison",
+        "commercial"
+      ],
+      "strength": "high"
+    },
+    {
+      "id": "A8",
+      "start": 9.48,
+      "end": 11.36,
+      "text": "real coconut oil squishies",
+      "type": [
+        "semantic",
+        "identity"
+      ],
+      "strength": "medium"
+    },
+    {
+      "id": "A9",
+      "start": 11.36,
+      "end": 13.94,
+      "text": "super slow, no rebound texture",
+      "type": [
+        "semantic",
+        "proof_required",
+        "emphasis"
+      ],
+      "strength": "high"
+    },
+    {
+      "id": "A10",
+      "start": 13.94,
+      "end": 15.94,
+      "text": "Tap the link below to check them out",
+      "type": [
+        "semantic",
+        "call_to_action"
+      ],
+      "strength": "high"
+    }
+  ]
+}

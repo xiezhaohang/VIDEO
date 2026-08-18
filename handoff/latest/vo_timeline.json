@@ -1,0 +1,58 @@
+{
+  "run_id": "20260818-160940-slime-vo-blind-alignment-v2",
+  "audio_duration_s": 16.253968,
+  "phrases": [
+    {
+      "id": "VO1",
+      "start": 0.0,
+      "end": 5.48,
+      "text": "Not one, not two, not three, not four, but five coconut oil squishies.",
+      "function": "count escalation and five-item reveal"
+    },
+    {
+      "id": "VO2",
+      "start": 5.48,
+      "end": 9.48,
+      "text": "Why are you buying just one when you can get a whole set for such a good deal?",
+      "function": "single-versus-set value comparison"
+    },
+    {
+      "id": "VO3",
+      "start": 9.48,
+      "end": 13.94,
+      "text": "These are real coconut oil squishies with that super slow, no rebound texture.",
+      "function": "product identity and texture proof claim"
+    },
+    {
+      "id": "VO4",
+      "start": 13.94,
+      "end": 15.94,
+      "text": "Tap the link below to check them out.",
+      "function": "call to action"
+    },
+    {
+      "id": "TAIL",
+      "start": 15.94,
+      "end": 16.253968,
+      "text": "",
+      "function": "natural audio tail"
+    }
+  ],
+  "notable_pauses": [
+    {
+      "start": 5.48,
+      "end": 5.66,
+      "duration_s": 0.18
+    },
+    {
+      "start": 9.48,
+      "end": 9.7,
+      "duration_s": 0.22
+    },
+    {
+      "start": 13.94,
+      "end": 14.12,
+      "duration_s": 0.18
+    }
+  ]
+}

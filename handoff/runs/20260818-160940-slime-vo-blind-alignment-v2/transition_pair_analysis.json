@@ -1,0 +1,94 @@
+{
+  "run_id": "20260818-160940-slime-vo-blind-alignment-v2",
+  "pairs": [
+    {
+      "id": "P1",
+      "at": 0.65,
+      "from": "AU41_1",
+      "to": "AU41_2",
+      "compatibility": "pass",
+      "method": "locked camera + previous object settled + next object ingress",
+      "hard_risk_before": false
+    },
+    {
+      "id": "P2",
+      "at": 1.42,
+      "from": "AU41_2",
+      "to": "AU41_3",
+      "compatibility": "pass",
+      "method": "locked camera + additive staging",
+      "hard_risk_before": false
+    },
+    {
+      "id": "P3",
+      "at": 2.3,
+      "from": "AU41_3",
+      "to": "AU41_4",
+      "compatibility": "pass",
+      "method": "locked camera + additive staging",
+      "hard_risk_before": false
+    },
+    {
+      "id": "P4",
+      "at": 3.15,
+      "from": "AU41_4",
+      "to": "AU41_5",
+      "compatibility": "pass",
+      "method": "locked camera + additive staging",
+      "hard_risk_before": false
+    },
+    {
+      "id": "P5",
+      "at": 3.95,
+      "from": "AU41_5",
+      "to": "AU41_HOLD",
+      "compatibility": "pass",
+      "method": "same take, contiguous source boundary",
+      "hard_risk_before": false
+    },
+    {
+      "id": "P6",
+      "at": 5.48,
+      "from": "AU41_HOLD",
+      "to": "AU42_SINGLE",
+      "compatibility": "pass",
+      "method": "sentence-boundary scale change; product remains centered and color family carries across",
+      "hard_risk_before": true,
+      "repaired": true
+    },
+    {
+      "id": "P7",
+      "at": 7.55,
+      "from": "AU42_SINGLE",
+      "to": "AU43_SET",
+      "compatibility": "pass",
+      "method": "extended source out-point to complete release; open-hand pose match into full set",
+      "hard_risk_before": true,
+      "repaired": true
+    },
+    {
+      "id": "P8",
+      "at": 9.48,
+      "from": "AU43_SET",
+      "to": "AU44_TEXTURE",
+      "compatibility": "pass",
+      "method": "sentence boundary + top-down hand-held axis match + set-to-detail logic",
+      "hard_risk_before": true,
+      "repaired": true
+    },
+    {
+      "id": "P9",
+      "at": 13.94,
+      "from": "AU44_TEXTURE",
+      "to": "AU43_CTA_HOLD",
+      "compatibility": "pass",
+      "method": "changed proof out-point to open-hand result, then matched to open-palms set hold",
+      "hard_risk_before": true,
+      "repaired": true
+    }
+  ],
+  "hard_cut_risk_pairs_before": 4,
+  "hard_cut_pairs_repaired": 4,
+  "remaining_incompatible_pairs": 0,
+  "decorative_transitions_used": 0
+}

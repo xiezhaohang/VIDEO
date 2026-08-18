@@ -1,0 +1,30 @@
+{
+  "run_id": "20260818-160940-slime-vo-blind-alignment-v2",
+  "blind_isolation": {
+    "status": "maintained",
+    "read_paused_task": false,
+    "read_no_vo_final": false,
+    "read_old_run_outputs": false,
+    "allowed_inputs_only": true
+  },
+  "transcription": {
+    "chosen": "local auto-language whisper.cpp result",
+    "reason": "English decode was coherent and token probabilities high; forced-Chinese decode was invalid and excluded",
+    "api_upload": "authorized but did not complete due network/DNS failure"
+  },
+  "editing": [
+    "Kept continuous VO as the sole audio bed; no regenerated speech.",
+    "Used independent complete Action Units and preserved trigger-to-result ownership.",
+    "Retimed only the complete AU42_SINGLE uniformly; did not cut inside its physical squeeze-release action.",
+    "Revised two out-points after pass-1 Sanity Gate to restore action completion and pose compatibility.",
+    "Used no decorative transitions, subtitles, BGM, or extra SFX."
+  ],
+  "local_only": [
+    "extracted_audio.wav",
+    "slime_vo_blind_alignment_test_v2_final.mp4",
+    "segments/**",
+    "verify/**",
+    "visual_master*.mp4",
+    "transcription_whispercpp*.json"
+  ]
+}

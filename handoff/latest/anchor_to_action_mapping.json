@@ -1,0 +1,93 @@
+{
+  "run_id": "20260818-160940-slime-vo-blind-alignment-v2",
+  "mappings": [
+    {
+      "anchor_id": "A1",
+      "action_units": [
+        "AU41_1"
+      ],
+      "status": "matched",
+      "basis": "one additive product arrival"
+    },
+    {
+      "anchor_id": "A2",
+      "action_units": [
+        "AU41_2"
+      ],
+      "status": "matched",
+      "basis": "second additive arrival in same locked shot"
+    },
+    {
+      "anchor_id": "A3",
+      "action_units": [
+        "AU41_3"
+      ],
+      "status": "matched",
+      "basis": "third additive arrival"
+    },
+    {
+      "anchor_id": "A4",
+      "action_units": [
+        "AU41_4"
+      ],
+      "status": "matched",
+      "basis": "fourth additive arrival"
+    },
+    {
+      "anchor_id": "A5",
+      "action_units": [
+        "AU41_5",
+        "AU41_HOLD"
+      ],
+      "status": "matched",
+      "basis": "fifth arrival followed by readable five-item payoff"
+    },
+    {
+      "anchor_id": "A6",
+      "action_units": [
+        "AU42_SINGLE"
+      ],
+      "status": "matched",
+      "basis": "one product, complete action and result"
+    },
+    {
+      "anchor_id": "A7",
+      "action_units": [
+        "AU43_SET"
+      ],
+      "status": "matched",
+      "basis": "whole set visibly owned by the claim"
+    },
+    {
+      "anchor_id": "A8",
+      "action_units": [
+        "AU43_SET",
+        "AU44_TEXTURE"
+      ],
+      "status": "matched",
+      "basis": "product identity remains visually continuous across set and single-item proof"
+    },
+    {
+      "anchor_id": "A9",
+      "action_units": [
+        "AU44_TEXTURE"
+      ],
+      "status": "matched",
+      "basis": "same physical item supplies squeeze, release, deformation and result"
+    },
+    {
+      "anchor_id": "A10",
+      "action_units": [
+        "AU43_CTA_HOLD"
+      ],
+      "status": "unmatched",
+      "basis": "no source footage contains a real link or tap interaction; neutral product hold used without claiming visual proof"
+    }
+  ],
+  "unmatched_semantics": [
+    {
+      "anchor_id": "A10",
+      "reason": "No link UI or tap action exists in allowed raw footage."
+    }
+  ]
+}
