@@ -1,9 +1,9 @@
 # Experiment Report — AI Product Video Director Commercial Alpha v0.1
 
 - Run ID: `20260819-172456-commercial-alpha-v0-1`
-- Status: `passed_pending_handoff`
+- Status: `handed_off`
 - Branch: `handoff`; base: `98a66e005130388f1350256e5330e9eb163d4f1a`
-- Human Sanity Gate: pending user; this is a software/technical smoke only.
+- Handoff payload commit: `10b37cea7d7f3dce18a7dcb5a52440c2cc20bab1`\n- Human Sanity Gate: pending user; this is a software/technical smoke only.
 
 ## Result
 

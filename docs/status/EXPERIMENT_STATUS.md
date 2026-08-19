@@ -268,3 +268,19 @@
 - Published: JSON/MD/HTML/TXT reports plus experimental adapter source; MP4, processed segments, and QA images remain local.
 - Rule promotion: none; adapter and rules remain handoff-only pending repeated human validation.
 - Next step: user full-watch review of the local MP4.
+
+
+## 20260819-172456-commercial-alpha-v0-1
+
+- Experiment: AI Product Video Director — Commercial Alpha v0.1
+- Status: `handed_off`; quality status: `needs_human_review`
+- Updated at: `2026-08-19T17:50:00+08:00`
+- Branch: `handoff`; `main` not modified; `libraries/audio_material/` not modified
+- Base commit: `32ae8bf82e322830075091274481a5809dc42089`
+- Handoff payload commit: `10b37cea7d7f3dce18a7dcb5a52440c2cc20bab1`
+- Canonical archive: `handoff/runs/20260819-172456-commercial-alpha-v0-1/`
+- Source: `app/desktop/`
+- Validation: 4/4 tests; dev UI launch pass; project + SQLite job history pass; D:\\8.19 inventory 14 raw / 28 reviewed AU / 4 selected clips / 19.5 s; real FFmpeg render pass; portable EXE launch pass
+- Local only: 83.7 MB portable EXE (size/rebuildable), D:\\8.19 raw media and smoke MP4 (privacy), smoke SQLite DB (local data)
+- Rule promotion: none; Script Engine and Invisible Transition remain experimental
+- Next step: human review, model-backed shot planning, rendered transition treatments, real TTS duration/timeline integration
