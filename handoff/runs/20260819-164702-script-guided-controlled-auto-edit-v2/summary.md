@@ -2,7 +2,7 @@
 
 - Run ID: $runId
 - Baseline: $v1RunId ($baseCommit)
-- Status: passed_pending_handoff; explicit external push approval received
+- Status: handed_off; Codex sanity preflight passed, final user human acceptance pending
 - Main version: $finalName (local only)
 - Visual/container duration: 20.750 s
 - Sanity: 0 hard fails
@@ -30,5 +30,6 @@
 - Transition risk is slightly higher in v2: the 0075→0078 scale/exposure jump remains, and 0078→0081 adds a medium rotation/reframe jump. A five-segment version was rejected to avoid an extra fourth cut.
 
 No rule is promoted to main.
+
 
 

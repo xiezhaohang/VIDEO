@@ -2,11 +2,11 @@
   "schema_version": "1.0",
   "run_id": "20260819-164702-script-guided-controlled-auto-edit-v2",
   "experiment_name": "8.19 Script-Guided Controlled Auto Edit v2",
-  "status": "passed_pending_handoff",
+  "status": "handed_off_quality_needs_user_review",
   "created_at": "2026-08-19T16:58:49+08:00",
   "branch": "handoff",
   "base_commit": "edac5bfb24e7eaddac9a9439b5af3f539b83c014",
-  "handoff_commit": "pending_publisher",
+  "handoff_commit": "95133b71afb0f31663aaadc7c5580ff8f0e7865e",
   "controlled_variable": "original shooting script / commercial structure outline",
   "original_script": "正上方俯拍。每条视频只拍一个动作，不要一条里连续做很多事。第一条：打开盒子，打开后停一秒。第二条：抽一张卡举到镜头前，停一秒让文字看清。第三条：连续抽两三张，但每张动作要完整，不要太快。第四条：随机抽一张翻正，停一秒。第五条：把几张卡铺开，铺好后停一秒。第六条：拿一张最有吸引力的问题卡放到中央，手指点一下问题，停一秒。第七条：完整产品收尾，盒子打开、卡牌整齐、旁边放两三张正面卡，稳定停两秒。每条开始前先静止半秒，动作做完后再停一秒；失败就重新拍，不要在同一个视频里重做第二次。",
   "inputs": [
@@ -154,7 +154,7 @@
     },
     {
       "repository_path": "handoff/runs/20260819-164702-script-guided-controlled-auto-edit-v2/summary.md",
-      "sha256": "38fb38a83a30432eab8e0a147507027085a4babd44aa5176839d73d233f8f30c",
+      "sha256": "e899893e51771195368bdffba216ebf90de4885db9d8ed01d99fc925eb853ea3",
       "media_type": "text/markdown",
       "required": true
     }
@@ -179,5 +179,5 @@
   ],
   "report_path": "handoff/runs/20260819-164702-script-guided-controlled-auto-edit-v2/report.html",
   "conclusion": "Script guidance restores the evidenced strong-question role, leaves randomness missing, preserves zero hard fails, and slightly increases transition risk and duration. No promotion to main.",
-  "next_step": "Publish approved text payload to the handoff branch; retain all binary media as local-only."
+  "next_step": "User full-watch review of the local-only MP4; no rule promotion."
 }

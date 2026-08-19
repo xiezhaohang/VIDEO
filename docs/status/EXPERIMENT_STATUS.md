@@ -6,6 +6,7 @@
 
 | run_id | experiment | status | branch | commit | artifacts | local_only | updated_at | next_step |
 |---|---|---|---|---|---|---|---|---|
+| `20260819-164702-script-guided-controlled-auto-edit-v2` | `8.19 Script-Guided Controlled Auto Edit v2` | `handed_off` | `handoff` | `95133b71afb0f31663aaadc7c5580ff8f0e7865e` | `handoff/runs/20260819-164702-script-guided-controlled-auto-edit-v2/` | `MP4, segments, verification images` | `2026-08-19T17:05:00+08:00` | `User full-watch review; no rule promotion` |
 | `20260819-160424-ai-directed-controlled-auto-edit-v1` | `8.19 AI-Directed Footage Controlled Auto Edit v1` | `handed_off` | `handoff` | `0740a1330491e24797cf79282c3376aa9cec0ca4` | `handoff/runs/20260819-160424-ai-directed-controlled-auto-edit-v1/` | `MP4, segments, verification images` | `2026-08-19T16:20:00+08:00` | `Human review of the local-only main version; no dependent experiment started` |
 | `20260819-160000-ai-directed-footage-review` | `8.19 AI-Directed Footage Review Handoff` | `handed_off` | `handoff` | `7d05d2c73a189e9d90a6867d6b37c4ca13261b7d` | `handoff/runs/20260819-160000-ai-directed-footage-review/` | `all source MP4 and review contact sheets` | `2026-08-19T16:00:00+08:00` | `Run controlled Auto Edit v1 from whitelisted and verified Action Units` |
 | `20260818-152613-slime-vo-transition-v1` | `Slime VO + Transition Experiment v1` | `needs_voice_generation` (superseded; do not resume) | `handoff` | `3b714cc296c395cc3c38a80b2b5abe59f1c275c5` | `handoff/runs/20260818-152613-slime-vo-transition-v1/` | `none; no audio/video generated` | `2026-08-18T16:00:00+08:00` | `No continuation; replaced by Slime VO Blind Alignment Test v2` |
@@ -223,3 +224,26 @@
 - Narration: timeline-aware English script generated only after visual freeze; ElevenLabs audio not generated
 - Rule promotion: none
 - Next step: user reviews the frozen local MP4; narration must adapt to the frozen timeline
+
+## 20260819-164702-script-guided-controlled-auto-edit-v2
+
+- Experiment: 8.19 Script-Guided Controlled Auto Edit v2
+- Status: `handed_off`; quality status: `needs_human_review`
+- Started at: `2026-08-19T16:47:02+08:00`
+- Updated at: `2026-08-19T17:05:00+08:00`
+- Owner: `Codex`; final human reviewer: `user` (pending)
+- Branch: `handoff`
+- Base commit: `edac5bfb24e7eaddac9a9439b5af3f539b83c014`
+- Baseline v1 handoff commit: `0740a1330491e24797cf79282c3376aa9cec0ca4`
+- Handoff commit: `95133b71afb0f31663aaadc7c5580ff8f0e7865e`
+- Inputs frozen: `yes`; original shooting script added as the only experimental reasoning variable.
+- Codex Sanity Gate: `pass`; final user Human Sanity Gate remains pending.
+- Hard failures: visible motion loop `false`; repeated motion fill `false`; result truncation `false`; decode error `false`.
+- Action Integrity: `pass`; all four selected actions reach visible results and confirmation holds.
+- Script coverage: `6/7` roles direct-or-merged, versus v1 `5/7`; strong-question focus restored; randomness remains missing/unusable.
+- Selected Action Units: `AU-0068-01`, `AU-0075-02`, `AU-0078-01`, `AU-0081-01`.
+- Metrics: 20.750 s; 1245 frames; 1080x1920 at 60 fps; H.264 yuv420p + AAC technical track; 0 hard fails.
+- Published artifacts: `handoff/runs/20260819-164702-script-guided-controlled-auto-edit-v2/` and `handoff/latest/` (JSON/MD/HTML only).
+- Local only: MP4, segments, and verification images under `D:\8.19\edit\runs\20260819-164702-script-guided-controlled-auto-edit-v2\`.
+- Conclusion: script guidance restored one evidenced commercial role without forcing seven-shot coverage. Transition risk is slightly higher than v1. No rule promotion.
+- Next step: user reviews the local-only MP4; no dependent rule promotion is authorized.
