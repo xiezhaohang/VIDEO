@@ -247,3 +247,24 @@
 - Local only: MP4, segments, and verification images under `D:\8.19\edit\runs\20260819-164702-script-guided-controlled-auto-edit-v2\`.
 - Conclusion: script guidance restored one evidenced commercial role without forcing seven-shot coverage. Transition risk is slightly higher than v1. No rule promotion.
 - Next step: user reviews the local-only MP4; no dependent rule promotion is authorized.
+
+## 20260819-171433-invisible-transition-pass-v1
+
+- Experiment: Invisible Transition Pass v1 — 8.19 Script-Guided v2
+- Status: `handed_off`; quality status: `needs_human_review`
+- Updated at: `2026-08-19T17:36:00+08:00`
+- Owner: `Codex`; final human reviewer: `user` (pending full watch)
+- Branch: `handoff`; `main` not modified; `libraries/audio_material/` not modified
+- Base commit: `c55d6611083ddec9000ba8fea0b4352e094dabcb`
+- Baseline run: `20260819-164702-script-guided-controlled-auto-edit-v2`; baseline handoff commit: `95133b71afb0f31663aaadc7c5580ff8f0e7865e`
+- Handoff publisher commit: `98a66e005130388f1350256e5330e9eb163d4f1a`
+- Canonical archive: `handoff/runs/20260819-171433-invisible-transition-pass-v1/`
+- Single variable: Invisible Transition Layer v0.1 in `conservative` mode; Director structure, shot order, Action Units, source ranges, commercial chapters, semantic roles, duration, VO/subtitle/BGM/SFX state remained frozen.
+- Cuts processed: `3/3`; cut 1 color/exposure micro-match; cut 2 color/exposure micro-match + 4% tiny scale recovery + native motion-phase cut; cut 3 color/exposure micro-match + native camera-motion cut.
+- Result: cuts 1 and 3 clearly improved in Codex preflight; cut 2 improved in color continuity but retains a close-up-to-wide and hand-pose limitation.
+- Technical gates: noticeable transition effect `false`; ghosting/double-image `false`; optical-flow warp `false`; action-boundary damage `false`; proof/readable-hold damage `false`.
+- Action Integrity regression: `0`; source-boundary adjustment: `0`; frame/duration structure preserved at `1245` frames, `20.750 s`, `60 fps`.
+- Local-only MP4: `D:\8.19\edit\runs\20260819-171433-invisible-transition-pass-v1\8_19_script_guided_v2_invisible_transition_v1.mp4` (`a6a92daea3c3304db61af109a0ff67d3ab5306cc0ffe47897623a342456861c9`).
+- Published: JSON/MD/HTML/TXT reports plus experimental adapter source; MP4, processed segments, and QA images remain local.
+- Rule promotion: none; adapter and rules remain handoff-only pending repeated human validation.
+- Next step: user full-watch review of the local MP4.
