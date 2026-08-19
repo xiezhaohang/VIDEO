@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "run_id": "20260819-171433-invisible-transition-pass-v1",
   "experiment_name": "Invisible Transition Pass v1 — 8.19 Script-Guided v2",
-  "status": "passed_pending_handoff_quality_needs_user_review",
+  "status": "handed_off_quality_needs_user_review",
   "created_at": "2026-08-19T17:31:03.461842+08:00",
   "branch": "handoff",
   "base_commit": "c55d6611083ddec9000ba8fea0b4352e094dabcb",
   "baseline_handoff_commit": "95133b71afb0f31663aaadc7c5580ff8f0e7865e",
-  "handoff_commit": "pending",
+  "handoff_commit": "98a66e005130388f1350256e5330e9eb163d4f1a",
   "inputs": [
     {
       "path": "D:\\8.19\\edit\\runs\\20260819-164702-script-guided-controlled-auto-edit-v2\\8_19_script_guided_auto_edit_v2.mp4",
