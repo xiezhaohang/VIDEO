@@ -6,6 +6,7 @@
 
 | run_id | experiment | status | branch | commit | artifacts | local_only | updated_at | next_step |
 |---|---|---|---|---|---|---|---|---|
+| `20260819-160424-ai-directed-controlled-auto-edit-v1` | `8.19 AI-Directed Footage Controlled Auto Edit v1` | `handed_off` | `handoff` | `0740a1330491e24797cf79282c3376aa9cec0ca4` | `handoff/runs/20260819-160424-ai-directed-controlled-auto-edit-v1/` | `MP4, segments, verification images` | `2026-08-19T16:20:00+08:00` | `Human review of the local-only main version; no dependent experiment started` |
 | `20260819-160000-ai-directed-footage-review` | `8.19 AI-Directed Footage Review Handoff` | `handed_off` | `handoff` | `7d05d2c73a189e9d90a6867d6b37c4ca13261b7d` | `handoff/runs/20260819-160000-ai-directed-footage-review/` | `all source MP4 and review contact sheets` | `2026-08-19T16:00:00+08:00` | `Run controlled Auto Edit v1 from whitelisted and verified Action Units` |
 | `20260818-152613-slime-vo-transition-v1` | `Slime VO + Transition Experiment v1` | `needs_voice_generation` (superseded; do not resume) | `handoff` | `3b714cc296c395cc3c38a80b2b5abe59f1c275c5` | `handoff/runs/20260818-152613-slime-vo-transition-v1/` | `none; no audio/video generated` | `2026-08-18T16:00:00+08:00` | `No continuation; replaced by Slime VO Blind Alignment Test v2` |
 | `<YYYYMMDD-HHMMSS>` | `<name>` | `<planned/running/needs_review/hard_fail/failed/passed_pending_handoff/blocked_handoff/handed_off/promoted>` | `handoff` | `<sha or pending>` | `<paths or pending>` | `<none or paths + reasons>` | `<ISO-8601>` | `<next action>` |
@@ -63,6 +64,37 @@
 - Local only: all 14 source MP4 files and all review contact-sheet images.
 - Conclusion: footage conditionally passes AI-friendly review (68/100) and is authorized for a controlled Auto Edit using the clean-source whitelist and verified Action Unit boundaries.
 - Next step: execute `8.19 AI-Directed Footage Controlled Auto Edit v1`; do not read any human edit, EDL, or ordering.
+
+## 20260819-160424-ai-directed-controlled-auto-edit-v1
+
+- Experiment: 8.19 AI-Directed Footage Controlled Auto Edit v1
+- Status: `handed_off`
+- Started at: `2026-08-19T16:04:24+08:00`
+- Updated at: `2026-08-19T16:20:00+08:00`
+- Owner: `Codex`
+- Branch: `handoff`
+- Base commit: `b5bf66c478f3c35f34ebd4577c1fc13ea667fd26`
+- Handoff payload commit: `a591385b62096cb668c38c24a077e3a8b74fba75`
+- Handoff commit: `0740a1330491e24797cf79282c3376aa9cec0ca4`
+- Inputs frozen: `yes`; source inventory and Action Unit review are archived under `handoff/runs/20260819-160000-ai-directed-footage-review/`.
+- Human Sanity Gate: `pass` (Codex visual/technical sanity review; final user acceptance remains pending)
+- Hard failures:
+  - visible motion loop: `false`
+  - repeated motion fill: `false`
+  - result not reached before cut: `false`
+  - reset/replay without editorial purpose: `false`
+- Action Integrity: `pass`; all four selected Action Units reach a visible result and hold before the cut.
+- Proof Chain / Proof Ownership: `pass`; opening/identity → number-to-question mechanism → multi-card variety/quantity → product hero overview.
+- Metrics summary: 19.500 s visual duration; 4 selected Action Units; 4 sources; 1170 frames; 0 technical hard fails.
+- Published artifacts: `handoff/runs/20260819-160424-ai-directed-controlled-auto-edit-v1/` and `handoff/latest/` (JSON/MD/HTML only).
+- Local only:
+  - `D:\\8.19\\edit\\runs\\20260819-160424-ai-directed-controlled-auto-edit-v1\\8_19_controlled_auto_edit_v1.mp4` — private binary video.
+  - `segments/` — rebuildable binary intermediates.
+  - `verify/` — derived private review images.
+- Report: `handoff/runs/20260819-160424-ai-directed-controlled-auto-edit-v1/report.html`
+- Manifest: `handoff/runs/20260819-160424-ai-directed-controlled-auto-edit-v1/manifest.json`
+- Conclusion: controlled visual-only Auto Edit passes the defined machine/Codex Sanity Gate with zero hard fails; strongest residual risk is the 0075→0077 scale/exposure jump and the absence of human emotional payoff or an explicit CTA plate.
+- Next step: user reviews the local-only MP4; do not promote rules or start a dependent experiment automatically.
 
 
 ## 架构隔离记录

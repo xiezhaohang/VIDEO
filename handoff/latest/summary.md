@@ -3,7 +3,8 @@
 ## Result
 
 - Run ID: `20260819-160424-ai-directed-controlled-auto-edit-v1`
-- Status: `passed_pending_handoff`
+- Status: `handed_off`
+- Handoff commit: `0740a1330491e24797cf79282c3376aa9cec0ca4`
 - Main version: `8_19_controlled_auto_edit_v1.mp4` (local only)
 - Visual duration: 19.500 s; container duration: 19.521 s
 - Sanity Gate: pass; 0 hard fails
