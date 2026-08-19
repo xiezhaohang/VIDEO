@@ -1,0 +1,27 @@
+{
+  "name": "ai-product-video-director",
+  "version": "0.1.0",
+  "description": "AI Product Video Director — Commercial Alpha v0.1",
+  "main": "src/main.js",
+  "author": "VIDEO project",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "electron .",
+    "test": "node --test test/*.test.js",
+    "smoke": "node scripts/smoke-test.js",
+    "dist": "electron-builder --win portable"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^37.2.6",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.videodirector.alpha",
+    "productName": "AI Product Video Director",
+    "asar": true,
+    "directories": { "output": "dist" },
+    "files": ["src/**/*", "package.json"],
+    "win": { "target": ["portable"], "artifactName": "AI-Product-Video-Director-${version}-portable.${ext}" }
+  }
+}

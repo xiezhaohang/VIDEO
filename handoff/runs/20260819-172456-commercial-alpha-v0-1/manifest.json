@@ -1,0 +1,25 @@
+{
+  "schema_version":"1.0",
+  "run_id":"20260819-172456-commercial-alpha-v0-1",
+  "experiment_name":"AI Product Video Director — Commercial Alpha v0.1",
+  "status":"passed_pending_handoff",
+  "created_at":"2026-08-19T17:24:56+08:00",
+  "branch":"handoff",
+  "base_commit":"98a66e005130388f1350256e5330e9eb163d4f1a",
+  "handoff_commit":"pending",
+  "human_sanity_gate":{"status":"pending","reviewer":"user","notes":"Software smoke only; no aesthetic PASS claimed.","hard_failures":{"visible_motion_loop":false,"repeated_motion_fill":false,"other":["not human reviewed"]}},
+  "quality_gates":{"action_integrity":{"status":"pending","evidence":"Previously reviewed AU boundaries preserved."},"proof_chain":{"status":"pending","evidence":"Existing controlled-edit evidence reused."},"proof_ownership":{"status":"pending","evidence":"Requires human review."}},
+  "metrics":{"evaluated_after_human_sanity_gate":false,"summary":{"unit_tests":"4/4","raw_count":14,"action_unit_count":28,"timeline_clips":4,"timeline_duration_s":19.5,"ui_launch":true,"portable_launch":true,"render_call":true}},
+  "artifacts":[
+    {"repository_path":"app/desktop/README.md","sha256":"25BCD68D3F0600ED52F4146838EFACAE3D1C3072A6564FC060C6C85254AE6D5F","media_type":"text/markdown","required":true},
+    {"repository_path":"app/desktop/package.json","sha256":"653B4EDE2F0C7C6D467ACB26DFE1B85F1AA6ECF8C2C6983B498DB119A318A47C","media_type":"application/json","required":true},
+    {"repository_path":"app/desktop/src/schemas/job.schema.json","sha256":"DE4445A2BBA3E915899062A3E6ED87E0131BE801ED0A31F3A154A6768358015D","media_type":"application/schema+json","required":true}
+  ],
+  "local_only":[
+    {"path":"app/desktop/dist/AI-Product-Video-Director-0.1.0-portable.exe","reason":"size; 83684372 bytes; sha256 A1CB0BD67EAE1AEDFC63806D046898FAB923883F2B5001FE4FB009AA35A522F1","rebuild":"cd app/desktop; npm install; npm run dist"},
+    {"path":"D:\\8.19\\edit\\software_alpha_smoke\\job-1787131560705-09a140.mp4","reason":"privacy_or_authorization; source-derived video","rebuild":"cd app/desktop; npm run smoke"}
+  ],
+  "report_path":"handoff/runs/20260819-172456-commercial-alpha-v0-1/report.md",
+  "conclusion":"Desktop software path validated technically; human commercial review and experimental modules remain pending.",
+  "next_step":"Model-backed shot planning, rendered invisible transitions, and end-to-end real TTS timing."
+}

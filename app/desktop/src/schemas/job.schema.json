@@ -1,0 +1,13 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"commercial-alpha-job-v0.1",
+  "type":"object",
+  "required":["project_id","product_info","shot_plan","media_dir","mode","tts_provider","transition_mode","output_dir"],
+  "properties":{
+    "project_id":{"type":"string"},"product_info":{"type":"object"},
+    "reference_video":{"type":["string","null"]},"shot_plan":{"type":"array"},
+    "media_dir":{"type":"string"},"mode":{"enum":["script-guided","blind-visual","audio-relevant"]},
+    "tts_provider":{"enum":["off","windows-local","openai","elevenlabs"]},
+    "transition_mode":{"enum":["off","conservative","auto"]},"output_dir":{"type":"string"}
+  }
+}
