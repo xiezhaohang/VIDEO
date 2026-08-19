@@ -1,0 +1,29 @@
+{
+  "run_id": "20260819-160424-ai-directed-controlled-auto-edit-v1",
+  "decisions": [
+    {
+      "decision": "Use four Action Units only",
+      "reason": "They cover identity, mechanism, variety, quantity, and hero payoff in 19.5 seconds without padding."
+    },
+    {
+      "decision": "Use segmented AU-0075-02",
+      "reason": "It is the only selected take that visibly proves the number-to-question mechanic and remains complete within the verified second-action boundary."
+    },
+    {
+      "decision": "Exclude 0070, 0078, and 0079 from the main version",
+      "reason": "Although clean, they repeat draw/placement behavior and would increase runtime more than commercial proof."
+    },
+    {
+      "decision": "Do not use 0067, 0071, 0074, or 0076",
+      "reason": "Their embedded retries/resets are unnecessary because cleaner alternatives cover every selected role."
+    },
+    {
+      "decision": "No subtitles, BGM, SFX, VO, speed changes, reverse motion, optical flow, or decorative transitions",
+      "reason": "This run isolates pure visual structure and preserves source action integrity."
+    },
+    {
+      "decision": "Replace concatenated segment audio with one continuous silent AAC track",
+      "reason": "This preserves the required technical audio stream while removing AAC encoder-delay timestamp warnings."
+    }
+  ]
+}

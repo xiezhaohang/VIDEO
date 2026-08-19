@@ -1,0 +1,49 @@
+{
+  "run_id": "20260819-160424-ai-directed-controlled-auto-edit-v1",
+  "selection_policy": "Prefer clean-source whitelist; use segmented non-whitelist footage only when it contributes a distinct commercial proof. No human edit, EDL, or ordering was read.",
+  "selected": [
+    {
+      "order": 1,
+      "action_unit_id": "AU-0068-01",
+      "source": "DJI_20260819104536_0068_D.MP4",
+      "source_range_s": [7.5, 11.5],
+      "output_range_s": [0.0, 4.0],
+      "role": ["Hook", "Product Identity", "Contents Reveal"],
+      "reason": "Clean single lid opening with visible product name, contents result, and a stable open-box hold."
+    },
+    {
+      "order": 2,
+      "action_unit_id": "AU-0075-02",
+      "source": "DJI_20260819111348_0075_D.MP4",
+      "source_range_s": [7.5, 13.25],
+      "output_range_s": [4.0, 9.75],
+      "role": ["Primary Demonstration", "Content Reveal", "Game Mechanic"],
+      "reason": "One continuous clean take reaches the complete number-to-question result; it adds distinct proof not available in the full-file whitelist."
+    },
+    {
+      "order": 3,
+      "action_unit_id": "AU-0077-01",
+      "source": "DJI_20260819111616_0077_D.MP4",
+      "source_range_s": [1.7, 6.2],
+      "output_range_s": [9.75, 14.25],
+      "role": ["Secondary Information", "Variety", "Quantity/Coverage"],
+      "reason": "Adds two distinct prompts to the existing card and ends on a clean three-card proof layout."
+    },
+    {
+      "order": 4,
+      "action_unit_id": "AU-0081-01",
+      "source": "DJI_20260819112312_0081_D.MP4",
+      "source_range_s": [0.0, 5.25],
+      "output_range_s": [14.25, 19.5],
+      "role": ["Hero", "Payoff", "Natural Ending"],
+      "reason": "Pull-back/reframe expands the multi-card proof into a stable product-and-cards hero overview."
+    }
+  ],
+  "rejected_as_redundant": [
+    {
+      "action_unit_ids": ["AU-0070-01", "AU-0078-01", "AU-0079-01"],
+      "reason": "Each is clean, but adding another draw or single-card placement would repeat motion already proved by AU-0075-02 and AU-0077-01 without adding enough new information."
+    }
+  ],
+  "high_risk_sources_used": []
+}

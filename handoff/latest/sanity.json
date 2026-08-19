@@ -1,0 +1,35 @@
+{
+  "run_id": "20260819-160424-ai-directed-controlled-auto-edit-v1",
+  "gate": "Codex visual and technical sanity review",
+  "status": "pass",
+  "hard_fail_count": 0,
+  "checks": {
+    "visible_motion_loop": false,
+    "repeated_motion_fill": false,
+    "result_not_reached_before_cut": false,
+    "reset_replay_same_action_without_purpose": false,
+    "incomplete_action": false,
+    "black_frame_or_flash": false,
+    "decode_error": false,
+    "missing_audio_track": false
+  },
+  "action_integrity": {
+    "status": "pass",
+    "evidence": "All four selected units reach their visible result and include a result hold before the next cut."
+  },
+  "transition_review": {
+    "status": "pass_with_residual_risk",
+    "evidence": "All three joins were inspected at 4 fps around the cut; no loop, result truncation, or purposeless replay was observed. The second cut retains a visible scale/exposure jump."
+  },
+  "technical_review": {
+    "decode": "pass",
+    "video": "1080x1920, H.264, yuv420p, 60 fps, 1170 frames",
+    "audio": "AAC, 48 kHz, stereo, continuous silent technical track"
+  },
+  "review_assets_local_only": [
+    "verify/cut_01_4.00.png",
+    "verify/cut_02_9.75.png",
+    "verify/cut_03_14.25.png",
+    "verify/timeline_1fps.png"
+  ]
+}

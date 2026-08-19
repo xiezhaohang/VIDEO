@@ -1,0 +1,38 @@
+{
+  "run_id": "20260819-160424-ai-directed-controlled-auto-edit-v1",
+  "structure": [
+    {
+      "beat": "Hook + Product Identity",
+      "output_range_s": [0.0, 4.0],
+      "evidence": "Branded closed box opens to expose the full card stack."
+    },
+    {
+      "beat": "Primary Demonstration / Content Reveal",
+      "output_range_s": [4.0, 9.75],
+      "evidence": "A numbered card is selected, pointed to, flipped, and held until the question result is readable."
+    },
+    {
+      "beat": "Secondary Information / Variety",
+      "output_range_s": [9.75, 14.25],
+      "evidence": "Two additional prompt cards are added to create a three-card layout."
+    },
+    {
+      "beat": "Quantity / Coverage",
+      "output_range_s": [9.75, 19.5],
+      "evidence": "Three readable prompts plus the visible stacked deck support variety and quantity; no randomness claim is made."
+    },
+    {
+      "beat": "Hero / Payoff / Ending",
+      "output_range_s": [14.25, 19.5],
+      "evidence": "The camera expands to the complete box, deck, and four-card overview, then holds."
+    }
+  ],
+  "cta": {
+    "status": "natural_ending_only",
+    "reason": "No independent visual CTA plate or action was identified, and this run forbids added text or voice."
+  },
+  "randomness_claim": {
+    "used": false,
+    "reason": "The footage shows multiple cards but does not independently prove randomized selection."
+  }
+}

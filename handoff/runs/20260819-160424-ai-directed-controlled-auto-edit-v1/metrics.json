@@ -1,0 +1,31 @@
+{
+  "run_id": "20260819-160424-ai-directed-controlled-auto-edit-v1",
+  "visual_duration_s": 19.5,
+  "container_duration_s": 19.521354,
+  "video_frames": 1170,
+  "selected_action_units": 4,
+  "selected_sources": 4,
+  "whitelist_sources_used": 3,
+  "segmented_non_whitelist_sources_used": 1,
+  "high_risk_sources_used": 0,
+  "hard_fail_count": 0,
+  "transition_pairs": 3,
+  "transition_boundary_adjustments": 3,
+  "decorative_transitions": 0,
+  "added_text_layers": 0,
+  "bgm_tracks": 0,
+  "sfx_tracks": 0,
+  "voiceover_tracks": 0,
+  "output": {
+    "filename": "8_19_controlled_auto_edit_v1.mp4",
+    "resolution": "1080x1920",
+    "frame_rate_fps": 60,
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "audio_channels": 2,
+    "size_bytes": 20204541,
+    "sha256": "584fdc61017be72e5d50f7b1d25237c4c06f7e2168cab315936f6afa591065f8"
+  }
+}

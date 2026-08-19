@@ -1,0 +1,53 @@
+{
+  "run_id": "20260819-160424-ai-directed-controlled-auto-edit-v1",
+  "pairs": [
+    {
+      "cut_time_s": 4.0,
+      "from": "AU-0068-01",
+      "to": "AU-0075-02",
+      "status": "pass_with_correction",
+      "compatibility": {
+        "shot_scale": "medium change: centered top-down open box to a slightly wider/warmer open-box view",
+        "subject_position": "compatible: box remains centered",
+        "motion_direction": "compatible: static result transitions to a right-hand card pickup",
+        "gesture_state": "compatible: completed opening precedes the next distinct action",
+        "camera_motion": "static to static",
+        "background": "same white-fur environment; exposure and angle change remain visible"
+      },
+      "correction": "Ended AU-0068 only after a stable open-box result and started AU-0075 at the verified beginning of its second complete action. No transition effect used."
+    },
+    {
+      "cut_time_s": 9.75,
+      "from": "AU-0075-02",
+      "to": "AU-0077-01",
+      "status": "pass_with_residual_risk",
+      "compatibility": {
+        "shot_scale": "large change: held foreground question card to tabletop multi-card layout",
+        "subject_position": "semantic match on question-card content, but physical position changes",
+        "motion_direction": "static held result to right-hand entry and placement",
+        "gesture_state": "new distinct action begins after the previous result is fully reached",
+        "camera_motion": "static to static",
+        "background": "same white-fur environment with a lighting shift and hand shadow"
+      },
+      "correction": "Delayed AU-0077 in-point to 1.70 s so the incoming hand immediately signals a new variety-building action; retained a hard cut because decorative transitions would only mask the scale jump."
+    },
+    {
+      "cut_time_s": 14.25,
+      "from": "AU-0077-01",
+      "to": "AU-0081-01",
+      "status": "pass",
+      "compatibility": {
+        "shot_scale": "compatible expansion from a three-card proof layout to a wider product hero",
+        "subject_position": "cards remain the shared visual anchor",
+        "motion_direction": "stable layout to camera pull-back/reframe",
+        "gesture_state": "hands clear before the hero expansion",
+        "camera_motion": "static to purposeful pull-back",
+        "background": "same white-fur environment; rotation and exposure change are motivated by the wider reveal"
+      },
+      "correction": "Kept AU-0077 through its clean result hold and allowed AU-0081's native pull-back to provide the expansion. No transition effect used."
+    }
+  ],
+  "decorative_transitions_used": false,
+  "pairs_reordered": 0,
+  "boundary_adjustments": 3
+}

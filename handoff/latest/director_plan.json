@@ -1,0 +1,20 @@
+{
+  "run_id": "20260819-160424-ai-directed-controlled-auto-edit-v1",
+  "objective": "Recover a self-contained commercial structure from AI-directed footage without using the previous shooting order or any human edit answer.",
+  "hypothesis": "Clean setup-action-result-hold units should allow a concise visual-only edit that explains identity, mechanism, breadth, and final product payoff without repeated motion fill.",
+  "plan": [
+    "Open with the branded box action so Hook and Product Identity are causally joined.",
+    "Use one complete number-to-question take as the only primary mechanism demonstration.",
+    "Use one compact multi-card build to prove variety and quantity without claiming randomness.",
+    "End on the native pull-back hero overview; do not add a textual CTA.",
+    "Use straight cuts only after checking scale, subject position, motion direction, gesture state, camera motion, and background continuity."
+  ],
+  "target": {
+    "resolution": "1080x1920",
+    "frame_rate_fps": 60,
+    "video_codec": "H.264",
+    "pixel_format": "yuv420p",
+    "audio": "continuous silent AAC technical track, 48 kHz stereo"
+  },
+  "forbidden_inputs_observed": true
+}
