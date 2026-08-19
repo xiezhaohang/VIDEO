@@ -6,6 +6,7 @@
 
 | run_id | experiment | status | branch | commit | artifacts | local_only | updated_at | next_step |
 |---|---|---|---|---|---|---|---|---|
+| `20260819-160000-ai-directed-footage-review` | `8.19 AI-Directed Footage Review Handoff` | `handed_off` | `handoff` | `7d05d2c73a189e9d90a6867d6b37c4ca13261b7d` | `handoff/runs/20260819-160000-ai-directed-footage-review/` | `all source MP4 and review contact sheets` | `2026-08-19T16:00:00+08:00` | `Run controlled Auto Edit v1 from whitelisted and verified Action Units` |
 | `20260818-152613-slime-vo-transition-v1` | `Slime VO + Transition Experiment v1` | `needs_voice_generation` (superseded; do not resume) | `handoff` | `3b714cc296c395cc3c38a80b2b5abe59f1c275c5` | `handoff/runs/20260818-152613-slime-vo-transition-v1/` | `none; no audio/video generated` | `2026-08-18T16:00:00+08:00` | `No continuation; replaced by Slime VO Blind Alignment Test v2` |
 | `<YYYYMMDD-HHMMSS>` | `<name>` | `<planned/running/needs_review/hard_fail/failed/passed_pending_handoff/blocked_handoff/handed_off/promoted>` | `handoff` | `<sha or pending>` | `<paths or pending>` | `<none or paths + reasons>` | `<ISO-8601>` | `<next action>` |
 
@@ -47,6 +48,21 @@
 5. GitHub handoff 失败时设为 `blocked_handoff`，记录原因和待发布清单。
 6. 报告、manifest 和产物提交到 `handoff` 后，填写 commit SHA 并设为 `handed_off`。
 7. 未达到 `handed_off`，不得启动依赖本结论的下一实验。
+
+## 20260819-160000-ai-directed-footage-review
+
+- Experiment: 8.19 AI-Directed Footage Review Handoff
+- Status: `handed_off`
+- Updated at: `2026-08-19T16:00:00+08:00`
+- Owner: `Codex`
+- Branch: `handoff`
+- Handoff commit: `7d05d2c73a189e9d90a6867d6b37c4ca13261b7d`
+- Canonical archive: `handoff/runs/20260819-160000-ai-directed-footage-review/`
+- Inputs frozen: `yes`; inventory and Action Unit report are in the canonical archive.
+- Published scope: JSON/MD/project.md text derivatives only.
+- Local only: all 14 source MP4 files and all review contact-sheet images.
+- Conclusion: footage conditionally passes AI-friendly review (68/100) and is authorized for a controlled Auto Edit using the clean-source whitelist and verified Action Unit boundaries.
+- Next step: execute `8.19 AI-Directed Footage Controlled Auto Edit v1`; do not read any human edit, EDL, or ordering.
 
 
 ## 架构隔离记录
