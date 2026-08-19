@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260819-164702-script-guided-controlled-auto-edit-v2",
+  "experiment_name": "8.19 Script-Guided Controlled Auto Edit v2",
+  "status": "passed_pending_handoff",
+  "created_at": "2026-08-19T16:58:49+08:00",
+  "branch": "handoff",
+  "base_commit": "edac5bfb24e7eaddac9a9439b5af3f539b83c014",
+  "handoff_commit": "pending_publisher",
+  "controlled_variable": "original shooting script / commercial structure outline",
+  "original_script": "正上方俯拍。每条视频只拍一个动作，不要一条里连续做很多事。第一条：打开盒子，打开后停一秒。第二条：抽一张卡举到镜头前，停一秒让文字看清。第三条：连续抽两三张，但每张动作要完整，不要太快。第四条：随机抽一张翻正，停一秒。第五条：把几张卡铺开，铺好后停一秒。第六条：拿一张最有吸引力的问题卡放到中央，手指点一下问题，停一秒。第七条：完整产品收尾，盒子打开、卡牌整齐、旁边放两三张正面卡，稳定停两秒。每条开始前先静止半秒，动作做完后再停一秒；失败就重新拍，不要在同一个视频里重做第二次。",
+  "inputs": [
+    {
+      "path": "D:\\8.19\\edit\\action_units.json",
+      "sha256": "6bd1cf5bc695d5e44b6bf863cc459879d691ffa87b5b06eca9127446b66354cb",
+      "role": "baseline_or_config"
+    },
+    {
+      "path": "D:\\8.19\\edit\\shooting_quality_review.json",
+      "sha256": "7990a6e1d02b1849bd27fc4533bb73945639da8b0c023a495ab6c4772a41b8c7",
+      "role": "baseline_or_config"
+    },
+    {
+      "path": "D:\\8.19\\edit\\runs\\20260819-160424-ai-directed-controlled-auto-edit-v1\\selected_action_units.json",
+      "sha256": "ede6a8439dd6a59ee6d8a1cffe4795cac5d92c5cefe41e57aa07a2b2355e2edc",
+      "role": "baseline_or_config"
+    },
+    {
+      "path": "D:\\8.19\\edit\\runs\\20260819-160424-ai-directed-controlled-auto-edit-v1\\commercial_structure.json",
+      "sha256": "511da8266d46f47403bcecda021a8c486ff479aa6d6f19dfcf040c288e49dab2",
+      "role": "baseline_or_config"
+    },
+    {
+      "path": "D:\\8.19\\edit\\runs\\20260819-160424-ai-directed-controlled-auto-edit-v1\\transition_pair_analysis.json",
+      "sha256": "a8464d62ce96c5029ba13fb118a208be9bc8d0f54eb047a1785e92db4bc866db",
+      "role": "baseline_or_config"
+    },
+    {
+      "path": "D:\\8.19\\DJI_20260819104536_0068_D.MP4",
+      "sha256": "58202918b3e9e7fe4875ef9b8ce65bab186c450d117fc98e363cca110f4c8f4c",
+      "role": "source"
+    },
+    {
+      "path": "D:\\8.19\\DJI_20260819111348_0075_D.MP4",
+      "sha256": "fde954119e8dd0d8f418a40df6ce204f79093b2f770543e192e51e2401aeec72",
+      "role": "source"
+    },
+    {
+      "path": "D:\\8.19\\DJI_20260819111945_0078_D.MP4",
+      "sha256": "44d34c18e6c37e0e92b08c28dd7fcd8d2a6ec9fbdd2d31b3ea2a9d4be45f24cd",
+      "role": "source"
+    },
+    {
+      "path": "D:\\8.19\\DJI_20260819112312_0081_D.MP4",
+      "sha256": "795985e00e7ce9e176c1e61c69ad25fa2e358ac5c1c4ca248474ac883e12a242",
+      "role": "source"
+    }
+  ],
+  "human_sanity_gate": {
+    "status": "pending",
+    "reviewer": "user",
+    "reviewed_at": null,
+    "version_reviewed": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-19\\referenced-chatgpt-conversation-this-is-an-3\\work\\v2_staging\\8_19_script_guided_auto_edit_v2.mp4 (daa567b2a857233c0f63ffdc2c1aecb450dce2b759a8f97cbf4167102f6a459f)",
+    "hard_failures": {
+      "visible_motion_loop": false,
+      "repeated_motion_fill": false,
+      "other": []
+    },
+    "notes": "Codex visual/technical preflight passed. Final user full-watch review remains pending."
+  },
+  "quality_gates": {
+    "action_integrity": {
+      "status": "pass",
+      "evidence": "Four complete role-relevant action sentences."
+    },
+    "proof_chain": {
+      "status": "pass",
+      "evidence": "opening → readable mechanism → breadth/focus → Hero"
+    },
+    "proof_ownership": {
+      "status": "pass",
+      "evidence": "Every result is proven by the same visible product/card action that triggers it."
+    }
+  },
+  "metrics": {
+    "evaluated_after_human_sanity_gate": false,
+    "summary": {
+      "script_structure_coverage": 0.857143,
+      "hard_fail_count": 0,
+      "visual_duration_s": 20.75
+    },
+    "source_path": "handoff/runs/20260819-164702-script-guided-controlled-auto-edit-v2/metrics.json"
+  },
+  "artifacts": [
+    {
+      "repository_path": "handoff/runs/20260819-164702-script-guided-controlled-auto-edit-v2/script_coverage_analysis.json",
+      "sha256": "ca1977db2001948f065be8eb17917093b4ea48ed31ad4efeec1285d0cbc81f84",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260819-164702-script-guided-controlled-auto-edit-v2/selected_action_units.json",
+      "sha256": "515c597130e5a1cb77423c9e037b0874cc488ba59b6cd6bcaceb744f423c294f",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260819-164702-script-guided-controlled-auto-edit-v2/commercial_structure.json",
+      "sha256": "606ede4dba507f31792ca5a65901d6ccc3e40ff1cf1b80a3cc916a8c19af4c58",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260819-164702-script-guided-controlled-auto-edit-v2/transition_pair_analysis.json",
+      "sha256": "b641fe180c76a482ab1e241e5fa05a313afa59151560d9af0c2ce522fc4b7fc1",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260819-164702-script-guided-controlled-auto-edit-v2/director_plan.json",
+      "sha256": "b515ad0d72362d35e9fd170ed08839384f8acb2958e1a24508a2ec77b8119a39",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260819-164702-script-guided-controlled-auto-edit-v2/decisions.json",
+      "sha256": "3a189273784c1ac61f1a35cd45114932640dbf97e2b22e1e427a5c4b76e07a87",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260819-164702-script-guided-controlled-auto-edit-v2/sanity.json",
+      "sha256": "52c384b70cee6c652b10bb91afb701018ad768a079f75a2b264e996c0b1ba18f",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260819-164702-script-guided-controlled-auto-edit-v2/metrics.json",
+      "sha256": "d154352a11d1b2fa4cf2add8e454d304c9ea37c4ad45c7f027f69e985781db1f",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260819-164702-script-guided-controlled-auto-edit-v2/v1_vs_v2_comparison.json",
+      "sha256": "55c927e8789231204a0f6a206fddf0e915b2faeba474735becbc1435904a1d5a",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260819-164702-script-guided-controlled-auto-edit-v2/report.html",
+      "sha256": "01f9d7796f05dbe2038cdd26488f2d069e27bca856ce6cec5a1274969c8cfb69",
+      "media_type": "text/html",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260819-164702-script-guided-controlled-auto-edit-v2/summary.md",
+      "sha256": "38fb38a83a30432eab8e0a147507027085a4babd44aa5176839d73d233f8f30c",
+      "media_type": "text/markdown",
+      "required": true
+    }
+  ],
+  "local_only": [
+    {
+      "path": "D:\\8.19\\edit\\runs\\20260819-164702-script-guided-controlled-auto-edit-v2\\8_19_script_guided_auto_edit_v2.mp4",
+      "reason": "privacy_or_authorization: binary video excluded from GitHub handoff",
+      "sha256": "daa567b2a857233c0f63ffdc2c1aecb450dce2b759a8f97cbf4167102f6a459f",
+      "rebuild": "Render the four ranges in selected_action_units.json, lossless-concat encoded segments, and mux a continuous silent AAC track."
+    },
+    {
+      "path": "D:\\8.19\\edit\\runs\\20260819-164702-script-guided-controlled-auto-edit-v2\\segments\\",
+      "reason": "rebuildable binary intermediates",
+      "rebuild": "Per-segment ffmpeg extraction from selected_action_units.json."
+    },
+    {
+      "path": "D:\\8.19\\edit\\runs\\20260819-164702-script-guided-controlled-auto-edit-v2\\verify\\",
+      "reason": "temporary diagnostic/private derived frames",
+      "rebuild": "Sample final MP4 at every cut ±1.5 s and at 1 fps."
+    }
+  ],
+  "report_path": "handoff/runs/20260819-164702-script-guided-controlled-auto-edit-v2/report.html",
+  "conclusion": "Script guidance restores the evidenced strong-question role, leaves randomness missing, preserves zero hard fails, and slightly increases transition risk and duration. No promotion to main.",
+  "next_step": "Publish approved text payload to the handoff branch; retain all binary media as local-only."
+}

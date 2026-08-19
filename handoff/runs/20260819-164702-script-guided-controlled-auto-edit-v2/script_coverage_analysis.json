@@ -1,0 +1,114 @@
+{
+  "run_id": "20260819-164702-script-guided-controlled-auto-edit-v2",
+  "script_is": "commercial_structure_intent_not_hard_shot_checklist",
+  "action_integrity_priority": "Action Integrity > Script Coverage",
+  "coverage_method": "A role counts as covered when direct evidence or an explicitly documented adjacent-role merge preserves its commercial purpose. Literal shot replication is not required.",
+  "script_structure_coverage": {
+    "roles_total": 7,
+    "roles_covered_direct_or_merged": 6,
+    "coverage_ratio": 0.857143,
+    "exact_direct_matches": 4,
+    "merged_matches": 2,
+    "missing_or_unusable": 1
+  },
+  "roles": [
+    {
+      "role_id": 1,
+      "role": "product_opening_establishment",
+      "status": "matched",
+      "evidence": [
+        "AU-0068-01 7.50-11.50 s"
+      ],
+      "treatment": "independent beat",
+      "note": "Closed branded box opens to a stable contents reveal."
+    },
+    {
+      "role_id": 2,
+      "role": "single_card_readable_content",
+      "status": "matched",
+      "evidence": [
+        "AU-0075-02 7.50-13.25 s"
+      ],
+      "treatment": "independent beat",
+      "note": "One card resolves from number side to a readable question and holds."
+    },
+    {
+      "role_id": 3,
+      "role": "multiple_draws_content_richness",
+      "status": "merged",
+      "evidence": [
+        "AU-0078-01 0.75-6.50 s"
+      ],
+      "treatment": "merged into roles 5 and 6",
+      "note": "The literal two-to-three sequential draw action is not retained. Its commercial purpose—multiple visible prompts—is carried by the existing multi-card field while a new card is placed and emphasized."
+    },
+    {
+      "role_id": 4,
+      "role": "random_draw_flip_mechanism",
+      "status": "missing_or_unusable",
+      "evidence": [
+        "0072/0073/0075 show selection or flipping but do not independently prove randomness"
+      ],
+      "treatment": "skipped",
+      "note": "No randomness claim is made. Adding a selection shot would imply more than the footage proves."
+    },
+    {
+      "role_id": 5,
+      "role": "multi_card_spread_quantity_and_coverage",
+      "status": "merged",
+      "evidence": [
+        "AU-0078-01 0.75-6.50 s",
+        "AU-0081-01 0.00-5.25 s"
+      ],
+      "treatment": "merged with role 6 and reinforced by Hero",
+      "note": "Several prompts and the full deck remain visible while the focus card is placed; the Hero confirms breadth."
+    },
+    {
+      "role_id": 6,
+      "role": "strong_question_focus_and_reading_guide",
+      "status": "matched",
+      "evidence": [
+        "AU-0078-01 0.75-6.50 s"
+      ],
+      "treatment": "independent commercial role inside merged beat",
+      "note": "A sharper question is placed in the central reading zone, pointed to, then held readable."
+    },
+    {
+      "role_id": 7,
+      "role": "hero_complete_product_ending",
+      "status": "matched",
+      "evidence": [
+        "AU-0081-01 0.00-5.25 s"
+      ],
+      "treatment": "independent final beat",
+      "note": "Native pull-back reveals box, deck, and face-up prompts, then holds."
+    }
+  ],
+  "missing_script_roles": [
+    "random_draw_flip_mechanism"
+  ],
+  "merged_script_roles": [
+    {
+      "role": "multiple_draws_content_richness",
+      "merged_into": [
+        "multi_card_spread_quantity_and_coverage",
+        "strong_question_focus_and_reading_guide"
+      ]
+    },
+    {
+      "role": "multi_card_spread_quantity_and_coverage",
+      "merged_into": [
+        "strong_question_focus_and_reading_guide",
+        "hero_complete_product_ending"
+      ]
+    }
+  ],
+  "script_extra_value": [
+    {
+      "role": "number_to_question_mechanic",
+      "evidence": "AU-0075-02",
+      "used": true,
+      "note": "The numbered face, pointing gesture, flip, and readable question add a clear mechanic not explicitly required by the shooting outline."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "run_id": "20260819-164702-script-guided-controlled-auto-edit-v2",
+  "baseline_run_id": "20260819-160424-ai-directed-controlled-auto-edit-v1",
+  "baseline_handoff_commit": "0740a1330491e24797cf79282c3376aa9cec0ca4",
+  "comparison": {
+    "script_structure_coverage": {
+      "v1": {
+        "covered": 5,
+        "total": 7,
+        "ratio": 0.714286
+      },
+      "v2": {
+        "covered": 6,
+        "total": 7,
+        "ratio": 0.857143
+      },
+      "delta_roles": 1,
+      "delta_ratio": 0.142857,
+      "method": "direct_or_explicitly_merged commercial roles"
+    },
+    "missing_script_roles": {
+      "v1": [
+        "random_draw_flip_mechanism",
+        "strong_question_focus_and_reading_guide"
+      ],
+      "v2": [
+        "random_draw_flip_mechanism"
+      ],
+      "removed_from_missing": [
+        "strong_question_focus_and_reading_guide"
+      ]
+    },
+    "merged_script_roles": {
+      "v1": [
+        "multiple_draws_content_richness→multi_card_spread_quantity_and_coverage"
+      ],
+      "v2": [
+        "multiple_draws_content_richness→multi_card_coverage+strong_question_focus",
+        "multi_card_spread_quantity_and_coverage→strong_question_focus+Hero"
+      ]
+    },
+    "extra_value_roles": {
+      "v1": [
+        "number_to_question_mechanic"
+      ],
+      "v2": [
+        "number_to_question_mechanic"
+      ],
+      "newly_added": []
+    },
+    "source_action_overlap": {
+      "shared_action_units": [
+        "AU-0068-01",
+        "AU-0075-02",
+        "AU-0081-01"
+      ],
+      "shared_count": 3,
+      "union_count": 5,
+      "jaccard": 0.6,
+      "v1_retention_ratio": 0.75,
+      "v2_overlap_ratio": 0.75,
+      "v1_only": [
+        "AU-0077-01"
+      ],
+      "v2_only": [
+        "AU-0078-01"
+      ]
+    },
+    "timeline_order_difference": {
+      "v1": [
+        "AU-0068-01",
+        "AU-0075-02",
+        "AU-0077-01",
+        "AU-0081-01"
+      ],
+      "v2": [
+        "AU-0068-01",
+        "AU-0075-02",
+        "AU-0078-01",
+        "AU-0081-01"
+      ],
+      "retained_relative_order_changed": false,
+      "edit": "one position-3 substitution; no extra cut"
+    },
+    "commercial_structure_difference": "v1 uses a clean three-card build for generic variety/quantity. v2 substitutes a multi-card focus action that preserves breadth while restoring the strong-question/reading-guide role. Randomness remains unclaimed.",
+    "transition_risk_difference": {
+      "v1": "one high residual jump (0075→0077); third Hero cut low risk",
+      "v2": "one high residual jump (0075→0078) plus a medium rotation/reframe jump (0078→0081)",
+      "pair_count_v1": 3,
+      "pair_count_v2": 3,
+      "direction": "slightly_higher_visual_transition_risk_in_v2",
+      "mitigation": "rejected five-segment version so no fourth cut was added"
+    },
+    "hard_fail_count": {
+      "v1": 0,
+      "v2": 0,
+      "delta": 0
+    },
+    "total_duration_s": {
+      "v1_visual": 19.5,
+      "v1_container": 19.521354,
+      "v2_visual": 20.75,
+      "v2_container": 20.75,
+      "visual_delta": 1.25
+    }
+  },
+  "conclusion": "Script guidance restored one genuinely evidenced commercial role (strong-question focus) and improved structural coverage by one of seven roles. It did not justify a randomness claim. The gain costs 1.25 seconds and slightly higher residual transition risk, while hard-fail count remains zero."
+}
