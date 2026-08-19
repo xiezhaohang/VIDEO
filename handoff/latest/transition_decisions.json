@@ -1,0 +1,64 @@
+{
+  "run_id": "20260819-171433-invisible-transition-pass-v1",
+  "single_variable": "Invisible Transition Layer only",
+  "director_structure_frozen": true,
+  "shot_order_frozen": true,
+  "action_units_frozen": true,
+  "source_ranges_frozen": true,
+  "decisions": [
+    {
+      "cut_index": 1,
+      "cut_time_s": 4.0,
+      "from_action_unit": "AU-0068-01",
+      "to_action_unit": "AU-0075-02",
+      "methods": [
+        "color_exposure_micro_match",
+        "hard_cut_retained"
+      ],
+      "color_window_frames": 10,
+      "scale_percent": 0.0,
+      "scale_window_frames": 0,
+      "boundary_adjustment_frames": 0,
+      "micro_dissolve_frames": 0,
+      "micro_motion_blur_frames": 0,
+      "known_limit": null
+    },
+    {
+      "cut_index": 2,
+      "cut_time_s": 9.75,
+      "from_action_unit": "AU-0075-02",
+      "to_action_unit": "AU-0078-01",
+      "methods": [
+        "color_exposure_micro_match",
+        "tiny_scale_position_match",
+        "cut_on_native_motion_phase",
+        "hard_cut_retained"
+      ],
+      "color_window_frames": 10,
+      "scale_percent": 4.0,
+      "scale_window_frames": 10,
+      "boundary_adjustment_frames": 0,
+      "micro_dissolve_frames": 0,
+      "micro_motion_blur_frames": 0,
+      "known_limit": "Large close-up-to-wide scale and hand-pose discontinuity remain; stronger concealment would risk a noticeable effect or damage the incoming action boundary."
+    },
+    {
+      "cut_index": 3,
+      "cut_time_s": 15.5,
+      "from_action_unit": "AU-0078-01",
+      "to_action_unit": "AU-0081-01",
+      "methods": [
+        "color_exposure_micro_match",
+        "cut_on_native_camera_motion",
+        "hard_cut_retained"
+      ],
+      "color_window_frames": 10,
+      "scale_percent": 0.0,
+      "scale_window_frames": 0,
+      "boundary_adjustment_frames": 0,
+      "micro_dissolve_frames": 0,
+      "micro_motion_blur_frames": 0,
+      "known_limit": null
+    }
+  ]
+}

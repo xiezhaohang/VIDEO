@@ -1,0 +1,12 @@
+{
+  "class": "InvisibleTransitionEngine",
+  "method": "processTimeline",
+  "signature": "processTimeline(timeline: dict, mode: str = 'conservative') -> dict",
+  "modes": [
+    "off",
+    "conservative",
+    "auto"
+  ],
+  "source_delivery": "invisible_transition_engine_source.txt (rename to invisible_transition_engine.py after review)",
+  "promotion": "none; handoff experiment only"
+}

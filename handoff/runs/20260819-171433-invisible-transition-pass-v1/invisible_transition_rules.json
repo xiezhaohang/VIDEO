@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1",
+  "engine": "InvisibleTransitionEngine",
+  "api": "InvisibleTransitionEngine.processTimeline(timeline, mode)",
+  "status": "experimental_handoff_only_not_promoted",
+  "modes": {
+    "off": "diagnose only; retain original cuts",
+    "conservative": "small local corrections with perceptibility-first rejection",
+    "auto": "reserved for wider adaptive windows after repeated human validation"
+  },
+  "current_mode": "conservative",
+  "priority": [
+    "diagnose",
+    "color_exposure_micro_match",
+    "cut_on_motion_phase",
+    "micro_motion_blur_if_safe",
+    "tiny_scale_position_match",
+    "micro_dissolve_static_compatible_only",
+    "hard_cut_known_limit"
+  ],
+  "limits": {
+    "color_window_frames_at_60fps": 10,
+    "max_brightness_adjustment": 0.035,
+    "max_channel_gamma_adjustment": 0.015,
+    "max_scale_percent": 4.0,
+    "scale_return_frames_at_60fps": 10,
+    "micro_dissolve_max_frames": 4,
+    "motion_blur_max_frames": 5
+  },
+  "rejections_in_this_run": {
+    "micro_dissolve": "Rejected for all pairs because hands/action state or camera motion makes blend ghosting-prone.",
+    "motion_blur": "Rejected; no pair needed blur strongly enough to justify effect perceptibility.",
+    "optical_flow": "Forbidden for synthesis by gate; used only as a diagnostic motion vector estimator.",
+    "source_boundary_adjustment": "Not required; frozen boundaries retained."
+  }
+}

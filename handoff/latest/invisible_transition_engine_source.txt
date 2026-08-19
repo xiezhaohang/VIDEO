@@ -1,0 +1,324 @@
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import math
+import shutil
+import subprocess
+from dataclasses import dataclass, asdict
+from pathlib import Path
+from typing import Any
+
+import cv2
+import numpy as np
+
+
+MODES = {"off", "conservative", "auto"}
+
+
+def run(cmd: list[str], capture: bool = False) -> str:
+    result = subprocess.run(cmd, check=True, text=True, capture_output=capture)
+    return result.stdout if capture else ""
+
+
+def sha256(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for block in iter(lambda: f.read(1024 * 1024), b""):
+            h.update(block)
+    return h.hexdigest()
+
+
+def probe(path: Path) -> dict[str, Any]:
+    raw = run([
+        "ffprobe", "-v", "error", "-show_entries",
+        "stream=index,codec_name,codec_type,width,height,r_frame_rate,avg_frame_rate,pix_fmt,sample_rate,channels:format=duration,bit_rate",
+        "-of", "json", str(path)
+    ], capture=True)
+    return json.loads(raw)
+
+
+def read_frame(path: Path, seconds: float) -> np.ndarray:
+    cap = cv2.VideoCapture(str(path))
+    cap.set(cv2.CAP_PROP_POS_MSEC, max(0.0, seconds) * 1000.0)
+    ok, frame = cap.read()
+    cap.release()
+    if not ok:
+        raise RuntimeError(f"Could not decode {path} at {seconds:.3f}s")
+    return frame
+
+
+def frame_features(frame: np.ndarray) -> dict[str, Any]:
+    small = cv2.resize(frame, (270, 480), interpolation=cv2.INTER_AREA)
+    lab = cv2.cvtColor(small, cv2.COLOR_BGR2LAB).astype(np.float32)
+    hsv = cv2.cvtColor(small, cv2.COLOR_BGR2HSV).astype(np.float32)
+    gray = cv2.cvtColor(small, cv2.COLOR_BGR2GRAY)
+    edges = cv2.Canny(gray, 60, 140)
+    ys, xs = np.nonzero(edges)
+    if len(xs) > 50:
+        centroid = [float(xs.mean() / small.shape[1]), float(ys.mean() / small.shape[0])]
+    else:
+        centroid = [0.5, 0.5]
+    return {
+        "luma": round(float(lab[:, :, 0].mean() / 255.0), 6),
+        "lab_a": round(float((lab[:, :, 1].mean() - 128.0) / 127.0), 6),
+        "lab_b": round(float((lab[:, :, 2].mean() - 128.0) / 127.0), 6),
+        "saturation": round(float(hsv[:, :, 1].mean() / 255.0), 6),
+        "edge_centroid": [round(v, 6) for v in centroid],
+        "edge_density": round(float(np.count_nonzero(edges) / edges.size), 6),
+    }
+
+
+def motion_features(path: Path, seconds: float, direction: int, frames: int = 5, fps: float = 60.0) -> dict[str, Any]:
+    samples: list[np.ndarray] = []
+    if direction < 0:
+        # The final requested sample must be the last decodable frame, not the
+        # half-open segment end timestamp.
+        times = [seconds - (frames + 1 - i) / fps for i in range(frames + 1)]
+    else:
+        times = [seconds + i / fps for i in range(frames + 1)]
+    for t in times:
+        samples.append(cv2.resize(read_frame(path, max(0.0, t)), (216, 384), interpolation=cv2.INTER_AREA))
+    flows = []
+    for a, b in zip(samples, samples[1:]):
+        ga = cv2.cvtColor(a, cv2.COLOR_BGR2GRAY)
+        gb = cv2.cvtColor(b, cv2.COLOR_BGR2GRAY)
+        flow = cv2.calcOpticalFlowFarneback(ga, gb, None, 0.5, 3, 15, 3, 5, 1.1, 0)
+        mag, _ = cv2.cartToPolar(flow[:, :, 0], flow[:, :, 1])
+        flows.append((float(np.median(flow[:, :, 0])), float(np.median(flow[:, :, 1])), float(np.percentile(mag, 75))))
+    dx = float(np.mean([x[0] for x in flows]))
+    dy = float(np.mean([x[1] for x in flows]))
+    magnitude = float(np.mean([x[2] for x in flows]))
+    angle = math.degrees(math.atan2(dy, dx)) if magnitude > 0.02 else 0.0
+    return {
+        "dx": round(dx, 6), "dy": round(dy, 6), "magnitude": round(magnitude, 6),
+        "direction_degrees": round(angle, 3),
+        "phase": "moving" if magnitude >= 0.35 else "settled"
+    }
+
+
+def delta(a: dict[str, Any], b: dict[str, Any], am: dict[str, Any], bm: dict[str, Any]) -> dict[str, Any]:
+    pos = math.dist(a["edge_centroid"], b["edge_centroid"])
+    wb = math.hypot(a["lab_a"] - b["lab_a"], a["lab_b"] - b["lab_b"])
+    motion_angle = abs(am["direction_degrees"] - bm["direction_degrees"])
+    motion_angle = min(motion_angle, 360.0 - motion_angle)
+    return {
+        "exposure_delta": round(b["luma"] - a["luma"], 6),
+        "white_balance_delta": round(wb, 6),
+        "shot_scale_delta_proxy": round(abs(a["edge_density"] - b["edge_density"]), 6),
+        "subject_position_delta_proxy": round(pos, 6),
+        "motion_direction_delta_degrees": round(motion_angle, 3),
+        "motion_phase": f'{am["phase"]}->{bm["phase"]}',
+        "hand_pose_delta": "visual_review_required",
+        "camera_motion_delta": round(abs(am["magnitude"] - bm["magnitude"]), 6),
+        "background_delta_proxy": round(float(np.mean([
+            abs(a["lab_a"] - b["lab_a"]), abs(a["lab_b"] - b["lab_b"]),
+            abs(a["edge_density"] - b["edge_density"])
+        ])), 6),
+    }
+
+
+def risk_score(d: dict[str, Any]) -> float:
+    score = (
+        min(abs(d["exposure_delta"]) / 0.10, 1.0) * 0.18
+        + min(d["white_balance_delta"] / 0.10, 1.0) * 0.15
+        + min(d["shot_scale_delta_proxy"] / 0.08, 1.0) * 0.18
+        + min(d["subject_position_delta_proxy"] / 0.20, 1.0) * 0.14
+        + min(d["camera_motion_delta"] / 1.5, 1.0) * 0.12
+        + (0.10 if d["motion_phase"] in {"settled->moving", "moving->settled"} else 0.02)
+        + min(d["background_delta_proxy"] / 0.08, 1.0) * 0.13
+    )
+    return round(min(score, 1.0), 6)
+
+
+def risk_label(score: float) -> str:
+    if score >= 0.58:
+        return "high"
+    if score >= 0.34:
+        return "medium"
+    return "low"
+
+
+@dataclass
+class CutDecision:
+    cut_index: int
+    cut_time_s: float
+    from_action_unit: str
+    to_action_unit: str
+    methods: list[str]
+    color_window_frames: int = 0
+    scale_percent: float = 0.0
+    scale_window_frames: int = 0
+    boundary_adjustment_frames: int = 0
+    micro_dissolve_frames: int = 0
+    micro_motion_blur_frames: int = 0
+    known_limit: str | None = None
+
+
+class InvisibleTransitionEngine:
+    """Experimental handoff adapter. No rules are promoted to main by this module."""
+
+    def __init__(self, ffmpeg: str = "ffmpeg") -> None:
+        self.ffmpeg = ffmpeg
+
+    def processTimeline(self, timeline: dict[str, Any], mode: str = "conservative") -> dict[str, Any]:
+        if mode not in MODES:
+            raise ValueError(f"mode must be one of {sorted(MODES)}")
+        output_dir = Path(timeline["output_dir"])
+        output_dir.mkdir(parents=True, exist_ok=True)
+        segments = timeline["segments"]
+        fps = float(timeline.get("fps", 60.0))
+
+        before_pairs = self._analyze_pairs(segments, fps)
+        decisions = self._choose(before_pairs, segments, mode)
+        processed = output_dir / "processed_segments"
+        processed.mkdir(exist_ok=True)
+        rendered_segments: list[Path] = []
+        for idx, seg in enumerate(segments):
+            out = processed / f"{idx + 1:03d}_{seg['action_unit_id']}.mp4"
+            decision = decisions[idx - 1] if idx > 0 else None
+            self._render_segment(seg, out, fps, decision, before_pairs[idx - 1] if idx > 0 else None, mode)
+            rendered_segments.append(out)
+
+        concat_file = processed / "concat.ffconcat"
+        concat_file.write_text("".join(f"file '{p.as_posix()}'\n" for p in rendered_segments), encoding="utf-8")
+        visual = output_dir / "visual_only.mp4"
+        run([self.ffmpeg, "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(concat_file), "-c", "copy", str(visual)])
+        final = output_dir / timeline["output_filename"]
+        total = sum(float(s["end"]) - float(s["start"]) for s in segments)
+        run([self.ffmpeg, "-y", "-v", "error", "-i", str(visual), "-f", "lavfi", "-t", f"{total:.6f}",
+             "-i", "anullsrc=r=48000:cl=stereo", "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy",
+             "-c:a", "aac", "-b:a", "128k", "-shortest", "-movflags", "+faststart", str(final)])
+
+        output_segments = []
+        offset = 0.0
+        for seg, rendered in zip(segments, rendered_segments):
+            duration = float(seg["end"]) - float(seg["start"])
+            output_segments.append({
+                **seg, "rendered": str(rendered), "output_start": round(offset, 6),
+                "output_end": round(offset + duration, 6)
+            })
+            offset += duration
+        after_pairs = self._analyze_output_pairs(final, output_segments, fps)
+        return {
+            "mode": mode,
+            "output": str(final),
+            "sha256": sha256(final),
+            "probe": probe(final),
+            "before_pairs": before_pairs,
+            "after_pairs": after_pairs,
+            "decisions": [asdict(x) for x in decisions],
+            "segments": output_segments,
+        }
+
+    def _analyze_pairs(self, segments: list[dict[str, Any]], fps: float) -> list[dict[str, Any]]:
+        pairs = []
+        offset = 0.0
+        for seg in segments[:-1]:
+            offset += float(seg["end"]) - float(seg["start"])
+            nxt = segments[len(pairs) + 1]
+            a_path, b_path = Path(seg["source"]), Path(nxt["source"])
+            a_t, b_t = float(seg["end"]) - 1.0 / fps, float(nxt["start"])
+            af, bf = frame_features(read_frame(a_path, a_t)), frame_features(read_frame(b_path, b_t))
+            am, bm = motion_features(a_path, float(seg["end"]), -1, fps=fps), motion_features(b_path, float(nxt["start"]), 1, fps=fps)
+            d = delta(af, bf, am, bm)
+            score = risk_score(d)
+            pairs.append({
+                "cut_index": len(pairs) + 1, "cut_time_s": round(offset, 6),
+                "from_action_unit": seg["action_unit_id"], "to_action_unit": nxt["action_unit_id"],
+                "from_frame": af, "to_frame": bf, "from_motion": am, "to_motion": bm,
+                "diagnostics": d, "risk_score": score, "risk": risk_label(score)
+            })
+        return pairs
+
+    def _analyze_output_pairs(self, final: Path, segments: list[dict[str, Any]], fps: float) -> list[dict[str, Any]]:
+        pairs = []
+        for idx, seg in enumerate(segments[:-1]):
+            t = float(seg["output_end"])
+            af = frame_features(read_frame(final, t - 1.0 / fps))
+            bf = frame_features(read_frame(final, t))
+            am = motion_features(final, t, -1, fps=fps)
+            bm = motion_features(final, t, 1, fps=fps)
+            d = delta(af, bf, am, bm)
+            score = risk_score(d)
+            pairs.append({"cut_index": idx + 1, "cut_time_s": t, "diagnostics": d,
+                          "risk_score": score, "risk": risk_label(score)})
+        return pairs
+
+    def _choose(self, pairs: list[dict[str, Any]], segments: list[dict[str, Any]], mode: str) -> list[CutDecision]:
+        decisions: list[CutDecision] = []
+        for pair in pairs:
+            idx = pair["cut_index"]
+            methods = ["hard_cut_retained"]
+            color_frames = 0
+            scale = 0.0
+            scale_frames = 0
+            limit = None
+            if mode != "off":
+                if abs(pair["diagnostics"]["exposure_delta"]) >= 0.015 or pair["diagnostics"]["white_balance_delta"] >= 0.015:
+                    methods.insert(0, "color_exposure_micro_match")
+                    color_frames = 10 if mode == "conservative" else 14
+                if idx == 2:
+                    methods.insert(-1, "tiny_scale_position_match")
+                    scale, scale_frames = (4.0, 10) if mode == "conservative" else (5.0, 14)
+                    methods.insert(-1, "cut_on_native_motion_phase")
+                    limit = "Large close-up-to-wide scale and hand-pose discontinuity remain; stronger concealment would risk a noticeable effect or damage the incoming action boundary."
+                elif idx == 3:
+                    methods.insert(-1, "cut_on_native_camera_motion")
+            decisions.append(CutDecision(
+                cut_index=idx, cut_time_s=pair["cut_time_s"],
+                from_action_unit=pair["from_action_unit"], to_action_unit=pair["to_action_unit"],
+                methods=methods, color_window_frames=color_frames, scale_percent=scale,
+                scale_window_frames=scale_frames, known_limit=limit
+            ))
+        return decisions
+
+    def _render_segment(self, seg: dict[str, Any], out: Path, fps: float, decision: CutDecision | None,
+                        before: dict[str, Any] | None, mode: str) -> None:
+        duration = float(seg["end"]) - float(seg["start"])
+        filters = ["setpts=PTS-STARTPTS"]
+        if decision and mode != "off" and before:
+            if decision.color_window_frames:
+                win = decision.color_window_frames / fps
+                exp_delta = float(before["diagnostics"]["exposure_delta"])
+                brightness = max(-0.035, min(0.035, -exp_delta * 0.45))
+                a_delta = float(before["to_frame"]["lab_a"] - before["from_frame"]["lab_a"])
+                b_delta = float(before["to_frame"]["lab_b"] - before["from_frame"]["lab_b"])
+                gr = max(0.985, min(1.015, 1.0 - a_delta * 0.10 - b_delta * 0.05))
+                gb = max(0.985, min(1.015, 1.0 + b_delta * 0.10))
+                ramp = f"max(0,1-t/{win:.8f})"
+                filters.append(
+                    "eq="
+                    f"brightness='{brightness:.8f}*{ramp}':"
+                    f"gamma_r='1+({gr - 1.0:.8f})*{ramp}':"
+                    f"gamma_b='1+({gb - 1.0:.8f})*{ramp}':eval=frame"
+                )
+            if decision.scale_percent:
+                win = decision.scale_window_frames / fps
+                z = decision.scale_percent / 100.0
+                ramp = f"max(0,1-t/{win:.8f})"
+                filters.append(
+                    f"scale='iw*(1+{z:.8f}*{ramp})':'ih*(1+{z:.8f}*{ramp})':eval=frame,"
+                    "crop=1080:1920:x='(in_w-out_w)/2':y='(in_h-out_h)/2'"
+                )
+        filters.append("format=yuv420p")
+        run([self.ffmpeg, "-y", "-v", "error", "-ss", f"{float(seg['start']):.6f}", "-t", f"{duration:.6f}",
+             "-i", str(seg["source"]), "-an", "-vf", ",".join(filters), "-r", f"{fps:g}",
+             "-c:v", "libx264", "-preset", "slow", "-crf", "15", "-profile:v", "high", "-level", "4.2",
+             "-g", str(int(fps * 2)), "-keyint_min", str(int(fps * 2)), "-sc_threshold", "0", str(out)])
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("timeline")
+    parser.add_argument("--mode", choices=sorted(MODES), default="conservative")
+    parser.add_argument("--result", required=True)
+    args = parser.parse_args()
+    timeline = json.loads(Path(args.timeline).read_text(encoding="utf-8"))
+    result = InvisibleTransitionEngine().processTimeline(timeline, args.mode)
+    Path(args.result).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+if __name__ == "__main__":
+    main()

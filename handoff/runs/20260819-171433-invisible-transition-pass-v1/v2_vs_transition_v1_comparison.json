@@ -1,0 +1,46 @@
+{
+  "run_id": "20260819-171433-invisible-transition-pass-v1",
+  "baseline_run_id": "20260819-164702-script-guided-controlled-auto-edit-v2",
+  "single_variable": "Invisible Transition Layer v0.1 in conservative mode",
+  "unchanged": {
+    "duration_s": [
+      20.75,
+      20.75
+    ],
+    "frames": [
+      1245,
+      1245
+    ],
+    "shot_order": true,
+    "action_units": true,
+    "source_ranges": true,
+    "commercial_chapters": true,
+    "vo_subtitles_bgm_sfx": "none in both"
+  },
+  "changed": {
+    "incoming_color_exposure_windows": "3 x 10 frames",
+    "incoming_tiny_scale_window": "cut 2 only, 4% to 0% over 10 frames"
+  },
+  "cut_outcomes": [
+    {
+      "cut": 1,
+      "before": "medium",
+      "after": "low",
+      "improvement": "clear"
+    },
+    {
+      "cut": 2,
+      "before": "high",
+      "after": "medium",
+      "improvement": "limited_but_positive"
+    },
+    {
+      "cut": 3,
+      "before": "medium",
+      "after": "low",
+      "improvement": "clear"
+    }
+  ],
+  "action_integrity_regression": false,
+  "human_acceptance": "pending"
+}

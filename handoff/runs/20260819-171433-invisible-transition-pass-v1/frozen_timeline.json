@@ -1,0 +1,49 @@
+{
+  "run_id": "20260819-171433-invisible-transition-pass-v1",
+  "baseline_run_id": "20260819-164702-script-guided-controlled-auto-edit-v2",
+  "output_dir": "D:\\8.19\\edit\\runs\\20260819-171433-invisible-transition-pass-v1",
+  "output_filename": "8_19_script_guided_v2_invisible_transition_v1.mp4",
+  "fps": 60,
+  "segments": [
+    {
+      "order": 1,
+      "action_unit_id": "AU-0068-01",
+      "source": "D:\\8.19\\edit\\runs\\20260819-164702-script-guided-controlled-auto-edit-v2\\segments\\001_0068.mp4",
+      "original_source": "D:\\8.19\\DJI_20260819104536_0068_D.MP4",
+      "original_source_range": [7.5, 11.5],
+      "start": 0.0,
+      "end": 4.0,
+      "roles": ["Product Opening Establishment", "Product Identity", "Contents Reveal"]
+    },
+    {
+      "order": 2,
+      "action_unit_id": "AU-0075-02",
+      "source": "D:\\8.19\\edit\\runs\\20260819-164702-script-guided-controlled-auto-edit-v2\\segments\\002_0075.mp4",
+      "original_source": "D:\\8.19\\DJI_20260819111348_0075_D.MP4",
+      "original_source_range": [7.5, 13.25],
+      "start": 0.0,
+      "end": 5.75,
+      "roles": ["Single Readable Content", "Number-to-Question Mechanic", "script_extra_value"]
+    },
+    {
+      "order": 3,
+      "action_unit_id": "AU-0078-01",
+      "source": "D:\\8.19\\edit\\runs\\20260819-164702-script-guided-controlled-auto-edit-v2\\segments\\003_0078.mp4",
+      "original_source": "D:\\8.19\\DJI_20260819111945_0078_D.MP4",
+      "original_source_range": [0.75, 6.5],
+      "start": 0.0,
+      "end": 5.75,
+      "roles": ["Multi-card Coverage", "Strong Question Focus", "Reading Guide"]
+    },
+    {
+      "order": 4,
+      "action_unit_id": "AU-0081-01",
+      "source": "D:\\8.19\\edit\\runs\\20260819-164702-script-guided-controlled-auto-edit-v2\\segments\\004_0081.mp4",
+      "original_source": "D:\\8.19\\DJI_20260819112312_0081_D.MP4",
+      "original_source_range": [0.0, 5.25],
+      "start": 0.0,
+      "end": 5.25,
+      "roles": ["Hero", "Complete Product Ending", "Coverage Reinforcement"]
+    }
+  ]
+}
