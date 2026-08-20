@@ -3,7 +3,7 @@
   "experiment_name": "解压玩具 auto edit v1",
   "status": "running",
   "branch": "handoff",
-  "stage": "timeline_complete",
+  "stage": "render_complete",
   "generated_at": "2026-08-20T16:45:47+08:00",
   "input_root": "D:\\8.20剪辑\\解压玩具",
   "source_asset_count": 13,
@@ -26,8 +26,9 @@
     "director_plan.json",
     "timeline.json",
     "transition_pair_analysis.json",
+    "render.json",
     "manifest.json",
     "summary.md"
   ],
-  "next_step": "Render silent master, decode verification and machine preflight"
+  "next_step": "Machine QA preflight and Human Sanity review handoff"
 }

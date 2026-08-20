@@ -1,0 +1,35 @@
+{
+  "schema_version": "render-record-v1",
+  "run_id": "20260820-jieya-wanju-auto-edit-v1",
+  "stage": "render_complete",
+  "render_role": "silent_master",
+  "output_path": "C:\\Users\\Mayn\\Documents\\Codex\\2026-08-20\\referenced-chatgpt-conversation-this-is-an-11\\outputs\\20260820-jieya-wanju-auto-edit-v1\\jieya_wanju_silent_master_v1.mp4",
+  "local_only": true,
+  "local_only_reason": "成片媒体文件体积较大；GitHub 仅提交参数、哈希、本地路径和评审状态。",
+  "sha256": "573ed51288f079c95dbcbc3d75172293af49269903be8a066cbb6c56ec7c3fe6",
+  "size_bytes": 36550901,
+  "media": {
+    "duration_seconds": 27.027,
+    "frame_count": 1620,
+    "width": 1080,
+    "height": 1920,
+    "avg_frame_rate": "60000/1001",
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_stream_count": 0
+  },
+  "render_parameters": {
+    "encoder": "libx264",
+    "preset": "faster",
+    "crf": 18,
+    "movflags": "+faststart",
+    "transitions": "hard cuts only",
+    "overlays": "none"
+  },
+  "planned_vs_actual": {
+    "planned_duration_seconds": 27.0,
+    "actual_duration_seconds": 27.027,
+    "reason": "1620 constant-rate frames at 60000/1001 fps"
+  },
+  "human_review_status": "needs_human_review"
+}
