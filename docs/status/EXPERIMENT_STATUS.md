@@ -302,3 +302,28 @@
 - Local only: 83.8 MB portable EXE, 84.0 MB installer, credentials, device state, SQLite, telemetry queue, raw videos and renders
 - Rule promotion: none; Script Engine and Invisible Transition remain experimental
 - Next step: model-backed Shot Plan/AU analysis, baked Invisible Transition rendering, and real TTS duration/timeline integration
+
+## 20260820-095912-earphone-case-full-production-v1
+
+- Experiment: Earphone Case Full Production Pass v1
+- Status: `handed_off`; quality status: `needs_human_review`
+- Started at: `2026-08-20T09:59:12+08:00`
+- Updated at: `2026-08-20T10:14:00+08:00`
+- Owner: `Codex`; final human reviewer: `user` (pending full watch)
+- Branch: `handoff`; `main` not modified; `libraries/audio_material/` not modified
+- Base commit: `98a66e005130388f1350256e5330e9eb163d4f1a`
+- Handoff payload commit: `8af587163c84be4cb6367b4da240ffbd92a56e2e`
+- Canonical archive: `handoff/runs/20260820-095912-earphone-case-full-production-v1/`
+- Visual baseline: `20260818-164844-earphone-case-visual-first-v1`; validated Action Units, proof limits, causality, and 17.65 s timeline preserved.
+- VO: English commercial benefit-led script; OpenAI `gpt-4o-mini-tts`, voice `marin`; actual accepted spoken duration `14.918 s`.
+- Duration Budget: real timing drove two script compressions; only port line used slight `atempo=1.07`; dead-tail forcing `0`.
+- Commercial structure: Hook/Identity -> Install/Access -> Closure -> Carry configuration -> Port access -> Hero/verbal CTA.
+- Transition result: all 5 pairs reviewed conservatively; native hard cuts retained; no visible effect, ghosting, warp, or scale/color transform introduced.
+- Codex/machine preflight: pass; hard fails `0`; visible loop `0`; repeated-motion fill `0`; incomplete action `0`; proof mismatch `0`; persistent-constraint regression `0`.
+- Final Human Sanity Gate: pending user full viewing; machine PASS is not final human acceptance.
+- Local only:
+  - `D:\耳机套\edit\runs\20260820-095912-earphone-case-full-production-v1\earphone_case_full_production_v1.mp4` — private binary final video.
+  - real VO WAV, TTS intermediates, and QA images under the same run directory — binary/private/rebuildable; excluded from GitHub.
+- Published: JSON/MD/HTML/TXT reports only; no raw media, MP4, audio, or QA images.
+- Rule promotion: none.
+- Next step: user full-watch review of the single local-only MP4.

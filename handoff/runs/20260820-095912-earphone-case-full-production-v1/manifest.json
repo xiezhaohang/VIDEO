@@ -2,12 +2,12 @@
   "schema_version": "1.0",
   "run_id": "20260820-095912-earphone-case-full-production-v1",
   "experiment_name": "Earphone Case Full Production Pass v1",
-  "status": "passed_pending_handoff_quality_needs_user_review",
+  "status": "handed_off_quality_needs_user_review",
   "created_at": "2026-08-20T09:59:12+08:00",
   "completed_at": "2026-08-20T10:11:23+08:00",
   "branch": "handoff",
   "base_commit": "98a66e005130388f1350256e5330e9eb163d4f1a",
-  "handoff_commit": "pending",
+  "handoff_commit": "8af587163c84be4cb6367b4da240ffbd92a56e2e",
   "inputs": [
     {
       "path": "D:\\耳机套\\edit\\earphone_case_visual_first_v1.mp4",
