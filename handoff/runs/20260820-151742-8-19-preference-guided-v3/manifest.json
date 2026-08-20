@@ -29,6 +29,6 @@
   "local_only_root": "D:\\8.19\\edit\\runs\\20260820-151742-8-19-preference-guided-v3",
   "repository_artifacts_only": true,
   "media_uploaded": false,
-  "checkpoint": "run_initialized",
+  "checkpoint": "timeline_and_script_locked_for_render",
   "human_preference_pass": "not_evaluated"
 }

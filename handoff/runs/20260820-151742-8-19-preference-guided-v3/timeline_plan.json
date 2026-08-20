@@ -1,0 +1,78 @@
+{
+  "run_id": "20260820-151742-8-19-preference-guided-v3",
+  "target_duration_s": 15.7,
+  "transition_policy": "straight hard cuts only; adjacent same-camera ranges may use a real hard cut at an information-state boundary",
+  "segments": [
+    {
+      "order": 1,
+      "source": "D:\\8.19\\DJI_20260819110845_0070_D.MP4",
+      "source_range_s": [2.35, 4.35],
+      "output_range_s": [0.0, 2.0],
+      "information_added": ["readable question", "recognizable prompt-card use", "pain-point subtitle"],
+      "readable_question": "WHAT'S THE FUNNIEST THING YOUR PARENTS HAVE EVER DONE?"
+    },
+    {
+      "order": 2,
+      "source": "D:\\8.19\\DJI_20260819111146_0072_D.MP4",
+      "source_range_s": [1.75, 4.05],
+      "output_range_s": [2.0, 4.3],
+      "information_added": ["new readable question", "clear prompt mechanism"],
+      "readable_question": "HOW WOULD YOU DESCRIBE WHAT LOVE IS TO AN ALIEN?"
+    },
+    {
+      "order": 3,
+      "source": "D:\\8.19\\DJI_20260819111146_0072_D.MP4",
+      "source_range_s": [11.5, 13.7],
+      "output_range_s": [4.3, 6.5],
+      "information_added": ["second new readable question", "friendship topic"],
+      "readable_question": "HOW WERE YOU A GOOD FRIEND RECENTLY?"
+    },
+    {
+      "order": 4,
+      "source": "D:\\8.19\\DJI_20260819111348_0075_D.MP4",
+      "source_range_s": [8.75, 10.25],
+      "output_range_s": [6.5, 8.0],
+      "information_added": ["number-side state", "mechanism setup"]
+    },
+    {
+      "order": 5,
+      "source": "D:\\8.19\\DJI_20260819111348_0075_D.MP4",
+      "source_range_s": [10.25, 12.25],
+      "output_range_s": [8.0, 10.0],
+      "information_added": ["flip action completion", "new readable question payoff"],
+      "readable_question": "WHAT DO YOU WISH GROWN-UPS UNDERSTOOD ABOUT BEING A KID?"
+    },
+    {
+      "order": 6,
+      "source": "D:\\8.19\\DJI_20260819111616_0077_D.MP4",
+      "source_range_s": [1.75, 3.25],
+      "output_range_s": [10.0, 11.5],
+      "information_added": ["quantity increase to two displayed prompts"]
+    },
+    {
+      "order": 7,
+      "source": "D:\\8.19\\DJI_20260819111616_0077_D.MP4",
+      "source_range_s": [3.25, 4.75],
+      "output_range_s": [11.5, 13.0],
+      "information_added": ["quantity increase to three displayed prompts"]
+    },
+    {
+      "order": 8,
+      "source": "D:\\8.19\\DJI_20260819112312_0081_D.MP4",
+      "source_range_s": [2.0, 4.7],
+      "output_range_s": [13.0, 15.7],
+      "information_added": ["complete-product Hero", "multiple readable prompts", "CTA"]
+    }
+  ],
+  "metrics_expected": {
+    "shot_count": 8,
+    "distinct_information_states": 9,
+    "average_effective_shot_length_s": 1.9625,
+    "first_silent_purchase_meaning_s": 0.0,
+    "cta_start_s": 13.0,
+    "opening_box_hook_duration_s": 0.0,
+    "dead_tail_forcing_s": 0.0,
+    "repeated_action_fill_s": 0.0
+  },
+  "material_ceiling": "Only four individually legible prompt contents are available at strong/usable quality. Later breadth beats add quantity, not four additional unique readable questions."
+}

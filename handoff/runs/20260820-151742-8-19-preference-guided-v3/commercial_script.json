@@ -1,0 +1,54 @@
+{
+  "run_id": "20260820-151742-8-19-preference-guided-v3",
+  "language": "en-US",
+  "positioning": "conversation starter / question prompts",
+  "audience_scope": "general; no unsupported parent, couple, date, party, or therapy targeting",
+  "segments": [
+    {
+      "output_range_s": [0.0, 2.0],
+      "english": "Conversation gone quiet?",
+      "chinese_meaning": "聊天突然冷场了？",
+      "function": "specific pain point",
+      "support": "a readable prompt card is already in use"
+    },
+    {
+      "output_range_s": [2.0, 4.3],
+      "english": "Start with one clear question.",
+      "chinese_meaning": "从一个明确的问题开始。",
+      "function": "lower the conversation-starting threshold",
+      "support": "a second readable question is held clearly"
+    },
+    {
+      "output_range_s": [4.3, 6.5],
+      "english": "Try love, friendship, or family.",
+      "chinese_meaning": "可以聊爱、友情或家人。",
+      "function": "content breadth",
+      "support": "visible questions explicitly cover love, friendship, and parents/family"
+    },
+    {
+      "output_range_s": [6.5, 10.0],
+      "english": "A number gives you a fresh prompt.",
+      "chinese_meaning": "一个数字，就带出一个新的问题。",
+      "function": "mechanism",
+      "support": "the same card visibly moves from number 2 to a readable question"
+    },
+    {
+      "output_range_s": [10.0, 13.0],
+      "english": "More cards mean more ways to keep talking.",
+      "chinese_meaning": "卡片越丰富，越容易把对话继续下去。",
+      "function": "quantity-to-benefit bridge",
+      "support": "the layout grows from one to three visible prompts"
+    },
+    {
+      "output_range_s": [13.0, 15.7],
+      "english": "Pick a question and start talking.",
+      "chinese_meaning": "选一个问题，开始聊吧。",
+      "function": "CTA",
+      "support": "complete product and multiple prompt cards remain visible"
+    }
+  ],
+  "unsupported_claims": [],
+  "fabricated_audiences": [],
+  "action_narration_lines": 0,
+  "review_status": "needs_human_review"
+}
