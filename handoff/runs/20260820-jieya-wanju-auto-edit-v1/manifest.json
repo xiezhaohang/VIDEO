@@ -3,7 +3,7 @@
   "experiment_name": "解压玩具 auto edit v1",
   "status": "running",
   "branch": "handoff",
-  "stage": "inventory_complete",
+  "stage": "strategy_complete",
   "generated_at": "2026-08-20T16:45:47+08:00",
   "input_root": "D:\\8.20剪辑\\解压玩具",
   "source_asset_count": 13,
@@ -21,8 +21,10 @@
   ],
   "published_artifacts": [
     "inventory.json",
+    "narrative_strategy.json",
+    "action_units.json",
     "manifest.json",
     "summary.md"
   ],
-  "next_step": "Narrative Strategy v1 and Director plan"
+  "next_step": "Cutter boundary refinement and timeline checkpoint"
 }

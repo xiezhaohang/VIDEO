@@ -1,0 +1,41 @@
+{
+  "schema_version": "narrative-strategy-v1",
+  "run_id": "20260820-jieya-wanju-auto-edit-v1",
+  "product": "解压玩具",
+  "stage": "strategy_complete",
+  "internal_scores": {
+    "proof": 0.82,
+    "information": 0.6,
+    "emotion": 0.34,
+    "visual_appeal": 0.91
+  },
+  "primary_strategy": "visual-led",
+  "secondary_strategy": "proof-led",
+  "confidence": 0.88,
+  "strategy_reason": "多 SKU、透明材质、亮色颗粒与形变差异具有强视觉吸引力；素材同时提供按压和拉伸的真实结果，但不需要把每个 SKU 都变成步骤教学。",
+  "commercial_structure": [
+    "最快展示一盒多款的购买意义",
+    "用开箱和全套状态建立产品范围",
+    "选择差异最大的三到四个形变证据，逐次信息升级",
+    "回到全套 Hero 状态收束，不重复动作填时长"
+  ],
+  "fallback": {
+    "strategy": "visual-led product-variety montage",
+    "trigger": "若任何按压/拉伸 Action Unit 经逐帧检查无法保持动作完整性，则删除该 Proof 单元，只保留开箱、全套与稳定单品 Hero；不以其他 SKU 的结果代替其证明。"
+  },
+  "voice_decision": {
+    "status": "silent_preferred",
+    "reason": "当前素材足以用真实画面表达品类、多款与形变差异；缺少经确认的品牌、材质和性能文案，硬配音会增加虚构产品功能的风险。",
+    "reconsider_after_human_review": true
+  },
+  "hard_gates": {
+    "action_integrity": "required",
+    "proof_ownership": "每个形变结果必须归属于同一 SKU、同一连续动作句",
+    "readability": "外盒和全套至少保留到品类/数量层级信息可辨识；不可声称未能清楚读出的包装内容",
+    "no_loop": true,
+    "no_repeated_motion_fill": true,
+    "no_fabricated_claim": true,
+    "no_dead_tail_forcing": true
+  },
+  "human_review_status": "needs_human_review"
+}

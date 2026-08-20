@@ -1,0 +1,75 @@
+{
+  "schema_version": "action-unit-selection-v1",
+  "run_id": "20260820-jieya-wanju-auto-edit-v1",
+  "stage": "strategy_complete",
+  "time_basis": "source seconds; visual review samples at 2-second intervals, exact Cutter boundaries remain provisional until timeline checkpoint",
+  "selected_candidates": [
+    {
+      "id": "AU-BOX-OPEN",
+      "source": "D:\\8.20剪辑\\解压玩具\\DJI_20260814112338_0029_D.MP4",
+      "provisional_in": 1.4,
+      "provisional_out": 5.2,
+      "role": "range_setup",
+      "action_sentence": "闭合外盒进入画面 → 盒盖打开 → 内部多款商品完整可见",
+      "proof_object": "同一外盒及其内装",
+      "selection": "selected"
+    },
+    {
+      "id": "AU-MYSTERY-REVEAL",
+      "source": "D:\\8.20剪辑\\解压玩具\\DJI_20260814112753_0035_D.MP4",
+      "provisional_in": 4.8,
+      "provisional_out": 12.6,
+      "role": "visual_difference",
+      "action_sentence": "圆形容器闭合态 → 打开 → 粉色笑脸商品可见 → 短暂确认",
+      "proof_object": "圆形容器内的粉色单品",
+      "selection": "selected"
+    },
+    {
+      "id": "AU-DINO-STRETCH",
+      "source": "D:\\8.20剪辑\\解压玩具\\DJI_20260814112939_0038_D.MP4",
+      "provisional_in": 0.0,
+      "provisional_out": 10.2,
+      "role": "proof",
+      "action_sentence": "恐龙完整形态 → 双手按压/拉伸 → 明显变宽 → 回到可辨识结果态",
+      "proof_object": "透明蓝色恐龙单品",
+      "selection": "selected"
+    },
+    {
+      "id": "AU-GREEN-CUBE-DEFORM",
+      "source": "D:\\8.20剪辑\\解压玩具\\DJI_20260814113118_0040_D.MP4",
+      "provisional_in": 12.4,
+      "provisional_out": 30.4,
+      "role": "proof",
+      "action_sentence": "绿色方块完整态 → 手掌按压 → 圆钝拉长形态 → 结果确认",
+      "proof_object": "透明绿色方块单品",
+      "selection": "selected"
+    },
+    {
+      "id": "AU-PURPLE-WIDE-STRETCH",
+      "source": "D:\\8.20剪辑\\解压玩具\\DJI_20260814113231_0041_D.MP4",
+      "provisional_in": 18.8,
+      "provisional_out": 31.2,
+      "role": "proof_peak",
+      "action_sentence": "紫色球状完整态 → 双手向两侧拉伸 → 宽幅薄片结果 → 短暂保持",
+      "proof_object": "透明紫色球状单品",
+      "selection": "selected"
+    },
+    {
+      "id": "AU-FULL-SET-HERO",
+      "source": "D:\\8.20剪辑\\解压玩具\\DJI_20260814112556_0031_D.MP4",
+      "provisional_in": 0.0,
+      "provisional_out": 9.2,
+      "role": "opening_or_ending_hero",
+      "action_sentence": "镜头扫过全套商品并短暂停在差异化阵列",
+      "proof_object": "同盒多款商品阵列",
+      "selection": "selected"
+    }
+  ],
+  "excluded_patterns": [
+    "同一 SKU 的第二次相似按压",
+    "动作结束后的手部等待或离场 dead tail",
+    "只展示包装但没有新增品类/数量信息的重复镜头",
+    "无法确认触发与结果属于同一连续动作句的片段"
+  ],
+  "human_review_status": "needs_human_review"
+}
