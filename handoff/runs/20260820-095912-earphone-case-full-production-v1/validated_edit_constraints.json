@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "project": "earphone_case",
+  "run_id": "20260820-095912-earphone-case-full-production-v1",
+  "baseline_run_id": "20260818-164844-earphone-case-visual-first-v1",
+  "mechanism": "Persistent Constraints preflight and regression gate",
+  "constraints": [
+    {
+      "id": "EARPHONE_ACTION_INTEGRITY",
+      "lock_level": "hard",
+      "required": true,
+      "preserve_across_versions": true,
+      "rule": "Selected installation, opening, closure, and tail-removal Action Units must reach their corresponding visible results before a cut.",
+      "source": [
+        "PROJECT_RULES.md",
+        "handoff/runs/20260818-164844-earphone-case-visual-first-v1/action_units.json"
+      ]
+    },
+    {
+      "id": "EARPHONE_STATE_PATH",
+      "lock_level": "hard",
+      "required": true,
+      "preserve_across_versions": true,
+      "rule": "Preserve install -> assembled open -> closed -> carry scene -> tail detach/port reveal -> independent hero progression without unexplained regression.",
+      "source": [
+        "handoff/runs/20260818-164844-earphone-case-visual-first-v1/state_graph.json"
+      ]
+    },
+    {
+      "id": "CARRY_CONFIGURATION_PROOF_LIMIT",
+      "lock_level": "hard",
+      "required": true,
+      "preserve_across_versions": true,
+      "rule": "The carabiner shot proves a hanging/carry configuration only; it does not prove the clipping-on action.",
+      "source": [
+        "handoff/runs/20260818-164844-earphone-case-visual-first-v1/commercial_understanding.json"
+      ]
+    },
+    {
+      "id": "PORT_ACCESS_PROOF_LIMIT",
+      "lock_level": "hard",
+      "required": true,
+      "preserve_across_versions": true,
+      "rule": "Tail removal proves port access only; never claim charging success, speed, or connection.",
+      "source": [
+        "handoff/runs/20260818-164844-earphone-case-visual-first-v1/commercial_understanding.json"
+      ]
+    },
+    {
+      "id": "CTA_EVIDENCE_LIMIT",
+      "lock_level": "hard",
+      "required": true,
+      "preserve_across_versions": true,
+      "rule": "No directional CTA gesture exists in the reviewed material; use Hero plus non-directional verbal CTA and do not fabricate pointing/UI.",
+      "source": [
+        "handoff/runs/20260818-164844-earphone-case-visual-first-v1/commercial_understanding.json"
+      ]
+    },
+    {
+      "id": "NO_DEAD_TAIL_FOR_VO",
+      "lock_level": "hard",
+      "required": true,
+      "preserve_across_versions": true,
+      "rule": "Shorten VO before any slight TTS speed adjustment; never extend, loop, or repeat visuals to fill narration.",
+      "source": [
+        "docs/口播驱动商品剪辑规则.md"
+      ]
+    }
+  ],
+  "preflight": {
+    "constraints_checked": 6,
+    "regressions": 0,
+    "status": "pass"
+  }
+}

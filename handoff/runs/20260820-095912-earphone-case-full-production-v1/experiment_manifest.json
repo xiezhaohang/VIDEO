@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260820-095912-earphone-case-full-production-v1",
+  "experiment_name": "Earphone Case Full Production Pass v1",
+  "status": "passed_pending_handoff_quality_needs_user_review",
+  "created_at": "2026-08-20T09:59:12+08:00",
+  "completed_at": "2026-08-20T10:11:23+08:00",
+  "branch": "handoff",
+  "base_commit": "98a66e005130388f1350256e5330e9eb163d4f1a",
+  "handoff_commit": "pending",
+  "inputs": [
+    {
+      "path": "D:\\耳机套\\edit\\earphone_case_visual_first_v1.mp4",
+      "sha256": "B07582526EAF7218893BB897ABDEF4B5141844A18099C9401B9BE1CC670437B5",
+      "role": "validated visual baseline derived from D:\\耳机套 raw media"
+    },
+    {
+      "path": "handoff/runs/20260818-164844-earphone-case-visual-first-v1/action_units.json",
+      "role": "validated Action Units"
+    },
+    {
+      "path": "handoff/runs/20260818-164844-earphone-case-visual-first-v1/commercial_understanding.json",
+      "role": "proof and claim limits"
+    },
+    {
+      "path": "handoff/runs/20260818-164844-earphone-case-visual-first-v1/state_graph.json",
+      "role": "causality and state progression"
+    },
+    {
+      "path": "PROJECT_RULES.md",
+      "role": "root project rules"
+    },
+    {
+      "path": "rules/universal_rules.yaml",
+      "role": "validated universal rules"
+    }
+  ],
+  "human_sanity_gate": {
+    "status": "pending_user_review",
+    "reviewer": "Codex machine/full-timeline preflight; user pending",
+    "reviewed_at": "2026-08-20T10:11:23+08:00",
+    "version_reviewed": "D:\\耳机套\\edit\\runs\\20260820-095912-earphone-case-full-production-v1\\earphone_case_full_production_v1.mp4 (F2F2B325D2F94426BB5C37925F228ACC94739D40C3DF71A4F23FA209C817A648)",
+    "hard_failures": {
+      "visible_motion_loop": false,
+      "repeated_motion_fill": false,
+      "other": []
+    },
+    "notes": "Machine/Codex preflight pass is not final human acceptance."
+  },
+  "quality_gates": {
+    "action_integrity": {
+      "status": "pass_preflight",
+      "evidence": "all selected actions reach their visible result"
+    },
+    "proof_chain": {
+      "status": "pass_preflight",
+      "evidence": "install -> assembled/open; carry configuration; tail removal -> exposed port; hero payoff"
+    },
+    "proof_ownership": {
+      "status": "pass_preflight",
+      "evidence": "earphone case owns access proof; carabiner owns carry configuration; port owns access proof"
+    },
+    "duration_budget": {
+      "status": "pass",
+      "dead_tail_forcing_events": 0
+    },
+    "persistent_constraints": {
+      "status": "pass",
+      "regressions": 0
+    }
+  },
+  "metrics": {
+    "evaluated_after_sanity_preflight": true,
+    "summary": {
+      "duration_s": 17.65,
+      "actual_vo_s": 14.918,
+      "hard_fail_count": 0,
+      "dead_tail_forcing": 0
+    },
+    "source_path": "handoff/runs/20260820-095912-earphone-case-full-production-v1/metrics.json"
+  },
+  "artifacts": [
+    {
+      "repository_path": "handoff/runs/20260820-095912-earphone-case-full-production-v1/final_commercial_structure.json",
+      "sha256": "18F12AC8F43830CACF4A22B55F04D7AE551150D129CFA1389C6FB9BB9754C66A",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260820-095912-earphone-case-full-production-v1/duration_budget.json",
+      "sha256": "698923C763D9C1293DD9CFD7CAD567323C7352641AE6281C4DF5507B3A9E13CE",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260820-095912-earphone-case-full-production-v1/commercial_voice_script.txt",
+      "sha256": "2A62D4C8690224F3BF4E86C3491DE87180FB616791294A37622B998AF82A7DCD",
+      "media_type": "text/plain",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260820-095912-earphone-case-full-production-v1/commercial_voice_script.json",
+      "sha256": "F383466C9C8584FE94C2A4F6F54D16F409C7148804DF99E453BB5EC9E4554580",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260820-095912-earphone-case-full-production-v1/tts_generation.json",
+      "sha256": "51063B4AA53BE4C9279DF5C8328FB3946846CFF1727A38E3B3461B1C9D60367C",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260820-095912-earphone-case-full-production-v1/real_vo_timeline.json",
+      "sha256": "CDE1E02A022863EEB1E7C4E15F1C7E726D00649651793FBB5C6382CBB86B8A79",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260820-095912-earphone-case-full-production-v1/vo_visual_alignment.json",
+      "sha256": "49EA3B721CA54A343AB941FD3AEA499C17833B99A4B2E2A807D5A48F74560A64",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260820-095912-earphone-case-full-production-v1/transition_pair_analysis.json",
+      "sha256": "20A3DD943AC5AA6BAF7812C5B51A3187C1D8F3D38D9717402EB9C214D7B3D1F7",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260820-095912-earphone-case-full-production-v1/validated_edit_constraints.json",
+      "sha256": "DFEBD6AC29354B4B2506EA52DD9D36766FFC711F67D6E56F5F0BB18D2F8216BF",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260820-095912-earphone-case-full-production-v1/decisions.json",
+      "sha256": "70B415A85C10A9155706B01B1CD309A8D4F890A3ABF52A8A992F86A44D2A23BB",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260820-095912-earphone-case-full-production-v1/sanity.json",
+      "sha256": "25181FEF0CED2C3718A73DF06AA82EE50BA70A958CD2F2C351F8C0EF9A84FF48",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260820-095912-earphone-case-full-production-v1/metrics.json",
+      "sha256": "C1C0295304BFF52C50D1AD168A58D05470AB66C0B817EA2D24C9B0A7165DBBCC",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260820-095912-earphone-case-full-production-v1/report.html",
+      "sha256": "B9B67D991C42A3E8DDB1110A7B56357CA8884BF430E162125A7B1200D759C7A9",
+      "media_type": "text/html",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260820-095912-earphone-case-full-production-v1/summary.md",
+      "sha256": "61A0CAE03792AC6C1E3C0D249CAD84788E202A6E922E940379AEE266C0ADFD96",
+      "media_type": "text/markdown",
+      "required": true
+    }
+  ],
+  "local_only": [
+    {
+      "path": "D:\\耳机套\\edit\\runs\\20260820-095912-earphone-case-full-production-v1\\earphone_case_full_production_v1.mp4",
+      "sha256": "F2F2B325D2F94426BB5C37925F228ACC94739D40C3DF71A4F23FA209C817A648",
+      "reason": "private binary final video; excluded by handoff policy",
+      "rebuild": "rebuild from validated visual master plus real_vo_master.wav"
+    },
+    {
+      "path": "D:\\耳机套\\edit\\runs\\20260820-095912-earphone-case-full-production-v1\\real_vo_master.wav",
+      "sha256": "4C8C5ADE765C85709C8E89D1CF954174BDB3975904159E91892CCAE4D3444C0D",
+      "reason": "generated binary audio; excluded by requested GitHub scope",
+      "rebuild": "regenerate from the recorded provider/model/voice and accepted script"
+    },
+    {
+      "path": "D:\\耳机套\\edit\\runs\\20260820-095912-earphone-case-full-production-v1\\verify",
+      "reason": "derived private QA images",
+      "rebuild": "render from final local MP4"
+    },
+    {
+      "path": "D:\\耳机套\\edit\\runs\\20260820-095912-earphone-case-full-production-v1\\tts_raw",
+      "reason": "rebuildable generated audio intermediates",
+      "rebuild": "repeat TTS generation without persisting the API key"
+    }
+  ],
+  "report_path": "handoff/runs/20260820-095912-earphone-case-full-production-v1/report.html",
+  "writes_to_main": false,
+  "writes_to_audio_material": false,
+  "rule_promotion": false,
+  "conclusion": "One voiced commercial MP4 generated with 0 preflight hard fails and no dead-tail forcing; final user Human Sanity review remains pending.",
+  "next_step": "User full-watch review of the single local-only MP4; no rule promotion."
+}

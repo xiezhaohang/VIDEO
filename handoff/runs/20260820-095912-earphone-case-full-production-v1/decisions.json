@@ -1,0 +1,31 @@
+{
+  "run_id": "20260820-095912-earphone-case-full-production-v1",
+  "decisions": [
+    {
+      "decision": "Preserve the validated visual Action Units and 17.65 s state path.",
+      "reason": "No action-integrity, proof, or state regression defect justified re-directing the visual master."
+    },
+    {
+      "decision": "Replace the prior instruction-like narration with five benefit-led semantic lines.",
+      "reason": "The screen shows what happens; VO supplies why the visible result matters."
+    },
+    {
+      "decision": "Regenerate and shorten VO after real timing exceeded useful windows.",
+      "reason": "Duration Budget forbids visual dead tails as narration filler."
+    },
+    {
+      "decision": "Apply atempo 1.07 only to VO04.",
+      "reason": "After rewriting and edge-silence trim it exceeded the 2.60 s port window by 0.17 s; the adjustment is slight and no picture was extended."
+    },
+    {
+      "decision": "Retain five honest native hard cuts.",
+      "reason": "Existing semantic/motion compatibility is acceptable; exposure/WB/scale processing did not offer enough perceivable benefit to justify regression risk."
+    },
+    {
+      "decision": "Use Hero plus verbal CTA.",
+      "reason": "No directional CTA visual exists in the validated evidence set."
+    }
+  ],
+  "writes_to_main": false,
+  "writes_to_audio_material": false
+}

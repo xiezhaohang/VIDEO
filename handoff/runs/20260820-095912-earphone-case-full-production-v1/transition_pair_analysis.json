@@ -1,0 +1,52 @@
+{
+  "run_id": "20260820-095912-earphone-case-full-production-v1",
+  "strategy": "Invisible Transition conservative decision layer",
+  "visual_stream_changed_from_validated_baseline": false,
+  "visual_stream_sha256": "39D075A0E121369CCC2D74724BD7BAE66B7045AD8BB24FD6DA08CA60A841E314",
+  "pairs": [
+    {
+      "pair": "T01",
+      "cut_s": 2.75,
+      "compatibility": "strong",
+      "decision": "retain native ellipsis hard cut",
+      "processing": "none",
+      "reason": "same source, matched scale/state; effect would add no visible benefit"
+    },
+    {
+      "pair": "T02",
+      "cut_s": 7.15,
+      "compatibility": "strong",
+      "decision": "retain matched hard cut",
+      "processing": "none",
+      "reason": "open result naturally hands off to close action"
+    },
+    {
+      "pair": "T03",
+      "cut_s": 8.25,
+      "compatibility": "acceptable scene change",
+      "decision": "retain honest hard cut",
+      "processing": "none",
+      "reason": "motion entry and VO bridge provide continuity; no exposure/WB mismatch worth altering"
+    },
+    {
+      "pair": "T04",
+      "cut_s": 10.75,
+      "compatibility": "acceptable semantic cut",
+      "decision": "retain honest hard cut",
+      "processing": "none",
+      "reason": "carry view to tail detail is a deliberate value change; scale/position forcing would risk action integrity"
+    },
+    {
+      "pair": "T05",
+      "cut_s": 13.35,
+      "compatibility": "structural section break",
+      "decision": "retain honest hard cut",
+      "processing": "none",
+      "reason": "large angle change is legible as hero transition; effects would create ghosting/warp risk"
+    }
+  ],
+  "exposure_wb_micro_match_applied": 0,
+  "tiny_scale_position_match_applied": 0,
+  "noticeable_effects_applied": 0,
+  "ghosting_or_warp": false
+}

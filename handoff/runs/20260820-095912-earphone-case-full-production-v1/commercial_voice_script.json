@@ -1,0 +1,112 @@
+{
+  "run_id": "20260820-095912-earphone-case-full-production-v1",
+  "language": "en-US",
+  "style": "natural American female; TikTok home/lifestyle; warm and purchase-oriented; not loud",
+  "generation_chain_required_per_line": [
+    "visual_fact",
+    "customer_benefit",
+    "purchase_reason",
+    "voice_line"
+  ],
+  "segments": [
+    {
+      "id": "VO01",
+      "voice_line": "Your earbuds case just got more fun.",
+      "visual_fact": "white earbud case enters a visible fish-shaped shell",
+      "customer_benefit": "turns an everyday object into something more playful",
+      "purchase_reason": "immediate personality upgrade",
+      "proof_support": [
+        "AU-02",
+        "fish shell and earbud case are simultaneously visible"
+      ],
+      "visual_output_s": [
+        0.0,
+        2.75
+      ],
+      "voice_output_s": [
+        0.1,
+        2.339
+      ]
+    },
+    {
+      "id": "VO02",
+      "voice_line": "A playful fish cover that keeps your earbuds easy to reach.",
+      "visual_fact": "top shell is fitted, then the lid opens and earbuds remain visible",
+      "customer_benefit": "earbuds remain easy to reach after the cover is assembled",
+      "purchase_reason": "character styling does not block normal access shown on screen",
+      "proof_support": [
+        "AU-03",
+        "assembled lid opens to a readable earbud result"
+      ],
+      "visual_output_s": [
+        2.75,
+        7.15
+      ],
+      "voice_output_s": [
+        2.85,
+        6.55
+      ]
+    },
+    {
+      "id": "VO03",
+      "voice_line": "The attached clip makes carrying simple.",
+      "visual_fact": "closed finished case is shown hanging from an already-attached carabiner",
+      "customer_benefit": "simple carry configuration",
+      "purchase_reason": "easier to bring along",
+      "proof_support": [
+        "AU-04",
+        "AU-05",
+        "configuration only; clipping-on action is not claimed"
+      ],
+      "visual_output_s": [
+        7.15,
+        10.75
+      ],
+      "voice_output_s": [
+        7.65,
+        10.164
+      ]
+    },
+    {
+      "id": "VO04",
+      "voice_line": "Easy port access, right under the tail.",
+      "visual_fact": "tail is removed and the bottom port becomes visible",
+      "customer_benefit": "port remains reachable",
+      "purchase_reason": "access does not require an unsupported charging-success claim",
+      "proof_support": [
+        "AU-06",
+        "port visibly exposed; no cable or charging indicator"
+      ],
+      "visual_output_s": [
+        10.75,
+        13.35
+      ],
+      "voice_output_s": [
+        10.78,
+        13.382
+      ]
+    },
+    {
+      "id": "VO05",
+      "voice_line": "Pick your favorite and make your everyday case less ordinary.",
+      "visual_fact": "pullback resolves on two finished variants",
+      "customer_benefit": "visible choice and playful everyday identity",
+      "purchase_reason": "choose the preferred visible variant",
+      "proof_support": [
+        "AU-07",
+        "two finished variants readable together"
+      ],
+      "visual_output_s": [
+        13.35,
+        17.65
+      ],
+      "voice_output_s": [
+        13.48,
+        17.343
+      ]
+    }
+  ],
+  "full_text": "Your earbuds case just got more fun. A playful fish cover that keeps your earbuds easy to reach. The attached clip makes carrying simple. Easy port access, right under the tail. Pick your favorite and make your everyday case less ordinary.",
+  "instruction_only_lines": 0,
+  "unsupported_claims": []
+}

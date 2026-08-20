@@ -1,0 +1,30 @@
+{
+  "run_id": "20260820-095912-earphone-case-full-production-v1",
+  "version_reviewed": "D:\\耳机套\\edit\\runs\\20260820-095912-earphone-case-full-production-v1\\earphone_case_full_production_v1.mp4",
+  "reviewer": "Codex machine and full-timeline visual preflight; final user Human Sanity pending",
+  "result": "MACHINE_PASS_NEEDS_HUMAN_REVIEW",
+  "hard_fail_count": 0,
+  "checks": {
+    "visible_motion_loop": false,
+    "repeated_motion_fill": false,
+    "incomplete_action": false,
+    "result_not_reached": false,
+    "state_regression": false,
+    "proof_mismatch": false,
+    "vo_obvious_action_description_risk": false,
+    "vo_benefit_coverage": "5/5 semantic lines",
+    "dead_tail_used_to_fill_vo_duration": false,
+    "transition_hard_pairs": 0,
+    "noticeable_transition_effect": false,
+    "cta_ending_quality": "pass: two-variant hero plus non-directional verbal CTA",
+    "validated_constraint_regression": 0,
+    "technical_full_decode": true,
+    "visual_stream_matches_validated_baseline": true
+  },
+  "vo_action_description_ratio": 0.0,
+  "main_risks": [
+    "Final Human Sanity Gate is pending the user's full watch.",
+    "T04 and T05 remain honest hard cuts with intentional scale/angle changes; no effect was used to conceal them.",
+    "VO was generated as five semantic segments, so human review should confirm that inter-sentence tone feels continuous."
+  ]
+}

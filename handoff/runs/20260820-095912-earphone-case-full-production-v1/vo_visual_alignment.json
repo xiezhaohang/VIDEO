@@ -1,0 +1,43 @@
+{
+  "run_id": "20260820-095912-earphone-case-full-production-v1",
+  "alignment_mode": "sentence/semantic peak, not word-by-word cutting",
+  "bindings": [
+    {
+      "voice_id": "VO01",
+      "semantic_peak": "more fun",
+      "visual_peak": "case visibly enters character shell",
+      "status": "aligned"
+    },
+    {
+      "voice_id": "VO02",
+      "semantic_peak": "earbuds easy to reach",
+      "visual_peak": "lid opens and earbuds become readable",
+      "status": "aligned",
+      "proof_hold_after_voice_s": 0.6
+    },
+    {
+      "voice_id": "VO03",
+      "semantic_peak": "attached clip / carrying",
+      "visual_peak": "cut reveals the already-attached clip and resolves to hanging hold",
+      "status": "aligned",
+      "claim_limit": "does not claim the attachment action is shown"
+    },
+    {
+      "voice_id": "VO04",
+      "semantic_peak": "port access",
+      "visual_peak": "tail separates and port is visible",
+      "status": "aligned",
+      "claim_limit": "access only; no charging success"
+    },
+    {
+      "voice_id": "VO05",
+      "semantic_peak": "pick your favorite",
+      "visual_peak": "second finished variant becomes readable during pullback",
+      "status": "aligned",
+      "cta_mode": "verbal CTA over hero; no fabricated directional visual"
+    }
+  ],
+  "visual_extensions_for_vo": 0,
+  "repeated_visuals_for_vo": 0,
+  "dead_tail_used_to_fill_vo_duration": false
+}

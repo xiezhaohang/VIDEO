@@ -1,0 +1,76 @@
+{
+  "run_id": "20260820-095912-earphone-case-full-production-v1",
+  "source_baseline_run_id": "20260818-164844-earphone-case-visual-first-v1",
+  "visual_timeline_changed": false,
+  "reason": "The prior Action Units and state progression remain valid; the full-production pass backfits concise benefit-led VO to maximum useful visual durations.",
+  "chapters": [
+    {
+      "id": "C01",
+      "output_s": [
+        0.0,
+        2.75
+      ],
+      "role": "Hook / Product Identity",
+      "visual": "fish-shaped cover and white earbud case immediately visible during insertion",
+      "commercial_job": "create curiosity and identify the product category without an unsupported protection claim"
+    },
+    {
+      "id": "C02",
+      "output_s": [
+        2.75,
+        7.15
+      ],
+      "role": "Core Installation / Access Value",
+      "visual": "matching top is fitted and the assembled lid opens with earbuds visible",
+      "commercial_job": "show that the character form still leaves the earbuds easy to access"
+    },
+    {
+      "id": "C03",
+      "output_s": [
+        7.15,
+        8.25
+      ],
+      "role": "Closure Bridge",
+      "visual": "assembled case closes",
+      "commercial_job": "complete the access action sentence and preserve state before carry"
+    },
+    {
+      "id": "C04",
+      "output_s": [
+        8.25,
+        10.75
+      ],
+      "role": "Carry Configuration",
+      "visual": "finished case hangs from an already-attached carabiner",
+      "commercial_job": "show a simple carrying configuration; no clipping-on action is claimed"
+    },
+    {
+      "id": "C05",
+      "output_s": [
+        10.75,
+        13.35
+      ],
+      "role": "Port Access Proof",
+      "visual": "tail detaches and the bottom port becomes visible",
+      "commercial_job": "prove port access only; no charging-success claim"
+    },
+    {
+      "id": "C06",
+      "output_s": [
+        13.35,
+        17.65
+      ],
+      "role": "Hero / Verbal CTA",
+      "visual": "overhead pullback reveals two finished variants",
+      "commercial_job": "create a real payoff and carry a non-directional choose-your-favorite CTA"
+    }
+  ],
+  "claims_excluded": [
+    "drop protection",
+    "water resistance",
+    "charging success",
+    "charging speed",
+    "universal compatibility",
+    "brand licensing"
+  ]
+}

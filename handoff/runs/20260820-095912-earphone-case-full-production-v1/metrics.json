@@ -1,0 +1,40 @@
+{
+  "run_id": "20260820-095912-earphone-case-full-production-v1",
+  "sanity_gate_evaluated_first": true,
+  "visual_duration_s": 17.65,
+  "final_container_duration_s": 17.65,
+  "actual_spoken_audio_duration_s": 14.918,
+  "vo_segments": 5,
+  "vo_words": 41,
+  "vo_benefit_coverage_ratio": 1.0,
+  "vo_instruction_only_lines": 0,
+  "dead_tail_forcing_events": 0,
+  "visible_motion_loops": 0,
+  "repeated_motion_fill_events": 0,
+  "incomplete_actions": 0,
+  "proof_mismatches": 0,
+  "constraint_regressions": 0,
+  "transition_pairs_checked": 5,
+  "noticeable_transition_effects": 0,
+  "tts_speed_adjustments": [
+    {
+      "segment": "VO04",
+      "atempo": 1.07
+    }
+  ],
+  "audio_integrated_loudness_lufs": -15.8,
+  "audio_true_peak_dbfs": -1.7,
+  "output": {
+    "width": 1080,
+    "height": 1920,
+    "fps": "60/1",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate": 48000,
+    "audio_channels": 2,
+    "size_bytes": 36239078
+  },
+  "full_decode_pass": true,
+  "final_sha256": "F2F2B325D2F94426BB5C37925F228ACC94739D40C3DF71A4F23FA209C817A648"
+}
