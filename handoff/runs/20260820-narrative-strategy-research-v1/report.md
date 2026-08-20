@@ -3,7 +3,7 @@
 ## Identity
 
 - Run ID: `20260820-narrative-strategy-research-v1`
-- Status: `handed_off`（研究归档；没有生成新成片，不适用新成片 Human Sanity Gate）
+- Status: `blocked_handoff`（本地 handoff 提交已完成；远端发布因外部推送未获批准而未执行）
 - Date: `2026-08-20`
 - Branch: `handoff`
 - Base commit: `c9699a1b494097f9e988df093d0f6b7337706816`
@@ -470,8 +470,9 @@ v0 可用：
 ## Handoff
 
 - Handoff payload commit: `7de0c068c42e07dade7399b31e7a7cacdb72d535`
-- Published scope: 本报告、可机读规则候选、summary、manifest、实验状态条目。
+- Prepared scope: 本报告、可机读规则候选、summary、manifest、实验状态条目。
+- Remote publication: blocked；`git push origin handoff` 在执行前被安全审查拒绝，未发生远端修改。
 - New video: None.
 - Local-only media: None；本轮只读取已归档文本/JSON和用户提供的反馈，不复制源素材或成片。
 - Stable rules approved for main: None.
-- Next action: 只批准验证计划设计；在明确启动下一轮前不生成视频。
+- Next action: 获得明确的远端推送授权后发布本地 handoff 提交；在明确启动下一轮前不生成视频。

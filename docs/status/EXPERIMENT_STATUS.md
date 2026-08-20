@@ -55,7 +55,7 @@
 ## 20260819-160000-ai-directed-footage-review
 
 - Experiment: 8.19 AI-Directed Footage Review Handoff
-- Status: `handed_off`
+- Status: `blocked_handoff`
 - Updated at: `2026-08-19T16:00:00+08:00`
 - Owner: `Codex`
 - Branch: `handoff`
@@ -336,6 +336,7 @@
 - Branch: `handoff`; `main` not modified
 - Base commit: `c9699a1b494097f9e988df093d0f6b7337706816`
 - Handoff payload commit: `7de0c068c42e07dade7399b31e7a7cacdb72d535`
+- Local publisher record commit: `1b267f92363cc81a3191e74dc3a3db3e67f31d56`
 - Canonical archive: `handoff/runs/20260820-narrative-strategy-research-v1/`
 - Scope: research only; no software/UI/Electron/package/release work and no new video generation
 - Inputs: four existing cases — magnetic power bank, earphone case, 8.19 cards, and slime — plus recorded human preference/reference feedback
@@ -343,6 +344,7 @@
 - Case placement: power bank Proof+Information; earphone case Visual Appeal+Proof; 8.19 cards Information+Emotion; slime Emotion/Sensory+Visual Appeal with sensory Proof as a hard support constraint.
 - Validation labels are recorded explicitly in `report.md` and `narrative_strategy_rules_v0.json`; no candidate is promoted to `main`.
 - Human Sanity Gate: not applicable because this run generated no new finished video.
-- Published artifacts: report, machine-readable candidate rules, summary, and manifest only.
+- Prepared artifacts: report, machine-readable candidate rules, summary, and manifest only.
+- Handoff blocker: remote `git push origin handoff` was rejected by safety review before execution; no remote mutation occurred. Recovery requires explicit push authorization.
 - Local only: none.
-- Next step: no video work in this run; when separately authorized, run the 8.19 Preference-Guided v3 controlled comparison first.
+- Next step: publish the local handoff commits after explicit authorization; no video work in this run. When separately authorized, run the 8.19 Preference-Guided v3 controlled comparison first.
