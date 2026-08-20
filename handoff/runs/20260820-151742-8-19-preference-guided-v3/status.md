@@ -15,3 +15,4 @@
 - Human Preference PASS: not evaluated and must not be machine-declared
 - Machine preflight: technical and hard-constraint checks pass; preference result remains unevaluated
 - Local outputs and SHA-256 hashes are recorded in `metrics.json` and `local_only_index.json`; no media is uploaded
+- Handoff payload commit: `a7622baa51d766f6baa04d8b953f57544b9231de`; successfully published to `origin/handoff`

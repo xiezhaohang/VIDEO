@@ -345,9 +345,9 @@
 - Validation labels are recorded explicitly in `report.md` and `narrative_strategy_rules_v0.json`; no candidate is promoted to `main`.
 - Human Sanity Gate: not applicable because this run generated no new finished video.
 - Prepared artifacts: report, machine-readable candidate rules, summary, and manifest only.
-- Handoff blocker: remote `git push origin handoff` was rejected by safety review before execution; no remote mutation occurred. Recovery requires explicit push authorization.
+- Handoff publication: recovered and published after a clean scope audit; first recovered remote head `134ed1d66586b33a40486db0891eb1383d0e084b`.
 - Local only: none.
-- Next step: publish the local handoff commits after explicit authorization; no video work in this run. When separately authorized, run the 8.19 Preference-Guided v3 controlled comparison first.
+- Next step: use the separately archived 8.19 Preference-Guided v3 controlled comparison for human preference review.
 
 ## 20260820-151742-8-19-preference-guided-v3
 
@@ -364,3 +364,4 @@
 - Completed local-only outputs: 15.70 s silent master and 15.70 s English-VO/burned-subtitle final; hashes in `handoff/runs/20260820-151742-8-19-preference-guided-v3/local_only_index.json`
 - Structural result: runtime 20.75 -> 15.70 s; effective shots 4 -> 8; commercial information states 7 -> 9; average effective shot length 5.19 -> 1.96 s; first silent-visible purchase meaning 4.00 -> 0.00 s; CTA audio start 15.60 -> 13.10 s
 - Machine preflight: technical decode and hard constraints pass; Human Preference remains unevaluated
+- Handoff payload commit: `a7622baa51d766f6baa04d8b953f57544b9231de`; published to `origin/handoff`

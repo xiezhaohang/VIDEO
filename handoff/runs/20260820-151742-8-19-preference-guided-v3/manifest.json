@@ -30,6 +30,12 @@
   "repository_artifacts_only": true,
   "media_uploaded": false,
   "checkpoint": "rendered_and_machine_preflight_complete",
+  "handoff_payload_commit": "a7622baa51d766f6baa04d8b953f57544b9231de",
+  "remote_publication": {
+    "status": "published",
+    "remote": "origin/handoff",
+    "published_at": "2026-08-20T15:34:31+08:00"
+  },
   "outputs": {
     "silent_master_sha256": "80D575F5C91F18958BEDBF5C013FB458C6D74863B2875FBD5E92FF20BE1847E9",
     "voiced_subtitled_final_sha256": "D8E64EB542107F0B40A6EEB02038019409EDA2DD5131B983E048039EFB8E5655",
