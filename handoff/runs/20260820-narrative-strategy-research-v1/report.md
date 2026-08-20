@@ -3,7 +3,7 @@
 ## Identity
 
 - Run ID: `20260820-narrative-strategy-research-v1`
-- Status: `passed_pending_handoff`（研究归档；没有生成新成片，不适用新成片 Human Sanity Gate）
+- Status: `handed_off`（研究归档；没有生成新成片，不适用新成片 Human Sanity Gate）
 - Date: `2026-08-20`
 - Branch: `handoff`
 - Base commit: `c9699a1b494097f9e988df093d0f6b7337706816`
@@ -469,6 +469,7 @@ v0 可用：
 
 ## Handoff
 
+- Handoff payload commit: `7de0c068c42e07dade7399b31e7a7cacdb72d535`
 - Published scope: 本报告、可机读规则候选、summary、manifest、实验状态条目。
 - New video: None.
 - Local-only media: None；本轮只读取已归档文本/JSON和用户提供的反馈，不复制源素材或成片。

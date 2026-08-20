@@ -331,11 +331,11 @@
 ## 20260820-narrative-strategy-research-v1
 
 - Experiment: Narrative Strategy Research v1
-- Status: `passed_pending_handoff`
+- Status: `handed_off`
 - Updated at: `2026-08-20T15:01:48+08:00`
 - Branch: `handoff`; `main` not modified
 - Base commit: `c9699a1b494097f9e988df093d0f6b7337706816`
-- Handoff payload commit: `pending`
+- Handoff payload commit: `7de0c068c42e07dade7399b31e7a7cacdb72d535`
 - Canonical archive: `handoff/runs/20260820-narrative-strategy-research-v1/`
 - Scope: research only; no software/UI/Electron/package/release work and no new video generation
 - Inputs: four existing cases — magnetic power bank, earphone case, 8.19 cards, and slime — plus recorded human preference/reference feedback
