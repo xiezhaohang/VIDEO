@@ -1,0 +1,42 @@
+{
+  "run_id": "20260820-151742-8-19-preference-guided-v3",
+  "visual_duration_s": 15.7,
+  "shot_count": 8,
+  "distinct_visual_information_states": 8,
+  "commercial_information_states_including_burned_cta": 9,
+  "average_effective_shot_length_s": 1.9625,
+  "maximum_effective_shot_length_s": 2.7,
+  "first_silent_visible_purchase_meaning_s": 0.0,
+  "first_audible_purchase_meaning_s": 0.1,
+  "cta_visual_start_s": 13.0,
+  "cta_audio_start_s": 13.1,
+  "opening_box_hook_duration_s": 0.0,
+  "dead_tail_forcing_s": 0.0,
+  "repeated_action_fill_s": 0.0,
+  "readable_prompt_contents": 4,
+  "quantity_growth_states": 2,
+  "audio_integrated_lufs": -16.15,
+  "audio_true_peak_dbtp": -1.5,
+  "outputs": {
+    "silent_master": {
+      "local_path": "D:\\8.19\\edit\\runs\\20260820-151742-8-19-preference-guided-v3\\8_19_preference_guided_v3_silent_master.mp4",
+      "sha256": "80D575F5C91F18958BEDBF5C013FB458C6D74863B2875FBD5E92FF20BE1847E9",
+      "size_bytes": 15989912
+    },
+    "voiced_subtitled_final": {
+      "local_path": "D:\\8.19\\edit\\runs\\20260820-151742-8-19-preference-guided-v3\\8_19_preference_guided_v3_vo_subtitled_final.mp4",
+      "sha256": "D8E64EB542107F0B40A6EEB02038019409EDA2DD5131B983E048039EFB8E5655",
+      "size_bytes": 15889635
+    }
+  },
+  "technical_format": {
+    "duration_s": 15.7,
+    "resolution": "1080x1920",
+    "video_codec": "h264",
+    "video_rate": "60/1 nominal; 939 frames over 15.7 s",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "audio_channels": 2
+  }
+}

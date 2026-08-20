@@ -1,0 +1,54 @@
+{
+  "run_id": "20260820-151742-8-19-preference-guided-v3",
+  "technical_sanity": {
+    "status": "pass",
+    "decode_errors": 0,
+    "duration_match": true,
+    "resolution_match": true,
+    "audio_present_in_final": true,
+    "silent_technical_audio_track_present": true,
+    "subtitle_edge_clipping": 0,
+    "subtitle_qa_correction_iterations": 1
+  },
+  "hard_constraints": {
+    "action_integrity": "pass",
+    "proof_ownership": "pass_not_applicable_to_strong_causal_claim",
+    "minimum_readability": "pass_machine_visual_preflight",
+    "visible_loop": 0,
+    "repeated_motion_fill": 0,
+    "fabricated_claim": 0,
+    "fabricated_audience": 0,
+    "dead_tail_forcing": 0,
+    "decorative_transition": 0
+  },
+  "script_grounding": {
+    "lines": 6,
+    "grounded_lines": 6,
+    "action_narration_lines": 0,
+    "unsupported_emotional_outcomes": 0,
+    "positioning": "conversation starter / question prompts"
+  },
+  "preference_preflight": {
+    "status": "needs_human_review",
+    "machine_claim": "structural_candidate_improvement_only",
+    "human_preference_pass": "not_evaluated",
+    "evidence_for_review": [
+      "silent purchase meaning moves from 4.0 s to the first frame",
+      "commercial information states increase from 7 to 9 while runtime decreases by 5.05 s",
+      "average effective shot length decreases from 5.19 s to 1.96 s",
+      "CTA arrives 2.5 s earlier and remains visibly active through the final frame"
+    ],
+    "blind_review_questions": [
+      "Which version would you choose to publish if both were available, without knowing which is newer?",
+      "At what exact second does either version begin to feel slow, empty, awkward, or like stitched footage?",
+      "Does v3 feel more like an ad and less like a product explanation, and are the subtitle/voice choices part of that improvement?"
+    ]
+  },
+  "material_limits": [
+    "Only four individually legible prompt contents are available at strong/usable quality.",
+    "No real people interaction, response, or emotional payoff is visible, so Emotion remains support rather than primary visual evidence.",
+    "Lighting, fur texture, glare, and oblique card angles remain less readable than the accepted reference footage.",
+    "Later breadth beats prove quantity but cannot create additional unique question contents.",
+    "The source lacks a natural directional CTA gesture; the final uses a non-directional verbal and burned CTA."
+  ]
+}

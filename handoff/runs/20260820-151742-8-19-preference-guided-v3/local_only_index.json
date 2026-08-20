@@ -1,0 +1,22 @@
+{
+  "run_id": "20260820-151742-8-19-preference-guided-v3",
+  "policy": "All media is local_only. GitHub contains paths, hashes, sizes, parameters, and conclusions only.",
+  "files": [
+    {
+      "role": "silent_master",
+      "path": "D:\\8.19\\edit\\runs\\20260820-151742-8-19-preference-guided-v3\\8_19_preference_guided_v3_silent_master.mp4",
+      "sha256": "80D575F5C91F18958BEDBF5C013FB458C6D74863B2875FBD5E92FF20BE1847E9",
+      "size_bytes": 15989912,
+      "uploaded": false
+    },
+    {
+      "role": "voiced_subtitled_final",
+      "path": "D:\\8.19\\edit\\runs\\20260820-151742-8-19-preference-guided-v3\\8_19_preference_guided_v3_vo_subtitled_final.mp4",
+      "sha256": "D8E64EB542107F0B40A6EEB02038019409EDA2DD5131B983E048039EFB8E5655",
+      "size_bytes": 15889635,
+      "uploaded": false
+    }
+  ],
+  "excluded_media": ["raw DJI MP4 sources", "TTS WAV intermediates", "QA contact sheets and extracted frames"],
+  "media_uploaded_to_github": false
+}

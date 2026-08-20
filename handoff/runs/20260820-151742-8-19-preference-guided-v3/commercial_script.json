@@ -6,7 +6,7 @@
   "segments": [
     {
       "output_range_s": [0.0, 2.0],
-      "english": "Conversation gone quiet?",
+      "english": "Conversation went quiet?",
       "chinese_meaning": "聊天突然冷场了？",
       "function": "specific pain point",
       "support": "a readable prompt card is already in use"
@@ -20,7 +20,7 @@
     },
     {
       "output_range_s": [4.3, 6.5],
-      "english": "Try love, friendship, or family.",
+      "english": "Try love, friendship, family.",
       "chinese_meaning": "可以聊爱、友情或家人。",
       "function": "content breadth",
       "support": "visible questions explicitly cover love, friendship, and parents/family"
