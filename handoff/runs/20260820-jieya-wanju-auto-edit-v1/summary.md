@@ -1,7 +1,7 @@
 # 解压玩具 — Auto Edit v1
 
 - Run ID: `20260820-jieya-wanju-auto-edit-v1`
-- Stage: `render_complete`
+- Stage: `qa_preflight_complete`
 - Classification: `software-ready`
 - Assets: 13
 - Total duration: 341.956 s
@@ -51,3 +51,14 @@ Original media and extracted frames are `local_only`. No render has been declare
 - SHA-256: `573ed51288f079c95dbcbc3d75172293af49269903be8a066cbb6c56ec7c3fe6`
 - Actual: `27.027 s`, `1620` frames, `1080x1920`, `60000/1001 fps`, H.264/yuv420p, no audio stream
 - Status: `needs_human_review`; render existence is not a Human Sanity pass.
+
+## Machine QA preflight
+
+- Full decode: completed without error
+- Black / freeze events: `0 / 0`
+- First purchase meaning: `0.000 s`
+- Shots / information states: `6 / 6`
+- Dead tail, visible loop/repeated motion, proof mismatch: not detected in machine preflight
+- Medium Preference Gate risks: close/crowded opening Hero, 10-second dinosaur proof pacing, hard ending cut at `25.4 s`
+- CTA: none; full-set visual ending only
+- Final status: `needs_human_review` — no machine pass claim

@@ -1,0 +1,73 @@
+{
+  "schema_version": "human-sanity-preflight-v1",
+  "run_id": "20260820-jieya-wanju-auto-edit-v1",
+  "stage": "qa_preflight_complete",
+  "machine_preflight_only": true,
+  "human_sanity_gate": {
+    "status": "needs_human_review",
+    "machine_claims_passed": false,
+    "reason": "机器仅完成技术验证、时间线结构检查和抽帧检查；未由人完整观看成片。"
+  },
+  "observations": {
+    "first_purchase_meaning_seconds": 0.0,
+    "shot_count": 6,
+    "information_state_count": 6,
+    "dead_tail": {
+      "status": "not_detected_in_preflight",
+      "note": "结尾 1.6 秒仍在移动展示全套，不是无信息静止尾巴；需人判断是否过短或过硬。"
+    },
+    "loop_or_repeated_motion": {
+      "status": "not_detected_in_preflight",
+      "note": "主时间线只保留恐龙和绿色方块两个不同 SKU、不同形变结果；紫色拉伸候选已删除。"
+    },
+    "proof_mismatch": {
+      "status": "not_detected_in_preflight",
+      "note": "恐龙与绿色方块的触发、动作和结果均保持在各自连续源片段内。"
+    },
+    "transition_hard_pairs": [
+      {
+        "at_seconds": 1.2,
+        "risk": "medium",
+        "note": "近景全套切到完整盒盖，构图变化大但商业逻辑清楚；需完整播放判断节奏。"
+      },
+      {
+        "at_seconds": 18.4,
+        "risk": "low_to_medium",
+        "note": "同为手部近景，但 SKU、颜色和轮廓差异明确。"
+      },
+      {
+        "at_seconds": 25.4,
+        "risk": "medium",
+        "note": "绿色方块结果切回移动的全套近景，收束成立但视觉冲击偏硬。"
+      }
+    ],
+    "cta_and_ending": {
+      "cta": "none",
+      "ending": "full-set visual range hold",
+      "risk": "缺少明确购买指令，但素材没有真实价格/渠道，故不虚构 CTA。"
+    },
+    "preference_gate_risks": [
+      "开头 Hero 是较近的移动扫过，虽然购买意义立即出现，但可能显得拥挤。",
+      "开箱内部在约 3 秒处曝光偏暗，信息仍可辨但视觉吸引力下降。",
+      "恐龙 Proof 持续约 10 秒，是全片最长镜头；需人判断是否完整但偏慢。",
+      "结尾不是稳定宽景，而是近距离扫过全套；可能不如静态 Hero 有结束感。"
+    ]
+  },
+  "technical": {
+    "full_decode": "pass",
+    "black_frame_events": 0,
+    "freeze_events_over_0_8_seconds": 0,
+    "constant_frame_rate": true,
+    "frame_count": 1620,
+    "audio": "none_intentional"
+  },
+  "voice_status": "silent_preferred",
+  "recommended_human_review_questions": [
+    "前 1.2 秒是否足够清楚地传达一盒多款，而不是过于拥挤？",
+    "恐龙 10 秒 Proof 是否保持动作完整且没有拖慢节奏？",
+    "18.4 秒和 25.4 秒硬切是否突兀？",
+    "无文字 CTA 的全套收尾是否有结束感？",
+    "是否存在抽帧无法发现的可见动作循环、重复运动或 proof mismatch？"
+  ],
+  "final_status": "needs_human_review"
+}

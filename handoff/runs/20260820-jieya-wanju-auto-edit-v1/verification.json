@@ -1,0 +1,31 @@
+{
+  "schema_version": "render-verification-v1",
+  "run_id": "20260820-jieya-wanju-auto-edit-v1",
+  "file_sha256": "573ed51288f079c95dbcbc3d75172293af49269903be8a066cbb6c56ec7c3fe6",
+  "ffprobe": {
+    "duration_seconds": 27.027,
+    "size_bytes": 36550901,
+    "video_streams": 1,
+    "audio_streams": 0,
+    "codec": "h264",
+    "width": 1080,
+    "height": 1920,
+    "pixel_format": "yuv420p",
+    "avg_frame_rate": "60000/1001",
+    "decoded_frame_count": 1620
+  },
+  "full_decode": {
+    "status": "completed_without_error",
+    "scope": "video stream to null sink"
+  },
+  "blackdetect": {
+    "minimum_duration_seconds": 0.08,
+    "pixel_threshold": 0.05,
+    "events": []
+  },
+  "freezedetect": {
+    "minimum_duration_seconds": 0.8,
+    "noise_threshold": "-50 dB",
+    "events": []
+  }
+}
