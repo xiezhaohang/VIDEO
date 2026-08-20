@@ -5,6 +5,7 @@
   "status": "needs_human_review",
   "created_at": "2026-08-20T16:15:55+08:00",
   "branch": "handoff",
+  "handoff_payload_commit": "355ae3450e5b7a17e2faea6d2160a2a58585a1f2",
   "lineage": "Script-Guided V2 visual + Full Production V1 audio",
   "inputs": [
     {
