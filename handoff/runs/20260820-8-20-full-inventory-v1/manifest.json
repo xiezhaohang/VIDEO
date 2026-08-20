@@ -1,0 +1,29 @@
+{
+  "run_id": "20260820-8-20-full-inventory-v1",
+  "experiment_name": "D:\\8.20剪辑 Full Inventory and Software Readiness Split",
+  "status": "needs_review",
+  "branch": "handoff",
+  "stage": "inventory_complete",
+  "generated_at": "2026-08-20T16:45:47+08:00",
+  "source_root": "D:\\8.20剪辑",
+  "source_asset_count": 42,
+  "product_group_count": 6,
+  "software_ready_count": 6,
+  "software_not_ready_count": 0,
+  "human_sanity_gate": {
+    "status": "needs_human_review",
+    "machine_claims_passed": false
+  },
+  "local_only": [
+    {
+      "path": "D:\\8.20剪辑",
+      "reason": "原始视频、抽帧及后续媒体产物体积大，保留本地；仓库提交元数据与 SHA-256。"
+    }
+  ],
+  "published_artifacts": [
+    "inventory.json",
+    "manifest.json",
+    "summary.md"
+  ],
+  "next_step": "Checkpoint inventory to handoff, then begin strategy/timeline/render for priority 1."
+}

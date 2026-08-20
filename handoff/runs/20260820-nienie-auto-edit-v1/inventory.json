@@ -1,0 +1,65 @@
+{
+  "run_id": "20260820-nienie-auto-edit-v1",
+  "product": "捏捏",
+  "path": "D:\\8.20剪辑\\捏捏",
+  "asset_count": 2,
+  "total_duration_seconds": 175.709,
+  "total_size_bytes": 1494346915,
+  "core_usable_actions": [
+    "四色透明方块阵列",
+    "单品近景",
+    "双手按压与大幅形变",
+    "多色组合展示"
+  ],
+  "classification": "software-ready",
+  "primary_reason": "产品主体和按压形变证据清晰，长素材虽含多次尝试，但动作可按完整按压—结果句拆分。",
+  "risk_notes": [
+    "166 秒长镜头重复尝试密集，Attempt Segmenter 置信度不足时必须人工选段",
+    "仅保留一次最强形变证明，严禁重复动作填时长"
+  ],
+  "suggested_edit_priority": 4,
+  "workflow_stage": "inventory_complete",
+  "human_review_status": "needs_human_review",
+  "assets": [
+    {
+      "path": "D:\\8.20剪辑\\捏捏\\DJI_20260813161842_0001_D.MP4",
+      "file_name": "DJI_20260813161842_0001_D.MP4",
+      "sha256": "8b4b068dda276363d20487969d5470d24ae55197a8e59549c5d4d3b8f5562747",
+      "size_bytes": 1381832160,
+      "duration_seconds": 166.4,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\捏捏\\DJI_20260813162145_0002_D.MP4",
+      "file_name": "DJI_20260813162145_0002_D.MP4",
+      "sha256": "7ae2b6a30d4b357d04148cf5139791208f07dab83b462ec93be2fd708f674f8b",
+      "size_bytes": 112514755,
+      "duration_seconds": 9.309,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    }
+  ]
+}

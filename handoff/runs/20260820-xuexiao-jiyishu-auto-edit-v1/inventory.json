@@ -1,0 +1,245 @@
+{
+  "run_id": "20260820-xuexiao-jiyishu-auto-edit-v1",
+  "product": "学校记忆书",
+  "path": "D:\\8.20剪辑\\学校记忆书",
+  "asset_count": 11,
+  "total_duration_seconds": 275.032,
+  "total_size_bytes": 2222589226,
+  "core_usable_actions": [
+    "封面与产品定位文字",
+    "按年级/学段翻页",
+    "姓名、照片、喜好等信息栏",
+    "跨年级页面差异与整书厚度"
+  ],
+  "classification": "software-ready",
+  "primary_reason": "信息页覆盖充分、文字状态可辨识，翻页动作和页面结果完整，可按“读完即切”构建 Information-led 结构。",
+  "risk_notes": [
+    "英文小字可读性是主要门禁，不能用过短镜头扫过信息",
+    "不得从空白模板推断用户已填写或保存了真实回忆"
+  ],
+  "suggested_edit_priority": 6,
+  "workflow_stage": "inventory_complete",
+  "human_review_status": "needs_human_review",
+  "assets": [
+    {
+      "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813113609_0066_D.MP4",
+      "file_name": "DJI_20260813113609_0066_D.MP4",
+      "sha256": "24dc079b815e7cc6939ed5b1971901f208c94582f2671e2700dab73cb19dbb34",
+      "size_bytes": 128047412,
+      "duration_seconds": 14.016,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813113654_0067_D.MP4",
+      "file_name": "DJI_20260813113654_0067_D.MP4",
+      "sha256": "92e1ae896c8591af0f4ee15c8b7f8fd7875a2583cab7197739f90ed7e7f10d44",
+      "size_bytes": 627711120,
+      "duration_seconds": 76.864,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813113828_0068_D.MP4",
+      "file_name": "DJI_20260813113828_0068_D.MP4",
+      "sha256": "5a8d4ffee7c4783ab4a46117a775abdda61cb640790b6ce12abd1d623a8c33af",
+      "size_bytes": 116756089,
+      "duration_seconds": 15.275,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813113846_0069_D.MP4",
+      "file_name": "DJI_20260813113846_0069_D.MP4",
+      "sha256": "04a01d7d935fc4f85574a7325ce39854d75a21f0bd9a329499f65c595de6e5f3",
+      "size_bytes": 107134483,
+      "duration_seconds": 13.803,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813113909_0070_D.MP4",
+      "file_name": "DJI_20260813113909_0070_D.MP4",
+      "sha256": "a1d12222e5ab4e37d36fc62983fe1f1e789eae8641f64dbc614ff427252e8fae",
+      "size_bytes": 44990454,
+      "duration_seconds": 5.675,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813113927_0071_D.MP4",
+      "file_name": "DJI_20260813113927_0071_D.MP4",
+      "sha256": "02e484113955c41fc71f619a02150c60ae68a159c3ab7ec7d6c90e11003dedc5",
+      "size_bytes": 220151340,
+      "duration_seconds": 28.629,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813114008_0072_D.MP4",
+      "file_name": "DJI_20260813114008_0072_D.MP4",
+      "sha256": "67d86c9abcb9f20da9c064b9c83227fa96d79d5f73a9d3714a83c3c5f7c8aec2",
+      "size_bytes": 126606769,
+      "duration_seconds": 16.384,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813114040_0073_D.MP4",
+      "file_name": "DJI_20260813114040_0073_D.MP4",
+      "sha256": "cfbbcd0bb9a4a58cc8c496b2e2ab029ca53c415b7cdfd680f8ea00ccf7d18297",
+      "size_bytes": 204587413,
+      "duration_seconds": 27.008,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813114115_0074_D.MP4",
+      "file_name": "DJI_20260813114115_0074_D.MP4",
+      "sha256": "6e2c3a694f27190111489572271d12bc6a7b5468d486f94060aa12db81c17fed",
+      "size_bytes": 133624696,
+      "duration_seconds": 15.851,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813114213_0075_D.MP4",
+      "file_name": "DJI_20260813114213_0075_D.MP4",
+      "sha256": "7fd490560ebbf933fe3e8fbed0a4caceea0893e0aed62115ba72f4adb45cf3dd",
+      "size_bytes": 399795227,
+      "duration_seconds": 47.831,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813114305_0076_D.MP4",
+      "file_name": "DJI_20260813114305_0076_D.MP4",
+      "sha256": "3056312b17e2c7e462f51b30d2baa1dd78dbef165807a1f2fa77a5439649fd2b",
+      "size_bytes": 113184223,
+      "duration_seconds": 13.696,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    }
+  ]
+}

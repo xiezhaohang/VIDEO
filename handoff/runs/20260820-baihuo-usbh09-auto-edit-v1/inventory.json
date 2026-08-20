@@ -1,0 +1,85 @@
+{
+  "run_id": "20260820-baihuo-usbh09-auto-edit-v1",
+  "product": "百货USBH09",
+  "path": "D:\\8.20剪辑\\百货USBH09",
+  "asset_count": 3,
+  "total_duration_seconds": 134.258,
+  "total_size_bytes": 1470575880,
+  "core_usable_actions": [
+    "礼盒开箱",
+    "多色透明方块全套展示",
+    "单品旋转与透光展示",
+    "按压形变与回弹"
+  ],
+  "classification": "software-ready",
+  "primary_reason": "有明确开箱、全套状态、单品差异与按压结果，可形成 Visual-led + Proof 的基础商业结构。",
+  "risk_notes": [
+    "首条素材前段有明显空桌等待，应直接跳过",
+    "多色单品不可机械重复同一按压动作"
+  ],
+  "suggested_edit_priority": 2,
+  "workflow_stage": "inventory_complete",
+  "human_review_status": "needs_human_review",
+  "assets": [
+    {
+      "path": "D:\\8.20剪辑\\百货USBH09\\DJI_20260811181943_0127_D.MP4",
+      "file_name": "DJI_20260811181943_0127_D.MP4",
+      "sha256": "c6778c50870f0dd0912675aca6574dfef726092cf594705ec8fae1d4c13e09c8",
+      "size_bytes": 695171143,
+      "duration_seconds": 58.432,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\百货USBH09\\DJI_20260811182049_0128_D.MP4",
+      "file_name": "DJI_20260811182049_0128_D.MP4",
+      "sha256": "810499b921f58b4ee400f31d5a1bfb479dd0d47219de3452c345a4ff5d4cac9f",
+      "size_bytes": 566114385,
+      "duration_seconds": 58.392,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\百货USBH09\\DJI_20260811182415_0130_D.MP4",
+      "file_name": "DJI_20260811182415_0130_D.MP4",
+      "sha256": "10e21f30d55dc36fd450828da215512494fa0dc7d84a572e4e9a8034454accfc",
+      "size_bytes": 209290352,
+      "duration_seconds": 17.434,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "run_id": "20260820-shudeng-auto-edit-v1",
+  "product": "书灯",
+  "path": "D:\\8.20剪辑\\书灯",
+  "asset_count": 10,
+  "total_duration_seconds": 124.999,
+  "total_size_bytes": 1034501336,
+  "core_usable_actions": [
+    "书架暗环境使用场景",
+    "两款造型亮灯 Hero",
+    "单灯开关/触发前后状态",
+    "暖光效果与近景细节"
+  ],
+  "classification": "software-ready",
+  "primary_reason": "亮灯前后状态和使用场景均真实可见，不依赖外部屏幕或音频证明，适合 Visual-led + Proof。",
+  "risk_notes": [
+    "整体曝光较暗，需优先选择主体轮廓和灯光细节仍可读的镜头",
+    "开关触发只在动作与对应亮灯结果同属一条证据链时使用"
+  ],
+  "suggested_edit_priority": 5,
+  "workflow_stage": "inventory_complete",
+  "human_review_status": "needs_human_review",
+  "assets": [
+    {
+      "path": "D:\\8.20剪辑\\书灯\\DJI_20260814163622_0001_D.MP4",
+      "file_name": "DJI_20260814163622_0001_D.MP4",
+      "sha256": "bb8e0aec57305f86b6b5ce55a414650f4af5d245295f10a47c5384ee7eb02064",
+      "size_bytes": 89798535,
+      "duration_seconds": 9.792,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\书灯\\DJI_20260814163638_0002_D.MP4",
+      "file_name": "DJI_20260814163638_0002_D.MP4",
+      "sha256": "5b22470caa21cc9cce6a0deddbf624233b84c4fb1f0c5134e00d6d1f5e2d2a0f",
+      "size_bytes": 35143390,
+      "duration_seconds": 3.904,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\书灯\\DJI_20260814163646_0003_D.MP4",
+      "file_name": "DJI_20260814163646_0003_D.MP4",
+      "sha256": "830fe9ad261abba068c7407e31023ee0fc2f48d44769699312d70b8b0e20c655",
+      "size_bytes": 44520293,
+      "duration_seconds": 4.972,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\书灯\\DJI_20260814163810_0004_D.MP4",
+      "file_name": "DJI_20260814163810_0004_D.MP4",
+      "sha256": "e34555e716aa1db139731e3700ec72882457b4c37163c1a2cf1d8ab4047ef410",
+      "size_bytes": 26299628,
+      "duration_seconds": 2.803,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\书灯\\DJI_20260814163900_0005_D.MP4",
+      "file_name": "DJI_20260814163900_0005_D.MP4",
+      "sha256": "0239b1b8bb0e126f61b61d087c9dca901500d9aceac427435db6697078ddd871",
+      "size_bytes": 26852488,
+      "duration_seconds": 3.02,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\书灯\\DJI_20260814163925_0006_D.MP4",
+      "file_name": "DJI_20260814163925_0006_D.MP4",
+      "sha256": "6aa1e07cb51324818045275c89e03ad285766c4159b1a614a79760ea99dcafe0",
+      "size_bytes": 72787317,
+      "duration_seconds": 9.067,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\书灯\\DJI_20260814164029_0007_D.MP4",
+      "file_name": "DJI_20260814164029_0007_D.MP4",
+      "sha256": "0ae2a5a31170d029ef99b6942c6a97902b534bc4ed55b2f786111820ca492d4a",
+      "size_bytes": 74312927,
+      "duration_seconds": 9.226,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\书灯\\DJI_20260814164059_0008_D.MP4",
+      "file_name": "DJI_20260814164059_0008_D.MP4",
+      "sha256": "b93622351b2395fbc12f87f399ba8f138ac9eaf47aca3a2019a40e402b99e186",
+      "size_bytes": 321734224,
+      "duration_seconds": 40.341,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\书灯\\DJI_20260814164204_0009_D.MP4",
+      "file_name": "DJI_20260814164204_0009_D.MP4",
+      "sha256": "bf9347bf68fef7ba8516526c4be44d76ba399f20462d200a0dbe343de62d7ff2",
+      "size_bytes": 316747655,
+      "duration_seconds": 39.488,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    },
+    {
+      "path": "D:\\8.20剪辑\\书灯\\DJI_20260814164247_0010_D.MP4",
+      "file_name": "DJI_20260814164247_0010_D.MP4",
+      "sha256": "f3fdbfcc38a7e421b75d95e0fb70d16a2f41ba52b004af043e11276a7d76af15",
+      "size_bytes": 26304879,
+      "duration_seconds": 2.386,
+      "video": {
+        "codec": "hevc",
+        "width": 1728,
+        "height": 3072,
+        "avg_frame_rate": "60000/1001"
+      },
+      "audio": {
+        "codec": "aac",
+        "sample_rate": 48000,
+        "channels": 2
+      },
+      "local_only": true,
+      "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+    }
+  ]
+}

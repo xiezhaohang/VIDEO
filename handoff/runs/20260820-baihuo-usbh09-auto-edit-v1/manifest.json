@@ -1,0 +1,28 @@
+{
+  "run_id": "20260820-baihuo-usbh09-auto-edit-v1",
+  "experiment_name": "百货USBH09 auto edit v1",
+  "status": "running",
+  "branch": "handoff",
+  "stage": "inventory_complete",
+  "generated_at": "2026-08-20T16:45:47+08:00",
+  "input_root": "D:\\8.20剪辑\\百货USBH09",
+  "source_asset_count": 3,
+  "source_duration_seconds": 134.258,
+  "classification": "software-ready",
+  "human_sanity_gate": {
+    "status": "needs_human_review",
+    "machine_claims_passed": false
+  },
+  "local_only": [
+    {
+      "path": "D:\\8.20剪辑\\百货USBH09",
+      "reason": "原始视频、派生截图、后续成片与音频均保持本地；仓库只保留报告、参数、时间线、哈希及评审状态。"
+    }
+  ],
+  "published_artifacts": [
+    "inventory.json",
+    "manifest.json",
+    "summary.md"
+  ],
+  "next_step": "Narrative Strategy v1 and Director plan"
+}

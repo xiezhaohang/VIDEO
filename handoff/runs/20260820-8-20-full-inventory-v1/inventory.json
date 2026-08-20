@@ -1,0 +1,1026 @@
+{
+  "inventory_id": "20260820-8-20-full-inventory-v1",
+  "generated_at": "2026-08-20T16:45:47+08:00",
+  "source_root": "D:\\8.20剪辑",
+  "scope": "all first-level and second-level product material directories",
+  "product_group_count": 6,
+  "source_asset_count": 42,
+  "total_duration_seconds": 1193.864,
+  "software_ready": [
+    "20260820-baihuo-usbh08-auto-edit-v1",
+    "20260820-baihuo-usbh09-auto-edit-v1",
+    "20260820-jieya-wanju-auto-edit-v1",
+    "20260820-nienie-auto-edit-v1",
+    "20260820-shudeng-auto-edit-v1",
+    "20260820-xuexiao-jiyishu-auto-edit-v1"
+  ],
+  "software_not_ready": [],
+  "priority_order": [
+    "20260820-jieya-wanju-auto-edit-v1",
+    "20260820-baihuo-usbh09-auto-edit-v1",
+    "20260820-baihuo-usbh08-auto-edit-v1",
+    "20260820-nienie-auto-edit-v1",
+    "20260820-shudeng-auto-edit-v1",
+    "20260820-xuexiao-jiyishu-auto-edit-v1"
+  ],
+  "assessment_method": [
+    "ffprobe technical inventory",
+    "per-file midpoint visual sample",
+    "per-file 20/50/80 percent visual sample",
+    "manual evidence-chain/readability/workflow-module review"
+  ],
+  "machine_preflight_only": true,
+  "human_review_status": "needs_human_review",
+  "products": [
+    {
+      "run_id": "20260820-baihuo-usbh08-auto-edit-v1",
+      "product": "百货USBH08",
+      "path": "D:\\8.20剪辑\\百货USBH08",
+      "asset_count": 3,
+      "total_duration_seconds": 141.91,
+      "total_size_bytes": 1099813363,
+      "core_usable_actions": [
+        "包装与主体亮相",
+        "取出薄荷绿色长条捏捏",
+        "按压与形变",
+        "回弹后的完整商品展示"
+      ],
+      "classification": "software-ready",
+      "primary_reason": "主体清晰，包装到取出、按压、形变与结果态均有覆盖；重复尝试可按完整动作句安全拆分。",
+      "risk_notes": [
+        "长素材内存在等待与重复按压，需由 Attempt Segmenter 或人工证据边界剔除",
+        "避免把回弹速度或材质性能表述成未被素材证明的量化功能"
+      ],
+      "suggested_edit_priority": 3,
+      "workflow_stage": "inventory_complete",
+      "human_review_status": "needs_human_review",
+      "assets": [
+        {
+          "path": "D:\\8.20剪辑\\百货USBH08\\DJI_20260809183029_0153_D.MP4",
+          "file_name": "DJI_20260809183029_0153_D.MP4",
+          "sha256": "5c8fe74a7b85396aec476ed67241c2b0bac6ba1cfdd2b99b5e1954636ea02094",
+          "size_bytes": 532000149,
+          "duration_seconds": 67.435,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\百货USBH08\\DJI_20260809183139_0154_D.MP4",
+          "file_name": "DJI_20260809183139_0154_D.MP4",
+          "sha256": "9961aa683233b4d502dd3e1be88c319dd808d9926567f07442d6bedd79b8480b",
+          "size_bytes": 246730330,
+          "duration_seconds": 32.555,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\百货USBH08\\DJI_20260809183215_0155_D.MP4",
+          "file_name": "DJI_20260809183215_0155_D.MP4",
+          "sha256": "e55bd0133b903fae1ec1c7c9a43c48f27569283d4144e646112131ae12ed46bc",
+          "size_bytes": 321082884,
+          "duration_seconds": 41.92,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        }
+      ]
+    },
+    {
+      "run_id": "20260820-baihuo-usbh09-auto-edit-v1",
+      "product": "百货USBH09",
+      "path": "D:\\8.20剪辑\\百货USBH09",
+      "asset_count": 3,
+      "total_duration_seconds": 134.258,
+      "total_size_bytes": 1470575880,
+      "core_usable_actions": [
+        "礼盒开箱",
+        "多色透明方块全套展示",
+        "单品旋转与透光展示",
+        "按压形变与回弹"
+      ],
+      "classification": "software-ready",
+      "primary_reason": "有明确开箱、全套状态、单品差异与按压结果，可形成 Visual-led + Proof 的基础商业结构。",
+      "risk_notes": [
+        "首条素材前段有明显空桌等待，应直接跳过",
+        "多色单品不可机械重复同一按压动作"
+      ],
+      "suggested_edit_priority": 2,
+      "workflow_stage": "inventory_complete",
+      "human_review_status": "needs_human_review",
+      "assets": [
+        {
+          "path": "D:\\8.20剪辑\\百货USBH09\\DJI_20260811181943_0127_D.MP4",
+          "file_name": "DJI_20260811181943_0127_D.MP4",
+          "sha256": "c6778c50870f0dd0912675aca6574dfef726092cf594705ec8fae1d4c13e09c8",
+          "size_bytes": 695171143,
+          "duration_seconds": 58.432,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\百货USBH09\\DJI_20260811182049_0128_D.MP4",
+          "file_name": "DJI_20260811182049_0128_D.MP4",
+          "sha256": "810499b921f58b4ee400f31d5a1bfb479dd0d47219de3452c345a4ff5d4cac9f",
+          "size_bytes": 566114385,
+          "duration_seconds": 58.392,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\百货USBH09\\DJI_20260811182415_0130_D.MP4",
+          "file_name": "DJI_20260811182415_0130_D.MP4",
+          "sha256": "10e21f30d55dc36fd450828da215512494fa0dc7d84a572e4e9a8034454accfc",
+          "size_bytes": 209290352,
+          "duration_seconds": 17.434,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        }
+      ]
+    },
+    {
+      "run_id": "20260820-jieya-wanju-auto-edit-v1",
+      "product": "解压玩具",
+      "path": "D:\\8.20剪辑\\解压玩具",
+      "asset_count": 13,
+      "total_duration_seconds": 341.956,
+      "total_size_bytes": 2743234764,
+      "core_usable_actions": [
+        "外盒与品类信息",
+        "开箱及全套阵列",
+        "多个玩具的差异化外观",
+        "按压、拉伸与回弹演示"
+      ],
+      "classification": "software-ready",
+      "primary_reason": "素材覆盖最完整，既有开箱和阵列，又有多种独立可切 Action Unit，商业差异点清楚。",
+      "risk_notes": [
+        "SKU 多，必须限制同类重复动作并保持信息升级",
+        "包装文字仅使用清晰可读且画面真实出现的内容"
+      ],
+      "suggested_edit_priority": 1,
+      "workflow_stage": "inventory_complete",
+      "human_review_status": "needs_human_review",
+      "assets": [
+        {
+          "path": "D:\\8.20剪辑\\解压玩具\\DJI_20260814112323_0028_D.MP4",
+          "file_name": "DJI_20260814112323_0028_D.MP4",
+          "sha256": "72cab19f30b55b6e827cbf2d38df65a5bbbb8a3cafac27dbc708b55b7878192d",
+          "size_bytes": 70380330,
+          "duration_seconds": 7.659,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\解压玩具\\DJI_20260814112338_0029_D.MP4",
+          "file_name": "DJI_20260814112338_0029_D.MP4",
+          "sha256": "77159ee4606ec4cbec46e0f32601db6f0256b46d35fe803bad2013ebc6db7a27",
+          "size_bytes": 100353212,
+          "duration_seconds": 8.96,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\解压玩具\\DJI_20260814112556_0031_D.MP4",
+          "file_name": "DJI_20260814112556_0031_D.MP4",
+          "sha256": "f6206630bccc0a8adccaf4e6e24efd403f7d362d41db044666ea64517118cd4c",
+          "size_bytes": 81569920,
+          "duration_seconds": 10.325,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\解压玩具\\DJI_20260814112610_0032_D.MP4",
+          "file_name": "DJI_20260814112610_0032_D.MP4",
+          "sha256": "9f83c663f21a15f76b02520357d7774b66b93658f0b5811008aa434361f7225e",
+          "size_bytes": 120542243,
+          "duration_seconds": 12.971,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\解压玩具\\DJI_20260814112626_0033_D.MP4",
+          "file_name": "DJI_20260814112626_0033_D.MP4",
+          "sha256": "ce3fcfbf498df2bdd0728b1b779062f8eb87daa860392493714522ae53b9f297",
+          "size_bytes": 161336603,
+          "duration_seconds": 20.02,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\解压玩具\\DJI_20260814112753_0035_D.MP4",
+          "file_name": "DJI_20260814112753_0035_D.MP4",
+          "sha256": "bb9da76f318cd0c49af4757af3d4afef74b81533c903f3aafb563132c6eb2902",
+          "size_bytes": 431018966,
+          "duration_seconds": 55.019,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\解压玩具\\DJI_20260814112859_0036_D.MP4",
+          "file_name": "DJI_20260814112859_0036_D.MP4",
+          "sha256": "702eb87823538b947c100378313b57499b0e699352494c967b24600907d5f9aa",
+          "size_bytes": 221175951,
+          "duration_seconds": 27.989,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\解压玩具\\DJI_20260814112929_0037_D.MP4",
+          "file_name": "DJI_20260814112929_0037_D.MP4",
+          "sha256": "2fc3ab2dc879f43b3279ef9d6e5e0c8e07c2a10a9868a02c05f9496dcf4bc30d",
+          "size_bytes": 61751408,
+          "duration_seconds": 7.659,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\解压玩具\\DJI_20260814112939_0038_D.MP4",
+          "file_name": "DJI_20260814112939_0038_D.MP4",
+          "sha256": "d915fe05977a4fbd26e1c0d619531b47ebf0e7b20057770863f7bf9ca5116269",
+          "size_bytes": 167342688,
+          "duration_seconds": 19.353,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\解压玩具\\DJI_20260814113010_0039_D.MP4",
+          "file_name": "DJI_20260814113010_0039_D.MP4",
+          "sha256": "38f11734543be6120ab50f379d7fcbf19bce58be90305f2c371b38785893ab24",
+          "size_bytes": 351925136,
+          "duration_seconds": 45.579,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\解压玩具\\DJI_20260814113118_0040_D.MP4",
+          "file_name": "DJI_20260814113118_0040_D.MP4",
+          "sha256": "52043b4d82f807c46df1c0c50bfa13b4a0a6e72d21ce78ccd4a35e2e10527b98",
+          "size_bytes": 495538905,
+          "duration_seconds": 63.936,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\解压玩具\\DJI_20260814113231_0041_D.MP4",
+          "file_name": "DJI_20260814113231_0041_D.MP4",
+          "sha256": "79e04d834db86128713dd82d69d6c44ea62d93e939fe6aba6d5e49ffb7665d28",
+          "size_bytes": 349796372,
+          "duration_seconds": 45.867,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\解压玩具\\DJI_20260814113322_0042_D.MP4",
+          "file_name": "DJI_20260814113322_0042_D.MP4",
+          "sha256": "06cb94a6b1ef92a76d2845c926f434e79d497b032ccdd1ecc3c64a4dc52c5eb2",
+          "size_bytes": 130503030,
+          "duration_seconds": 16.619,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        }
+      ]
+    },
+    {
+      "run_id": "20260820-nienie-auto-edit-v1",
+      "product": "捏捏",
+      "path": "D:\\8.20剪辑\\捏捏",
+      "asset_count": 2,
+      "total_duration_seconds": 175.709,
+      "total_size_bytes": 1494346915,
+      "core_usable_actions": [
+        "四色透明方块阵列",
+        "单品近景",
+        "双手按压与大幅形变",
+        "多色组合展示"
+      ],
+      "classification": "software-ready",
+      "primary_reason": "产品主体和按压形变证据清晰，长素材虽含多次尝试，但动作可按完整按压—结果句拆分。",
+      "risk_notes": [
+        "166 秒长镜头重复尝试密集，Attempt Segmenter 置信度不足时必须人工选段",
+        "仅保留一次最强形变证明，严禁重复动作填时长"
+      ],
+      "suggested_edit_priority": 4,
+      "workflow_stage": "inventory_complete",
+      "human_review_status": "needs_human_review",
+      "assets": [
+        {
+          "path": "D:\\8.20剪辑\\捏捏\\DJI_20260813161842_0001_D.MP4",
+          "file_name": "DJI_20260813161842_0001_D.MP4",
+          "sha256": "8b4b068dda276363d20487969d5470d24ae55197a8e59549c5d4d3b8f5562747",
+          "size_bytes": 1381832160,
+          "duration_seconds": 166.4,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\捏捏\\DJI_20260813162145_0002_D.MP4",
+          "file_name": "DJI_20260813162145_0002_D.MP4",
+          "sha256": "7ae2b6a30d4b357d04148cf5139791208f07dab83b462ec93be2fd708f674f8b",
+          "size_bytes": 112514755,
+          "duration_seconds": 9.309,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        }
+      ]
+    },
+    {
+      "run_id": "20260820-shudeng-auto-edit-v1",
+      "product": "书灯",
+      "path": "D:\\8.20剪辑\\书灯",
+      "asset_count": 10,
+      "total_duration_seconds": 124.999,
+      "total_size_bytes": 1034501336,
+      "core_usable_actions": [
+        "书架暗环境使用场景",
+        "两款造型亮灯 Hero",
+        "单灯开关/触发前后状态",
+        "暖光效果与近景细节"
+      ],
+      "classification": "software-ready",
+      "primary_reason": "亮灯前后状态和使用场景均真实可见，不依赖外部屏幕或音频证明，适合 Visual-led + Proof。",
+      "risk_notes": [
+        "整体曝光较暗，需优先选择主体轮廓和灯光细节仍可读的镜头",
+        "开关触发只在动作与对应亮灯结果同属一条证据链时使用"
+      ],
+      "suggested_edit_priority": 5,
+      "workflow_stage": "inventory_complete",
+      "human_review_status": "needs_human_review",
+      "assets": [
+        {
+          "path": "D:\\8.20剪辑\\书灯\\DJI_20260814163622_0001_D.MP4",
+          "file_name": "DJI_20260814163622_0001_D.MP4",
+          "sha256": "bb8e0aec57305f86b6b5ce55a414650f4af5d245295f10a47c5384ee7eb02064",
+          "size_bytes": 89798535,
+          "duration_seconds": 9.792,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\书灯\\DJI_20260814163638_0002_D.MP4",
+          "file_name": "DJI_20260814163638_0002_D.MP4",
+          "sha256": "5b22470caa21cc9cce6a0deddbf624233b84c4fb1f0c5134e00d6d1f5e2d2a0f",
+          "size_bytes": 35143390,
+          "duration_seconds": 3.904,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\书灯\\DJI_20260814163646_0003_D.MP4",
+          "file_name": "DJI_20260814163646_0003_D.MP4",
+          "sha256": "830fe9ad261abba068c7407e31023ee0fc2f48d44769699312d70b8b0e20c655",
+          "size_bytes": 44520293,
+          "duration_seconds": 4.972,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\书灯\\DJI_20260814163810_0004_D.MP4",
+          "file_name": "DJI_20260814163810_0004_D.MP4",
+          "sha256": "e34555e716aa1db139731e3700ec72882457b4c37163c1a2cf1d8ab4047ef410",
+          "size_bytes": 26299628,
+          "duration_seconds": 2.803,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\书灯\\DJI_20260814163900_0005_D.MP4",
+          "file_name": "DJI_20260814163900_0005_D.MP4",
+          "sha256": "0239b1b8bb0e126f61b61d087c9dca901500d9aceac427435db6697078ddd871",
+          "size_bytes": 26852488,
+          "duration_seconds": 3.02,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\书灯\\DJI_20260814163925_0006_D.MP4",
+          "file_name": "DJI_20260814163925_0006_D.MP4",
+          "sha256": "6aa1e07cb51324818045275c89e03ad285766c4159b1a614a79760ea99dcafe0",
+          "size_bytes": 72787317,
+          "duration_seconds": 9.067,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\书灯\\DJI_20260814164029_0007_D.MP4",
+          "file_name": "DJI_20260814164029_0007_D.MP4",
+          "sha256": "0ae2a5a31170d029ef99b6942c6a97902b534bc4ed55b2f786111820ca492d4a",
+          "size_bytes": 74312927,
+          "duration_seconds": 9.226,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\书灯\\DJI_20260814164059_0008_D.MP4",
+          "file_name": "DJI_20260814164059_0008_D.MP4",
+          "sha256": "b93622351b2395fbc12f87f399ba8f138ac9eaf47aca3a2019a40e402b99e186",
+          "size_bytes": 321734224,
+          "duration_seconds": 40.341,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\书灯\\DJI_20260814164204_0009_D.MP4",
+          "file_name": "DJI_20260814164204_0009_D.MP4",
+          "sha256": "bf9347bf68fef7ba8516526c4be44d76ba399f20462d200a0dbe343de62d7ff2",
+          "size_bytes": 316747655,
+          "duration_seconds": 39.488,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\书灯\\DJI_20260814164247_0010_D.MP4",
+          "file_name": "DJI_20260814164247_0010_D.MP4",
+          "sha256": "f3fdbfcc38a7e421b75d95e0fb70d16a2f41ba52b004af043e11276a7d76af15",
+          "size_bytes": 26304879,
+          "duration_seconds": 2.386,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        }
+      ]
+    },
+    {
+      "run_id": "20260820-xuexiao-jiyishu-auto-edit-v1",
+      "product": "学校记忆书",
+      "path": "D:\\8.20剪辑\\学校记忆书",
+      "asset_count": 11,
+      "total_duration_seconds": 275.032,
+      "total_size_bytes": 2222589226,
+      "core_usable_actions": [
+        "封面与产品定位文字",
+        "按年级/学段翻页",
+        "姓名、照片、喜好等信息栏",
+        "跨年级页面差异与整书厚度"
+      ],
+      "classification": "software-ready",
+      "primary_reason": "信息页覆盖充分、文字状态可辨识，翻页动作和页面结果完整，可按“读完即切”构建 Information-led 结构。",
+      "risk_notes": [
+        "英文小字可读性是主要门禁，不能用过短镜头扫过信息",
+        "不得从空白模板推断用户已填写或保存了真实回忆"
+      ],
+      "suggested_edit_priority": 6,
+      "workflow_stage": "inventory_complete",
+      "human_review_status": "needs_human_review",
+      "assets": [
+        {
+          "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813113609_0066_D.MP4",
+          "file_name": "DJI_20260813113609_0066_D.MP4",
+          "sha256": "24dc079b815e7cc6939ed5b1971901f208c94582f2671e2700dab73cb19dbb34",
+          "size_bytes": 128047412,
+          "duration_seconds": 14.016,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813113654_0067_D.MP4",
+          "file_name": "DJI_20260813113654_0067_D.MP4",
+          "sha256": "92e1ae896c8591af0f4ee15c8b7f8fd7875a2583cab7197739f90ed7e7f10d44",
+          "size_bytes": 627711120,
+          "duration_seconds": 76.864,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813113828_0068_D.MP4",
+          "file_name": "DJI_20260813113828_0068_D.MP4",
+          "sha256": "5a8d4ffee7c4783ab4a46117a775abdda61cb640790b6ce12abd1d623a8c33af",
+          "size_bytes": 116756089,
+          "duration_seconds": 15.275,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813113846_0069_D.MP4",
+          "file_name": "DJI_20260813113846_0069_D.MP4",
+          "sha256": "04a01d7d935fc4f85574a7325ce39854d75a21f0bd9a329499f65c595de6e5f3",
+          "size_bytes": 107134483,
+          "duration_seconds": 13.803,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813113909_0070_D.MP4",
+          "file_name": "DJI_20260813113909_0070_D.MP4",
+          "sha256": "a1d12222e5ab4e37d36fc62983fe1f1e789eae8641f64dbc614ff427252e8fae",
+          "size_bytes": 44990454,
+          "duration_seconds": 5.675,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813113927_0071_D.MP4",
+          "file_name": "DJI_20260813113927_0071_D.MP4",
+          "sha256": "02e484113955c41fc71f619a02150c60ae68a159c3ab7ec7d6c90e11003dedc5",
+          "size_bytes": 220151340,
+          "duration_seconds": 28.629,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813114008_0072_D.MP4",
+          "file_name": "DJI_20260813114008_0072_D.MP4",
+          "sha256": "67d86c9abcb9f20da9c064b9c83227fa96d79d5f73a9d3714a83c3c5f7c8aec2",
+          "size_bytes": 126606769,
+          "duration_seconds": 16.384,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813114040_0073_D.MP4",
+          "file_name": "DJI_20260813114040_0073_D.MP4",
+          "sha256": "cfbbcd0bb9a4a58cc8c496b2e2ab029ca53c415b7cdfd680f8ea00ccf7d18297",
+          "size_bytes": 204587413,
+          "duration_seconds": 27.008,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813114115_0074_D.MP4",
+          "file_name": "DJI_20260813114115_0074_D.MP4",
+          "sha256": "6e2c3a694f27190111489572271d12bc6a7b5468d486f94060aa12db81c17fed",
+          "size_bytes": 133624696,
+          "duration_seconds": 15.851,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813114213_0075_D.MP4",
+          "file_name": "DJI_20260813114213_0075_D.MP4",
+          "sha256": "7fd490560ebbf933fe3e8fbed0a4caceea0893e0aed62115ba72f4adb45cf3dd",
+          "size_bytes": 399795227,
+          "duration_seconds": 47.831,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        },
+        {
+          "path": "D:\\8.20剪辑\\学校记忆书\\DJI_20260813114305_0076_D.MP4",
+          "file_name": "DJI_20260813114305_0076_D.MP4",
+          "sha256": "3056312b17e2c7e462f51b30d2baa1dd78dbef165807a1f2fa77a5439649fd2b",
+          "size_bytes": 113184223,
+          "duration_seconds": 13.696,
+          "video": {
+            "codec": "hevc",
+            "width": 1728,
+            "height": 3072,
+            "avg_frame_rate": "60000/1001"
+          },
+          "audio": {
+            "codec": "aac",
+            "sample_rate": 48000,
+            "channels": 2
+          },
+          "local_only": true,
+          "local_only_reason": "原始视频体积大且属于本地素材；GitHub 仅提交元数据与哈希。"
+        }
+      ]
+    }
+  ]
+}
