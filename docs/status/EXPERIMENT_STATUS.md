@@ -348,3 +348,16 @@
 - Handoff blocker: remote `git push origin handoff` was rejected by safety review before execution; no remote mutation occurred. Recovery requires explicit push authorization.
 - Local only: none.
 - Next step: publish the local handoff commits after explicit authorization; no video work in this run. When separately authorized, run the 8.19 Preference-Guided v3 controlled comparison first.
+
+## 20260820-151742-8-19-preference-guided-v3
+
+- Experiment: 8.19 Preference-Guided v3
+- Status: `in_progress`
+- Review state: `needs_human_review`
+- Updated at: `2026-08-20T15:17:42+08:00`
+- Branch: `handoff`; `main` not modified
+- Strategy: Information primary + Emotion secondary
+- Baseline: `20260819-164702-script-guided-controlled-auto-edit-v2` visual structure and `20260820-120248-8-19-full-production-v1` voiced final
+- Local-only output root: `D:\8.19\edit\runs\20260820-151742-8-19-preference-guided-v3`
+- Repository scope: research metadata, parameters, hashes, local-path descriptions, sanity/preference preflight, and comparison only; all video/audio/QA imagery remains local only
+- Human Preference PASS: not evaluated; final state must remain `needs_human_review` until user/editor blind comparison

@@ -1,0 +1,30 @@
+{
+  "run_id": "20260820-151742-8-19-preference-guided-v3",
+  "objective": "Test whether the same 8.19 footage becomes materially more selectable when Information leads and Emotion supports, without treating transitions as the main variable.",
+  "reference_use": "The accepted 17.533 s reference body supplies structural and pacing principles only; no wording or imagery is copied.",
+  "director_rules": [
+    "Open on a readable question and recognizable product use, not the full box-opening action.",
+    "Every segment must add a new question, action, quantity, mechanism, supported benefit, or sales fact.",
+    "Cut when the current information is readable and exhausted.",
+    "Use approximately 1.5-2.2 s per main information state unless readability or a complete action requires more.",
+    "Use a short number-to-question flip as mechanism proof.",
+    "Use multi-card layout as breadth evidence and the complete product view as Hero plus CTA.",
+    "If distinct readable states are insufficient, shorten the edit and record the material ceiling."
+  ],
+  "candidate_state_sequence": [
+    "readable question hook",
+    "new readable question",
+    "second new readable question",
+    "number-to-question mechanism",
+    "multi-card quantity proof",
+    "complete product Hero plus CTA"
+  ],
+  "forbidden": [
+    "full opening as hook",
+    "repeated question or repeated action presented as new information",
+    "dead-tail extension",
+    "decorative transitions",
+    "unsupported relationship outcome",
+    "machine declaration of Human Preference PASS"
+  ]
+}
