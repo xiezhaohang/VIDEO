@@ -1,0 +1,32 @@
+{
+  "run_id": "20260820-161555-8-19-strict-v2-voiced-baseline",
+  "status": "pass",
+  "output": {
+    "duration_seconds": 20.75,
+    "width": 1080,
+    "height": 1920,
+    "fps": "60/1",
+    "video_frames": 1245,
+    "streams": 2,
+    "subtitle_streams": 0
+  },
+  "video": {
+    "codec": "H.264 High",
+    "mode": "stream_copy",
+    "source_demuxed_bitstream_sha256": "E89DCECBED1F1B3763214F3622461E3DF573422F39ECA3419F90AE8F0930261B",
+    "output_demuxed_bitstream_sha256": "E89DCECBED1F1B3763214F3622461E3DF573422F39ECA3419F90AE8F0930261B",
+    "identical": true
+  },
+  "audio": {
+    "codec": "AAC-LC",
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "channel_layout": "stereo",
+    "duration_seconds": 20.7,
+    "bit_rate_bps": 137554,
+    "source_demuxed_bitstream_sha256": "03E3D5D897285854BFA046AA164579AEB3B66370BFCF15D101BF8E4262C19B1D",
+    "output_demuxed_bitstream_sha256": "03E3D5D897285854BFA046AA164579AEB3B66370BFCF15D101BF8E4262C19B1D",
+    "identical": true
+  },
+  "decode_test": "pass"
+}

@@ -6,6 +6,7 @@
 
 | run_id | experiment | status | branch | commit | artifacts | local_only | updated_at | next_step |
 |---|---|---|---|---|---|---|---|---|
+| `20260820-161555-8-19-strict-v2-voiced-baseline` | `8.19 Strict V2 Voiced Baseline` | `needs_human_review` | `handoff` | `pending` | `handoff/runs/20260820-161555-8-19-strict-v2-voiced-baseline/` | `MP4 and demux verification media` | `2026-08-20T16:17:00+08:00` | `Editor blind comparison against Preference-Guided v3` |
 | `20260820-085831-commercial-alpha-v0-2-control-plane` | `Commercial Alpha v0.2 Control Plane` | `handed_off` | `handoff` | `20155af1c233d784dd91367b1c7358a33d35ab7f` | `app/desktop/, app/control-plane/, handoff/runs/20260820-085831-commercial-alpha-v0-2-control-plane/` | `portable EXE, installer, runtime credentials/data/media` | `2026-08-20T09:15:00+08:00` | `Model-backed Shot Plan/AU, baked transitions, real TTS timing` |
 | `20260819-164702-script-guided-controlled-auto-edit-v2` | `8.19 Script-Guided Controlled Auto Edit v2` | `handed_off` | `handoff` | `95133b71afb0f31663aaadc7c5580ff8f0e7865e` | `handoff/runs/20260819-164702-script-guided-controlled-auto-edit-v2/` | `MP4, segments, verification images` | `2026-08-19T17:05:00+08:00` | `User full-watch review; no rule promotion` |
 | `20260819-160424-ai-directed-controlled-auto-edit-v1` | `8.19 AI-Directed Footage Controlled Auto Edit v1` | `handed_off` | `handoff` | `0740a1330491e24797cf79282c3376aa9cec0ca4` | `handoff/runs/20260819-160424-ai-directed-controlled-auto-edit-v1/` | `MP4, segments, verification images` | `2026-08-19T16:20:00+08:00` | `Human review of the local-only main version; no dependent experiment started` |
@@ -365,3 +366,18 @@
 - Structural result: runtime 20.75 -> 15.70 s; effective shots 4 -> 8; commercial information states 7 -> 9; average effective shot length 5.19 -> 1.96 s; first silent-visible purchase meaning 4.00 -> 0.00 s; CTA audio start 15.60 -> 13.10 s
 - Machine preflight: technical decode and hard constraints pass; Human Preference remains unevaluated
 - Handoff payload commit: `a7622baa51d766f6baa04d8b953f57544b9231de`; published to `origin/handoff`
+
+## 20260820-161555-8-19-strict-v2-voiced-baseline
+
+- Experiment: 8.19 Strict V2 Voiced Baseline
+- Status: `needs_human_review`
+- Updated at: `2026-08-20T16:17:00+08:00`
+- Branch: `handoff`; `main` not modified
+- Lineage: `Script-Guided V2 visual + Full Production V1 audio`
+- Local-only output: `D:\8.19\edit\runs\20260820-161555-8-19-strict-v2-voiced-baseline\8_19_strict_v2_voiced_baseline.mp4`
+- Output SHA-256: `C413723DB3F26B3AFCC1D49AC745F4929473C2ADE42BBE2AAEF9517D1C9EC3DC`
+- Video integrity: source and output demuxed H.264 bitstream SHA-256 both `E89DCECBED1F1B3763214F3622461E3DF573422F39ECA3419F90AE8F0930261B`; exact match.
+- Audio integrity: source and output demuxed AAC bitstream SHA-256 both `03E3D5D897285854BFA046AA164579AEB3B66370BFCF15D101BF8E4262C19B1D`; exact match.
+- Technical result: 20.75 s, 1080x1920, 60 fps, 1245 frames, AAC-LC 48 kHz stereo; full decode passed.
+- Scope exclusions: no subtitle, transition, filter, video re-encoding, or media upload.
+- Next step: editor blind comparison against Preference-Guided v3; human preference remains unevaluated.

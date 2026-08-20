@@ -1,0 +1,11 @@
+{
+  "run_id": "20260820-161555-8-19-strict-v2-voiced-baseline",
+  "policy": "media_local_only",
+  "files": [
+    {
+      "path": "D:\\8.19\\edit\\runs\\20260820-161555-8-19-strict-v2-voiced-baseline\\8_19_strict_v2_voiced_baseline.mp4",
+      "sha256": "C413723DB3F26B3AFCC1D49AC745F4929473C2ADE42BBE2AAEF9517D1C9EC3DC",
+      "uploaded": false
+    }
+  ]
+}
