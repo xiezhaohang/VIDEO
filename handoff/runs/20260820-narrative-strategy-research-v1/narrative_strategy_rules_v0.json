@@ -1,0 +1,127 @@
+{
+  "schema_version": "0.1",
+  "run_id": "20260820-narrative-strategy-research-v1",
+  "status": "candidate_only",
+  "promotion_to_main": false,
+  "model": {
+    "internal_representation": "continuous_dimensions",
+    "director_interface": "primary_plus_secondary",
+    "hard_constraints_separate": true,
+    "dimensions": [
+      {"id": "proof", "question": "Does the purchase reason require a visible causal claim-action-result-confirmation chain?"},
+      {"id": "information", "question": "Does each distinct content/state/quantity item add material purchase information?"},
+      {"id": "emotion", "question": "Does the purchase depend on sensory, experiential, relational, or emotional change?"},
+      {"id": "visual_appeal", "question": "Can form, color, texture, variants, or aesthetic payoff independently drive choice?"}
+    ],
+    "score_layers": ["demand", "material_support", "effective_weight"],
+    "candidate_effective_weight_formula": "demand_k * (0.5 + 0.5 * material_support_k)",
+    "formula_status": "weak_hypothesis",
+    "candidate_secondary_rules": {
+      "normalized_score_min": 0.25,
+      "primary_secondary_margin_max": 0.15,
+      "status": "weak_hypothesis"
+    }
+  },
+  "hard_constraints": [
+    "action_integrity_before_rhythm",
+    "proof_chain_and_ownership_for_causal_claims",
+    "minimum_readability_time_for_text_and_results",
+    "no_unsupported_claim_or_emotional_outcome",
+    "no_directional_cta_without_matching_natural_evidence",
+    "no_visible_loop_or_repeated_motion_fill",
+    "no_dead_tail_extension_for_voiceover"
+  ],
+  "strategy_policies": {
+    "proof": {
+      "director": "claim_or_problem -> owned action -> owned result -> confirmation; one main causal chain per chapter",
+      "cutter": "preserve preparation, key action, result, and proof hold; never apply a universal short-shot cap",
+      "script": "state why the result matters without exceeding visible evidence",
+      "duration": "allow action and proof hold; shorten VO before altering visuals",
+      "transition": "causal/state boundary first; effects cannot hide state mismatch",
+      "cta": "strongest proven terminal state -> hero -> evidence-matched CTA"
+    },
+    "information": {
+      "director": "every shot adds a new readable question, state, quantity, mechanism, result, or sales fact",
+      "cutter": "cut after max(action completion, text read time, result confirmation); cut immediately after information is exhausted",
+      "script": "specific pain -> mechanism -> breadth -> perceptible benefit -> CTA; do not narrate hand actions",
+      "duration": "hold only while new information is being read or delivered",
+      "transition": "semantic refresh and clean hard cuts first; preserve readability",
+      "cta": "complete product plus best content/quantity evidence and final sales information"
+    },
+    "emotion": {
+      "director": "observable starting state -> curiosity/attempt -> interaction or sensory change -> payoff -> CTA",
+      "cutter": "hold reactions, sensory change, tension, and payoff only while change is visible",
+      "script": "bind emotion words to visible questions, interactions, reactions, or sensory proof",
+      "duration": "allow emotional turn and payoff holds; deny time to unsupported atmosphere",
+      "transition": "match action, gaze, pose, semantic or emotional phase before decorative effects",
+      "cta": "return the observed experience to the product; match directional semantics to a real gesture"
+    },
+    "visual_appeal": {
+      "director": "strong visual hook -> form/texture -> distinct highlights or variants -> strongest hero",
+      "cutter": "prefer clean composition and visual upgrade; enter mid-action only when no causal claim is implied",
+      "script": "name concrete choice/design reasons; avoid generic aesthetic adjectives",
+      "duration": "short highlights, longest hold for strongest hero; shorten the whole edit if states are insufficient",
+      "transition": "composition/color/motion/scale compatibility; never use effects to rescue weak footage",
+      "cta": "best variant set or choose-your-favorite hero; directional CTA only with evidence"
+    }
+  },
+  "fallbacks": {
+    "proof_insufficient": "remove unsupported claims; use information if distinct supported states exist, otherwise visual_appeal",
+    "information_insufficient": "use proof if a complete causal chain exists, otherwise shorten to visual_appeal",
+    "emotion_insufficient": "use information plus specific mechanism language; otherwise visual_appeal or insufficient_material",
+    "visual_appeal_insufficient": "use the strongest supported proof/information strategy; otherwise insufficient_material"
+  },
+  "case_estimates": {
+    "magnetic_power_bank": {
+      "demand": {"proof": 0.90, "information": 0.35, "emotion": 0.10, "visual_appeal": 0.35},
+      "support": {"proof": 0.90, "information": 0.60, "emotion": 0.10, "visual_appeal": 0.55},
+      "primary_strategy": "proof",
+      "secondary_strategy": "information",
+      "confidence": 0.90
+    },
+    "earphone_case": {
+      "demand": {"proof": 0.60, "information": 0.45, "emotion": 0.20, "visual_appeal": 0.80},
+      "support": {"proof": 0.80, "information": 0.55, "emotion": 0.15, "visual_appeal": 0.70},
+      "primary_strategy": "visual_appeal",
+      "secondary_strategy": "proof",
+      "confidence": 0.66
+    },
+    "card_8_19": {
+      "demand": {"proof": 0.25, "information": 0.90, "emotion": 0.75, "visual_appeal": 0.35},
+      "support": {"proof": 0.35, "information": 0.75, "emotion": 0.20, "visual_appeal": 0.45},
+      "primary_strategy": "information",
+      "secondary_strategy": "emotion",
+      "confidence": 0.74
+    },
+    "slime": {
+      "demand": {"proof": 0.45, "information": 0.45, "emotion": 0.80, "visual_appeal": 0.65},
+      "support": {"proof": 0.70, "information": 0.65, "emotion": 0.45, "visual_appeal": 0.75},
+      "primary_strategy": "emotion",
+      "secondary_strategy": "visual_appeal",
+      "confidence": 0.72,
+      "note": "sensory proof remains a hard supporting constraint"
+    }
+  },
+  "validation_labels": {
+    "validated": [
+      "causal claims require action integrity, proof chain, ownership, and readable result hold",
+      "technical correctness does not imply preference-gate success",
+      "the card reference body passed user willingness-to-use after its unrelated outdoor opening was removed",
+      "slime count escalation and natural directional CTA are persistent alignment constraints",
+      "unsupported claims and CTA directions must not be fabricated"
+    ],
+    "strong_hypothesis": [
+      "continuous dimensions plus primary and secondary is better than a single class",
+      "earphone case should be visual-led with proof support",
+      "8.19 card should be information-led with emotion support",
+      "demand and material support must be scored separately",
+      "quick showcase is an execution pattern derived mainly from visual appeal and material/time limits"
+    ],
+    "weak_hypothesis": [
+      "effective-weight formula and thresholds",
+      "generalized card readability and shot-duration thresholds",
+      "current 8.19 footage can cross the preference gate without reshooting",
+      "numeric confidence calibration"
+    ]
+  }
+}

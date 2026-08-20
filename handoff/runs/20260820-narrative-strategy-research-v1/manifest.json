@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260820-narrative-strategy-research-v1",
+  "experiment_name": "Narrative Strategy Research v1",
+  "status": "passed_pending_handoff",
+  "created_at": "2026-08-20T15:01:48+08:00",
+  "branch": "handoff",
+  "base_commit": "c9699a1b494097f9e988df093d0f6b7337706816",
+  "handoff_commit": "pending",
+  "scope": {
+    "research_only": true,
+    "new_video_generated": false,
+    "software_or_ui_changes": false,
+    "main_modified": false
+  },
+  "inputs": [
+    {
+      "path": "handoff/runs/20260818-103000-director-pass-v2/summary.md",
+      "sha256": "repository_input_at_base_commit",
+      "role": "magnetic_power_bank_validated_evidence"
+    },
+    {
+      "path": "handoff/runs/20260820-095912-earphone-case-full-production-v1/summary.md",
+      "sha256": "repository_input_at_base_commit",
+      "role": "earphone_case_technical_chain_evidence"
+    },
+    {
+      "path": "handoff/runs/20260819-164702-script-guided-controlled-auto-edit-v2/summary.md",
+      "sha256": "repository_input_at_base_commit",
+      "role": "card_8_19_baseline_evidence"
+    },
+    {
+      "path": "handoff/runs/20260818-163253-slime-vo-blind-alignment-v2-1/validated_edit_constraints.json",
+      "sha256": "repository_input_at_base_commit",
+      "role": "slime_validated_alignment_evidence"
+    },
+    {
+      "path": "chatgpt-conversation://6a7d62c1-0ac0-83e8-b7f7-f3237980de27",
+      "sha256": "not_applicable_user_feedback_reference",
+      "role": "human_preference_and_card_reference_feedback"
+    }
+  ],
+  "human_sanity_gate": {
+    "status": "not_applicable",
+    "reviewer": "not_applicable",
+    "reviewed_at": "not_applicable",
+    "version_reviewed": "No new video was generated",
+    "hard_failures": {
+      "visible_motion_loop": false,
+      "repeated_motion_fill": false,
+      "other": []
+    },
+    "notes": "This is a research synthesis. Existing human feedback is treated as case evidence; no new finished video exists to review."
+  },
+  "quality_gates": {
+    "action_integrity": {
+      "status": "not_applicable",
+      "evidence": "No timeline or Action Unit was changed."
+    },
+    "proof_chain": {
+      "status": "not_applicable",
+      "evidence": "Existing case proof results were read; no new claim chain was rendered."
+    },
+    "proof_ownership": {
+      "status": "not_applicable",
+      "evidence": "Existing case ownership results were read; no new claim chain was rendered."
+    }
+  },
+  "metrics": {
+    "evaluated_after_human_sanity_gate": false,
+    "summary": {
+      "existing_cases_used": 4,
+      "strategy_models_compared": 3,
+      "continuous_dimensions": 4,
+      "new_video_count": 0
+    },
+    "source_path": "handoff/runs/20260820-narrative-strategy-research-v1/report.md"
+  },
+  "artifacts": [
+    {
+      "repository_path": "handoff/runs/20260820-narrative-strategy-research-v1/report.md",
+      "sha256": "0C22DC169822C202FA4E38A02D4394581D567982BA7906C52F08561D45362420",
+      "media_type": "text/markdown",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260820-narrative-strategy-research-v1/narrative_strategy_rules_v0.json",
+      "sha256": "6C306853DE258E6B40C845A18592E87B6C331431F7C110B5E116C3679DA52218",
+      "media_type": "application/json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/runs/20260820-narrative-strategy-research-v1/summary.md",
+      "sha256": "8DE4BACCF96DBE61AA704372C6970FC8334FE13964EEC84F9F6CE54DF9DF1D1A",
+      "media_type": "text/markdown",
+      "required": true
+    }
+  ],
+  "local_only": [],
+  "report_path": "handoff/runs/20260820-narrative-strategy-research-v1/report.md",
+  "conclusion": "Use separate continuous demand and material-support scores for Proof, Information, Emotion, and Visual Appeal; expose primary plus secondary strategy to Director; retain independent hard constraints. All proposed numeric weights and thresholds remain handoff-only candidates.",
+  "validation_state": {
+    "validated": "case-scoped Action Integrity/Proof results, preference feedback, card reference structure, and slime semantic/CTA anchors",
+    "strong_hypothesis": "continuous dimensions plus primary/secondary; card information-led; earphone visual-led; demand/support separation",
+    "weak_hypothesis": "weight formula, thresholds, confidence calibration, and cross-category duration limits"
+  },
+  "next_step": "Do not generate video in this run. When separately authorized, start with the 8.19 Preference-Guided v3 controlled comparison."
+}

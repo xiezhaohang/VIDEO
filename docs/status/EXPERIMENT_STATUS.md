@@ -327,3 +327,22 @@
 - Published: JSON/MD/HTML/TXT reports only; no raw media, MP4, audio, or QA images.
 - Rule promotion: none.
 - Next step: user full-watch review of the single local-only MP4.
+
+## 20260820-narrative-strategy-research-v1
+
+- Experiment: Narrative Strategy Research v1
+- Status: `passed_pending_handoff`
+- Updated at: `2026-08-20T15:01:48+08:00`
+- Branch: `handoff`; `main` not modified
+- Base commit: `c9699a1b494097f9e988df093d0f6b7337706816`
+- Handoff payload commit: `pending`
+- Canonical archive: `handoff/runs/20260820-narrative-strategy-research-v1/`
+- Scope: research only; no software/UI/Electron/package/release work and no new video generation
+- Inputs: four existing cases — magnetic power bank, earphone case, 8.19 cards, and slime — plus recorded human preference/reference feedback
+- Decision: strategies are not mutually exclusive product categories. Use continuous Proof/Information/Emotion/Visual-Appeal demand and material-support scores, then emit primary + secondary strategy under independent hard constraints.
+- Case placement: power bank Proof+Information; earphone case Visual Appeal+Proof; 8.19 cards Information+Emotion; slime Emotion/Sensory+Visual Appeal with sensory Proof as a hard support constraint.
+- Validation labels are recorded explicitly in `report.md` and `narrative_strategy_rules_v0.json`; no candidate is promoted to `main`.
+- Human Sanity Gate: not applicable because this run generated no new finished video.
+- Published artifacts: report, machine-readable candidate rules, summary, and manifest only.
+- Local only: none.
+- Next step: no video work in this run; when separately authorized, run the 8.19 Preference-Guided v3 controlled comparison first.
