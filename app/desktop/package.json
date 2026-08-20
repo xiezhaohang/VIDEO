@@ -1,7 +1,7 @@
 {
   "name": "ai-product-video-director",
-  "version": "0.1.0",
-  "description": "AI Product Video Director — Commercial Alpha v0.1",
+  "version": "0.2.0",
+  "description": "AI Product Video Director — Commercial Alpha v0.2",
   "main": "src/main.js",
   "author": "VIDEO project",
   "license": "UNLICENSED",
@@ -9,7 +9,7 @@
     "dev": "electron .",
     "test": "node --test test/*.test.js",
     "smoke": "node scripts/smoke-test.js",
-    "dist": "electron-builder --win portable"
+    "dist": "electron-builder --win portable nsis"
   },
   "dependencies": {},
   "devDependencies": {
@@ -20,8 +20,31 @@
     "appId": "com.videodirector.alpha",
     "productName": "AI Product Video Director",
     "asar": true,
-    "directories": { "output": "dist" },
-    "files": ["src/**/*", "package.json"],
-    "win": { "target": ["portable"], "artifactName": "AI-Product-Video-Director-${version}-portable.${ext}" }
+    "electronDist": "node_modules/electron/dist",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "portable",
+        "nsis"
+      ],
+      "signAndEditExecutable": false
+    },
+    "portable": {
+      "artifactName": "AI-Product-Video-Director-${version}-portable.${ext}"
+    },
+    "nsis": {
+      "artifactName": "AI-Product-Video-Director-${version}-setup.${ext}",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "allowScripts": {
+    "electron@37.10.3": true
   }
 }

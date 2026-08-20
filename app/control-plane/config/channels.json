@@ -1,0 +1,17 @@
+{
+  "dev": {
+    "remote_config": { "visual_workflow_enabled": true, "audio_branch_enabled": false, "telemetry_enabled": true, "transition_mode_default": "auto" },
+    "workflow": { "id": "visual-commercial-alpha", "version": "0.2-dev", "rules": { "action_integrity_priority": true, "allow_missing_script_roles": true } },
+    "model_routing": { "visual": "existing-human-reviewed-artifacts", "script": "deterministic-local-v0.1", "fallback": "bundled-local" }
+  },
+  "beta": {
+    "remote_config": { "visual_workflow_enabled": true, "audio_branch_enabled": false, "telemetry_enabled": true, "transition_mode_default": "conservative" },
+    "workflow": { "id": "visual-commercial-alpha", "version": "0.1-beta", "rules": { "action_integrity_priority": true, "allow_missing_script_roles": true } },
+    "model_routing": { "visual": "existing-human-reviewed-artifacts", "script": "deterministic-local-v0.1", "fallback": "bundled-local" }
+  },
+  "stable": {
+    "remote_config": { "visual_workflow_enabled": true, "audio_branch_enabled": false, "telemetry_enabled": false, "transition_mode_default": "conservative" },
+    "workflow": { "id": "visual-commercial-alpha", "version": "0.1-stable", "rules": { "action_integrity_priority": true, "allow_missing_script_roles": true } },
+    "model_routing": { "visual": "existing-human-reviewed-artifacts", "script": "deterministic-local-v0.1", "fallback": "bundled-local" }
+  }
+}

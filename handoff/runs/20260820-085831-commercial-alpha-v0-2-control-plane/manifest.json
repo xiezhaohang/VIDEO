@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260820-085831-commercial-alpha-v0-2-control-plane",
+  "experiment_name": "AI Product Video Director Commercial Alpha v0.2 Control Plane",
+  "status": "passed_pending_handoff",
+  "created_at": "2026-08-20T09:05:00+08:00",
+  "branch": "handoff",
+  "base_commit": "25a5ee568ea86ff6eabe59b26adea117145d2fef",
+  "handoff_commit": "pending",
+  "inputs": [
+    {"path": "app/desktop/", "role": "commercial-alpha-v0.1-baseline"},
+    {"path": "PROJECT_RULES.md", "role": "project-discipline"}
+  ],
+  "human_sanity_gate": {
+    "status": "not_applicable_software_architecture",
+    "notes": "No new video or aesthetic result was produced. Windows UI and process launch were inspected."
+  },
+  "quality_gates": {
+    "desktop_tests": "9/9_passed",
+    "control_plane_tests": "1/1_passed",
+    "ui_launch": "passed",
+    "portable_launch": "passed",
+    "portable_build": "passed",
+    "nsis_build": "passed",
+    "raw_media_upload_guard": "passed",
+    "offline_fallback": "passed"
+  },
+  "artifacts": [
+    {"repository_path": "app/desktop/README.md", "required": true},
+    {"repository_path": "app/desktop/src/online/", "required": true},
+    {"repository_path": "app/control-plane/", "required": true},
+    {"repository_path": "handoff/runs/20260820-085831-commercial-alpha-v0-2-control-plane/report.md", "required": true}
+  ],
+  "local_only": [
+    {"path": "app/desktop/dist/AI-Product-Video-Director-0.2.0-portable.exe", "reason": "size_and_rebuildable", "sha256": "ECE934F5C1C0840C3A0585CA1FCAA93F0728B842E3CCD680F0386E428F3E01F4"},
+    {"path": "app/desktop/dist/AI-Product-Video-Director-0.2.0-setup.exe", "reason": "size_and_rebuildable", "sha256": "085E62E4B796E24C415ABCCF51C1F3E7AF09F0EC56FBA683612C86DACC178F74"},
+    {"path": "runtime credentials, device state, SQLite, telemetry and media", "reason": "privacy_credentials_and_local_data"}
+  ],
+  "report_path": "handoff/runs/20260820-085831-commercial-alpha-v0-2-control-plane/report.md",
+  "conclusion": "Local client and runnable control plane architecture passed technical acceptance; public cloud deployment remains a future environment decision.",
+  "next_step": "Model-backed Shot Plan/AU analysis, baked Invisible Transition rendering, and real TTS duration/timeline integration."
+}
