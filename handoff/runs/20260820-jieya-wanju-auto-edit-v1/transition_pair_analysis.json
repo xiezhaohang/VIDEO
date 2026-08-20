@@ -1,0 +1,14 @@
+{
+  "schema_version": "transition-pair-analysis-v1",
+  "run_id": "20260820-jieya-wanju-auto-edit-v1",
+  "stage": "timeline_complete",
+  "pairs": [
+    {"at": 1.2, "from": "instant_range_hero", "to": "box_open_scope", "decision": "hard_cut", "risk": "medium", "reason": "同类桌面背景但构图变化明显；render 后检查是否形成跳切。"},
+    {"at": 4.4, "from": "box_open_scope", "to": "mystery_reveal", "decision": "hard_cut", "risk": "low", "reason": "从全盒信息进入单品揭示，信息升级清楚。"},
+    {"at": 8.4, "from": "mystery_reveal", "to": "primary_deformation_proof", "decision": "hard_cut", "risk": "low", "reason": "SKU 和动作类型改变。"},
+    {"at": 18.4, "from": "primary_deformation_proof", "to": "secondary_deformation_proof", "decision": "hard_cut", "risk": "medium", "reason": "同类手部近景；必须确认切点两侧没有相似手位造成 hard pair。"},
+    {"at": 25.4, "from": "secondary_deformation_proof", "to": "range_ending", "decision": "hard_cut", "risk": "low", "reason": "从单品动作回到全套阵列，结构性收束。"}
+  ],
+  "transition_aware_rule": "只在 render preflight 确认 medium-risk pair 难以阅读时，才允许微调 Cutter 边界；不默认添加溶解、缩放或光流。",
+  "human_review_status": "needs_human_review"
+}

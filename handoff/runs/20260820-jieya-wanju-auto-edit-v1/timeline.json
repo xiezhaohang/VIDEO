@@ -1,0 +1,101 @@
+{
+  "schema_version": "cutter-timeline-v1",
+  "run_id": "20260820-jieya-wanju-auto-edit-v1",
+  "stage": "timeline_complete",
+  "output": {
+    "width": 1080,
+    "height": 1920,
+    "frame_rate": "60000/1001",
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio": "none",
+    "planned_duration_seconds": 27.0
+  },
+  "segments": [
+    {
+      "timeline_in": 0.0,
+      "timeline_out": 1.2,
+      "duration": 1.2,
+      "source": "D:\\8.20剪辑\\解压玩具\\DJI_20260814112556_0031_D.MP4",
+      "source_in": 0.0,
+      "source_out": 1.2,
+      "role": "instant_range_hero",
+      "information_state": "全套阵列和多款差异",
+      "transition_in": "start",
+      "transition_out": "hard_cut"
+    },
+    {
+      "timeline_in": 1.2,
+      "timeline_out": 4.4,
+      "duration": 3.2,
+      "source": "D:\\8.20剪辑\\解压玩具\\DJI_20260814112338_0029_D.MP4",
+      "source_in": 1.2,
+      "source_out": 4.4,
+      "role": "box_open_scope",
+      "information_state": "盒盖打开并看到内装",
+      "transition_in": "hard_cut",
+      "transition_out": "hard_cut"
+    },
+    {
+      "timeline_in": 4.4,
+      "timeline_out": 8.4,
+      "duration": 4.0,
+      "source": "D:\\8.20剪辑\\解压玩具\\DJI_20260814112753_0035_D.MP4",
+      "source_in": 5.0,
+      "source_out": 9.0,
+      "role": "mystery_reveal",
+      "information_state": "圆形容器打开并揭示粉色单品",
+      "transition_in": "hard_cut",
+      "transition_out": "hard_cut"
+    },
+    {
+      "timeline_in": 8.4,
+      "timeline_out": 18.4,
+      "duration": 10.0,
+      "source": "D:\\8.20剪辑\\解压玩具\\DJI_20260814112939_0038_D.MP4",
+      "source_in": 0.0,
+      "source_out": 10.0,
+      "role": "primary_deformation_proof",
+      "information_state": "恐龙完整态到明显按压/拉伸结果",
+      "proof_ownership": "transparent_blue_dinosaur",
+      "transition_in": "hard_cut",
+      "transition_out": "hard_cut"
+    },
+    {
+      "timeline_in": 18.4,
+      "timeline_out": 25.4,
+      "duration": 7.0,
+      "source": "D:\\8.20剪辑\\解压玩具\\DJI_20260814113118_0040_D.MP4",
+      "source_in": 18.0,
+      "source_out": 25.0,
+      "role": "secondary_deformation_proof",
+      "information_state": "绿色方块进入圆钝形变结果",
+      "proof_ownership": "transparent_green_cube",
+      "transition_in": "hard_cut",
+      "transition_out": "hard_cut"
+    },
+    {
+      "timeline_in": 25.4,
+      "timeline_out": 27.0,
+      "duration": 1.6,
+      "source": "D:\\8.20剪辑\\解压玩具\\DJI_20260814112556_0031_D.MP4",
+      "source_in": 7.0,
+      "source_out": 8.6,
+      "role": "range_ending",
+      "information_state": "全套阵列收束",
+      "transition_in": "hard_cut",
+      "transition_out": "end"
+    }
+  ],
+  "gates": {
+    "purchase_meaning_first_visible_seconds": 0.0,
+    "shot_count": 6,
+    "information_state_count": 6,
+    "dead_tail_planned": false,
+    "loop_planned": false,
+    "repeated_motion_fill_planned": false,
+    "proof_mismatch_planned": false,
+    "fabricated_claim_planned": false
+  },
+  "human_review_status": "needs_human_review"
+}

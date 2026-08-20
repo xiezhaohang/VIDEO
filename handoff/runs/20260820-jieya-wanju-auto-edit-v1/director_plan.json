@@ -1,0 +1,58 @@
+{
+  "schema_version": "director-plan-v1",
+  "run_id": "20260820-jieya-wanju-auto-edit-v1",
+  "strategy": {
+    "primary": "visual-led",
+    "secondary": "proof-led"
+  },
+  "target_duration_seconds": 27.0,
+  "purchase_meaning_target_seconds": 0.0,
+  "beats": [
+    {
+      "beat": 1,
+      "purpose": "instant_range_hero",
+      "information_state": "一盒多款、造型和颜色差异立即可见"
+    },
+    {
+      "beat": 2,
+      "purpose": "box_open_scope",
+      "information_state": "闭合包装打开后，多款实物同属一盒"
+    },
+    {
+      "beat": 3,
+      "purpose": "mystery_reveal",
+      "information_state": "圆形容器内出现粉色笑脸单品，产生视觉差异"
+    },
+    {
+      "beat": 4,
+      "purpose": "primary_proof",
+      "information_state": "透明恐龙从完整形态进入明显按压/拉伸结果"
+    },
+    {
+      "beat": 5,
+      "purpose": "secondary_proof",
+      "information_state": "绿色方块形成与恐龙不同的圆钝形变结果"
+    },
+    {
+      "beat": 6,
+      "purpose": "range_ending",
+      "information_state": "回到全套阵列，作为无文字 CTA/ending"
+    }
+  ],
+  "excluded_from_primary_timeline": [
+    {
+      "action_unit": "AU-PURPLE-WIDE-STRETCH",
+      "reason": "与前两次形变属于相似运动；保留为 fallback，避免 repeated motion fill。"
+    },
+    {
+      "action_unit": "AU-BUTTER-BAR",
+      "reason": "当前候选主要是展示和轻按，没有新增且清晰的商业证明。"
+    }
+  ],
+  "ending": {
+    "type": "visual_range_hold",
+    "cta": "none",
+    "reason": "素材没有真实价格、购买渠道或经确认的文字 CTA；不虚构。"
+  },
+  "human_review_status": "needs_human_review"
+}
