@@ -7,7 +7,7 @@
   "completed_at": "2026-08-20T10:11:23+08:00",
   "branch": "handoff",
   "base_commit": "98a66e005130388f1350256e5330e9eb163d4f1a",
-  "handoff_commit": "8af587163c84be4cb6367b4da240ffbd92a56e2e",
+  "handoff_commit": "d93159a8ac6514072fd03e6df1d77eb7719fef7d",
   "inputs": [
     {
       "path": "D:\\耳机套\\edit\\earphone_case_visual_first_v1.mp4",

@@ -312,7 +312,7 @@
 - Owner: `Codex`; final human reviewer: `user` (pending full watch)
 - Branch: `handoff`; `main` not modified; `libraries/audio_material/` not modified
 - Base commit: `98a66e005130388f1350256e5330e9eb163d4f1a`
-- Handoff payload commit: `8af587163c84be4cb6367b4da240ffbd92a56e2e`
+- Handoff payload commit: `d93159a8ac6514072fd03e6df1d77eb7719fef7d`
 - Canonical archive: `handoff/runs/20260820-095912-earphone-case-full-production-v1/`
 - Visual baseline: `20260818-164844-earphone-case-visual-first-v1`; validated Action Units, proof limits, causality, and 17.65 s timeline preserved.
 - VO: English commercial benefit-led script; OpenAI `gpt-4o-mini-tts`, voice `marin`; actual accepted spoken duration `14.918 s`.
