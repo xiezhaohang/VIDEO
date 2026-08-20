@@ -6,6 +6,7 @@
 
 | run_id | experiment | status | branch | commit | artifacts | local_only | updated_at | next_step |
 |---|---|---|---|---|---|---|---|---|
+| `20260820-085831-commercial-alpha-v0-2-control-plane` | `Commercial Alpha v0.2 Control Plane` | `handed_off` | `handoff` | `20155af1c233d784dd91367b1c7358a33d35ab7f` | `app/desktop/, app/control-plane/, handoff/runs/20260820-085831-commercial-alpha-v0-2-control-plane/` | `portable EXE, installer, runtime credentials/data/media` | `2026-08-20T09:15:00+08:00` | `Model-backed Shot Plan/AU, baked transitions, real TTS timing` |
 | `20260819-164702-script-guided-controlled-auto-edit-v2` | `8.19 Script-Guided Controlled Auto Edit v2` | `handed_off` | `handoff` | `95133b71afb0f31663aaadc7c5580ff8f0e7865e` | `handoff/runs/20260819-164702-script-guided-controlled-auto-edit-v2/` | `MP4, segments, verification images` | `2026-08-19T17:05:00+08:00` | `User full-watch review; no rule promotion` |
 | `20260819-160424-ai-directed-controlled-auto-edit-v1` | `8.19 AI-Directed Footage Controlled Auto Edit v1` | `handed_off` | `handoff` | `0740a1330491e24797cf79282c3376aa9cec0ca4` | `handoff/runs/20260819-160424-ai-directed-controlled-auto-edit-v1/` | `MP4, segments, verification images` | `2026-08-19T16:20:00+08:00` | `Human review of the local-only main version; no dependent experiment started` |
 | `20260819-160000-ai-directed-footage-review` | `8.19 AI-Directed Footage Review Handoff` | `handed_off` | `handoff` | `7d05d2c73a189e9d90a6867d6b37c4ca13261b7d` | `handoff/runs/20260819-160000-ai-directed-footage-review/` | `all source MP4 and review contact sheets` | `2026-08-19T16:00:00+08:00` | `Run controlled Auto Edit v1 from whitelisted and verified Action Units` |
@@ -284,3 +285,20 @@
 - Local only: 83.7 MB portable EXE (size/rebuildable), D:\\8.19 raw media and smoke MP4 (privacy), smoke SQLite DB (local data)
 - Rule promotion: none; Script Engine and Invisible Transition remain experimental
 - Next step: human review, model-backed shot planning, rendered transition treatments, real TTS duration/timeline integration
+
+
+## 20260820-085831-commercial-alpha-v0-2-control-plane
+
+- Experiment: AI Product Video Director Commercial Alpha v0.2 Control Plane
+- Status: `handed_off`
+- Updated at: `2026-08-20T09:15:00+08:00`
+- Branch: `handoff`; `main` not modified
+- Base commit: `25a5ee568ea86ff6eabe59b26adea117145d2fef`
+- Handoff payload commit: `20155af1c233d784dd91367b1c7358a33d35ab7f`
+- Canonical archive: `handoff/runs/20260820-085831-commercial-alpha-v0-2-control-plane/`
+- Source: `app/desktop/`, `app/control-plane/`
+- Validation: desktop 9/9; control plane 1/1; online bootstrap, verified workflow install, telemetry/cost, offline cache; dev UI online; portable + NSIS build; portable process launch
+- Privacy boundary: raw media upload unsupported; multipart rejected; telemetry allowlist excludes media paths and product data
+- Local only: 83.8 MB portable EXE, 84.0 MB installer, credentials, device state, SQLite, telemetry queue, raw videos and renders
+- Rule promotion: none; Script Engine and Invisible Transition remain experimental
+- Next step: model-backed Shot Plan/AU analysis, baked Invisible Transition rendering, and real TTS duration/timeline integration

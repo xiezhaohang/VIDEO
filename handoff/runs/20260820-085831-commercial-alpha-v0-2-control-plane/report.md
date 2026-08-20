@@ -3,9 +3,10 @@
 ## Identity
 
 - Run ID: `20260820-085831-commercial-alpha-v0-2-control-plane`
-- Status: `passed_pending_handoff`
+- Status: `handed_off`
 - Branch: `handoff`; `main` not modified
 - Base commit: `25a5ee568ea86ff6eabe59b26adea117145d2fef`
+- Handoff payload commit: `20155af1c233d784dd91367b1c7358a33d35ab7f`
 - Completed at: `2026-08-20T09:05:00+08:00`
 - Source: `app/desktop/` and `app/control-plane/`
 
@@ -53,4 +54,3 @@ Turn the working local v0.1 client into the required local-client/online-control
 ## Conclusion
 
 Commercial Alpha v0.2 passes the software and architecture acceptance criteria for a real local client connected to a runnable control plane with verified offline fallback. The heavy video path remains local and the AI/workflow brain can now evolve independently from the installed app.
-
