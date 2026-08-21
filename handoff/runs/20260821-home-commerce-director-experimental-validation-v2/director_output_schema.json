@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "home_commerce_director_experimental_validation_v2/director_output_schema.json",
+  "title": "Home Commerce Director Experimental Validation v2 Planning Output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id", "arm_id", "director_version", "frozen_input_hash", "emitted_before_review",
+    "purchase_motivation", "piev_scores", "primary_strategy", "secondary_strategy",
+    "hook_hypothesis", "required_proof", "information_state_plan", "hero_strategy",
+    "cta_strategy", "fallback", "confidence"
+  ],
+  "properties": {
+    "run_id": {"const": "20260821-home-commerce-director-experimental-validation-v2"},
+    "arm_id": {"type": "string", "minLength": 1},
+    "director_version": {"type": "string", "minLength": 1},
+    "frozen_input_hash": {"type": "string", "pattern": "^[a-fA-F0-9]{64}$"},
+    "emitted_before_review": {"const": true},
+    "purchase_motivation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primary", "secondary", "user_problem", "desired_change", "why_buy", "evidence", "risks"],
+      "properties": {
+        "primary": {"type": "string", "minLength": 1},
+        "secondary": {"type": ["string", "null"]},
+        "user_problem": {"type": "string", "minLength": 1},
+        "desired_change": {"type": "string", "minLength": 1},
+        "why_buy": {"type": "string", "minLength": 1},
+        "evidence": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "risks": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "piev_scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["proof", "information", "emotion", "visual_appeal"],
+      "properties": {
+        "proof": {"$ref": "#/$defs/dimension"},
+        "information": {"$ref": "#/$defs/dimension"},
+        "emotion": {"$ref": "#/$defs/dimension"},
+        "visual_appeal": {"$ref": "#/$defs/dimension"}
+      }
+    },
+    "primary_strategy": {"$ref": "#/$defs/strategy"},
+    "secondary_strategy": {"oneOf": [{"$ref": "#/$defs/strategy"}, {"type": "null"}]},
+    "hook_hypothesis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["purchase_meaning", "source_evidence", "promise_created", "payoff_due", "why_first", "risk"],
+      "properties": {
+        "purchase_meaning": {"type": "string", "minLength": 1},
+        "source_evidence": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "promise_created": {"type": "string", "minLength": 1},
+        "payoff_due": {"type": "string", "minLength": 1},
+        "why_first": {"type": "string", "minLength": 1},
+        "risk": {"type": ["string", "null"]}
+      }
+    },
+    "required_proof": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["claim", "owner", "action", "result", "confirmation", "support_status", "source_evidence"],
+        "properties": {
+          "claim": {"type": "string", "minLength": 1},
+          "owner": {"type": "string", "minLength": 1},
+          "action": {"type": "string", "minLength": 1},
+          "result": {"type": "string", "minLength": 1},
+          "confirmation": {"type": "string", "minLength": 1},
+          "support_status": {"enum": ["complete", "partial", "missing", "conflicted"]},
+          "source_evidence": {"type": "array", "items": {"type": "string", "minLength": 1}}
+        }
+      }
+    },
+    "information_state_plan": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["order", "shot_task", "new_understanding", "source_evidence", "voice_or_caption_job", "enter_when", "exit_when", "delete_cost"],
+        "properties": {
+          "order": {"type": "integer", "minimum": 1},
+          "shot_task": {"enum": ["hook", "setup", "mechanism", "proof", "payoff", "benefit", "emotion", "option", "hero", "cta"]},
+          "new_understanding": {"type": "string", "minLength": 1},
+          "source_evidence": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+          "voice_or_caption_job": {"type": "string"},
+          "enter_when": {"type": "string", "minLength": 1},
+          "exit_when": {"type": "string", "minLength": 1},
+          "delete_cost": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "hero_strategy": {"$ref": "#/$defs/evidenceBoundDecision"},
+    "cta_strategy": {"$ref": "#/$defs/evidenceBoundDecision"},
+    "fallback": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["trigger", "replacement_plan", "claims_removed_or_weakened", "reshoot_needs"],
+      "properties": {
+        "trigger": {"type": "string", "minLength": 1},
+        "replacement_plan": {"type": "string", "minLength": 1},
+        "claims_removed_or_weakened": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "reshoot_needs": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "confidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "basis", "calibration"],
+      "properties": {
+        "level": {"enum": ["high", "medium", "low"]},
+        "basis": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "calibration": {"const": "evidence coverage, not conversion probability"}
+      }
+    }
+  },
+  "$defs": {
+    "score": {"type": "number", "minimum": 0, "maximum": 1},
+    "dimension": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["demand", "material_support", "effective", "evidence", "gaps"],
+      "properties": {
+        "demand": {"$ref": "#/$defs/score"},
+        "material_support": {"$ref": "#/$defs/score"},
+        "effective": {"$ref": "#/$defs/score"},
+        "evidence": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "gaps": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "strategy": {"enum": ["proof_led", "information_led", "emotion_led", "visual_led"]},
+    "evidenceBoundDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["job", "source_evidence", "hold_or_exit_condition", "fallback_if_missing"],
+      "properties": {
+        "job": {"type": "string", "minLength": 1},
+        "source_evidence": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "hold_or_exit_condition": {"type": "string", "minLength": 1},
+        "fallback_if_missing": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

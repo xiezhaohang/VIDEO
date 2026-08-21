@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260821-home-commerce-director-experimental-validation-v2",
+  "experiment_name": "Home Commerce Director Experimental Validation v2",
+  "status": "framework_ready_waiting_for_sample",
+  "branch": "home-commerce-director-validation-v2",
+  "base_commit": "f000764242ba9ba03e239a7b5ec9160bc4593b01",
+  "scope": "validation_framework_only",
+  "inputs": [
+    "Home Commerce Knowledge Base v1",
+    "Home Commerce Director Experimental Rule Layer v1",
+    "Existing Director control contract"
+  ],
+  "artifacts": [
+    {"path": "validation_protocol.md", "sha256": "dc4a302da8255666fa1c49a0fea0c5669c8c8c90e6ee530d0b8d2407ed2c9930"},
+    {"path": "sample_selection_criteria.md", "sha256": "ca520b9e049e063e88dc6953c8f943b5f366eab84ae45318850276ff59ba3a4c"},
+    {"path": "director_output_schema.json", "sha256": "59a2a1f478e6cd7fd3c8a3dc3a9a70bac3c3e69338794269b75e9ed99bcf354c"},
+    {"path": "evaluation_scorecard_template.json", "sha256": "8e2ed817462bb508a2766b39885da602c9ce05a1d979d449918e308435b987ec"},
+    {"path": "summary.md", "sha256": "7dfd5bb7a35e0104e1d7c287da694cd2a6b58e4becf7e94df79a9a06e0ddba43"}
+  ],
+  "constraints_verified": {
+    "main_modified": false,
+    "software_modified": false,
+    "production_rules_modified": false,
+    "sample_selected": false,
+    "media_generated_or_uploaded": false
+  },
+  "next_step": "Wait for the user to supply one new product, factual product brief and original source material; then run eligibility before either Director arm."
+}

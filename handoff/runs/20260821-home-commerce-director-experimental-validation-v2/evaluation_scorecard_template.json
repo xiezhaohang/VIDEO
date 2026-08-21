@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260821-home-commerce-director-experimental-validation-v2",
+  "sample_id": "pending_user_material",
+  "validity": {
+    "unseen_sample": null,
+    "identical_inputs": null,
+    "prospective_outputs": null,
+    "blinding_preserved": null,
+    "result": "pending",
+    "notes": []
+  },
+  "reference_judgment": {
+    "completed_before_arm_review": null,
+    "reviewers": [],
+    "purchase_motivation": null,
+    "primary_strategy": null,
+    "acceptable_secondary_strategies": [],
+    "best_supported_first_purchase_meaning": null,
+    "required_proof": [],
+    "material_gaps": []
+  },
+  "arms": [
+    {
+      "anonymous_arm_id": "pending",
+      "strategy_judgment_accuracy": {
+        "purchase_motivation": {"score_0_to_4": null, "evidence": null},
+        "primary_strategy": {"score_0_to_4": null, "evidence": null},
+        "secondary_strategy": {"score_0_to_4": null, "evidence": null},
+        "evidence_calibration": {"score_0_to_4": null, "evidence": null},
+        "unsupported_claim_avoidance": {"score_0_to_4": null, "evidence": null}
+      },
+      "first_purchase_meaning_prediction": {
+        "supported": null,
+        "valuable": null,
+        "first_state_legible": null,
+        "later_payoff_owned": null,
+        "reviewer_notes": []
+      },
+      "shot_task_reasonableness": {
+        "single_dominant_job": {"score_0_to_4": null, "evidence": null},
+        "new_understanding_per_state": {"score_0_to_4": null, "evidence": null},
+        "setup_payoff_adjacency": {"score_0_to_4": null, "evidence": null},
+        "proof_chain_and_ownership": {"score_0_to_4": null, "evidence": null},
+        "information_exhaustion_exits": {"score_0_to_4": null, "evidence": null},
+        "hero_and_cta_fit": {"score_0_to_4": null, "evidence": null}
+      },
+      "editor_adoption": [
+        {
+          "reviewer_id": "pending",
+          "decision": "pending",
+          "first_change_requested": null,
+          "trust_decision": null,
+          "notes": []
+        }
+      ],
+      "hard_failures": {
+        "fabricated_state_or_claim": false,
+        "proof_owner_mismatch": false,
+        "action_integrity_break": false,
+        "fallback_ignored": false,
+        "details": []
+      }
+    }
+  ],
+  "comparison": {
+    "winner_by_dimension": {
+      "strategy_accuracy": "pending",
+      "first_purchase_meaning": "pending",
+      "shot_tasks": "pending",
+      "editor_adoption": "pending",
+      "evidence_safety": "pending"
+    },
+    "decision": "pending",
+    "attributable_director_decisions": [],
+    "confounds": [],
+    "promotion_status": "experimental_no_promotion"
+  }
+}
