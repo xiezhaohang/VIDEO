@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260821-home-commerce-director-experimental-validation-v2-school-memory-book",
+  "experiment": "Home Commerce Director Experimental Validation v2 — School Memory Book",
+  "scope": "director_judgment_only",
+  "sample": {
+    "sample_id": "school_memory_book_20260821",
+    "product_identity": "Spiral-bound School Memories Album with grade-specific prompts and photo/drawing spaces",
+    "source_root_local_only": "D:\\8.20剪辑\\学校记忆书",
+    "novelty": {
+      "knowledge_mining_sample": false,
+      "prior_worked_example": false,
+      "prior_winning_edit_or_performance_data": false,
+      "eligibility": "pass",
+      "note": "The category and footage were not used in the four prior internal cases or the Knowledge Mining worked examples."
+    }
+  },
+  "media_inventory": {
+    "file_count": 11,
+    "total_duration_s": 275.032,
+    "orientation": "vertical",
+    "primary_video": "HEVC 1728x3072 at 60000/1001 fps",
+    "audio": "AAC stereo 48 kHz present in every source; no spoken-content claim was used in this judgment",
+    "files": [
+      {"id":"S01","file":"DJI_20260813113609_0066_D.MP4","sha256":"24dc079b815e7cc6939ed5b1971901f208c94582f2671e2700dab73cb19dbb34","bytes":128047412,"duration_s":14.016,"content":"Clean front-cover presentation; cover text identifies a School Memories Album and says it is a place for a child's keepsakes."},
+      {"id":"S02","file":"DJI_20260813113654_0067_D.MP4","sha256":"92e1ae896c8591af0f4ee15c8b7f8fd7875a2583cab7197739f90ed7e7f10d44","bytes":627711120,"duration_s":76.864,"content":"Long cover-to-interior walkthrough. Visible sections include Preschool, Kindergarten, 1st Grade, 5th Grade, 9th Grade and 11th Grade, plus photo, drawing and written-prompt areas."},
+      {"id":"S03","file":"DJI_20260813113828_0068_D.MP4","sha256":"5a8d4ffee7c4783ab4a46117a775abdda61cb640790b6ce12abd1d623a8c33af","bytes":116756089,"duration_s":15.275,"content":"Preschool close-up; finger indicates name, age, height/weight, teacher and school-activity checklist fields."},
+      {"id":"S04","file":"DJI_20260813113846_0069_D.MP4","sha256":"04a01d7d935fc4f85574a7325ce39854d75a21f0bd9a329499f65c595de6e5f3","bytes":107134483,"duration_s":13.803,"content":"Close-up of friends and favorites prompts, including names, lunch food, story, school game and TV show fields."},
+      {"id":"S05","file":"DJI_20260813113909_0070_D.MP4","sha256":"a1d12222e5ab4e37d36fc62983fe1f1e789eae8641f64dbc614ff427252e8fae","bytes":44990454,"duration_s":5.675,"content":"1st Grade close-up with a school-picture box, self-drawing box and basic profile lines."},
+      {"id":"S06","file":"DJI_20260813113927_0071_D.MP4","sha256":"02e484113955c41fc71f619a02150c60ae68a159c3ab7ec7d6c90e11003dedc5","bytes":220151340,"duration_s":28.629,"content":"Grade progression demonstration: 1st Grade followed by visible 2nd, 3rd, 4th and 5th Grade spreads."},
+      {"id":"S07","file":"DJI_20260813114008_0072_D.MP4","sha256":"67d86c9abcb9f20da9c064b9c83227fa96d79d5f73a9d3714a83c3c5f7c8aec2","bytes":126606769,"duration_s":16.384,"content":"4th Grade detail close-up showing school-picture, height/weight, teacher, favorite book/author, subjects, clubs/sports and signature fields."},
+      {"id":"S08","file":"DJI_20260813114040_0073_D.MP4","sha256":"cfbbcd0bb9a4a58cc8c496b2e2ab029ca53c415b7cdfd680f8ea00ccf7d18297","bytes":204587413,"duration_s":27.008,"content":"Later-grade detail pages with favorites, memorable-event and self-reflection prompts; a 7th Grade heading is visible."},
+      {"id":"S09","file":"DJI_20260813114115_0074_D.MP4","sha256":"6e2c3a694f27190111489572271d12bc6a7b5468d486f94060aa12db81c17fed","bytes":133624696,"duration_s":15.851,"content":"9th Grade spread showing photo space and prompts for signature, height/weight, class, teacher and high-school reflections."},
+      {"id":"S10","file":"DJI_20260813114213_0075_D.MP4","sha256":"7fd490560ebbf933fe3e8fbed0a4caceea0893e0aed62115ba72f4adb45cf3dd","bytes":399795227,"duration_s":47.831,"content":"Hand-held product Hero and thickness/page-volume views; repeated rotations of the cover and page block."},
+      {"id":"S11","file":"DJI_20260813114305_0076_D.MP4","sha256":"3056312b17e2c7e462f51b30d2baa1dd78dbef165807a1f2fa77a5439649fd2b","bytes":113184223,"duration_s":13.696,"content":"Edge flip-through that reveals many differently designed sections, then a clean album placement/cover state."}
+    ]
+  },
+  "action_content_units": [
+    {"id":"AU01","sources":["S01","S10"],"state_before":"Album is outside the viewer's context or held edge-on","action":"Presenter brings or rotates the album front toward camera","state_after":"Full cover and product identity are readable","commercial_capability":"identity and clean Hero","limitations":"Cover text supplies purpose language but does not prove real use or emotional reaction."},
+    {"id":"AU02","sources":["S02"],"state_before":"Album closed","action":"Cover opens and pages are turned through separated grade sections","state_after":"Multiple grade-specific spreads are visible","commercial_capability":"multi-year structure proof","limitations":"The walkthrough is long and contains repeated returns; it is not itself an efficient final order."},
+    {"id":"AU03","sources":["S03","S04","S07","S08","S09"],"state_before":"A grade spread is visible at medium distance","action":"Camera/finger isolates printed prompts","state_after":"Profile, favorites, friends, subjects and reflection fields become readable","commercial_capability":"structured-content and information-breadth proof","limitations":"All pages are blank; completion, durability and long-term behavior are unproved."},
+    {"id":"AU04","sources":["S05","S07","S09"],"state_before":"Grade page is open","action":"Camera/finger presents framed spaces","state_after":"School-picture and/or self-drawing areas are readable","commercial_capability":"personalization-format proof","limitations":"No actual photograph, drawing or filled-in example is shown."},
+    {"id":"AU05","sources":["S06","S02"],"state_before":"One grade section is readable","action":"Pages turn to later grade headings","state_after":"Progression across early and later school years is confirmed","commercial_capability":"longitudinal organization proof","limitations":"Do not claim every grade or exact total without a complete contents check."},
+    {"id":"AU06","sources":["S10","S11"],"state_before":"Album shown front-on or closed","action":"Presenter tilts, fans or edge-flips the page block","state_after":"Physical page volume and varied section designs are visible","commercial_capability":"breadth/ownership Hero support","limitations":"Visible thickness does not establish paper quality, capacity, durability or archival safety."},
+    {"id":"AU07","sources":["S11","S01"],"state_before":"Album in hand","action":"Album is placed and held as a complete product","state_after":"Clean full-product state","commercial_capability":"closing Hero","limitations":"No offer, price, store UI or directional CTA evidence."}
+  ],
+  "provable_facts": [
+    {"id":"F01","fact":"The product identifies itself on the cover as a School Memories Album and as a place for a child's keepsakes.","evidence":["S01","S10"]},
+    {"id":"F02","fact":"The album contains visibly separated school-year sections extending from Preschool/Kindergarten into later grades; Preschool, Kindergarten, 1st, 2nd, 3rd, 4th, 5th, 7th, 9th and 11th Grade headings are directly visible in the reviewed material.","evidence":["S02","S06","S08","S09"]},
+    {"id":"F03","fact":"Pages provide blank spaces for a school picture and, on some pages, a self-drawing.","evidence":["S02","S05","S07","S09"]},
+    {"id":"F04","fact":"Pages contain writable prompts for details such as name/signature, height, weight, teacher, friends, favorites, subjects, activities and reflections.","evidence":["S03","S04","S07","S08","S09"]},
+    {"id":"F05","fact":"The physical album is spiral-bound and contains many visibly distinct printed page designs.","evidence":["S01","S10","S11"]},
+    {"id":"F06","fact":"The source set shows hands turning, pointing to and presenting the album, but no child or family interaction.","evidence":["S01","S02","S03","S04","S05","S06","S07","S08","S09","S10","S11"]}
+  ],
+  "forbidden_claims": [
+    "Any claim that a real child enjoyed, loved or reacted emotionally to the album.",
+    "Any claim that the album improves family relationships or causes conversations.",
+    "Any fabricated home, gifting, classroom or family-use scene.",
+    "Any claim that completed memories, photos or handwriting are present; reviewed pages are blank.",
+    "Any exact grade coverage, page count or capacity beyond directly visible headings/pages.",
+    "Archival, acid-free, waterproof, fireproof, durable, premium-paper or preservation-performance claims.",
+    "Price, discount, scarcity, shipping, rating, bestseller or availability claims.",
+    "Directional purchase CTA such as click below, tap the link or buy here; no UI or direction evidence exists."
+  ],
+  "material_gaps": [
+    "No child, parent or family interaction/reaction.",
+    "No filled-in page, inserted photograph or time-lapse showing accumulated use.",
+    "No before/after comparison against loose school records.",
+    "No verified contents page, exact grade range, total page count or material specification.",
+    "No gift handoff, shelf-storage or revisit scene.",
+    "No price, offer, purchase interface or directional CTA gesture.",
+    "No clean simultaneous view of an early-grade and late-grade spread; an editor would need a montage from separate supported states."
+  ],
+  "eligibility": {
+    "result": "pass",
+    "complete_candidate_proof":"Claim: the album organizes school-year information across multiple years; owner: the album; action: turn between grade sections; result: distinct grade headings and structured prompts appear; confirmation: early- and later-grade spreads remain readable.",
+    "first_purchase_meaning_candidate":"A supported contrast between an early-grade section and a later-grade section can communicate one structured album for multiple school years.",
+    "review_scope_note":"Visual review used extracted diagnostic frames only; no final media was rendered or uploaded."
+  }
+}

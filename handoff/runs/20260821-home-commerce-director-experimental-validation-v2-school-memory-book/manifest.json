@@ -1,0 +1,48 @@
+{
+  "schema_version":"1.0",
+  "run_id":"20260821-home-commerce-director-experimental-validation-v2-school-memory-book",
+  "experiment":"Home Commerce Director Experimental Validation v2 — School Memory Book",
+  "status":"passed_pending_handoff",
+  "quality_status":"provisional_treatment_supported_for_planning_judgment",
+  "scope":"video_research_director_judgment_only",
+  "branch":"home-commerce-director-validation-v2",
+  "handoff_target":"origin/handoff",
+  "base_commit":"4e79a7db4fe7d3ec37c699a59c28c17c85e44450",
+  "artifact_commit":"pending",
+  "handoff_checkpoint_commit":"pending",
+  "main_modified":false,
+  "software_modified":false,
+  "production_rules_generated_or_promoted":false,
+  "cutter_entered":false,
+  "video_rendered":false,
+  "media_uploaded":false,
+  "frozen_input":{
+    "evidence_map_sha256":"4946240e5a079d371fc4a7937ba67546ff41f64f33e7637ce141e4d24e8f0dd2",
+    "source_file_count":11,
+    "source_duration_s":275.032,
+    "source_hashes_recorded":true
+  },
+  "artifacts":[
+    {"path":"handoff/runs/20260821-home-commerce-director-experimental-validation-v2-school-memory-book/evidence_map.json","bytes":10309,"sha256":"4946240e5a079d371fc4a7937ba67546ff41f64f33e7637ce141e4d24e8f0dd2"},
+    {"path":"handoff/runs/20260821-home-commerce-director-experimental-validation-v2-school-memory-book/experimental_director_plan.json","bytes":12643,"sha256":"23d56fce2eabf8d6b0f6ea9f8aa5cea712ac60786cb9c5c5cfe815a3db6993ba"},
+    {"path":"handoff/runs/20260821-home-commerce-director-experimental-validation-v2-school-memory-book/old_director_plan.json","bytes":6843,"sha256":"6ba8cbee62eac22767258a5724116f14a1ac12cca04ca929b283ddbf82fd7f63"},
+    {"path":"handoff/runs/20260821-home-commerce-director-experimental-validation-v2-school-memory-book/strategy_comparison.json","bytes":6579,"sha256":"f11456f0731cb8643ddef2ab2343508b56d854be646d73863a2edce55463f3e9"},
+    {"path":"handoff/runs/20260821-home-commerce-director-experimental-validation-v2-school-memory-book/summary.md","bytes":4336,"sha256":"1b22e654f7aa569dfa036df78a427ebdc450e51eff54d8fb12742aa007eb048f"}
+  ],
+  "local_only":[
+    {"path":"D:\\8.20剪辑\\学校记忆书\\*.MP4","reason":"Raw private source media; hashes and neutral evidence observations only are published."},
+    {"path":"C:\\Users\\Mayn\\Documents\\Codex\\2026-08-21\\referenced-chatgpt-conversation-this-is-an-6\\work\\memory_book_contact_sheets\\","reason":"Rebuildable diagnostic review frames; not a requested deliverable and not uploaded."}
+  ],
+  "gates":{
+    "sample_eligibility":"pass",
+    "source_hash_freeze":"pass",
+    "json_parse":"pass",
+    "unsupported_claim_avoidance":"pass",
+    "proof_ownership":"pass_at_plan_level",
+    "human_sanity_gate":"not_applicable_no_render",
+    "blinded_editor_review":"not_performed",
+    "formal_validation_label":"provisional_only"
+  },
+  "conclusion":"Experimental v2 is preferred at the planning-judgment layer because it makes the supported multi-year purchase meaning the organizing decision, selects Information primary with bounded Emotion secondary, and supplies evidence-aware Hero, CTA and fallback behavior. This does not establish conversion lift or authorize production promotion.",
+  "next_step":"After user acceptance, run a separate controlled Cutter validation with both Director plans frozen; do not optimize transitions before narrative preference review."
+}

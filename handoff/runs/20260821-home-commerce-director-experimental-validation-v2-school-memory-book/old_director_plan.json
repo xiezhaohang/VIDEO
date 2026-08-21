@@ -1,0 +1,51 @@
+{
+  "schema_version":"1.0",
+  "run_id":"20260821-home-commerce-director-experimental-validation-v2-school-memory-book",
+  "arm_id":"A",
+  "director_version":"old_director_action_display_baseline",
+  "frozen_input_hash":"4946240e5a079d371fc4a7937ba67546ff41f64f33e7637ce141e4d24e8f0dd2",
+  "emitted_before_treatment_review":true,
+  "purchase_motivation":{
+    "primary":"Show parents what the School Memories Album contains and how its pages are organized.",
+    "secondary":"Present it as a colorful keepsake book for school records.",
+    "user_problem":"School information and pictures need a single place to be recorded.",
+    "desired_change":"Move from separate school details to one physical album.",
+    "why_buy":"It offers preprinted pages for recording school details and photos.",
+    "evidence":["F01","F03","F04"],
+    "risks":["The motivation stays close to product description and does not clearly prioritize the multi-year benefit."]
+  },
+  "piev_scores":{
+    "proof":{"demand":0.52,"material_support":0.78,"effective":0.61,"evidence":["Page turns and readable fields show that the printed sections exist."],"gaps":["No completed-use example."]},
+    "information":{"demand":0.80,"material_support":0.91,"effective":0.84,"evidence":["Many grade headings and prompt types are visible."],"gaps":["Exact complete grade range is not verified."]},
+    "emotion":{"demand":0.42,"material_support":0.25,"effective":0.31,"evidence":["Cover uses the word keepsakes."],"gaps":["No child, parent, filled page or reaction."]},
+    "visual_appeal":{"demand":0.50,"material_support":0.66,"effective":0.56,"evidence":["Colorful cover and varied page designs."],"gaps":["No styled lifestyle or gift scene."]}
+  },
+  "primary_strategy":"information_led",
+  "secondary_strategy":"visual_led",
+  "confidence":{"level":"medium","basis":["Product identity and interior page types are clear.","The plan does not resolve whether the main sale is organization, long-term keepsake value or visual design."],"calibration":"evidence coverage, not conversion probability"},
+  "hook_hypothesis":{
+    "purchase_meaning":"A colorful School Memories Album with pages to fill in.",
+    "source_evidence":["S01"],
+    "promise_created":"The viewer will see what is inside the album.",
+    "payoff_due":"Interior grade pages and fields.",
+    "why_first":"The cover is the cleanest identity shot and follows the normal product-introduction order.",
+    "risk":"It communicates what the product is before communicating why its multi-year structure matters."
+  },
+  "required_proof":[
+    {"claim":"The album includes grade-specific record pages.","owner":"School Memories Album","action":"Open and turn pages","result":"Grade headings and prompts appear","confirmation":"Hold one early-grade and one later-grade page long enough to read","support_status":"complete","source_evidence":["S02","S06","S09"]},
+    {"claim":"The album includes places for pictures and written details.","owner":"School Memories Album pages","action":"Point to photo boxes and prompt lines","result":"Blank picture/drawing boxes and labeled fields are visible","confirmation":"Hold until labels are readable","support_status":"complete","source_evidence":["S03","S04","S05","S07"]}
+  ],
+  "information_state_plan":[
+    {"order":1,"shot_task":"hook","new_understanding":"This is a colorful School Memories Album.","source_evidence":["S01"],"voice_or_caption_job":"Name the product.","enter_when":"Video opens.","exit_when":"Cover title is readable.","delete_cost":"Product identity would be delayed."},
+    {"order":2,"shot_task":"setup","new_understanding":"The album opens into school-year pages.","source_evidence":["S02"],"voice_or_caption_job":"Introduce the inside pages.","enter_when":"Cover identity is established.","exit_when":"Preschool/Kindergarten page is readable.","delete_cost":"Viewer may not understand the interior format."},
+    {"order":3,"shot_task":"proof","new_understanding":"Early-grade pages include profile and activity prompts.","source_evidence":["S03","S04"],"voice_or_caption_job":"List example fields.","enter_when":"An early-grade spread is open.","exit_when":"Representative fields are readable.","delete_cost":"Feature detail would be vague."},
+    {"order":4,"shot_task":"proof","new_understanding":"Pages include picture and drawing spaces.","source_evidence":["S05"],"voice_or_caption_job":"Call out photo and drawing areas.","enter_when":"Field examples are understood.","exit_when":"Both boxes are readable.","delete_cost":"Personalization format would be missed."},
+    {"order":5,"shot_task":"option","new_understanding":"The album continues through later grade designs.","source_evidence":["S06","S08","S09"],"voice_or_caption_job":"Mention later grades.","enter_when":"Early-grade contents are known.","exit_when":"Several later-grade headings have appeared.","delete_cost":"Breadth would feel smaller."},
+    {"order":6,"shot_task":"hero","new_understanding":"The complete album has a substantial, colorful page block.","source_evidence":["S10","S11"],"voice_or_caption_job":"Summarize it as one complete school memory book.","enter_when":"Interior tour is complete.","exit_when":"Front cover and thickness are understood.","delete_cost":"No complete-product close."},
+    {"order":7,"shot_task":"cta","new_understanding":"The product tour is finished.","source_evidence":["S01"],"voice_or_caption_job":"Use a generic non-directional invitation to learn more.","enter_when":"Hero is readable.","exit_when":"CTA line is readable.","delete_cost":"No explicit close, though evidence is unchanged."}
+  ],
+  "hero_strategy":{"job":"Finish on the cover and page thickness as a conventional complete-product summary.","source_evidence":["S10","S11"],"hold_or_exit_condition":"Exit once cover and page volume are understood; avoid repeated rotations.","fallback_if_missing":"Use the clean front-cover state from S01."},
+  "cta_strategy":{"job":"Use a soft, non-directional product-discovery line only.","source_evidence":["S01"],"hold_or_exit_condition":"Keep only long enough for a short line; no purchase-location language.","fallback_if_missing":"End without a CTA on the clean cover Hero."},
+  "fallback":{"trigger":"Later-grade headings or detailed fields are not readable enough for the planned sequence.","replacement_plan":"Shorten to cover, one early-grade spread, one photo/prompt detail and product Hero.","claims_removed_or_weakened":["Broad multi-year coverage","Specific field breadth"],"reshoot_needs":["Clean wide shot showing separated grade sections","Filled sample page if real and authorized"]},
+  "baseline_characterization":"A competent feature tour organized primarily by product reveal and page chronology. It recognizes record-page utility but does not make the early-to-late school-year meaning the opening decision."
+}

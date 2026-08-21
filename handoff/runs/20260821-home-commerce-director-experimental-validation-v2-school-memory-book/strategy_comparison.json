@@ -1,0 +1,68 @@
+{
+  "schema_version":"1.0",
+  "run_id":"20260821-home-commerce-director-experimental-validation-v2-school-memory-book",
+  "scope":"planning_judgment_only_no_cutter_no_render",
+  "frozen_input_hash":"4946240e5a079d371fc4a7937ba67546ff41f64f33e7637ce141e4d24e8f0dd2",
+  "arms":{"A":"old_director_action_display_baseline","B":"home_commerce_director_experimental_v2"},
+  "comparison_questions":[
+    {
+      "question":"1. Old Director 是否只会按页面顺序展示？",
+      "answer":"Not literally only, but substantially yes.",
+      "finding":"Arm A adds a conventional identity opener, selected detail shots and a Hero, so it is not a raw chronological dump. Its commercial logic nevertheless remains cover → opening → early-grade details → later grades → thickness/Hero. The ordering is led by the physical/page sequence rather than by a prioritized buyer question.",
+      "evidence":["A information states 1–6","A hook uses S01 cover identity","A baseline_characterization"]
+    },
+    {
+      "question":"2. Experimental v2 是否提前识别购买意义？",
+      "answer":"Yes.",
+      "finding":"Arm B identifies the product's strongest supported meaning before arranging the tour: one structured album connects multiple school years. It therefore opens on an early-to-later grade contrast, then uses the cover as identity confirmation. This reverses Arm A's identity-first logic.",
+      "evidence":["B purchase_motivation","B hook_hypothesis","B information states 1–3","F02"]
+    },
+    {
+      "question":"3. 情绪价值是否有素材支撑？",
+      "answer":"Only partially and indirectly.",
+      "finding":"The cover's 'keepsakes' wording and the repeated early/later grade structure support a restrained interpretation: the book is designed to keep school-year snapshots together for later reference. They do not support claims about a real child's feelings, parent-child bonding, enjoyment, gifting success or an actually completed long-term record.",
+      "supported_emotion":"Potential value of looking back across organized school-year details.",
+      "unsupported_emotion":["Child reaction","Parent reaction","Family bonding","Gift delight","Guaranteed preservation outcome"],
+      "evidence":["F01","F02","F06","material gaps 1–2"]
+    },
+    {
+      "question":"4. 是否应该 Emotion primary，还是 Information primary？",
+      "answer":"Information primary; Emotion secondary.",
+      "finding":"Information has both the highest purchase demand and the strongest direct supply: multiple grade headings, recurring structured fields, photo/drawing areas and later-grade reflections. Emotion has meaningful demand but weak direct supply because pages are blank and no person or use scene exists. Emotion primary would ask copy to manufacture the missing experience; the evidence-safe choice is to let Information prove the structure and Emotion translate only the supported keepsake meaning.",
+      "B_scores":{"information_effective":0.95,"emotion_effective":0.49}
+    },
+    {
+      "question":"5. 两个 Director 最大差异在哪里？",
+      "answer":"The unit of organization changes from product/page sequence to buyer-understanding sequence.",
+      "finding":"Arm A asks 'what should we show next inside the book?' Arm B first asks 'why would this specific structure matter, and what can the footage prove?' That changes the Hook, the role of the cover, the selection of repeated grade pages, the caption job, the Hero task and the fallback when emotional proof is absent."
+    }
+  ],
+  "dimension_comparison":{
+    "purchase_motivation":{"winner":"B","reason":"B distinguishes a structured multi-year record from a generic album-with-fields description."},
+    "first_purchase_meaning":{"winner":"B","reason":"B predicts an early/later-grade contrast; A begins with identity and delays the multi-year benefit."},
+    "evidence_calibration":{"winner":"B","reason":"B explicitly separates supported keepsake meaning from unsupported reactions, completed use and exact range."},
+    "shot_task_reasonableness":{"winner":"B","reason":"B gives each state a buyer-question job and removes grade/angle repetition after the meaning is established."},
+    "hero_strategy":{"winner":"B","reason":"B makes the Hero summarize one album/multiple years, while A uses a conventional product-and-thickness close."},
+    "cta_strategy":{"winner":"tie","reason":"Both avoid directional purchase language; B more clearly ties the CTA to the proven value and allows omission."},
+    "simplicity":{"winner":"A","reason":"A is easier to execute as a standard product tour, though this simplicity is also its main strategic limitation."}
+  },
+  "manual_commercial_reference_judgment":{
+    "preferred_arm":"B",
+    "reason":"A buyer is more likely to understand the product's distinctive reason for existing when the plan first connects early and later school years, then proves the grade structure and recurring prompts. Arm A is accurate but interchangeable with a generic stationery walkthrough.",
+    "confidence":"high",
+    "integrity_note":"This is an evidence-based coordinator judgment, not a completed blinded multi-editor preference panel."
+  },
+  "validation_result":{
+    "label":"provisional_treatment_supported_for_planning_judgment",
+    "what_is_supported":"Experimental v2 produced a materially different and better-calibrated Director plan on this sample: purchase meaning first, Information primary, bounded Emotion secondary, evidence-aware Hero and fallback.",
+    "what_is_not_supported":"No claim of conversion lift, final-video superiority, editor adoption majority or production-rule promotion.",
+    "confounds":["The two plans were generated in sequence by one coordinator rather than independent blinded model instances.","No qualified editor panel scored anonymized plans.","No Cutter/render comparison exists by design."],
+    "promotion_status":"experimental_no_promotion"
+  },
+  "cutter_recommendation":{
+    "worth_entering_next":true,
+    "decision":"Proceed to a controlled Cutter validation only after the user accepts this Director judgment checkpoint.",
+    "freeze_for_next_test":["Identical source set and factual evidence map","Arm A page-tour logic","Arm B multi-year meaning-first logic","No unsupported emotion or offer claim","No transition optimization until narrative comparison is reviewed"],
+    "success_question":"Does the B timeline make the one-album/multiple-years purchase meaning legible earlier and reduce meaningful re-edit preference without losing page readability?"
+  }
+}
