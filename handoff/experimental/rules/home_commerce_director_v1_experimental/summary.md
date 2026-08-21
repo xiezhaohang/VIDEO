@@ -44,8 +44,8 @@ An A/B win keeps the rule experimental. Production promotion requires repeated n
 
 ## Checkpoint
 
-- Base commit: `d79f5a45221eb942e68c76ad882ea27b47549f27`
-- Artifact commit: `985941af242e15f4cb5fe7bd3b848ac853dbc1f4`
-- Checkpoint status: local `handoff` checkpoint recorded; checkpoint commit SHA is reported after this metadata commit
-- Remote status: `blocked_handoff` — `git push origin handoff` failed on 2026-08-21 because the GitHub HTTPS connection was reset
-- Recovery condition: restore GitHub HTTPS connectivity, then push local `handoff` and verify `origin/handoff` contains the checkpoint commit
+- Publication base: `ced698b010e565f1165ef9723a20ec8fa8f57cf8`
+- Source artifact/checkpoint: `985941af242e15f4cb5fe7bd3b848ac853dbc1f4` / `d4b9ae2424921432728aa5b585b37c1ab861e03d`
+- Published payload: `ab64d794552330ea77c8b41cfb4c3fa5ea75fa05`
+- Remote status: `handed_off`; verified on `origin/handoff` on 2026-08-21
+- Safety scope: research text, JSON, YAML, manifest and status only; no video, audio, raw material, credential or private file was added by this publication

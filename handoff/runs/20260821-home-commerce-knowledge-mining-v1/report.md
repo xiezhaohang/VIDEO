@@ -3,7 +3,7 @@
 ## Identity
 
 - Run ID: `20260821-home-commerce-knowledge-mining-v1`
-- Status: `blocked_handoff`
+- Status: `handed_off`
 - Started/completed at: `2026-08-21T00:00:00+08:00` / `2026-08-21T00:00:00+08:00`
 - Owner: Codex research agent
 - Branch: `handoff`
@@ -47,7 +47,7 @@ None. No video, audio, image, binary, cache or private source media was copied i
 
 ## Conclusion
 
-- Final decision: `blocked_handoff`; local artifacts are complete, but remote export requires explicit approval.
+- Final decision: `handed_off`; the research-only payload is published and verified on `origin/handoff`.
 - Validated: purchase meaning first; Proof Chain/Ownership; information exhaustion; commercial-intent completion; sales-meaning VO/subtitles; evidence-bound Claim/CTA; repetition upgrade; Hero task.
 - Not validated: universal thresholds, universal result-first, universal CTA, conversion effects, fixed score formula.
 - Stable rules approved for main: None.
@@ -55,9 +55,10 @@ None. No video, audio, image, binary, cache or private source media was copied i
 ## Handoff and next step
 
 - Branch: `handoff`
-- Local artifact commit SHA: `a88b533c579fad4fa10a01d97bb16d6d8e0d63e0`; remote commit pending
+- Source artifact/checkpoint SHA: `a88b533c579fad4fa10a01d97bb16d6d8e0d63e0` / `6c1c99cbc88e8a1283984041b5a81e8029b58b44`
+- Published payload SHA: `ab64d794552330ea77c8b41cfb4c3fa5ea75fa05`
 - Published files: text/JSON/manifest only
 - Local-only: none
-- Publish blocker: remote destination has not been explicitly authorized to receive this internal research payload.
-- Recovery: after explicit approval, push the checkpoint to `origin/handoff`; no workaround is permitted.
-- Next experiment: controlled Preference/A-B tests listed in the knowledge base only after handoff; no new video was started here.
+- Publish verification: `origin/handoff` resolved to the published payload SHA after push.
+- Publication scope: text/JSON/YAML/manifest/status only; no media, source material, credential or private file was added.
+- Next experiment: controlled Director Experimental Validation v2 on one eligible unseen product; no new video was started here.

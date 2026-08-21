@@ -57,7 +57,8 @@
 ## Handoff
 
 - Branch target：`handoff`
-- Base commit：`d79f5a4`
-- Artifact commit：`a88b533c579fad4fa10a01d97bb16d6d8e0d63e0`
-- Remote status：`blocked_handoff`；目标仓库未获明确的研究载荷导出授权，远端未更新
+- Publication base：`ced698b010e565f1165ef9723a20ec8fa8f57cf8`
+- Source artifact/checkpoint：`a88b533c579fad4fa10a01d97bb16d6d8e0d63e0` / `6c1c99cbc88e8a1283984041b5a81e8029b58b44`
+- Published payload：`ab64d794552330ea77c8b41cfb4c3fa5ea75fa05`
+- Remote status：`handed_off`；已在 `origin/handoff` 验证
 - Local-only：none；没有视频或二进制产物。

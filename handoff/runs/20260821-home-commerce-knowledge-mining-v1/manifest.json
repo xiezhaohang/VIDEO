@@ -2,11 +2,13 @@
   "schema_version": "1.0",
   "run_id": "20260821-home-commerce-knowledge-mining-v1",
   "experiment_name": "Home Commerce Knowledge Mining v1",
-  "status": "blocked_handoff",
+  "status": "handed_off",
   "created_at": "2026-08-21T00:00:00+08:00",
   "branch": "handoff",
-  "base_commit": "d79f5a45221eb942e68c76ad882ea27b47549f27",
-  "handoff_commit": "pending",
+  "base_commit": "ced698b010e565f1165ef9723a20ec8fa8f57cf8",
+  "source_artifact_commit": "a88b533c579fad4fa10a01d97bb16d6d8e0d63e0",
+  "source_checkpoint_commit": "6c1c99cbc88e8a1283984041b5a81e8029b58b44",
+  "handoff_commit": "ab64d794552330ea77c8b41cfb4c3fa5ea75fa05",
   "inputs": [
     {"path": "TikTok Home Commerce Research v1/tiktok_account_inventory.json", "sha256": "475b7043519b77e5260ca180fb145c71cb3352b71331df956c7f406859c744f4", "role": "source"},
     {"path": "TikTok Home Commerce Research v1/video_breakdown.json", "sha256": "f61d509bbabff5a5ee07bd52f9e7c9a58e23bc1cd24c6a78da58f2fd6765340f", "role": "source"},
@@ -43,11 +45,11 @@
     {"repository_path": "handoff/runs/20260821-home-commerce-knowledge-mining-v1/information_density_rules.md", "sha256": "803232422ef221ebdcc3c5fcacb26bad0c9dd0a1562101c84452eab342b3a140", "media_type": "text/markdown", "required": true},
     {"repository_path": "handoff/runs/20260821-home-commerce-knowledge-mining-v1/failure_pattern_library.md", "sha256": "1b20b1b910845ec7821227d106a7d6f8a6f8f77007436b9c0bdb339dc2ba0590", "media_type": "text/markdown", "required": true},
     {"repository_path": "handoff/runs/20260821-home-commerce-knowledge-mining-v1/director_reasoning_model_v1.md", "sha256": "711f045dbb44dc8a829322fa0954f6aa084658602392e94535bd00aabd184149", "media_type": "text/markdown", "required": true},
-    {"repository_path": "handoff/runs/20260821-home-commerce-knowledge-mining-v1/summary.md", "sha256": "25b6f7807424fb3edfe94b646565960583225b36a30f0587df0d9bb3c015734c", "media_type": "text/markdown", "required": true},
-    {"repository_path": "handoff/runs/20260821-home-commerce-knowledge-mining-v1/report.md", "sha256": "22f333a0d40559a1d3a50c27dbd600cf6e3875025e90959e0635c86e38e8ae09", "media_type": "text/markdown", "required": true}
+    {"repository_path": "handoff/runs/20260821-home-commerce-knowledge-mining-v1/summary.md", "sha256": "9f5ed5f0638b79a91f6c48e2885a90e96d7d13e26521f36e169fc0c6623d1f77", "media_type": "text/markdown", "required": true},
+    {"repository_path": "handoff/runs/20260821-home-commerce-knowledge-mining-v1/report.md", "sha256": "ca0cf71ac1a2aff0961f5229cc29833146261d6c415d666575988486c31a5eee", "media_type": "text/markdown", "required": true}
   ],
   "local_only": [],
   "report_path": "handoff/runs/20260821-home-commerce-knowledge-mining-v1/report.md",
-  "conclusion": "Knowledge layer completed with graded evidence. Local artifact commit a88b533c579fad4fa10a01d97bb16d6d8e0d63e0 exists, but remote handoff is blocked pending explicit authorization to export the research payload to origin. No production promotion and no causal conversion claim.",
-  "next_step": "After explicit remote-export approval, push the local checkpoint to origin/handoff; only then run controlled preference/A-B tests before promoting strong hypotheses."
+  "conclusion": "Knowledge layer completed with graded evidence and published to origin/handoff in payload ab64d794552330ea77c8b41cfb4c3fa5ea75fa05. No production promotion and no causal conversion claim.",
+  "next_step": "Run the Home Commerce Director Experimental Validation v2 protocol on one eligible unseen product sample; do not promote strong hypotheses without controlled comparison and human review."
 }
