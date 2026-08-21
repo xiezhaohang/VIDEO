@@ -8,7 +8,7 @@
   "branch":"home-commerce-director-validation-v2",
   "handoff_target":"origin/handoff",
   "base_commit":"4e79a7db4fe7d3ec37c699a59c28c17c85e44450",
-  "artifact_commit":"pending",
+  "artifact_commit":"c0875b5c02177c44a1bf9966345255cd9fbd8304",
   "handoff_checkpoint_commit":"pending",
   "main_modified":false,
   "software_modified":false,
