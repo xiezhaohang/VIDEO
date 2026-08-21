@@ -5,6 +5,7 @@
   "status": "framework_ready_waiting_for_sample",
   "branch": "home-commerce-director-validation-v2",
   "base_commit": "f000764242ba9ba03e239a7b5ec9160bc4593b01",
+  "framework_commit": "5abd1e99963b070f9245c6e280f8adcbb6020189",
   "scope": "validation_framework_only",
   "inputs": [
     "Home Commerce Knowledge Base v1",
