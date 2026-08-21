@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260821-home-commerce-knowledge-mining-v1",
+  "experiment_name": "Home Commerce Knowledge Mining v1",
+  "status": "blocked_handoff",
+  "created_at": "2026-08-21T00:00:00+08:00",
+  "branch": "handoff",
+  "base_commit": "d79f5a45221eb942e68c76ad882ea27b47549f27",
+  "handoff_commit": "pending",
+  "inputs": [
+    {"path": "TikTok Home Commerce Research v1/tiktok_account_inventory.json", "sha256": "475b7043519b77e5260ca180fb145c71cb3352b71331df956c7f406859c744f4", "role": "source"},
+    {"path": "TikTok Home Commerce Research v1/video_breakdown.json", "sha256": "f61d509bbabff5a5ee07bd52f9e7c9a58e23bc1cd24c6a78da58f2fd6765340f", "role": "source"},
+    {"path": "TikTok Home Commerce Research v1/hook_library.md", "sha256": "78e8b11c04e29492f18a1c3918f27e62e82296fa602bf9cac872747d75c71bcc", "role": "source"},
+    {"path": "TikTok Home Commerce Research v1/narrative_patterns.md", "sha256": "9b6498e27dd5887d88ca70dffa4c0e520327d7a02473ea2225501d72ed2815d6", "role": "source"},
+    {"path": "TikTok Home Commerce Research v1/home_commerce_director_rules.md", "sha256": "7d32deb7064b4300b63bcc5a43475ecebb2864f8930c02d192238681f79eeed9", "role": "source"},
+    {"path": "TikTok Home Commerce Research v1/summary.md", "sha256": "ba73a2b09ec5da93069de10c0f52521e7cfba8c131eb4a4694f7b2eb2bb3225b", "role": "source"},
+    {"path": "repository cases: magnetic power bank, earphone case, 8.19 cards, slime", "sha256": "multiple versioned repository artifacts", "role": "source"}
+  ],
+  "human_sanity_gate": {
+    "status": "not_applicable",
+    "reviewer": "none",
+    "reviewed_at": null,
+    "version_reviewed": "no new finished video",
+    "hard_failures": {"visible_motion_loop": false, "repeated_motion_fill": false, "other": []},
+    "notes": "Knowledge-mining run only; no media generated."
+  },
+  "quality_gates": {
+    "action_integrity": {"status": "not_applicable", "evidence": "No new timeline; rule preserved in knowledge layer."},
+    "proof_chain": {"status": "pass", "evidence": "All functional recommendations retain Claim -> Action -> Result -> Confirmation."},
+    "proof_ownership": {"status": "pass", "evidence": "Cross-owner proof substitution is explicitly prohibited."},
+    "rule_grading": {"status": "pass", "evidence": "All findings separated into validated, strong hypothesis, or weak hypothesis."}
+  },
+  "metrics": {
+    "evaluated_after_human_sanity_gate": false,
+    "summary": {"public_videos_analyzed": 30, "accounts": 3, "internal_cases": 4, "patterns": 6, "failure_patterns": 16},
+    "source_path": "handoff/runs/20260821-home-commerce-knowledge-mining-v1/summary.md"
+  },
+  "artifacts": [
+    {"repository_path": "handoff/runs/20260821-home-commerce-knowledge-mining-v1/home_commerce_knowledge_base_v1.md", "sha256": "91619db4472546d440e19259c1a047eab298f1369ddf409160bc79bdc0de16f9", "media_type": "text/markdown", "required": true},
+    {"repository_path": "handoff/runs/20260821-home-commerce-knowledge-mining-v1/account_style_matrix.json", "sha256": "5eb24f91812db29852034fc69adfd91ba5ac76698f3f25c20d1130287a69a2a6", "media_type": "application/json", "required": true},
+    {"repository_path": "handoff/runs/20260821-home-commerce-knowledge-mining-v1/pattern_library.json", "sha256": "3b07770099293a5fa1940a6f93ae6a2f566aa919c631276bf2f948888858bf5e", "media_type": "application/json", "required": true},
+    {"repository_path": "handoff/runs/20260821-home-commerce-knowledge-mining-v1/shot_function_library.md", "sha256": "09823806eeb5c5a472e28106643ee33239ff514edbde63ae520594da3edbba41", "media_type": "text/markdown", "required": true},
+    {"repository_path": "handoff/runs/20260821-home-commerce-knowledge-mining-v1/information_density_rules.md", "sha256": "803232422ef221ebdcc3c5fcacb26bad0c9dd0a1562101c84452eab342b3a140", "media_type": "text/markdown", "required": true},
+    {"repository_path": "handoff/runs/20260821-home-commerce-knowledge-mining-v1/failure_pattern_library.md", "sha256": "1b20b1b910845ec7821227d106a7d6f8a6f8f77007436b9c0bdb339dc2ba0590", "media_type": "text/markdown", "required": true},
+    {"repository_path": "handoff/runs/20260821-home-commerce-knowledge-mining-v1/director_reasoning_model_v1.md", "sha256": "711f045dbb44dc8a829322fa0954f6aa084658602392e94535bd00aabd184149", "media_type": "text/markdown", "required": true},
+    {"repository_path": "handoff/runs/20260821-home-commerce-knowledge-mining-v1/summary.md", "sha256": "25b6f7807424fb3edfe94b646565960583225b36a30f0587df0d9bb3c015734c", "media_type": "text/markdown", "required": true},
+    {"repository_path": "handoff/runs/20260821-home-commerce-knowledge-mining-v1/report.md", "sha256": "22f333a0d40559a1d3a50c27dbd600cf6e3875025e90959e0635c86e38e8ae09", "media_type": "text/markdown", "required": true}
+  ],
+  "local_only": [],
+  "report_path": "handoff/runs/20260821-home-commerce-knowledge-mining-v1/report.md",
+  "conclusion": "Knowledge layer completed with graded evidence. Local artifact commit a88b533c579fad4fa10a01d97bb16d6d8e0d63e0 exists, but remote handoff is blocked pending explicit authorization to export the research payload to origin. No production promotion and no causal conversion claim.",
+  "next_step": "After explicit remote-export approval, push the local checkpoint to origin/handoff; only then run controlled preference/A-B tests before promoting strong hypotheses."
+}

@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260821-home-commerce-knowledge-mining-v1",
+  "evidence_scope": {
+    "public_samples": 30,
+    "samples_per_account": 10,
+    "conversion_data_available": false,
+    "interpretation": "Observed structure-performance co-occurrence, not causal conversion proof."
+  },
+  "accounts": [
+    {
+      "account": "@pick.tech",
+      "audience_intent": {
+        "value": "发现新奇、可分享、可送礼或能表达圈层身份的小物；少量用户寻找低门槛学习/个人效率工具。",
+        "grade": "strong hypothesis",
+        "evidence": ["7529854883004976439", "7604785359913782541", "7535041139926158605", "7550367000267066638", "7602580144242380046"]
+      },
+      "purchase_motivation": {
+        "value": "先由可爱、笑点、粉丝识别或触感产生‘我想拥有/我知道谁会喜欢’，功能随后降低怀疑；学习品则以降低复杂度和身份匹配驱动。",
+        "grade": "strong hypothesis"
+      },
+      "hook_preference": {
+        "value": "产品或关键动作直接出现；允许 0.5–1.0 秒微揭晓，但不允许长开箱。身份符号、感官反馈和受众点名比抽象规格更常见。",
+        "grade": "validated"
+      },
+      "proof_expectation": {
+        "value": "新奇/身份商品只需可读细节、真实使用与变体；功能或学习商品需要机制与结果。不能给纯审美商品伪造痛点。",
+        "grade": "strong hypothesis"
+      },
+      "information_rhythm": {
+        "value": "样本平均新信息间隔 3.27 秒；对象本身的新奇、数字递增、灯效或触觉反馈持续时可长 Hold。",
+        "grade": "strong hypothesis",
+        "boundary": "3.27 秒是账号样本描述值，不是 Director 阈值。"
+      },
+      "ending_style": {
+        "value": "多变体/成套陈列、使用中的近景或最强感官状态；多为 soft discovery、identity 或 engagement CTA。",
+        "grade": "strong hypothesis"
+      },
+      "style_only": [
+        "用反应音频代替解释",
+        "身份/礼物商品可无明确 CTA",
+        "较长的产品近景 Hold",
+        "多变体成套 Hero 的高频使用"
+      ]
+    },
+    {
+      "account": "@hdhdbc.tech",
+      "audience_intent": {
+        "value": "寻找能解决充电、兼容、健康测量、导入或拍摄问题的实用工具，并需要足够解释来判断是否可信。",
+        "grade": "strong hypothesis"
+      },
+      "purchase_motivation": {
+        "value": "减少步骤、替代多个配件、提升便利性或降低家庭风险；购买决定依赖功能覆盖与可见证明。",
+        "grade": "strong hypothesis"
+      },
+      "hook_preference": {
+        "value": "痛点、全合一承诺、结果预览或即时机制证明；商品通常在首秒可识别，随后进入功能阶梯。",
+        "grade": "validated"
+      },
+      "proof_expectation": {
+        "value": "每个保留功能需要同 owner 的 Action→Result→Confirmation；规格口播不能代替充电状态、导入结果或测量读数。",
+        "grade": "validated"
+      },
+      "information_rhythm": {
+        "value": "样本平均新信息间隔 2.79 秒；较长视频依靠连续功能证明维持，但功能越多并不等于购买意义越强。",
+        "grade": "strong hypothesis",
+        "boundary": "西语长口播与 scarcity 的效果没有同商品转化对照。"
+      },
+      "ending_style": {
+        "value": "组合使用结果、读数/导入界面或完整套装，随后 location/scarcity CTA。",
+        "grade": "strong hypothesis"
+      },
+      "style_only": [
+        "西语高密度连续口播",
+        "频繁使用库存/优惠话术",
+        "长功能栈与明确购物车 CTA",
+        "包装与产品同框收尾"
+      ]
+    },
+    {
+      "account": "@deal..digger",
+      "audience_intent": {
+        "value": "寻找低成本、可立刻看出变化的车内/家居/穿搭升级，以及外观与功能兼得的实用好物。",
+        "grade": "strong hypothesis"
+      },
+      "purchase_motivation": {
+        "value": "用很少操作获得明显完成态、审美升级、适配确认或容量/易装收益。",
+        "grade": "strong hypothesis"
+      },
+      "hook_preference": {
+        "value": "完成态、颜色选择、安装动作或可读身份语句直接出现；结果强时先预览结果再回到机制。",
+        "grade": "validated"
+      },
+      "proof_expectation": {
+        "value": "改造必须看到可信中间动作与使用后状态；服饰/身份品可用材质、细节、场景与变体替代功能证明。",
+        "grade": "validated"
+      },
+      "information_rhythm": {
+        "value": "样本平均新信息间隔 2.44 秒；结果→安装→适配/细节→更强结果快速推进，同品不同视频更换 Hook 假设。",
+        "grade": "strong hypothesis",
+        "boundary": "快节奏与高播放共现，不能推出快切导致转化。"
+      },
+      "ending_style": {
+        "value": "完整安装、暗场氛围、装满/收合或可读使用态；常配 choice/location CTA。",
+        "grade": "strong hypothesis"
+      },
+      "style_only": [
+        "车载品占样本一半",
+        "同商品多创意变体",
+        "结果优先和短证明段的高频组合",
+        "审美 superlative 与颜色选择 CTA"
+      ]
+    }
+  ],
+  "generalizable_rules": [
+    {"rule": "首屏交付购买意义，而不是默认交付拍摄流程。", "grade": "validated"},
+    {"rule": "功能 Claim 必须由同一对象完成 Claim→Action→Result→Confirmation。", "grade": "validated"},
+    {"rule": "当前状态不再新增理解且必要读懂时间完成后才切。", "grade": "validated"},
+    {"rule": "结果强的商品可先给结果，但机制型 Claim 仍需后补连续 Proof。", "grade": "strong hypothesis"},
+    {"rule": "Hero 必须升级或汇总购买意义，不能只是包装或重复角度。", "grade": "validated"},
+    {"rule": "字幕/VO 应增加销售意义，不能只复述动作。", "grade": "validated"},
+    {"rule": "同一事实重复出现只有在 owner、能力、数量、场景、结果或意义升级时保留。", "grade": "validated"}
+  ],
+  "non_generalizable_observations": [
+    "@pick.tech 的无 CTA、反应音频和身份型商品占比",
+    "@hdhdbc.tech 的西语长口播、scarcity 频率和 30–40 秒时长",
+    "@deal..digger 的车品占比、固定快节奏与结果优先频率",
+    "任一账号的平均镜头时长或平均新信息间隔",
+    "公开播放量可代表转化率或购买偏好"
+  ]
+}

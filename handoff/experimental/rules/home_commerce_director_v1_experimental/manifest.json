@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260821-home-commerce-director-experimental-rule-layer-v1",
+  "experiment_name": "Home Commerce Director Experimental Rule Layer v1",
+  "status": "blocked_handoff",
+  "created_at": "2026-08-21T00:00:00+08:00",
+  "branch": "handoff",
+  "base_commit": "d79f5a45221eb942e68c76ad882ea27b47549f27",
+  "handoff_commit": "985941af242e15f4cb5fe7bd3b848ac853dbc1f4",
+  "remote_status": {
+    "state": "push_failed",
+    "remote": "origin",
+    "remote_branch": "handoff",
+    "attempted_at": "2026-08-21",
+    "reason": "GitHub HTTPS connection reset during git push.",
+    "local_ahead_by_commits_before_checkpoint_metadata": 4,
+    "recovery_condition": "Restore GitHub HTTPS connectivity, push local handoff, and verify origin/handoff contains the checkpoint commit."
+  },
+  "scope": "experimental_rule_layer_only",
+  "activation": {
+    "default_enabled": false,
+    "mode_key": "director_strategy_mode",
+    "mode_value": "home_commerce_director_v1_experimental",
+    "production_eligible": false
+  },
+  "inputs": [
+    {
+      "path": "handoff/runs/20260821-home-commerce-director-validation-v1/home_commerce_director_v1.md",
+      "sha256": "60c354f6ad4b7e948c1571ac13e00f1844c8fd1bf805187e58a7e7c7a039bfed",
+      "role": "source"
+    },
+    {
+      "path": "handoff/runs/20260821-home-commerce-director-validation-v1/strategy_validation_matrix.json",
+      "sha256": "7166e769b5e7570e309f178eb43cf7b77f912a8af932e56b0304d3d6cb098b72",
+      "role": "source"
+    },
+    {
+      "path": "handoff/runs/20260821-home-commerce-director-validation-v1/validated_rules_candidate.md",
+      "sha256": "922adffd147fb2d9a443e7849291c28eb2c46f0d5e9ffba430d245a21d02810a",
+      "role": "source"
+    },
+    {
+      "path": "handoff/runs/20260820-narrative-strategy-research-v1/narrative_strategy_rules_v0.json",
+      "sha256": "d34ea9e5e8f4b93df5d1920d0188c450a75834bc27dfce19a6b28ec67b20fece",
+      "role": "source"
+    },
+    {
+      "path": "TikTok Home Commerce Research v1 (2026-08-20 research output)",
+      "sha256": "ba73a2b09ec5da93069de10c0f52521e7cfba8c131eb4a4694f7b2eb2bb3225b",
+      "role": "source"
+    }
+  ],
+  "human_sanity_gate": {
+    "status": "not_applicable",
+    "reviewer": "not_applicable",
+    "reviewed_at": null,
+    "version_reviewed": "rule and documentation checkpoint; no media generated",
+    "hard_failures": {
+      "visible_motion_loop": false,
+      "repeated_motion_fill": false,
+      "other": []
+    },
+    "notes": "No video was generated. Human review is required in each future A/B run."
+  },
+  "quality_gates": {
+    "action_integrity": {
+      "status": "preserved",
+      "evidence": "Independent hard gate in the YAML and decision schema; strategy cannot override it."
+    },
+    "proof_chain": {
+      "status": "preserved",
+      "evidence": "Every retained functional claim requires claim -> action -> result -> confirmation."
+    },
+    "proof_ownership": {
+      "status": "preserved",
+      "evidence": "Owner matching is an independent hard gate and required proof field."
+    },
+    "additional": {
+      "no_fabricated_claims": "preserved",
+      "readability": "preserved",
+      "no_loop_or_repeated_motion": "preserved",
+      "duration_budget": "preserved"
+    }
+  },
+  "metrics": {
+    "evaluated_after_human_sanity_gate": false,
+    "summary": {
+      "rule_files": 2,
+      "documentation_files": 3,
+      "media_files": 0,
+      "production_files_modified": 0
+    },
+    "source_path": "handoff/experimental/rules/home_commerce_director_v1_experimental/validation_plan.md"
+  },
+  "artifacts": [
+    {
+      "repository_path": "handoff/experimental/rules/home_commerce_director_v1_experimental/home_commerce_director_v1_experimental.yaml",
+      "sha256": "f068f5eaefb9081350c2644c6fa4136fc75770794f7583f47f3cd8d6ef9672e8",
+      "media_type": "application/yaml",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/experimental/rules/home_commerce_director_v1_experimental/strategy_scoring_schema.json",
+      "sha256": "8beb4d69b01aa8ba789702da7c026618c9881c8726f2fe502ef4e4ed5789f45e",
+      "media_type": "application/schema+json",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/experimental/rules/home_commerce_director_v1_experimental/rule_activation_readme.md",
+      "sha256": "0fb51c270897434a4c5c8368996de398e2be757633269684d8e2a249ecd4c1cc",
+      "media_type": "text/markdown",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/experimental/rules/home_commerce_director_v1_experimental/validation_plan.md",
+      "sha256": "4e26859478cac74920b77fdda8cccaca7aa4e7679de754bc388de2afafbdb7f1",
+      "media_type": "text/markdown",
+      "required": true
+    },
+    {
+      "repository_path": "handoff/experimental/rules/home_commerce_director_v1_experimental/summary.md",
+      "sha256": "e2ba87cceaba9cedd3f9f1a96fe5bcca138d0a2c652789838b9136ccdef609f0",
+      "media_type": "text/markdown",
+      "required": true
+    }
+  ],
+  "local_only": [],
+  "report_path": "handoff/experimental/rules/home_commerce_director_v1_experimental/summary.md",
+  "constraints_verified": {
+    "main_modified": false,
+    "software_modified": false,
+    "production_rules_modified": false,
+    "production_rule_promoted": false,
+    "media_included": false
+  },
+  "conclusion": "The research framework is encoded as an explicitly disabled, callable experimental rule layer with a machine-readable decision contract and controlled A/B protocol. It remains unvalidated prospectively and is not eligible for production.",
+  "next_step": "Run a new-material blinded A/B: existing Director versus this exact experimental version; retain experimental status until repeated validation and explicit human promotion."
+}

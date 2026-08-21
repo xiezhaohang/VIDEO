@@ -1,0 +1,213 @@
+version: home_commerce_director_v1_experimental
+schema_version: "1.0"
+status: experimental
+run_id: 20260821-home-commerce-director-experimental-rule-layer-v1
+scope: handoff_experimental_only
+activation:
+  default: false
+  mode_key: director_strategy_mode
+  mode_value: home_commerce_director_v1_experimental
+  production_eligible: false
+  main_promotion: prohibited_without_controlled_validation_and_human_decision
+
+purpose: >-
+  Select a narrative strategy from purchase reasons and material evidence capability.
+  This rule is not a product-category classifier and must not invent missing evidence.
+
+inputs:
+  required:
+    - product_understanding
+    - purchase_motivation
+    - material_support
+  optional:
+    - reference_style
+  input_contract:
+    product_understanding:
+      fields:
+        - product_identity
+        - audience
+        - use_context
+        - purchase_reasons
+        - claims_allowed
+        - claims_requiring_evidence
+        - claims_forbidden
+    purchase_motivation:
+      fields:
+        - functional_result
+        - discovery_or_content_breadth
+        - relationship_or_emotion
+        - sensory_experience
+        - appearance_identity_or_ownership_desire
+    material_support:
+      fields:
+        - action_units
+        - claim_evidence_map
+        - proof_owners
+        - readable_results
+        - distinct_information_states
+        - people_interaction_or_reaction
+        - sensory_feedback
+        - clean_hero_states
+        - cta_direction_evidence
+        - material_gaps
+    reference_style:
+      allowed_extraction:
+        - semantic_structure
+        - information_rhythm
+        - caption_job
+        - hero_logic
+        - cta_logic
+      forbidden_use:
+        - copying_reference_only_claims
+        - fabricating_reference_only_states
+
+strategy_scoring:
+  scale:
+    minimum: 0.0
+    maximum: 1.0
+  dimensions:
+    proof:
+      label: Proof
+      director_question: "What must the viewer see to believe the promised result?"
+    information:
+      label: Information
+      director_question: "What non-repeated discoveries or states sustain purchase understanding?"
+    emotion:
+      label: Emotion
+      director_question: "What observable experience, reaction, relationship, or sensory change creates desire?"
+    visual_appeal:
+      label: Visual Appeal
+      director_question: "What finished state, transformation, detail, or choice creates ownership desire?"
+  score_fields:
+    demand_score: "How strongly the purchase reason requires this dimension."
+    support_score: "How strongly current material can directly and readably deliver this dimension."
+    effective_score: "Experimental ranking aid derived from demand and support; never a hard gate."
+    evidence: "Observable source facts supporting both scores."
+    gaps: "Required but absent or unusable evidence."
+  calibration:
+    fixed_formula: null
+    fixed_thresholds: null
+    rule: >-
+      Do not average away evidence gaps. Prefer the strongest supported purchase meaning;
+      reduce confidence when demand is high but support is low or when the top dimensions are close.
+
+strategy_selection:
+  allowed_primary:
+    - proof_led
+    - information_led
+    - emotion_led
+    - visual_led
+  allowed_secondary:
+    - proof_led
+    - information_led
+    - emotion_led
+    - visual_led
+    - null
+  rules:
+    - Choose one primary strategy to own the commercial through-line.
+    - Choose at most one secondary strategy to repair the primary strategy's main weakness.
+    - Base selection on purchase reasons and supported material evidence, never product category.
+    - A high demand score with low support triggers a fallback or a material-gap request, not a fabricated claim.
+    - Mixed strategies are allowed; equal four-way allocation is not a valid default.
+  definitions:
+    proof_led:
+      sequence: [claim_or_problem, action, result, confirmation, proven_hero]
+      hook: "Readable result preview or identifiable claim/problem supported by a complete chain."
+      retain: "Owner-specific action and readable result, even when longer than a pacing target."
+      remove: "Repeated proof without a new owner, capability, context, or result."
+    information_led:
+      sequence: [core_discovery, new_state_or_mechanism, breadth_or_quantity, user_meaning, hero]
+      hook: "The strongest readable discovery or use meaning, not default unboxing."
+      retain: "Distinct states until their new meaning is readable."
+      remove: "Alternate angles or action tails that add no new information."
+    emotion_led:
+      sequence: [experience_anchor, observable_change, escalation, emotional_or_sensory_payoff]
+      hook: "An observable reaction, sensory response, or experience change."
+      retain: "Continuous change that lets the viewer pre-experience the result."
+      remove: "Repeated action with no feedback or experience upgrade."
+    visual_led:
+      sequence: [desire_or_hero_preview, distinctive_detail, minimum_required_proof, stronger_hero]
+      hook: "The best finished state, transformation, detail, or ownership choice."
+      retain: "Only the proof needed to resolve the main purchase doubt."
+      remove: "Routine process or feature lists that do not increase desire or trust."
+
+validated_rules:
+  - id: V-01
+    rule: "The first screen must deliver the strongest materially supported purchase meaning; unboxing or installation is not the default hook."
+    boundary: "The universal time threshold remains unvalidated."
+  - id: V-02
+    rule: "Every explicit functional claim must retain a complete Claim -> Action -> Result -> Confirmation chain with the same proof owner."
+    boundary: "Pacing cannot shorten the chain below readable confirmation."
+  - id: V-03
+    rule: "Cut when new meaning is exhausted, after required action continuity, proof, and readability holds are satisfied."
+    boundary: "Continuous causal or sensory change is not information exhaustion."
+  - id: V-04
+    rule: "Voiceover and captions must add purchase meaning, user benefit, identity/emotion context, doubt removal, or a valid CTA; pure action transcription is removable."
+  - id: V-05
+    rule: "Unsupported or incomplete claims must be deleted, weakened, or listed as reshoot needs; copy cannot manufacture evidence."
+  - id: V-06
+    rule: "Repeated shots survive only when they add a new owner, capability, quantity, context, result, or stronger hero."
+  - id: V-07
+    rule: "CTA follows the core purchase meaning and proof; directional CTA requires visible directional evidence."
+
+strong_hypotheses:
+  - id: S-01
+    hypothesis: "Continuous demand/support scoring plus primary/secondary selection is more useful than a single product category."
+  - id: S-02
+    hypothesis: "Result-first structure suits strong finished states, transformations, and sensory products; required functional proof may follow but cannot be omitted."
+  - id: S-03
+    hypothesis: "Multi-function products should normally retain the strongest, most provable, and most distinct two or three functions."
+  - id: S-04
+    hypothesis: "Visual-led plus Proof-led should outperform install-first for the tested earphone-case material."
+  - id: S-05
+    hypothesis: "Information-led plus Emotion-led should outperform process-led structure for the tested card material, while emotion claims remain limited by visual support."
+  - id: S-06
+    hypothesis: "Emotion-led sensory preview plus Visual-led payoff should outperform action explanation for the tested slime material."
+
+weak_hypotheses:
+  - "Purchase meaning has one universal 1.0, 1.5, or 2.0 second threshold."
+  - "Every home-commerce video requires a new state every two or three seconds."
+  - "Readable holds and state duration have universal fixed ranges."
+  - "A 15-22 second runtime universally outperforms a 30-40 second runtime."
+  - "One effective-score formula or primary/secondary margin is already calibrated."
+  - "Result-first is superior for every purchase motivation."
+  - "One CTA type is universally optimal."
+  - "Fast cutting alone improves comprehension, preference, or conversion."
+  - "Existing explanatory cases are sufficient to declare a Preference Gate pass."
+
+hard_gates:
+  precedence: "Hard gates override strategy scores, reference style, pacing targets, and preference hypotheses."
+  gates:
+    action_integrity:
+      rule: "Preserve necessary setup, key physical action, corresponding result, and enough confirmation to understand the result."
+    proof_ownership:
+      rule: "The triggering and proven object must match; one owner's result cannot answer another owner's claim."
+    no_fabricated_claims:
+      rule: "No unsupported function, relationship, material, safety, durability, scarcity, price, or directional CTA claim."
+    readability:
+      rule: "Text, state, result, and offer must remain readable for the job they perform."
+    no_loop_or_repeated_motion:
+      rule: "Visible motion loops and repeated-motion fill are hard failures."
+    duration_budget:
+      rule: "Shorten when supported meaning is exhausted; never fill duration with loops, repeats, dead hero tails, or voiceover overhang."
+
+decision_output:
+  required_fields:
+    - primary_strategy
+    - secondary_strategy
+    - confidence
+    - evidence
+    - hook_hypothesis
+    - required_proof
+    - information_state_plan
+    - hero_strategy
+    - cta_strategy
+    - fallback_strategy
+  schema_reference: strategy_scoring_schema.json
+
+fallback_order:
+  - "Delete, weaken, or defer unsupported claims."
+  - "Select the next-highest supported strategy rather than forcing the highest-demand strategy."
+  - "Shorten the planned video when unique information or proof is exhausted."
+  - "List precise reshoot needs for missing proof, reaction, hero, readability, or CTA evidence."
+  - "Return insufficient_material when no compliant purchase meaning can be constructed."

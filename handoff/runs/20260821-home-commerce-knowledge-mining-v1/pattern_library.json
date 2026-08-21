@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260821-home-commerce-knowledge-mining-v1",
+  "usage": "Experimental Director knowledge only; patterns are composable reasoning paths, not fixed timelines.",
+  "patterns": [
+    {
+      "id": "discovery",
+      "name": "Discovery Pattern",
+      "grade": "strong hypothesis",
+      "best_for": ["novelty", "unexpected form factor", "collectible", "new use"],
+      "purchase_motivation": "发现值得拥有、分享或送人的新东西",
+      "sequence": ["attention", "curiosity", "reveal", "value", "cta"],
+      "stage_jobs": {
+        "attention": "给异常外形、动作或局部结果，不给空包装。",
+        "curiosity": "制造一个可在下一状态回答的问题。",
+        "reveal": "在悬念耗尽前让商品与用途可识别。",
+        "value": "展示细节、使用想象、身份或一个真实功能。",
+        "cta": "优先 soft/choice/engagement；有明确购买链时才用 location。"
+      },
+      "required_evidence": ["产品身份可读", "揭晓后立即有拥有理由"],
+      "failure_if": ["揭袋超过购买意义", "揭晓只回答是什么，不回答为什么值得"],
+      "sample_evidence": ["7529854883004976439", "7535041139926158605", "7550367000267066638", "7553638521030970638"]
+    },
+    {
+      "id": "problem_solution",
+      "name": "Problem/Solution Pattern",
+      "grade": "validated",
+      "best_for": ["charging", "compatibility", "workflow", "health", "capacity"],
+      "purchase_motivation": "消除一个能被看见或快速理解的麻烦",
+      "sequence": ["problem", "mechanism", "proof", "result", "cta"],
+      "stage_jobs": {
+        "problem": "让麻烦本身可读；痛点对象出现不等于痛点成立。",
+        "mechanism": "显示产品如何介入，而不是只给产品正面。",
+        "proof": "保留同 owner 的关键动作与反馈。",
+        "result": "给足确认时间并翻译为用户收益。",
+        "cta": "核心证明完成后给可证实的购买动作。"
+      },
+      "required_evidence": ["problem 可理解", "Claim→Action→Result→Confirmation", "proof owner 一致"],
+      "failure_if": ["痛点只有静物", "结果未出现", "VO 代替证明", "setup 与 payoff 分离"],
+      "sample_evidence": ["7645278797834505486", "7631899866968460557", "7577052381779594510", "7575578574879526158"],
+      "case_evidence": ["magnetic_power_bank Director Pass v2"]
+    },
+    {
+      "id": "transformation",
+      "name": "Transformation Pattern",
+      "grade": "strong hypothesis",
+      "best_for": ["lighting", "installation", "appearance upgrade", "organization", "cleaning"],
+      "purchase_motivation": "低成本获得明显的前后差异",
+      "sequence": ["before_or_after_preview", "action", "after", "benefit"],
+      "stage_jobs": {
+        "before_or_after_preview": "选择更强的差异入口；结果特别强时先给 after 预览。",
+        "action": "保留足以相信变化的中间机制。",
+        "after": "用相同或可比语境让差异可读。",
+        "benefit": "把变化翻译成氛围、保护、易用、空间或身份收益。"
+      },
+      "required_evidence": ["可比较状态", "可信中间动作", "收益状态"],
+      "failure_if": ["跳剪制造假变化", "只有安装没有结果", "after 比 preview 弱"],
+      "sample_evidence": ["7602580144242380046", "7637096428556258573", "7577052381779594510", "7569169416248626487", "7535824080126184759"]
+    },
+    {
+      "id": "emotion_identity",
+      "name": "Emotion/Identity Pattern",
+      "grade": "strong hypothesis",
+      "best_for": ["gift", "fandom", "humor", "ritual", "self-expression"],
+      "purchase_motivation": "预演拥有、赠送、被理解或表达身份的感觉",
+      "sequence": ["feeling", "experience", "meaning", "cta"],
+      "stage_jobs": {
+        "feeling": "用圈层符号、笑点、人物反应或感官画面启动。",
+        "experience": "让观众看到拿在手里、摆放、互动或送礼的样子。",
+        "meaning": "回答这对谁、在什么关系/场景里有意义。",
+        "cta": "用送礼对象、颜色选择、评论或 soft discovery 收束。"
+      },
+      "required_evidence": ["身份符号或体验可读", "情绪有视觉/声音支撑"],
+      "failure_if": ["口播空讲关系", "没有使用/拥有想象", "强塞虚假痛点"],
+      "sample_evidence": ["7604785359913782541", "7535041139926158605", "7550367000267066638", "7577352120341449998"],
+      "case_evidence": ["8.19 cards emotion secondary", "slime sensory/emotion hypothesis"]
+    },
+    {
+      "id": "information_ladder",
+      "name": "Information Ladder Pattern",
+      "grade": "strong hypothesis",
+      "best_for": ["multi-feature", "learning aid", "bundle", "complex mechanism"],
+      "purchase_motivation": "快速建立‘它覆盖我的关键需求且值得替代旧方案’",
+      "sequence": ["core_promise", "feature_proof_pair", "feature_proof_pair", "integrated_benefit", "cta"],
+      "selection_rule": "功能按购买价值、证明完整度、与主 Claim 差异度排序；2–3 个是实验候选而非硬上限。",
+      "required_evidence": ["每个保留功能有对应画面或收益翻译", "功能之间信息不重复"],
+      "failure_if": ["规格清单", "口播讲新功能但画面不变", "功能堆叠稀释主购买理由"],
+      "sample_evidence": ["7612211476291505421", "7633403484288650510", "7633009756210334989", "7647470625660964109"],
+      "case_evidence": ["8.19 cards v2/v3", "magnetic power bank"]
+    },
+    {
+      "id": "sensory_continuity",
+      "name": "Sensory Continuity Pattern",
+      "grade": "validated",
+      "best_for": ["fidget", "squishy", "light effects", "mist", "counter", "magnetic snap"],
+      "purchase_motivation": "在观看中预体验触感、声音、变化或仪式",
+      "sequence": ["sensory_hook", "feedback_progression", "variation_or_scale_up", "strongest_state"],
+      "hold_rule": "只要形变、数字、光、声音、数量或情绪仍有可感知增量，长镜头可以继续；反馈停止且已读懂即耗尽。",
+      "required_evidence": ["每次动作有可感知反馈", "最终状态比前态更强或更完整"],
+      "failure_if": ["重复动作无升级", "只说质感但画面不支持", "完整动作被切断"],
+      "sample_evidence": ["7603301222677843214", "7532410462927899959", "7637096428556258573"],
+      "case_evidence": ["slime no-VO failure and VO-aligned recovery"]
+    }
+  ],
+  "composition_rules": [
+    {"rule": "选择一个承担购买主线的 primary pattern；secondary 只补可信度、情绪或信息缺口。", "grade": "strong hypothesis"},
+    {"rule": "Proof Chain、Claim support、Action Integrity、CTA evidence 是跨 Pattern 硬门禁。", "grade": "validated"},
+    {"rule": "素材不能支持所选 Pattern 时必须降级或 fallback，不用文案补造证据。", "grade": "validated"},
+    {"rule": "Pattern 阶段可以合并或省略，但省略后仍必须回答用户的关键问题。", "grade": "strong hypothesis"}
+  ]
+}
