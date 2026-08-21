@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260821-home-commerce-cutter-validation-v1-school-memory-book",
+  "experiment": "School Memory Book Cutter Validation v1",
+  "scope": "video_research_cutter_only",
+  "control": {
+    "only_variable": "director_strategy",
+    "source_root_local_only": "D:\\8.20剪辑\\学校记忆书",
+    "frozen_evidence_map_sha256": "4946240e5a079d371fc4a7937ba67546ff41f64f33e7637ce141e4d24e8f0dd2",
+    "old_director_plan_sha256": "6ba8cbee62eac22767258a5724116f14a1ac12cca04ca929b283ddbf82fd7f63",
+    "experimental_director_plan_sha256": "23d56fce2eabf8d6b0f6ea9f8aa5cea712ac60786cb9c5c5cfe815a3db6993ba",
+    "common_output": {
+      "video": "H.264 yuv420p, 1080x1920, 30000/1001 fps",
+      "audio": "none",
+      "captions": "none",
+      "transitions": "hard cuts only",
+      "speed_changes": "none"
+    },
+    "common_gates": [
+      "Action Integrity",
+      "Proof Ownership",
+      "no fabricated claims",
+      "readability",
+      "no loop or repeated motion",
+      "no dead-tail forcing",
+      "Hero must have a commercial task"
+    ]
+  },
+  "arms": [
+    {
+      "arm": "old_director",
+      "output_local_only": "old_director_cut_v1.mp4",
+      "duration_s": 21.3213,
+      "shot_count": 7,
+      "timeline": [
+        {"shot": 1, "timeline_in_s": 0.0000, "timeline_out_s": 2.3023, "source_id": "S01", "source_file": "DJI_20260813113609_0066_D.MP4", "source_in_s": 0.20, "source_duration_s": 2.30, "task": "hook_identity", "commercial_job": "Identify the School Memories Album from its readable cover.", "new_information": "Product identity."},
+        {"shot": 2, "timeline_in_s": 2.3023, "timeline_out_s": 5.5055, "source_id": "S02", "source_file": "DJI_20260813113654_0067_D.MP4", "source_in_s": 1.15, "source_duration_s": 3.20, "task": "setup_open", "commercial_job": "Open the cover into a readable Preschool spread.", "new_information": "The album contains school-year pages."},
+        {"shot": 3, "timeline_in_s": 5.5055, "timeline_out_s": 8.1081, "source_id": "S03", "source_file": "DJI_20260813113828_0068_D.MP4", "source_in_s": 0.70, "source_duration_s": 2.60, "task": "proof_early_fields", "commercial_job": "Show profile and school-detail prompts on an early-year page.", "new_information": "Early pages structure personal and school details."},
+        {"shot": 4, "timeline_in_s": 8.1081, "timeline_out_s": 10.5105, "source_id": "S02", "source_file": "DJI_20260813113654_0067_D.MP4", "source_in_s": 21.70, "source_duration_s": 2.40, "task": "proof_photo_drawing", "commercial_job": "Hold the 1st Grade picture and self-drawing spaces until readable.", "new_information": "Pages include picture and drawing spaces."},
+        {"shot": 5, "timeline_in_s": 10.5105, "timeline_out_s": 14.8148, "source_id": "S06", "source_file": "DJI_20260813113927_0071_D.MP4", "source_in_s": 18.70, "source_duration_s": 4.30, "task": "option_grade_progression", "commercial_job": "Turn from 3rd Grade to 4th Grade without truncating the action.", "new_information": "The sequence continues into later grade designs."},
+        {"shot": 6, "timeline_in_s": 14.8148, "timeline_out_s": 17.1171, "source_id": "S09", "source_file": "DJI_20260813114115_0074_D.MP4", "source_in_s": 1.20, "source_duration_s": 2.30, "task": "proof_later_grade", "commercial_job": "Confirm a readable 9th Grade page and its later-school prompts.", "new_information": "Later-grade record pages are present."},
+        {"shot": 7, "timeline_in_s": 17.1171, "timeline_out_s": 21.3213, "source_id": "S10", "source_file": "DJI_20260813114213_0075_D.MP4", "source_in_s": 4.10, "source_duration_s": 4.20, "task": "hero", "commercial_job": "Summarize the tour with page thickness followed by a clean cover.", "new_information": "One complete, substantial album."}
+      ]
+    },
+    {
+      "arm": "experimental_director_v2",
+      "output_local_only": "experimental_director_cut_v1.mp4",
+      "duration_s": 21.788433,
+      "shot_count": 9,
+      "timeline": [
+        {"shot": 1, "timeline_in_s": 0.0000, "timeline_out_s": 1.4014, "source_id": "S03", "source_file": "DJI_20260813113828_0068_D.MP4", "source_in_s": 0.40, "source_duration_s": 1.40, "task": "hook_early_half", "commercial_job": "Establish a readable early-school starting point.", "new_information": "Preschool is one record state."},
+        {"shot": 2, "timeline_in_s": 1.4014, "timeline_out_s": 2.8028, "source_id": "S09", "source_file": "DJI_20260813114115_0074_D.MP4", "source_in_s": 1.20, "source_duration_s": 1.40, "task": "hook_later_half", "commercial_job": "Resolve the hook with a readable later-grade contrast in the same product.", "new_information": "One album connects early school with a later grade."},
+        {"shot": 3, "timeline_in_s": 2.8028, "timeline_out_s": 4.5712, "source_id": "S01", "source_file": "DJI_20260813113609_0066_D.MP4", "source_in_s": 0.15, "source_duration_s": 1.75, "task": "setup_identity", "commercial_job": "Name the object after the multi-year value has been posed.", "new_information": "It is a School Memories Album."},
+        {"shot": 4, "timeline_in_s": 4.5712, "timeline_out_s": 7.8745, "source_id": "S06", "source_file": "DJI_20260813113927_0071_D.MP4", "source_in_s": 5.10, "source_duration_s": 3.30, "task": "proof_separated_sections", "commercial_job": "Prove the structure with one intact 1st-to-2nd Grade page turn.", "new_information": "Grade progression is built into separated sections."},
+        {"shot": 5, "timeline_in_s": 7.8745, "timeline_out_s": 10.0767, "source_id": "S07", "source_file": "DJI_20260813114008_0072_D.MP4", "source_in_s": 1.70, "source_duration_s": 2.20, "task": "proof_repeatable_fields", "commercial_job": "Show readable later-grade profile, subject and activity fields.", "new_information": "Each year can use a consistent school snapshot structure."},
+        {"shot": 6, "timeline_in_s": 10.0767, "timeline_out_s": 12.4791, "source_id": "S02", "source_file": "DJI_20260813113654_0067_D.MP4", "source_in_s": 21.70, "source_duration_s": 2.40, "task": "proof_memory_spaces", "commercial_job": "Show both school-picture and self-drawing spaces without implying completed use.", "new_information": "The structure accepts different visual memory types."},
+        {"shot": 7, "timeline_in_s": 12.4791, "timeline_out_s": 14.8815, "source_id": "S08", "source_file": "DJI_20260813114040_0073_D.MP4", "source_in_s": 15.00, "source_duration_s": 2.40, "task": "proof_reflection_breadth", "commercial_job": "Add favorites and future-looking reflection prompts as a non-duplicate state.", "new_information": "The book records more than a basic profile."},
+        {"shot": 8, "timeline_in_s": 14.8815, "timeline_out_s": 17.5842, "source_id": "S11", "source_file": "DJI_20260813114305_0076_D.MP4", "source_in_s": 4.40, "source_duration_s": 2.70, "task": "emotion_bounded_breadth", "commercial_job": "Use one intact edge flip to connect many varied year designs without fabricating a family reaction.", "new_information": "Many changing school-year snapshots can live together."},
+        {"shot": 9, "timeline_in_s": 17.5842, "timeline_out_s": 21.7884, "source_id": "S10", "source_file": "DJI_20260813114213_0075_D.MP4", "source_in_s": 4.10, "source_duration_s": 4.20, "task": "hero", "commercial_job": "Resolve the evidence ladder into page volume followed by the complete album cover.", "new_information": "The previously shown year sections belong to one substantial album."}
+      ]
+    }
+  ]
+}

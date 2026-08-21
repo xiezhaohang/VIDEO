@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260821-home-commerce-cutter-validation-v1-school-memory-book",
+  "status": "awaiting_blind_human_preference",
+  "formal_result": "no_pass_announced",
+  "measurement_definition": {
+    "first_purchase_meaning": "Earliest timeline time when the pure visuals communicate why the product is useful beyond product identity.",
+    "information_state": "A non-duplicate viewer understanding; multiple shots may jointly create one state.",
+    "effective_shot_length": "Rendered duration divided by shot count after hard-gate removal; every retained shot has a declared commercial task."
+  },
+  "metrics": {
+    "old_director": {
+      "first_purchase_meaning_s": 3.60,
+      "first_purchase_meaning_basis": "The cover identifies the object at 0.00, but utility appears only when the opening action reveals a readable Preschool record page.",
+      "shot_count": 7,
+      "information_state_count": 7,
+      "duration_s": 21.3213,
+      "average_effective_shot_length_s": 3.05,
+      "hero_task": "Conventional whole-product summary: page thickness to clean cover.",
+      "low_information_dwell": {"exists": true, "severity": "minor", "location": "approximately 0.70-2.30", "reason": "The cover remains the only information state after identity becomes readable; it delays the first utility proof but is not a dead-tail failure."},
+      "material_waste": {"exists": true, "severity": "moderate_selective_underuse", "detail": "Useful distinct evidence in S08 (favorites/reflection breadth) and S11 (many varied sections in one flip) is omitted while chronology receives more time."}
+    },
+    "experimental_director_v2": {
+      "first_purchase_meaning_s": 1.40,
+      "first_purchase_meaning_basis": "The cut from readable Preschool to readable 9th Grade completes the multi-year, one-album inference before product identity is shown.",
+      "shot_count": 9,
+      "information_state_count": 8,
+      "duration_s": 21.788433,
+      "average_effective_shot_length_s": 2.42,
+      "hero_task": "Resolve the information ladder: the proven early/later sections and prompt types live in one substantial album.",
+      "low_information_dwell": {"exists": false, "severity": "none_material", "location": null, "reason": "Every hold either establishes a readable state, completes an action, or resolves the Hero."},
+      "material_waste": {"exists": false, "severity": "none_material", "detail": "S04 and S05 are omitted because their unique meanings are already covered by stronger readable states; no distinct commercial state is lost."}
+    }
+  },
+  "key_differences": [
+    "Old asks what page comes next; Experimental asks what the viewer must understand next and which shot proves it.",
+    "Old spends the opening on identity and chronology; Experimental spends the opening on the early-to-later-year purchase meaning, then uses identity, section progression, prompts, memory spaces and Hero as a proof ladder."
+  ],
+  "home_commerce_assessment": {
+    "theoretically_stronger": "experimental_director_v2",
+    "reasons": [
+      "First purchase meaning is 2.20 seconds earlier.",
+      "One additional non-duplicate information state is delivered in only 0.47 seconds more total runtime.",
+      "The same Hero source gains a stronger commercial job because it resolves previously proven multi-year value instead of merely ending a tour.",
+      "Emotion remains bounded to visible time-span structure; no child response, completed use or family outcome is fabricated."
+    ],
+    "limitations": [
+      "No audio, caption, transition or conversion-performance claim is tested.",
+      "The result is a theory-led cutter comparison until blinded human preference is recorded.",
+      "Do not promote a production rule from this run."
+    ],
+    "audio_caption_stage": "Conditionally worth entering after the blinded Preference Gate favors the experimental structure; preparation is justified, advancement is not yet authorized."
+  },
+  "hard_gate_review": {
+    "action_integrity": "pass_both",
+    "proof_ownership": "pass_both",
+    "no_fabricated_claims": "pass_both",
+    "readability": "pass_both",
+    "no_loop_or_repeated_motion": "pass_both",
+    "no_dead_tail_forcing": "pass_both",
+    "hero_has_task": "pass_both",
+    "black_frame_check": "pass_both",
+    "silent_master_check": "pass_both"
+  }
+}
