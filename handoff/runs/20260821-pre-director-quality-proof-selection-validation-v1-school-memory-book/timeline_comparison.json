@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260821-pre-director-quality-proof-selection-validation-v1-school-memory-book",
+  "control": {
+    "same_source_material": true,
+    "same_director_v2": true,
+    "narrative_strategy_changed": false,
+    "vo_changed": false,
+    "transitions_added": false,
+    "only_new_variables": ["Media Quality Gate v1", "Proof Selection Layer v1"]
+  },
+  "baseline": {
+    "name": "Director v2 Cutter",
+    "duration_s": 21.7884,
+    "shot_count": 9,
+    "first_purchase_meaning_s": 1.40,
+    "information_state_count": 8,
+    "timeline_source": "20260821-home-commerce-cutter-validation-v1-school-memory-book/cutter_timelines.json"
+  },
+  "new": {
+    "name": "Director v2 + Quality Gate + Proof Selection",
+    "duration_s": 13.8805,
+    "shot_count": 6,
+    "first_purchase_meaning_s": 1.40,
+    "information_state_count": 5,
+    "timeline": [
+      {"shot":1,"timeline_in_s":0.0000,"timeline_out_s":1.4014,"source_id":"S03","source_in_s":0.40,"source_duration_s":1.40,"task":"hook_early_half","change_from_baseline":"unchanged"},
+      {"shot":2,"timeline_in_s":1.4014,"timeline_out_s":2.8028,"source_id":"S09","source_in_s":2.05,"source_duration_s":1.40,"task":"hook_later_half","change_from_baseline":"same proof, later clean entry; removes focus/framing settlement"},
+      {"shot":3,"timeline_in_s":2.8028,"timeline_out_s":4.5712,"source_id":"S01","source_in_s":0.15,"source_duration_s":1.75,"task":"setup_identity","change_from_baseline":"unchanged"},
+      {"shot":4,"timeline_in_s":4.5712,"timeline_out_s":7.8745,"source_id":"S06","source_in_s":5.10,"source_duration_s":3.30,"task":"proof_separated_sections","change_from_baseline":"unchanged"},
+      {"shot":5,"timeline_in_s":7.8745,"timeline_out_s":9.6763,"source_id":"S02","source_in_s":22.25,"source_duration_s":1.80,"task":"proof_memory_spaces","change_from_baseline":"clean stable hold replaces setup-bearing entry"},
+      {"shot":6,"timeline_in_s":9.6763,"timeline_out_s":13.8805,"source_id":"S10","source_in_s":4.10,"source_duration_s":4.20,"task":"hero","change_from_baseline":"moves earlier after redundant/low-quality proof removal"}
+    ]
+  },
+  "measured_changes": {
+    "low_quality_candidate_intervals_filtered": 3,
+    "recovered_by_same_source_retrim": 2,
+    "fully_removed_for_quality": 1,
+    "low_value_proofs_rejected": 2,
+    "shots_removed_net": 3,
+    "duration_reduction_s": 7.9079,
+    "first_purchase_meaning_change_s": 0.00,
+    "information_state_change": -3,
+    "material_focus_or_handling_problem_shots_in_final_timeline":{"baseline":3,"new":0},
+    "hand_busy_or_unreadable_exposure":"reduced materially"
+  },
+  "preference_risk": {
+    "level": "medium",
+    "risks": [
+      "The shorter cut may feel abrupt because transition work is deliberately excluded.",
+      "Removing the later-field and reflection proofs reduces perceived content breadth even though core purchase meaning remains supported.",
+      "The opening still depends on a two-shot inference and C01 retains visible pointing-hand presence.",
+      "No blinded human preference or rendered New-arm review was performed, so cleanliness gains may not translate to overall preference."
+    ]
+  }
+}

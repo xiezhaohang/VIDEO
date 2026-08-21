@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260821-pre-director-quality-proof-selection-validation-v1-school-memory-book",
+  "layer": "Proof Selection Layer v1",
+  "frozen_director": "Home Commerce Director v2",
+  "quality_passed_candidate_count": 8,
+  "selected_proof_count": 6,
+  "rejected_low_value_proof_count": 2,
+  "selected_proofs": [
+    {"candidate_id":"C01","role":"hook_early_half_and_early_year_confirmation","scores":{"commercial_value":92,"visual_quality":74,"information_gain":90,"readability":82,"transition_compatibility":88,"proof_ownership":96},"weighted_score":87.2,"selection_reason":"Begins the core early-to-later-year purchase meaning and also supplies an early-year owner."},
+    {"candidate_id":"C02R","role":"hook_later_half_and_later_year_confirmation","scores":{"commercial_value":94,"visual_quality":82,"information_gain":94,"readability":88,"transition_compatibility":88,"proof_ownership":96},"weighted_score":90.8,"selection_reason":"Completes the core time-span inference with the same album in a readable 9th Grade state."},
+    {"candidate_id":"C03","role":"setup_identity","scores":{"commercial_value":78,"visual_quality":88,"information_gain":82,"readability":94,"transition_compatibility":86,"proof_ownership":98},"weighted_score":86.4,"selection_reason":"Names the object after the value Hook; not treated as an additional content proof."},
+    {"candidate_id":"C04","role":"proof_separated_sections","scores":{"commercial_value":90,"visual_quality":72,"information_gain":84,"readability":78,"transition_compatibility":76,"proof_ownership":96},"weighted_score":83.5,"selection_reason":"One intact, owned page turn proves separated grade sections rather than merely juxtaposing headings."},
+    {"candidate_id":"C06R","role":"proof_memory_spaces","scores":{"commercial_value":84,"visual_quality":84,"information_gain":86,"readability":90,"transition_compatibility":82,"proof_ownership":96},"weighted_score":86.8,"selection_reason":"Adds a distinct supported mechanism: labeled picture and drawing spaces."},
+    {"candidate_id":"C09","role":"hero_value_resolution","scores":{"commercial_value":86,"visual_quality":78,"information_gain":74,"readability":88,"transition_compatibility":92,"proof_ownership":98},"weighted_score":84.4,"selection_reason":"Resolves visible page volume and the complete product into one owned Hero."}
+  ],
+  "rejected_proofs": [
+    {"candidate_id":"C05","baseline_role":"proof_repeatable_fields","scores":{"commercial_value":72,"visual_quality":76,"information_gain":48,"readability":78,"transition_compatibility":76,"proof_ownership":94},"weighted_score":71.7,"rejection_reason":"Nominal score reaches threshold, but marginal information gain fails the minimum-set rule: C01 and C02R already expose readable recurring field structure while C04 proves repetition across sections."},
+    {"candidate_id":"C07","baseline_role":"proof_reflection_breadth","scores":{"commercial_value":62,"visual_quality":70,"information_gain":54,"readability":72,"transition_compatibility":66,"proof_ownership":92},"weighted_score":67.6,"rejection_reason":"The prompt is true and readable but adds a secondary field category after the organizing mechanism is already proven; tight framing and limited purchase impact do not justify a new timeline state."}
+  ],
+  "quality_rejected_before_selection": [
+    {"candidate_id":"C08","baseline_role":"emotion_bounded_breadth","reason":"Failed Media Quality Gate; not eligible for Proof Selection scoring."}
+  ],
+  "coverage_result": "The selected minimum set preserves product identity, early-to-later-year meaning, separated section structure, picture/drawing breadth and complete-product resolution without changing Director v2 strategy."
+}

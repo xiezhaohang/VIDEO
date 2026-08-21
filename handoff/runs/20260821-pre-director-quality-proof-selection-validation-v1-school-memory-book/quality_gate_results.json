@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260821-pre-director-quality-proof-selection-validation-v1-school-memory-book",
+  "gate": "Media Quality Gate v1",
+  "candidate_count": 9,
+  "pass_as_proposed_count": 6,
+  "rejected_candidate_interval_count": 3,
+  "recoverable_by_same_source_retrim_count": 2,
+  "fully_excluded_by_quality_count": 1,
+  "candidates": [
+    {"candidate_id":"C01","baseline_shot":1,"source_id":"S03","source_in_s":0.40,"source_duration_s":1.40,"quality_score":74,"decision":"pass","rejection_reason":null,"recoverable_issue":null,"observations":["required Preschool heading remains readable","finger overlaps lower prompt area but not the Hook confirmation"]},
+    {"candidate_id":"C02","baseline_shot":2,"source_id":"S09","source_in_s":1.20,"source_duration_s":1.40,"quality_score":53,"decision":"reject_recoverable_by_same_source_retrim","rejection_reason":"Entry begins during focus/framing settlement; the 9th Grade proof is soft and cropped before becoming stable.","recoverable_issue":{"replacement_source_in_s":2.05,"replacement_duration_s":1.40,"replacement_quality_score":82,"basis":"Later interval holds the same 9th Grade owner and fields in stable focus."}},
+    {"candidate_id":"C03","baseline_shot":3,"source_id":"S01","source_in_s":0.15,"source_duration_s":1.75,"quality_score":88,"decision":"pass","rejection_reason":null,"recoverable_issue":null,"observations":["cover identity is sharp and composition is stable"]},
+    {"candidate_id":"C04","baseline_shot":4,"source_id":"S06","source_in_s":5.10,"source_duration_s":3.30,"quality_score":72,"decision":"pass","rejection_reason":null,"recoverable_issue":null,"observations":["motion blur is task-relevant to one completed 1st-to-2nd Grade turn","both endpoint headings are readable"]},
+    {"candidate_id":"C05","baseline_shot":5,"source_id":"S07","source_in_s":1.70,"source_duration_s":2.20,"quality_score":76,"decision":"pass","rejection_reason":null,"recoverable_issue":null,"observations":["later-grade fields are readable","hand presence does not block the selected labels"]},
+    {"candidate_id":"C06","baseline_shot":6,"source_id":"S02","source_in_s":21.70,"source_duration_s":2.40,"quality_score":58,"decision":"reject_recoverable_by_same_source_retrim","rejection_reason":"The proposed entry includes page-search/settling motion before the picture and drawing spaces become readable.","recoverable_issue":{"replacement_source_in_s":22.25,"replacement_duration_s":1.80,"replacement_quality_score":84,"basis":"The same 1st Grade spread is then stable, sharp and readable without setup motion."}},
+    {"candidate_id":"C07","baseline_shot":7,"source_id":"S08","source_in_s":15.00,"source_duration_s":2.40,"quality_score":70,"decision":"pass","rejection_reason":null,"recoverable_issue":null,"observations":["favorites and reflection prompts are readable","tight framing is acceptable but leaves little composition margin"]},
+    {"candidate_id":"C08","baseline_shot":8,"source_id":"S11","source_in_s":4.40,"source_duration_s":2.70,"quality_score":46,"decision":"reject","rejection_reason":"Rapid edge flipping dominates; transient pages are not readable and the hands search through the page block rather than present a stable proof.","recoverable_issue":false},
+    {"candidate_id":"C09","baseline_shot":9,"source_id":"S10","source_in_s":4.10,"source_duration_s":4.20,"quality_score":78,"decision":"pass","rejection_reason":null,"recoverable_issue":null,"observations":["page-volume manipulation is task-relevant","the action resolves to a readable complete cover"]}
+  ],
+  "problem_types_found": [
+    {"type":"focus_or_framing_not_settled_at_entry","affected_candidates":["C02"]},
+    {"type":"page_search_or_preparation_included","affected_candidates":["C06","C08"]},
+    {"type":"unreadable_motion_dominates_proof","affected_candidates":["C08"]},
+    {"type":"hand_occlusion_risk","affected_candidates":["C01","C05"],"severity":"observed_but_not_material_for_required_confirmation"}
+  ]
+}
+

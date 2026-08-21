@@ -1,0 +1,57 @@
+schema_version: "1.0"
+rule_id: media-quality-gate-v1
+status: experimental_only
+placement: before_director_candidate_admission
+production_activation: forbidden
+
+unit_of_evaluation: candidate_source_interval
+
+dimensions:
+  focus_sharpness:
+    weight: 0.22
+    question: Is the intended product detail sharp for the useful duration?
+  product_subject_clarity:
+    weight: 0.16
+    question: Is the product subject visually unambiguous and unobstructed?
+  text_readability:
+    weight: 0.16
+    question: Can required proof text be read at delivery size before exit?
+  motion_stability:
+    weight: 0.14
+    question: Is movement controlled, or clearly required by the shot task?
+  hand_occlusion:
+    weight: 0.10
+    question: Do hands avoid covering the evidence owner or required confirmation?
+  composition_stability:
+    weight: 0.10
+    question: Does framing remain usable without searching or corrective reframing?
+  preparation_adjustment_absence:
+    weight: 0.12
+    question: Is the interval presentation rather than setup, page-search or camera adjustment?
+
+scoring:
+  scale: 0_to_100
+  pass_threshold: 70
+  conditional_retrim_band: [55, 69]
+  reject_band: [0, 54]
+  hard_rejects:
+    - required_product_detail_materially_out_of_focus
+    - required_text_never_readable
+    - preparation_or_search_is_the_dominant_action
+    - hand_occlusion_blocks_required_confirmation
+    - uncontrolled_motion_prevents_comprehension
+  task_relevant_motion_exception: Page turns or product manipulation may contain motion blur only when both the entry and confirmation states are readable and the motion completes the declared task.
+
+decision_contract:
+  required_outputs:
+    - quality_score
+    - decision
+    - rejection_reason
+    - recoverable_issue
+  allowed_decisions:
+    - pass
+    - reject_recoverable_by_same_source_retrim
+    - reject
+  precedence: Visual quality eligibility is multiplicative. Commercial value cannot override a failed quality gate.
+  recovery_rule: A rejected interval may re-enter only as a newly evaluated same-source interval; the failed frames never enter the timeline.
+

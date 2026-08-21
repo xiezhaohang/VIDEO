@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "rule_bundle": "Pre-Director Quality + Proof Selection v1",
+  "status": "experimental_only",
+  "production_activation": false,
+  "files": [
+    {"path": "media_quality_gate_v1.yaml", "bytes": 2103, "sha256": "77ae5c45f562ae39c34c26dca1ee5aeceb6601176636b125e95b9eb9c681aa62"},
+    {"path": "proof_selection_layer_v1.yaml", "bytes": 1444, "sha256": "bcb41d1d77e7504836ae8a74cb335e0911b914635675508aecc8a786be8801eb"}
+  ],
+  "validation_run": "20260821-pre-director-quality-proof-selection-validation-v1-school-memory-book",
+  "promotion_state": "not_promoted"
+}

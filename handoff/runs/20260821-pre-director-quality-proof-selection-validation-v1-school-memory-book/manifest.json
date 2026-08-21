@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260821-pre-director-quality-proof-selection-validation-v1-school-memory-book",
+  "experiment": "Pre-Director Quality + Proof Selection Validation v1 — School Memory Book",
+  "status": "research_complete_checkpoint_pending",
+  "quality_status": "provisional_rule_support_no_preference_pass",
+  "scope": "video_research_only",
+  "branch": "pre-director-quality-proof-selection-validation-v1-school-memory-book",
+  "handoff_target": "origin/handoff",
+  "base_commit": "e790170",
+  "artifact_commit": null,
+  "handoff_checkpoint_commit": null,
+  "main_modified": false,
+  "software_modified": false,
+  "production_rules_generated_or_promoted": false,
+  "narrative_strategy_changed": false,
+  "vo_changed": false,
+  "transitions_added": false,
+  "video_rendered_or_uploaded": false,
+  "image_uploaded": false,
+  "frozen_inputs": {
+    "source_file_count": 11,
+    "source_duration_s": 275.032,
+    "director": "Home Commerce Director v2",
+    "baseline_run": "20260821-home-commerce-cutter-validation-v1-school-memory-book",
+    "baseline_timeline_sha256": "d6a2b857b697b43bed7813d11aa6d844aaa1577d2239d1e48fbcf76cdfe78f0c"
+  },
+  "artifacts": [
+    {"path":"handoff/experimental/rules/pre_director_quality_proof_selection_v1/media_quality_gate_v1.yaml","bytes":2103,"sha256":"77ae5c45f562ae39c34c26dca1ee5aeceb6601176636b125e95b9eb9c681aa62"},
+    {"path":"handoff/experimental/rules/pre_director_quality_proof_selection_v1/proof_selection_layer_v1.yaml","bytes":1444,"sha256":"bcb41d1d77e7504836ae8a74cb335e0911b914635675508aecc8a786be8801eb"},
+    {"path":"handoff/experimental/rules/pre_director_quality_proof_selection_v1/manifest.json","bytes":592,"sha256":"3c1bae2a8417538f59e466929210f5585679e0beb1c0d0e1ece3f8c05a054d18"},
+    {"path":"handoff/runs/20260821-pre-director-quality-proof-selection-validation-v1-school-memory-book/quality_gate_results.json","bytes":3991,"sha256":"5b44b81d650e94bc9cc6b46c4878a534d4d0175f91e27102d0225247958734e8"},
+    {"path":"handoff/runs/20260821-pre-director-quality-proof-selection-validation-v1-school-memory-book/proof_selection_results.json","bytes":3732,"sha256":"b7ca2adc885491a41fb3ad44b6e5c3c5b05211b66ef7649981416976394316ad"},
+    {"path":"handoff/runs/20260821-pre-director-quality-proof-selection-validation-v1-school-memory-book/timeline_comparison.json","bytes":3193,"sha256":"33b84fc4bf578ccbc11775214cc43061c20aa1faea022701d331823cb8710ba2"},
+    {"path":"handoff/runs/20260821-pre-director-quality-proof-selection-validation-v1-school-memory-book/validation_report.md","bytes":3578,"sha256":"2292074961e19121590c746b99ca677a61c028c9f78621a3e027eefe9a816163"}
+  ],
+  "gates": {
+    "same_source_and_director": "pass",
+    "only_new_variables_quality_and_proof_selection": "pass",
+    "json_parse": "pass",
+    "media_exclusion": "pass_no_video_or_image_in_handoff",
+    "production_promotion": "not_authorized",
+    "blinded_preference": "not_performed"
+  },
+  "conclusion": "Provisional support for carrying both layers into Experimental Director v3; no production promotion and no preference PASS.",
+  "next_step": "Render and blind-review the frozen six-shot New arm before any promotion decision."
+}

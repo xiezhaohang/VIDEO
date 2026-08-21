@@ -1,0 +1,38 @@
+schema_version: "1.0"
+rule_id: proof-selection-layer-v1
+status: experimental_only
+placement: after_media_quality_gate_before_cutter
+production_activation: forbidden
+
+input_contract:
+  director_input: Frozen Home Commerce Director v2 purchase meaning and required-proof requests
+  candidate_input: Quality-passed source intervals only
+
+dimensions:
+  commercial_value: {weight: 0.24}
+  visual_quality: {weight: 0.18}
+  information_gain: {weight: 0.22}
+  readability: {weight: 0.14}
+  transition_compatibility: {weight: 0.08}
+  proof_ownership: {weight: 0.14}
+
+scoring:
+  dimension_scale: 0_to_100
+  weighted_score_scale: 0_to_100
+  selection_threshold: 70
+  hard_rejects:
+    - proof_owner_is_ambiguous_or_wrong
+    - confirmation_is_not_readable
+    - claim_requires_missing_or_fabricated_evidence
+    - no_material_information_gain_after_selected_proofs
+  note: Transition compatibility is a tie-breaker and cannot rescue weak proof.
+
+selection_contract:
+  required_outputs:
+    - selected_proofs
+    - rejected_proofs
+    - rejection_reason
+  coverage_rule: Retain the smallest evidence set that fully supports the frozen purchase meaning and required proof.
+  reuse_rule: A Hook or Setup shot may also satisfy a proof requirement when owner, action, result and confirmation are visible; do not add a duplicate proof shot merely to repeat the claim.
+  governing_principle: Ability to prove is not sufficient; the proof must be worth showing.
+
